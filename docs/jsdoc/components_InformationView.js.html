@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li></li><li></li><li><a href="Navigation.html">Navigation</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="Virus.html">Virus</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li></li><li></li><li><a href="Microbe.html">Microbe</a></li><li></li><li><a href="Navigation.html">Navigation</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
     
 </nav>
 
@@ -48,7 +48,7 @@
             <pre class="prettyprint source linenums"><code>import React, { useState, useEffect, useRef } from 'react';
 
 import ManufacturerInformationTable from './information/ManufacturerInformationTable';
-import VirusInformation from './information/VirusInformation';
+import MicrobeInformation from './information/MicrobeInformation';
 import VaccineInformation from './information/VaccineInformation';
 import ManufacturerInformation from './information/ManufacturerInformation';
 import AccreditationInformation from './information/AccreditationInformation';
@@ -62,16 +62,16 @@ import AccreditationInformation from './information/AccreditationInformation';
  * @param {Object} props.activeFilters - The current filters applied to the information view.
  * @param {Function} props.setActiveFilters - Function to update the active filters.
  * @param {Array} props.manufacturersList - List of manufacturers available for selection.
- * @param {Object} props.selectedVirus - The currently selected virus.
+ * @param {Object} props.selectedMicrobe - The currently selected microbe.
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedAccreditation - The currently selected accreditation.
- * @param {string} props.detailsType - The type of details to display ('Virus', 'Vaccine', 'Manufacturer', 'Accreditation').
- * @param {Function} props.handleSelectVirus - Function to handle the selection of a virus.
+ * @param {string} props.detailsType - The type of details to display ('Microbe', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {Function} props.handleSelectMicrobe - Function to handle the selection of a microbe.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
  * @param {Function} props.handleSelectAccreditation - Function to handle the selection of an accreditation.
  * @param {Function} props.getCountriesByVaccine - Function to get countries associated with a vaccine.
- * @param {Function} props.getVirusByVaccine - Function to get the virus associated with a vaccine.
+ * @param {Function} props.getMicrobeByVaccine - Function to get the microbe associated with a vaccine.
  * @param {Function} props.getVaccinesByManufacturer - Function to get vaccines associated with a manufacturer.
  * @param {Function} props.getVaccinesByAccreditation - Function to get vaccines associated with an accreditation.
  * @param {Function} props.getRecommendationByVaccine - Function to get recommendations for a vaccine.
@@ -86,16 +86,16 @@ import AccreditationInformation from './information/AccreditationInformation';
  *    activeFilters={{ searchString: '', firstAlphabet: '' }}
  *    setActiveFilters={(filters) => console.log(filters)}
  *    manufacturersList={[]}
- *    selectedVirus={{ name: 'COVID-19', description: '...' }}
+ *    selectedMicrobe={{ name: 'COVID-19', description: '...' }}
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
  *    selectedAccreditation='AccreditationZ'
- *    detailsType='Virus'
- *    handleSelectVirus={(virus) => console.log(virus)}
+ *    detailsType='Microbe'
+ *    handleSelectMicrobe={(microbe) => console.log(microbe)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
  *    handleSelectAccreditation={(accreditation) => console.log(accreditation)}
  *    getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}
- *    getVirusByVaccine={(vaccine) => ({ name: 'VirusX' })}
+ *    getMicrobeByVaccine={(vaccine) => ({ name: 'VirusX' })}
  *    getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}
  *    getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}
  *    getRecommendationByVaccine={(vaccine) => 'Recommendation'}
@@ -109,16 +109,16 @@ const InformationView = ({
     activeFilters,
     setActiveFilters,
     manufacturersList, 
-    selectedVirus, 
+    selectedMicrobe, 
     selectedVaccine, 
     selectedManufacturer,
     selectedAccreditation, 
     detailsType, 
-    handleSelectVirus, 
+    handleSelectMicrobe, 
     handleSelectVaccine, 
     handleSelectAccreditation, 
     getCountriesByVaccine,
-    getVirusByVaccine,
+    getMicrobeByVaccine,
     getVaccinesByManufacturer,
     getVaccinesByAccreditation,
     getRecommendationByVaccine,
@@ -138,7 +138,7 @@ const InformationView = ({
             }
         }
         prevChangedFrom.current = changedFrom;
-    }, [selectedVirus, selectedVaccine, selectedManufacturer, selectedAccreditation, changedFrom]);
+    }, [selectedMicrobe, selectedVaccine, selectedManufacturer, selectedAccreditation, changedFrom]);
 
     useEffect(() => {
         setSlideClass(''); 
@@ -163,21 +163,21 @@ const InformationView = ({
                 {getVaccinesByManufacturer().length>0 
                 ? &lt;ManufacturerInformationTable 
                     detailsType={detailsType}
-                    selectedVirus={selectedVirus}
+                    selectedMicrobe={selectedMicrobe}
                     selectedVaccine={selectedVaccine}
                     selectedAccreditation={selectedAccreditation}
                     handleSelectVaccine={handleSelectVaccine}
-                    handleSelectVirus={handleSelectVirus} 
+                    handleSelectMicrobe={handleSelectMicrobe} 
                     handleSelectAccreditation={handleSelectAccreditation}
                     getVaccinesByManufacturer={getVaccinesByManufacturer}
-                    getVirusByVaccine={getVirusByVaccine}
+                    getMicrobeByVaccine={getMicrobeByVaccine}
                     getCountriesByVaccine={getCountriesByVaccine}
                     getRecommendationByVaccine={getRecommendationByVaccine}
                 /> : ``}
                 &lt;div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
-                    {detailsType==="Virus" 
-                    ? &lt;VirusInformation 
-                        selectedVirus={selectedVirus} 
+                    {detailsType==="Microbe" 
+                    ? &lt;MicrobeInformation 
+                        selectedMicrobe={selectedMicrobe} 
                         italizeScientificNames={italizeScientificNames}
                     /> : detailsType==="Vaccine" 
                     ? &lt;VaccineInformation 
@@ -215,7 +215,7 @@ export default InformationView;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Jul 29 2024 11:47:44 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 01 2024 12:28:45 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

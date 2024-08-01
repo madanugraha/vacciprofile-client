@@ -6,7 +6,7 @@ import React from 'react';
  * @component
  * @namespace Sidebar
  * @param {Object} props - The component accepts various props to handle sidebar functionality.
- * @param {Function} props.setDetailsType - Function to set the type of details to be displayed ('Virus', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {Function} props.setDetailsType - Function to set the type of details to be displayed ('Microbe', 'Vaccine', 'Manufacturer', 'Accreditation').
  * @param {Array} props.manufacturersList - List of manufacturers available for selection.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.

@@ -16,11 +16,11 @@
 <dt><a href="#Manufacturer">Manufacturer</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>ManufacturerInformationTable Component</p>
 </dd>
+<dt><a href="#Microbe">Microbe</a> ⇒ <code>JSX.Element</code></dt>
+<dd><p>MicrobeInformation Component</p>
+</dd>
 <dt><a href="#Vaccine">Vaccine</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>VaccineInformation Component</p>
-</dd>
-<dt><a href="#Virus">Virus</a> ⇒ <code>JSX.Element</code></dt>
-<dd><p>VirusInformation Component</p>
 </dd>
 <dt><a href="#Main">Main</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>InformationView Component</p>
@@ -125,22 +125,43 @@ ManufacturerInformationTable Component
 
 | Param | Type | Description |
 | --- | --- | --- |
-| props | <code>Object</code> | The component accepts detailsType, selectedVirus, selectedVaccine, selectedAccreditation, and several handler and data functions as props. |
-| props.detailsType | <code>string</code> | The type of detail currently selected, e.g., "Vaccine", "Virus", or "Accreditation". |
-| props.selectedVirus | <code>Object</code> | The currently selected virus object. |
+| props | <code>Object</code> | The component accepts detailsType, selectedMicrobe, selectedVaccine, selectedAccreditation, and several handler and data functions as props. |
+| props.detailsType | <code>string</code> | The type of detail currently selected, e.g., "Vaccine", "Microbe", or "Accreditation". |
+| props.selectedMicrobe | <code>Object</code> | The currently selected microbe object. |
 | props.selectedVaccine | <code>Object</code> | The currently selected vaccine object. |
 | props.selectedAccreditation | <code>string</code> | The currently selected accreditation. |
-| props.handleSelectVirus | <code>function</code> | Function that gets triggered when a virus is selected. |
+| props.handleSelectMicrobe | <code>function</code> | Function that gets triggered when a microbe is selected. |
 | props.handleSelectVaccine | <code>function</code> | Function that gets triggered when a vaccine is selected. |
 | props.handleSelectAccreditation | <code>function</code> | Function that gets triggered when an accreditation is selected. |
 | props.getVaccinesByManufacturer | <code>function</code> | Function that returns a list of vaccines based on the manufacturer. |
 | props.getCountriesByVaccine | <code>function</code> | Function that returns a list of countries where a vaccine is used. |
 | props.getRecommendationByVaccine | <code>function</code> | Function that returns recommendations for a specific vaccine. |
-| props.getVirusByVaccine | <code>function</code> | Function that returns the virus associated with a specific vaccine. |
+| props.getMicrobeByVaccine | <code>function</code> | Function that returns the microbe associated with a specific vaccine. |
 
 **Example**  
 ```js
-// Render the ManufacturerInformationTable component with dummy data and functions<ManufacturerInformationTable   detailsType="Vaccine"  selectedVirus={{ name: 'Virus X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedAccreditation="Accreditation Z"  handleSelectVirus={virus => console.log('Virus selected:', virus)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}  getCountriesByVaccine={vaccine => ['Country A', 'Country B']}  getRecommendationByVaccine={vaccine => 'Recommendation for ' + vaccine.name}  getVirusByVaccine={vaccine => ({ name: 'Virus X' })}/>
+// Render the ManufacturerInformationTable component with dummy data and functions<ManufacturerInformationTable   detailsType="Vaccine"  selectedMicrobe={{ name: 'Microbe X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedAccreditation="Accreditation Z"  handleSelectMicrobe={microbe => console.log('Microbe selected:', microbe)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}  getCountriesByVaccine={vaccine => ['Country A', 'Country B']}  getRecommendationByVaccine={vaccine => 'Recommendation for ' + vaccine.name}  getMicrobeByVaccine={vaccine => ({ name: 'Microbe X' })}/>
+```
+<a name="Microbe"></a>
+
+## Microbe ⇒ <code>JSX.Element</code>
+MicrobeInformation Component
+
+**Kind**: global namespace  
+**Returns**: <code>JSX.Element</code> - The Microbe Information component.  
+**Component**:   
+
+| Param | Type | Description |
+| --- | --- | --- |
+| props | <code>Object</code> | The component accepts selectedMicrobe and italizeScientificNames as props. |
+| props.selectedMicrobe | <code>Object</code> | The selected microbe object containing its details. |
+| props.selectedMicrobe.name | <code>string</code> | The name of the selected microbe. |
+| props.selectedMicrobe.description | <code>string</code> | The description of the selected microbe. |
+| props.italizeScientificNames | <code>function</code> | Function that converts scientific names in the description to italicized text. |
+
+**Example**  
+```js
+// Example usage of MicrobeInformation component<MicrobeInformation    selectedMicrobe={{        name: 'COVID-19',        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'   }}    italizeScientificNames={(text) => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} />
 ```
 <a name="Vaccine"></a>
 
@@ -165,27 +186,6 @@ VaccineInformation Component
 ```js
 // Render the VaccineInformation component with a sample vaccine and italizeScientificNames function<VaccineInformation   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   italizeScientificNames={text => text.replace(/(scientificName)/gi, '<i>$1</i>')}/>
 ```
-<a name="Virus"></a>
-
-## Virus ⇒ <code>JSX.Element</code>
-VirusInformation Component
-
-**Kind**: global namespace  
-**Returns**: <code>JSX.Element</code> - The Virus Information component.  
-**Component**:   
-
-| Param | Type | Description |
-| --- | --- | --- |
-| props | <code>Object</code> | The component accepts selectedVirus and italizeScientificNames as props. |
-| props.selectedVirus | <code>Object</code> | The selected virus object containing its details. |
-| props.selectedVirus.name | <code>string</code> | The name of the selected virus. |
-| props.selectedVirus.description | <code>string</code> | The description of the selected virus. |
-| props.italizeScientificNames | <code>function</code> | Function that converts scientific names in the description to italicized text. |
-
-**Example**  
-```js
-// Example usage of VirusInformation component<VirusInformation    selectedVirus={{        name: 'COVID-19',        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'   }}    italizeScientificNames={(text) => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} />
-```
 <a name="Main"></a>
 
 ## Main ⇒ <code>JSX.Element</code>
@@ -201,16 +201,16 @@ InformationView Component
 | props.activeFilters | <code>Object</code> | The current filters applied to the information view. |
 | props.setActiveFilters | <code>function</code> | Function to update the active filters. |
 | props.manufacturersList | <code>Array</code> | List of manufacturers available for selection. |
-| props.selectedVirus | <code>Object</code> | The currently selected virus. |
+| props.selectedMicrobe | <code>Object</code> | The currently selected microbe. |
 | props.selectedVaccine | <code>Object</code> | The currently selected vaccine. |
 | props.selectedManufacturer | <code>Object</code> | The currently selected manufacturer. |
 | props.selectedAccreditation | <code>Object</code> | The currently selected accreditation. |
-| props.detailsType | <code>string</code> | The type of details to display ('Virus', 'Vaccine', 'Manufacturer', 'Accreditation'). |
-| props.handleSelectVirus | <code>function</code> | Function to handle the selection of a virus. |
+| props.detailsType | <code>string</code> | The type of details to display ('Microbe', 'Vaccine', 'Manufacturer', 'Accreditation'). |
+| props.handleSelectMicrobe | <code>function</code> | Function to handle the selection of a microbe. |
 | props.handleSelectVaccine | <code>function</code> | Function to handle the selection of a vaccine. |
 | props.handleSelectAccreditation | <code>function</code> | Function to handle the selection of an accreditation. |
 | props.getCountriesByVaccine | <code>function</code> | Function to get countries associated with a vaccine. |
-| props.getVirusByVaccine | <code>function</code> | Function to get the virus associated with a vaccine. |
+| props.getMicrobeByVaccine | <code>function</code> | Function to get the microbe associated with a vaccine. |
 | props.getVaccinesByManufacturer | <code>function</code> | Function to get vaccines associated with a manufacturer. |
 | props.getVaccinesByAccreditation | <code>function</code> | Function to get vaccines associated with an accreditation. |
 | props.getRecommendationByVaccine | <code>function</code> | Function to get recommendations for a vaccine. |
@@ -220,7 +220,7 @@ InformationView Component
 
 **Example**  
 ```js
-// Example usage of InformationView component<InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedVirus={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   detailsType='Virus'   handleSelectVirus={(virus) => console.log(virus)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}   getVirusByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   getRecommendationByVaccine={(vaccine) => 'Recommendation'}   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/>
+// Example usage of InformationView component<InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedMicrobe={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   detailsType='Microbe'   handleSelectMicrobe={(microbe) => console.log(microbe)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}   getMicrobeByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   getRecommendationByVaccine={(vaccine) => 'Recommendation'}   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/>
 ```
 <a name="Sidebar"></a>
 
@@ -234,7 +234,7 @@ Sidebar Component
 | Param | Type | Description |
 | --- | --- | --- |
 | props | <code>Object</code> | The component accepts various props to handle sidebar functionality. |
-| props.setDetailsType | <code>function</code> | Function to set the type of details to be displayed ('Virus', 'Vaccine', 'Manufacturer', 'Accreditation'). |
+| props.setDetailsType | <code>function</code> | Function to set the type of details to be displayed ('Microbe', 'Vaccine', 'Manufacturer', 'Accreditation'). |
 | props.manufacturersList | <code>Array</code> | List of manufacturers available for selection. |
 | props.selectedManufacturer | <code>Object</code> | The currently selected manufacturer. |
 | props.setSelectedManufacturer | <code>function</code> | Function to update the selected manufacturer. |
@@ -261,12 +261,12 @@ This is the main component of the vaccine profile application. It manages the st
 
 * [App()](#App) ⇒ <code>JSX.Element</code>
     * [~handleSearch(keyword)](#App..handleSearch)
-    * [~handleSelectVirus(virus)](#App..handleSelectVirus)
+    * [~handleSelectMicrobe(microbe)](#App..handleSelectMicrobe)
     * [~handleSelectVaccine(vx)](#App..handleSelectVaccine)
     * [~handleSelectManufacturer(manufacturer)](#App..handleSelectManufacturer)
     * [~handleSelectAccreditation(accreditation)](#App..handleSelectAccreditation)
     * [~getVaccineById(vaccineId)](#App..getVaccineById) ⇒ <code>object</code>
-    * [~getVirusByVaccine(vaccine)](#App..getVirusByVaccine) ⇒ <code>object</code>
+    * [~getMicrobeByVaccine(vaccine)](#App..getMicrobeByVaccine) ⇒ <code>object</code>
     * [~getCountriesByVaccine(vx)](#App..getCountriesByVaccine) ⇒ <code>string</code>
     * [~getRecommendationByVaccine(vx)](#App..getRecommendationByVaccine) ⇒ <code>string</code>
     * [~getVaccinesByAccreditation()](#App..getVaccinesByAccreditation) ⇒ <code>Array</code>
@@ -285,16 +285,16 @@ Handles the search input change.
 | --- | --- | --- |
 | keyword | <code>string</code> | The search keyword. |
 
-<a name="App..handleSelectVirus"></a>
+<a name="App..handleSelectMicrobe"></a>
 
-### App~handleSelectVirus(virus)
-Handles selecting a virus.
+### App~handleSelectMicrobe(microbe)
+Handles selecting a microbe.
 
 **Kind**: inner method of [<code>App</code>](#App)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| virus | <code>object</code> | The selected virus object. |
+| microbe | <code>object</code> | The selected microbe object. |
 
 <a name="App..handleSelectVaccine"></a>
 
@@ -341,13 +341,13 @@ Retrieves a vaccine by its ID.
 | --- | --- | --- |
 | vaccineId | <code>string</code> | The ID of the vaccine. |
 
-<a name="App..getVirusByVaccine"></a>
+<a name="App..getMicrobeByVaccine"></a>
 
-### App~getVirusByVaccine(vaccine) ⇒ <code>object</code>
-Retrieves the virus associated with a vaccine.
+### App~getMicrobeByVaccine(vaccine) ⇒ <code>object</code>
+Retrieves the microbe associated with a vaccine.
 
 **Kind**: inner method of [<code>App</code>](#App)  
-**Returns**: <code>object</code> - The virus object.  
+**Returns**: <code>object</code> - The microbe object.  
 
 | Param | Type | Description |
 | --- | --- | --- |

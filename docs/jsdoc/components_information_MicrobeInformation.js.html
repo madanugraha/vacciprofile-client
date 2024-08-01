@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>components/AlphabetsNavigation.js - Documentation</title>
+    <title>components/information/MicrobeInformation.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">components/AlphabetsNavigation.js</h1>
+    <h1 class="page-title">components/information/MicrobeInformation.js</h1>
     
 
     
@@ -48,50 +48,36 @@
             <pre class="prettyprint source linenums"><code>import React from 'react';
 
 /**
- * AlphabetsNavigation Component
+ * MicrobeInformation Component
  *
  * @component
- * @namespace Navigation
- * @param {Object} props - The component accepts activeFilters, setActiveFilters, and setSelectedManufacturer as props.
- * @param {Object} props.activeFilters - The current state of filters applied, including the selected alphabet.
- * @param {Function} props.setActiveFilters - Function that updates the state of active filters.
- * @param {Function} props.setSelectedManufacturer - Function that updates the selected manufacturer.
- * @returns {JSX.Element} The Alphabet Navigation component.
+ * @namespace Microbe
+ * @param {Object} props - The component accepts selectedMicrobe and italizeScientificNames as props.
+ * @param {Object} props.selectedMicrobe - The selected microbe object containing its details.
+ * @param {string} props.selectedMicrobe.name - The name of the selected microbe.
+ * @param {string} props.selectedMicrobe.description - The description of the selected microbe.
+ * @param {Function} props.italizeScientificNames - Function that converts scientific names in the description to italicized text.
+ * @returns {JSX.Element} The Microbe Information component.
  *
  * @example
- * // Render the AlphabetsNavigation component
- * &lt;AlphabetsNavigation 
- *   activeFilters={activeFilters} 
- *   setActiveFilters={setActiveFilters} 
- *   setSelectedManufacturer={setSelectedManufacturer}
+ * // Example usage of MicrobeInformation component
+ * &lt;MicrobeInformation 
+ *    selectedMicrobe={{ 
+ *        name: 'COVID-19', 
+ *        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'
+ *    }} 
+ *    italizeScientificNames={(text) => text.replace(/(SARS-CoV-2)/g, '&lt;i>$1&lt;/i>')} 
  * />
  */
 
-const AlphabetsNavigation = ({ 
-    activeFilters, 
-    setActiveFilters,
-    setSelectedManufacturer
- }) => {
-
-    const handleAlphabetChange = letter => {
-        setActiveFilters({...activeFilters, 
-            firstAlphabet: activeFilters.firstAlphabet === letter ? '' : letter
-        });
-        setSelectedManufacturer({});
-    } 
-
-    return &lt;div className="alphabet-container d-flex justify-content-around mx-auto mt-3 slide-up">
-        {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map(letter => (
-            &lt;span key={letter} 
-                className={`alphabet-item ${activeFilters.firstAlphabet===letter ? `bg-primary`:``}`} 
-                onClick={()=>handleAlphabetChange(letter)}>
-                {letter}
-            &lt;/span>
-        ))}
+const MicrobeInformation = ({selectedMicrobe, italizeScientificNames}) => {
+    return &lt;div className='slide-left'>
+        &lt;h4 className='report-heading'>{selectedMicrobe.name}&lt;/h4>
+        &lt;p>{italizeScientificNames(selectedMicrobe.description)}&lt;/p>
     &lt;/div>
 }
 
-export default AlphabetsNavigation;</code></pre>
+export default MicrobeInformation;</code></pre>
         </article>
     </section>
 

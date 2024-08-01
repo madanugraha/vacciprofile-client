@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li></li><li></li><li><a href="Navigation.html">Navigation</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="Virus.html">Virus</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li></li><li></li><li><a href="Microbe.html">Microbe</a></li><li></li><li><a href="Navigation.html">Navigation</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
     
 </nav>
 
@@ -128,7 +128,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Example usage of InformationView component&lt;InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedVirus={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   detailsType='Virus'   handleSelectVirus={(virus) => console.log(virus)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}   getVirusByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   getRecommendationByVaccine={(vaccine) => 'Recommendation'}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
+    <pre class="prettyprint"><code>// Example usage of InformationView component&lt;InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedMicrobe={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   detailsType='Microbe'   handleSelectMicrobe={(microbe) => console.log(microbe)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}   getMicrobeByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   getRecommendationByVaccine={(vaccine) => 'Recommendation'}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
 
 
 
@@ -273,7 +273,7 @@
 
         <tr>
             
-                <td class="name"><code>selectedVirus</code></td>
+                <td class="name"><code>selectedMicrobe</code></td>
             
 
             <td class="type">
@@ -290,7 +290,7 @@
 
             
 
-            <td class="description last"><p>The currently selected virus.</p></td>
+            <td class="description last"><p>The currently selected microbe.</p></td>
         </tr>
 
     
@@ -386,14 +386,14 @@
 
             
 
-            <td class="description last"><p>The type of details to display ('Virus', 'Vaccine', 'Manufacturer', 'Accreditation').</p></td>
+            <td class="description last"><p>The type of details to display ('Microbe', 'Vaccine', 'Manufacturer', 'Accreditation').</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>handleSelectVirus</code></td>
+                <td class="name"><code>handleSelectMicrobe</code></td>
             
 
             <td class="type">
@@ -410,7 +410,7 @@
 
             
 
-            <td class="description last"><p>Function to handle the selection of a virus.</p></td>
+            <td class="description last"><p>Function to handle the selection of a microbe.</p></td>
         </tr>
 
     
@@ -489,7 +489,7 @@
 
         <tr>
             
-                <td class="name"><code>getVirusByVaccine</code></td>
+                <td class="name"><code>getMicrobeByVaccine</code></td>
             
 
             <td class="type">
@@ -506,7 +506,7 @@
 
             
 
-            <td class="description last"><p>Function to get the virus associated with a vaccine.</p></td>
+            <td class="description last"><p>Function to get the microbe associated with a vaccine.</p></td>
         </tr>
 
     
@@ -823,7 +823,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Example usage of InformationView component&lt;InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedVirus={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   detailsType='Virus'   handleSelectVirus={(virus) => console.log(virus)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}   getVirusByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   getRecommendationByVaccine={(vaccine) => 'Recommendation'}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
+    <pre class="prettyprint"><code>// Example usage of InformationView component&lt;InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedMicrobe={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   detailsType='Microbe'   handleSelectMicrobe={(microbe) => console.log(microbe)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}   getMicrobeByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   getRecommendationByVaccine={(vaccine) => 'Recommendation'}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
 
 
 
@@ -968,7 +968,7 @@
 
         <tr>
             
-                <td class="name"><code>selectedVirus</code></td>
+                <td class="name"><code>selectedMicrobe</code></td>
             
 
             <td class="type">
@@ -985,7 +985,7 @@
 
             
 
-            <td class="description last"><p>The currently selected virus.</p></td>
+            <td class="description last"><p>The currently selected microbe.</p></td>
         </tr>
 
     
@@ -1081,14 +1081,14 @@
 
             
 
-            <td class="description last"><p>The type of details to display ('Virus', 'Vaccine', 'Manufacturer', 'Accreditation').</p></td>
+            <td class="description last"><p>The type of details to display ('Microbe', 'Vaccine', 'Manufacturer', 'Accreditation').</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>handleSelectVirus</code></td>
+                <td class="name"><code>handleSelectMicrobe</code></td>
             
 
             <td class="type">
@@ -1105,7 +1105,7 @@
 
             
 
-            <td class="description last"><p>Function to handle the selection of a virus.</p></td>
+            <td class="description last"><p>Function to handle the selection of a microbe.</p></td>
         </tr>
 
     
@@ -1184,7 +1184,7 @@
 
         <tr>
             
-                <td class="name"><code>getVirusByVaccine</code></td>
+                <td class="name"><code>getMicrobeByVaccine</code></td>
             
 
             <td class="type">
@@ -1201,7 +1201,7 @@
 
             
 
-            <td class="description last"><p>Function to get the virus associated with a vaccine.</p></td>
+            <td class="description last"><p>Function to get the microbe associated with a vaccine.</p></td>
         </tr>
 
     
@@ -1437,7 +1437,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Jul 29 2024 11:47:44 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 01 2024 12:28:45 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

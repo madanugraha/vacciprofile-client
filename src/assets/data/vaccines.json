@@ -2,7 +2,7 @@
     {
         "name": "Abrysvo™",
         "vaccineId": 1,
-        "virusId": 1, 
+        "microbeId": 1, 
         "manufacturerId": 1,
         "countries": ["United States", "European Union"],
         "accreditation": ["FDA", "EMA"],
@@ -14,7 +14,7 @@
     {
         "name": "Comirnaty",
         "vaccineId": 2,
-        "virusId": 2, 
+        "microbeId": 2, 
         "manufacturerId": 5,
         "countries": ["United States", "European Union", "United Kingdom", "Canada", "Australia"],
         "accreditation": ["FDA", "EMA"],
@@ -29,7 +29,7 @@
     {
         "name": "Penbraya™",
         "vaccineId": 3,
-        "virusId": 3, 
+        "microbeId": 3, 
         "manufacturerId": 1,
         "countries": ["United States", "European Union", "United Kingdom", "Canada", "Australia"],
         "accreditation": ["FDA", "EMA"],
@@ -41,7 +41,7 @@
     {
         "name": "Pfizer-BioNTech COVID-19 Vaccine",
         "vaccineId": 4,
-        "virusId": 2, 
+        "microbeId": 2, 
         "manufacturerId": 5,
         "countries": ["United States", "European Union", "United Kingdom", "Canada", "Australia", "Japan"],
         "accreditation": ["FDA", "EMA", "WHO"],
@@ -53,7 +53,7 @@
     {
         "name": "Prevnar 13",
         "vaccineId": 5,
-        "virusId": 3, 
+        "microbeId": 3, 
         "manufacturerId": 1,
         "countries": ["United States", "European Union", "Canada", "Australia", "Japan"],
         "accreditation": ["FDA", "EMA", "WHO"],
@@ -66,7 +66,7 @@
     {
         "name": "Prevnar 20™",
         "vaccineId": 6,
-        "virusId": 3,
+        "microbeId": 3,
         "manufacturerId": 1,
         "countries": ["United States", "European Union", "Canada", "Australia", "Japan"],
         "accreditation": ["FDA", "EMA", "WHO"],
@@ -78,7 +78,7 @@
     {
         "name": "TicoVac™",
         "vaccineId": 7,
-        "virusId": 4,
+        "microbeId": 4,
         "manufacturerId": 1,
         "countries": ["European Union", "Switzerland", "Norway", "Australia"],
         "accreditation": ["EMA", "WHO"],
@@ -91,7 +91,7 @@
     {
         "name": "Trumenba™",
         "vaccineId": 8,
-        "virusId": 5,
+        "microbeId": 5,
         "manufacturerId": 1,
         "countries": ["United States", "European Union", "Canada", "Australia"],
         "accreditation": ["FDA", "EMA"],
@@ -104,7 +104,7 @@
     {
         "name": "Janssen COVID-19 Vaccine",
         "vaccineId": 9,
-        "virusId": 2,
+        "microbeId": 2,
         "manufacturerId": 2,
         "countries": ["USA", "UK", "Germany", "Canada"],
         "accreditation": ["WHO", "EMA", "FDA"],
@@ -116,7 +116,7 @@
     {
         "name": "Vaxzevria",
         "vaccineId": 10,
-        "virusId": 2,
+        "microbeId": 2,
         "manufacturerId": 6,
         "countries": ["USA", "UK", "Germany", "Canada"],
         "accreditation": ["WHO", "EMA", "FDA"],
@@ -128,7 +128,7 @@
     {
         "name": "Gardasil",
         "vaccineId": 11,
-        "virusId": 6,
+        "microbeId": 6,
         "manufacturerId": 4,
         "countries": ["USA", "UK", "Germany", "Canada"],
         "accreditation": ["WHO", "EMA", "FDA"],
