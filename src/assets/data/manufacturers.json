@@ -3,7 +3,7 @@
         "manufacturerId": 1,
         "name": "Pfizer",
         "description": "Pfizer Inc. is a research-based, global biopharmaceutical company. Pfizer is committed to fulfilling their purpose, “Breakthroughs that change patients’ lives”, through the discovery, development, manufacture, marketing, sales, and distribution of biopharmaceutical products worldwide. With products sold in over 125 countries, Pfizer’s key products include Prevnar 13, Ibrance, Eliquis, Xeljanz, Enbrel, Xtandi, Vyndaqel/Vyndamax, Chantix/Champix, Sutent, etc..  Vaccine business was taken over from Wyeth (in Year). And was slowly expanded. Pfizer also produces a COVID-19 vaccine in collaboration with BioNTech: Pfizer-BioNTech COVID-19 vaccine (BNT162b2).",
-        "information": {
+        "details": {
             "founded": "1849",
             "headquarters": "New York City, U.S.",
             "ceo": "Dr. Albert Bourla",
@@ -35,7 +35,7 @@
         "manufacturerId": 2,
         "name": "Johnson & Johnson",
         "description": "Johnson & Johnson engages in research and development, manufacture and sale of a broad range of products in the health care field. They are organized into three business segments: Consumer Health, Pharmaceutical and Medical Devices. With products sold in over 175 countries, Johnson & Johnson’s key pharmaceutical products include REMICADE®, SIMPONI®, SIMPONI ARIA®, STELARA®, DARZALEX®, IMBRUVICA®, etc. Johnson & Johnson also produces a COVID-19 vaccine: Janssen COVID-19 Vaccine.",
-        "information": {
+        "details": {
             "founded": "1886",
             "headquarters": "New Jersey, U.S.",
             "ceo": "Alex Gorsky",
@@ -68,7 +68,7 @@
         "manufacturerId": 3,
         "name": "GlaxoSmithKline",
         "description": "GlaxoSmithKline (GSK) is a multinational pharmaceutical company with a purpose to improve the quality of human life by helping people do more, feel better, and live longer. GSK is organized into three business segments: pharmaceuticals, vaccines, and consumer healthcare. GSK operates in more than 150 countries with employees across 96 markets. Key products include Bexsero, Fluarix/FluLaval, Shingrix, Boostrix, Synflorix, Rotarix, Infanrix, Pediarix, Hepatitis vaccine, etc.",
-        "information": {
+        "details": {
             "founded": "2000",
             "headquarters": "London, England",
             "ceo": "Emma Walmsley",
@@ -101,7 +101,7 @@
         "manufacturerId": 4,
         "name": "Merck & Co., Inc.",
         "description": "Merck & Co., Inc. is a global health care company that delivers innovative health solutions through its prescription medicines, vaccines, biologic therapies, and animal health products. Merck operates in two segments: Pharmaceutical and Animal Health segments. The Pharmaceutical segment includes human health pharmaceutical and vaccine products while the Animal Health segment discovers, develops, manufactures and markets a wide range of veterinary pharmaceutical and vaccine products, as well as health management solutions and services, for the prevention, treatment and control of disease in all major livestock and companion animal species. Merck operates in more than 140 countries worldwide with key products such as Gardasil, Varivax, Pneumovax, ProQuad, M-M-R II, etc.",
-        "information": {
+        "details": {
             "founded": "1891",
             "headquarters": "New Jersey, U.S.",
             "ceo": "Robert M. Davis",
@@ -129,7 +129,7 @@
         "manufacturerId": 5,
         "name": "Pfizer-BioNTech",
         "description": "STAY TUNED FOR MORE INFORMATION",
-        "information": {
+        "details": {
             "founded": "",
             "headquarters": "",
             "ceo": "",

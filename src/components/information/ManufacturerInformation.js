@@ -9,8 +9,8 @@ import React from 'react';
  * @param {Object} props.selectedManufacturer - The manufacturer information object.
  * @param {string} props.selectedManufacturer.name - The name of the manufacturer.
  * @param {string} props.selectedManufacturer.description - The description of the manufacturer.
- * @param {Object} props.selectedManufacturer.information - Additional information about the manufacturer.
- * @param {Object[]} props.selectedManufacturer.information.sources - List of sources related to the manufacturer.
+ * @param {Object} props.selectedManufacturer.details - Additional information about the manufacturer.
+ * @param {Object[]} props.selectedManufacturer.details.sources - List of sources related to the manufacturer.
  * @param {Function} props.convertCamelCaseToReadable - Function that converts camel case strings to a readable format.
  * @returns {JSX.Element} The Manufacturer Information component.
  *
@@ -40,7 +40,7 @@ const ManufacturerInformation = ({
     return <div className=''>
     <h4 className='report-heading'>{selectedManufacturer.name}</h4> 
     <p>{selectedManufacturer.description}</p>
-    {selectedManufacturer.information ? <><div className='table-responsive'>
+    {selectedManufacturer.details ? <><div className='table-responsive'>
         <table className='table table-light w-100 m-0'>
             <thead>
                 <tr>
@@ -48,7 +48,7 @@ const ManufacturerInformation = ({
                 </tr>
             </thead>
             <tbody>
-                {Object.entries(selectedManufacturer.information).map(([attributeKey, attributeValue], index) => {
+                {Object.entries(selectedManufacturer.details).map(([attributeKey, attributeValue], index) => {
                     return attributeKey !== "sources" && attributeKey !== "lastUpdated" ? <tr key={index}>
                         <td className='text-center text-capitalize' style={{ width: '50%' }}>{convertCamelCaseToReadable(attributeKey)}</td>
                         <td className='text-center'>{attributeValue}</td>
@@ -57,9 +57,9 @@ const ManufacturerInformation = ({
             </tbody>
         </table>
     </div>
-    <span className='sources-list'>Source(s): {selectedManufacturer.information.sources.map((source, index)=><span key={index}>
+    <span className='sources-list'>Source(s): {selectedManufacturer.details.sources.map((source, index)=><span key={index}>
         <a className='manufacturer-table-source' href={`${source.link}`} target="_blank" rel="noopener noreferrer">{source.title}</a>
-        <span> ({source.lastUpdated}){selectedManufacturer.information.sources.length>1 && index<selectedManufacturer.information.sources.length-1 ? ', ' : ''}</span></span>)}
+        <span> ({source.lastUpdated}){selectedManufacturer.details.sources.length>1 && index<selectedManufacturer.details.sources.length-1 ? ', ' : ''}</span></span>)}
     </span></> : <></>}
 </div>
 }
