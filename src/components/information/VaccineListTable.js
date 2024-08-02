@@ -1,10 +1,10 @@
 import React from 'react';
 
 /**
- * ManufacturerInformationTable Component
+ * VaccineListTable Component
  *
  * @component
- * @namespace Manufacturer
+ * @namespace VaccineListTable
  * @param {Object} props - The component accepts detailsType, selectedMicrobe, selectedVaccine, selectedAccreditation, and several handler and data functions as props.
  * @param {string} props.detailsType - The type of detail currently selected, e.g., "Vaccine", "Microbe", or "Accreditation".
  * @param {Object} props.selectedMicrobe - The currently selected microbe object.
@@ -14,14 +14,12 @@ import React from 'react';
  * @param {Function} props.handleSelectVaccine - Function that gets triggered when a vaccine is selected.
  * @param {Function} props.handleSelectAccreditation - Function that gets triggered when an accreditation is selected.
  * @param {Function} props.getVaccinesByManufacturer - Function that returns a list of vaccines based on the manufacturer.
- * @param {Function} props.getCountriesByVaccine - Function that returns a list of countries where a vaccine is used.
- * @param {Function} props.getRecommendationByVaccine - Function that returns recommendations for a specific vaccine.
  * @param {Function} props.getMicrobeByVaccine - Function that returns the microbe associated with a specific vaccine.
  * @returns {JSX.Element} The Manufacturer Information Table component.
  *
  * @example
- * // Render the ManufacturerInformationTable component with dummy data and functions
- * <ManufacturerInformationTable 
+ * // Render the VaccineListTable component with dummy data and functions
+ * <VaccineListTable 
  *   detailsType="Vaccine"
  *   selectedMicrobe={{ name: 'Microbe X' }}
  *   selectedVaccine={{ name: 'Vaccine Y' }}
@@ -30,13 +28,11 @@ import React from 'react';
  *   handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}
  *   handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}
  *   getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}
- *   getCountriesByVaccine={vaccine => ['Country A', 'Country B']}
- *   getRecommendationByVaccine={vaccine => 'Recommendation for ' + vaccine.name}
  *   getMicrobeByVaccine={vaccine => ({ name: 'Microbe X' })}
  * />
  */
 
-const ManufacturerInformationTable = ({
+const VaccineListTable = ({
     detailsType, 
     selectedMicrobe, 
     selectedVaccine, 
@@ -45,8 +41,6 @@ const ManufacturerInformationTable = ({
     handleSelectVaccine, 
     handleSelectAccreditation, 
     getVaccinesByManufacturer,
-    getCountriesByVaccine, 
-    getRecommendationByVaccine, 
     getMicrobeByVaccine
 }) => {
     return <div className='view-header table-responsive m-0'>
@@ -56,8 +50,6 @@ const ManufacturerInformationTable = ({
                     <th>Vaccine</th>
                     <th>Virus/ Bacteria</th>
                     <th>Accreditation</th>
-                    <th>Countries</th>
-                    <th>Recommendation</th>
                 </tr>
             </thead>
             <tbody>
@@ -85,20 +77,10 @@ const ManufacturerInformationTable = ({
                             </span>{index<vaccine.accreditation.length-1 ? <span className='text-decoration-none'>, </span> : ``}
                         </span>)}
                     </td>
-                    <td className='country-cell'>
-                        {<span className='text-muted'>
-                            {getCountriesByVaccine(vaccine)}
-                        </span>}
-                    </td>
-                    <td className='recommendation-cell'>
-                        <span>
-                            {getRecommendationByVaccine(vaccine)}
-                        </span>
-                    </td>
                 </tr>)}
             </tbody>
         </table>
     </div>
 }
 
-export default ManufacturerInformationTable;
+export default VaccineListTable;

@@ -5,6 +5,8 @@ $primary: rgb(58, 109, 109);
 $secondary: rgb(27, 66, 55);
 $tertiary: rgb(184, 183, 175);
 $light: rgb(224, 228, 227);
+$topbarUnselected: rgb(201, 221, 216);
+$topbarSelected: rgb(224, 228, 227);
 $info: rgb(185, 194, 191);
 $warning: rgb(35, 116, 93);
 $success: rgb(84, 128, 115);
@@ -28,6 +30,8 @@ $theme-colors: (
   "info": $info,
   "dark": $dark,
   "light": $light,
+  "topbarUnselected": $topbarUnselected,
+  "topbarSelected": $topbarSelected,
   "darker": $darker,
   "selected": $selected,
   "pale": $pale,

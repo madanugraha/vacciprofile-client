@@ -51,7 +51,7 @@ const Sidebar = ({
         }
     }
 
-    return <div className='sidebar col-6 col-sm-4 col-lg-3 pe-3 slide-right'>
+    return <div className='sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-3 slide-right'>
         <div className='search-container'>
             <span className="position-relative">
                 <input type="text" className="text-center bg-info rounded-2 border-dark border-0 w-100" id="search" name="search" placeholder="Search" onChange={e => handleSearch(e.target.value)}/>

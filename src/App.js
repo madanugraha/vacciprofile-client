@@ -5,7 +5,7 @@ import './assets/animations/animations.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import InformationView from './components/InformationView.js';
-import AlphabetsNavigation from './components/AlphabetsNavigation.js';
+import TopBar from './components/TopBar.js';
 
 import manufacturers from './assets/data/manufacturers.json';
 import microbes from './assets/data/microbes.json';
@@ -102,17 +102,6 @@ const App = () => {
     }
 
     /**
-     * Retrieves a vaccine by its ID.
-     *
-     * @param {string} vaccineId - The ID of the vaccine.
-     * @returns {object} The vaccine object.
-     */
-
-    const getVaccineById = vaccineId => {
-        return vaccines.find(vaccine => vaccine.vaccineId === vaccineId);
-    };
-
-    /**
      * Retrieves the microbe associated with a vaccine.
      *
      * @param {object} vaccine - The vaccine object.
@@ -121,29 +110,6 @@ const App = () => {
 
     const getMicrobeByVaccine = vaccine => {
         return microbes.find(microbe => microbe.microbeId === vaccine.microbeId);
-    };
-
-     /**
-     * Retrieves the countries associated with a vaccine.
-     *
-     * @param {object} vx - The vaccine object.
-     * @returns {string} Comma-separated list of countries.
-     */
-
-    const getCountriesByVaccine = vx => {
-        const vaccine = getVaccineById(vx.vaccineId);
-        return vaccine.countries.join(', ');
-    };    
-
-    /**
-     * Retrieves the recommendation associated with a vaccine.
-     *
-     * @param {object} vx - The vaccine object.
-     * @returns {string} The recommendation.
-     */
-
-    const getRecommendationByVaccine = vx => {
-        return vx.recommendation;
     };
 
     /**
@@ -228,6 +194,7 @@ const App = () => {
         <div className='vacciprofile-page'>
             <div className='container'>
                 <Header/>
+                <TopBar/>
                 <div className='row py-4'>
                     <Sidebar
                         manufacturersList={manufacturersList}
@@ -253,19 +220,17 @@ const App = () => {
                         handleSelectManufacturer={handleSelectManufacturer}
                         handleSelectAccreditation={handleSelectAccreditation}
                         getMicrobeByVaccine={getMicrobeByVaccine}
-                        getCountriesByVaccine={getCountriesByVaccine}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         getVaccinesByAccreditation={getVaccinesByAccreditation}
-                        getRecommendationByVaccine={getRecommendationByVaccine}
                         italizeScientificNames={italizeScientificNames}
                         convertCamelCaseToReadable={convertCamelCaseToReadable}
                         changedFrom={changedFrom}
                     />
-                    <AlphabetsNavigation 
+                    {/* <AlphabetsNavigation 
                         activeFilters={activeFilters} 
                         setActiveFilters={setActiveFilters}
                         setSelectedManufacturer={setSelectedManufacturer}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>

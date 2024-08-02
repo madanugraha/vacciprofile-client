@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import ManufacturerInformationTable from './information/ManufacturerInformationTable';
+import VaccineListTable from './information/VaccineListTable';
 import MicrobeInformation from './information/MicrobeInformation';
 import VaccineInformation from './information/VaccineInformation';
 import ManufacturerInformation from './information/ManufacturerInformation';
@@ -23,11 +23,9 @@ import AccreditationInformation from './information/AccreditationInformation';
  * @param {Function} props.handleSelectMicrobe - Function to handle the selection of a microbe.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
  * @param {Function} props.handleSelectAccreditation - Function to handle the selection of an accreditation.
- * @param {Function} props.getCountriesByVaccine - Function to get countries associated with a vaccine.
  * @param {Function} props.getMicrobeByVaccine - Function to get the microbe associated with a vaccine.
  * @param {Function} props.getVaccinesByManufacturer - Function to get vaccines associated with a manufacturer.
  * @param {Function} props.getVaccinesByAccreditation - Function to get vaccines associated with an accreditation.
- * @param {Function} props.getRecommendationByVaccine - Function to get recommendations for a vaccine.
  * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
  * @param {Function} props.convertCamelCaseToReadable - Function to convert camel case strings to a readable format.
  * @param {string} props.changedFrom - Source of the change triggering the view update.
@@ -47,11 +45,9 @@ import AccreditationInformation from './information/AccreditationInformation';
  *    handleSelectMicrobe={(microbe) => console.log(microbe)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
  *    handleSelectAccreditation={(accreditation) => console.log(accreditation)}
- *    getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}
  *    getMicrobeByVaccine={(vaccine) => ({ name: 'VirusX' })}
  *    getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}
  *    getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}
- *    getRecommendationByVaccine={(vaccine) => 'Recommendation'}
  *    italizeScientificNames={(text) => <i>{text}</i>}
  *    convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}
  *    changedFrom='Sidebar'
@@ -70,11 +66,9 @@ const InformationView = ({
     handleSelectMicrobe, 
     handleSelectVaccine, 
     handleSelectAccreditation, 
-    getCountriesByVaccine,
     getMicrobeByVaccine,
     getVaccinesByManufacturer,
     getVaccinesByAccreditation,
-    getRecommendationByVaccine,
     italizeScientificNames,
     convertCamelCaseToReadable,
     changedFrom
@@ -101,7 +95,7 @@ const InformationView = ({
         return () => clearTimeout(timeout);
     }, [selectedManufacturer]);
 
-    return <div className={`view-container bg-white col-6 col-sm-8 col-lg-9 p-0 ${slideClass}`}>
+    return <div className={`view-container bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
         <div className='border border-primary border-1 rounded-4 slide-left'>
             { manufacturersList.length === 0 ? <div className='empty-view d-flex justify-content-center align-items-center'>
                     <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: '', firstAlphabet: ''})}>
@@ -114,7 +108,7 @@ const InformationView = ({
             </div> : <>
                 <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data</h1>
                 {getVaccinesByManufacturer().length>0 
-                ? <ManufacturerInformationTable 
+                ? <VaccineListTable 
                     detailsType={detailsType}
                     selectedMicrobe={selectedMicrobe}
                     selectedVaccine={selectedVaccine}
@@ -124,8 +118,6 @@ const InformationView = ({
                     handleSelectAccreditation={handleSelectAccreditation}
                     getVaccinesByManufacturer={getVaccinesByManufacturer}
                     getMicrobeByVaccine={getMicrobeByVaccine}
-                    getCountriesByVaccine={getCountriesByVaccine}
-                    getRecommendationByVaccine={getRecommendationByVaccine}
                 /> : ``}
                 <div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
                     {detailsType==="Microbe" 
