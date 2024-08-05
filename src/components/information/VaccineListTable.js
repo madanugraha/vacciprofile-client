@@ -53,7 +53,7 @@ const VaccineListTable = ({
       <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
         <div className="accordion-body">
             <div className='view-header table-responsive m-0'>
-                <table className='table table-success w-100 m-0'>
+                <table className='table w-100 m-0'>
                     <thead>
                         <tr>
                             <th>Vaccine</th>
