@@ -130,18 +130,23 @@
     {
         "manufacturerId": 5,
         "name": "BioNTech",
-        "description": "STAY TUNED FOR MORE INFORMATION",
+        "description": "T.B.A.",
         "details": {
-            "founded": "",
-            "headquarters": "",
-            "ceo": "",
-            "revenue": "",
-            "operatingIncome": "",
-            "netIncome": "",
-            "totalAssets": "",
-            "totalEquity": "",
-            "numberOfEmployees": "",
+            "founded": "2008; 16 years ago",
+            "headquarters": "Mainz, Germany",
+            "ceo": "Uğur Şahin",
+            "revenue": "€3.819 billion",
+            "operatingIncome": "€690.4 million",
+            "netIncome": "€930.3 million",
+            "totalAssets": "€23.01 billion",
+            "totalEquity": "€20.25 billion",
+            "numberOfEmployees": "6,133",
             "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "BioNTech From Wikipedia, the free encyclopedia",
+                    "link": "https://en.wikipedia.org/wiki/BioNTech"
+                }
             ]
         },
         "vaccines": [
@@ -152,6 +157,24 @@
     {
         "manufacturerId": 6,
         "name": "AstraZeneca",
-        "description": "TBU"
+        "description": "TBU",
+        "details": {
+            "founded": "6 April 1999; 25 years ago",
+            "headquarters": "Cambridge Biomedical Campus, Cambridge, England",
+            "ceo": "Sir Pascal Soriot",
+            "revenue": "US$45.811 billion",
+            "operatingIncome": "US$8.193  billion",
+            "netIncome": "US$5.961 billion",
+            "totalAssets": "US$101.119 billion",
+            "totalEquity": "US$39.166 billion",
+            "numberOfEmployees": "89,900",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "AstraZeneca From Wikipedia, the free encyclopedia",
+                    "link" :"https://en.wikipedia.org/wiki/AstraZeneca"
+                }
+            ]
+        }
     }
 ]

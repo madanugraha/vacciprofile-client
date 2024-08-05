@@ -19,7 +19,7 @@ import React from 'react';
  *        name: 'COVID-19', 
  *        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'
  *    }} 
- *    italizeScientificNames={(text) => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} 
+ *    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} 
  * />
  */
 

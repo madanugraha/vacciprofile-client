@@ -138,12 +138,174 @@ const App = () => {
     /**
      * Retrieves vaccines by manufacturer.
      *
+     * @param {Object} [manufacturer=selectedManufacturer] - The manufacturer object to filter vaccines by. Defaults to `selectedManufacturer` if not provided.
      * @returns {Array} List of vaccines from the selected manufacturer.
      */
 
-    const getVaccinesByManufacturer = () => {
-        return vaccines.filter(vaccine => vaccine.manufacturerId === selectedManufacturer.manufacturerId);
-    }
+    const getVaccinesByManufacturer = (manufacturer = selectedManufacturer) => {
+        return vaccines.filter(vaccine => vaccine.manufacturerId === manufacturer.manufacturerId);
+    };
+
+    /**
+     * Retrieves vaccines by pathogen.
+     *
+     * @param {Object} pathogen - The pathogen object.
+     * @returns {Array} List of vaccines associated with the given pathogen.
+     */
+    
+    const getVaccineByPathogen = pathogen => {
+        return vaccines.filter(vaccine => vaccine.pathogenId === pathogen.pathogenId);
+    };
+
+    /**
+     * Retrieves manufacturers by vaccine.
+     *
+     * @param {Object} vaccine - The vaccine object.
+     * @returns {Array} List of manufacturers associated with the given vaccine.
+     */
+
+    const getManufacturerByVaccine = vaccine => {
+        return manufacturers.filter(manufacturer => manufacturer.manufacturerId === vaccine.manufacturerId);
+    };
+
+    /**
+     * Filters the list of manufacturers based on the search keyword.
+     * 
+     * This function filters manufacturers and also checks related vaccines and pathogens for matches with the search keyword.
+     * 
+     * @function
+     * @name filterManufacturers
+     * 
+     * @param {string} keywordLower - The lowercased search keyword used for filtering.
+     * @returns {Array} - An array of filtered manufacturers.
+     */
+    const filterManufacturersBySearch = (keywordLower) => {
+        return manufacturersList.filter(manufacturer => {
+            const matchesKeyword = manufacturer.name.toLowerCase().includes(keywordLower) ||
+                                    manufacturer.description.toLowerCase().includes(keywordLower);
+            if (matchesKeyword) return true;
+            
+            const vaccines = getVaccinesByManufacturer(manufacturer) || [];
+            return vaccines.some(vaccine => {
+                const vaccineMatch = vaccine.name.toLowerCase().includes(keywordLower) ||
+                                    vaccine.description.toLowerCase().includes(keywordLower);
+                
+                if (vaccineMatch) return true;
+                
+                const pathogens = getPathogenByVaccine(vaccine) || [];
+                return Array.isArray(pathogens) && pathogens.some(pathogen =>
+                    pathogen.name.toLowerCase().includes(keywordLower) ||
+                    pathogen.description.toLowerCase().includes(keywordLower)
+                );
+            });
+        });
+    };
+
+    /**
+     * Filters the list of vaccines based on the search keyword.
+     * 
+     * This function filters vaccines and also checks related pathogens and manufacturers for matches with the search keyword.
+     * 
+     * @function
+     * @name filterVaccines
+     * 
+     * @param {string} keywordLower - The lowercased search keyword used for filtering.
+     * @returns {Array} - An array of filtered vaccines.
+     */
+    const filterVaccinesBySearch = (keywordLower) => {
+        return vaccinesList.filter(vaccine => {
+            const vaccineMatch = vaccine.name.toLowerCase().includes(keywordLower) ||
+                                 vaccine.description.toLowerCase().includes(keywordLower);
+            
+            if (vaccineMatch) return true;
+            
+            const pathogens = getPathogenByVaccine(vaccine) || [];
+            const pathogenMatch = Array.isArray(pathogens) && pathogens.some(pathogen =>
+                pathogen.name.toLowerCase().includes(keywordLower) ||
+                pathogen.description.toLowerCase().includes(keywordLower)
+            );
+            
+            const manufacturersMatch = getManufacturerByVaccine(vaccine).some(manufacturer =>
+                manufacturer.name.toLowerCase().includes(keywordLower) ||
+                manufacturer.description.toLowerCase().includes(keywordLower)
+            );
+    
+            return pathogenMatch || manufacturersMatch;
+        });
+    };
+
+    /**
+     * Filters the list of pathogens based on the search keyword.
+     * 
+     * This function filters pathogens and also checks related vaccines and manufacturers for matches with the search keyword.
+     * 
+     * @function
+     * @name filterPathogens
+     * 
+     * @param {string} keywordLower - The lowercased search keyword used for filtering.
+     * @returns {Array} - An array of filtered pathogens.
+     */
+    const filterPathogensBySearch = (keywordLower) => {
+        return pathogensList.filter(pathogen => {
+            const pathogenMatch = pathogen.name.toLowerCase().includes(keywordLower) ||
+                                pathogen.description.toLowerCase().includes(keywordLower);
+            
+            if (pathogenMatch) return true;
+            
+            const vaccines = getVaccineByPathogen(pathogen) || [];
+            return Array.isArray(vaccines) && vaccines.some(vaccine => {
+                const vaccineMatch = vaccine.name.toLowerCase().includes(keywordLower) ||
+                                    vaccine.description.toLowerCase().includes(keywordLower);
+                
+                if (vaccineMatch) return true;
+                
+                return getManufacturerByVaccine(vaccine).some(manufacturer =>
+                    manufacturer.name.toLowerCase().includes(keywordLower) ||
+                    manufacturer.description.toLowerCase().includes(keywordLower)
+                );
+            });
+        });
+    };
+
+    /**
+     * Filters the sidebar list based on the currently selected tab and search keyword.
+     * 
+     * This function determines which filtering function to use based on the active tab and updates the `sidebarList` state
+     * with the filtered list of items that match the search criteria.
+     * 
+     * @function
+     * @name filterLists
+     * 
+     * @returns {void} This function does not return a value. It updates the `sidebarList` state directly.
+     */
+    const filterListsBySearch = () => {
+        let filteredSidebarList = [];
+        
+        if (activeFilters.searchKeyword) {
+            const keywordLower = activeFilters.searchKeyword.toLowerCase();
+            
+            if (activeTab === 'Manufacturer') {
+                console.log('Manufacturer');
+                filteredSidebarList = filterManufacturersBySearch(keywordLower);
+                console.log("filteredSidebarList: "+filteredSidebarList)
+            } else if (activeTab === 'Product') {
+                console.log('Vaccine');
+                filteredSidebarList = filterVaccinesBySearch(keywordLower);
+            } else if (activeTab === 'Pathogen') {
+                console.log('Pathogen');
+                filteredSidebarList = filterPathogensBySearch(keywordLower);
+            }
+        }
+
+        // Apply additional filters if needed
+        // if (activeFilters.firstAlphabet) {
+        //     filteredSidebarList = filteredSidebarList.filter(item =>
+        //         item.name.startsWith(activeFilters.firstAlphabet)
+        //     );
+        // }
+
+        setSidebarList(filteredSidebarList);
+    };
 
     /**
      * Converts camel case strings to readable format.
@@ -189,35 +351,15 @@ const App = () => {
     useEffect(()=>{
         if (activeTab === "Pathogen") {
             setSidebarList(pathogensList || []);
-        } else if (activeTab === "Product") {
+        } else if (activeTab==="Product") {
             setSidebarList(vaccinesList || []);
-        } else if (activeTab === "Manufacturer")  {
+        } else if (activeTab==="Manufacturer")  {
             setSidebarList(manufacturersList || []);
         }
-        console.log("sidebarList: ", sidebarList)
-    },[activeTab, pathogensList, vaccinesList, manufacturersList, sidebarList])
+    },[activeTab, pathogensList, vaccinesList, manufacturersList])
 
     useEffect(() => {
-        const filterManufacturersList = () => {
-            let filteredManufacturersList;
-            if (activeFilters.searchKeyword) {
-                filteredManufacturersList = manufacturers.filter(manufacturer =>
-                    manufacturer.name.toLowerCase().includes(activeFilters.searchKeyword.toLowerCase()) ||
-                    manufacturer.description.toLowerCase().includes(activeFilters.searchKeyword.toLowerCase())
-                );
-            } else {
-                filteredManufacturersList = manufacturers;
-            }
-
-            if (activeFilters.firstAlphabet) {
-                filteredManufacturersList = filteredManufacturersList.filter(manufacturer =>
-                    manufacturer.name.startsWith(activeFilters.firstAlphabet)
-                );
-            }
-            setManufacturersList(filteredManufacturersList);
-        };
-
-        filterManufacturersList();
+        filterListsBySearch();
     }, [activeFilters]);
     
     return (
