@@ -59,9 +59,19 @@ const Sidebar = ({
             </span>
         </div>
         <div className='Manufacturer-list mt-3'>
-            {manufacturersList.map((manufacturer, i) => (
-                <div key={i} className={`sidebar-item bg-light text-dark rounded-3 py-1 mt-2 ${selectedManufacturer === manufacturer ? 'active' : 'inactive'}`} onClick={() =>handleChangeManufacturer(manufacturer)}>{manufacturer.name}</div>
-            ))}
+        {manufacturersList
+            .slice() 
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((manufacturer, i) => (
+                <div 
+                    key={i} 
+                    className={`sidebar-item bg-light text-dark rounded-3 py-1 mt-1 ${selectedManufacturer === manufacturer ? 'active' : 'inactive'}`} 
+                    onClick={() => handleChangeManufacturer(manufacturer)}
+                >
+            {manufacturer.name}
+        </div>
+    ))
+}
         </div>
     </div>
 }
