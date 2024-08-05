@@ -19,7 +19,8 @@ import scientificNames from './assets/scientificNames';
  *
  * @description 
  * This is the main component of the vaccine profile application. It manages the state of selected items, 
- * handles user interactions, and renders the Header, Sidebar, InformationView, and AlphabetsNavigation components.
+ * handles user interactions, and renders the Header, Sidebar, InformationView, and other components. It 
+ * is the entry point into the application.
  *
  * @returns {JSX.Element} The main application component containing all sub-components and logic.
  *
@@ -179,23 +180,23 @@ const App = () => {
      * @param {string} keywordLower - The lowercased search keyword used for filtering.
      * @returns {Array} - An array of filtered manufacturers.
      */
-    const filterManufacturersBySearch = (keywordLower) => {
+    const filterManufacturersBySearch = (keyword) => {
         return manufacturersList.filter(manufacturer => {
-            const matchesKeyword = manufacturer.name.toLowerCase().includes(keywordLower) ||
-                                    manufacturer.description.toLowerCase().includes(keywordLower);
+            const matchesKeyword = manufacturer.name.toLowerCase().includes(keyword) ||
+                                    manufacturer.description.toLowerCase().includes(keyword);
             if (matchesKeyword) return true;
             
             const vaccines = getVaccinesByManufacturer(manufacturer) || [];
             return vaccines.some(vaccine => {
-                const vaccineMatch = vaccine.name.toLowerCase().includes(keywordLower) ||
-                                    vaccine.description.toLowerCase().includes(keywordLower);
+                const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
+                                    vaccine.description.toLowerCase().includes(keyword);
                 
                 if (vaccineMatch) return true;
                 
                 const pathogens = getPathogenByVaccine(vaccine) || [];
                 return Array.isArray(pathogens) && pathogens.some(pathogen =>
-                    pathogen.name.toLowerCase().includes(keywordLower) ||
-                    pathogen.description.toLowerCase().includes(keywordLower)
+                    pathogen.name.toLowerCase().includes(keyword) ||
+                    pathogen.description.toLowerCase().includes(keyword)
                 );
             });
         });
@@ -209,27 +210,23 @@ const App = () => {
      * @function
      * @name filterVaccines
      * 
-     * @param {string} keywordLower - The lowercased search keyword used for filtering.
+     * @param {string} keyword - The lowercased search keyword used for filtering.
      * @returns {Array} - An array of filtered vaccines.
      */
-    const filterVaccinesBySearch = (keywordLower) => {
+    const filterVaccinesBySearch = (keyword) => {
         return vaccinesList.filter(vaccine => {
-            const vaccineMatch = vaccine.name.toLowerCase().includes(keywordLower) ||
-                                 vaccine.description.toLowerCase().includes(keywordLower);
-            
+            const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
+                                 vaccine.description.toLowerCase().includes(keyword);
             if (vaccineMatch) return true;
-            
             const pathogens = getPathogenByVaccine(vaccine) || [];
             const pathogenMatch = Array.isArray(pathogens) && pathogens.some(pathogen =>
-                pathogen.name.toLowerCase().includes(keywordLower) ||
-                pathogen.description.toLowerCase().includes(keywordLower)
+                pathogen.name.toLowerCase().includes(keyword) ||
+                pathogen.description.toLowerCase().includes(keyword)
             );
-            
             const manufacturersMatch = getManufacturerByVaccine(vaccine).some(manufacturer =>
-                manufacturer.name.toLowerCase().includes(keywordLower) ||
-                manufacturer.description.toLowerCase().includes(keywordLower)
+                manufacturer.name.toLowerCase().includes(keyword) ||
+                manufacturer.description.toLowerCase().includes(keyword)
             );
-    
             return pathogenMatch || manufacturersMatch;
         });
     };
@@ -242,26 +239,26 @@ const App = () => {
      * @function
      * @name filterPathogens
      * 
-     * @param {string} keywordLower - The lowercased search keyword used for filtering.
+     * @param {string} keyword - The lowercased search keyword used for filtering.
      * @returns {Array} - An array of filtered pathogens.
      */
-    const filterPathogensBySearch = (keywordLower) => {
+    const filterPathogensBySearch = (keyword) => {
         return pathogensList.filter(pathogen => {
-            const pathogenMatch = pathogen.name.toLowerCase().includes(keywordLower) ||
-                                pathogen.description.toLowerCase().includes(keywordLower);
+            const pathogenMatch = pathogen.name.toLowerCase().includes(keyword) ||
+                                pathogen.description.toLowerCase().includes(keyword);
             
             if (pathogenMatch) return true;
             
             const vaccines = getVaccineByPathogen(pathogen) || [];
             return Array.isArray(vaccines) && vaccines.some(vaccine => {
-                const vaccineMatch = vaccine.name.toLowerCase().includes(keywordLower) ||
-                                    vaccine.description.toLowerCase().includes(keywordLower);
+                const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
+                                    vaccine.description.toLowerCase().includes(keyword);
                 
                 if (vaccineMatch) return true;
                 
                 return getManufacturerByVaccine(vaccine).some(manufacturer =>
-                    manufacturer.name.toLowerCase().includes(keywordLower) ||
-                    manufacturer.description.toLowerCase().includes(keywordLower)
+                    manufacturer.name.toLowerCase().includes(keyword) ||
+                    manufacturer.description.toLowerCase().includes(keyword)
                 );
             });
         });
@@ -282,29 +279,31 @@ const App = () => {
         let filteredSidebarList = [];
         
         if (activeFilters.searchKeyword) {
-            const keywordLower = activeFilters.searchKeyword.toLowerCase();
+            const keywordLower = activeFilters.searchKeyword.toLowerCase()
             
             if (activeTab === 'Manufacturer') {
-                console.log('Manufacturer');
                 filteredSidebarList = filterManufacturersBySearch(keywordLower);
-                console.log("filteredSidebarList: "+filteredSidebarList)
             } else if (activeTab === 'Product') {
-                console.log('Vaccine');
                 filteredSidebarList = filterVaccinesBySearch(keywordLower);
             } else if (activeTab === 'Pathogen') {
-                console.log('Pathogen');
                 filteredSidebarList = filterPathogensBySearch(keywordLower);
+            }
+            setSidebarList(filteredSidebarList);
+        } else {
+            if (activeTab === 'Manufacturer') {
+                setSidebarList(manufacturersList);
+            } else if (activeTab === 'Product') {
+                setSidebarList(vaccinesList);
+            } else if (activeTab === 'Pathogen') {
+                setSidebarList(pathogensList);
             }
         }
 
-        // Apply additional filters if needed
         // if (activeFilters.firstAlphabet) {
         //     filteredSidebarList = filteredSidebarList.filter(item =>
         //         item.name.startsWith(activeFilters.firstAlphabet)
         //     );
         // }
-
-        setSidebarList(filteredSidebarList);
     };
 
     /**

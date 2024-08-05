@@ -78,8 +78,8 @@ const VaccineListTable = ({
                             </td>
                             <td className='accreditation-cell'>
                                 {vaccine.accreditation.map((accreditation, index)=>
-                                <span>
-                                    <span key={index} 
+                                <span key={index}>
+                                    <span 
                                         className={`${activeTab==="Accreditation" && selectedAccreditation === accreditation ? `selected` : `selectable`}`} 
                                         onClick={()=>handleSelectAccreditation(accreditation)}>
                                         {accreditation}

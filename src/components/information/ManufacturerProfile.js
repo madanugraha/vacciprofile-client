@@ -61,7 +61,7 @@ const ManufacturerProfile = ({
                                 return attributeKey !== "sources" && attributeKey !== "lastUpdated" ? <tr key={index}>
                                     <td className='text-center text-capitalize' style={{ width: '50%' }}>{convertCamelCaseToReadable(attributeKey)}</td>
                                     <td className='text-center'>{attributeValue}</td>
-                                </tr> : <></> ;
+                                </tr> : null ;
                             })}
                         </tbody>
                     </table>
@@ -69,7 +69,7 @@ const ManufacturerProfile = ({
                 <span className='sources-list'>Source(s): {selectedManufacturer.details.sources.map((source, index)=><span key={index}>
                     <a className='manufacturer-table-source' href={`${source.link}`} target="_blank" rel="noopener noreferrer">{source.title}</a>
                     <span> ({source.lastUpdated}){selectedManufacturer.details.sources.length>1 && index<selectedManufacturer.details.sources.length-1 ? ', ' : ''}</span></span>)}
-                </span></> : <></>}
+                </span></> : null}
             </div>
         </div>
       </div>
