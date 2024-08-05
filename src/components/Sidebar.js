@@ -6,7 +6,7 @@ import React from 'react';
  * @component
  * @namespace Sidebar
  * @param {Object} props - The component accepts various props to handle sidebar functionality.
- * @param {Function} props.setDetailsType - Function to set the type of details to be displayed ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {Function} props.setActiveTab - Function to set the type of details to be displayed ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
  * @param {Array} props.manufacturersList - List of manufacturers available for selection.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.
@@ -18,7 +18,7 @@ import React from 'react';
  * @example
  * // Example usage of Sidebar component
  * <Sidebar 
- *    setDetailsType={(type) => console.log(type)}
+ *    setActiveTab={(type) => console.log(type)}
  *    manufacturersList={[{ name: 'ManufacturerA' }, { name: 'ManufacturerB' }]}
  *    selectedManufacturer={{ name: 'ManufacturerA' }}
  *    setSelectedManufacturer={(manufacturer) => console.log(manufacturer)}
@@ -30,21 +30,21 @@ import React from 'react';
 
 const Sidebar = ({ 
     activeTab,
+    setActiveTab,
     sidebarList = [],
-    setDetailsType,
     selectedManufacturer,
     setSelectedManufacturer, 
     handleSelectManufacturer, 
-    handleSearch,
     setChangedFrom
 }) => {
     
     const handleChangeManufacturer = manufacturer => {
+        // Slide Left Animation
         if(manufacturer!==selectedManufacturer) {
             setChangedFrom('Sidebar');
             setTimeout(() => {
                 handleSelectManufacturer(manufacturer);
-                setDetailsType("Manufacturer");
+                setActiveTab("Manufacturer");
                 setChangedFrom('');
             }, 0);
         } else {
@@ -53,13 +53,7 @@ const Sidebar = ({
     }
 
     return <div className='sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-3 slide-right'>
-        <div className='search-container'>
-            <span className="position-relative">
-                <input type="text" className="text-center bg-info rounded-2 border-dark border-0 w-100" id="search" name="search" placeholder="Search" onChange={e => handleSearch(e.target.value)}/>
-                <i className="fa fa-search position-absolute top-50 translate-middle-y end-0 me-2 text-muted" aria-hidden="true"></i>
-            </span>
-        </div>
-        <div className='Manufacturer-list mt-3'>
+        <div className='Manufacturer-list 2'>
         {sidebarList
             .slice() 
             .sort((a, b) => a.name.localeCompare(b.name))

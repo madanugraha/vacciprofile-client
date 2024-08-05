@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import VaccineListTable from './information/VaccineListTable';
 import PathogenInformation from './information/PathogenModal';
 import VaccineInformation from './information/VaccineInformation';
-import ManufacturerInformation from './information/ManufacturerInformation';
+import ManufacturerProfile from './information/ManufacturerProfile';
 import AccreditationInformation from './information/AccreditationInformation';
 
 /**
@@ -19,7 +19,7 @@ import AccreditationInformation from './information/AccreditationInformation';
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedAccreditation - The currently selected accreditation.
- * @param {string} props.detailsType - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {string} props.activeTab - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
  * @param {Function} props.handleSelectPathogen - Function to handle the selection of a pathogen.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
  * @param {Function} props.handleSelectAccreditation - Function to handle the selection of an accreditation.
@@ -41,7 +41,7 @@ import AccreditationInformation from './information/AccreditationInformation';
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
  *    selectedAccreditation='AccreditationZ'
- *    detailsType='Pathogen'
+ *    activeTab='Pathogen'
  *    handleSelectPathogen={(pathogen) => console.log(pathogen)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
  *    handleSelectAccreditation={(accreditation) => console.log(accreditation)}
@@ -63,7 +63,6 @@ const InformationView = ({
     selectedVaccine, 
     selectedManufacturer,
     selectedAccreditation, 
-    detailsType, 
     handleSelectPathogen, 
     handleSelectVaccine, 
     handleSelectAccreditation, 
@@ -109,29 +108,29 @@ const InformationView = ({
             </div> : <>
                 <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data</h1>
                 <div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
-                    {detailsType==="Pathogen" 
+                    {activeTab==="Pathogen" 
                     ? <PathogenInformation 
                         selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
-                    /> : detailsType==="Vaccine" 
+                    /> : activeTab==="Vaccine" 
                     ? <VaccineInformation 
                         selectedVaccine={selectedVaccine}
                         italizeScientificNames={italizeScientificNames}
-                    /> : detailsType==="Manufacturer" 
-                    ? <ManufacturerInformation
+                    /> : activeTab==="Manufacturer" 
+                    ? <ManufacturerProfile
                         selectedManufacturer={selectedManufacturer}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         convertCamelCaseToReadable={convertCamelCaseToReadable}
-                    /> : detailsType==="Accreditation" 
+                    /> : activeTab==="Accreditation" 
                     ? <AccreditationInformation
                         getVaccinesByAccreditation={getVaccinesByAccreditation}
                         handleSelectVaccine={handleSelectVaccine}
                         selectedAccreditation={selectedAccreditation}
                     /> 
                     : null}
-                    {getVaccinesByManufacturer().length>0 
+                    {activeTab==="Manufacturer" && getVaccinesByManufacturer().length>0 
                     ? <VaccineListTable 
-                        detailsType={detailsType}
+                        activeTab={activeTab}
                         selectedPathogen={selectedPathogen}
                         selectedVaccine={selectedVaccine}
                         selectedAccreditation={selectedAccreditation}

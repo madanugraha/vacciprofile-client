@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * ManufacturerInformation Component
+ * ManufacturerProfile Component
  *
  * @component
  * @namespace Manufacturer
@@ -15,8 +15,8 @@ import React from 'react';
  * @returns {JSX.Element} The Manufacturer Information component.
  *
  * @example
- * // Render the ManufacturerInformation component with dummy data and function
- * <ManufacturerInformation 
+ * // Render the ManufacturerProfile component with dummy data and function
+ * <ManufacturerProfile 
  *   selectedManufacturer={{
  *     name: 'Manufacturer X',
  *     description: 'A leading manufacturer in the industry.',
@@ -33,7 +33,7 @@ import React from 'react';
  * />
  */
 
-const ManufacturerInformation = ({ 
+const ManufacturerProfile = ({ 
     selectedManufacturer, 
     convertCamelCaseToReadable
 }) => {
@@ -77,4 +77,4 @@ const ManufacturerInformation = ({
   </div>
 }
 
-export default ManufacturerInformation;
+export default ManufacturerProfile;

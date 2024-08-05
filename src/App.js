@@ -38,7 +38,6 @@ const App = () => {
     const [ selectedVaccine, setSelectedVaccine ] = useState({});
     const [ selectedManufacturer, setSelectedManufacturer ] = useState({});
     const [ selectedAccreditation, setSelectedAccreditation ] = useState("")
-    const [ detailsType, setDetailsType ] = useState("");
     const [ sidebarList, setSidebarList ] = useState();
     const [ pathogensList, setPathogensList ] = useState();
     const [ vaccinesList, setVaccinesList ] = useState();
@@ -77,7 +76,7 @@ const App = () => {
         const vaccine = vaccines.find(vaccine => vaccine.vaccineId === pathogen.vaccines[0].vaccineId);
         setSelectedVaccine(vaccine);
         setSelectedPathogen(pathogen);
-        setDetailsType("Pathogen");
+        setActiveTab("Pathogen");
         setActiveFilters({...activeFilters, firstAlphabet: ''});
     };
 
@@ -90,7 +89,7 @@ const App = () => {
     const handleSelectVaccine = vx => {
         const vaccine = vaccines.find(vaccine => vaccine.name === vx.name);
         setSelectedVaccine(vaccine);
-        setDetailsType("Vaccine");
+        setActiveTab("Vaccine");
     };
 
     /**
@@ -101,7 +100,7 @@ const App = () => {
 
     const handleSelectManufacturer = manufacturer => {
         setSelectedManufacturer(manufacturer);
-        setDetailsType("Manufacturer");
+        setActiveTab("Manufacturer");
     };
 
     /**
@@ -112,7 +111,7 @@ const App = () => {
 
     const handleSelectAccreditation = accreditation => {
         setSelectedAccreditation(accreditation);
-        setDetailsType("Accreditation");
+        setActiveTab("Accreditation");
     }
 
     /**
@@ -196,7 +195,7 @@ const App = () => {
             setSidebarList(manufacturersList || []);
         }
         console.log("sidebarList: ", sidebarList)
-    },[activeTab, pathogensList, vaccinesList, manufacturersList])
+    },[activeTab, pathogensList, vaccinesList, manufacturersList, sidebarList])
 
     useEffect(() => {
         const filterManufacturersList = () => {
@@ -228,6 +227,7 @@ const App = () => {
                 <TopBar
                     activeTab={activeTab}
                     handleTabChange={handleTabChange}
+                    handleSearch={handleSearch}
                 />
                 <div className='row py-4'>
                     <Sidebar
@@ -236,10 +236,9 @@ const App = () => {
                         selectedManufacturer={selectedManufacturer}
                         setSelectedManufacturer={setSelectedManufacturer}
                         handleSelectManufacturer={handleSelectManufacturer}
-                        handleSearch={handleSearch}
                         setChangedFrom={setChangedFrom}
                         changedFrom={changedFrom}
-                        setDetailsType={setDetailsType}
+                        setActiveTab={setActiveTab}
                     />
                     <InformationView
                         activeTab={activeTab}
@@ -250,7 +249,6 @@ const App = () => {
                         selectedVaccine={selectedVaccine}
                         selectedManufacturer={selectedManufacturer}
                         selectedAccreditation={selectedAccreditation}
-                        detailsType={detailsType}
                         handleSelectPathogen={handleSelectPathogen}
                         handleSelectVaccine={handleSelectVaccine}
                         handleSelectManufacturer={handleSelectManufacturer}

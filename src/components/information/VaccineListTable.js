@@ -5,8 +5,8 @@ import React from 'react';
  *
  * @component
  * @namespace VaccineListTable
- * @param {Object} props - The component accepts detailsType, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props.
- * @param {string} props.detailsType - The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Accreditation".
+ * @param {Object} props - The component accepts activeTab, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props.
+ * @param {string} props.activeTab - The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Accreditation".
  * @param {Object} props.selectedPathogen - The currently selected pathogen object.
  * @param {Object} props.selectedVaccine - The currently selected vaccine object.
  * @param {string} props.selectedAccreditation - The currently selected accreditation.
@@ -20,7 +20,7 @@ import React from 'react';
  * @example
  * // Render the VaccineListTable component with dummy data and functions
  * <VaccineListTable 
- *   detailsType="Vaccine"
+ *   activeTab="Vaccine"
  *   selectedPathogen={{ name: 'Pathogen X' }}
  *   selectedVaccine={{ name: 'Vaccine Y' }}
  *   selectedAccreditation="Accreditation Z"
@@ -33,7 +33,7 @@ import React from 'react';
  */
 
 const VaccineListTable = ({
-    detailsType, 
+    activeTab, 
     selectedPathogen, 
     selectedVaccine, 
     selectedAccreditation,
@@ -65,14 +65,14 @@ const VaccineListTable = ({
                         {getVaccinesByManufacturer().map((vaccine, key)=><tr key={key}>
                             <td className='vaccine-cell'>
                                 <span
-                                    className={`${detailsType==="Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`} 
+                                    className={`${activeTab==="Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`} 
                                     onClick={()=>handleSelectVaccine(vaccine)}>
                                     {vaccine.name}
                                 </span>
                             </td>
                             <td className='pathogen-cell'>
                                 <span 
-                                    className={`${detailsType==="Pathogen" && selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
+                                    className={`${activeTab==="Pathogen" && selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
                                     onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{getPathogenByVaccine(vaccine).name}
                                 </span>
                             </td>
@@ -80,7 +80,7 @@ const VaccineListTable = ({
                                 {vaccine.accreditation.map((accreditation, index)=>
                                 <span>
                                     <span key={index} 
-                                        className={`${detailsType==="Accreditation" && selectedAccreditation === accreditation ? `selected` : `selectable`}`} 
+                                        className={`${activeTab==="Accreditation" && selectedAccreditation === accreditation ? `selected` : `selectable`}`} 
                                         onClick={()=>handleSelectAccreditation(accreditation)}>
                                         {accreditation}
                                     </span>{index<vaccine.accreditation.length-1 ? <span className='text-decoration-none'>, </span> : ``}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 /**
  * TopBar Component
@@ -14,21 +14,30 @@ import React, { useState } from "react";
 
 const TopBar = ({
     activeTab,
-    handleTabChange
+    handleTabChange,
+    handleSearch
 }) => {
 
     return <div className="topbar row pt-3 slide-down">
-        <ul className="nav nav-tabs">
-            <li className={`nav-itemn nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
-                Manufacturers
-            </li>
-            <li className={`nav-item nav-link ${activeTab === 'Product' ? 'active' : ''}`} onClick={() => handleTabChange('Product')}>
-                Products
-            </li>
-            <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
-                Pathogen
-            </li>
-        </ul>
+        <div className="position-relative">
+            <ul className="nav nav-tabs">
+                <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
+                    Manufacturers
+                </li>
+                <li className={`nav-item nav-link ${activeTab === 'Product' ? 'active' : ''}`} onClick={() => handleTabChange('Product')}>
+                    Products
+                </li>
+                <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
+                    Pathogen
+                </li>
+            </ul>
+            <div className='search-container mb-3'>
+                <span className="position-relative">
+                    <input type="text" className="text-center bg-light rounded-2 border-dark border-0 w-100" id="search" name="search" placeholder="Search" onChange={e => handleSearch(e.target.value)}/>
+                    <i className="fa fa-search position-absolute top-50 translate-middle-y end-0 me-2 text-muted" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
     </div>
 }
 export default TopBar;
