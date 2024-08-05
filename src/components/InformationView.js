@@ -107,18 +107,6 @@ const InformationView = ({
                 <span className='select-prompt position-absolute'>Select a Manufacturer</span>
             </div> : <>
                 <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data</h1>
-                {getVaccinesByManufacturer().length>0 
-                ? <VaccineListTable 
-                    detailsType={detailsType}
-                    selectedPathogen={selectedPathogen}
-                    selectedVaccine={selectedVaccine}
-                    selectedAccreditation={selectedAccreditation}
-                    handleSelectVaccine={handleSelectVaccine}
-                    handleSelectPathogen={handleSelectPathogen} 
-                    handleSelectAccreditation={handleSelectAccreditation}
-                    getVaccinesByManufacturer={getVaccinesByManufacturer}
-                    getPathogenByVaccine={getPathogenByVaccine}
-                /> : ``}
                 <div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
                     {detailsType==="Pathogen" 
                     ? <PathogenInformation 
@@ -140,7 +128,19 @@ const InformationView = ({
                         selectedAccreditation={selectedAccreditation}
                     /> 
                     : <></>}
-                </div>
+                    {getVaccinesByManufacturer().length>0 
+                    ? <VaccineListTable 
+                        detailsType={detailsType}
+                        selectedPathogen={selectedPathogen}
+                        selectedVaccine={selectedVaccine}
+                        selectedAccreditation={selectedAccreditation}
+                        handleSelectVaccine={handleSelectVaccine}
+                        handleSelectPathogen={handleSelectPathogen} 
+                        handleSelectAccreditation={handleSelectAccreditation}
+                        getVaccinesByManufacturer={getVaccinesByManufacturer}
+                        getPathogenByVaccine={getPathogenByVaccine}
+                    /> : ``}
+                    </div>
             </>}
         </div>
     </div>

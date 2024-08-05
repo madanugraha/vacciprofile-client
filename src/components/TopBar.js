@@ -25,7 +25,7 @@ const TopBar = () => {
             <li className="nav-item">
                 <a
                 className={`nav-link ${activeTab === 'Manufacturers' ? 'active' : ''}`}
-                href="#"
+                href="https://example.com"
                 onClick={() => handleClick('Manufacturers')}
                 >
                 Manufacturers
@@ -34,7 +34,7 @@ const TopBar = () => {
             <li className="nav-item">
                 <a
                 className={`nav-link ${activeTab === 'Products' ? 'active' : ''}`}
-                href="#"
+                href="https://example.com"
                 onClick={() => handleClick('Products')}
                 >
                 Products
@@ -43,7 +43,7 @@ const TopBar = () => {
             <li className="nav-item">
                 <a
                 className={`nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`}
-                href="#"
+                href="https://example.com"
                 onClick={() => handleClick('Pathogen')}
                 >
                 Pathogen

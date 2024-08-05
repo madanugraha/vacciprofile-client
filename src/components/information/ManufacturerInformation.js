@@ -37,31 +37,44 @@ const ManufacturerInformation = ({
     selectedManufacturer, 
     convertCamelCaseToReadable
 }) => {
-    return <div className=''>
-    <h4 className='report-heading'>{selectedManufacturer.name}</h4> 
-    <p>{selectedManufacturer.description}</p>
-    {selectedManufacturer.details ? <><div className='table-responsive'>
-        <table className='table table-light w-100 m-0'>
-            <thead>
-                <tr>
-                    <th className='text-center' colSpan={2}>Information</th>
-                </tr>
-            </thead>
-            <tbody>
-                {Object.entries(selectedManufacturer.details).map(([attributeKey, attributeValue], index) => {
-                    return attributeKey !== "sources" && attributeKey !== "lastUpdated" ? <tr key={index}>
-                        <td className='text-center text-capitalize' style={{ width: '50%' }}>{convertCamelCaseToReadable(attributeKey)}</td>
-                        <td className='text-center'>{attributeValue}</td>
-                    </tr> : <></> ;
-                })}
-            </tbody>
-        </table>
+    return <div className="accordion" id="accordianManufacturerInfo">
+    <div className="accordion-item">
+      <h2 className="accordion-header" id="accordianManufacturer">
+        <button className="accordion-button collapsed bg-unselectable py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianManu" aria-expanded="false" aria-controls="collapseTwo">
+         Manufacturer Profile
+        </button>
+      </h2>
+      <div id="accordianManu" className="accordion-collapse collapse" aria-labelledby="accordianManufacturer" data-bs-parent="#accordianManufacturerInfo">
+        <div className="accordion-body">
+            <div className=''>
+                <h4 className='report-heading'>{selectedManufacturer.name}</h4> 
+                <p>{selectedManufacturer.description}</p>
+                {selectedManufacturer.details ? <><div className='table-responsive'>
+                    <table className='table table-light w-100 m-0'>
+                        <thead>
+                            <tr>
+                                <th className='text-center' colSpan={2}>Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {Object.entries(selectedManufacturer.details).map(([attributeKey, attributeValue], index) => {
+                                return attributeKey !== "sources" && attributeKey !== "lastUpdated" ? <tr key={index}>
+                                    <td className='text-center text-capitalize' style={{ width: '50%' }}>{convertCamelCaseToReadable(attributeKey)}</td>
+                                    <td className='text-center'>{attributeValue}</td>
+                                </tr> : <></> ;
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+                <span className='sources-list'>Source(s): {selectedManufacturer.details.sources.map((source, index)=><span key={index}>
+                    <a className='manufacturer-table-source' href={`${source.link}`} target="_blank" rel="noopener noreferrer">{source.title}</a>
+                    <span> ({source.lastUpdated}){selectedManufacturer.details.sources.length>1 && index<selectedManufacturer.details.sources.length-1 ? ', ' : ''}</span></span>)}
+                </span></> : <></>}
+            </div>
+        </div>
+      </div>
     </div>
-    <span className='sources-list'>Source(s): {selectedManufacturer.details.sources.map((source, index)=><span key={index}>
-        <a className='manufacturer-table-source' href={`${source.link}`} target="_blank" rel="noopener noreferrer">{source.title}</a>
-        <span> ({source.lastUpdated}){selectedManufacturer.details.sources.length>1 && index<selectedManufacturer.details.sources.length-1 ? ', ' : ''}</span></span>)}
-    </span></> : <></>}
-</div>
+  </div>
 }
 
 export default ManufacturerInformation;
