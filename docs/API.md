@@ -8,7 +8,7 @@
 <dd><p>Accreditation Component</p>
 </dd>
 <dt><a href="#Manufacturer">Manufacturer</a> ⇒ <code>JSX.Element</code></dt>
-<dd><p>ManufacturerInformation Component</p>
+<dd><p>ManufacturerProfile Component</p>
 </dd>
 <dt><a href="#Pathogen">Pathogen</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>PathogenInformation Component</p>
@@ -35,7 +35,25 @@
 <dl>
 <dt><a href="#App">App()</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>This is the main component of the vaccine profile application. It manages the state of selected items, 
-handles user interactions, and renders the Header, Sidebar, InformationView, and AlphabetsNavigation components.</p>
+handles user interactions, and renders the Header, Sidebar, InformationView, and other components. It 
+is the entry point into the application.</p>
+</dd>
+<dt><a href="#filterManufacturers">filterManufacturers(keywordLower)</a> ⇒ <code>Array</code></dt>
+<dd><p>Filters the list of manufacturers based on the search keyword.</p>
+<p>This function filters manufacturers and also checks related vaccines and pathogens for matches with the search keyword.</p>
+</dd>
+<dt><a href="#filterVaccines">filterVaccines(keyword)</a> ⇒ <code>Array</code></dt>
+<dd><p>Filters the list of vaccines based on the search keyword.</p>
+<p>This function filters vaccines and also checks related pathogens and manufacturers for matches with the search keyword.</p>
+</dd>
+<dt><a href="#filterPathogens">filterPathogens(keyword)</a> ⇒ <code>Array</code></dt>
+<dd><p>Filters the list of pathogens based on the search keyword.</p>
+<p>This function filters pathogens and also checks related vaccines and manufacturers for matches with the search keyword.</p>
+</dd>
+<dt><a href="#filterLists">filterLists()</a> ⇒ <code>void</code></dt>
+<dd><p>Filters the sidebar list based on the currently selected tab and search keyword.</p>
+<p>This function determines which filtering function to use based on the active tab and updates the <code>sidebarList</code> state
+with the filtered list of items that match the search criteria.</p>
 </dd>
 </dl>
 
@@ -74,7 +92,7 @@ Accreditation Component
 <a name="Manufacturer"></a>
 
 ## Manufacturer ⇒ <code>JSX.Element</code>
-ManufacturerInformation Component
+ManufacturerProfile Component
 
 **Kind**: global namespace  
 **Returns**: <code>JSX.Element</code> - The Manufacturer Information component.  
@@ -92,7 +110,7 @@ ManufacturerInformation Component
 
 **Example**  
 ```js
-// Render the ManufacturerInformation component with dummy data and function<ManufacturerInformation   selectedManufacturer={{    name: 'Manufacturer X',    description: 'A leading manufacturer in the industry.',    information: {      type: 'Biotechnology',      country: 'USA',      sources: [        { title: 'Source 1', link: 'http://source1.com', lastUpdated: '2024-01-01' },        { title: 'Source 2', link: 'http://source2.com', lastUpdated: '2024-02-01' }      ]    }  }}  convertCamelCaseToReadable={key => key.replace(/([A-Z])/g, ' $1').toLowerCase()}/>
+// Render the ManufacturerProfile component with dummy data and function<ManufacturerProfile   selectedManufacturer={{    name: 'Manufacturer X',    description: 'A leading manufacturer in the industry.',    information: {      type: 'Biotechnology',      country: 'USA',      sources: [        { title: 'Source 1', link: 'http://source1.com', lastUpdated: '2024-01-01' },        { title: 'Source 2', link: 'http://source2.com', lastUpdated: '2024-02-01' }      ]    }  }}  convertCamelCaseToReadable={key => key.replace(/([A-Z])/g, ' $1').toLowerCase()}/>
 ```
 <a name="Pathogen"></a>
 
@@ -113,7 +131,7 @@ PathogenInformation Component
 
 **Example**  
 ```js
-// Example usage of PathogenInformation component<PathogenInformation    selectedPathogen={{        name: 'COVID-19',        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'   }}    italizeScientificNames={(text) => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} />
+// Example usage of PathogenInformation component<PathogenInformation    selectedPathogen={{        name: 'COVID-19',        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'   }}    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} />
 ```
 <a name="Vaccine"></a>
 
@@ -149,8 +167,8 @@ VaccineListTable Component
 
 | Param | Type | Description |
 | --- | --- | --- |
-| props | <code>Object</code> | The component accepts detailsType, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props. |
-| props.detailsType | <code>string</code> | The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Accreditation". |
+| props | <code>Object</code> | The component accepts activeTab, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props. |
+| props.activeTab | <code>string</code> | The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Accreditation". |
 | props.selectedPathogen | <code>Object</code> | The currently selected pathogen object. |
 | props.selectedVaccine | <code>Object</code> | The currently selected vaccine object. |
 | props.selectedAccreditation | <code>string</code> | The currently selected accreditation. |
@@ -162,7 +180,7 @@ VaccineListTable Component
 
 **Example**  
 ```js
-// Render the VaccineListTable component with dummy data and functions<VaccineListTable   detailsType="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedAccreditation="Accreditation Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}/>
+// Render the VaccineListTable component with dummy data and functions<VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedAccreditation="Accreditation Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}/>
 ```
 <a name="Main"></a>
 
@@ -183,7 +201,7 @@ InformationView Component
 | props.selectedVaccine | <code>Object</code> | The currently selected vaccine. |
 | props.selectedManufacturer | <code>Object</code> | The currently selected manufacturer. |
 | props.selectedAccreditation | <code>Object</code> | The currently selected accreditation. |
-| props.detailsType | <code>string</code> | The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation'). |
+| props.activeTab | <code>string</code> | The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation'). |
 | props.handleSelectPathogen | <code>function</code> | Function to handle the selection of a pathogen. |
 | props.handleSelectVaccine | <code>function</code> | Function to handle the selection of a vaccine. |
 | props.handleSelectAccreditation | <code>function</code> | Function to handle the selection of an accreditation. |
@@ -196,7 +214,7 @@ InformationView Component
 
 **Example**  
 ```js
-// Example usage of InformationView component<InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   detailsType='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/>
+// Example usage of InformationView component<InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/>
 ```
 <a name="Sidebar"></a>
 
@@ -210,7 +228,7 @@ Sidebar Component
 | Param | Type | Description |
 | --- | --- | --- |
 | props | <code>Object</code> | The component accepts various props to handle sidebar functionality. |
-| props.setDetailsType | <code>function</code> | Function to set the type of details to be displayed ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation'). |
+| props.setActiveTab | <code>function</code> | Function to set the type of details to be displayed ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation'). |
 | props.manufacturersList | <code>Array</code> | List of manufacturers available for selection. |
 | props.selectedManufacturer | <code>Object</code> | The currently selected manufacturer. |
 | props.setSelectedManufacturer | <code>function</code> | Function to update the selected manufacturer. |
@@ -220,7 +238,7 @@ Sidebar Component
 
 **Example**  
 ```js
-// Example usage of Sidebar component<Sidebar    setDetailsType={(type) => console.log(type)}   manufacturersList={[{ name: 'ManufacturerA' }, { name: 'ManufacturerB' }]}   selectedManufacturer={{ name: 'ManufacturerA' }}   setSelectedManufacturer={(manufacturer) => console.log(manufacturer)}   handleSelectManufacturer={(manufacturer) => console.log(manufacturer)}   handleSearch={(query) => console.log(query)}   setChangedFrom={(source) => console.log(source)}/>
+// Example usage of Sidebar component<Sidebar    setActiveTab={(type) => console.log(type)}   manufacturersList={[{ name: 'ManufacturerA' }, { name: 'ManufacturerB' }]}   selectedManufacturer={{ name: 'ManufacturerA' }}   setSelectedManufacturer={(manufacturer) => console.log(manufacturer)}   handleSelectManufacturer={(manufacturer) => console.log(manufacturer)}   handleSearch={(query) => console.log(query)}   setChangedFrom={(source) => console.log(source)}/>
 ```
 <a name="TopBar"></a>
 
@@ -236,7 +254,7 @@ TopBar Component
 <a name="App"></a>
 
 ## App() ⇒ <code>JSX.Element</code>
-This is the main component of the vaccine profile application. It manages the state of selected items, handles user interactions, and renders the Header, Sidebar, InformationView, and AlphabetsNavigation components.
+This is the main component of the vaccine profile application. It manages the state of selected items, handles user interactions, and renders the Header, Sidebar, InformationView, and other components. It is the entry point into the application.
 
 **Kind**: global function  
 **Returns**: <code>JSX.Element</code> - The main application component containing all sub-components and logic.  
@@ -247,6 +265,7 @@ This is the main component of the vaccine profile application. It manages the st
 ```
 
 * [App()](#App) ⇒ <code>JSX.Element</code>
+    * [~handleTabChange(tab)](#App..handleTabChange)
     * [~handleSearch(keyword)](#App..handleSearch)
     * [~handleSelectPathogen(pathogen)](#App..handleSelectPathogen)
     * [~handleSelectVaccine(vx)](#App..handleSelectVaccine)
@@ -254,9 +273,22 @@ This is the main component of the vaccine profile application. It manages the st
     * [~handleSelectAccreditation(accreditation)](#App..handleSelectAccreditation)
     * [~getPathogenByVaccine(vaccine)](#App..getPathogenByVaccine) ⇒ <code>object</code>
     * [~getVaccinesByAccreditation()](#App..getVaccinesByAccreditation) ⇒ <code>Array</code>
-    * [~getVaccinesByManufacturer()](#App..getVaccinesByManufacturer) ⇒ <code>Array</code>
+    * [~getVaccinesByManufacturer([manufacturer])](#App..getVaccinesByManufacturer) ⇒ <code>Array</code>
+    * [~getVaccineByPathogen(pathogen)](#App..getVaccineByPathogen) ⇒ <code>Array</code>
+    * [~getManufacturerByVaccine(vaccine)](#App..getManufacturerByVaccine) ⇒ <code>Array</code>
     * [~convertCamelCaseToReadable(string)](#App..convertCamelCaseToReadable) ⇒ <code>string</code>
     * [~italizeScientificNames(text)](#App..italizeScientificNames) ⇒ <code>JSX.Element</code>
+
+<a name="App..handleTabChange"></a>
+
+### App~handleTabChange(tab)
+Handles the search input change.
+
+**Kind**: inner method of [<code>App</code>](#App)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| tab | <code>string</code> | The selected tab type can be "Manufacturers", "Pathogens" or "Products". |
 
 <a name="App..handleSearch"></a>
 
@@ -334,11 +366,40 @@ Retrieves vaccines by accreditation.
 **Returns**: <code>Array</code> - List of vaccines with the selected accreditation.  
 <a name="App..getVaccinesByManufacturer"></a>
 
-### App~getVaccinesByManufacturer() ⇒ <code>Array</code>
+### App~getVaccinesByManufacturer([manufacturer]) ⇒ <code>Array</code>
 Retrieves vaccines by manufacturer.
 
 **Kind**: inner method of [<code>App</code>](#App)  
 **Returns**: <code>Array</code> - List of vaccines from the selected manufacturer.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [manufacturer] | <code>Object</code> | <code>selectedManufacturer</code> | The manufacturer object to filter vaccines by. Defaults to `selectedManufacturer` if not provided. |
+
+<a name="App..getVaccineByPathogen"></a>
+
+### App~getVaccineByPathogen(pathogen) ⇒ <code>Array</code>
+Retrieves vaccines by pathogen.
+
+**Kind**: inner method of [<code>App</code>](#App)  
+**Returns**: <code>Array</code> - List of vaccines associated with the given pathogen.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| pathogen | <code>Object</code> | The pathogen object. |
+
+<a name="App..getManufacturerByVaccine"></a>
+
+### App~getManufacturerByVaccine(vaccine) ⇒ <code>Array</code>
+Retrieves manufacturers by vaccine.
+
+**Kind**: inner method of [<code>App</code>](#App)  
+**Returns**: <code>Array</code> - List of manufacturers associated with the given vaccine.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| vaccine | <code>Object</code> | The vaccine object. |
+
 <a name="App..convertCamelCaseToReadable"></a>
 
 ### App~convertCamelCaseToReadable(string) ⇒ <code>string</code>
@@ -363,3 +424,46 @@ Italizes scientific names in a given text.
 | --- | --- | --- |
 | text | <code>string</code> | The text containing scientific names. |
 
+<a name="filterManufacturers"></a>
+
+## filterManufacturers(keywordLower) ⇒ <code>Array</code>
+Filters the list of manufacturers based on the search keyword.This function filters manufacturers and also checks related vaccines and pathogens for matches with the search keyword.
+
+**Kind**: global function  
+**Returns**: <code>Array</code> - - An array of filtered manufacturers.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| keywordLower | <code>string</code> | The lowercased search keyword used for filtering. |
+
+<a name="filterVaccines"></a>
+
+## filterVaccines(keyword) ⇒ <code>Array</code>
+Filters the list of vaccines based on the search keyword.This function filters vaccines and also checks related pathogens and manufacturers for matches with the search keyword.
+
+**Kind**: global function  
+**Returns**: <code>Array</code> - - An array of filtered vaccines.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| keyword | <code>string</code> | The lowercased search keyword used for filtering. |
+
+<a name="filterPathogens"></a>
+
+## filterPathogens(keyword) ⇒ <code>Array</code>
+Filters the list of pathogens based on the search keyword.This function filters pathogens and also checks related vaccines and manufacturers for matches with the search keyword.
+
+**Kind**: global function  
+**Returns**: <code>Array</code> - - An array of filtered pathogens.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| keyword | <code>string</code> | The lowercased search keyword used for filtering. |
+
+<a name="filterLists"></a>
+
+## filterLists() ⇒ <code>void</code>
+Filters the sidebar list based on the currently selected tab and search keyword.This function determines which filtering function to use based on the active tab and updates the `sidebarList` statewith the filtered list of items that match the search criteria.
+
+**Kind**: global function  
+**Returns**: <code>void</code> - This function does not return a value. It updates the `sidebarList` state directly.  

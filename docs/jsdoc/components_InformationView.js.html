@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
     
 </nav>
 
@@ -48,9 +48,9 @@
             <pre class="prettyprint source linenums"><code>import React, { useState, useEffect, useRef } from 'react';
 
 import VaccineListTable from './information/VaccineListTable';
-import PathogenInformation from './information/PathogenInformation';
+import PathogenInformation from './information/PathogenModal';
 import VaccineInformation from './information/VaccineInformation';
-import ManufacturerInformation from './information/ManufacturerInformation';
+import ManufacturerProfile from './information/ManufacturerProfile';
 import AccreditationInformation from './information/AccreditationInformation';
 
 /**
@@ -66,7 +66,7 @@ import AccreditationInformation from './information/AccreditationInformation';
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedAccreditation - The currently selected accreditation.
- * @param {string} props.detailsType - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {string} props.activeTab - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
  * @param {Function} props.handleSelectPathogen - Function to handle the selection of a pathogen.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
  * @param {Function} props.handleSelectAccreditation - Function to handle the selection of an accreditation.
@@ -88,7 +88,7 @@ import AccreditationInformation from './information/AccreditationInformation';
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
  *    selectedAccreditation='AccreditationZ'
- *    detailsType='Pathogen'
+ *    activeTab='Pathogen'
  *    handleSelectPathogen={(pathogen) => console.log(pathogen)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
  *    handleSelectAccreditation={(accreditation) => console.log(accreditation)}
@@ -102,6 +102,7 @@ import AccreditationInformation from './information/AccreditationInformation';
  */
 
 const InformationView = ({
+    activeTab,
     activeFilters,
     setActiveFilters,
     manufacturersList, 
@@ -109,7 +110,6 @@ const InformationView = ({
     selectedVaccine, 
     selectedManufacturer,
     selectedAccreditation, 
-    detailsType, 
     handleSelectPathogen, 
     handleSelectVaccine, 
     handleSelectAccreditation, 
@@ -148,46 +148,46 @@ const InformationView = ({
                     &lt;span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: '', firstAlphabet: ''})}>
                         Clear filters
                     &lt;/span>
-                &lt;/div> : ( manufacturersList.length!==0 &amp;&amp; JSON.stringify(selectedManufacturer) === '{}') 
+                &lt;/div> : ( manufacturersList.length!==0 &amp;&amp; Object.keys(selectedManufacturer).length === 0) 
                 ? &lt;div className='empty-view position-relative'>
                 &lt;img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
-                &lt;span className='select-prompt position-absolute'>Select a Manufacturer&lt;/span>
+                &lt;span className='select-prompt position-absolute'>Select a {activeTab}&lt;/span>
             &lt;/div> : &lt;>
                 &lt;h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data&lt;/h1>
-                {getVaccinesByManufacturer().length>0 
-                ? &lt;VaccineListTable 
-                    detailsType={detailsType}
-                    selectedPathogen={selectedPathogen}
-                    selectedVaccine={selectedVaccine}
-                    selectedAccreditation={selectedAccreditation}
-                    handleSelectVaccine={handleSelectVaccine}
-                    handleSelectPathogen={handleSelectPathogen} 
-                    handleSelectAccreditation={handleSelectAccreditation}
-                    getVaccinesByManufacturer={getVaccinesByManufacturer}
-                    getPathogenByVaccine={getPathogenByVaccine}
-                /> : ``}
                 &lt;div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
-                    {detailsType==="Pathogen" 
+                    {activeTab==="Pathogen" 
                     ? &lt;PathogenInformation 
                         selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
-                    /> : detailsType==="Vaccine" 
+                    /> : activeTab==="Vaccine" 
                     ? &lt;VaccineInformation 
                         selectedVaccine={selectedVaccine}
                         italizeScientificNames={italizeScientificNames}
-                    /> : detailsType==="Manufacturer" 
-                    ? &lt;ManufacturerInformation
+                    /> : activeTab==="Manufacturer" 
+                    ? &lt;ManufacturerProfile
                         selectedManufacturer={selectedManufacturer}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         convertCamelCaseToReadable={convertCamelCaseToReadable}
-                    /> : detailsType==="Accreditation" 
+                    /> : activeTab==="Accreditation" 
                     ? &lt;AccreditationInformation
                         getVaccinesByAccreditation={getVaccinesByAccreditation}
                         handleSelectVaccine={handleSelectVaccine}
                         selectedAccreditation={selectedAccreditation}
                     /> 
-                    : &lt;>&lt;/>}
-                &lt;/div>
+                    : null}
+                    {activeTab==="Manufacturer" &amp;&amp; getVaccinesByManufacturer().length>0 
+                    ? &lt;VaccineListTable 
+                        activeTab={activeTab}
+                        selectedPathogen={selectedPathogen}
+                        selectedVaccine={selectedVaccine}
+                        selectedAccreditation={selectedAccreditation}
+                        handleSelectVaccine={handleSelectVaccine}
+                        handleSelectPathogen={handleSelectPathogen} 
+                        handleSelectAccreditation={handleSelectAccreditation}
+                        getVaccinesByManufacturer={getVaccinesByManufacturer}
+                        getPathogenByVaccine={getPathogenByVaccine}
+                    /> : ``}
+                    &lt;/div>
             &lt;/>}
         &lt;/div>
     &lt;/div>
@@ -207,7 +207,7 @@ export default InformationView;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 05 2024 12:37:59 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Aug 06 2024 00:12:31 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

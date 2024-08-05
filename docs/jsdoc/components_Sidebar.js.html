@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
     
 </nav>
 
@@ -53,7 +53,7 @@
  * @component
  * @namespace Sidebar
  * @param {Object} props - The component accepts various props to handle sidebar functionality.
- * @param {Function} props.setDetailsType - Function to set the type of details to be displayed ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {Function} props.setActiveTab - Function to set the type of details to be displayed ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
  * @param {Array} props.manufacturersList - List of manufacturers available for selection.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.
@@ -65,7 +65,7 @@
  * @example
  * // Example usage of Sidebar component
  * &lt;Sidebar 
- *    setDetailsType={(type) => console.log(type)}
+ *    setActiveTab={(type) => console.log(type)}
  *    manufacturersList={[{ name: 'ManufacturerA' }, { name: 'ManufacturerB' }]}
  *    selectedManufacturer={{ name: 'ManufacturerA' }}
  *    setSelectedManufacturer={(manufacturer) => console.log(manufacturer)}
@@ -76,21 +76,22 @@
  */
 
 const Sidebar = ({ 
-    setDetailsType,
-    manufacturersList,  
+    activeTab,
+    setActiveTab,
+    sidebarList = [],
     selectedManufacturer,
     setSelectedManufacturer, 
     handleSelectManufacturer, 
-    handleSearch,
     setChangedFrom
 }) => {
     
     const handleChangeManufacturer = manufacturer => {
+        // Slide Left Animation
         if(manufacturer!==selectedManufacturer) {
             setChangedFrom('Sidebar');
             setTimeout(() => {
                 handleSelectManufacturer(manufacturer);
-                setDetailsType("Manufacturer");
+                setActiveTab("Manufacturer");
                 setChangedFrom('');
             }, 0);
         } else {
@@ -99,16 +100,20 @@ const Sidebar = ({
     }
 
     return &lt;div className='sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-3 slide-right'>
-        &lt;div className='search-container'>
-            &lt;span className="position-relative">
-                &lt;input type="text" className="text-center bg-info rounded-2 border-dark border-0 w-100" id="search" name="search" placeholder="Search" onChange={e => handleSearch(e.target.value)}/>
-                &lt;i className="fa fa-search position-absolute top-50 translate-middle-y end-0 me-2 text-muted" aria-hidden="true">&lt;/i>
-            &lt;/span>
-        &lt;/div>
-        &lt;div className='Manufacturer-list mt-3'>
-            {manufacturersList.map((manufacturer, i) => (
-                &lt;div key={i} className={`sidebar-item bg-light text-dark rounded-3 py-1 mt-2 ${selectedManufacturer === manufacturer ? 'active' : 'inactive'}`} onClick={() =>handleChangeManufacturer(manufacturer)}>{manufacturer.name}&lt;/div>
-            ))}
+        &lt;div className='Manufacturer-list 2'>
+        {sidebarList
+            .slice() 
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((manufacturer, i) => (
+                &lt;div 
+                    key={i} 
+                    className={`sidebar-item bg-light text-dark rounded-3 py-1 mt-1 ${selectedManufacturer === manufacturer ? 'active' : 'inactive'}`} 
+                    onClick={() => handleChangeManufacturer(manufacturer)}
+                >
+            {manufacturer.name}
+                &lt;/div>
+            ))
+        }
         &lt;/div>
     &lt;/div>
 }
@@ -127,7 +132,7 @@ export default Sidebar;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 05 2024 12:37:59 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Aug 06 2024 00:12:31 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

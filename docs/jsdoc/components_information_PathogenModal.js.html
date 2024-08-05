@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>components/information/VaccineInformation.js - Documentation</title>
+    <title>components/information/PathogenModal.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">components/information/VaccineInformation.js</h1>
+    <h1 class="page-title">components/information/PathogenModal.js</h1>
     
 
     
@@ -48,42 +48,36 @@
             <pre class="prettyprint source linenums"><code>import React from 'react';
 
 /**
- * VaccineInformation Component
+ * PathogenInformation Component
  *
  * @component
- * @namespace Vaccine
- * @param {Object} props - The component accepts selectedVaccine and italizeScientificNames as props.
- * @param {Object} props.selectedVaccine - The selected vaccine object containing details such as name, description, link, and lastUpdated.
- * @param {string} props.selectedVaccine.name - The name of the selected vaccine.
- * @param {string} props.selectedVaccine.description - The description of the selected vaccine.
- * @param {string} props.selectedVaccine.link - The URL link to learn more about the selected vaccine.
- * @param {string} props.selectedVaccine.lastUpdated - The last updated date for the selected vaccine.
- * @param {Function} props.italizeScientificNames - Function that italicizes scientific names in the description.
- * @returns {JSX.Element} The Vaccine Information component.
+ * @namespace Pathogen
+ * @param {Object} props - The component accepts selectedPathogen and italizeScientificNames as props.
+ * @param {Object} props.selectedPathogen - The selected pathogen object containing its details.
+ * @param {string} props.selectedPathogen.name - The name of the selected pathogen.
+ * @param {string} props.selectedMPathogen.description - The description of the selected pathogen.
+ * @param {Function} props.italizeScientificNames - Function that converts scientific names in the description to italicized text.
+ * @returns {JSX.Element} The Pathogen Information component.
  *
  * @example
- * // Render the VaccineInformation component with a sample vaccine and italizeScientificNames function
- * &lt;VaccineInformation 
- *   selectedVaccine={{ 
- *     name: 'Vaccine X', 
- *     description: 'A description of Vaccine X with scientific names.', 
- *     link: 'https://example.com/vaccine-x', 
- *     lastUpdated: '2024-07-29' 
- *   }} 
- *   italizeScientificNames={text => text.replace(/(scientificName)/gi, '&lt;i>$1&lt;/i>')}
+ * // Example usage of PathogenInformation component
+ * &lt;PathogenInformation 
+ *    selectedPathogen={{ 
+ *        name: 'COVID-19', 
+ *        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'
+ *    }} 
+ *    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '&lt;i>$1&lt;/i>')} 
  * />
  */
 
-const VaccineInformation = ({ selectedVaccine, italizeScientificNames }) => {
-    return &lt;div className='position-relative slide-left'>
-        &lt;h4 className='report-heading'>{selectedVaccine.name}&lt;/h4>
-        &lt;p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}&lt;/p>
-        &lt;p className='mb-0'>&lt;a className='read-more' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...&lt;/a>&lt;/p>
-        &lt;span className='last-updated text-muted position-absolute end-0 bottom-0'>Last updated: {selectedVaccine.lastUpdated}&lt;/span>
-    &lt;/div> 
+const PathogenInformation = ({selectedPathogen, italizeScientificNames}) => {
+    return &lt;div className='slide-left'>
+        &lt;h4 className='report-heading'>{selectedPathogen.name}&lt;/h4>
+        &lt;p>{italizeScientificNames(selectedPathogen.description)}&lt;/p>
+    &lt;/div>
 }
 
-export default VaccineInformation;</code></pre>
+export default PathogenInformation;</code></pre>
         </article>
     </section>
 
