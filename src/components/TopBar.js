@@ -12,42 +12,21 @@ import React, { useState } from "react";
  * />
  */
 
-const TopBar = () => {
-
-    const [activeTab, setActiveTab] = useState('Manufacturers');
-
-    const handleClick = (tab) => {
-      setActiveTab(tab);
-    };
+const TopBar = ({
+    activeTab,
+    handleTabChange
+}) => {
 
     return <div className="topbar row pt-3">
         <ul className="nav nav-tabs">
-            <li className="nav-item">
-                <a
-                className={`nav-link ${activeTab === 'Manufacturers' ? 'active' : ''}`}
-                href="https://example.com"
-                onClick={() => handleClick('Manufacturers')}
-                >
+            <li className={`nav-itemn nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
                 Manufacturers
-                </a>
             </li>
-            <li className="nav-item">
-                <a
-                className={`nav-link ${activeTab === 'Products' ? 'active' : ''}`}
-                href="https://example.com"
-                onClick={() => handleClick('Products')}
-                >
+            <li className={`nav-item nav-link ${activeTab === 'Product' ? 'active' : ''}`} onClick={() => handleTabChange('Product')}>
                 Products
-                </a>
             </li>
-            <li className="nav-item">
-                <a
-                className={`nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`}
-                href="https://example.com"
-                onClick={() => handleClick('Pathogen')}
-                >
+            <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
                 Pathogen
-                </a>
             </li>
         </ul>
     </div>

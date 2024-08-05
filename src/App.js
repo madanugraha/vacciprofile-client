@@ -29,17 +29,31 @@ import scientificNames from './assets/scientificNames';
  */
 
 const App = () => {
+    const [activeTab, setActiveTab] = useState('Manufacturer');
     const [activeFilters, setActiveFilters] = useState({
         firstAlphabet: '',
         searchKeyword: ''
     })
-    const [selectedPathogen, setSelectedPathogen] = useState({});
-    const [selectedVaccine, setSelectedVaccine] = useState({});
-    const [selectedManufacturer, setSelectedManufacturer] = useState({});
-    const [selectedAccreditation, setSelectedAccreditation] = useState("")
-    const [detailsType, setDetailsType] = useState("");
-    const [manufacturersList, setManufacturersList] = useState(manufacturers);
-    const [changedFrom, setChangedFrom] = useState('');
+    const [ selectedPathogen, setSelectedPathogen ] = useState({});
+    const [ selectedVaccine, setSelectedVaccine ] = useState({});
+    const [ selectedManufacturer, setSelectedManufacturer ] = useState({});
+    const [ selectedAccreditation, setSelectedAccreditation ] = useState("")
+    const [ detailsType, setDetailsType ] = useState("");
+    const [ sidebarList, setSidebarList ] = useState();
+    const [ pathogensList, setPathogensList ] = useState();
+    const [ vaccinesList, setVaccinesList ] = useState();
+    const [ manufacturersList, setManufacturersList ] = useState();
+    const [ changedFrom, setChangedFrom ] = useState('');
+
+    /**
+     * Handles the search input change.
+     *
+     * @param {string} tab - The selected tab type can be "Manufacturers", "Pathogens" or "Products".
+     */
+    
+    const handleTabChange = tab => {
+        setActiveTab(tab);
+    };
 
     /**
      * Handles the search input change.
@@ -132,7 +146,7 @@ const App = () => {
         return vaccines.filter(vaccine => vaccine.manufacturerId === selectedManufacturer.manufacturerId);
     }
 
-     /**
+    /**
      * Converts camel case strings to readable format.
      *
      * @param {string} string - The camel case string.
@@ -167,6 +181,23 @@ const App = () => {
         );
     };
 
+    useEffect(()=>{
+        setManufacturersList(manufacturers);
+        setPathogensList(pathogens);
+        setVaccinesList(vaccines);
+    },[])
+
+    useEffect(()=>{
+        if (activeTab === "Pathogen") {
+            setSidebarList(pathogensList || []);
+        } else if (activeTab === "Vaccine") {
+            setSidebarList(vaccinesList || []);
+        } else if (activeTab === "Manufacturer")  {
+            setSidebarList(manufacturersList || []);
+        }
+        console.log("sidebarList: ", sidebarList)
+    },[activeTab, pathogensList, vaccinesList, manufacturersList])
+
     useEffect(() => {
         const filterManufacturersList = () => {
             let filteredManufacturersList;
@@ -194,10 +225,14 @@ const App = () => {
         <div className='vacciprofile-page'>
             <div className='container'>
                 <Header/>
-                <TopBar/>
+                <TopBar
+                    activeTab={activeTab}
+                    handleTabChange={handleTabChange}
+                />
                 <div className='row py-4'>
                     <Sidebar
-                        manufacturersList={manufacturersList}
+                        activeTab={activeTab}
+                        sidebarList={sidebarList}
                         selectedManufacturer={selectedManufacturer}
                         setSelectedManufacturer={setSelectedManufacturer}
                         handleSelectManufacturer={handleSelectManufacturer}
@@ -207,6 +242,7 @@ const App = () => {
                         setDetailsType={setDetailsType}
                     />
                     <InformationView
+                        activeTab={activeTab}
                         activeFilters={activeFilters}
                         setActiveFilters={setActiveFilters}
                         manufacturersList={manufacturersList}

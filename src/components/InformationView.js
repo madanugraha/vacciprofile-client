@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import VaccineListTable from './information/VaccineListTable';
-import PathogenInformation from './information/PathogenInformation';
+import PathogenInformation from './information/PathogenModal';
 import VaccineInformation from './information/VaccineInformation';
 import ManufacturerInformation from './information/ManufacturerInformation';
 import AccreditationInformation from './information/AccreditationInformation';
@@ -55,6 +55,7 @@ import AccreditationInformation from './information/AccreditationInformation';
  */
 
 const InformationView = ({
+    activeTab,
     activeFilters,
     setActiveFilters,
     manufacturersList, 
@@ -104,7 +105,7 @@ const InformationView = ({
                 </div> : ( manufacturersList.length!==0 && JSON.stringify(selectedManufacturer) === '{}') 
                 ? <div className='empty-view position-relative'>
                 <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
-                <span className='select-prompt position-absolute'>Select a Manufacturer</span>
+                <span className='select-prompt position-absolute'>Select a {activeTab}</span>
             </div> : <>
                 <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data</h1>
                 <div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>

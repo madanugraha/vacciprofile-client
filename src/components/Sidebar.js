@@ -29,8 +29,9 @@ import React from 'react';
  */
 
 const Sidebar = ({ 
+    activeTab,
+    sidebarList = [],
     setDetailsType,
-    manufacturersList,  
     selectedManufacturer,
     setSelectedManufacturer, 
     handleSelectManufacturer, 
@@ -59,7 +60,7 @@ const Sidebar = ({
             </span>
         </div>
         <div className='Manufacturer-list mt-3'>
-        {manufacturersList
+        {sidebarList
             .slice() 
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((manufacturer, i) => (
@@ -69,9 +70,9 @@ const Sidebar = ({
                     onClick={() => handleChangeManufacturer(manufacturer)}
                 >
             {manufacturer.name}
-        </div>
-    ))
-}
+                </div>
+            ))
+        }
         </div>
     </div>
 }
