@@ -47,8 +47,8 @@ const ManufacturerInformation = ({
       <div id="accordianManu" className="accordion-collapse collapse" aria-labelledby="accordianManufacturer" data-bs-parent="#accordianManufacturerInfo">
         <div className="accordion-body">
             <div className=''>
-                <h4 className='report-heading'>{selectedManufacturer.name}</h4> 
-                <p>{selectedManufacturer.description}</p>
+                {/* <h4 className='report-heading'>{selectedManufacturer.name}</h4>  */}
+                {/* <p>{selectedManufacturer.description}</p> */}
                 {selectedManufacturer.details ? <><div className='table-responsive'>
                     <table className='table table-light w-100 m-0'>
                         <thead>
