@@ -42,7 +42,7 @@ const App = () => {
     const [ sidebarList, setSidebarList ] = useState();
     const [ pathogensList, setPathogensList ] = useState();
     const [ vaccinesList, setVaccinesList ] = useState();
-    const [ manufacturersList, setManufacturersList ] = useState();
+    const [ manufacturersList, setManufacturersList ] = useState(manufacturers);
     const [ changedFrom, setChangedFrom ] = useState('');
 
     /**
@@ -190,7 +190,7 @@ const App = () => {
     useEffect(()=>{
         if (activeTab === "Pathogen") {
             setSidebarList(pathogensList || []);
-        } else if (activeTab === "Vaccine") {
+        } else if (activeTab === "Product") {
             setSidebarList(vaccinesList || []);
         } else if (activeTab === "Manufacturer")  {
             setSidebarList(manufacturersList || []);

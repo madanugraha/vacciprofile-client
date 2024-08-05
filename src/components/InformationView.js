@@ -102,7 +102,7 @@ const InformationView = ({
                     <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: '', firstAlphabet: ''})}>
                         Clear filters
                     </span>
-                </div> : ( manufacturersList.length!==0 && JSON.stringify(selectedManufacturer) === '{}') 
+                </div> : ( manufacturersList.length!==0 && Object.keys(selectedManufacturer).length === 0) 
                 ? <div className='empty-view position-relative'>
                 <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
                 <span className='select-prompt position-absolute'>Select a {activeTab}</span>
@@ -128,7 +128,7 @@ const InformationView = ({
                         handleSelectVaccine={handleSelectVaccine}
                         selectedAccreditation={selectedAccreditation}
                     /> 
-                    : <></>}
+                    : null}
                     {getVaccinesByManufacturer().length>0 
                     ? <VaccineListTable 
                         detailsType={detailsType}
