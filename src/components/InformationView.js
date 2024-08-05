@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import VaccineListTable from './information/VaccineListTable';
-import MicrobeInformation from './information/MicrobeInformation';
+import PathogenInformation from './information/PathogenInformation';
 import VaccineInformation from './information/VaccineInformation';
 import ManufacturerInformation from './information/ManufacturerInformation';
 import AccreditationInformation from './information/AccreditationInformation';
@@ -15,15 +15,15 @@ import AccreditationInformation from './information/AccreditationInformation';
  * @param {Object} props.activeFilters - The current filters applied to the information view.
  * @param {Function} props.setActiveFilters - Function to update the active filters.
  * @param {Array} props.manufacturersList - List of manufacturers available for selection.
- * @param {Object} props.selectedMicrobe - The currently selected microbe.
+ * @param {Object} props.selectedPathogen - The currently selected pathogen.
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedAccreditation - The currently selected accreditation.
- * @param {string} props.detailsType - The type of details to display ('Microbe', 'Vaccine', 'Manufacturer', 'Accreditation').
- * @param {Function} props.handleSelectMicrobe - Function to handle the selection of a microbe.
+ * @param {string} props.detailsType - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {Function} props.handleSelectPathogen - Function to handle the selection of a pathogen.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
  * @param {Function} props.handleSelectAccreditation - Function to handle the selection of an accreditation.
- * @param {Function} props.getMicrobeByVaccine - Function to get the microbe associated with a vaccine.
+ * @param {Function} props.getPathogenByVaccine - Function to get the pathogen associated with a vaccine.
  * @param {Function} props.getVaccinesByManufacturer - Function to get vaccines associated with a manufacturer.
  * @param {Function} props.getVaccinesByAccreditation - Function to get vaccines associated with an accreditation.
  * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
@@ -37,15 +37,15 @@ import AccreditationInformation from './information/AccreditationInformation';
  *    activeFilters={{ searchString: '', firstAlphabet: '' }}
  *    setActiveFilters={(filters) => console.log(filters)}
  *    manufacturersList={[]}
- *    selectedMicrobe={{ name: 'COVID-19', description: '...' }}
+ *    selectedPathogen={{ name: 'COVID-19', description: '...' }}
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
  *    selectedAccreditation='AccreditationZ'
- *    detailsType='Microbe'
- *    handleSelectMicrobe={(microbe) => console.log(microbe)}
+ *    detailsType='Pathogen'
+ *    handleSelectPathogen={(pathogen) => console.log(pathogen)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
  *    handleSelectAccreditation={(accreditation) => console.log(accreditation)}
- *    getMicrobeByVaccine={(vaccine) => ({ name: 'VirusX' })}
+ *    getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}
  *    getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}
  *    getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}
  *    italizeScientificNames={(text) => <i>{text}</i>}
@@ -58,15 +58,15 @@ const InformationView = ({
     activeFilters,
     setActiveFilters,
     manufacturersList, 
-    selectedMicrobe, 
+    selectedPathogen, 
     selectedVaccine, 
     selectedManufacturer,
     selectedAccreditation, 
     detailsType, 
-    handleSelectMicrobe, 
+    handleSelectPathogen, 
     handleSelectVaccine, 
     handleSelectAccreditation, 
-    getMicrobeByVaccine,
+    getPathogenByVaccine,
     getVaccinesByManufacturer,
     getVaccinesByAccreditation,
     italizeScientificNames,
@@ -85,7 +85,7 @@ const InformationView = ({
             }
         }
         prevChangedFrom.current = changedFrom;
-    }, [selectedMicrobe, selectedVaccine, selectedManufacturer, selectedAccreditation, changedFrom]);
+    }, [selectedPathogen, selectedVaccine, selectedManufacturer, selectedAccreditation, changedFrom]);
 
     useEffect(() => {
         setSlideClass(''); 
@@ -110,19 +110,19 @@ const InformationView = ({
                 {getVaccinesByManufacturer().length>0 
                 ? <VaccineListTable 
                     detailsType={detailsType}
-                    selectedMicrobe={selectedMicrobe}
+                    selectedPathogen={selectedPathogen}
                     selectedVaccine={selectedVaccine}
                     selectedAccreditation={selectedAccreditation}
                     handleSelectVaccine={handleSelectVaccine}
-                    handleSelectMicrobe={handleSelectMicrobe} 
+                    handleSelectPathogen={handleSelectPathogen} 
                     handleSelectAccreditation={handleSelectAccreditation}
                     getVaccinesByManufacturer={getVaccinesByManufacturer}
-                    getMicrobeByVaccine={getMicrobeByVaccine}
+                    getPathogenByVaccine={getPathogenByVaccine}
                 /> : ``}
                 <div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
-                    {detailsType==="Microbe" 
-                    ? <MicrobeInformation 
-                        selectedMicrobe={selectedMicrobe} 
+                    {detailsType==="Pathogen" 
+                    ? <PathogenInformation 
+                        selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
                     /> : detailsType==="Vaccine" 
                     ? <VaccineInformation 

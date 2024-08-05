@@ -1,6 +1,6 @@
 [
     {
-        "microbeId": 1,
+        "pathogenId": 1,
         "name": "Respiratory Syncytial Virus (RSV)",
         "description": "Respiratory Syncytial Virus (RSV) is a common respiratory virus that causes infections in the lungs and respiratory tract. It is known for causing cold-like symptoms, but it can lead to more severe respiratory illnesses, such as bronchiolitis and pneumonia, particularly in young children and older adults. RSV is highly contagious and spreads through respiratory droplets, making it a significant concern during the winter months.",
         "vaccines": [
@@ -8,7 +8,7 @@
         ]
     },
     {
-        "microbeId": 2,
+        "pathogenId": 2,
         "name": "COVID-19",
         "description": "COVID-19 is a respiratory illness caused by the SARS-CoV-2 virus. It was first identified in Wuhan, China, in late 2019 and has since become a global pandemic. Symptoms can range from mild, such as fever and cough, to severe, including difficulty breathing and pneumonia. The virus primarily spreads through respiratory droplets and can lead to significant health complications, particularly in older adults and those with underlying health conditions.",
         "vaccines": [
@@ -19,7 +19,7 @@
         ]
     },
     {
-        "microbeId": 3,
+        "pathogenId": 3,
         "name": "Streptococcus pneumoniae",
         "description": "Pneumococcal disease is caused by the bacterium Streptococcus pneumoniae. It can lead to various serious infections, including pneumonia, meningitis, and sepsis. The disease predominantly affects children and older adults, but can also impact other age groups. Symptoms can range from mild respiratory issues to severe illness requiring hospitalization.",
         "vaccines": [
@@ -29,7 +29,7 @@
         ]
     },
     {
-        "microbeId": 4,
+        "pathogenId": 4,
         "name": "Tick-Borne Encephalitis (TBE)",
         "description": "Tick-borne encephalitis (TBE) is a viral infection transmitted by ticks that affects the central nervous system. It can cause severe symptoms including encephalitis, meningitis, and can lead to long-term neurological problems. The vaccine is recommended for individuals living in or traveling to areas where TBE is prevalent.",
         "vaccines": [
@@ -37,7 +37,7 @@
         ]
     },
     {
-        "microbeId": 5,
+        "pathogenId": 5,
         "name": "Meningococcal B",
         "description": "Meningococcal B is a type of bacterial infection that can cause severe and potentially life-threatening conditions, including meningitis and septicemia. The disease is particularly dangerous for adolescents and young adults. The vaccine aims to reduce the incidence of these infections.",
         "vaccines": [
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "microbeId": 6,
+        "pathogenId": 6,
         "name": "HPV",
         "description": "Human papillomavirus (HPV) is a viral infection that commonly causes skin or mucous membrane growths (warts).",
         "vaccines": [

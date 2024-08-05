@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li></li><li></li><li><a href="Microbe.html">Microbe</a></li><li></li><li><a href="Navigation.html">Navigation</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
     
 </nav>
 
@@ -52,10 +52,10 @@ import './assets/animations/animations.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import InformationView from './components/InformationView.js';
-import AlphabetsNavigation from './components/AlphabetsNavigation.js';
+import TopBar from './components/TopBar.js';
 
 import manufacturers from './assets/data/manufacturers.json';
-import microbes from './assets/data/microbes.json';
+import pathogens from './assets/data/pathogens.json';
 import vaccines from './assets/data/vaccines.json';
 import scientificNames from './assets/scientificNames';
 
@@ -80,7 +80,7 @@ const App = () => {
         firstAlphabet: '',
         searchKeyword: ''
     })
-    const [selectedMicrobe, setSelectedMicrobe] = useState({});
+    const [selectedPathogen, setSelectedPathogen] = useState({});
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const [selectedManufacturer, setSelectedManufacturer] = useState({});
     const [selectedAccreditation, setSelectedAccreditation] = useState("")
@@ -101,16 +101,16 @@ const App = () => {
     };
 
     /**
-     * Handles selecting a microbe.
+     * Handles selecting a pathogen.
      *
-     * @param {object} microbe - The selected microbe object.
+     * @param {object} pathogen - The selected pathogen object.
      */
 
-    const handleSelectMicrobe = microbe => {
-        const vaccine = vaccines.find(vaccine => vaccine.vaccineId === microbe.vaccines[0].vaccineId);
+    const handleSelectPathogen = pathogen => {
+        const vaccine = vaccines.find(vaccine => vaccine.vaccineId === pathogen.vaccines[0].vaccineId);
         setSelectedVaccine(vaccine);
-        setSelectedMicrobe(microbe);
-        setDetailsType("Microbe");
+        setSelectedPathogen(pathogen);
+        setDetailsType("Pathogen");
         setActiveFilters({...activeFilters, firstAlphabet: ''});
     };
 
@@ -149,48 +149,14 @@ const App = () => {
     }
 
     /**
-     * Retrieves a vaccine by its ID.
-     *
-     * @param {string} vaccineId - The ID of the vaccine.
-     * @returns {object} The vaccine object.
-     */
-
-    const getVaccineById = vaccineId => {
-        return vaccines.find(vaccine => vaccine.vaccineId === vaccineId);
-    };
-
-    /**
-     * Retrieves the microbe associated with a vaccine.
+     * Retrieves the pathogen associated with a vaccine.
      *
      * @param {object} vaccine - The vaccine object.
-     * @returns {object} The microbe object.
+     * @returns {object} The pathogen object.
      */
 
-    const getMicrobeByVaccine = vaccine => {
-        return microbes.find(microbe => microbe.microbeId === vaccine.microbeId);
-    };
-
-     /**
-     * Retrieves the countries associated with a vaccine.
-     *
-     * @param {object} vx - The vaccine object.
-     * @returns {string} Comma-separated list of countries.
-     */
-
-    const getCountriesByVaccine = vx => {
-        const vaccine = getVaccineById(vx.vaccineId);
-        return vaccine.countries.join(', ');
-    };    
-
-    /**
-     * Retrieves the recommendation associated with a vaccine.
-     *
-     * @param {object} vx - The vaccine object.
-     * @returns {string} The recommendation.
-     */
-
-    const getRecommendationByVaccine = vx => {
-        return vx.recommendation;
+    const getPathogenByVaccine = vaccine => {
+        return pathogens.find(pathogen => pathogen.pathogenId === vaccine.pathogenId);
     };
 
     /**
@@ -275,6 +241,7 @@ const App = () => {
         &lt;div className='vacciprofile-page'>
             &lt;div className='container'>
                 &lt;Header/>
+                &lt;TopBar/>
                 &lt;div className='row py-4'>
                     &lt;Sidebar
                         manufacturersList={manufacturersList}
@@ -290,29 +257,27 @@ const App = () => {
                         activeFilters={activeFilters}
                         setActiveFilters={setActiveFilters}
                         manufacturersList={manufacturersList}
-                        selectedMicrobe={selectedMicrobe}
+                        selectedPathogen={selectedPathogen}
                         selectedVaccine={selectedVaccine}
                         selectedManufacturer={selectedManufacturer}
                         selectedAccreditation={selectedAccreditation}
                         detailsType={detailsType}
-                        handleSelectMicrobe={handleSelectMicrobe}
+                        handleSelectPathogen={handleSelectPathogen}
                         handleSelectVaccine={handleSelectVaccine}
                         handleSelectManufacturer={handleSelectManufacturer}
                         handleSelectAccreditation={handleSelectAccreditation}
-                        getMicrobeByVaccine={getMicrobeByVaccine}
-                        getCountriesByVaccine={getCountriesByVaccine}
+                        getPathogenByVaccine={getPathogenByVaccine}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         getVaccinesByAccreditation={getVaccinesByAccreditation}
-                        getRecommendationByVaccine={getRecommendationByVaccine}
                         italizeScientificNames={italizeScientificNames}
                         convertCamelCaseToReadable={convertCamelCaseToReadable}
                         changedFrom={changedFrom}
                     />
-                    &lt;AlphabetsNavigation 
+                    {/* &lt;AlphabetsNavigation 
                         activeFilters={activeFilters} 
                         setActiveFilters={setActiveFilters}
                         setSelectedManufacturer={setSelectedManufacturer}
-                    />
+                    /> */}
                 &lt;/div>
             &lt;/div>
         &lt;/div>
@@ -334,7 +299,7 @@ export default App;
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 01 2024 12:28:45 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 05 2024 12:37:59 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

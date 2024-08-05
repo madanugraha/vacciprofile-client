@@ -2,7 +2,7 @@
     {
         "name": "Abrysvo™",
         "vaccineId": 1,
-        "microbeId": 1, 
+        "pathogenId": 1, 
         "manufacturerId": 1,
         "accreditation": ["FDA", "EMA"],
         "description": "Abrysvo™ is a vaccine developed by Pfizer to prevent Respiratory Syncytial Virus (RSV) infection. RSV is a common respiratory virus that usually causes mild, cold-like symptoms. It can be serious, especially for infants and older adults. Abrysvo™ is aimed at providing protection against RSV and is approved for use in various countries.",
@@ -12,7 +12,7 @@
     {
         "name": "Comirnaty",
         "vaccineId": 2,
-        "microbeId": 2, 
+        "pathogenId": 2, 
         "manufacturerId": 5,
         "accreditation": ["FDA", "EMA"],
         "description": "Comirnaty is a COVID-19 vaccine developed by Pfizer and BioNTech. It uses mRNA technology to provide immunity against the SARS-CoV-2 virus, which causes COVID-19. The vaccine was one of the first COVID-19 vaccines to receive emergency use authorization and has been widely administered around the world to help control the pandemic.",
@@ -25,7 +25,7 @@
     {
         "name": "Penbraya™",
         "vaccineId": 3,
-        "microbeId": 3, 
+        "pathogenId": 3, 
         "manufacturerId": 1,
         "accreditation": ["FDA", "EMA"],
         "description": "Penbraya™ is a pneumococcal vaccine developed by Pfizer. It is designed to protect against diseases caused by the bacterium Streptococcus pneumoniae, which can lead to conditions such as pneumonia, meningitis, and sepsis. Penbraya™ provides coverage against multiple strains of pneumococcal bacteria, helping to reduce the incidence of these potentially serious infections.",
@@ -35,7 +35,7 @@
     {
         "name": "Pfizer-BioNTech COVID-19 Vaccine",
         "vaccineId": 4,
-        "microbeId": 2, 
+        "pathogenId": 2, 
         "manufacturerId": 5,
         "accreditation": ["FDA", "EMA", "WHO"],
         "description": "The Pfizer-BioNTech COVID-19 Vaccine is an mRNA-based vaccine developed to prevent COVID-19, a disease caused by the SARS-CoV-2 virus. It works by instructing cells to produce a protein similar to the one found on the surface of the virus, which helps the immune system recognize and fight the virus if exposed. The vaccine has been widely distributed and is authorized for emergency use or fully approved in various countries.",
@@ -45,7 +45,7 @@
     {
         "name": "Prevnar 13",
         "vaccineId": 5,
-        "microbeId": 3, 
+        "pathogenId": 3, 
         "manufacturerId": 1,
         "accreditation": ["FDA", "EMA", "WHO"],
         "description": "Prevnar 13 is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 13 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in children and adults to prevent infections such as pneumonia, meningitis, and bloodstream infections. It is widely used in various countries and is recommended for individuals at higher risk of pneumococcal disease.",
@@ -56,7 +56,7 @@
     {
         "name": "Prevnar 20™",
         "vaccineId": 6,
-        "microbeId": 3,
+        "pathogenId": 3,
         "manufacturerId": 1,
         "accreditation": ["FDA", "EMA", "WHO"],
         "description": "Prevnar 20™ is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 20 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in both children and adults to prevent severe infections such as pneumonia, meningitis, and bloodstream infections. Prevnar 20™ provides broader coverage than previous pneumococcal vaccines.",
@@ -66,7 +66,7 @@
     {
         "name": "TicoVac™",
         "vaccineId": 7,
-        "microbeId": 4,
+        "pathogenId": 4,
         "manufacturerId": 1,
         "accreditation": ["EMA", "WHO"],
         "description": "TicoVac™ is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. TicoVac™ is designed to provide protection against TBE and is used in regions where the disease is endemic.",
@@ -77,7 +77,7 @@
     {
         "name": "Trumenba™",
         "vaccineId": 8,
-        "microbeId": 5,
+        "pathogenId": 5,
         "manufacturerId": 1,
         "accreditation": ["FDA", "EMA"],
         "description": "Trumenba™ is a vaccine developed by Pfizer to protect against serogroup B of Neisseria meningitidis, a bacterium that causes meningococcal disease. Trumenba™ is designed to prevent invasive meningococcal B infections in adolescents and young adults.",
@@ -88,7 +88,7 @@
     {
         "name": "Janssen COVID-19 Vaccine",
         "vaccineId": 9,
-        "microbeId": 2,
+        "pathogenId": 2,
         "manufacturerId": 2,
         "accreditation": ["WHO", "EMA", "FDA"],
         "description": "The Janssen COVID-19 Vaccine is a single-dose vaccine developed by Johnson & Johnson to protect against COVID-19. It is based on adenovirus technology and has been widely used for its convenience and effectiveness.",
@@ -98,7 +98,7 @@
     {
         "name": "Vaxzevria",
         "vaccineId": 10,
-        "microbeId": 2,
+        "pathogenId": 2,
         "manufacturerId": 6,
         "accreditation": ["WHO", "EMA", "FDA"],
         "description": "Vaxzevria is a COVID-19 vaccine developed by AstraZeneca. It uses a viral vector platform to stimulate an immune response against the SARS-CoV-2 virus. The vaccine has been used globally to combat the COVID-19 pandemic.",
@@ -108,7 +108,7 @@
     {
         "name": "Gardasil",
         "vaccineId": 11,
-        "microbeId": 6,
+        "pathogenId": 6,
         "manufacturerId": 4,
         "accreditation": ["WHO", "EMA", "FDA"],
         "description": "Gardasil is a vaccine developed by Merck & Co., Inc. to protect against human papillomavirus (HPV) infection. It provides protection against the most common HPV types that cause cervical cancer, other genital cancers, and genital warts.",

@@ -7,17 +7,17 @@
             "founded": "1849",
             "headquarters": "New York City, U.S.",
             "ceo": "Dr. Albert Bourla",
-            "revenue": "US$41.908 billion",
-            "operatingIncome": "US$8.16 billion",
-            "netIncome": "US$9.615 billion",
-            "totalAssets": "US$178.983 billion",
-            "totalEquity": "US$65.495 billion",
-            "numberOfEmployees": "78,500",
+            "revenue": "US$58.5 billion",
+            "operatingIncome": "US$2.17 billion",
+            "netIncome": "US$2.12 billion",
+            "totalAssets": "US$226.5 billion",
+            "totalEquity": "US$89.01 billion",
+            "numberOfEmployees": "88,000",
             "sources": [
                 {
-                    "lastUpdated": "2020",
+                    "lastUpdated": "2023",
                     "title": "Annual Report on Form 10-K",
-                    "link" :"https://s21.q4cdn.com/317678438/files/doc_financials/2020/ar/PFE-2020-Form-10K-FINAL.pdf"
+                    "link" :"https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
                 }
             ]
         },
@@ -27,7 +27,9 @@
             { "vaccineId": 5 },
             { "vaccineId": 6 },
             { "vaccineId": 7 },
-            { "vaccineId": 8 }
+            { "vaccineId": 8 },
+            { "vaccineId": 2 },
+            { "vaccineId": 4 }
         ],
         "link": "https://www.pfizer.com/products/product-list"
     },
@@ -127,7 +129,7 @@
     },
     {
         "manufacturerId": 5,
-        "name": "Pfizer-BioNTech",
+        "name": "BioNTech",
         "description": "STAY TUNED FOR MORE INFORMATION",
         "details": {
             "founded": "",

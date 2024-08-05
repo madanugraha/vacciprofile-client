@@ -8,7 +8,7 @@ import InformationView from './components/InformationView.js';
 import TopBar from './components/TopBar.js';
 
 import manufacturers from './assets/data/manufacturers.json';
-import microbes from './assets/data/microbes.json';
+import pathogens from './assets/data/pathogens.json';
 import vaccines from './assets/data/vaccines.json';
 import scientificNames from './assets/scientificNames';
 
@@ -33,7 +33,7 @@ const App = () => {
         firstAlphabet: '',
         searchKeyword: ''
     })
-    const [selectedMicrobe, setSelectedMicrobe] = useState({});
+    const [selectedPathogen, setSelectedPathogen] = useState({});
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const [selectedManufacturer, setSelectedManufacturer] = useState({});
     const [selectedAccreditation, setSelectedAccreditation] = useState("")
@@ -54,16 +54,16 @@ const App = () => {
     };
 
     /**
-     * Handles selecting a microbe.
+     * Handles selecting a pathogen.
      *
-     * @param {object} microbe - The selected microbe object.
+     * @param {object} pathogen - The selected pathogen object.
      */
 
-    const handleSelectMicrobe = microbe => {
-        const vaccine = vaccines.find(vaccine => vaccine.vaccineId === microbe.vaccines[0].vaccineId);
+    const handleSelectPathogen = pathogen => {
+        const vaccine = vaccines.find(vaccine => vaccine.vaccineId === pathogen.vaccines[0].vaccineId);
         setSelectedVaccine(vaccine);
-        setSelectedMicrobe(microbe);
-        setDetailsType("Microbe");
+        setSelectedPathogen(pathogen);
+        setDetailsType("Pathogen");
         setActiveFilters({...activeFilters, firstAlphabet: ''});
     };
 
@@ -102,14 +102,14 @@ const App = () => {
     }
 
     /**
-     * Retrieves the microbe associated with a vaccine.
+     * Retrieves the pathogen associated with a vaccine.
      *
      * @param {object} vaccine - The vaccine object.
-     * @returns {object} The microbe object.
+     * @returns {object} The pathogen object.
      */
 
-    const getMicrobeByVaccine = vaccine => {
-        return microbes.find(microbe => microbe.microbeId === vaccine.microbeId);
+    const getPathogenByVaccine = vaccine => {
+        return pathogens.find(pathogen => pathogen.pathogenId === vaccine.pathogenId);
     };
 
     /**
@@ -210,16 +210,16 @@ const App = () => {
                         activeFilters={activeFilters}
                         setActiveFilters={setActiveFilters}
                         manufacturersList={manufacturersList}
-                        selectedMicrobe={selectedMicrobe}
+                        selectedPathogen={selectedPathogen}
                         selectedVaccine={selectedVaccine}
                         selectedManufacturer={selectedManufacturer}
                         selectedAccreditation={selectedAccreditation}
                         detailsType={detailsType}
-                        handleSelectMicrobe={handleSelectMicrobe}
+                        handleSelectPathogen={handleSelectPathogen}
                         handleSelectVaccine={handleSelectVaccine}
                         handleSelectManufacturer={handleSelectManufacturer}
                         handleSelectAccreditation={handleSelectAccreditation}
-                        getMicrobeByVaccine={getMicrobeByVaccine}
+                        getPathogenByVaccine={getPathogenByVaccine}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         getVaccinesByAccreditation={getVaccinesByAccreditation}
                         italizeScientificNames={italizeScientificNames}

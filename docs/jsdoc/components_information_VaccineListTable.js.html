@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>components/information/VaccineListTable.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">components/information/VaccineListTable.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from 'react';
+
+/**
+ * VaccineListTable Component
+ *
+ * @component
+ * @namespace VaccineListTable
+ * @param {Object} props - The component accepts detailsType, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props.
+ * @param {string} props.detailsType - The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Accreditation".
+ * @param {Object} props.selectedPathogen - The currently selected pathogen object.
+ * @param {Object} props.selectedVaccine - The currently selected vaccine object.
+ * @param {string} props.selectedAccreditation - The currently selected accreditation.
+ * @param {Function} props.handleSelectPathogen - Function that gets triggered when a pathogen is selected.
+ * @param {Function} props.handleSelectVaccine - Function that gets triggered when a vaccine is selected.
+ * @param {Function} props.handleSelectAccreditation - Function that gets triggered when an accreditation is selected.
+ * @param {Function} props.getVaccinesByManufacturer - Function that returns a list of vaccines based on the manufacturer.
+ * @param {Function} props.getPathogenByVaccine - Function that returns the pathogen associated with a specific vaccine.
+ * @returns {JSX.Element} The Manufacturer Information Table component.
+ *
+ * @example
+ * // Render the VaccineListTable component with dummy data and functions
+ * &lt;VaccineListTable 
+ *   detailsType="Vaccine"
+ *   selectedPathogen={{ name: 'Pathogen X' }}
+ *   selectedVaccine={{ name: 'Vaccine Y' }}
+ *   selectedAccreditation="Accreditation Z"
+ *   handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}
+ *   handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}
+ *   handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}
+ *   getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}
+ *   getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}
+ * />
+ */
+
+const VaccineListTable = ({
+    detailsType, 
+    selectedPathogen, 
+    selectedVaccine, 
+    selectedAccreditation,
+    handleSelectPathogen, 
+    handleSelectVaccine, 
+    handleSelectAccreditation, 
+    getVaccinesByManufacturer,
+    getPathogenByVaccine
+}) => {
+    return &lt;div className='view-header table-responsive m-0'>
+        &lt;table className='table table-success w-100 m-0'>
+            &lt;thead>
+                &lt;tr>
+                    &lt;th>Vaccine&lt;/th>
+                    &lt;th>Pathogen&lt;/th>
+                    &lt;th>Accreditation&lt;/th>
+                &lt;/tr>
+            &lt;/thead>
+            &lt;tbody>
+                {getVaccinesByManufacturer().map((vaccine, key)=>&lt;tr key={key}>
+                    &lt;td className='vaccine-cell'>
+                        &lt;span
+                            className={`${detailsType==="Vaccine" &amp;&amp; selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`} 
+                            onClick={()=>handleSelectVaccine(vaccine)}>
+                            {vaccine.name}
+                        &lt;/span>
+                    &lt;/td>
+                    &lt;td className='pathogen-cell'>
+                        &lt;span 
+                            className={`${detailsType==="Pathogen" &amp;&amp; selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
+                            onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{getPathogenByVaccine(vaccine).name}
+                        &lt;/span>
+                    &lt;/td>
+                    &lt;td className='accreditation-cell'>
+                        {vaccine.accreditation.map((accreditation, index)=>
+                        &lt;span>
+                            &lt;span key={index} 
+                                className={`${detailsType==="Accreditation" &amp;&amp; selectedAccreditation === accreditation ? `selected` : `selectable`}`} 
+                                onClick={()=>handleSelectAccreditation(accreditation)}>
+                                {accreditation}
+                            &lt;/span>{index&lt;vaccine.accreditation.length-1 ? &lt;span className='text-decoration-none'>, &lt;/span> : ``}
+                        &lt;/span>)}
+                    &lt;/td>
+                &lt;/tr>)}
+            &lt;/tbody>
+        &lt;/table>
+    &lt;/div>
+}
+
+export default VaccineListTable;</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 05 2024 12:37:59 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

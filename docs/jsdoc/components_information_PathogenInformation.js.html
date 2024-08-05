@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>components/Header.js - Documentation</title>
+    <title>components/information/PathogenInformation.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">components/Header.js</h1>
+    <h1 class="page-title">components/information/PathogenInformation.js</h1>
     
 
     
@@ -48,27 +48,36 @@
             <pre class="prettyprint source linenums"><code>import React from 'react';
 
 /**
- * Header Component
+ * PathogenInformation Component
  *
  * @component
- * @namespace Header
- * @returns {JSX.Element} The Header component that displays the main title and a welcome message.
+ * @namespace Pathogen
+ * @param {Object} props - The component accepts selectedPathogen and italizeScientificNames as props.
+ * @param {Object} props.selectedPathogen - The selected pathogen object containing its details.
+ * @param {string} props.selectedPathogen.name - The name of the selected pathogen.
+ * @param {string} props.selectedMPathogen.description - The description of the selected pathogen.
+ * @param {Function} props.italizeScientificNames - Function that converts scientific names in the description to italicized text.
+ * @returns {JSX.Element} The Pathogen Information component.
  *
  * @example
- * // Example usage of Header component
- * &lt;Header />
+ * // Example usage of PathogenInformation component
+ * &lt;PathogenInformation 
+ *    selectedPathogen={{ 
+ *        name: 'COVID-19', 
+ *        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'
+ *    }} 
+ *    italizeScientificNames={(text) => text.replace(/(SARS-CoV-2)/g, '&lt;i>$1&lt;/i>')} 
+ * />
  */
 
-const Header = () => {
-    return &lt;div className='row bg-primary text-white py-4 slide-down'>
-    &lt;div className='col-12'>
-        &lt;h3 className='subheading mb-0'>Welcome to&lt;/h3>
-        &lt;h1 className='heading'>VacciPROFILE&lt;/h1>
+const PathogenInformation = ({selectedPathogen, italizeScientificNames}) => {
+    return &lt;div className='slide-left'>
+        &lt;h4 className='report-heading'>{selectedPathogen.name}&lt;/h4>
+        &lt;p>{italizeScientificNames(selectedPathogen.description)}&lt;/p>
     &lt;/div>
-&lt;/div>
 }
 
-export default Header;</code></pre>
+export default PathogenInformation;</code></pre>
         </article>
     </section>
 

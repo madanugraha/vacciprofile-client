@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>components/Header.js - Documentation</title>
+    <title>components/TopBar.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">components/Header.js</h1>
+    <h1 class="page-title">components/TopBar.js</h1>
     
 
     
@@ -45,30 +45,61 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React from 'react';
+            <pre class="prettyprint source linenums"><code>import React, { useState } from "react";
 
 /**
- * Header Component
+ * TopBar Component
  *
  * @component
- * @namespace Header
- * @returns {JSX.Element} The Header component that displays the main title and a welcome message.
+ * @namespace TopBar
  *
  * @example
- * // Example usage of Header component
- * &lt;Header />
+ * // Example usage of TopBar component
+ * &lt;TopBar 
+ * />
  */
 
-const Header = () => {
-    return &lt;div className='row bg-primary text-white py-4 slide-down'>
-    &lt;div className='col-12'>
-        &lt;h3 className='subheading mb-0'>Welcome to&lt;/h3>
-        &lt;h1 className='heading'>VacciPROFILE&lt;/h1>
-    &lt;/div>
-&lt;/div>
-}
+const TopBar = () => {
 
-export default Header;</code></pre>
+    const [activeTab, setActiveTab] = useState('Manufacturers');
+
+    const handleClick = (tab) => {
+      setActiveTab(tab);
+    };
+
+    return &lt;div className="topbar row pt-3">
+        &lt;ul className="nav nav-tabs">
+            &lt;li className="nav-item">
+                &lt;a
+                className={`nav-link ${activeTab === 'Manufacturers' ? 'active' : ''}`}
+                href="#"
+                onClick={() => handleClick('Manufacturers')}
+                >
+                Manufacturers
+                &lt;/a>
+            &lt;/li>
+            &lt;li className="nav-item">
+                &lt;a
+                className={`nav-link ${activeTab === 'Products' ? 'active' : ''}`}
+                href="#"
+                onClick={() => handleClick('Products')}
+                >
+                Products
+                &lt;/a>
+            &lt;/li>
+            &lt;li className="nav-item">
+                &lt;a
+                className={`nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`}
+                href="#"
+                onClick={() => handleClick('Pathogen')}
+                >
+                Pathogen
+                &lt;/a>
+            &lt;/li>
+        &lt;/ul>
+    &lt;/div>
+}
+export default TopBar;</code></pre>
         </article>
     </section>
 

@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li></li><li></li><li><a href="Microbe.html">Microbe</a></li><li></li><li><a href="Navigation.html">Navigation</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li></ul>
     
 </nav>
 
@@ -47,8 +47,8 @@
         <article>
             <pre class="prettyprint source linenums"><code>import React, { useState, useEffect, useRef } from 'react';
 
-import ManufacturerInformationTable from './information/ManufacturerInformationTable';
-import MicrobeInformation from './information/MicrobeInformation';
+import VaccineListTable from './information/VaccineListTable';
+import PathogenInformation from './information/PathogenInformation';
 import VaccineInformation from './information/VaccineInformation';
 import ManufacturerInformation from './information/ManufacturerInformation';
 import AccreditationInformation from './information/AccreditationInformation';
@@ -62,19 +62,17 @@ import AccreditationInformation from './information/AccreditationInformation';
  * @param {Object} props.activeFilters - The current filters applied to the information view.
  * @param {Function} props.setActiveFilters - Function to update the active filters.
  * @param {Array} props.manufacturersList - List of manufacturers available for selection.
- * @param {Object} props.selectedMicrobe - The currently selected microbe.
+ * @param {Object} props.selectedPathogen - The currently selected pathogen.
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedAccreditation - The currently selected accreditation.
- * @param {string} props.detailsType - The type of details to display ('Microbe', 'Vaccine', 'Manufacturer', 'Accreditation').
- * @param {Function} props.handleSelectMicrobe - Function to handle the selection of a microbe.
+ * @param {string} props.detailsType - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {Function} props.handleSelectPathogen - Function to handle the selection of a pathogen.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
  * @param {Function} props.handleSelectAccreditation - Function to handle the selection of an accreditation.
- * @param {Function} props.getCountriesByVaccine - Function to get countries associated with a vaccine.
- * @param {Function} props.getMicrobeByVaccine - Function to get the microbe associated with a vaccine.
+ * @param {Function} props.getPathogenByVaccine - Function to get the pathogen associated with a vaccine.
  * @param {Function} props.getVaccinesByManufacturer - Function to get vaccines associated with a manufacturer.
  * @param {Function} props.getVaccinesByAccreditation - Function to get vaccines associated with an accreditation.
- * @param {Function} props.getRecommendationByVaccine - Function to get recommendations for a vaccine.
  * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
  * @param {Function} props.convertCamelCaseToReadable - Function to convert camel case strings to a readable format.
  * @param {string} props.changedFrom - Source of the change triggering the view update.
@@ -86,19 +84,17 @@ import AccreditationInformation from './information/AccreditationInformation';
  *    activeFilters={{ searchString: '', firstAlphabet: '' }}
  *    setActiveFilters={(filters) => console.log(filters)}
  *    manufacturersList={[]}
- *    selectedMicrobe={{ name: 'COVID-19', description: '...' }}
+ *    selectedPathogen={{ name: 'COVID-19', description: '...' }}
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
  *    selectedAccreditation='AccreditationZ'
- *    detailsType='Microbe'
- *    handleSelectMicrobe={(microbe) => console.log(microbe)}
+ *    detailsType='Pathogen'
+ *    handleSelectPathogen={(pathogen) => console.log(pathogen)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
  *    handleSelectAccreditation={(accreditation) => console.log(accreditation)}
- *    getCountriesByVaccine={(vaccine) => ['CountryA', 'CountryB']}
- *    getMicrobeByVaccine={(vaccine) => ({ name: 'VirusX' })}
+ *    getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}
  *    getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}
  *    getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}
- *    getRecommendationByVaccine={(vaccine) => 'Recommendation'}
  *    italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}
  *    convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}
  *    changedFrom='Sidebar'
@@ -109,19 +105,17 @@ const InformationView = ({
     activeFilters,
     setActiveFilters,
     manufacturersList, 
-    selectedMicrobe, 
+    selectedPathogen, 
     selectedVaccine, 
     selectedManufacturer,
     selectedAccreditation, 
     detailsType, 
-    handleSelectMicrobe, 
+    handleSelectPathogen, 
     handleSelectVaccine, 
     handleSelectAccreditation, 
-    getCountriesByVaccine,
-    getMicrobeByVaccine,
+    getPathogenByVaccine,
     getVaccinesByManufacturer,
     getVaccinesByAccreditation,
-    getRecommendationByVaccine,
     italizeScientificNames,
     convertCamelCaseToReadable,
     changedFrom
@@ -138,7 +132,7 @@ const InformationView = ({
             }
         }
         prevChangedFrom.current = changedFrom;
-    }, [selectedMicrobe, selectedVaccine, selectedManufacturer, selectedAccreditation, changedFrom]);
+    }, [selectedPathogen, selectedVaccine, selectedManufacturer, selectedAccreditation, changedFrom]);
 
     useEffect(() => {
         setSlideClass(''); 
@@ -148,7 +142,7 @@ const InformationView = ({
         return () => clearTimeout(timeout);
     }, [selectedManufacturer]);
 
-    return &lt;div className={`view-container bg-white col-6 col-sm-8 col-lg-9 p-0 ${slideClass}`}>
+    return &lt;div className={`view-container bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
         &lt;div className='border border-primary border-1 rounded-4 slide-left'>
             { manufacturersList.length === 0 ? &lt;div className='empty-view d-flex justify-content-center align-items-center'>
                     &lt;span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: '', firstAlphabet: ''})}>
@@ -161,23 +155,21 @@ const InformationView = ({
             &lt;/div> : &lt;>
                 &lt;h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data&lt;/h1>
                 {getVaccinesByManufacturer().length>0 
-                ? &lt;ManufacturerInformationTable 
+                ? &lt;VaccineListTable 
                     detailsType={detailsType}
-                    selectedMicrobe={selectedMicrobe}
+                    selectedPathogen={selectedPathogen}
                     selectedVaccine={selectedVaccine}
                     selectedAccreditation={selectedAccreditation}
                     handleSelectVaccine={handleSelectVaccine}
-                    handleSelectMicrobe={handleSelectMicrobe} 
+                    handleSelectPathogen={handleSelectPathogen} 
                     handleSelectAccreditation={handleSelectAccreditation}
                     getVaccinesByManufacturer={getVaccinesByManufacturer}
-                    getMicrobeByVaccine={getMicrobeByVaccine}
-                    getCountriesByVaccine={getCountriesByVaccine}
-                    getRecommendationByVaccine={getRecommendationByVaccine}
+                    getPathogenByVaccine={getPathogenByVaccine}
                 /> : ``}
                 &lt;div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
-                    {detailsType==="Microbe" 
-                    ? &lt;MicrobeInformation 
-                        selectedMicrobe={selectedMicrobe} 
+                    {detailsType==="Pathogen" 
+                    ? &lt;PathogenInformation 
+                        selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
                     /> : detailsType==="Vaccine" 
                     ? &lt;VaccineInformation 
@@ -215,7 +207,7 @@ export default InformationView;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 01 2024 12:28:45 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 05 2024 12:37:59 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
