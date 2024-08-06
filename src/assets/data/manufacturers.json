@@ -38,16 +38,21 @@
         "name": "Johnson & Johnson",
         "description": "Johnson & Johnson engages in research and development, manufacture and sale of a broad range of products in the health care field. They are organized into three business segments: Consumer Health, Pharmaceutical and Medical Devices. With products sold in over 175 countries, Johnson & Johnson’s key pharmaceutical products include REMICADE®, SIMPONI®, SIMPONI ARIA®, STELARA®, DARZALEX®, IMBRUVICA®, etc. Johnson & Johnson also produces a COVID-19 vaccine: Janssen COVID-19 Vaccine.",
         "details": {
-            "founded": "1886",
-            "headquarters": "New Jersey, U.S.",
-            "ceo": "Alex Gorsky",
-            "revenue": "US$82.584 billion",
-            "operatingIncome": "US$16.497 billion",
-            "netIncome": "US$14.714 billion",
-            "totalAssets": "US$174.894 billion",
-            "totalEquity": "US$63.278 billion",
-            "numberOfEmployees": "134,500",
+            "founded": "January 1886; 138 years ago in New Brunswick, New Jersey, U.S.",
+            "headquarters": "Johnson and Johnson Plaza, New Brunswick, New Jersey, U.S.",
+            "ceo": "Joaquin Duato",
+            "revenue": "US$85.16 billion",
+            "operatingIncome": "US$21.21 billion",
+            "netIncome": "US$35.15 billion",
+            "totalAssets": "US$167.6 billion",
+            "totalEquity": "US$68.78 billion",
+            "numberOfEmployees": "134,400",
             "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Johnson & Johnson From Wikipedia, the free encyclopedia",
+                    "link": "https://en.wikipedia.org/wiki/Johnson_%26_Johnson"
+                },
                 {
                     "lastUpdated": "2021",
                     "title": "Johnson & Johnson Financial Statements 2005-2021",
@@ -71,16 +76,21 @@
         "name": "GlaxoSmithKline",
         "description": "GlaxoSmithKline (GSK) is a multinational pharmaceutical company with a purpose to improve the quality of human life by helping people do more, feel better, and live longer. GSK is organized into three business segments: pharmaceuticals, vaccines, and consumer healthcare. GSK operates in more than 150 countries with employees across 96 markets. Key products include Bexsero, Fluarix/FluLaval, Shingrix, Boostrix, Synflorix, Rotarix, Infanrix, Pediarix, Hepatitis vaccine, etc.",
         "details": {
-            "founded": "2000",
-            "headquarters": "London, England",
+            "founded": "27 December 2000; 23 years ago",
+            "headquarters": "London, England, UK",
             "ceo": "Emma Walmsley",
-            "revenue": "GB£34.099 billion",
-            "operatingIncome": "GB£7.783 billion",
-            "netIncome": "GB£5.749 billion",
-            "totalAssets": "GB£80.431 billion",
-            "totalEquity": "GB£20.808 billion",
-            "numberOfEmployees": "94,000+",
+            "revenue": "£30.328 billion",
+            "operatingIncome": "£6.745 billion",
+            "netIncome": "£5.308 billion",
+            "totalAssets": "£59.005 billion",
+            "totalEquity": "£12.795 billion",
+            "numberOfEmployees": "70,000",
             "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "GSK plc From Wikipedia, the free encyclopedia",
+                    "link": "https://en.wikipedia.org/wiki/GSK_plc"
+                },
                 {
                     "lastUpdated": "2020",
                     "title": "Full year and fourth quarter 2020 report",
@@ -104,21 +114,26 @@
         "name": "Merck & Co., Inc.",
         "description": "Merck & Co., Inc. is a global health care company that delivers innovative health solutions through its prescription medicines, vaccines, biologic therapies, and animal health products. Merck operates in two segments: Pharmaceutical and Animal Health segments. The Pharmaceutical segment includes human health pharmaceutical and vaccine products while the Animal Health segment discovers, develops, manufactures and markets a wide range of veterinary pharmaceutical and vaccine products, as well as health management solutions and services, for the prevention, treatment and control of disease in all major livestock and companion animal species. Merck operates in more than 140 countries worldwide with key products such as Gardasil, Varivax, Pneumovax, ProQuad, M-M-R II, etc.",
         "details": {
-            "founded": "1891",
-            "headquarters": "New Jersey, U.S.",
+            "founded": "January 1891; 133 years ago, as a subsidiary of Merck 1917, 107 years ago, as an independent company",
+            "headquarters": "Rahway, New Jersey, U.S.",
             "ceo": "Robert M. Davis",
-            "revenue": "US$47.994 billion",
-            "operatingIncome": "US$8.791 billion",
-            "netIncome": "US$7.067 billion",
-            "totalAssets": "US$89.800 billion",
-            "totalEquity": "US$29.270 billion",
-            "numberOfEmployees": "74,000",
+            "revenue": "US$60.12 billion",
+            "operatingIncome": "US$1.889 billion",
+            "netIncome": "US$365 million",
+            "totalAssets": "US$106.7 billion",
+            "totalEquity": "US$37.58 billion",
+            "numberOfEmployees": "72,000",
             "sources": [
                 {
+                    "lastUpdated": "2023",
+                    "title": "Merck & Co. From Wikipedia, the free encyclopedia",
+                    "link": "https://en.wikipedia.org/wiki/Merck_%26_Co."
+                },{
                     "lastUpdated": "2020",
                     "title": "Merck & Co., Inc. 2020 Form 10-K Annual Report",
                     "link": "https://www.sec.gov/ix?doc=/Archives/edgar/data/310158/000031015821000004/mrk-20201231.htm"
                 }
+                
             ]
         },
         "vaccines": [
@@ -176,5 +191,33 @@
                 }
             ]
         }
+    },
+    {
+        "manufacturerId": 7,
+        "name": "Merck Group",
+        "description": "The Merck Group, branded and commonly known as Merck, is a German multinational science and technology company headquartered in Darmstadt, with about 60,000 employees and a presence in 66 countries. The group includes around 250 companies; the main company is Merck KGaA in Germany. The company is divided into three business lines: Healthcare, Life Sciences and Electronics. Merck was founded in 1668 and is the world's oldest operating chemical and pharmaceutical company, as well as one of the largest pharmaceutical companies globally.",
+        "details": {
+            "founded": "1668; 356 years ago",
+            "headquarters": "Darmstadt, Germany",
+            "ceo": "Belén Garijo",
+            "revenue": "€20.99 billion",
+            "operatingIncome": "€3.609 billion",
+            "netIncome": "€2.834 billion",
+            "totalAssets": "€48.49 billion",
+            "totalEquity": "€26.68 billion",
+            "numberOfEmployees": "62,908",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Merck Group From Wikipedia, the free encyclopedia",
+                    "link": "https://en.wikipedia.org/wiki/Merck_Group"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+            
+            }
+        ]
     }
 ]

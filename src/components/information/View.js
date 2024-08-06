@@ -116,7 +116,7 @@ const View = ({
                     ? <Pathogen 
                         selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
-                    /> : activeTab==="Vaccine" 
+                    /> : activeTab==="Product" 
                     ? <VaccineInformation 
                         selectedVaccine={selectedVaccine}
                         italizeScientificNames={italizeScientificNames}

@@ -58,7 +58,7 @@ const VaccineListTable = ({
                         <tr>
                             <th>Vaccine</th>
                             <th>Pathogen</th>
-                            <th>Accreditation</th>
+                            <th>Licensing</th>
                         </tr>
                     </thead>
                     <tbody>

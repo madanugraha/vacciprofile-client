@@ -90,7 +90,7 @@
         const handleSelectVaccine = vx => {
             const vaccine = vaccines.find(vaccine => vaccine.name === vx.name);
             setSelectedVaccine(vaccine);
-            setActiveTab("Vaccine");
+            setActiveTab("Product");
         };
 
         /**
