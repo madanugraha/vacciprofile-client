@@ -38,7 +38,7 @@
         ],
         "manufacturerId": 1,
         "accreditation": ["FDA", "EMA"],
-        "description": "Penbraya™ is a pneumococcal vaccine developed by Pfizer. It is designed to protect against diseases caused by the bacterium Streptococcus pneumoniae, which can lead to conditions such as pneumonia, meningitis, and sepsis. Penbraya™ provides coverage against multiple strains of pneumococcal bacteria, helping to reduce the incidence of these potentially serious infections.",
+        "description": "Penbraya™ is a pneumococcal vaccine developed by Pfizer. It is designed to protect against diseases caused by the bacterium Streptococcus pneumoniae, which can lead to conditions such as pneumonia, meningitis, and sepsis. Penbraya™ provides coverage against multiple strains of pneumococcal bacteria, helping to reduce the incidence of these potentially serious infections.PENBRAYA is indicated for active immunization to prevent invasive disease caused by Neisseria meningitidis serogroups A, B, C, W, and Y. PENBRAYA is approved for use in individuals 10 through 25 years of age. ",
         "link": "https://www.pfizer.com/products/product-detail/penbrayatm",
         "lastUpdated": "TBU"
     },
@@ -148,6 +148,20 @@
         "accreditation": ["WHO", "EMA", "FDA"],
         "description": "Gardasil is a vaccine developed by Merck & Co., Inc. to protect against human papillomavirus (HPV) infection. It provides protection against the most common HPV types that cause cervical cancer, other genital cancers, and genital warts.",
         "link": "https://www.merck.com/product/usa/pi_circulars/g/gardasil/gardasil_pi.pdf",
+        "lastUpdated": "TBU"
+    },
+    {
+        "name": "FSME-Immun®",
+        "vaccineId": 12,
+        "pathogenId": 4,
+        "manufacturers": [
+            {"manufacturerId": 1}
+        ],
+        "manufacturerId": 1,
+        "accreditation": ["EMA", "WHO"],
+        "description": "Pfizer’s TBE vaccine, marketed under the brand names FSME-Immun® and TicoVac™ in Europe, and TICOVAC™ in the U.S., is developed using a master ‘seed’ virus that is similar to the TBE virus found in nature. It is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. It is designed to provide protection against TBE and is used in regions where the disease is endemic.",
+        "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
+        "link": "https://www.pfizer.com/products/product-detail/ticovac",
         "lastUpdated": "TBU"
     }
 ]

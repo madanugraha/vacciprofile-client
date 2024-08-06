@@ -29,7 +29,8 @@
             { "vaccineId": 7 },
             { "vaccineId": 8 },
             { "vaccineId": 2 },
-            { "vaccineId": 4 }
+            { "vaccineId": 4 },
+            { "vaccineId": 12 }
         ],
         "link": "https://www.pfizer.com/products/product-list"
     },

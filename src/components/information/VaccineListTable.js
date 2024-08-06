@@ -45,53 +45,53 @@ const VaccineListTable = ({
 }) => {
     return <div className="accordion" id="accordianVaccineList">
     <div className="accordion-item">
-      <h2 className="accordion-header" id="accordianVaccines">
-        <button className="accordion-button collapsed bg-unselectable py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
-          List of Vaccines
-        </button>
-      </h2>
-      <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
-        <div className="accordion-body">
-            <div className='view-header table-responsive m-0'>
-                <table className='table w-100 m-0'>
-                    <thead>
-                        <tr>
-                            <th>Vaccine</th>
-                            <th>Pathogen</th>
-                            <th>Licensing</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {getVaccinesByManufacturer().map((vaccine, key)=><tr key={key}>
-                            <td className='vaccine-cell'>
-                                <span
-                                    className={`${activeTab==="Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`} 
-                                    onClick={()=>handleSelectVaccine(vaccine)}>
-                                    {vaccine.name}
-                                </span>
-                            </td>
-                            <td className='pathogen-cell'>
-                                <span 
-                                    className={`${activeTab==="Pathogen" && selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
-                                    onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{getPathogenByVaccine(vaccine).name}
-                                </span>
-                            </td>
-                            <td className='accreditation-cell'>
-                                {vaccine.accreditation.map((accreditation, index)=>
-                                <span key={index}>
+        <h2 className="accordion-header" id="accordianVaccines">
+            <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
+            List of Vaccines
+            </button>
+        </h2>
+        <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
+            <div className="accordion-body">
+                <div className='view-header table-responsive m-0'>
+                    <table className='table w-100 m-0'>
+                        <thead>
+                            <tr>
+                                <th>Vaccine</th>
+                                <th>Pathogen</th>
+                                <th>Licensing Authorities</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {getVaccinesByManufacturer().map((vaccine, key)=><tr key={key}>
+                                <td className='vaccine-cell'>
+                                    <span
+                                        className={`${activeTab==="Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`} 
+                                        onClick={()=>handleSelectVaccine(vaccine)}>
+                                        {vaccine.name}
+                                    </span>
+                                </td>
+                                <td className='pathogen-cell'>
                                     <span 
-                                        className={`${activeTab==="Accreditation" && selectedAccreditation === accreditation ? `selected` : `selectable`}`} 
-                                        onClick={()=>handleSelectAccreditation(accreditation)}>
-                                        {accreditation}
-                                    </span>{index<vaccine.accreditation.length-1 ? <span className='text-decoration-none'>, </span> : ``}
-                                </span>)}
-                            </td>
-                        </tr>)}
-                    </tbody>
-                </table>
+                                        className={`${activeTab==="Pathogen" && selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
+                                        onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{getPathogenByVaccine(vaccine).name}
+                                    </span>
+                                </td>
+                                <td className='accreditation-cell'>
+                                    {vaccine.accreditation.map((accreditation, index)=>
+                                    <span key={index}>
+                                        <span 
+                                            className={`${activeTab==="Accreditation" && selectedAccreditation === accreditation ? `selected` : `selectable`}`} 
+                                            onClick={()=>handleSelectAccreditation(accreditation)}>
+                                            {accreditation}
+                                        </span>{index<vaccine.accreditation.length-1 ? <span className='text-decoration-none'>, </span> : ``}
+                                    </span>)}
+                                </td>
+                            </tr>)}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-      </div>
     </div>
   </div>
 }

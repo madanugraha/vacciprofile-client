@@ -1,10 +1,10 @@
 import React from 'react';
 
 /**
- * Accreditation Component
+ * Lincensing Component
  *
  * @component
- * @namespace Accreditation
+ * @namespace Lincensing
  * @param {Object} props - The component accepts handleSelectVaccine, selectedAccreditation, and getVaccinesByAccreditation as props.
  * @param {Function} props.handleSelectVaccine - Function that gets triggered once a vaccine is selected.
  * @param {string} props.selectedAccreditation - The accreditation that is selected.
@@ -23,7 +23,7 @@ import React from 'react';
  * />
  */
 
-const AccreditationInformation = ({
+const LincensingModal = ({
     handleSelectVaccine,
     selectedAccreditation,
     getVaccinesByAccreditation
@@ -58,4 +58,4 @@ const AccreditationInformation = ({
     </div>
 }
 
-export default AccreditationInformation;
+export default LincensingModal;

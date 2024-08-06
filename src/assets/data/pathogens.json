@@ -33,7 +33,8 @@
         "name": "Tick-Borne Encephalitis (TBE)",
         "description": "Tick-borne encephalitis (TBE) is a viral infection transmitted by ticks that affects the central nervous system. It can cause severe symptoms including encephalitis, meningitis, and can lead to long-term neurological problems. The vaccine is recommended for individuals living in or traveling to areas where TBE is prevalent.",
         "vaccines": [
-            { "vaccineId": 7 }
+            { "vaccineId": 7 },
+            { "vaccineId": 12 }
         ]
     },
     {
