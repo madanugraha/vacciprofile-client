@@ -4,7 +4,7 @@
 
     import Header from './components/Header';
     import Sidebar from './components/Sidebar';
-    import InformationView from './components/InformationView.js';
+    import View from './components/information/View.js';
     import TopBar from './components/TopBar.js';
 
     import manufacturers from './assets/data/manufacturers.json';
@@ -19,7 +19,7 @@
      *
      * @description 
      * This is the main component of the vaccine profile application. It manages the state of selected items, 
-     * handles user interactions, and renders the Header, Sidebar, InformationView, and other components. It 
+     * handles user interactions, and renders the Header, Sidebar, View, and other components. It 
      * is the entry point into the application.
      *
      * @returns {JSX.Element} The main application component containing all sub-components and logic.
@@ -362,14 +362,17 @@
                         <Sidebar
                             activeTab={activeTab}
                             sidebarList={sidebarList}
+                            selectedVaccine={selectedVaccine}
+                            selectedPathogen={selectedPathogen}
                             selectedManufacturer={selectedManufacturer}
+                            setSelectedVaccine={setSelectedVaccine}
+                            setSelectedPathogen={setSelectedPathogen}
                             setSelectedManufacturer={setSelectedManufacturer}
-                            handleSelectManufacturer={handleSelectManufacturer}
                             setChangedFrom={setChangedFrom}
                             changedFrom={changedFrom}
                             setActiveTab={setActiveTab}
                         />
-                        <InformationView
+                        <View
                             activeTab={activeTab}
                             activeFilters={activeFilters}
                             setActiveFilters={setActiveFilters}

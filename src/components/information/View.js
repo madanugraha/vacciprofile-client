@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import VaccineListTable from './information/VaccineListTable';
-import PathogenInformation from './information/PathogenModal';
-import VaccineInformation from './information/VaccineInformation';
-import ManufacturerProfile from './information/ManufacturerProfile';
-import AccreditationInformation from './information/AccreditationInformation';
+import VaccineListTable from './VaccineListTable';
+import Pathogen from './Pathogen';
+import VaccineInformation from './VaccineInformation';
+import ManufacturerProfile from './ManufacturerProfile';
+import AccreditationInformation from './AccreditationInformation';
 
 /**
- * InformationView Component
+ * View Component
  *
  * @component
  * @namespace Main
@@ -32,8 +32,8 @@ import AccreditationInformation from './information/AccreditationInformation';
  * @returns {JSX.Element} The Information View component displaying detailed information based on the selected type and filters.
  *
  * @example
- * // Example usage of InformationView component
- * <InformationView
+ * // Example usage of View component
+ * <View
  *    activeFilters={{ searchString: '', firstAlphabet: '' }}
  *    setActiveFilters={(filters) => console.log(filters)}
  *    manufacturersList={[]}
@@ -54,7 +54,7 @@ import AccreditationInformation from './information/AccreditationInformation';
  * />
  */
 
-const InformationView = ({
+const View = ({
     activeTab,
     activeFilters,
     setActiveFilters,
@@ -97,19 +97,23 @@ const InformationView = ({
 
     return <div className={`view-container bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
         <div className='border border-primary border-1 rounded-4 slide-left'>
-            { manufacturersList.length === 0 ? <div className='empty-view d-flex justify-content-center align-items-center'>
-                    <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: '', firstAlphabet: ''})}>
-                        Clear filters
-                    </span>
-                </div> : ( manufacturersList.length!==0 && Object.keys(selectedManufacturer).length === 0) 
+            { 
+            // manufacturersList.length === 0 ? <div className='empty-view d-flex justify-content-center align-items-center'>
+            //         <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: '', firstAlphabet: ''})}>
+            //             Clear filters
+            //         </span>
+            //     </div> : 
+            (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
+            (activeTab === 'Product' && Object.keys(selectedVaccine).length === 0) ||
+            (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0)
                 ? <div className='empty-view position-relative'>
                 <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
                 <span className='select-prompt position-absolute'>Select a {activeTab}</span>
             </div> : <>
-                <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data</h1>
+                {activeTab==="Manufacturer" ? <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data</h1>:null}
                 <div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
                     {activeTab==="Pathogen" 
-                    ? <PathogenInformation 
+                    ? <Pathogen 
                         selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
                     /> : activeTab==="Vaccine" 
@@ -146,4 +150,4 @@ const InformationView = ({
     </div>
 }
 
-export default InformationView;
+export default View;

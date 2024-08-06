@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * PathogenInformation Component
+ * Pathogen Component
  *
  * @component
  * @namespace Pathogen
@@ -13,8 +13,8 @@ import React from 'react';
  * @returns {JSX.Element} The Pathogen Information component.
  *
  * @example
- * // Example usage of PathogenInformation component
- * <PathogenInformation 
+ * // Example usage of Pathogen component
+ * <Pathogen 
  *    selectedPathogen={{ 
  *        name: 'COVID-19', 
  *        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'
@@ -23,11 +23,11 @@ import React from 'react';
  * />
  */
 
-const PathogenInformation = ({selectedPathogen, italizeScientificNames}) => {
+const Pathogen = ({selectedPathogen, italizeScientificNames}) => {
     return <div className='slide-left'>
-        <h4 className='report-heading'>{selectedPathogen.name}</h4>
+        <h1 className='heading text-primary px-3 pt-2'>{selectedPathogen.name}</h1>
         <p>{italizeScientificNames(selectedPathogen.description)}</p>
     </div>
 }
 
-export default PathogenInformation;
+export default Pathogen;
