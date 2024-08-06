@@ -56,7 +56,7 @@ const VaccineListTable = ({
                     <table className='table w-100 m-0'>
                         <thead>
                             <tr>
-                                <th>Vaccine</th>
+                                <th>Vaccine Brand Name</th>
                                 <th>Pathogen</th>
                                 <th>Licensing Authorities</th>
                             </tr>

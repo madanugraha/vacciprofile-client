@@ -4,7 +4,7 @@ import VaccineListTable from './VaccineListTable';
 import Pathogen from './Pathogen';
 import VaccineInformation from './VaccineInformation';
 import ManufacturerProfile from './ManufacturerProfile';
-import LincensingModal from './LincensingModal';
+import LicensingAuthority from './LicensingAuthority';
 
 /**
  * View Component
@@ -126,7 +126,7 @@ const View = ({
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         convertCamelCaseToReadable={convertCamelCaseToReadable}
                     /> : activeTab==="Accreditation" 
-                    ? <LincensingModal
+                    ? <LicensingAuthority
                         getVaccinesByAccreditation={getVaccinesByAccreditation}
                         handleSelectVaccine={handleSelectVaccine}
                         selectedAccreditation={selectedAccreditation}

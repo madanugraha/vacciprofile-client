@@ -10,6 +10,7 @@
     import manufacturers from './assets/data/manufacturers.json';
     import pathogens from './assets/data/pathogens.json';
     import vaccines from './assets/data/vaccines.json';
+    import licenses from './assets/data/licenses.json';
     import scientificNames from './assets/scientificNames';
 
     /**
@@ -43,6 +44,7 @@
         const [ pathogensList, setPathogensList ] = useState();
         const [ vaccinesList, setVaccinesList ] = useState();
         const [ manufacturersList, setManufacturersList ] = useState(manufacturers);
+        const [ licensesList, setLicensesList ] = useState();
         const [ changedFrom, setChangedFrom ] = useState('');
 
         /**
@@ -265,6 +267,39 @@
         }, [pathogensList, getVaccineByPathogen, getManufacturerByVaccine]);
 
         /**
+         * Filters the list of pathogens based on the search keyword.
+         * 
+         * This function filters pathogens and also checks related vaccines and manufacturers for matches with the search keyword.
+         * 
+         * @function
+         * @name filterPathogens
+         * 
+         * @param {string} keyword - The lowercased search keyword used for filtering.
+         * @returns {Array} - An array of filtered pathogens.
+         */
+        const filterLicensesBySearch = useCallback((keyword) => {
+            return pathogensList.filter(pathogen => {
+                const pathogenMatch = pathogen.name.toLowerCase().includes(keyword) ||
+                                    pathogen.description.toLowerCase().includes(keyword);
+                
+                if (pathogenMatch) return true;
+                
+                const vaccines = getVaccineByPathogen(pathogen) || [];
+                return Array.isArray(vaccines) && vaccines.some(vaccine => {
+                    const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
+                                        vaccine.description.toLowerCase().includes(keyword);
+                    
+                    if (vaccineMatch) return true;
+                    
+                    return getManufacturerByVaccine(vaccine).some(manufacturer =>
+                        manufacturer.name.toLowerCase().includes(keyword) ||
+                        manufacturer.description.toLowerCase().includes(keyword)
+                    );
+                });
+            });
+        }, [pathogensList, getVaccineByPathogen, getManufacturerByVaccine]);
+
+        /**
          * Filters the sidebar list based on the currently selected tab and search keyword.
          * 
          * This function determines which filtering function to use based on the active tab and updates the `sidebarList` state
@@ -287,6 +322,8 @@
                     filteredSidebarList = filterVaccinesBySearch(keywordLower);
                 } else if (activeTab === 'Pathogen') {
                     filteredSidebarList = filterPathogensBySearch(keywordLower);
+                } else if (activeTab === 'License') {
+                    filteredSidebarList = filterLicensesBySearch(keywordLower);
                 }
                 setSidebarList(filteredSidebarList);
             } else {
@@ -296,6 +333,8 @@
                     setSidebarList(vaccinesList);
                 } else if (activeTab === 'Pathogen') {
                     setSidebarList(pathogensList);
+                } else if (activeTab === 'License') {
+                    setSidebarList(licensesList);
                 }
             }
         }, [activeFilters.searchKeyword, activeTab, manufacturersList, pathogensList, vaccinesList, filterManufacturersBySearch, filterPathogensBySearch, filterVaccinesBySearch]);        

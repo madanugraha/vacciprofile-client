@@ -7,7 +7,7 @@ import React from "react";
  * @namespace TopBar
  *
  * @example
- * // Example usage of TopBar component
+ * Example usage of TopBar component
  * <TopBar 
  * />
  */
@@ -28,7 +28,10 @@ const TopBar = ({
                     Products
                 </li>
                 <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
-                    Pathogen
+                    Pathogens
+                </li>
+                <li className={`nav-item nav-link ${activeTab === 'License' ? 'active' : ''}`} onClick={() => handleTabChange('License')}>
+                    Licensing Authorities
                 </li>
             </ul>
             <div className='search-container mb-3'>
@@ -40,4 +43,5 @@ const TopBar = ({
         </div>
     </div>
 }
+
 export default TopBar;

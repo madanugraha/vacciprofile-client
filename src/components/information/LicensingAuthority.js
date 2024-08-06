@@ -1,10 +1,10 @@
 import React from 'react';
 
 /**
- * Lincensing Component
+ * LicensingAuthority Component
  *
  * @component
- * @namespace Lincensing
+ * @namespace LicensingAuthority
  * @param {Object} props - The component accepts handleSelectVaccine, selectedAccreditation, and getVaccinesByAccreditation as props.
  * @param {Function} props.handleSelectVaccine - Function that gets triggered once a vaccine is selected.
  * @param {string} props.selectedAccreditation - The accreditation that is selected.
@@ -12,8 +12,8 @@ import React from 'react';
  * @returns {JSX.Element} The Accreditation Information component.
  *
  * @example
- * // Render the Accreditation component with dummy data and functions
- * <Accreditation 
+ * // Render the LicensingAuthority component with dummy data and functions
+ * <LicensingAuthority 
  *   handleSelectVaccine={vaccineName => console.log('Selected vaccine:', vaccineName)}
  *   selectedAccreditation="FDA"
  *   getVaccinesByAccreditation={() => [
@@ -23,7 +23,7 @@ import React from 'react';
  * />
  */
 
-const LincensingModal = ({
+const LicensingAuthority = ({
     handleSelectVaccine,
     selectedAccreditation,
     getVaccinesByAccreditation
@@ -58,4 +58,4 @@ const LincensingModal = ({
     </div>
 }
 
-export default LincensingModal;
+export default LicensingAuthority;
