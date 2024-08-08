@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>components/information/Licenser.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">components/information/Licenser.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from 'react';
+
+/**
+ * Licenser Component
+ *
+ * @component
+ * @namespace Licenser
+ * @param {Object} props - The component accepts handleSelectVaccine, selectedLicenser, and getVaccinesByLicenser as props.
+ * @param {Function} props.handleSelectVaccine - Function that gets triggered once a vaccine is selected.
+ * @param {string} props.selectedLicenser - The licenser that is selected.
+ * @param {Function} props.getVaccinesByLicenser - Function that gets a list of vaccines for a specific licenser.
+ * @returns {JSX.Element} The Licenser Information component.
+ *
+ * @example
+ * // Render the Licenser component with dummy data and functions
+ * &lt;Licenser 
+ *   handleSelectVaccine={vaccineName => console.log('Selected vaccine:', vaccineName)}
+ *   selectedLicenser="FDA"
+ *   getVaccinesByLicenser={() => [
+ *     { name: 'Vaccine A', vaccineType: 'Type 1', comments: 'Effective', revenue: '$1M' },
+ *     { name: 'Vaccine B', vaccineType: 'Type 2', comments: 'Moderate', revenue: '$500K' }
+ *   ]}
+ * />
+ */
+
+const Licenser = ({
+    handleSelectVaccine,
+    selectedLicenser,
+    getVaccinesByLicenser
+}) => {
+    return &lt;div className='slide-left'>
+        &lt;h4 className='report-heading'>{selectedLicenser.fullName}-approved Vaccines&lt;/h4>
+        &lt;div className='table-responsive'>
+            &lt;table className='table table-light w-100 m-0 mt-3'>
+                &lt;thead>
+                    &lt;tr>
+                        &lt;th colSpan={4} className='text-center'>&lt;i>Vaccines&lt;/i>&lt;/th>
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;th>&lt;i>Tradename&lt;/i>&lt;/th>
+                        &lt;th>&lt;i>Vaccine Type&lt;/i>&lt;/th>
+                        &lt;th>&lt;i>Comments&lt;/i>&lt;/th>
+                        &lt;th>&lt;i>Revenue&lt;/i>&lt;/th>
+                    &lt;/tr>
+                &lt;/thead>
+                &lt;tbody>
+                    {getVaccinesByLicenser().map((vaccine, index) => (
+                    &lt;tr key={index}>
+                        &lt;td>&lt;i>{&lt;span className='text-primary fw-bold hover-underline' onClick={()=>handleSelectVaccine(vaccine.name)}>{vaccine.name}&lt;/span>}&lt;/i>&lt;/td>
+                        &lt;td>&lt;i>{vaccine.vaccineType || '-'}&lt;/i>&lt;/td>
+                        &lt;td>&lt;i>{vaccine.comments || '-'}&lt;/i>&lt;/td>
+                        &lt;td>&lt;i>{vaccine.revenue || '-'}&lt;/i>&lt;/td>
+                    &lt;/tr>
+                    ))}
+                &lt;/tbody>
+            &lt;/table>
+        &lt;/div>
+    &lt;/div>
+}
+
+export default Licenser;</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 08 2024 17:11:11 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

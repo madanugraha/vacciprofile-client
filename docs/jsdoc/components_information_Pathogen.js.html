@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>components/TopBar.js - Documentation</title>
+    <title>components/information/Pathogen.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">components/TopBar.js</h1>
+    <h1 class="page-title">components/information/Pathogen.js</h1>
     
 
     
@@ -45,53 +45,39 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React from "react";
+            <pre class="prettyprint source linenums"><code>import React from 'react';
 
 /**
- * TopBar Component
+ * Pathogen Component
  *
  * @component
- * @namespace TopBar
+ * @namespace Pathogen
+ * @param {Object} props - The component accepts selectedPathogen and italizeScientificNames as props.
+ * @param {Object} props.selectedPathogen - The selected pathogen object containing its details.
+ * @param {string} props.selectedPathogen.name - The name of the selected pathogen.
+ * @param {string} props.selectedMPathogen.description - The description of the selected pathogen.
+ * @param {Function} props.italizeScientificNames - Function that converts scientific names in the description to italicized text.
+ * @returns {JSX.Element} The Pathogen Information component.
  *
  * @example
- * Example usage of TopBar component
- * &lt;TopBar 
+ * // Example usage of Pathogen component
+ * &lt;Pathogen 
+ *    selectedPathogen={{ 
+ *        name: 'COVID-19', 
+ *        description: 'Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus that causes COVID-19.'
+ *    }} 
+ *    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '&lt;i>$1&lt;/i>')} 
  * />
  */
 
-const TopBar = ({
-    activeTab,
-    handleTabChange,
-    handleSearch
-}) => {
-
-    return &lt;div className="topbar row pt-3 slide-down">
-        &lt;div className="position-relative">
-            &lt;ul className="nav nav-tabs">
-                &lt;li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
-                    Manufacturers
-                &lt;/li>
-                &lt;li className={`nav-item nav-link ${activeTab === 'Product' ? 'active' : ''}`} onClick={() => handleTabChange('Product')}>
-                    Products
-                &lt;/li>
-                &lt;li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
-                    Pathogens
-                &lt;/li>
-                &lt;li className={`nav-item nav-link ${activeTab === 'License' ? 'active' : ''}`} onClick={() => handleTabChange('License')}>
-                    Licensing Authorities
-                &lt;/li>
-            &lt;/ul>
-            &lt;div className='search-container mb-3'>
-                &lt;span className="position-relative">
-                    &lt;input type="text" className="text-center bg-light rounded-2 border-dark border-0 w-100" id="search" name="search" placeholder="Search" onChange={e => handleSearch(e.target.value)}/>
-                    &lt;i className="fa fa-search position-absolute top-50 translate-middle-y end-0 me-2 text-muted" aria-hidden="true">&lt;/i>
-                &lt;/span>
-            &lt;/div>
-        &lt;/div>
+const Pathogen = ({selectedPathogen, italizeScientificNames}) => {
+    return &lt;div className='slide-left'>
+        &lt;h1 className='heading text-primary pt-2'>{selectedPathogen.name}&lt;/h1>
+        &lt;p>{italizeScientificNames(selectedPathogen.description)}&lt;/p>
     &lt;/div>
 }
 
-export default TopBar;</code></pre>
+export default Pathogen;</code></pre>
         </article>
     </section>
 

@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
     
 </nav>
 
@@ -128,7 +128,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Render the VaccineListTable component with dummy data and functions&lt;VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedAccreditation="Accreditation Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}/></code></pre>
+    <pre class="prettyprint"><code>// Render the VaccineListTable component with dummy data and functions&lt;VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedLicenser="Licenser Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectLicenser={licenser => console.log('Licenser selected:', licenser)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}/></code></pre>
 
 
 
@@ -175,7 +175,7 @@
 
             
 
-            <td class="description last"><p>The component accepts activeTab, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props.</p>
+            <td class="description last"><p>The component accepts activeTab, selectedPathogen, selectedVaccine, selectedLicenser, and several handler and data functions as props.</p>
                 <h6>Properties</h6>
                 
 
@@ -218,7 +218,7 @@
 
             
 
-            <td class="description last"><p>The type of detail currently selected, e.g., &quot;Vaccine&quot;, &quot;Pathogen&quot;, or &quot;Accreditation&quot;.</p></td>
+            <td class="description last"><p>The type of detail currently selected, e.g., &quot;Vaccine&quot;, &quot;Pathogen&quot;, or &quot;Licenser&quot;.</p></td>
         </tr>
 
     
@@ -273,7 +273,7 @@
 
         <tr>
             
-                <td class="name"><code>selectedAccreditation</code></td>
+                <td class="name"><code>selectedLicenser</code></td>
             
 
             <td class="type">
@@ -290,7 +290,7 @@
 
             
 
-            <td class="description last"><p>The currently selected accreditation.</p></td>
+            <td class="description last"><p>The currently selected licenser.</p></td>
         </tr>
 
     
@@ -345,7 +345,7 @@
 
         <tr>
             
-                <td class="name"><code>handleSelectAccreditation</code></td>
+                <td class="name"><code>handleSelectLicenser</code></td>
             
 
             <td class="type">
@@ -362,7 +362,7 @@
 
             
 
-            <td class="description last"><p>Function that gets triggered when an accreditation is selected.</p></td>
+            <td class="description last"><p>Function that gets triggered when an licenser is selected.</p></td>
         </tr>
 
     
@@ -583,7 +583,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Render the VaccineListTable component with dummy data and functions&lt;VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedAccreditation="Accreditation Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}/></code></pre>
+    <pre class="prettyprint"><code>// Render the VaccineListTable component with dummy data and functions&lt;VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedLicenser="Licenser Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectLicenser={licenser => console.log('Licenser selected:', licenser)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}/></code></pre>
 
 
 
@@ -630,7 +630,7 @@
 
             
 
-            <td class="description last"><p>The component accepts activeTab, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props.</p>
+            <td class="description last"><p>The component accepts activeTab, selectedPathogen, selectedVaccine, selectedLicenser, and several handler and data functions as props.</p>
                 <h6>Properties</h6>
                 
 
@@ -673,7 +673,7 @@
 
             
 
-            <td class="description last"><p>The type of detail currently selected, e.g., &quot;Vaccine&quot;, &quot;Pathogen&quot;, or &quot;Accreditation&quot;.</p></td>
+            <td class="description last"><p>The type of detail currently selected, e.g., &quot;Vaccine&quot;, &quot;Pathogen&quot;, or &quot;Licenser&quot;.</p></td>
         </tr>
 
     
@@ -728,7 +728,7 @@
 
         <tr>
             
-                <td class="name"><code>selectedAccreditation</code></td>
+                <td class="name"><code>selectedLicenser</code></td>
             
 
             <td class="type">
@@ -745,7 +745,7 @@
 
             
 
-            <td class="description last"><p>The currently selected accreditation.</p></td>
+            <td class="description last"><p>The currently selected licenser.</p></td>
         </tr>
 
     
@@ -800,7 +800,7 @@
 
         <tr>
             
-                <td class="name"><code>handleSelectAccreditation</code></td>
+                <td class="name"><code>handleSelectLicenser</code></td>
             
 
             <td class="type">
@@ -817,7 +817,7 @@
 
             
 
-            <td class="description last"><p>Function that gets triggered when an accreditation is selected.</p></td>
+            <td class="description last"><p>Function that gets triggered when an licenser is selected.</p></td>
         </tr>
 
     
@@ -957,7 +957,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Aug 06 2024 00:12:31 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 08 2024 17:11:11 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

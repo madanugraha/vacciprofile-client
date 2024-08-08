@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
     
 </nav>
 
@@ -52,14 +52,14 @@
  *
  * @component
  * @namespace VaccineListTable
- * @param {Object} props - The component accepts activeTab, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props.
- * @param {string} props.activeTab - The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Accreditation".
+ * @param {Object} props - The component accepts activeTab, selectedPathogen, selectedVaccine, selectedLicenser, and several handler and data functions as props.
+ * @param {string} props.activeTab - The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Licenser".
  * @param {Object} props.selectedPathogen - The currently selected pathogen object.
  * @param {Object} props.selectedVaccine - The currently selected vaccine object.
- * @param {string} props.selectedAccreditation - The currently selected accreditation.
+ * @param {string} props.selectedLicenser - The currently selected licenser.
  * @param {Function} props.handleSelectPathogen - Function that gets triggered when a pathogen is selected.
  * @param {Function} props.handleSelectVaccine - Function that gets triggered when a vaccine is selected.
- * @param {Function} props.handleSelectAccreditation - Function that gets triggered when an accreditation is selected.
+ * @param {Function} props.handleSelectLicenser - Function that gets triggered when an licenser is selected.
  * @param {Function} props.getVaccinesByManufacturer - Function that returns a list of vaccines based on the manufacturer.
  * @param {Function} props.getPathogenByVaccine - Function that returns the pathogen associated with a specific vaccine.
  * @returns {JSX.Element} The Manufacturer Information Table component.
@@ -70,11 +70,11 @@
  *   activeTab="Vaccine"
  *   selectedPathogen={{ name: 'Pathogen X' }}
  *   selectedVaccine={{ name: 'Vaccine Y' }}
- *   selectedAccreditation="Accreditation Z"
+ *   selectedLicenser="Licenser Z"
  *   handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}
  *   handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}
- *   handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}
- *   getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}
+ *   handleSelectLicenser={licenser => console.log('Licenser selected:', licenser)}
+ *   getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}
  *   getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}
  * />
  */
@@ -83,62 +83,62 @@ const VaccineListTable = ({
     activeTab, 
     selectedPathogen, 
     selectedVaccine, 
-    selectedAccreditation,
+    selectedLicenser,
     handleSelectPathogen, 
     handleSelectVaccine, 
-    handleSelectAccreditation, 
+    handleSelectLicenser, 
     getVaccinesByManufacturer,
     getPathogenByVaccine
 }) => {
     return &lt;div className="accordion" id="accordianVaccineList">
     &lt;div className="accordion-item">
-      &lt;h2 className="accordion-header" id="accordianVaccines">
-        &lt;button className="accordion-button collapsed bg-unselectable py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
-          List of Vaccines
-        &lt;/button>
-      &lt;/h2>
-      &lt;div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
-        &lt;div className="accordion-body">
-            &lt;div className='view-header table-responsive m-0'>
-                &lt;table className='table w-100 m-0'>
-                    &lt;thead>
-                        &lt;tr>
-                            &lt;th>Vaccine&lt;/th>
-                            &lt;th>Pathogen&lt;/th>
-                            &lt;th>Accreditation&lt;/th>
-                        &lt;/tr>
-                    &lt;/thead>
-                    &lt;tbody>
-                        {getVaccinesByManufacturer().map((vaccine, key)=>&lt;tr key={key}>
-                            &lt;td className='vaccine-cell'>
-                                &lt;span
-                                    className={`${activeTab==="Vaccine" &amp;&amp; selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`} 
-                                    onClick={()=>handleSelectVaccine(vaccine)}>
-                                    {vaccine.name}
-                                &lt;/span>
-                            &lt;/td>
-                            &lt;td className='pathogen-cell'>
-                                &lt;span 
-                                    className={`${activeTab==="Pathogen" &amp;&amp; selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
-                                    onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{getPathogenByVaccine(vaccine).name}
-                                &lt;/span>
-                            &lt;/td>
-                            &lt;td className='accreditation-cell'>
-                                {vaccine.accreditation.map((accreditation, index)=>
-                                &lt;span key={index}>
+        &lt;h2 className="accordion-header" id="accordianVaccines">
+            &lt;button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
+            List of Vaccines
+            &lt;/button>
+        &lt;/h2>
+        &lt;div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
+            &lt;div className="accordion-body">
+                &lt;div className='view-header table-responsive m-0'>
+                    &lt;table className='table w-100 m-0'>
+                        &lt;thead>
+                            &lt;tr>
+                                &lt;th>Vaccine Brand Name&lt;/th>
+                                &lt;th>Pathogen&lt;/th>
+                                &lt;th>Licensing Authorities&lt;/th>
+                            &lt;/tr>
+                        &lt;/thead>
+                        &lt;tbody>
+                            {getVaccinesByManufacturer().map((vaccine, key)=>&lt;tr key={key}>
+                                &lt;td className='vaccine-cell'>
+                                    &lt;span
+                                        className={`${activeTab==="Vaccine" &amp;&amp; selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`} 
+                                        onClick={()=>handleSelectVaccine(vaccine)}>
+                                        {vaccine.name}
+                                    &lt;/span>
+                                &lt;/td>
+                                &lt;td className='pathogen-cell'>
                                     &lt;span 
-                                        className={`${activeTab==="Accreditation" &amp;&amp; selectedAccreditation === accreditation ? `selected` : `selectable`}`} 
-                                        onClick={()=>handleSelectAccreditation(accreditation)}>
-                                        {accreditation}
-                                    &lt;/span>{index&lt;vaccine.accreditation.length-1 ? &lt;span className='text-decoration-none'>, &lt;/span> : ``}
-                                &lt;/span>)}
-                            &lt;/td>
-                        &lt;/tr>)}
-                    &lt;/tbody>
-                &lt;/table>
+                                        className={`${activeTab==="Pathogen" &amp;&amp; selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
+                                        onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{getPathogenByVaccine(vaccine).name}
+                                    &lt;/span>
+                                &lt;/td>
+                                &lt;td className='licenser-cell'>
+                                    {vaccine.licensers.map((licenser, index)=>
+                                    &lt;span key={index}>
+                                        &lt;span 
+                                            className={`${activeTab==="License" &amp;&amp; selectedLicenser === licenser ? `selected` : `selectable`}`} 
+                                            onClick={()=>handleSelectLicenser(licenser)}>
+                                            {licenser}
+                                        &lt;/span>{index&lt;vaccine.licensers.length-1 ? &lt;span className='text-decoration-none'>, &lt;/span> : ``}
+                                    &lt;/span>)}
+                                &lt;/td>
+                            &lt;/tr>)}
+                        &lt;/tbody>
+                    &lt;/table>
+                &lt;/div>
             &lt;/div>
         &lt;/div>
-      &lt;/div>
     &lt;/div>
   &lt;/div>
 }
@@ -157,7 +157,7 @@ export default VaccineListTable;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Aug 06 2024 00:12:31 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 08 2024 17:11:11 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

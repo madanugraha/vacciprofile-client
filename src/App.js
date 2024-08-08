@@ -10,7 +10,7 @@
     import manufacturers from './assets/data/manufacturers.json';
     import pathogens from './assets/data/pathogens.json';
     import vaccines from './assets/data/vaccines.json';
-    import licenses from './assets/data/licenses.json';
+    import licensers from './assets/data/licensers.json';
     import scientificNames from './assets/scientificNames';
 
     /**
@@ -33,18 +33,17 @@
     const App = () => {
         const [activeTab, setActiveTab] = useState('Manufacturer');
         const [activeFilters, setActiveFilters] = useState({
-            firstAlphabet: '',
             searchKeyword: ''
         })
         const [ selectedPathogen, setSelectedPathogen ] = useState({});
         const [ selectedVaccine, setSelectedVaccine ] = useState({});
         const [ selectedManufacturer, setSelectedManufacturer ] = useState({});
-        const [ selectedAccreditation, setSelectedAccreditation ] = useState("")
+        const [ selectedLicenser, setSelectedLicenser ] = useState({})
         const [ sidebarList, setSidebarList ] = useState();
         const [ pathogensList, setPathogensList ] = useState();
         const [ vaccinesList, setVaccinesList ] = useState();
         const [ manufacturersList, setManufacturersList ] = useState(manufacturers);
-        const [ licensesList, setLicensesList ] = useState();
+        const [ licensersList, setLicensersList ] = useState();
         const [ changedFrom, setChangedFrom ] = useState('');
 
         /**
@@ -80,7 +79,7 @@
             setSelectedVaccine(vaccine);
             setSelectedPathogen(pathogen);
             setActiveTab("Pathogen");
-            setActiveFilters({...activeFilters, firstAlphabet: ''});
+            setActiveFilters({...activeFilters});
         };
 
         /**
@@ -107,14 +106,14 @@
         };
 
         /**
-         * Handles selecting an accreditation.
+         * Handles selecting an licenser.
          *
-         * @param {string} accreditation - The selected accreditation.
+         * @param {string} licenser - The selected licenser.
          */
 
-        const handleSelectAccreditation = accreditation => {
-            setSelectedAccreditation(accreditation);
-            setActiveTab("Accreditation");
+        const handleSelectLicenser = licenser => {
+            setSelectedLicenser(licenser);
+            setActiveTab("License");
         }
 
         /**
@@ -129,13 +128,13 @@
         }, []);
 
         /**
-         * Retrieves vaccines by accreditation.
+         * Retrieves vaccines by licenser.
          *
-         * @returns {Array} List of vaccines with the selected accreditation.
+         * @returns {Array} List of vaccines with the selected licenser.
          */
 
-        const getVaccinesByAccreditation = () => {
-            return vaccines.filter(vaccine => vaccine.accreditation.includes(selectedAccreditation));
+        const getVaccinesByLicenser = () => {
+            return vaccines.filter(vaccine => vaccine.licensers.includes(selectedLicenser));
         }
 
         /**
@@ -169,6 +168,17 @@
 
         const getManufacturerByVaccine = useCallback(vaccine => {
             return manufacturers.filter(manufacturer => manufacturer.manufacturerId === vaccine.manufacturerId);
+        }, []);
+
+        /**
+         * Retrieves licenser by licenserId.
+         *
+         * @param {Object} id - The licenserId.
+         * @returns {Array} Licenser associated with the given licenserId.
+         */
+
+        const getLicenserById = useCallback(id => {
+            return licensers.filter(licenser => licenser.licenserId === id);
         }, []);
 
         /**
@@ -277,7 +287,7 @@
          * @param {string} keyword - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered pathogens.
          */
-        const filterLicensesBySearch = useCallback((keyword) => {
+        const filterLicensersBySearch = useCallback((keyword) => {
             return pathogensList.filter(pathogen => {
                 const pathogenMatch = pathogen.name.toLowerCase().includes(keyword) ||
                                     pathogen.description.toLowerCase().includes(keyword);
@@ -300,6 +310,49 @@
         }, [pathogensList, getVaccineByPathogen, getManufacturerByVaccine]);
 
         /**
+         * Sorts a list of licensers with a custom priority for 'AMA', 'EMA', and 'WHO',
+         * followed by alphabetical sorting for the rest.
+         *
+         * The function first prioritizes 'FDA', 'EMA', and 'WHO' in that order. If neither
+         * licenser is in the custom priority list, it sorts the rest alphabetically by their names.
+         *
+         * @param {Array<Object>} list - The list of licensers to be sorted.
+         * @param {string} list[].name - The name of the licenser to be used for sorting.
+         * @returns {Array<Object>} - The sorted list of licensers.
+         *
+         * @example
+         * const licensers = [
+         *     { name: 'WHO' },
+         *     { name: 'EMA' },
+         *     { name: 'AMA' },
+         *     { name: 'FDA' },
+         *     { name: 'CDC' }
+         * ];
+         *
+         * const sortedLicensers = sortLicensers(licensers);
+         * // Result: [ { name: 'FDA' }, { name: 'EMA' }, { name: 'WHO' }, { name: 'CDC' }, { name: 'HSA' } ]
+         */
+        const sortLicensers = useCallback((list) => {
+            const customOrder = ['FDA', 'EMA', 'WHO'];
+
+            return list.slice().sort((a, b) => {
+                const indexA = customOrder.indexOf(a.name);
+                const indexB = customOrder.indexOf(b.name);
+
+                if (indexA !== -1 && indexB !== -1) {
+                    return indexA - indexB;
+                }
+                if (indexA !== -1) {
+                    return -1;
+                }
+                if (indexB !== -1) {
+                    return 1;
+                }
+                return a.name.localeCompare(b.name);
+            });
+        }, []);
+
+        /**
          * Filters the sidebar list based on the currently selected tab and search keyword.
          * 
          * This function determines which filtering function to use based on the active tab and updates the `sidebarList` state
@@ -317,27 +370,33 @@
                 const keywordLower = activeFilters.searchKeyword.toLowerCase()
                 
                 if (activeTab === 'Manufacturer') {
-                    filteredSidebarList = filterManufacturersBySearch(keywordLower);
+                    filteredSidebarList = filterManufacturersBySearch(keywordLower).slice() 
+            .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'Product') {
-                    filteredSidebarList = filterVaccinesBySearch(keywordLower);
+                    filteredSidebarList = filterVaccinesBySearch(keywordLower).slice() 
+            .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'Pathogen') {
-                    filteredSidebarList = filterPathogensBySearch(keywordLower);
+                    filteredSidebarList = filterPathogensBySearch(keywordLower).slice() 
+            .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'License') {
-                    filteredSidebarList = filterLicensesBySearch(keywordLower);
+                    filteredSidebarList = sortLicensers(filterLicensersBySearch(keywordLower));
                 }
                 setSidebarList(filteredSidebarList);
             } else {
                 if (activeTab === 'Manufacturer') {
-                    setSidebarList(manufacturersList);
+                    setSidebarList(manufacturersList.slice() 
+                    .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Product') {
-                    setSidebarList(vaccinesList);
+                    setSidebarList(vaccinesList.slice() 
+                    .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Pathogen') {
-                    setSidebarList(pathogensList);
+                    setSidebarList(pathogensList.slice() 
+                    .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'License') {
-                    setSidebarList(licensesList);
+                    setSidebarList(sortLicensers(licensersList));
                 }
             }
-        }, [activeFilters.searchKeyword, activeTab, manufacturersList, pathogensList, vaccinesList, filterManufacturersBySearch, filterPathogensBySearch, filterVaccinesBySearch]);        
+        }, [activeFilters.searchKeyword, activeTab, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersBySearch, filterPathogensBySearch, filterVaccinesBySearch, filterLicensersBySearch, sortLicensers ]);        
         
         /**
          * Converts camel case strings to readable format.
@@ -378,11 +437,12 @@
             setManufacturersList(manufacturers);
             setPathogensList(pathogens);
             setVaccinesList(vaccines);
+            setLicensersList(licensers);
         },[])
 
         useEffect(()=>{
             filterListsBySearch();
-        },[activeTab, pathogensList, vaccinesList, manufacturersList, filterListsBySearch])
+        },[activeTab, pathogensList, vaccinesList, manufacturersList, licensersList, filterListsBySearch])
 
         useEffect(() => {
             filterListsBySearch();
@@ -404,38 +464,33 @@
                             selectedVaccine={selectedVaccine}
                             selectedPathogen={selectedPathogen}
                             selectedManufacturer={selectedManufacturer}
+                            selectedLicenser={selectedLicenser}
                             setSelectedVaccine={setSelectedVaccine}
                             setSelectedPathogen={setSelectedPathogen}
                             setSelectedManufacturer={setSelectedManufacturer}
+                            setSelectedLicenser={setSelectedLicenser}
                             setChangedFrom={setChangedFrom}
                             changedFrom={changedFrom}
                             setActiveTab={setActiveTab}
                         />
                         <View
                             activeTab={activeTab}
-                            activeFilters={activeFilters}
-                            setActiveFilters={setActiveFilters}
-                            manufacturersList={manufacturersList}
                             selectedPathogen={selectedPathogen}
                             selectedVaccine={selectedVaccine}
                             selectedManufacturer={selectedManufacturer}
-                            selectedAccreditation={selectedAccreditation}
+                            selectedLicenser={selectedLicenser}
                             handleSelectPathogen={handleSelectPathogen}
                             handleSelectVaccine={handleSelectVaccine}
                             handleSelectManufacturer={handleSelectManufacturer}
-                            handleSelectAccreditation={handleSelectAccreditation}
+                            handleSelectLicenser={handleSelectLicenser}
                             getPathogenByVaccine={getPathogenByVaccine}
                             getVaccinesByManufacturer={getVaccinesByManufacturer}
-                            getVaccinesByAccreditation={getVaccinesByAccreditation}
+                            getVaccinesByLicenser={getVaccinesByLicenser}
                             italizeScientificNames={italizeScientificNames}
                             convertCamelCaseToReadable={convertCamelCaseToReadable}
                             changedFrom={changedFrom}
+                            getLicenserById={getLicenserById}
                         />
-                        {/* <AlphabetsNavigation 
-                            activeFilters={activeFilters} 
-                            setActiveFilters={setActiveFilters}
-                            setSelectedManufacturer={setSelectedManufacturer}
-                        /> */}
                     </div>
                 </div>
             </div>

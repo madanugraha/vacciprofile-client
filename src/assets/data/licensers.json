@@ -1,0 +1,1518 @@
+[
+  {
+    "licenserId": 1,
+    "name": "FDA",
+    "fullName": "U.S. Food and Drug Administration",
+    "region": "U.S.A",
+    "description": "The FDA is a U.S. government agency responsible for protecting public health by ensuring the safety, efficacy, and security of drugs, biological products, medical devices, food, and cosmetics.",
+    "website": "www.fda.gov"
+  },
+  {
+    "licenserId": 2,
+    "name": "EMA",
+    "fullName": "European Medicines Agency",
+    "region": "European Union",
+    "description": "The EMA is a European Union agency that evaluates and supervises medicinal products to ensure their safety and effectiveness within the EU.",
+    "website": "www.ema.europa.eu"
+  },
+  {
+    "licenserId": 3,
+    "name": "WHO",
+    "fullName": "World Health Organization",
+    "region": "United Nations",
+    "description": "The WHO is a specialized agency of the United Nations responsible for international public health, providing leadership on global health matters, and coordinating health-related initiatives.",
+    "website": "www.who.int"
+  },
+  {
+    "licenserId": 4,
+    "name": "MHRA, UK",
+    "fullName": "Medicines and Healthcare products Regulatory Agency, UK",
+    "region": "United Kingdom",
+    "description": "The MHRA is a UK government agency responsible for regulating medicines, medical devices, and blood components for transfusion, ensuring their safety, quality, and effectiveness.",
+    "website": "www.gov.uk/mhra"
+  },
+  {
+    "licenserId": 5,
+    "name": "HC, Canada",
+    "fullName": "Health Canada",
+    "region": "Canada",
+    "description": "Health Canada is the federal department responsible for helping Canadians maintain and improve their health, including regulating drugs, medical devices, and other health products.",
+    "website": "www.canada.ca/en/health-canada"
+  },
+  {
+    "licenserId": 6,
+    "name": "TGA, Australia",
+    "fullName": "Therapeutic Goods Administration, Australia",
+    "region": "Australia",
+    "description": "The TGA is the regulatory authority for therapeutic goods in Australia, ensuring their safety, quality, and efficacy for public use.",
+    "website": "www.tga.gov.au"
+  },
+  {
+    "licenserId": 7,
+    "name": "PEI, Germany",
+    "fullName": "Paul-Ehrlich-Institut, Germany",
+    "region": "Germany",
+    "description": "The Paul-Ehrlich-Institut is Germany's federal institute for vaccines and biomedicines, responsible for approving and monitoring vaccines, blood products, and other biomedicines.",
+    "website": "www.pei.de"
+  },
+  {
+    "licenserId": 8,
+    "name": "NMPA, China",
+    "fullName": "National Medical Products Administration, China",
+    "region": "China",
+    "description": "The NMPA is the Chinese government agency responsible for the regulation of drugs, medical devices, and cosmetics, ensuring their safety, quality, and efficacy.",
+    "website": "www.nmpa.gov.cn"
+  },
+  {
+    "licenserId": 9,
+    "name": "CDSCO, India",
+    "fullName": "Central Drugs Standard Control Organisation, India",
+    "region": "India",
+    "description": "The CDSCO is India's national regulatory body for pharmaceuticals and medical devices, ensuring their safety, efficacy, and quality.",
+    "website": "cdsco.gov.in"
+  },
+  {
+    "licenserId": 10,
+    "name": "PMDA, Japan",
+    "fullName": "Pharmaceuticals and Medical Devices Agency, Japan",
+    "region": "Japan",
+    "description": "The PMDA is Japan's regulatory body that evaluates and approves drugs, medical devices, and regenerative medical products, ensuring their safety and efficacy.",
+    "website": "www.pmda.go.jp"
+  },
+  {
+    "licenserId": 11,
+    "name": "COFEPRIS, Mexico",
+    "fullName": "Federal Commission for the Protection against Sanitary Risk, Mexico",
+    "region": "Mexico",
+    "description": "COFEPRIS is the Mexican regulatory authority responsible for health control, including the regulation of drugs, medical devices, and other health-related products.",
+    "website": "www.gob.mx/cofepris"
+  },
+  {
+    "licenserId": 12,
+    "name": "HSA, Singapore",
+    "fullName": "Health Sciences Authority, Singapore",
+    "region": "Singapore",
+    "description": "The HSA is Singapore's regulatory body that ensures the safety, efficacy, and quality of drugs, medical devices, and other health products.",
+    "website": "www.hsa.gov.sg"
+  },
+  {
+    "licenserId": 13,
+    "name": "SAHPRA, South Africa",
+    "fullName": "South African Health Products Regulatory Authority, South Africa",
+    "region": "South Africa",
+    "description": "SAHPRA is the national regulatory authority in South Africa, responsible for regulating health products, including medicines and medical devices, to ensure their safety and efficacy.",
+    "website": "www.sahpra.org.za"
+  },
+  {
+    "licenserId": 14,
+    "name": "ANVISA, Brazil",
+    "fullName": "Brazilian Health Regulatory Agency, Brazil",
+    "region": "Brazil",
+    "description": "ANVISA is Brazil's regulatory authority responsible for the approval, regulation, and monitoring of drugs, medical devices, and other health products.",
+    "website": "www.gov.br/anvisa"
+  },
+  {
+    "licenserId": 15,
+    "name": "MoH-Russia, Russia",
+    "fullName": "Ministry of Health, Russia",
+    "region": "Russia",
+    "description": "The Russian Ministry of Health oversees public health policies, including the regulation of pharmaceuticals, medical devices, and healthcare services in Russia.",
+    "website": "www.rosminzdrav.ru"
+  },
+  {
+    "licenserId": 16,
+    "name": "Swissmedic, Switzerland",
+    "fullName": "Swiss Agency for Therapeutic Products, Switzerland",
+    "region": "Switzerland",
+    "description": "Swissmedic is the Swiss agency for therapeutic products, responsible for the authorization and supervision of drugs and medical devices in Switzerland.",
+    "website": "www.swissmedic.ch"
+  },
+  {
+    "licenserId": 17,
+    "name": "NIPN, Hungary",
+    "fullName": "National Institute of Pharmacy and Nutrition, Hungary",
+    "region": "Hungary",
+    "description": "This Hungarian institution is responsible for the regulation and safety of pharmaceuticals, medical devices, and nutritional products in Hungary.",
+    "website": "www.ogyei.gov.hu"
+  },
+  {
+    "licenserId": 18,
+    "name": "ANSM, France",
+    "fullName": "Agence nationale de sécurité du médicament et des produits de santé, France",
+    "region": "France",
+    "description": "ANSM is the French regulatory agency responsible for ensuring the safety, efficacy, and quality of medicines and health products.",
+    "website": "www.ansm.sante.fr"
+  },
+  {
+    "licenserId": 19,
+    "name": "AIFA, Italy",
+    "fullName": "Italian Medicines Agency, Italy",
+    "region": "Italy",
+    "description": "AIFA is the national authority in Italy responsible for the regulation, approval, and monitoring of medicines, ensuring their safety and effectiveness.",
+    "website": "www.aifa.gov.it"
+  },
+  {
+    "licenserId": 20,
+    "name": "AEMPS, Spain",
+    "fullName": "Spanish Agency of Medicines and Medical Devices, Spain",
+    "region": "Spain",
+    "description": "AEMPS is the Spanish agency responsible for the regulation, monitoring, and control of medicines and medical devices in Spain.",
+    "website": "www.aemps.gob.es"
+  },
+  {
+    "licenserId": 21,
+    "name": "BfArM, Germany",
+    "fullName": "Federal Institute for Drugs and Medical Devices, Germany",
+    "region": "Germany",
+    "description": "BfArM is the German regulatory authority responsible for the authorization, monitoring, and safety of drugs and medical devices.",
+    "website": "www.bfarm.de"
+  },
+  {
+    "licenserId": 22,
+    "name": "NIFDC, China",
+    "fullName": "National Institute for Food and Drug Control, China",
+    "region": "China",
+    "description": "NIFDC is a Chinese institution responsible for the safety and quality of food, drugs, and medical devices, ensuring public health and safety.",
+    "website": "www.nifdc.org.cn"
+  },
+  {
+    "licenserId": 23,
+    "name": "MHLW, Japan",
+    "fullName": "Ministry of Health, Labour and Welfare, Japan",
+    "region": "Japan",
+    "description": "MHLW is a Japanese government ministry that oversees public health, labor, and welfare policies, including the regulation of pharmaceuticals and medical devices.",
+    "website": "www.mhlw.go.jp"
+  },
+  {
+    "licenserId": 24,
+    "name": "MFDS, South Korea",
+    "fullName": "Ministry of Food and Drug Safety, South Korea",
+    "region": "South Korea",
+    "description": "MFDS is the South Korean regulatory authority that ensures the safety and efficacy of food, drugs, and medical devices.",
+    "website": "www.mfds.go.kr"
+  },
+  {
+    "licenserId": 26,
+    "name": "OGYÉI, Hungary",
+    "fullName": "National Institute of Pharmacy and Nutrition, Hungary",
+    "region": "Hungary",
+    "description": "OGYÉI is Hungary's national regulatory authority responsible for the safety and regulation of pharmaceuticals, medical devices, and nutritional products.",
+    "website": "www.ogyei.gov.hu"
+  },
+  {
+    "licenserId": 27,
+    "name": "SUKL, Czech Republic",
+    "fullName": "State Institute for Drug Control, Czech Republic",
+    "region": "Czech Republic",
+    "description": "SUKL is the Czech Republic's national regulatory authority for medicines and medical devices, ensuring their safety, efficacy, and quality.",
+    "website": "www.sukl.eu"
+  },
+  {
+    "licenserId": 28,
+    "name": "DKMA, Denmark",
+    "fullName": "Danish Medicines Agency, Denmark",
+    "region": "Denmark",
+    "description": "DKMA is Denmark's regulatory authority responsible for the approval, regulation, and safety of medicines and medical devices.",
+    "website": "www.dkma.dk"
+  },
+  {
+    "licenserId": 29,
+    "name": "FIMEA, Finland",
+    "fullName": "Finnish Medicines Agency, Finland",
+    "region": "Finland",
+    "description": "FIMEA is Finland's regulatory authority responsible for the evaluation, authorization, and supervision of medicines and medical devices.",
+    "website": "www.fimea.fi"
+  },
+  {
+    "licenserId": 30,
+    "name": "EOF, Greece",
+    "fullName": "National Organization for Medicines, Greece",
+    "region": "Greece",
+    "description": "EOF is Greece's national regulatory authority responsible for the safety, efficacy, and quality of medicines and medical devices.",
+    "website": "www.eof.gr"
+  },
+  {
+    "licenserId": 31,
+    "name": "IMA, Iceland",
+    "fullName": "Icelandic Medicines Agency, Iceland",
+    "region": "Iceland",
+    "description": "The IMA is Iceland's regulatory authority responsible for the safety, efficacy, and quality of medicines and medical devices.",
+    "website": "www.ima.is"
+  },
+  {
+    "licenserId": 32,
+    "name": "HPRA, Ireland",
+    "fullName": "Health Products Regulatory Authority, Ireland",
+    "region": "Ireland",
+    "description": "The IMB, now known as the Health Products Regulatory Authority (HPRA), is Ireland's regulatory body responsible for the safety, quality, and efficacy of medicines and medical devices.",
+    "website": "www.hpra.ie"
+  },
+  {
+    "licenserId": 33,
+    "name": "SIDC, Slovakia",
+    "fullName": "State Institute for Drug Control, Slovakia",
+    "region": "Slovakia",
+    "description": "SIDC is Slovakia's national regulatory authority for the control of medicines and medical devices, ensuring their safety and effectiveness.",
+    "website": "www.sukl.sk"
+  },
+  {
+    "licenserId": 34,
+    "name": "JAZMP, Slovenia",
+    "fullName": "Slovenian Medicines Agency, Slovenia",
+    "region": "Slovenia",
+    "description": "JAZMP is Slovenia's national authority responsible for regulating and monitoring the safety, efficacy, and quality of medicines and medical devices.",
+    "website": "www.jazmp.si"
+  },
+  {
+    "licenserId": 35,
+    "name": "MPA, Sweden",
+    "fullName": "Swedish Medical Products Agency, Sweden",
+    "region": "Sweden",
+    "description": "The MPA is Sweden's regulatory authority responsible for ensuring the safety, efficacy, and quality of medicines and medical devices.",
+    "website": "www.lakemedelsverket.se"
+  },
+  {
+    "licenserId": 36,
+    "name": "MEB, Netherlands",
+    "fullName": "Medicines Evaluation Board, Netherlands",
+    "region": "Netherlands",
+    "description": "MEB is the Dutch regulatory body responsible for the assessment and monitoring of medicines to ensure their safety and efficacy in the Netherlands.",
+    "website": "www.cbg-meb.nl"
+  },
+  {
+    "licenserId": 37,
+    "name": "NoMA, Norway",
+    "fullName": "Norwegian Medicines Agency",
+    "region": "Norway",
+    "description": "NoMA is Norway's national authority responsible for the regulation and safety of medicines and medical devices.",
+    "website": "www.legemiddelverket.no"
+  },
+  {
+    "licenserId": 38,
+    "name": "Medicines Authority, Malta",
+    "fullName": "Medicines Authority, Malta",
+    "region": "Malta",
+    "description": "The Medicines Authority in Malta is responsible for regulating the safety, efficacy, and quality of medicines and medical devices.",
+    "website": "www.medicinesauthority.gov.mt"
+  },
+  {
+    "licenserId": 39,
+    "name": "NAMMD, Romania",
+    "fullName": "National Agency for Medicines and Medical Devices, Romania",
+    "region": "Romania",
+    "description": "NAMMD is Romania's regulatory authority that oversees the safety, efficacy, and quality of medicines and medical devices.",
+    "website": "www.anm.ro"
+  },
+  {
+    "licenserId": 40,
+    "name": "HALMED, Croatia",
+    "fullName": "Agency for Medicinal Products and Medical Devices, Croatia",
+    "region": "Croatia",
+    "description": "HALMED is Croatia's national regulatory authority responsible for the safety and quality of medicines and medical devices.",
+    "website": "www.halmed.hr"
+  },
+  {
+    "licenserId": 41,
+    "name": "CPS, Cyprus",
+    "fullName": "Cyprus Pharmaceutical Services, Cyprus",
+    "description": "The Cyprus Pharmaceutical Services is the national authority responsible for the regulation and control of medicines and medical devices in Cyprus.",
+    "website": "www.moh.gov.cy/phs",
+    "region": "Cyprus"
+  },
+  {
+      "licenserId": 42,
+      "name": "SAM, Estonia",
+      "fullName": "Estonian State Agency of Medicines (SAM), Estonia",
+      "description": "SAM is Estonia's national regulatory authority for the safety, efficacy, and quality of medicines and medical devices.",
+      "website": "www.ravimiamet.ee",
+      "region": "Estonia"
+  },
+  {
+      "licenserId": 43,
+      "name": "INFARMED, Portugal",
+      "fullName": "National Institute of Pharmacy (INFARMED), Portugal",
+      "description": "INFARMED is Portugal's regulatory authority responsible for ensuring the safety, efficacy, and quality of medicines and health products.",
+      "website": "www.infarmed.pt",
+      "region": "Portugal"
+  },
+  {
+      "licenserId": 45,
+      "name": "NACA, Nigeria",
+      "fullName": "National Agency for the Control of AIDS (NACA), Nigeria",
+      "description": "NACA is the Nigerian government agency responsible for coordinating the country's response to HIV/AIDS, including prevention, treatment, and care initiatives.",
+      "website": "naca.gov.ng",
+      "region": "Nigeria"
+  },
+  {
+      "licenserId": 46,
+      "name": "NIH, Colombia",
+      "fullName": "National Institute of Health (NIH), Colombia",
+      "description": "The NIH in Colombia is responsible for conducting public health research, disease surveillance, and control, as well as overseeing the regulation of health products to ensure public safety.",
+      "website": "www.ins.gov.co",
+      "region": "Colombia"
+  },
+  {
+      "licenserId": 47,
+      "name": "NAFDAC, Nigeria",
+      "fullName": "National Agency for Food and Drug Administration and Control (NAFDAC), Nigeria",
+      "description": "NAFDAC is Nigeria's regulatory authority responsible for ensuring the safety, efficacy, and quality of drugs, food, medical devices, and other health products.",
+      "website": "www.nafdac.gov.ng",
+      "region": "Nigeria"
+  },
+  {
+      "licenserId": 48,
+      "name": "EDA, Egypt",
+      "fullName": "Egyptian Drug Authority (EDA), Egypt",
+      "description": "The EDA is Egypt's national regulatory authority responsible for the oversight, regulation, and control of pharmaceuticals, medical devices, and other health-related products.",
+      "website": "www.edaegypt.gov.eg",
+      "region": "Egypt"
+  },
+  {
+      "licenserId": 49,
+      "name": "ANMAT, Argentina",
+      "fullName": "National Administration of Drugs, Foods and Medical Devices (ANMAT), Argentina",
+      "description": "ANMAT is the regulatory body in Argentina that ensures the safety, efficacy, and quality of medicines, foods, and medical devices.",
+      "website": "www.argentina.gob.ar/anmat",
+      "region": "Argentina"
+  },
+  {
+      "licenserId": 50,
+      "name": "ISP, Chile",
+      "fullName": "Chilean Public Health Institute (ISP), Chile",
+      "description": "The ISP in Chile is responsible for the regulation and oversight of public health, including the evaluation and approval of medicines, medical devices, and other health products.",
+      "website": "www.ispch.cl",
+      "region": "Chile"
+  },
+  {
+      "licenserId": 51,
+      "name": "INSP, Mexico",
+      "fullName": "National Institute of Public Health (INSP), Mexico",
+      "description": "INSP is Mexico's leading public health research and policy institution, focused on improving public health through research, education, and the regulation of health products.",
+      "website": "www.insp.mx",
+      "region": "Mexico"
+  },
+  {
+      "licenserId": 52,
+      "name": "MOH, Israel",
+      "fullName": "Ministry of Health, Israel",
+      "description": "The Ministry of Health in Israel is responsible for public health policy, regulation of health products, and ensuring the safety and efficacy of medicines and medical devices.",
+      "website": "www.health.gov.il",
+      "region": "Israel"
+  },
+  {
+      "licenserId": 53,
+      "name": "MOH, Turkey",
+      "fullName": "Ministry of Health, Turkey",
+      "description": "The Turkish Ministry of Health oversees public health services, regulates the pharmaceutical industry, and ensures the safety and quality of health products in Turkey.",
+      "website": "www.saglik.gov.tr",
+      "region": "Turkey"
+  },
+  {
+      "licenserId": 54,
+      "name": "MOH, Saudi Arabia",
+      "fullName": "Ministry of Health, Saudi Arabia",
+      "description": "The Saudi Ministry of Health is responsible for managing public health, overseeing healthcare services, and regulating medicines and medical devices in Saudi Arabia.",
+      "website": "www.moh.gov.sa",
+      "region": "Saudi Arabia"
+  },
+  {
+      "licenserId": 55,
+      "name": "MOH, UAE",
+      "fullName": "Ministry of Health, United Arab Emirates",
+      "description": "The UAE Ministry of Health oversees healthcare services, regulates pharmaceuticals and medical devices, and ensures public health and safety across the Emirates.",
+      "website": "www.mohap.gov.ae",
+      "region": "United Arab Emirates"
+  },
+  {
+      "licenserId": 56,
+      "name": "MOH, Kuwait",
+      "fullName": "Ministry of Health, Kuwait",
+      "description": "The Ministry of Health in Kuwait is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+      "website": "www.moh.gov.kw",
+      "region": "Kuwait"
+  },
+  {
+      "licenserId": 57,
+      "name": "MOH, Qatar",
+      "fullName": "Ministry of Health, Qatar",
+      "description": "The Qatari Ministry of Health manages public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in Qatar.",
+      "website": "www.moph.gov.qa",
+      "region": "Qatar"
+  },
+  {
+      "licenserId": 58,
+      "name": "MOH, Bahrain",
+      "fullName": "Ministry of Health, Bahrain",
+      "description": "The Ministry of Health in Bahrain oversees the country's healthcare system, regulates health products, and ensures public health and safety.",
+      "website": "www.moh.gov.bh",
+      "region": "Bahrain"
+  },
+  {
+      "licenserId": 59,
+      "name": "MOH, Oman",
+      "fullName": "Ministry of Health, Oman",
+      "description": "The Omani Ministry of Health is responsible for public health services, regulation of pharmaceuticals, and ensuring the safety of health products in Oman.",
+      "website": "www.moh.gov.om",
+      "region": "Oman"
+  },
+  {
+      "licenserId": 60,
+      "name": "MOH, Jordan",
+      "fullName": "Ministry of Health, Jordan",
+      "description": "The Ministry of Health in Jordan oversees healthcare services, regulates medicines and medical devices, and promotes public health in the country.",
+      "website": "www.moh.gov.jo",
+      "region": "Jordan"
+  },
+  {
+    "licenserId": 61,
+    "name": "MOH, Lebanon",
+    "fullName": "Ministry of Health, Lebanon",
+    "description": "The Lebanese Ministry of Health is responsible for public health policies, healthcare services, and the regulation of pharmaceuticals and medical devices in Lebanon.",
+    "website": "www.moph.gov.lb",
+    "region": "Lebanon"
+  },
+  {
+    "licenserId": 62,
+    "name": "MOH, Iraq",
+    "fullName": "Ministry of Health, Iraq",
+    "description": "The Iraqi Ministry of Health oversees public health services, regulates medicines and medical devices, and ensures the safety and efficacy of health products in Iraq.",
+    "website": "www.moh.gov.iq",
+    "region": "Iraq"
+  },
+  {
+    "licenserId": 63,
+    "name": "MOH, Syria",
+    "fullName": "Ministry of Health, Syria",
+    "description": "The Ministry of Health in Syria is responsible for public health policy, healthcare services, and the regulation of health products in the country.",
+    "website": "www.moh.gov.sy",
+    "region": "Syria"
+  },
+  {
+    "licenserId": 64,
+    "name": "MOH, Yemen",
+    "fullName": "Ministry of Health, Yemen",
+    "description": "The Ministry of Health in Yemen is responsible for public health services, regulation of medicines, and ensuring the safety and quality of health products.",
+    "website": "www.moh.gov.ye",
+    "region": "Yemen"
+  },
+  {
+    "licenserId": 65,
+    "name": "MOH, Afghanistan",
+    "fullName": "Ministry of Health, Afghanistan",
+    "description": "The Afghan Ministry of Health oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in Afghanistan.",
+    "website": "www.moph.gov.af",
+    "region": "Afghanistan"
+  },
+  {
+    "licenserId": 66,
+    "name": "MOH, Pakistan",
+    "fullName": "Ministry of Health, Pakistan",
+    "description": "The Ministry of Health in Pakistan is responsible for public health policy, regulation of medicines, and ensuring the safety and quality of health products.",
+    "website": "www.nhsrc.gov.pk",
+    "region": "Pakistan"
+  },
+  {
+    "licenserId": 67,
+    "name": "MOH, Bangladesh",
+    "fullName": "Ministry of Health, Bangladesh",
+    "description": "The Bangladeshi Ministry of Health oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in Bangladesh.",
+    "website": "www.mohfw.gov.bd",
+    "region": "Bangladesh"
+  },
+  {
+    "licenserId": 68,
+    "name": "MOH, Sri Lanka",
+    "fullName": "Ministry of Health, Sri Lanka",
+    "description": "The Ministry of Health in Sri Lanka is responsible for public health policy, regulation of medicines, and the provision of healthcare services in the country.",
+    "website": "www.health.gov.lk",
+    "region": "Sri Lanka"
+  },
+  {
+    "licenserId": 69,
+    "name": "MOH, Nepal",
+    "fullName": "Ministry of Health, Nepal",
+    "description": "The Ministry of Health in Nepal oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in Nepal.",
+    "website": "www.mohp.gov.np",
+    "region": "Nepal"
+  },
+  {
+    "licenserId": 70,
+    "name": "MOH, Bhutan",
+    "fullName": "Ministry of Health, Bhutan",
+    "description": "The Ministry of Health in Bhutan is responsible for public health services, regulation of medicines, and the promotion of health and well-being in the country.",
+    "website": "www.health.gov.bt",
+    "region": "Bhutan"
+  },
+  {
+    "licenserId": 71,
+    "name": "MOH, Maldives",
+    "fullName": "Ministry of Health, Maldives",
+    "description": "The Ministry of Health in the Maldives oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.health.gov.mv",
+    "region": "Maldives"
+  },
+  {
+    "licenserId": 72,
+    "name": "MOH, Indonesia",
+    "fullName": "Ministry of Health, Indonesia",
+    "description": "The Ministry of Health in Indonesia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.kemkes.go.id",
+    "region": "Indonesia"
+  },
+  {
+    "licenserId": 73,
+    "name": "MOH, Malaysia",
+    "fullName": "Ministry of Health, Malaysia",
+    "description": "The Ministry of Health in Malaysia oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.my",
+    "region": "Malaysia"
+  },
+  {
+    "licenserId": 74,
+    "name": "MOH, Thailand",
+    "fullName": "Ministry of Health, Thailand",
+    "description": "The Ministry of Health in Thailand is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.moph.go.th",
+    "region": "Thailand"
+  },
+  {
+    "licenserId": 75,
+    "name": "MOH, Vietnam",
+    "fullName": "Ministry of Health, Vietnam",
+    "description": "The Ministry of Health in Vietnam oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.moh.gov.vn",
+    "region": "Vietnam"
+  },
+  {
+    "licenserId": 76,
+    "name": "MOH, Cambodia",
+    "fullName": "Ministry of Health, Cambodia",
+    "description": "The Cambodian Ministry of Health is responsible for public health services, regulation of pharmaceuticals, and ensuring the safety and quality of health products in the country.",
+    "website": "www.moh.gov.kh",
+    "region": "Cambodia"
+  },
+  {
+    "licenserId": 77,
+    "name": "MOH, Laos",
+    "fullName": "Ministry of Health, Laos",
+    "description": "The Ministry of Health in Laos oversees public health services, regulates medicines, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.moh.gov.la",
+    "region": "Laos"
+  },
+  {
+    "licenserId": 78,
+    "name": "MOH, Myanmar",
+    "fullName": "Ministry of Health, Myanmar",
+    "description": "The Ministry of Health in Myanmar is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.moh.gov.mm",
+    "region": "Myanmar"
+  },
+  {
+    "licenserId": 79,
+    "name": "DOH, Philippines",
+    "fullName": "Department of Health, Philippines",
+    "description": "The Ministry of Health in the Philippines, also known as the Department of Health (DOH), is responsible for public health services, regulation of health products, and ensuring the safety and efficacy of medicines and medical devices.",
+    "website": "www.doh.gov.ph",
+    "region": "Philippines"
+  },
+  {
+    "licenserId": 80,
+    "name": "MOH, Brunei",
+    "fullName": "Ministry of Health, Brunei",
+    "description": "The Ministry of Health in Brunei oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.bn",
+    "region": "Brunei"
+  },
+  {
+    "licenserId": 81,
+    "name": "MOH, Singapore",
+    "fullName": "Ministry of Health, Singapore",
+    "description": "The Ministry of Health in Singapore is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.moh.gov.sg"
+  },
+  {
+    "licenserId": 82,
+    "name": "MOH, Mongolia",
+    "fullName": "Ministry of Health, Mongolia",
+    "description": "The Mongolian Ministry of Health oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in Mongolia.",
+    "website": "www.moh.gov.mn"
+  },
+  {
+    "licenserId": 83,
+    "name": "MOH, Kazakhstan",
+    "fullName": "Ministry of Health, Kazakhstan",
+    "description": "The Ministry of Health in Kazakhstan is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.gov.kz/memleket/entities/dsm"
+  },
+  {
+    "licenserId": 84,
+    "name": "MOH, Uzbekistan",
+    "fullName": "Ministry of Health, Uzbekistan",
+    "description": "The Ministry of Health in Uzbekistan oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.minzdrav.uz"
+  },
+  {
+    "licenserId": 85,
+    "name": "MOH, Turkmenistan",
+    "fullName": "Ministry of Health, Turkmenistan",
+    "description": "The Ministry of Health in Turkmenistan is responsible for public health services, regulation of medicines, and the provision of healthcare services in the country.",
+    "website": "www.moh.gov.tm"
+  },
+  {
+    "licenserId": 86,
+    "name": "MOH, Kyrgyzstan",
+    "fullName": "Ministry of Health, Kyrgyzstan",
+    "description": "The Ministry of Health in Kyrgyzstan oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.med.kg"
+  },
+  {
+    "licenserId": 87,
+    "name": "MOH, Tajikistan",
+    "fullName": "Ministry of Health, Tajikistan",
+    "description": "The Ministry of Health in Tajikistan is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.moh.tj"
+  },
+  {
+    "licenserId": 88,
+    "name": "MOH, Armenia",
+    "fullName": "Ministry of Health, Armenia",
+    "description": "The Ministry of Health in Armenia oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.am"
+  },
+  {
+    "licenserId": 89,
+    "name": "MOH, Azerbaijan",
+    "fullName": "Ministry of Health, Azerbaijan",
+    "description": "The Ministry of Health in Azerbaijan is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.sehiyye.gov.az"
+  },
+  {
+    "licenserId": 90,
+    "name": "MOH, Georgia",
+    "fullName": "Ministry of Health, Georgia",
+    "description": "The Ministry of Health in Georgia oversees public health services, regulates medicines and medical devices, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.moh.gov.ge"
+  },
+  {
+    "licenserId": 91,
+    "name": "MOH, Belarus",
+    "fullName": "Ministry of Health, Belarus",
+    "description": "The Ministry of Health in Belarus is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.minzdrav.gov.by"
+  },
+  {
+    "licenserId": 92,
+    "name": "MOH, Ukraine",
+    "fullName": "Ministry of Health, Ukraine",
+    "description": "The Ministry of Health in Ukraine oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.moz.gov.ua"
+  },
+  {
+    "licenserId": 93,
+    "name": "MOH, Moldova",
+    "fullName": "Ministry of Health, Moldova",
+    "description": "The Ministry of Health in Moldova is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.ms.gov.md"
+  },
+  {
+    "licenserId": 94,
+    "name": "MOH, Serbia",
+    "fullName": "Ministry of Health, Serbia",
+    "description": "The Ministry of Health in Serbia oversees public health services, regulates medicines and medical devices, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.zdravlje.gov.rs"
+  },
+  {
+    "licenserId": 95,
+    "name": "MOH, Montenegro",
+    "fullName": "Ministry of Health, Montenegro",
+    "description": "The Ministry of Health in Montenegro is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.mzdravlja.gov.me"
+  },
+  {
+    "licenserId": 96,
+    "name": "MOH, Bosnia and Herzegovina",
+    "fullName": "Ministry of Health, Bosnia and Herzegovina",
+    "description": "The Ministry of Health in Bosnia and Herzegovina oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.mzdravlja.gov.ba"
+  },
+  {
+    "licenserId": 97,
+    "name": "MOH, North Macedonia",
+    "fullName": "Ministry of Health, North Macedonia",
+    "description": "The Ministry of Health in North Macedonia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.zdravstvo.gov.mk"
+  },
+  {
+    "licenserId": 98,
+    "name": "MOH, Albania",
+    "fullName": "Ministry of Health, Albania",
+    "description": "The Ministry of Health in Albania oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.shendetesia.gov.al"
+  },
+  {
+    "licenserId": 99,
+    "name": "MOH, Kosovo",
+    "fullName": "Ministry of Health, Kosovo",
+    "description": "The Ministry of Health in Kosovo is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
+    "website": "www.msh-ks.org"
+  },
+  {
+    "licenserId": 100,
+    "name": "MOH, Bulgaria",
+    "fullName": "Ministry of Health, Bulgaria",
+    "description": "The Ministry of Health in Bulgaria oversees public health services, regulates medicines and medical devices, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.mh.government.bg"
+  },
+  {
+    "licenserId": 101,
+    "name": "MOH, Angola",
+    "fullName": "Ministry of Health, Angola",
+    "region": "Angola",
+    "description": "The Ministry of Health in Angola is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.minsa.gov.ao"
+  },
+  {
+    "licenserId": 102,
+    "name": "MOH, Antigua and Barbuda",
+    "fullName": "Ministry of Health, Antigua and Barbuda",
+    "region": "Antigua and Barbuda",
+    "description": "The Ministry of Health in Antigua and Barbuda oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.health.gov.ag"
+  },
+  {
+    "licenserId": 103,
+    "name": "MOH, Bahamas",
+    "fullName": "Ministry of Health, Bahamas",
+    "region": "Bahamas",
+    "description": "The Ministry of Health in the Bahamas is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.bahamas.gov.bs/health"
+  },
+  {
+    "licenserId": 104,
+    "name": "MOH, Barbados",
+    "fullName": "Ministry of Health, Barbados",
+    "region": "Barbados",
+    "description": "The Ministry of Health in Barbados oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.health.gov.bb"
+  },
+  {
+    "licenserId": 105,
+    "name": "MOH, Belize",
+    "fullName": "Ministry of Health, Belize",
+    "region": "Belize",
+    "description": "The Ministry of Health in Belize is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.bz"
+  },
+  {
+    "licenserId": 106,
+    "name": "MOH, Benin",
+    "fullName": "Ministry of Health, Benin",
+    "region": "Benin",
+    "description": "The Ministry of Health in Benin oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.sante.gouv.bj"
+  },
+  {
+    "licenserId": 108,
+    "name": "MOH, Bolivia",
+    "fullName": "Ministry of Health, Bolivia",
+    "region": "Bolivia",
+    "description": "The Ministry of Health in Bolivia oversees public health services, regulates medicines and medical devices, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.minsalud.gob.bo"
+  },
+  {
+    "licenserId": 109,
+    "name": "MOH, Botswana",
+    "fullName": "Ministry of Health, Botswana",
+    "region": "Botswana",
+    "description": "The Ministry of Health in Botswana is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.moh.gov.bw"
+  },
+  {
+    "licenserId": 110,
+    "name": "MOH, Burkina Faso",
+    "fullName": "Ministry of Health, Burkina Faso",
+    "region": "Burkina Faso",
+    "description": "The Ministry of Health in Burkina Faso oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.sante.gov.bf"
+  },
+  {
+    "licenserId": 111,
+    "name": "MOH, Burundi",
+    "fullName": "Ministry of Health, Burundi",
+    "region": "Burundi",
+    "description": "The Ministry of Health in Burundi is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.minisante.bi"
+  },
+  {
+    "licenserId": 112,
+    "name": "MOH, Cabo Verde",
+    "fullName": "Ministry of Health, Cabo Verde",
+    "region": "Cabo Verde",
+    "description": "The Ministry of Health in Cabo Verde oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.minsaude.gov.cv"
+  },
+  {
+    "licenserId": 113,
+    "name": "MOH, Cameroon",
+    "fullName": "Ministry of Health, Cameroon",
+    "region": "Cameroon",
+    "description": "The Ministry of Health in Cameroon is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.minsante.cm"
+  },
+  {
+    "licenserId": 114,
+    "name": "MOH, Central African Republic",
+    "fullName": "Ministry of Health, Central African Republic",
+    "region": "Central African Republic",
+    "description": "The Ministry of Health in the Central African Republic oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.sante.gouv.cf"
+  },
+  {
+    "licenserId": 115,
+    "name": "MOH, Chad",
+    "fullName": "Ministry of Health, Chad",
+    "region": "Chad",
+    "description": "The Ministry of Health in Chad is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante-tchad.org"
+  },
+  {
+    "licenserId": 116,
+    "name": "MOH, Comoros",
+    "fullName": "Ministry of Health, Comoros",
+    "region": "Comoros",
+    "description": "The Ministry of Health in Comoros oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.sante.gov.km"
+  },
+  {
+    "licenserId": 117,
+    "name": "MOH, Congo (Brazzaville)",
+    "fullName": "Ministry of Health, Congo (Brazzaville)",
+    "region": "Congo (Brazzaville)",
+    "description": "The Ministry of Health in the Republic of Congo (Brazzaville) is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante.gouv.cg"
+  },
+  {
+    "licenserId": 118,
+    "name": "MOH, Congo (Kinshasa)",
+    "fullName": "Ministry of Health, Congo (Kinshasa)",
+    "region": "Congo (Kinshasa)",
+    "description": "The Ministry of Health in the Democratic Republic of Congo (Kinshasa) oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.minisanterdc.cd"
+  },
+  {
+    "licenserId": 119,
+    "name": "MOH, Djibouti",
+    "fullName": "Ministry of Health, Djibouti",
+    "region": "Djibouti",
+    "description": "The Ministry of Health in Djibouti is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante.gouv.dj"
+  },
+  {
+    "licenserId": 120,
+    "name": "MOH, Dominica",
+    "fullName": "Ministry of Health, Dominica",
+    "region": "Dominica",
+    "description": "The Ministry of Health in Dominica oversees public health services, regulates medicines, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.health.gov.dm"
+  },
+  {
+    "licenserId": 121,
+    "name": "MOH, Dominican Republic",
+    "fullName": "Ministry of Health, Dominican Republic",
+    "description": "The Ministry of Health in the Dominican Republic is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.msp.gob.do",
+    "region": "Caribbean"
+  },
+  {
+    "licenserId": 122,
+    "name": "MOH, East Timor",
+    "fullName": "Ministry of Health, East Timor",
+    "description": "The Ministry of Health in East Timor oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.tl",
+    "region": "Southeast Asia"
+  },
+  {
+    "licenserId": 123,
+    "name": "MOH, Ecuador",
+    "fullName": "Ministry of Health, Ecuador",
+    "description": "The Ministry of Health in Ecuador is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.salud.gob.ec",
+    "region": "South America"
+  },
+  {
+    "licenserId": 124,
+    "name": "MOH, El Salvador",
+    "fullName": "Ministry of Health, El Salvador",
+    "description": "The Ministry of Health in El Salvador oversees public health services, regulates medicines, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.salud.gob.sv",
+    "region": "Central America"
+  },
+  {
+    "licenserId": 125,
+    "name": "MOH, Equatorial Guinea",
+    "fullName": "Ministry of Health, Equatorial Guinea",
+    "description": "The Ministry of Health in Equatorial Guinea is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.salud.gob.gq",
+    "region": "Central Africa"
+  },
+  {
+    "licenserId": 126,
+    "name": "MOH, Eritrea",
+    "fullName": "Ministry of Health, Eritrea",
+    "description": "The Ministry of Health in Eritrea oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.er",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 127,
+    "name": "MOH, Eswatini",
+    "fullName": "Ministry of Health, Eswatini",
+    "description": "The Ministry of Health in Eswatini (Swaziland) is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.gov.sz",
+    "region": "Southern Africa"
+  },
+  {
+    "licenserId": 128,
+    "name": "MOH, Ethiopia",
+    "fullName": "Ministry of Health, Ethiopia",
+    "description": "The Ministry of Health in Ethiopia oversees public health services, regulates medicines, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.moh.gov.et",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 129,
+    "name": "MOH, Fiji",
+    "fullName": "Ministry of Health, Fiji",
+    "description": "The Ministry of Health in Fiji is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.fj",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 130,
+    "name": "MOH, Gabon",
+    "fullName": "Ministry of Health, Gabon",
+    "description": "The Ministry of Health in Gabon oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.sante.gouv.ga",
+    "region": "Central Africa"
+  },
+  {
+    "licenserId": 131,
+    "name": "MOH, Gambia",
+    "fullName": "Ministry of Health, Gambia",
+    "description": "The Ministry of Health in Gambia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.moh.gov.gm",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 132,
+    "name": "MOH, Ghana",
+    "fullName": "Ministry of Health, Ghana",
+    "description": "The Ministry of Health in Ghana oversees public health services, regulates medicines and medical devices, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.moh.gov.gh",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 133,
+    "name": "MOH, Grenada",
+    "fullName": "Ministry of Health, Grenada",
+    "description": "The Ministry of Health in Grenada is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.gd",
+    "region": "Caribbean"
+  },
+  {
+    "licenserId": 134,
+    "name": "MOH, Guatemala",
+    "fullName": "Ministry of Health, Guatemala",
+    "description": "The Ministry of Health in Guatemala oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.mspas.gob.gt",
+    "region": "Central America"
+  },
+  {
+    "licenserId": 135,
+    "name": "MOH, Guinea",
+    "fullName": "Ministry of Health, Guinea",
+    "description": "The Ministry of Health in Guinea is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante.gov.gn",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 136,
+    "name": "MOH, Guinea-Bissau",
+    "fullName": "Ministry of Health, Guinea-Bissau",
+    "description": "The Ministry of Health in Guinea-Bissau oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.guine-bissau.gov.gw",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 137,
+    "name": "MOH, Guyana",
+    "fullName": "Ministry of Health, Guyana",
+    "description": "The Ministry of Health in Guyana is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.gy",
+    "region": "South America"
+  },
+  {
+    "licenserId": 138,
+    "name": "MOH, Haiti",
+    "fullName": "Ministry of Health, Haiti",
+    "description": "The Ministry of Health in Haiti oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.mspp.gouv.ht",
+    "region": "Caribbean"
+  },
+  {
+    "licenserId": 139,
+    "name": "MOH, Honduras",
+    "fullName": "Ministry of Health, Honduras",
+    "description": "The Ministry of Health in Honduras is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.salud.gob.hn",
+    "region": "Central America"
+  },
+  {
+    "licenserId": 140,
+    "name": "MOH, Iceland",
+    "fullName": "Ministry of Health, Iceland",
+    "description": "The Ministry of Health in Iceland oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.government.is/ministries/ministry-of-health",
+    "region": "Northern Europe"
+  },
+  {
+    "licenserId": 141,
+    "name": "MOH, Ivory Coast",
+    "fullName": "Ministry of Health, Ivory Coast",
+    "description": "The Ministry of Health in Ivory Coast is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante.gouv.ci",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 142,
+    "name": "MOH, Jamaica",
+    "fullName": "Ministry of Health, Jamaica",
+    "description": "The Ministry of Health in Jamaica oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.jm",
+    "region": "Caribbean"
+  },
+  {
+    "licenserId": 143,
+    "name": "MOH, Kenya",
+    "fullName": "Ministry of Health, Kenya",
+    "description": "The Ministry of Health in Kenya is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.go.ke",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 144,
+    "name": "MOH, Kiribati",
+    "fullName": "Ministry of Health, Kiribati",
+    "description": "The Ministry of Health in Kiribati oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.health.gov.ki",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 145,
+    "name": "MOH, Lesotho",
+    "fullName": "Ministry of Health, Lesotho",
+    "description": "The Ministry of Health in Lesotho is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.ls",
+    "region": "Southern Africa"
+  },
+  {
+    "licenserId": 146,
+    "name": "MOH, Liberia",
+    "fullName": "Ministry of Health, Liberia",
+    "description": "The Ministry of Health in Liberia oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.lr",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 147,
+    "name": "MOH, Libya",
+    "fullName": "Ministry of Health, Libya",
+    "description": "The Ministry of Health in Libya is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.ly",
+    "region": "North Africa"
+  },
+  {
+    "licenserId": 148,
+    "name": "MOH, Liechtenstein",
+    "fullName": "Ministry of Health, Liechtenstein",
+    "description": "The Ministry of Health in Liechtenstein oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.llv.li/#/1256/ministry-of-health",
+    "region": "Europe"
+  },
+  {
+    "licenserId": 149,
+    "name": "MOH, Luxembourg",
+    "fullName": "Ministry of Health, Luxembourg",
+    "description": "The Ministry of Health in Luxembourg is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.ms.public.lu",
+    "region": "Europe"
+  },
+  {
+    "licenserId": 150,
+    "name": "MOH, Madagascar",
+    "fullName": "Ministry of Health, Madagascar",
+    "description": "The Ministry of Health in Madagascar oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.sante.gov.mg",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 151,
+    "name": "MOH, Malawi",
+    "fullName": "Ministry of Health, Malawi",
+    "description": "The Ministry of Health in Malawi is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.malawi.gov.mw",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 152,
+    "name": "MOH, Mali",
+    "fullName": "Ministry of Health, Mali",
+    "description": "The Ministry of Health in Mali oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.sante.gov.ml",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 153,
+    "name": "MOH, Malta",
+    "fullName": "Ministry of Health, Malta",
+    "description": "The Ministry of Health in Malta is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.mt",
+    "region": "Europe"
+  },
+  {
+    "licenserId": 154,
+    "name": "MOH, Marshall Islands",
+    "fullName": "Ministry of Health, Marshall Islands",
+    "description": "The Ministry of Health in the Marshall Islands oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.rmihealth.org",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 155,
+    "name": "MOH, Mauritania",
+    "fullName": "Ministry of Health, Mauritania",
+    "description": "The Ministry of Health in Mauritania is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante.gov.mr",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 156,
+    "name": "MOH, Mauritius",
+    "fullName": "Ministry of Health, Mauritius",
+    "description": "The Ministry of Health in Mauritius oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.health.govmu.org",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 157,
+    "name": "MOH, Micronesia",
+    "fullName": "Ministry of Health, Micronesia",
+    "description": "The Ministry of Health in Micronesia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.hsa.gov.fm",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 158,
+    "name": "MOH, Monaco",
+    "fullName": "Ministry of Health, Monaco",
+    "description": "The Ministry of Health in Monaco oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.gouv.mc/Action-Gouvernementale/Le-Social-et-la-Sante",
+    "region": "Europe"
+  },
+  {
+    "licenserId": 159,
+    "name": "MOH, Mozambique",
+    "fullName": "Ministry of Health, Mozambique",
+    "description": "The Ministry of Health in Mozambique is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.misau.gov.mz",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 160,
+    "name": "MOH, Namibia",
+    "fullName": "Ministry of Health, Namibia",
+    "description": "The Ministry of Health in Namibia oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.mhss.gov.na",
+    "region": "Southern Africa"
+  },
+  {
+    "licenserId": 161,
+    "name": "MOH, Nauru",
+    "fullName": "Ministry of Health, Nauru",
+    "description": "The Ministry of Health in Nauru is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.naurugov.nr/government/departments/department-of-health.aspx",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 162,
+    "name": "MOH, Nicaragua",
+    "fullName": "Ministry of Health, Nicaragua",
+    "description": "The Ministry of Health in Nicaragua oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.minsa.gob.ni",
+    "region": "Central America"
+  },
+  {
+    "licenserId": 163,
+    "name": "MOH, Niger",
+    "fullName": "Ministry of Health, Niger",
+    "description": "The Ministry of Health in Niger is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante.gouv.ne",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 164,
+    "name": "MOH, Palau",
+    "fullName": "Ministry of Health, Palau",
+    "description": "The Ministry of Health in Palau oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.palauhealth.org",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 165,
+    "name": "MOH, Palestine",
+    "fullName": "Ministry of Health, Palestine",
+    "description": "The Ministry of Health in Palestine is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.site.moh.ps",
+    "region": "Middle East"
+  },
+  {
+    "licenserId": 166,
+    "name": "MOH, Panama",
+    "fullName": "Ministry of Health, Panama",
+    "description": "The Ministry of Health in Panama oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.minsa.gob.pa",
+    "region": "Central America"
+  },
+  {
+    "licenserId": 167,
+    "name": "MOH, Papua New Guinea",
+    "fullName": "Ministry of Health, Papua New Guinea",
+    "description": "The Ministry of Health in Papua New Guinea is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.pg",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 168,
+    "name": "MOH, Paraguay",
+    "fullName": "Ministry of Health, Paraguay",
+    "description": "The Ministry of Health in Paraguay oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.mspbs.gov.py",
+    "region": "South America"
+  },
+  {
+    "licenserId": 169,
+    "name": "MOH, Peru",
+    "fullName": "Ministry of Health, Peru",
+    "description": "The Ministry of Health in Peru is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.minsa.gob.pe",
+    "region": "South America"
+  },
+  {
+    "licenserId": 170,
+    "name": "MOH, Rwanda",
+    "fullName": "Ministry of Health, Rwanda",
+    "description": "The Ministry of Health in Rwanda oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.rw",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 171,
+    "name": "MOH, Saint Kitts and Nevis",
+    "fullName": "Ministry of Health, Saint Kitts and Nevis",
+    "description": "The Ministry of Health in Saint Kitts and Nevis is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.gov.kn",
+    "region": "Caribbean"
+  },
+  {
+    "licenserId": 172,
+    "name": "MOH, Saint Lucia",
+    "fullName": "Ministry of Health, Saint Lucia",
+    "description": "The Ministry of Health in Saint Lucia oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.govt.lc",
+    "region": "Caribbean"
+  },
+  {
+    "licenserId": 173,
+    "name": "MOH, Saint Vincent and the Grenadines",
+    "fullName": "Ministry of Health, Saint Vincent and the Grenadines",
+    "description": "The Ministry of Health in Saint Vincent and the Grenadines is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.vc",
+    "region": "Caribbean"
+  },
+  {
+    "licenserId": 174,
+    "name": "MOH, Samoa",
+    "fullName": "Ministry of Health, Samoa",
+    "description": "The Ministry of Health in Samoa oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
+    "website": "www.health.gov.ws",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 175,
+    "name": "MOH, San Marino",
+    "fullName": "Ministry of Health, San Marino",
+    "description": "The Ministry of Health in San Marino is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sanmarino.sm",
+    "region": "Europe"
+  },
+  {
+    "licenserId": 176,
+    "name": "MOH, Sao Tome and Principe",
+    "fullName": "Ministry of Health, Sao Tome and Principe",
+    "description": "The Ministry of Health in Sao Tome and Principe oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.ms.gov.st",
+    "region": "Central Africa"
+  },
+  {
+    "licenserId": 177,
+    "name": "MOH, Senegal",
+    "fullName": "Ministry of Health, Senegal",
+    "description": "The Ministry of Health in Senegal is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante.gouv.sn",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 178,
+    "name": "MOH, Seychelles",
+    "fullName": "Ministry of Health, Seychelles",
+    "description": "The Ministry of Health in Seychelles oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.health.gov.sc",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 179,
+    "name": "MOH, Sierra Leone",
+    "fullName": "Ministry of Health, Sierra Leone",
+    "description": "The Ministry of Health in Sierra Leone is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.mohs.gov.sl",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 180,
+    "name": "MOH, Solomon Islands",
+    "fullName": "Ministry of Health, Solomon Islands",
+    "description": "The Ministry of Health in the Solomon Islands oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.moh.gov.sb",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 181,
+    "name": "MOH, Somalia",
+    "fullName": "Ministry of Health, Somalia",
+    "description": "The Ministry of Health in Somalia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.moh.gov.so",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 182,
+    "name": "MOH, South Sudan",
+    "fullName": "Ministry of Health, South Sudan",
+    "description": "The Ministry of Health in South Sudan oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.ss",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 184,
+    "name": "MOH, Suriname",
+    "fullName": "Ministry of Health, Suriname",
+    "description": "The Ministry of Health in Suriname oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.gov.sr",
+    "region": "South America"
+  },
+  {
+    "licenserId": 185,
+    "name": "MOH, Eswatini",
+    "fullName": "Ministry of Health, Eswatini (formerly Swaziland)",
+    "description": "The Ministry of Health in Eswatini is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.gov.sz",
+    "region": "Southern Africa"
+  },
+  {
+    "licenserId": 186,
+    "name": "MOH, Tanzania",
+    "fullName": "Ministry of Health, Tanzania",
+    "description": "The Ministry of Health in Tanzania oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.go.tz",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 187,
+    "name": "MOH, Togo",
+    "fullName": "Ministry of Health, Togo",
+    "description": "The Ministry of Health in Togo is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.sante.gouv.tg",
+    "region": "West Africa"
+  },
+  {
+    "licenserId": 188,
+    "name": "MOH, Tonga",
+    "fullName": "Ministry of Health, Tonga",
+    "description": "The Ministry of Health in Tonga oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.health.gov.to",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 189,
+    "name": "MOH, Trinidad and Tobago",
+    "fullName": "Ministry of Health, Trinidad and Tobago",
+    "description": "The Ministry of Health in Trinidad and Tobago is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.tt",
+    "region": "Caribbean"
+  },
+  {
+    "licenserId": 190,
+    "name": "MOH, Tunisia",
+    "fullName": "Ministry of Health, Tunisia",
+    "description": "The Ministry of Health in Tunisia oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.santetunisie.rns.tn",
+    "region": "North Africa"
+  },
+  {
+    "licenserId": 191,
+    "name": "MOH, Tuvalu",
+    "fullName": "Ministry of Health, Tuvalu",
+    "description": "The Ministry of Health in Tuvalu is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.health.gov.tv",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 192,
+    "name": "MOH, Uganda",
+    "fullName": "Ministry of Health, Uganda",
+    "description": "The Ministry of Health in Uganda oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.health.go.ug",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 193,
+    "name": "MOH, Vanuatu",
+    "fullName": "Ministry of Health, Vanuatu",
+    "description": "The Ministry of Health in Vanuatu is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.moh.gov.vu",
+    "region": "Oceania"
+  },
+  {
+    "licenserId": 194,
+    "name": "MOH, Yemen",
+    "fullName": "Ministry of Health, Yemen",
+    "description": "The Ministry of Health in Yemen oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
+    "website": "www.moh.gov.ye",
+    "region": "Middle East"
+  },
+  {
+    "licenserId": 195,
+    "name": "MOH, Zambia",
+    "fullName": "Ministry of Health, Zambia",
+    "description": "The Ministry of Health in Zambia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "website": "www.moh.gov.zm",
+    "region": "East Africa"
+  },
+  {
+    "licenserId": 196,
+    "name": "MOH, Zimbabwe",
+    "fullName": "Ministry of Health, Zimbabwe",
+    "description": "The Ministry of Health in Zimbabwe oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
+    "website": "www.mohcc.gov.zw",
+    "region": "Southern Africa"
+  }  
+]

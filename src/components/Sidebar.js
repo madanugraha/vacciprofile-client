@@ -14,9 +14,11 @@ import React from 'react';
  * @param {Object} props.selectedVaccine - The currently selected product (vaccine).
  * @param {Object} props.selectedPathogen - The currently selected pathogen.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
+ * @param {Object} props.selectedLicenser - The currently selected licenser.
  * @param {Function} props.setSelectedVaccine - Function to update the selected product (vaccine).
  * @param {Function} props.setSelectedPathogen - Function to update the selected pathogen.
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.
+ * @param {Function} props.setSelectedLicenser - Function to update the selected licenser.
  * @param {Function} props.setChangedFrom - Function to set the source of the change triggering the view update.
  * @returns {JSX.Element} The Sidebar component for selecting items and updating the view based on the active tab.
  *
@@ -29,9 +31,11 @@ import React from 'react';
  *    selectedManufacturer={{ name: 'ItemA' }}
  *    selectedVaccine={{ name: 'ItemB' }}
  *    selectedPathogen={{ name: 'ItemC' }}
+ *    selectedLicenser={{ name: 'ItemC' }}
  *    setSelectedManufacturer={(item) => console.log(item)}
  *    setSelectedVaccine={(item) => console.log(item)}
  *    setSelectedPathogen={(item) => console.log(item)}
+ *    setSelectedLicenser={(item) => console.log(item)}
  *    setChangedFrom={(source) => console.log(source)}
  * />
  */
@@ -43,9 +47,11 @@ const Sidebar = ({
     selectedVaccine,
     selectedPathogen,
     selectedManufacturer,
+    selectedLicenser,
     setSelectedVaccine,
     setSelectedPathogen,
-    setSelectedManufacturer, 
+    setSelectedManufacturer,
+    setSelectedLicenser,  
     setChangedFrom
 }) => {
     
@@ -82,8 +88,14 @@ const Sidebar = ({
                 } else {
                     setSelectedPathogen({});
                 }
+            } else if (activeTab === 'License') {
+                if (item !== selectedLicenser) {
+                    setSelectedLicenser(item);
+                    setActiveTab('License');
+                } else {
+                    setSelectedLicenser({});
+                }
             }
-            
             setChangedFrom('');
         }, 0);
     };
@@ -92,15 +104,14 @@ const Sidebar = ({
     return <div className='sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-3 slide-right'>
         <div className='Manufacturer-list 2'>
         {sidebarList
-            .slice() 
-            .sort((a, b) => a.name.localeCompare(b.name))
             .map((item, i) => (
                 <div 
                     key={i} 
                     className={`sidebar-item bg-light text-dark rounded-3 py-1 mt-1 ${
                         activeTab === 'Manufacturer' && selectedManufacturer === item ? 'active' :
                         activeTab === 'Product' && selectedVaccine === item ? 'active' :
-                        activeTab === 'Pathogen' && selectedPathogen === item ? 'active' : 'inactive'
+                        activeTab === 'Pathogen' && selectedPathogen === item ? 'active' :
+                        activeTab === 'License' && selectedLicenser === item ? 'active' : 'inactive'
                     }`} 
                     onClick={() => handleClickSidebar(item)}
                 >

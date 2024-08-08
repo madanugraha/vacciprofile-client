@@ -7,7 +7,10 @@
             {"manufacturerId": 1}
         ],
         "manufacturerId": 1,
-        "accreditation": ["FDA", "EMA"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 }
+        ],
         "description": "Abrysvo™ is a vaccine developed by Pfizer to prevent Respiratory Syncytial Virus (RSV) infection. RSV is a common respiratory virus that usually causes mild, cold-like symptoms. It can be serious, especially for infants and older adults. Abrysvo™ is aimed at providing protection against RSV and is approved for use in various countries.",
         "link": "https://www.pfizer.com/products/product-detail/abrysvotm",
         "lastUpdated": "TBU"
@@ -21,7 +24,10 @@
             {"manufacturerId": 5},
             {"manufacturerId": 1}
         ],
-        "accreditation": ["FDA", "EMA"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 }
+        ],
         "description": "Comirnaty is a COVID-19 vaccine developed by Pfizer and BioNTech. It uses mRNA technology to provide immunity against the SARS-CoV-2 virus, which causes COVID-19. The vaccine was one of the first COVID-19 vaccines to receive emergency use authorization and has been widely administered around the world to help control the pandemic.",
         "vaccineType": "mRNA Covid vaccine",
         "comments": "First license, 12/2020",
@@ -37,7 +43,10 @@
             {"manufacturerId": 1}
         ],
         "manufacturerId": 1,
-        "accreditation": ["FDA", "EMA"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 }
+        ],
         "description": "Penbraya™ is a pneumococcal vaccine developed by Pfizer. It is designed to protect against diseases caused by the bacterium Streptococcus pneumoniae, which can lead to conditions such as pneumonia, meningitis, and sepsis. Penbraya™ provides coverage against multiple strains of pneumococcal bacteria, helping to reduce the incidence of these potentially serious infections.PENBRAYA is indicated for active immunization to prevent invasive disease caused by Neisseria meningitidis serogroups A, B, C, W, and Y. PENBRAYA is approved for use in individuals 10 through 25 years of age. ",
         "link": "https://www.pfizer.com/products/product-detail/penbrayatm",
         "lastUpdated": "TBU"
@@ -51,7 +60,11 @@
             {"manufacturerId": 1}
         ],
         "manufacturerId": 5,
-        "accreditation": ["FDA", "EMA", "WHO"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 },
+            { "licenserId": 3 }
+        ],
         "description": "The Pfizer-BioNTech COVID-19 Vaccine is an mRNA-based vaccine developed to prevent COVID-19, a disease caused by the SARS-CoV-2 virus. It works by instructing cells to produce a protein similar to the one found on the surface of the virus, which helps the immune system recognize and fight the virus if exposed. The vaccine has been widely distributed and is authorized for emergency use or fully approved in various countries.",
         "link": "https://www.pfizer.com/products/product-detail/pfizer-biontech-covid-19-vaccine",
         "lastUpdated": "TBU"
@@ -64,7 +77,11 @@
             {"manufacturerId": 1}
         ],
         "manufacturerId": 1,
-        "accreditation": ["FDA", "EMA", "WHO"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 },
+            { "licenserId": 3 }
+        ],
         "description": "Prevnar 13 is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 13 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in children and adults to prevent infections such as pneumonia, meningitis, and bloodstream infections. It is widely used in various countries and is recommended for individuals at higher risk of pneumococcal disease.",
         "vaccineType": "13-valent pneumococcal conjugate vaccine",
         "link": "https://www.pfizer.com/products/product-detail/prevnar_13",
@@ -78,7 +95,11 @@
             {"manufacturerId": 1}
         ],
         "manufacturerId": 1,
-        "accreditation": ["FDA", "EMA", "WHO"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 },
+            { "licenserId": 3 }
+        ],
         "description": "Prevnar 20™ is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 20 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in both children and adults to prevent severe infections such as pneumonia, meningitis, and bloodstream infections. Prevnar 20™ provides broader coverage than previous pneumococcal vaccines.",
         "link": "https://www.pfizer.com/products/product-detail/prevnar-20tm",
         "lastUpdated": "TBU"
@@ -91,7 +112,10 @@
             {"manufacturerId": 1}
         ],
         "manufacturerId": 1,
-        "accreditation": ["EMA", "WHO"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 }
+        ],
         "description": "TicoVac™ is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. TicoVac™ is designed to provide protection against TBE and is used in regions where the disease is endemic.",
         "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
         "link": "https://www.pfizer.com/products/product-detail/ticovac",
@@ -105,7 +129,10 @@
             {"manufacturerId": 1}
         ],
         "manufacturerId": 1,
-        "accreditation": ["FDA", "EMA"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 }
+        ],
         "description": "Trumenba™ is a vaccine developed by Pfizer to protect against serogroup B of Neisseria meningitidis, a bacterium that causes meningococcal disease. Trumenba™ is designed to prevent invasive meningococcal B infections in adolescents and young adults.",
         "vaccineType": "Meningococcal B vaccine",
         "link": "https://www.pfizer.com/products/product-detail/trumenba",
@@ -119,7 +146,11 @@
             {"manufacturerId": 2}
         ],
         "manufacturerId": 2,
-        "accreditation": ["WHO", "EMA", "FDA"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 },
+            { "licenserId": 3 }
+        ],
         "description": "The Janssen COVID-19 Vaccine is a single-dose vaccine developed by Johnson & Johnson to protect against COVID-19. It is based on adenovirus technology and has been widely used for its convenience and effectiveness.",
         "link": "https://www.jnj.com/coronavirus/covid-19-vaccine",
         "lastUpdated": "TBU"
@@ -132,7 +163,11 @@
             {"manufacturerId": 6}
         ],
         "manufacturerId": 6,
-        "accreditation": ["WHO", "EMA", "FDA"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 },
+            { "licenserId": 3 }
+        ],
         "description": "Vaxzevria is a COVID-19 vaccine developed by AstraZeneca. It uses a viral vector platform to stimulate an immune response against the SARS-CoV-2 virus. The vaccine has been used globally to combat the COVID-19 pandemic.",
         "link": "https://www.astrazeneca.com/media-centre/press-releases/2021/astrazeneca-announces-covid-19-vaccine-update.html",
         "lastUpdated": "TBU"
@@ -145,7 +180,11 @@
             {"manufacturerId": 4}
         ],
         "manufacturerId": 4,
-        "accreditation": ["WHO", "EMA", "FDA"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 },
+            { "licenserId": 3 }
+        ],
         "description": "Gardasil is a vaccine developed by Merck & Co., Inc. to protect against human papillomavirus (HPV) infection. It provides protection against the most common HPV types that cause cervical cancer, other genital cancers, and genital warts.",
         "link": "https://www.merck.com/product/usa/pi_circulars/g/gardasil/gardasil_pi.pdf",
         "lastUpdated": "TBU"
@@ -158,7 +197,10 @@
             {"manufacturerId": 1}
         ],
         "manufacturerId": 1,
-        "accreditation": ["EMA", "WHO"],
+        "licensers": [
+            { "licenserId": 1 },
+            { "licenserId": 2 }
+        ],
         "description": "Pfizer’s TBE vaccine, marketed under the brand names FSME-Immun® and TicoVac™ in Europe, and TICOVAC™ in the U.S., is developed using a master ‘seed’ virus that is similar to the TBE virus found in nature. It is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. It is designed to provide protection against TBE and is used in regions where the disease is endemic.",
         "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
         "link": "https://www.pfizer.com/products/product-detail/ticovac",

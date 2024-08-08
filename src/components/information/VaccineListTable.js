@@ -5,16 +5,17 @@ import React from 'react';
  *
  * @component
  * @namespace VaccineListTable
- * @param {Object} props - The component accepts activeTab, selectedPathogen, selectedVaccine, selectedAccreditation, and several handler and data functions as props.
- * @param {string} props.activeTab - The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Accreditation".
+ * @param {Object} props - The component accepts activeTab, selectedPathogen, selectedVaccine, selectedLicenser, and several handler and data functions as props.
+ * @param {string} props.activeTab - The type of detail currently selected, e.g., "Vaccine", "Pathogen", or "Licenser".
  * @param {Object} props.selectedPathogen - The currently selected pathogen object.
  * @param {Object} props.selectedVaccine - The currently selected vaccine object.
- * @param {string} props.selectedAccreditation - The currently selected accreditation.
+ * @param {string} props.selectedLicenser - The currently selected licenser.
  * @param {Function} props.handleSelectPathogen - Function that gets triggered when a pathogen is selected.
  * @param {Function} props.handleSelectVaccine - Function that gets triggered when a vaccine is selected.
- * @param {Function} props.handleSelectAccreditation - Function that gets triggered when an accreditation is selected.
+ * @param {Function} props.handleSelectLicenser - Function that gets triggered when an licenser is selected.
  * @param {Function} props.getVaccinesByManufacturer - Function that returns a list of vaccines based on the manufacturer.
  * @param {Function} props.getPathogenByVaccine - Function that returns the pathogen associated with a specific vaccine.
+ * @param {Function} props.getLicenserById - Function to retrieve licenser details by ID.
  * @returns {JSX.Element} The Manufacturer Information Table component.
  *
  * @example
@@ -23,12 +24,13 @@ import React from 'react';
  *   activeTab="Vaccine"
  *   selectedPathogen={{ name: 'Pathogen X' }}
  *   selectedVaccine={{ name: 'Vaccine Y' }}
- *   selectedAccreditation="Accreditation Z"
+ *   selectedLicenser="Licenser Z"
  *   handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}
  *   handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}
- *   handleSelectAccreditation={accreditation => console.log('Accreditation selected:', accreditation)}
- *   getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', accreditation: ['Accreditation Z'] }]}
+ *   handleSelectLicenser={licenser => console.log('Licenser selected:', licenser)}
+ *   getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}
  *   getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}
+ *   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}
  * />
  */
 
@@ -36,12 +38,13 @@ const VaccineListTable = ({
     activeTab, 
     selectedPathogen, 
     selectedVaccine, 
-    selectedAccreditation,
+    selectedLicenser,
     handleSelectPathogen, 
     handleSelectVaccine, 
-    handleSelectAccreditation, 
+    handleSelectLicenser, 
     getVaccinesByManufacturer,
-    getPathogenByVaccine
+    getPathogenByVaccine,
+    getLicenserById
 }) => {
     return <div className="accordion" id="accordianVaccineList">
     <div className="accordion-item">
@@ -76,15 +79,24 @@ const VaccineListTable = ({
                                         onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{getPathogenByVaccine(vaccine).name}
                                     </span>
                                 </td>
-                                <td className='accreditation-cell'>
-                                    {vaccine.accreditation.map((accreditation, index)=>
-                                    <span key={index}>
-                                        <span 
-                                            className={`${activeTab==="Accreditation" && selectedAccreditation === accreditation ? `selected` : `selectable`}`} 
-                                            onClick={()=>handleSelectAccreditation(accreditation)}>
-                                            {accreditation}
-                                        </span>{index<vaccine.accreditation.length-1 ? <span className='text-decoration-none'>, </span> : ``}
-                                    </span>)}
+                                <td className='licenser-cell'>
+                                {vaccine.licensers.map((l, index) => {
+                                    const { licenserId } = l;
+                                    const licenser = getLicenserById(licenserId); 
+
+                                    if (!licenser) return null; 
+                                    
+                                    return (
+                                        <span key={licenserId}>
+                                            <span 
+                                                className={`${activeTab === "License" && selectedLicenser === licenser ? `selected` : `selectable`}`} 
+                                                onClick={() => handleSelectLicenser(licenser)}>
+                                                {licenser.name}
+                                            </span>
+                                            {index < vaccine.licensers.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                        </span>
+                                    );
+                                })}
                                 </td>
                             </tr>)}
                         </tbody>

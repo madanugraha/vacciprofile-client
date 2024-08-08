@@ -4,7 +4,7 @@ import VaccineListTable from './VaccineListTable';
 import Pathogen from './Pathogen';
 import VaccineInformation from './VaccineInformation';
 import ManufacturerProfile from './ManufacturerProfile';
-import LicensingAuthority from './LicensingAuthority';
+import Licenser from './Licenser';
 
 /**
  * View Component
@@ -12,66 +12,60 @@ import LicensingAuthority from './LicensingAuthority';
  * @component
  * @namespace Main
  * @param {Object} props - The component accepts various props to handle the display of information.
- * @param {Object} props.activeFilters - The current filters applied to the information view.
- * @param {Function} props.setActiveFilters - Function to update the active filters.
- * @param {Array} props.manufacturersList - List of manufacturers available for selection.
  * @param {Object} props.selectedPathogen - The currently selected pathogen.
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
- * @param {Object} props.selectedAccreditation - The currently selected accreditation.
- * @param {string} props.activeTab - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').
+ * @param {Object} props.selectedLicenser - The currently selected licenser.
+ * @param {string} props.activeTab - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Licenser').
  * @param {Function} props.handleSelectPathogen - Function to handle the selection of a pathogen.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
- * @param {Function} props.handleSelectAccreditation - Function to handle the selection of an accreditation.
+ * @param {Function} props.handleSelectLicenser - Function to handle the selection of an licenser.
  * @param {Function} props.getPathogenByVaccine - Function to get the pathogen associated with a vaccine.
  * @param {Function} props.getVaccinesByManufacturer - Function to get vaccines associated with a manufacturer.
- * @param {Function} props.getVaccinesByAccreditation - Function to get vaccines associated with an accreditation.
+ * @param {Function} props.getVaccinesByLicenser - Function to get vaccines associated with an licenser.
  * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
  * @param {Function} props.convertCamelCaseToReadable - Function to convert camel case strings to a readable format.
+ * @param {Function} props.getLicenserById - Function to retrieve licenser details by ID.
  * @param {string} props.changedFrom - Source of the change triggering the view update.
- * @returns {JSX.Element} The Information View component displaying detailed information based on the selected type and filters.
+ * @returns {JSX.Element} The View component displaying detailed information based on the selected type and filters.
  *
  * @example
  * // Example usage of View component
  * <View
- *    activeFilters={{ searchString: '', firstAlphabet: '' }}
- *    setActiveFilters={(filters) => console.log(filters)}
- *    manufacturersList={[]}
  *    selectedPathogen={{ name: 'COVID-19', description: '...' }}
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
- *    selectedAccreditation='AccreditationZ'
+ *    selectedLicenser='LicenserZ'
  *    activeTab='Pathogen'
  *    handleSelectPathogen={(pathogen) => console.log(pathogen)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
- *    handleSelectAccreditation={(accreditation) => console.log(accreditation)}
+ *    handleSelectLicenser={(licenser) => console.log(licenser)}
  *    getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}
  *    getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}
- *    getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}
+ *    getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}
  *    italizeScientificNames={(text) => <i>{text}</i>}
  *    convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}
  *    changedFrom='Sidebar'
+ *    getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}
  * />
  */
 
 const View = ({
     activeTab,
-    activeFilters,
-    setActiveFilters,
-    manufacturersList, 
     selectedPathogen, 
     selectedVaccine, 
     selectedManufacturer,
-    selectedAccreditation, 
+    selectedLicenser, 
     handleSelectPathogen, 
     handleSelectVaccine, 
-    handleSelectAccreditation, 
+    handleSelectLicenser, 
     getPathogenByVaccine,
     getVaccinesByManufacturer,
-    getVaccinesByAccreditation,
+    getVaccinesByLicenser,
     italizeScientificNames,
     convertCamelCaseToReadable,
-    changedFrom
+    changedFrom,
+    getLicenserById
 }) => {
     const detailsRef = useRef(null);
     const prevChangedFrom = useRef(changedFrom);
@@ -85,7 +79,7 @@ const View = ({
             }
         }
         prevChangedFrom.current = changedFrom;
-    }, [selectedPathogen, selectedVaccine, selectedManufacturer, selectedAccreditation, changedFrom]);
+    }, [selectedPathogen, selectedVaccine, selectedManufacturer, selectedLicenser, changedFrom]);
 
     useEffect(() => {
         setSlideClass(''); 
@@ -99,7 +93,7 @@ const View = ({
         <div className='border border-primary border-1 rounded-4 slide-left'>
             { 
             // manufacturersList.length === 0 ? <div className='empty-view d-flex justify-content-center align-items-center'>
-            //         <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: '', firstAlphabet: ''})}>
+            //         <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: ''})}>
             //             Clear filters
             //         </span>
             //     </div> : 
@@ -125,11 +119,11 @@ const View = ({
                         selectedManufacturer={selectedManufacturer}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         convertCamelCaseToReadable={convertCamelCaseToReadable}
-                    /> : activeTab==="Accreditation" 
-                    ? <LicensingAuthority
-                        getVaccinesByAccreditation={getVaccinesByAccreditation}
+                    /> : activeTab==="License" 
+                    ? <Licenser
+                        getVaccinesByLicenser={getVaccinesByLicenser}
                         handleSelectVaccine={handleSelectVaccine}
-                        selectedAccreditation={selectedAccreditation}
+                        selectedLicenser={selectedLicenser}
                     /> 
                     : null}
                     {activeTab==="Manufacturer" && getVaccinesByManufacturer().length>0 
@@ -137,12 +131,13 @@ const View = ({
                         activeTab={activeTab}
                         selectedPathogen={selectedPathogen}
                         selectedVaccine={selectedVaccine}
-                        selectedAccreditation={selectedAccreditation}
+                        selectedLicenser={selectedLicenser}
                         handleSelectVaccine={handleSelectVaccine}
                         handleSelectPathogen={handleSelectPathogen} 
-                        handleSelectAccreditation={handleSelectAccreditation}
+                        handleSelectLicenser={handleSelectLicenser}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         getPathogenByVaccine={getPathogenByVaccine}
+                        getLicenserById={getLicenserById}
                     /> : ``}
                     </div>
             </>}

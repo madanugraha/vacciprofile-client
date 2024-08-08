@@ -106,7 +106,7 @@ td, th {
     position: absolute;
     right: 0;
     top: 7px;
-    width: 41vw;
+    width: 40vw;
 }
 
 // Sidebar
@@ -191,31 +191,4 @@ td, th {
 
 .last-updated {
     font-size: 11px;
-}
-
-.alphabet-container {
-    width: 780px;
-    text-align: center; 
-}
-  
-.alphabet-item {
-    font-size: 12px;
-    background-color: $tertiary;
-    color: white;
-    border-radius: 0.15em;
-    text-align: center;
-    box-sizing: border-box;
-    width: 24px;
-    padding: 2px 0;
-}
-
-.alphabet-item:hover {
-    color: $dark;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.alphabet-item.bg-primary:hover {
-    color: white;
-    font-weight: 400;
 }

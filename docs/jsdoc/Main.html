@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Accreditation.html">Accreditation</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
     
 </nav>
 
@@ -75,13 +75,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>InformationView Component</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>View Component</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_InformationView.js.html">components/InformationView.js</a>, <a href="components_InformationView.js.html#line9">line 9</a>
+        <a href="components_information_View.js.html">components/information/View.js</a>, <a href="components_information_View.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -128,7 +128,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Example usage of InformationView component&lt;InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
+    <pre class="prettyprint"><code>// Example usage of View component&lt;View   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
 
 
 
@@ -345,7 +345,7 @@
 
         <tr>
             
-                <td class="name"><code>selectedAccreditation</code></td>
+                <td class="name"><code>selectedLicenser</code></td>
             
 
             <td class="type">
@@ -362,7 +362,7 @@
 
             
 
-            <td class="description last"><p>The currently selected accreditation.</p></td>
+            <td class="description last"><p>The currently selected licenser.</p></td>
         </tr>
 
     
@@ -386,7 +386,7 @@
 
             
 
-            <td class="description last"><p>The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').</p></td>
+            <td class="description last"><p>The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Licenser').</p></td>
         </tr>
 
     
@@ -441,7 +441,7 @@
 
         <tr>
             
-                <td class="name"><code>handleSelectAccreditation</code></td>
+                <td class="name"><code>handleSelectLicenser</code></td>
             
 
             <td class="type">
@@ -458,7 +458,7 @@
 
             
 
-            <td class="description last"><p>Function to handle the selection of an accreditation.</p></td>
+            <td class="description last"><p>Function to handle the selection of an licenser.</p></td>
         </tr>
 
     
@@ -513,7 +513,7 @@
 
         <tr>
             
-                <td class="name"><code>getVaccinesByAccreditation</code></td>
+                <td class="name"><code>getVaccinesByLicenser</code></td>
             
 
             <td class="type">
@@ -530,7 +530,7 @@
 
             
 
-            <td class="description last"><p>Function to get vaccines associated with an accreditation.</p></td>
+            <td class="description last"><p>Function to get vaccines associated with an licenser.</p></td>
         </tr>
 
     
@@ -722,13 +722,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>InformationView Component</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>View Component</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_InformationView.js.html">components/InformationView.js</a>, <a href="components_InformationView.js.html#line9">line 9</a>
+        <a href="components_information_View.js.html">components/information/View.js</a>, <a href="components_information_View.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -775,7 +775,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Example usage of InformationView component&lt;InformationView   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedAccreditation='AccreditationZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectAccreditation={(accreditation) => console.log(accreditation)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByAccreditation={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
+    <pre class="prettyprint"><code>// Example usage of View component&lt;View   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
 
 
 
@@ -992,7 +992,7 @@
 
         <tr>
             
-                <td class="name"><code>selectedAccreditation</code></td>
+                <td class="name"><code>selectedLicenser</code></td>
             
 
             <td class="type">
@@ -1009,7 +1009,7 @@
 
             
 
-            <td class="description last"><p>The currently selected accreditation.</p></td>
+            <td class="description last"><p>The currently selected licenser.</p></td>
         </tr>
 
     
@@ -1033,7 +1033,7 @@
 
             
 
-            <td class="description last"><p>The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Accreditation').</p></td>
+            <td class="description last"><p>The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Licenser').</p></td>
         </tr>
 
     
@@ -1088,7 +1088,7 @@
 
         <tr>
             
-                <td class="name"><code>handleSelectAccreditation</code></td>
+                <td class="name"><code>handleSelectLicenser</code></td>
             
 
             <td class="type">
@@ -1105,7 +1105,7 @@
 
             
 
-            <td class="description last"><p>Function to handle the selection of an accreditation.</p></td>
+            <td class="description last"><p>Function to handle the selection of an licenser.</p></td>
         </tr>
 
     
@@ -1160,7 +1160,7 @@
 
         <tr>
             
-                <td class="name"><code>getVaccinesByAccreditation</code></td>
+                <td class="name"><code>getVaccinesByLicenser</code></td>
             
 
             <td class="type">
@@ -1177,7 +1177,7 @@
 
             
 
-            <td class="description last"><p>Function to get vaccines associated with an accreditation.</p></td>
+            <td class="description last"><p>Function to get vaccines associated with an licenser.</p></td>
         </tr>
 
     
@@ -1341,7 +1341,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Aug 06 2024 00:12:31 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 08 2024 17:11:11 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
