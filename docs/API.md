@@ -51,9 +51,9 @@ is the entry point into the application.</p>
 <dd><p>Filters the list of pathogens based on the search keyword.</p>
 <p>This function filters pathogens and also checks related vaccines and manufacturers for matches with the search keyword.</p>
 </dd>
-<dt><a href="#filterPathogens">filterPathogens(keyword)</a> ⇒ <code>Array</code></dt>
-<dd><p>Filters the list of pathogens based on the search keyword.</p>
-<p>This function filters pathogens and also checks related vaccines and manufacturers for matches with the search keyword.</p>
+<dt><a href="#filterLicensers">filterLicensers(keyword)</a> ⇒ <code>Array</code></dt>
+<dd><p>Filters the list of licensers based on the search keyword.</p>
+<p>This function filters licensers and also checks related vaccines and pathogens for matches with the search keyword.</p>
 </dd>
 <dt><a href="#filterLists">filterLists()</a> ⇒ <code>void</code></dt>
 <dd><p>Filters the sidebar list based on the currently selected tab and search keyword.</p>
@@ -286,9 +286,10 @@ This is the main component of the vaccine profile application. It manages the st
 
 * [App()](#App) ⇒ <code>JSX.Element</code>
     * [~getPathogenByVaccine](#App..getPathogenByVaccine) ⇒ <code>object</code>
+    * [~getVaccinesByLicenser](#App..getVaccinesByLicenser) ⇒ <code>Array</code>
     * [~getVaccinesByManufacturer](#App..getVaccinesByManufacturer) ⇒ <code>Array</code>
     * [~getVaccineByPathogen](#App..getVaccineByPathogen) ⇒ <code>Array</code>
-    * [~getManufacturerByVaccine](#App..getManufacturerByVaccine) ⇒ <code>Array</code>
+    * [~getManufacturersByVaccine](#App..getManufacturersByVaccine) ⇒ <code>Array</code>
     * [~getLicenserById](#App..getLicenserById) ⇒ <code>Array</code>
     * [~sortLicensers](#App..sortLicensers) ⇒ <code>Array.&lt;Object&gt;</code>
     * [~handleTabChange(tab)](#App..handleTabChange)
@@ -297,7 +298,6 @@ This is the main component of the vaccine profile application. It manages the st
     * [~handleSelectVaccine(vx)](#App..handleSelectVaccine)
     * [~handleSelectManufacturer(manufacturer)](#App..handleSelectManufacturer)
     * [~handleSelectLicenser(licenser)](#App..handleSelectLicenser)
-    * [~getVaccinesByLicenser()](#App..getVaccinesByLicenser) ⇒ <code>Array</code>
     * [~convertCamelCaseToReadable(string)](#App..convertCamelCaseToReadable) ⇒ <code>string</code>
     * [~italizeScientificNames(text)](#App..italizeScientificNames) ⇒ <code>JSX.Element</code>
 
@@ -313,6 +313,13 @@ Retrieves the pathogen associated with a vaccine.
 | --- | --- | --- |
 | vaccine | <code>object</code> | The vaccine object. |
 
+<a name="App..getVaccinesByLicenser"></a>
+
+### App~getVaccinesByLicenser ⇒ <code>Array</code>
+Retrieves vaccines by licenser.
+
+**Kind**: inner constant of [<code>App</code>](#App)  
+**Returns**: <code>Array</code> - List of vaccines with the selected licenser.  
 <a name="App..getVaccinesByManufacturer"></a>
 
 ### App~getVaccinesByManufacturer ⇒ <code>Array</code>
@@ -337,9 +344,9 @@ Retrieves vaccines by pathogen.
 | --- | --- | --- |
 | pathogen | <code>Object</code> | The pathogen object. |
 
-<a name="App..getManufacturerByVaccine"></a>
+<a name="App..getManufacturersByVaccine"></a>
 
-### App~getManufacturerByVaccine ⇒ <code>Array</code>
+### App~getManufacturersByVaccine ⇒ <code>Array</code>
 Retrieves manufacturers by vaccine.
 
 **Kind**: inner constant of [<code>App</code>](#App)  
@@ -444,13 +451,6 @@ Handles selecting an licenser.
 | --- | --- | --- |
 | licenser | <code>string</code> | The selected licenser. |
 
-<a name="App..getVaccinesByLicenser"></a>
-
-### App~getVaccinesByLicenser() ⇒ <code>Array</code>
-Retrieves vaccines by licenser.
-
-**Kind**: inner method of [<code>App</code>](#App)  
-**Returns**: <code>Array</code> - List of vaccines with the selected licenser.  
 <a name="App..convertCamelCaseToReadable"></a>
 
 ### App~convertCamelCaseToReadable(string) ⇒ <code>string</code>
@@ -511,13 +511,13 @@ Filters the list of pathogens based on the search keyword.This function filter
 | --- | --- | --- |
 | keyword | <code>string</code> | The lowercased search keyword used for filtering. |
 
-<a name="filterPathogens"></a>
+<a name="filterLicensers"></a>
 
-## filterPathogens(keyword) ⇒ <code>Array</code>
-Filters the list of pathogens based on the search keyword.This function filters pathogens and also checks related vaccines and manufacturers for matches with the search keyword.
+## filterLicensers(keyword) ⇒ <code>Array</code>
+Filters the list of licensers based on the search keyword.This function filters licensers and also checks related vaccines and pathogens for matches with the search keyword.
 
 **Kind**: global function  
-**Returns**: <code>Array</code> - - An array of filtered pathogens.  
+**Returns**: <code>Array</code> - - An array of filtered licensers.  
 
 | Param | Type | Description |
 | --- | --- | --- |

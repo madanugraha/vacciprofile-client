@@ -29,7 +29,7 @@ const Licenser = ({
     getVaccinesByLicenser
 }) => {
     return <div className='slide-left'>
-        <h1 className='heading text-primary pt-2'>{selectedLicenser.fullName}</h1>
+        <h1 className='heading text-primary pt-2'>{selectedLicenser.fullName} ({selectedLicenser.name})</h1>
         {selectedLicenser.description}
         <div className='table-responsive'>
             <table className='table table-light w-100 m-0 mt-3'>
@@ -45,7 +45,7 @@ const Licenser = ({
                     </tr>
                 </thead>
                 <tbody>
-                    {getVaccinesByLicenser().map((vaccine, index) => (
+                    {getVaccinesByLicenser(selectedLicenser).map((vaccine, index) => (
                     <tr key={index}>
                         <td><i>{<span className='text-primary fw-bold hover-underline' onClick={()=>handleSelectVaccine(vaccine.name)}>{vaccine.name}</span>}</i></td>
                         <td><i>{vaccine.vaccineType || '-'}</i></td>

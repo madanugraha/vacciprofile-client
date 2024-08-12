@@ -194,7 +194,7 @@
         "vaccineId": 12,
         "pathogenId": 4,
         "manufacturers": [
-            {"manufacturerId": 1}
+            { "manufacturerId": 1 }
         ],
         "manufacturerId": 1,
         "licensers": [

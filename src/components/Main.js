@@ -140,7 +140,7 @@ const Main = ({
                         getPathogenByVaccine={getPathogenByVaccine}
                         getLicenserById={getLicenserById}
                     /> : ``}
-                    </div>
+                </div>
             </>}
         </div>
     </div>
