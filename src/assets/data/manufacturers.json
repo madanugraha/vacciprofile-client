@@ -32,7 +32,8 @@
             { "vaccineId": 4 },
             { "vaccineId": 12 }
         ],
-        "link": "https://www.pfizer.com/products/product-list"
+        "link": "https://www.pfizer.com/products/product-list",
+        "lastUpdated": "2024-Aug"
     },
     {
         "manufacturerId": 2,
@@ -70,7 +71,8 @@
             {
             
             }
-        ]
+        ],
+        "lastUpdated": "2024-Aug"
     },
     {
         "manufacturerId": 3,
@@ -108,7 +110,8 @@
             {
             
             }
-        ]
+        ],
+        "lastUpdated": "2024-Aug"
     },
     {
         "manufacturerId": 4,
@@ -141,7 +144,8 @@
             {
             
             }
-        ]
+        ],
+        "lastUpdated": "2024-Aug"
     },
     {
         "manufacturerId": 5,
@@ -168,7 +172,8 @@
         "vaccines": [
             { "vaccineId": 2 },
             { "vaccineId": 4 }
-        ]
+        ],
+        "lastUpdated": "2024-Aug"
     },
     {
         "manufacturerId": 6,
@@ -191,7 +196,8 @@
                     "link" :"https://en.wikipedia.org/wiki/AstraZeneca"
                 }
             ]
-        }
+        },
+        "lastUpdated": "2024-Aug"
     },
     {
         "manufacturerId": 7,
@@ -219,6 +225,7 @@
             {
             
             }
-        ]
+        ],
+        "lastUpdated": "2024-Aug"
     }
 ]

@@ -105,7 +105,7 @@ const Main = ({
                 <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
                 <span className='select-prompt position-absolute'>Select a {activeTab}</span>
             </div> : <>
-                {activeTab==="Manufacturer" ? <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data</h1>:null}
+                {activeTab==="Manufacturer" ? <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data ({selectedManufacturer.lastUpdated})</h1>:null}
                 <div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
                     {activeTab==="Pathogen" 
                     ? <Pathogen 

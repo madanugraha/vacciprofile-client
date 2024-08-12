@@ -35,15 +35,15 @@
         const [activeFilters, setActiveFilters] = useState({
             searchKeyword: ''
         })
-        const [ selectedPathogen, setSelectedPathogen ] = useState({});
-        const [ selectedVaccine, setSelectedVaccine ] = useState({});
-        const [ selectedManufacturer, setSelectedManufacturer ] = useState({});
-        const [ selectedLicenser, setSelectedLicenser ] = useState({})
-        const [ sidebarList, setSidebarList ] = useState();
         const [ pathogensList, setPathogensList ] = useState();
         const [ vaccinesList, setVaccinesList ] = useState();
         const [ manufacturersList, setManufacturersList ] = useState(manufacturers);
         const [ licensersList, setLicensersList ] = useState();
+        const [ sidebarList, setSidebarList ] = useState();
+        const [ selectedPathogen, setSelectedPathogen ] = useState({});
+        const [ selectedVaccine, setSelectedVaccine ] = useState({});
+        const [ selectedManufacturer, setSelectedManufacturer ] = useState({});
+        const [ selectedLicenser, setSelectedLicenser ] = useState({})
         const [ changedFrom, setChangedFrom ] = useState('');
 
         /**
