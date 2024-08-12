@@ -4,7 +4,7 @@
 
     import Header from './components/Header';
     import Sidebar from './components/Sidebar';
-    import View from './components/information/View.js';
+    import Main from './components/Main.js';
     import TopBar from './components/TopBar.js';
 
     import manufacturers from './assets/data/manufacturers.json';
@@ -20,7 +20,7 @@
      *
      * @description 
      * This is the main component of the vaccine profile application. It manages the state of selected items, 
-     * handles user interactions, and renders the Header, Sidebar, View, and other components. It 
+     * handles user interactions, and renders the Header, Sidebar, Main, and other components. It 
      * is the entry point into the application.
      *
      * @returns {JSX.Element} The main application component containing all sub-components and logic.
@@ -392,7 +392,7 @@
                 } else if (activeTab === 'Pathogen') {
                     setSidebarList(pathogensList.slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
-                } else if (activeTab === 'License') {
+                } else if (activeTab === 'Licenser') {
                     setSidebarList(sortLicensers(licensersList));
                 }
             }
@@ -473,7 +473,7 @@
                             changedFrom={changedFrom}
                             setActiveTab={setActiveTab}
                         />
-                        <View
+                        <Main
                             activeTab={activeTab}
                             selectedPathogen={selectedPathogen}
                             selectedVaccine={selectedVaccine}

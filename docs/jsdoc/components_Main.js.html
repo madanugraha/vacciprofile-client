@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>components/Main.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">components/Main.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useState, useEffect, useRef } from 'react';
+
+import VaccineListTable from './information/VaccineListTable';
+import Pathogen from './information/Pathogen';
+import VaccineInformation from './information/VaccineInformation';
+import ManufacturerProfile from './information/ManufacturerProfile';
+import Licenser from './information/Licenser';
+
+/**
+ * Main Component
+ *
+ * @component
+ * @namespace Main
+ * @param {Object} props - The component accepts various props to handle the display of information.
+ * @param {Object} props.selectedPathogen - The currently selected pathogen.
+ * @param {Object} props.selectedVaccine - The currently selected vaccine.
+ * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
+ * @param {Object} props.selectedLicenser - The currently selected licenser.
+ * @param {string} props.activeTab - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Licenser').
+ * @param {Function} props.handleSelectPathogen - Function to handle the selection of a pathogen.
+ * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
+ * @param {Function} props.handleSelectLicenser - Function to handle the selection of an licenser.
+ * @param {Function} props.getPathogenByVaccine - Function to get the pathogen associated with a vaccine.
+ * @param {Function} props.getVaccinesByManufacturer - Function to get vaccines associated with a manufacturer.
+ * @param {Function} props.getVaccinesByLicenser - Function to get vaccines associated with an licenser.
+ * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
+ * @param {Function} props.convertCamelCaseToReadable - Function to convert camel case strings to a readable format.
+ * @param {Function} props.getLicenserById - Function to retrieve licenser details by ID.
+ * @param {string} props.changedFrom - Source of the change triggering the main update.
+ * @returns {JSX.Element} The Main component displaying detailed information based on the selected type and filters.
+ *
+ * @example
+ * // Example usage of Main component
+ * &lt;Main
+ *    selectedPathogen={{ name: 'COVID-19', description: '...' }}
+ *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
+ *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
+ *    selectedLicenser='LicenserZ'
+ *    activeTab='Pathogen'
+ *    handleSelectPathogen={(pathogen) => console.log(pathogen)}
+ *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
+ *    handleSelectLicenser={(licenser) => console.log(licenser)}
+ *    getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}
+ *    getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}
+ *    getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}
+ *    italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}
+ *    convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}
+ *    changedFrom='Sidebar'
+ *    getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}
+ * />
+ */
+
+const Main = ({
+    activeTab,
+    selectedPathogen, 
+    selectedVaccine, 
+    selectedManufacturer,
+    selectedLicenser, 
+    handleSelectPathogen, 
+    handleSelectVaccine, 
+    handleSelectLicenser, 
+    getPathogenByVaccine,
+    getVaccinesByManufacturer,
+    getVaccinesByLicenser,
+    italizeScientificNames,
+    convertCamelCaseToReadable,
+    changedFrom,
+    getLicenserById
+}) => {
+    const detailsRef = useRef(null);
+    const prevChangedFrom = useRef(changedFrom);
+
+    const [slideClass, setSlideClass] = useState('slide-left');
+
+    useEffect(() => {
+        if (prevChangedFrom.current !== 'Sidebar' &amp;&amp; changedFrom !== 'Sidebar') {
+            if (detailsRef.current) {
+                detailsRef.current.scrollIntoMain({ behavior: 'smooth' });
+            }
+        }
+        prevChangedFrom.current = changedFrom;
+    }, [selectedPathogen, selectedVaccine, selectedManufacturer, selectedLicenser, changedFrom]);
+
+    useEffect(() => {
+        setSlideClass(''); 
+        const timeout = setTimeout(() => {
+            setSlideClass('slide-left'); 
+        }, 0); 
+        return () => clearTimeout(timeout);
+    }, [selectedManufacturer]);
+
+    return &lt;div className={`main-container bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
+        &lt;div className='border border-primary border-1 rounded-4 slide-left'>
+            { 
+            // manufacturersList.length === 0 ? &lt;div className='empty-main d-flex justify-content-center align-items-center'>
+            //         &lt;span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: ''})}>
+            //             Clear filters
+            //         &lt;/span>
+            //     &lt;/div> : 
+            (activeTab === 'Manufacturer' &amp;&amp; Object.keys(selectedManufacturer).length === 0) ||
+            (activeTab === 'Product' &amp;&amp; Object.keys(selectedVaccine).length === 0) ||
+            (activeTab === 'Pathogen' &amp;&amp; Object.keys(selectedPathogen).length === 0) ||
+            (activeTab === 'Licenser' &amp;&amp; Object.keys(selectedLicenser).length === 0)
+                ? &lt;div className='empty-main position-relative'>
+                &lt;img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
+                &lt;span className='select-prompt position-absolute'>Select a {activeTab}&lt;/span>
+            &lt;/div> : &lt;>
+                {activeTab==="Manufacturer" ? &lt;h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data&lt;/h1>:null}
+                &lt;div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
+                    {activeTab==="Pathogen" 
+                    ? &lt;Pathogen 
+                        selectedPathogen={selectedPathogen} 
+                        italizeScientificNames={italizeScientificNames}
+                    /> : activeTab==="Product" 
+                    ? &lt;VaccineInformation 
+                        selectedVaccine={selectedVaccine}
+                        italizeScientificNames={italizeScientificNames}
+                    /> : activeTab==="Manufacturer" 
+                    ? &lt;ManufacturerProfile
+                        selectedManufacturer={selectedManufacturer}
+                        getVaccinesByManufacturer={getVaccinesByManufacturer}
+                        convertCamelCaseToReadable={convertCamelCaseToReadable}
+                    /> : activeTab==="Licenser" 
+                    ? &lt;Licenser
+                        getVaccinesByLicenser={getVaccinesByLicenser}
+                        handleSelectVaccine={handleSelectVaccine}
+                        selectedLicenser={selectedLicenser}
+                    />
+                    : null}
+                    {activeTab==="Manufacturer" &amp;&amp; getVaccinesByManufacturer().length>0 
+                    ? &lt;VaccineListTable 
+                        activeTab={activeTab}
+                        selectedPathogen={selectedPathogen}
+                        selectedVaccine={selectedVaccine}
+                        selectedLicenser={selectedLicenser}
+                        handleSelectVaccine={handleSelectVaccine}
+                        handleSelectPathogen={handleSelectPathogen} 
+                        handleSelectLicenser={handleSelectLicenser}
+                        getVaccinesByManufacturer={getVaccinesByManufacturer}
+                        getPathogenByVaccine={getPathogenByVaccine}
+                        getLicenserById={getLicenserById}
+                    /> : ``}
+                    &lt;/div>
+            &lt;/>}
+        &lt;/div>
+    &lt;/div>
+}
+
+export default Main;</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 12 2024 11:16:26 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

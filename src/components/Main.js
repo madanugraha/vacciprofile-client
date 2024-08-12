@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import VaccineListTable from './VaccineListTable';
-import Pathogen from './Pathogen';
-import VaccineInformation from './VaccineInformation';
-import ManufacturerProfile from './ManufacturerProfile';
-import Licenser from './Licenser';
+import VaccineListTable from './information/VaccineListTable';
+import Pathogen from './information/Pathogen';
+import VaccineInformation from './information/VaccineInformation';
+import ManufacturerProfile from './information/ManufacturerProfile';
+import Licenser from './information/Licenser';
 
 /**
- * View Component
+ * Main Component
  *
  * @component
  * @namespace Main
@@ -26,12 +26,12 @@ import Licenser from './Licenser';
  * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
  * @param {Function} props.convertCamelCaseToReadable - Function to convert camel case strings to a readable format.
  * @param {Function} props.getLicenserById - Function to retrieve licenser details by ID.
- * @param {string} props.changedFrom - Source of the change triggering the view update.
- * @returns {JSX.Element} The View component displaying detailed information based on the selected type and filters.
+ * @param {string} props.changedFrom - Source of the change triggering the main update.
+ * @returns {JSX.Element} The Main component displaying detailed information based on the selected type and filters.
  *
  * @example
- * // Example usage of View component
- * <View
+ * // Example usage of Main component
+ * <Main
  *    selectedPathogen={{ name: 'COVID-19', description: '...' }}
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
@@ -50,7 +50,7 @@ import Licenser from './Licenser';
  * />
  */
 
-const View = ({
+const Main = ({
     activeTab,
     selectedPathogen, 
     selectedVaccine, 
@@ -75,7 +75,7 @@ const View = ({
     useEffect(() => {
         if (prevChangedFrom.current !== 'Sidebar' && changedFrom !== 'Sidebar') {
             if (detailsRef.current) {
-                detailsRef.current.scrollIntoView({ behavior: 'smooth' });
+                detailsRef.current.scrollIntoMain({ behavior: 'smooth' });
             }
         }
         prevChangedFrom.current = changedFrom;
@@ -89,18 +89,19 @@ const View = ({
         return () => clearTimeout(timeout);
     }, [selectedManufacturer]);
 
-    return <div className={`view-container bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
+    return <div className={`main-container bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
         <div className='border border-primary border-1 rounded-4 slide-left'>
             { 
-            // manufacturersList.length === 0 ? <div className='empty-view d-flex justify-content-center align-items-center'>
+            // manufacturersList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>
             //         <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: ''})}>
             //             Clear filters
             //         </span>
             //     </div> : 
             (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
             (activeTab === 'Product' && Object.keys(selectedVaccine).length === 0) ||
-            (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0)
-                ? <div className='empty-view position-relative'>
+            (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0) ||
+            (activeTab === 'Licenser' && Object.keys(selectedLicenser).length === 0)
+                ? <div className='empty-main position-relative'>
                 <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
                 <span className='select-prompt position-absolute'>Select a {activeTab}</span>
             </div> : <>
@@ -119,12 +120,12 @@ const View = ({
                         selectedManufacturer={selectedManufacturer}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         convertCamelCaseToReadable={convertCamelCaseToReadable}
-                    /> : activeTab==="License" 
+                    /> : activeTab==="Licenser" 
                     ? <Licenser
                         getVaccinesByLicenser={getVaccinesByLicenser}
                         handleSelectVaccine={handleSelectVaccine}
                         selectedLicenser={selectedLicenser}
-                    /> 
+                    />
                     : null}
                     {activeTab==="Manufacturer" && getVaccinesByManufacturer().length>0 
                     ? <VaccineListTable 
@@ -145,4 +146,4 @@ const View = ({
     </div>
 }
 
-export default View;
+export default Main;

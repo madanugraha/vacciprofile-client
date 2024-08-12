@@ -55,7 +55,7 @@ const VaccineListTable = ({
         </h2>
         <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
             <div className="accordion-body">
-                <div className='view-header table-responsive m-0'>
+                <div className='main-header table-responsive m-0'>
                     <table className='table w-100 m-0'>
                         <thead>
                             <tr>
@@ -89,7 +89,7 @@ const VaccineListTable = ({
                                     return (
                                         <span key={licenserId}>
                                             <span 
-                                                className={`${activeTab === "License" && selectedLicenser === licenser ? `selected` : `selectable`}`} 
+                                                className={`${activeTab === "Licenser" && selectedLicenser === licenser ? `selected` : `selectable`}`} 
                                                 onClick={() => handleSelectLicenser(licenser)}>
                                                 {licenser.name}
                                             </span>

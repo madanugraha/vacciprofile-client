@@ -30,7 +30,7 @@ const TopBar = ({
                 <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
                     Pathogens
                 </li>
-                <li className={`nav-item nav-link ${activeTab === 'License' ? 'active' : ''}`} onClick={() => handleTabChange('License')}>
+                <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => handleTabChange('Licenser')}>
                     Licensing Authorities
                 </li>
             </ul>

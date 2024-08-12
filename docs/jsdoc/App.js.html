@@ -51,7 +51,7 @@
 
     import Header from './components/Header';
     import Sidebar from './components/Sidebar';
-    import View from './components/information/View.js';
+    import Main from './components/Main.js';
     import TopBar from './components/TopBar.js';
 
     import manufacturers from './assets/data/manufacturers.json';
@@ -67,7 +67,7 @@
      *
      * @description 
      * This is the main component of the vaccine profile application. It manages the state of selected items, 
-     * handles user interactions, and renders the Header, Sidebar, View, and other components. It 
+     * handles user interactions, and renders the Header, Sidebar, Main, and other components. It 
      * is the entry point into the application.
      *
      * @returns {JSX.Element} The main application component containing all sub-components and logic.
@@ -80,7 +80,6 @@
     const App = () => {
         const [activeTab, setActiveTab] = useState('Manufacturer');
         const [activeFilters, setActiveFilters] = useState({
-            firstAlphabet: '',
             searchKeyword: ''
         })
         const [ selectedPathogen, setSelectedPathogen ] = useState({});
@@ -127,7 +126,7 @@
             setSelectedVaccine(vaccine);
             setSelectedPathogen(pathogen);
             setActiveTab("Pathogen");
-            setActiveFilters({...activeFilters, firstAlphabet: ''});
+            setActiveFilters({...activeFilters});
         };
 
         /**
@@ -216,6 +215,17 @@
 
         const getManufacturerByVaccine = useCallback(vaccine => {
             return manufacturers.filter(manufacturer => manufacturer.manufacturerId === vaccine.manufacturerId);
+        }, []);
+
+        /**
+         * Retrieves licenser by licenserId.
+         *
+         * @param {Object} id - The licenserId.
+         * @returns {Array} Licenser associated with the given licenserId.
+         */
+
+        const getLicenserById = useCallback(id => {
+            return licensers.filter(licenser => licenser.licenserId === id);
         }, []);
 
         /**
@@ -367,16 +377,15 @@
          * ];
          *
          * const sortedLicensers = sortLicensers(licensers);
-         * // Result: [ { name: 'AMA' }, { name: 'EMA' }, { name: 'WHO' }, { name: 'CDC' }, { name: 'FDA' } ]
+         * // Result: [ { name: 'FDA' }, { name: 'EMA' }, { name: 'WHO' }, { name: 'CDC' }, { name: 'HSA' } ]
          */
-
-        const sortLicensers = (list) => {
+        const sortLicensers = useCallback((list) => {
             const customOrder = ['FDA', 'EMA', 'WHO'];
-        
+
             return list.slice().sort((a, b) => {
                 const indexA = customOrder.indexOf(a.name);
                 const indexB = customOrder.indexOf(b.name);
-        
+
                 if (indexA !== -1 &amp;&amp; indexB !== -1) {
                     return indexA - indexB;
                 }
@@ -388,8 +397,7 @@
                 }
                 return a.name.localeCompare(b.name);
             });
-        };
-        
+        }, []);
 
         /**
          * Filters the sidebar list based on the currently selected tab and search keyword.
@@ -427,15 +435,15 @@
                     .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Product') {
                     setSidebarList(vaccinesList.slice() 
-            .sort((a, b) => a.name.localeCompare(b.name)));
+                    .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Pathogen') {
                     setSidebarList(pathogensList.slice() 
-            .sort((a, b) => a.name.localeCompare(b.name)));
-                } else if (activeTab === 'License') {
+                    .sort((a, b) => a.name.localeCompare(b.name)));
+                } else if (activeTab === 'Licenser') {
                     setSidebarList(sortLicensers(licensersList));
                 }
             }
-        }, [activeFilters.searchKeyword, activeTab, manufacturersList, pathogensList, vaccinesList, filterManufacturersBySearch, filterPathogensBySearch, filterVaccinesBySearch]);        
+        }, [activeFilters.searchKeyword, activeTab, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersBySearch, filterPathogensBySearch, filterVaccinesBySearch, filterLicensersBySearch, sortLicensers ]);        
         
         /**
          * Converts camel case strings to readable format.
@@ -481,7 +489,7 @@
 
         useEffect(()=>{
             filterListsBySearch();
-        },[activeTab, pathogensList, vaccinesList, manufacturersList, filterListsBySearch])
+        },[activeTab, pathogensList, vaccinesList, manufacturersList, licensersList, filterListsBySearch])
 
         useEffect(() => {
             filterListsBySearch();
@@ -512,11 +520,8 @@
                             changedFrom={changedFrom}
                             setActiveTab={setActiveTab}
                         />
-                        &lt;View
+                        &lt;Main
                             activeTab={activeTab}
-                            activeFilters={activeFilters}
-                            setActiveFilters={setActiveFilters}
-                            manufacturersList={manufacturersList}
                             selectedPathogen={selectedPathogen}
                             selectedVaccine={selectedVaccine}
                             selectedManufacturer={selectedManufacturer}
@@ -531,12 +536,8 @@
                             italizeScientificNames={italizeScientificNames}
                             convertCamelCaseToReadable={convertCamelCaseToReadable}
                             changedFrom={changedFrom}
+                            getLicenserById={getLicenserById}
                         />
-                        {/* &lt;AlphabetsNavigation 
-                            activeFilters={activeFilters} 
-                            setActiveFilters={setActiveFilters}
-                            setSelectedManufacturer={setSelectedManufacturer}
-                        /> */}
                     &lt;/div>
                 &lt;/div>
             &lt;/div>
@@ -558,7 +559,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 08 2024 17:11:11 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 12 2024 11:16:26 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

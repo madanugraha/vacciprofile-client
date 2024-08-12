@@ -20,7 +20,7 @@
 <dd><p>VaccineListTable Component</p>
 </dd>
 <dt><a href="#Main">Main</a> ⇒ <code>JSX.Element</code></dt>
-<dd><p>View Component</p>
+<dd><p>Main Component</p>
 </dd>
 <dt><a href="#Sidebar">Sidebar</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>Sidebar Component</p>
@@ -36,7 +36,7 @@
 <dl>
 <dt><a href="#App">App()</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>This is the main component of the vaccine profile application. It manages the state of selected items, 
-handles user interactions, and renders the Header, Sidebar, View, and other components. It 
+handles user interactions, and renders the Header, Sidebar, Main, and other components. It 
 is the entry point into the application.</p>
 </dd>
 <dt><a href="#filterManufacturers">filterManufacturers(keywordLower)</a> ⇒ <code>Array</code></dt>
@@ -182,26 +182,24 @@ VaccineListTable Component
 | props.handleSelectLicenser | <code>function</code> | Function that gets triggered when an licenser is selected. |
 | props.getVaccinesByManufacturer | <code>function</code> | Function that returns a list of vaccines based on the manufacturer. |
 | props.getPathogenByVaccine | <code>function</code> | Function that returns the pathogen associated with a specific vaccine. |
+| props.getLicenserById | <code>function</code> | Function to retrieve licenser details by ID. |
 
 **Example**  
 ```js
-// Render the VaccineListTable component with dummy data and functions<VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedLicenser="Licenser Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectLicenser={licenser => console.log('Licenser selected:', licenser)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}/>
+// Render the VaccineListTable component with dummy data and functions<VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedLicenser="Licenser Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectLicenser={licenser => console.log('Licenser selected:', licenser)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}  getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/>
 ```
 <a name="Main"></a>
 
 ## Main ⇒ <code>JSX.Element</code>
-View Component
+Main Component
 
 **Kind**: global namespace  
-**Returns**: <code>JSX.Element</code> - The Information View component displaying detailed information based on the selected type and filters.  
+**Returns**: <code>JSX.Element</code> - The Main component displaying detailed information based on the selected type and filters.  
 **Component**:   
 
 | Param | Type | Description |
 | --- | --- | --- |
 | props | <code>Object</code> | The component accepts various props to handle the display of information. |
-| props.activeFilters | <code>Object</code> | The current filters applied to the information view. |
-| props.setActiveFilters | <code>function</code> | Function to update the active filters. |
-| props.manufacturersList | <code>Array</code> | List of manufacturers available for selection. |
 | props.selectedPathogen | <code>Object</code> | The currently selected pathogen. |
 | props.selectedVaccine | <code>Object</code> | The currently selected vaccine. |
 | props.selectedManufacturer | <code>Object</code> | The currently selected manufacturer. |
@@ -215,11 +213,12 @@ View Component
 | props.getVaccinesByLicenser | <code>function</code> | Function to get vaccines associated with an licenser. |
 | props.italizeScientificNames | <code>function</code> | Function to italicize scientific names in descriptions. |
 | props.convertCamelCaseToReadable | <code>function</code> | Function to convert camel case strings to a readable format. |
-| props.changedFrom | <code>string</code> | Source of the change triggering the view update. |
+| props.getLicenserById | <code>function</code> | Function to retrieve licenser details by ID. |
+| props.changedFrom | <code>string</code> | Source of the change triggering the main update. |
 
 **Example**  
 ```js
-// Example usage of View component<View   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/>
+// Example usage of Main component<Main   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/>
 ```
 <a name="Sidebar"></a>
 
@@ -227,7 +226,7 @@ View Component
 Sidebar ComponentA component that displays a sidebar for selecting manufacturers, products, or pathogens. It supports changing the active tab and handling item selection.
 
 **Kind**: global namespace  
-**Returns**: <code>JSX.Element</code> - The Sidebar component for selecting items and updating the view based on the active tab.  
+**Returns**: <code>JSX.Element</code> - The Sidebar component for selecting items and updating the main based on the active tab.  
 **Component**:   
 
 | Param | Type | Description |
@@ -244,7 +243,7 @@ Sidebar ComponentA component that displays a sidebar for selecting manufacture
 | props.setSelectedPathogen | <code>function</code> | Function to update the selected pathogen. |
 | props.setSelectedManufacturer | <code>function</code> | Function to update the selected manufacturer. |
 | props.setSelectedLicenser | <code>function</code> | Function to update the selected licenser. |
-| props.setChangedFrom | <code>function</code> | Function to set the source of the change triggering the view update. |
+| props.setChangedFrom | <code>function</code> | Function to set the source of the change triggering the main update. |
 
 **Example**  
 ```js
@@ -275,7 +274,7 @@ Example usage of TopBar component<TopBar />
 <a name="App"></a>
 
 ## App() ⇒ <code>JSX.Element</code>
-This is the main component of the vaccine profile application. It manages the state of selected items, handles user interactions, and renders the Header, Sidebar, View, and other components. It is the entry point into the application.
+This is the main component of the vaccine profile application. It manages the state of selected items, handles user interactions, and renders the Header, Sidebar, Main, and other components. It is the entry point into the application.
 
 **Kind**: global function  
 **Returns**: <code>JSX.Element</code> - The main application component containing all sub-components and logic.  
@@ -290,6 +289,8 @@ This is the main component of the vaccine profile application. It manages the st
     * [~getVaccinesByManufacturer](#App..getVaccinesByManufacturer) ⇒ <code>Array</code>
     * [~getVaccineByPathogen](#App..getVaccineByPathogen) ⇒ <code>Array</code>
     * [~getManufacturerByVaccine](#App..getManufacturerByVaccine) ⇒ <code>Array</code>
+    * [~getLicenserById](#App..getLicenserById) ⇒ <code>Array</code>
+    * [~sortLicensers](#App..sortLicensers) ⇒ <code>Array.&lt;Object&gt;</code>
     * [~handleTabChange(tab)](#App..handleTabChange)
     * [~handleSearch(keyword)](#App..handleSearch)
     * [~handleSelectPathogen(pathogen)](#App..handleSelectPathogen)
@@ -297,7 +298,6 @@ This is the main component of the vaccine profile application. It manages the st
     * [~handleSelectManufacturer(manufacturer)](#App..handleSelectManufacturer)
     * [~handleSelectLicenser(licenser)](#App..handleSelectLicenser)
     * [~getVaccinesByLicenser()](#App..getVaccinesByLicenser) ⇒ <code>Array</code>
-    * [~sortLicensers(list)](#App..sortLicensers) ⇒ <code>Array.&lt;Object&gt;</code>
     * [~convertCamelCaseToReadable(string)](#App..convertCamelCaseToReadable) ⇒ <code>string</code>
     * [~italizeScientificNames(text)](#App..italizeScientificNames) ⇒ <code>JSX.Element</code>
 
@@ -349,6 +349,35 @@ Retrieves manufacturers by vaccine.
 | --- | --- | --- |
 | vaccine | <code>Object</code> | The vaccine object. |
 
+<a name="App..getLicenserById"></a>
+
+### App~getLicenserById ⇒ <code>Array</code>
+Retrieves licenser by licenserId.
+
+**Kind**: inner constant of [<code>App</code>](#App)  
+**Returns**: <code>Array</code> - Licenser associated with the given licenserId.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| id | <code>Object</code> | The licenserId. |
+
+<a name="App..sortLicensers"></a>
+
+### App~sortLicensers ⇒ <code>Array.&lt;Object&gt;</code>
+Sorts a list of licensers with a custom priority for 'AMA', 'EMA', and 'WHO',followed by alphabetical sorting for the rest.The function first prioritizes 'FDA', 'EMA', and 'WHO' in that order. If neitherlicenser is in the custom priority list, it sorts the rest alphabetically by their names.
+
+**Kind**: inner constant of [<code>App</code>](#App)  
+**Returns**: <code>Array.&lt;Object&gt;</code> - - The sorted list of licensers.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| list | <code>Array.&lt;Object&gt;</code> | The list of licensers to be sorted. |
+| list[].name | <code>string</code> | The name of the licenser to be used for sorting. |
+
+**Example**  
+```js
+const licensers = [    { name: 'WHO' },    { name: 'EMA' },    { name: 'AMA' },    { name: 'FDA' },    { name: 'CDC' }];const sortedLicensers = sortLicensers(licensers);// Result: [ { name: 'FDA' }, { name: 'EMA' }, { name: 'WHO' }, { name: 'CDC' }, { name: 'HSA' } ]
+```
 <a name="App..handleTabChange"></a>
 
 ### App~handleTabChange(tab)
@@ -422,23 +451,6 @@ Retrieves vaccines by licenser.
 
 **Kind**: inner method of [<code>App</code>](#App)  
 **Returns**: <code>Array</code> - List of vaccines with the selected licenser.  
-<a name="App..sortLicensers"></a>
-
-### App~sortLicensers(list) ⇒ <code>Array.&lt;Object&gt;</code>
-Sorts a list of licensers with a custom priority for 'AMA', 'EMA', and 'WHO',followed by alphabetical sorting for the rest.The function first prioritizes 'FDA', 'EMA', and 'WHO' in that order. If neitherlicenser is in the custom priority list, it sorts the rest alphabetically by their names.
-
-**Kind**: inner method of [<code>App</code>](#App)  
-**Returns**: <code>Array.&lt;Object&gt;</code> - - The sorted list of licensers.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| list | <code>Array.&lt;Object&gt;</code> | The list of licensers to be sorted. |
-| list[].name | <code>string</code> | The name of the licenser to be used for sorting. |
-
-**Example**  
-```js
-const licensers = [    { name: 'WHO' },    { name: 'EMA' },    { name: 'AMA' },    { name: 'FDA' },    { name: 'CDC' }];const sortedLicensers = sortLicensers(licensers);// Result: [ { name: 'AMA' }, { name: 'EMA' }, { name: 'WHO' }, { name: 'CDC' }, { name: 'FDA' } ]
-```
 <a name="App..convertCamelCaseToReadable"></a>
 
 ### App~convertCamelCaseToReadable(string) ⇒ <code>string</code>

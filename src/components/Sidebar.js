@@ -19,8 +19,8 @@ import React from 'react';
  * @param {Function} props.setSelectedPathogen - Function to update the selected pathogen.
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.
  * @param {Function} props.setSelectedLicenser - Function to update the selected licenser.
- * @param {Function} props.setChangedFrom - Function to set the source of the change triggering the view update.
- * @returns {JSX.Element} The Sidebar component for selecting items and updating the view based on the active tab.
+ * @param {Function} props.setChangedFrom - Function to set the source of the change triggering the main update.
+ * @returns {JSX.Element} The Sidebar component for selecting items and updating the main based on the active tab.
  *
  * @example
  * // Example usage of Sidebar component
@@ -88,10 +88,10 @@ const Sidebar = ({
                 } else {
                     setSelectedPathogen({});
                 }
-            } else if (activeTab === 'License') {
+            } else if (activeTab === 'Licenser') {
                 if (item !== selectedLicenser) {
                     setSelectedLicenser(item);
-                    setActiveTab('License');
+                    setActiveTab('Licenser');
                 } else {
                     setSelectedLicenser({});
                 }
@@ -102,7 +102,7 @@ const Sidebar = ({
     
 
     return <div className='sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-3 slide-right'>
-        <div className='Manufacturer-list 2'>
+        <div className='manufacturer-list'>
         {sidebarList
             .map((item, i) => (
                 <div 
@@ -111,7 +111,7 @@ const Sidebar = ({
                         activeTab === 'Manufacturer' && selectedManufacturer === item ? 'active' :
                         activeTab === 'Product' && selectedVaccine === item ? 'active' :
                         activeTab === 'Pathogen' && selectedPathogen === item ? 'active' :
-                        activeTab === 'License' && selectedLicenser === item ? 'active' : 'inactive'
+                        activeTab === 'Licenser' && selectedLicenser === item ? 'active' : 'inactive'
                     }`} 
                     onClick={() => handleClickSidebar(item)}
                 >

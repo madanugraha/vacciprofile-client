@@ -29,7 +29,8 @@ const Licenser = ({
     getVaccinesByLicenser
 }) => {
     return <div className='slide-left'>
-        <h4 className='report-heading'>{selectedLicenser.fullName}-approved Vaccines</h4>
+        <h1 className='heading text-primary pt-2'>{selectedLicenser.fullName}</h1>
+        {selectedLicenser.description}
         <div className='table-responsive'>
             <table className='table table-light w-100 m-0 mt-3'>
                 <thead>

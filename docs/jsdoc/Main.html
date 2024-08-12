@@ -75,13 +75,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>View Component</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Main Component</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_information_View.js.html">components/information/View.js</a>, <a href="components_information_View.js.html#line9">line 9</a>
+        <a href="components_Main.js.html">components/Main.js</a>, <a href="components_Main.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -128,7 +128,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Example usage of View component&lt;View   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
+    <pre class="prettyprint"><code>// Example usage of Main component&lt;Main   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/></code></pre>
 
 
 
@@ -197,78 +197,6 @@
     </thead>
 
     <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>activeFilters</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The current filters applied to the information view.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>setActiveFilters</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Function to update the active filters.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>manufacturersList</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>List of manufacturers available for selection.</p></td>
-        </tr>
-
     
 
         <tr>
@@ -585,6 +513,30 @@
 
         <tr>
             
+                <td class="name"><code>getLicenserById</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Function to retrieve licenser details by ID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>changedFrom</code></td>
             
 
@@ -602,7 +554,7 @@
 
             
 
-            <td class="description last"><p>Source of the change triggering the view update.</p></td>
+            <td class="description last"><p>Source of the change triggering the main update.</p></td>
         </tr>
 
     
@@ -635,7 +587,7 @@
 
         
 <div class="param-desc">
-    <p>The Information View component displaying detailed information based on the selected type and filters.</p>
+    <p>The Main component displaying detailed information based on the selected type and filters.</p>
 </div>
 
 
@@ -722,13 +674,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>View Component</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Main Component</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_information_View.js.html">components/information/View.js</a>, <a href="components_information_View.js.html#line9">line 9</a>
+        <a href="components_Main.js.html">components/Main.js</a>, <a href="components_Main.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -775,7 +727,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Example usage of View component&lt;View   activeFilters={{ searchString: '', firstAlphabet: '' }}   setActiveFilters={(filters) => console.log(filters)}   manufacturersList={[]}   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'/></code></pre>
+    <pre class="prettyprint"><code>// Example usage of Main component&lt;Main   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => &lt;i>{text}&lt;/i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/></code></pre>
 
 
 
@@ -844,78 +796,6 @@
     </thead>
 
     <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>activeFilters</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The current filters applied to the information view.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>setActiveFilters</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Function to update the active filters.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>manufacturersList</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>List of manufacturers available for selection.</p></td>
-        </tr>
-
     
 
         <tr>
@@ -1232,6 +1112,30 @@
 
         <tr>
             
+                <td class="name"><code>getLicenserById</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Function to retrieve licenser details by ID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>changedFrom</code></td>
             
 
@@ -1249,7 +1153,7 @@
 
             
 
-            <td class="description last"><p>Source of the change triggering the view update.</p></td>
+            <td class="description last"><p>Source of the change triggering the main update.</p></td>
         </tr>
 
     
@@ -1282,7 +1186,7 @@
 
         
 <div class="param-desc">
-    <p>The Information View component displaying detailed information based on the selected type and filters.</p>
+    <p>The Main component displaying detailed information based on the selected type and filters.</p>
 </div>
 
 
@@ -1341,7 +1245,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 08 2024 17:11:11 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 12 2024 11:16:26 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
