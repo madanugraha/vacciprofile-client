@@ -20,6 +20,7 @@ import React from 'react';
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.
  * @param {Function} props.setSelectedLicenser - Function to update the selected licenser.
  * @param {Function} props.setChangedFrom - Function to set the source of the change triggering the main update.
+ * @param {Function} props.italizeScientificNames - Function that converts scientific names in the description to italicized text.
  * @returns {JSX.Element} The Sidebar component for selecting items and updating the main based on the active tab.
  *
  * @example
@@ -37,6 +38,7 @@ import React from 'react';
  *    setSelectedPathogen={(item) => console.log(item)}
  *    setSelectedLicenser={(item) => console.log(item)}
  *    setChangedFrom={(source) => console.log(source)}
+ *    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')}
  * />
  */
 
@@ -52,7 +54,8 @@ const Sidebar = ({
     setSelectedPathogen,
     setSelectedManufacturer,
     setSelectedLicenser,  
-    setChangedFrom
+    setChangedFrom,
+    italizeScientificNames
 }) => {
     
     /**
@@ -114,8 +117,7 @@ const Sidebar = ({
                         activeTab === 'Licenser' && selectedLicenser === item ? 'active' : 'inactive'
                     }`} 
                     onClick={() => handleClickSidebar(item)}
-                >
-            {item.name}
+                >{italizeScientificNames(item.name)}
                 </div>
             ))
         }

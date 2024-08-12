@@ -5,7 +5,8 @@
         "description": "Respiratory Syncytial Virus (RSV) is a common respiratory virus that causes infections in the lungs and respiratory tract. It is known for causing cold-like symptoms, but it can lead to more severe respiratory illnesses, such as bronchiolitis and pneumonia, particularly in young children and older adults. RSV is highly contagious and spreads through respiratory droplets, making it a significant concern during the winter months.",
         "vaccines": [
             { "vaccineId": 1 }
-        ]
+        ],
+        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
     },
     {
         "pathogenId": 2,
@@ -16,7 +17,8 @@
             { "vaccineId" : 4 },
             { "vaccineId" : 9 },
             { "vaccineId" : 10 }
-        ]
+        ],
+        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
     },
     {
         "pathogenId": 3,
@@ -26,7 +28,8 @@
             { "vaccineId": 3 },
             { "vaccineId": 5 },
             { "vaccineId": 6 }
-        ]
+        ],
+        "link": "https://vaccitutor.com/documents/LOM.html#BACTERIA"
     },
     {
         "pathogenId": 4,
@@ -35,7 +38,8 @@
         "vaccines": [
             { "vaccineId": 7 },
             { "vaccineId": 12 }
-        ]
+        ],
+        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
     },
     {
         "pathogenId": 5,
@@ -43,7 +47,8 @@
         "description": "Meningococcal B is a type of bacterial infection that can cause severe and potentially life-threatening conditions, including meningitis and septicemia. The disease is particularly dangerous for adolescents and young adults. The vaccine aims to reduce the incidence of these infections.",
         "vaccines": [
             { "vaccineId": 8 }
-        ]
+        ],
+        "link": "https://vaccitutor.com/documents/LOM.html#BACTERIA"
     },
     {
         "pathogenId": 6,
@@ -51,6 +56,7 @@
         "description": "Human papillomavirus (HPV) is a viral infection that commonly causes skin or mucous membrane growths (warts).",
         "vaccines": [
             { "vaccineId": 11 }
-        ]
+        ],
+        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
     }    
 ]

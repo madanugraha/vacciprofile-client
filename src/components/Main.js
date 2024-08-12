@@ -139,6 +139,7 @@ const Main = ({
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         getPathogenByVaccine={getPathogenByVaccine}
                         getLicenserById={getLicenserById}
+                        italizeScientificNames={italizeScientificNames}
                     /> : ``}
                 </div>
             </>}

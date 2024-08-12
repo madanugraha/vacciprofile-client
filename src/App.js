@@ -506,6 +506,7 @@
                             setChangedFrom={setChangedFrom}
                             changedFrom={changedFrom}
                             setActiveTab={setActiveTab}
+                            italizeScientificNames={italizeScientificNames}
                         />
                         <Main
                             activeTab={activeTab}

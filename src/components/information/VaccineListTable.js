@@ -16,6 +16,7 @@ import React from 'react';
  * @param {Function} props.getVaccinesByManufacturer - Function that returns a list of vaccines based on the manufacturer.
  * @param {Function} props.getPathogenByVaccine - Function that returns the pathogen associated with a specific vaccine.
  * @param {Function} props.getLicenserById - Function to retrieve licenser details by ID.
+ * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
  * @returns {JSX.Element} The Manufacturer Information Table component.
  *
  * @example
@@ -31,6 +32,7 @@ import React from 'react';
  *   getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}
  *   getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}
  *   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}
+ *   italizeScientificNames={(text) => <i>{text}</i>}
  * />
  */
 
@@ -44,7 +46,8 @@ const VaccineListTable = ({
     handleSelectLicenser, 
     getVaccinesByManufacturer,
     getPathogenByVaccine,
-    getLicenserById
+    getLicenserById,
+    italizeScientificNames
 }) => {
     return <div className="accordion" id="accordianVaccineList">
     <div className="accordion-item">
@@ -76,7 +79,7 @@ const VaccineListTable = ({
                                 <td className='pathogen-cell'>
                                     <span 
                                         className={`${activeTab==="Pathogen" && selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
-                                        onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{getPathogenByVaccine(vaccine).name}
+                                        onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{italizeScientificNames(getPathogenByVaccine(vaccine).name)}
                                     </span>
                                 </td>
                                 <td className='licenser-cell'>

@@ -25,8 +25,9 @@ import React from 'react';
 
 const Pathogen = ({selectedPathogen, italizeScientificNames}) => {
     return <div className='slide-left'>
-        <h1 className='heading text-primary pt-2'>{selectedPathogen.name}</h1>
-        <p>{italizeScientificNames(selectedPathogen.description)}</p>
+        <h1 className='heading text-primary pt-2'>{italizeScientificNames(selectedPathogen.name)}</h1>
+        {/* <p className='mb-2'>{italizeScientificNames(selectedPathogen.description)}</p> */}
+        <p className='mb-0'><a className='read-more' target="_blank" rel="noopener noreferrer" href={selectedPathogen.link}>Find out more</a></p>
     </div>
 }
 
