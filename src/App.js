@@ -152,11 +152,10 @@
          */
 
         const getVaccinesByLicenser = useCallback(selectedLicenser => {
-            console.log("selectedLicenser", selectedLicenser)
-            return vaccines.filter(vaccine =>
+            return vaccinesList.filter(vaccine =>
                 vaccine.licensers.some(licenser => licenser.licenserId === selectedLicenser.licenserId)
             );
-        }, [vaccines]);
+        }, [vaccinesList]);
 
         /**
          * Retrieves vaccines by manufacturer.
@@ -166,8 +165,13 @@
          */
 
         const getVaccinesByManufacturer = useCallback((manufacturer = selectedManufacturer) => {
-            return vaccines.filter(vaccine => vaccine.manufacturerId === manufacturer.manufacturerId);
-        }, [selectedManufacturer]);
+            if (!manufacturer || !manufacturer.manufacturerId) {
+                return []; 
+            }
+            return vaccinesList.filter(vaccine =>
+                vaccine.manufacturers.some(m => m.manufacturerId === manufacturer.manufacturerId)
+            );
+        }, [selectedManufacturer, vaccinesList]);
 
         /**
          * Retrieves vaccines by pathogen.
@@ -316,7 +320,6 @@
                 if (licenserMatch) return true;
                 
                 const vaccines = getVaccinesByLicenser(licenser) || [];
-                console.log("licenser", licenser, "vaccines", vaccines)
                 return vaccines.some(vaccine => {
                     const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
                                         vaccine.description.toLowerCase().includes(keyword);
