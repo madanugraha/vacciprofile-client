@@ -103,11 +103,11 @@
         /**
          * Handles selecting a vaccine.
          *
-         * @param {object} vx - The selected vaccine object.
+         * @param {object} v - The selected vaccine object.
          */
 
-        const handleSelectVaccine = vx => {
-            const vaccine = vaccines.find(vaccine => vaccine.name === vx.name);
+        const handleSelectVaccine = v => {
+            const vaccine = vaccines.find(vaccine => vaccine.vaccineId === v.vaccineId);
             setSelectedVaccine(vaccine);
             setActiveTab("Product");
         };
@@ -131,7 +131,7 @@
 
         const handleSelectLicenser = licenser => {
             setSelectedLicenser(licenser);
-            setActiveTab("License");
+            setActiveTab("Licenser");
         }
 
         /**
@@ -523,7 +523,6 @@
                             getVaccinesByLicenser={getVaccinesByLicenser}
                             italizeScientificNames={italizeScientificNames}
                             convertCamelCaseToReadable={convertCamelCaseToReadable}
-                            changedFrom={changedFrom}
                             getLicenserById={getLicenserById}
                         />
                     </div>

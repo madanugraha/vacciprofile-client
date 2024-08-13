@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import VaccineListTable from './information/VaccineListTable';
 import Pathogen from './information/Pathogen';
@@ -26,7 +26,6 @@ import Licenser from './information/Licenser';
  * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
  * @param {Function} props.convertCamelCaseToReadable - Function to convert camel case strings to a readable format.
  * @param {Function} props.getLicenserById - Function to retrieve licenser details by ID.
- * @param {string} props.changedFrom - Source of the change triggering the main update.
  * @returns {JSX.Element} The Main component displaying detailed information based on the selected type and filters.
  *
  * @example
@@ -45,7 +44,6 @@ import Licenser from './information/Licenser';
  *    getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}
  *    italizeScientificNames={(text) => <i>{text}</i>}
  *    convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}
- *    changedFrom='Sidebar'
  *    getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}
  * />
  */
@@ -64,22 +62,10 @@ const Main = ({
     getVaccinesByLicenser,
     italizeScientificNames,
     convertCamelCaseToReadable,
-    changedFrom,
     getLicenserById
 }) => {
-    const detailsRef = useRef(null);
-    const prevChangedFrom = useRef(changedFrom);
 
     const [slideClass, setSlideClass] = useState('slide-left');
-
-    useEffect(() => {
-        if (prevChangedFrom.current !== 'Sidebar' && changedFrom !== 'Sidebar') {
-            if (detailsRef.current) {
-                detailsRef.current.scrollIntoMain({ behavior: 'smooth' });
-            }
-        }
-        prevChangedFrom.current = changedFrom;
-    }, [selectedPathogen, selectedVaccine, selectedManufacturer, selectedLicenser, changedFrom]);
 
     useEffect(() => {
         setSlideClass(''); 
@@ -106,7 +92,7 @@ const Main = ({
                 <span className='select-prompt position-absolute'>Select a {activeTab}</span>
             </div> : <>
                 {activeTab==="Manufacturer" ? <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data ({selectedManufacturer.lastUpdated})</h1>:null}
-                <div className='details-container px-3 pt-2 pb-3' ref={detailsRef}>
+                <div className='details-container px-3 pt-2 pb-3'>
                     {activeTab==="Pathogen" 
                     ? <Pathogen 
                         selectedPathogen={selectedPathogen} 

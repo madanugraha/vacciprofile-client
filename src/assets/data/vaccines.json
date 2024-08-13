@@ -29,8 +29,9 @@
         "description": "Comirnaty is a COVID-19 vaccine developed by Pfizer and BioNTech. It uses mRNA technology to provide immunity against the SARS-CoV-2 virus, which causes COVID-19. The vaccine was one of the first COVID-19 vaccines to receive emergency use authorization and has been widely administered around the world to help control the pandemic.",
         "vaccineType": "mRNA Covid vaccine",
         "comments": "First license, 12/2020",
-        "revenue": "21 bn USD exepted (2021)",
         "link": "https://www.pfizer.com/products/product-detail/comirnaty",
+        "revenue": "$11,220 million",
+        "revenueLink": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf",
         "lastUpdated": "TBU"
     },
     {
