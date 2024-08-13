@@ -75,8 +75,8 @@ const Main = ({
         return () => clearTimeout(timeout);
     }, [selectedManufacturer]);
 
-    return <div className={`main-container bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
-        <div className='border border-primary border-1 rounded-4 slide-left'>
+    return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
+        <div className='main-container border border-primary border-1 rounded-4 slide-left overflow-auto'>
             { 
             // manufacturersList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>
             //         <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: ''})}>

@@ -5,14 +5,14 @@ $primary: rgb(58, 109, 109);
 $secondary: rgb(27, 66, 55);
 $tertiary: rgb(184, 183, 175);
 $light: rgb(224, 228, 227);
-$topbarUnselected: rgb(201, 221, 216);
-$topbarSelected: rgb(224, 228, 227);
 $info: rgb(185, 194, 191);
 $warning: rgb(35, 116, 93);
 $success: rgb(84, 128, 115);
 $danger:rgb(167, 57, 57);
 $dark: #3e3f3e;
-$darker: rgb(141, 145, 144);
+$sidebar-unselected: rgb(224, 228, 227);
+$sidebar-hover: rgb(152, 156, 155);
+$sidebar-selected: rgb(129, 138, 138);
 $selectable: rgb(31, 49, 185);
 $selected: rgb(13, 19, 147);
 $pale: rgb(116, 161, 161);
@@ -30,9 +30,9 @@ $theme-colors: (
   "info": $info,
   "dark": $dark,
   "light": $light,
-  "topbarUnselected": $topbarUnselected,
-  "topbarSelected": $topbarSelected,
-  "darker": $darker,
+  "sidebar-unselected": $sidebar-unselected,
+  "sidebar-hover": $sidebar-hover,
+  "sidebar-selected": $sidebar-selected,
   "selected": $selected,
   "accordian": $accordian,
   "pale": $pale,

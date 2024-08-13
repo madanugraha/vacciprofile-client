@@ -34,6 +34,14 @@ a {
     font-size: 2em;
 }
 
+.sidebar-items {
+    height: 62.5vh;
+}
+
+.sidebar-items::-webkit-scrollbar {
+    width: 0; 
+}
+
 .sidebar-item {
     color: rgb(77, 77, 77) !important;
     font-size: 14px;
@@ -42,8 +50,14 @@ a {
     position: relative;
 }
 
-.sidebar-item.inactive:hover {
-    background-color: $darker !important;
+.sidebar-item.active {
+    background-color: $sidebar-selected !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    background-color: $sidebar-hover !important;
     color: white !important;
     cursor: pointer;
 }
@@ -58,11 +72,11 @@ a {
     height: 0;
     border-top: 11px solid transparent; 
     border-bottom: 11px solid transparent;
-    border-left: 15px solid $light; 
+    border-left: 15px solid $sidebar-selected; 
 }
 
 .sidebar-item.inactive:hover::before {
-    border-left-color: $darker; 
+    border-left-color: $sidebar-hover; 
 }
 
 table {
@@ -130,6 +144,27 @@ td, th {
 .clear-filters:hover {
     color: $hover;
     cursor: pointer;
+}
+
+// Main
+
+.main-container {
+    height: 62.5vh;
+}
+
+.main-container::-webkit-scrollbar {
+    width: 3px;
+}
+
+.main-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    margin: 9px 0!important;
+    border-radius: 5px;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px $primary; 
 }
 
 .empty-main {

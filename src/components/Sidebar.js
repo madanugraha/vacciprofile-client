@@ -104,13 +104,13 @@ const Sidebar = ({
     };
     
 
-    return <div className='sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-3 slide-right'>
-        <div className='manufacturer-list'>
+    return <div className='sidebar col-6 col-sm-4 col-lg-3 ps-1 slide-right'>
+        <div className='sidebar-items overflow-auto'>
         {sidebarList
             .map((item, i) => (
                 <div 
                     key={i} 
-                    className={`sidebar-item bg-light text-dark rounded-3 py-1 mt-1 ${
+                    className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 mt-1 me-3 ${
                         activeTab === 'Manufacturer' && selectedManufacturer === item ? 'active' :
                         activeTab === 'Product' && selectedVaccine === item ? 'active' :
                         activeTab === 'Pathogen' && selectedPathogen === item ? 'active' :

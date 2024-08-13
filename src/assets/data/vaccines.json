@@ -12,7 +12,9 @@
         ],
         "description": "Abrysvo™ is a vaccine developed by Pfizer to prevent Respiratory Syncytial Virus (RSV) infection. RSV is a common respiratory virus that usually causes mild, cold-like symptoms. It can be serious, especially for infants and older adults. Abrysvo™ is aimed at providing protection against RSV and is approved for use in various countries.",
         "link": "https://www.pfizer.com/products/product-detail/abrysvotm",
-        "lastUpdated": "TBU"
+        "lastUpdated": "TBU",
+        "fdaLicensingDate": "05/2023",
+        "emaLicensingDate": "08/2023"
     },
     {
         "name": "Comirnaty",
@@ -32,7 +34,9 @@
         "link": "https://www.pfizer.com/products/product-detail/comirnaty",
         "revenue": "$11,220 million",
         "revenueLink": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf",
-        "lastUpdated": "TBU"
+        "lastUpdated": "2023",
+        "fdaLicensingDate": "09/2023",
+        "emaLicensingDate": "08/2023"
     },
     {
         "name": "Penbraya™",
@@ -47,7 +51,8 @@
         ],
         "description": "Penbraya™ is a pneumococcal vaccine developed by Pfizer. It is designed to protect against diseases caused by the bacterium Streptococcus pneumoniae, which can lead to conditions such as pneumonia, meningitis, and sepsis.",
         "link": "https://www.pfizer.com/products/product-detail/penbrayatm",
-        "lastUpdated": "TBU"
+        "lastUpdated": "TBU",
+        "fdaLicensingDate": "10/2023"
     },
     {
         "name": "Pfizer-BioNTech COVID-19 Vaccine",
