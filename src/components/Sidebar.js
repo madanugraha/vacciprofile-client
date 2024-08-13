@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 /**
  * Sidebar Component
@@ -19,6 +19,7 @@ import React from 'react';
  * @param {Function} props.setSelectedPathogen - Function to update the selected pathogen.
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.
  * @param {Function} props.setSelectedLicenser - Function to update the selected licenser.
+ * @param {String} props.changedFrom - The param where the selected item change took place
  * @param {Function} props.setChangedFrom - Function to set the source of the change triggering the main update.
  * @param {Function} props.italizeScientificNames - Function that converts scientific names in the description to italicized text.
  * @returns {JSX.Element} The Sidebar component for selecting items and updating the main based on the active tab.
@@ -37,6 +38,7 @@ import React from 'react';
  *    setSelectedVaccine={(item) => console.log(item)}
  *    setSelectedPathogen={(item) => console.log(item)}
  *    setSelectedLicenser={(item) => console.log(item)}
+ *    changedFrom='Sidebar'
  *    setChangedFrom={(source) => console.log(source)}
  *    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')}
  * />
@@ -55,8 +57,11 @@ const Sidebar = ({
     setSelectedManufacturer,
     setSelectedLicenser,  
     setChangedFrom,
+    changedFrom,
     italizeScientificNames
 }) => {
+
+    const [animationClass, setAnimationClass] = useState('slide-right');
     
     /**
      * Handles the click events for sidebar items based on the active tab.
@@ -100,11 +105,20 @@ const Sidebar = ({
                 }
             }
             setChangedFrom('');
-        }, 0);
+        }, 5);
     };
     
+    useEffect(()=>{
+        if(changedFrom==="Topbar"){
+            setAnimationClass('');
+            const timeout = setTimeout(() => {
+                setAnimationClass('slide-right');
+            }, 1);
+            return () => clearTimeout(timeout);
+        }
+    },[changedFrom])
 
-    return <div className='sidebar col-6 col-sm-4 col-lg-3 ps-1 slide-right'>
+    return <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 ${animationClass}`}>
         <div className='sidebar-items overflow-auto'>
         {sidebarList
             .map((item, i) => (

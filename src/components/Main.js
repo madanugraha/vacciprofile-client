@@ -23,6 +23,7 @@ import Licenser from './information/Licenser';
  * @param {Function} props.getPathogenByVaccine - Function to get the pathogen associated with a vaccine.
  * @param {Function} props.getVaccinesByManufacturer - Function to get vaccines associated with a manufacturer.
  * @param {Function} props.getVaccinesByLicenser - Function to get vaccines associated with an licenser.
+ * @param {String} props.changedFrom - The param where the selected item change took place
  * @param {Function} props.italizeScientificNames - Function to italicize scientific names in descriptions.
  * @param {Function} props.convertCamelCaseToReadable - Function to convert camel case strings to a readable format.
  * @param {Function} props.getLicenserById - Function to retrieve licenser details by ID.
@@ -42,6 +43,7 @@ import Licenser from './information/Licenser';
  *    getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}
  *    getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}
  *    getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}
+ *    changedFrom='Sidebar'
  *    italizeScientificNames={(text) => <i>{text}</i>}
  *    convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}
  *    getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}
@@ -60,22 +62,39 @@ const Main = ({
     getPathogenByVaccine,
     getVaccinesByManufacturer,
     getVaccinesByLicenser,
+    changedFrom,
     italizeScientificNames,
     convertCamelCaseToReadable,
     getLicenserById
 }) => {
 
-    const [slideClass, setSlideClass] = useState('slide-left');
+    const [animationClass, setAnimationClass] = useState('slide-left');
 
     useEffect(() => {
-        setSlideClass(''); 
-        const timeout = setTimeout(() => {
-            setSlideClass('slide-left'); 
-        }, 0); 
-        return () => clearTimeout(timeout);
-    }, [selectedManufacturer]);
+        if(changedFrom==="Sidebar"){
+            const isSelectedObjectNotEmpty = (obj) => Object.keys(obj).length !== 0;
+            if (
+                (activeTab === 'Manufacturer' && isSelectedObjectNotEmpty(selectedManufacturer)) ||
+                (activeTab === 'Product' && isSelectedObjectNotEmpty(selectedVaccine)) ||
+                (activeTab === 'Pathogen' && isSelectedObjectNotEmpty(selectedPathogen)) ||
+                (activeTab === 'Licenser' && isSelectedObjectNotEmpty(selectedLicenser))
+            ) {
+                setAnimationClass('');
+                const timeout = setTimeout(() => {
+                    setAnimationClass('slide-left');
+                }, 1);
+                return () => clearTimeout(timeout);
+            } else {
+                setAnimationClass('');
+                const timeout = setTimeout(() => {
+                    setAnimationClass('slide-right-out');
+                }, 1);
+                return () => clearTimeout(timeout);
+            }
+        }
+    }, [changedFrom]);
 
-    return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${slideClass}`}>
+    return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${animationClass}`}>
         <div className='main-container border border-primary border-1 rounded-4 slide-left overflow-auto'>
             { 
             // manufacturersList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>

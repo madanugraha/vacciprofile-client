@@ -183,10 +183,11 @@ VaccineListTable Component
 | props.getVaccinesByManufacturer | <code>function</code> | Function that returns a list of vaccines based on the manufacturer. |
 | props.getPathogenByVaccine | <code>function</code> | Function that returns the pathogen associated with a specific vaccine. |
 | props.getLicenserById | <code>function</code> | Function to retrieve licenser details by ID. |
+| props.italizeScientificNames | <code>function</code> | Function to italicize scientific names in descriptions. |
 
 **Example**  
 ```js
-// Render the VaccineListTable component with dummy data and functions<VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedLicenser="Licenser Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectLicenser={licenser => console.log('Licenser selected:', licenser)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}  getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/>
+// Render the VaccineListTable component with dummy data and functions<VaccineListTable   activeTab="Vaccine"  selectedPathogen={{ name: 'Pathogen X' }}  selectedVaccine={{ name: 'Vaccine Y' }}  selectedLicenser="Licenser Z"  handleSelectPathogen={pathogen => console.log('Pathogen selected:', pathogen)}  handleSelectVaccine={vaccine => console.log('Vaccine selected:', vaccine)}  handleSelectLicenser={licenser => console.log('Licenser selected:', licenser)}  getVaccinesByManufacturer={() => [{ name: 'Vaccine Y', licenser: ['Licenser Z'] }]}  getPathogenByVaccine={vaccine => ({ name: 'Pathogen X' })}  getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}  italizeScientificNames={(text) => <i>{text}</i>}/>
 ```
 <a name="Main"></a>
 
@@ -211,14 +212,14 @@ Main Component
 | props.getPathogenByVaccine | <code>function</code> | Function to get the pathogen associated with a vaccine. |
 | props.getVaccinesByManufacturer | <code>function</code> | Function to get vaccines associated with a manufacturer. |
 | props.getVaccinesByLicenser | <code>function</code> | Function to get vaccines associated with an licenser. |
+| props.changedFrom | <code>String</code> | The param where the selected item change took place |
 | props.italizeScientificNames | <code>function</code> | Function to italicize scientific names in descriptions. |
 | props.convertCamelCaseToReadable | <code>function</code> | Function to convert camel case strings to a readable format. |
 | props.getLicenserById | <code>function</code> | Function to retrieve licenser details by ID. |
-| props.changedFrom | <code>string</code> | Source of the change triggering the main update. |
 
 **Example**  
 ```js
-// Example usage of Main component<Main   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   changedFrom='Sidebar'   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/>
+// Example usage of Main component<Main   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   changedFrom='Sidebar'   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/>
 ```
 <a name="Sidebar"></a>
 
@@ -244,10 +245,11 @@ Sidebar ComponentA component that displays a sidebar for selecting manufacture
 | props.setSelectedManufacturer | <code>function</code> | Function to update the selected manufacturer. |
 | props.setSelectedLicenser | <code>function</code> | Function to update the selected licenser. |
 | props.setChangedFrom | <code>function</code> | Function to set the source of the change triggering the main update. |
+| props.italizeScientificNames | <code>function</code> | Function that converts scientific names in the description to italicized text. |
 
 **Example**  
 ```js
-// Example usage of Sidebar component<Sidebar    activeTab="Manufacturer"   setActiveTab={(type) => console.log(type)}   sidebarList={[{ name: 'ItemA' }, { name: 'ItemB' }]}   selectedManufacturer={{ name: 'ItemA' }}   selectedVaccine={{ name: 'ItemB' }}   selectedPathogen={{ name: 'ItemC' }}   selectedLicenser={{ name: 'ItemC' }}   setSelectedManufacturer={(item) => console.log(item)}   setSelectedVaccine={(item) => console.log(item)}   setSelectedPathogen={(item) => console.log(item)}   setSelectedLicenser={(item) => console.log(item)}   setChangedFrom={(source) => console.log(source)}/>
+// Example usage of Sidebar component<Sidebar    activeTab="Manufacturer"   setActiveTab={(type) => console.log(type)}   sidebarList={[{ name: 'ItemA' }, { name: 'ItemB' }]}   selectedManufacturer={{ name: 'ItemA' }}   selectedVaccine={{ name: 'ItemB' }}   selectedPathogen={{ name: 'ItemC' }}   selectedLicenser={{ name: 'ItemC' }}   setSelectedManufacturer={(item) => console.log(item)}   setSelectedVaccine={(item) => console.log(item)}   setSelectedPathogen={(item) => console.log(item)}   setSelectedLicenser={(item) => console.log(item)}   setChangedFrom={(source) => console.log(source)}   italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')}/>
 ```
 <a name="Sidebar..handleClickSidebar"></a>
 
@@ -295,7 +297,7 @@ This is the main component of the vaccine profile application. It manages the st
     * [~handleTabChange(tab)](#App..handleTabChange)
     * [~handleSearch(keyword)](#App..handleSearch)
     * [~handleSelectPathogen(pathogen)](#App..handleSelectPathogen)
-    * [~handleSelectVaccine(vx)](#App..handleSelectVaccine)
+    * [~handleSelectVaccine(v)](#App..handleSelectVaccine)
     * [~handleSelectManufacturer(manufacturer)](#App..handleSelectManufacturer)
     * [~handleSelectLicenser(licenser)](#App..handleSelectLicenser)
     * [~convertCamelCaseToReadable(string)](#App..convertCamelCaseToReadable) ⇒ <code>string</code>
@@ -420,14 +422,14 @@ Handles selecting a pathogen.
 
 <a name="App..handleSelectVaccine"></a>
 
-### App~handleSelectVaccine(vx)
+### App~handleSelectVaccine(v)
 Handles selecting a vaccine.
 
 **Kind**: inner method of [<code>App</code>](#App)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| vx | <code>object</code> | The selected vaccine object. |
+| v | <code>object</code> | The selected vaccine object. |
 
 <a name="App..handleSelectManufacturer"></a>
 

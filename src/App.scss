@@ -38,9 +38,9 @@ a {
     height: 62.5vh;
 }
 
-.sidebar-items::-webkit-scrollbar {
-    width: 0; 
-}
+// .sidebar-items::-webkit-scrollbar {
+//     width: 0; 
+// }
 
 .sidebar-item {
     color: rgb(77, 77, 77) !important;
@@ -75,7 +75,7 @@ a {
     border-left: 15px solid $sidebar-selected; 
 }
 
-.sidebar-item.inactive:hover::before {
+.sidebar-item:hover::before {
     border-left-color: $sidebar-hover; 
 }
 

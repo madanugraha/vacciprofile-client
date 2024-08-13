@@ -53,6 +53,12 @@
          */
         
         const handleTabChange = tab => {
+            setChangedFrom('Topbar');
+    
+            setTimeout(() => {
+                setChangedFrom('');
+            }, 50);
+
             if(activeTab===tab){
                 switch (activeTab) {
                     case 'Manufacturer':
@@ -503,8 +509,8 @@
                             setSelectedPathogen={setSelectedPathogen}
                             setSelectedManufacturer={setSelectedManufacturer}
                             setSelectedLicenser={setSelectedLicenser}
-                            setChangedFrom={setChangedFrom}
                             changedFrom={changedFrom}
+                            setChangedFrom={setChangedFrom}
                             setActiveTab={setActiveTab}
                             italizeScientificNames={italizeScientificNames}
                         />
@@ -521,6 +527,7 @@
                             getPathogenByVaccine={getPathogenByVaccine}
                             getVaccinesByManufacturer={getVaccinesByManufacturer}
                             getVaccinesByLicenser={getVaccinesByLicenser}
+                            changedFrom={changedFrom}
                             italizeScientificNames={italizeScientificNames}
                             convertCamelCaseToReadable={convertCamelCaseToReadable}
                             getLicenserById={getLicenserById}
