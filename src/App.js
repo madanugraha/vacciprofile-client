@@ -97,7 +97,6 @@
          *
          * @param {object} pathogen - The selected pathogen object.
          */
-
         const handleSelectPathogen = pathogen => {
             const vaccine = vaccines.find(vaccine => vaccine.vaccineId === pathogen.vaccines[0].vaccineId);
             setSelectedVaccine(vaccine);

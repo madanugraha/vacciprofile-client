@@ -78,7 +78,7 @@ const Main = ({
                 (activeTab === 'Product' && isSelectedObjectNotEmpty(selectedVaccine)) ||
                 (activeTab === 'Pathogen' && isSelectedObjectNotEmpty(selectedPathogen)) ||
                 (activeTab === 'Licenser' && isSelectedObjectNotEmpty(selectedLicenser))
-            ) {
+            ){
                 setAnimationClass('');
                 const timeout = setTimeout(() => {
                     setAnimationClass('slide-left');

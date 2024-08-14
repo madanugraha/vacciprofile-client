@@ -31,7 +31,8 @@ const VaccineInformation = ({ selectedVaccine, italizeScientificNames }) => {
     return <div className='position-relative slide-left'>
         <h1 className='heading text-primary pt-2'>{selectedVaccine.name}</h1>
         {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
-        <p className='mb-0'><a className='read-more' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
+        {selectedVaccine.packageInsertLink && <p className='text-warning hover-underline mb-1' onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}>Package Insert <i class="fa-regular fa-file-pdf text-warning"></i></p>}
+        <p className='mb-0'><a className='read-more hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
         <span className='last-updated text-muted position-absolute end-0 bottom-0'>Last updated: {selectedVaccine.lastUpdated}</span>
     </div> 
 }

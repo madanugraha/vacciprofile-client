@@ -2,15 +2,10 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 
-.hide-scrollbar {
-    overflow: auto; 
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.hide-scrollbar::-webkit-scrollbar {
-    display: none; 
+.hover-underline:hover {
+    color: $hover!important;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 a {
@@ -199,12 +194,6 @@ td, th {
 
 .manufacturer-table-source:hover {
     text-decoration: underline!important;
-}
-
-.hover-underline:hover, .hover-pill:hover {
-    color: $hover;
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 .text-selected:hover {
