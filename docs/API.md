@@ -244,12 +244,13 @@ Sidebar ComponentA component that displays a sidebar for selecting manufacture
 | props.setSelectedPathogen | <code>function</code> | Function to update the selected pathogen. |
 | props.setSelectedManufacturer | <code>function</code> | Function to update the selected manufacturer. |
 | props.setSelectedLicenser | <code>function</code> | Function to update the selected licenser. |
+| props.changedFrom | <code>String</code> | The param where the selected item change took place |
 | props.setChangedFrom | <code>function</code> | Function to set the source of the change triggering the main update. |
 | props.italizeScientificNames | <code>function</code> | Function that converts scientific names in the description to italicized text. |
 
 **Example**  
 ```js
-// Example usage of Sidebar component<Sidebar    activeTab="Manufacturer"   setActiveTab={(type) => console.log(type)}   sidebarList={[{ name: 'ItemA' }, { name: 'ItemB' }]}   selectedManufacturer={{ name: 'ItemA' }}   selectedVaccine={{ name: 'ItemB' }}   selectedPathogen={{ name: 'ItemC' }}   selectedLicenser={{ name: 'ItemC' }}   setSelectedManufacturer={(item) => console.log(item)}   setSelectedVaccine={(item) => console.log(item)}   setSelectedPathogen={(item) => console.log(item)}   setSelectedLicenser={(item) => console.log(item)}   setChangedFrom={(source) => console.log(source)}   italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')}/>
+// Example usage of Sidebar component<Sidebar    activeTab="Manufacturer"   setActiveTab={(type) => console.log(type)}   sidebarList={[{ name: 'ItemA' }, { name: 'ItemB' }]}   selectedManufacturer={{ name: 'ItemA' }}   selectedVaccine={{ name: 'ItemB' }}   selectedPathogen={{ name: 'ItemC' }}   selectedLicenser={{ name: 'ItemC' }}   setSelectedManufacturer={(item) => console.log(item)}   setSelectedVaccine={(item) => console.log(item)}   setSelectedPathogen={(item) => console.log(item)}   setSelectedLicenser={(item) => console.log(item)}   changedFrom='Sidebar'   setChangedFrom={(source) => console.log(source)}   italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')}/>
 ```
 <a name="Sidebar..handleClickSidebar"></a>
 

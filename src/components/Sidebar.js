@@ -113,7 +113,7 @@ const Sidebar = ({
             setAnimationClass('');
             const timeout = setTimeout(() => {
                 setAnimationClass('slide-right');
-            }, 1);
+            }, 20);
             return () => clearTimeout(timeout);
         }
     },[changedFrom])

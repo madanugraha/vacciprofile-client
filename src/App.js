@@ -57,7 +57,7 @@
     
             setTimeout(() => {
                 setChangedFrom('');
-            }, 50);
+            }, 500);
 
             if(activeTab===tab){
                 switch (activeTab) {

@@ -82,15 +82,16 @@ const Main = ({
                 setAnimationClass('');
                 const timeout = setTimeout(() => {
                     setAnimationClass('slide-left');
-                }, 1);
+                }, 5);
                 return () => clearTimeout(timeout);
-            } else {
-                setAnimationClass('');
-                const timeout = setTimeout(() => {
-                    setAnimationClass('slide-right-out');
-                }, 1);
-                return () => clearTimeout(timeout);
-            }
+            } 
+            // else {
+            //     setAnimationClass('');
+            //     const timeout = setTimeout(() => {
+            //         setAnimationClass('slide-right-out');
+            //     }, 5);
+            //     return () => clearTimeout(timeout);
+            // }
         }
     }, [changedFrom]);
 
