@@ -2,14 +2,8 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 
-.hover-underline:hover {
-    color: $hover!important;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 a {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: inherit;
 }
   
@@ -153,7 +147,7 @@ td, th {
 
 .main-container::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    margin: 9px 0!important;
+    margin: 9px 0 !important;
     border-radius: 5px;
 }
 
@@ -185,7 +179,7 @@ td, th {
 }
 
 .sources-list {
-    font-size: 13px!important;
+    font-size: 13px !important;
 }
 
 .manufacturer-table-source {
@@ -193,7 +187,7 @@ td, th {
 }
 
 .manufacturer-table-source:hover {
-    text-decoration: underline!important;
+    text-decoration: underline !important;
 }
 
 .text-selected:hover {
@@ -203,6 +197,12 @@ td, th {
 
 .text-decoration-none {
     text-decoration: none!important;
+}
+
+.hover-underline:hover, .text-warning.hover-underline:hover .fa-file-pdf {
+    color: $hover!important;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .read-more {
