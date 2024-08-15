@@ -3,9 +3,11 @@
     import './assets/animations/animations.css';
 
     import Header from './components/Header';
+    import AlphabetsNavigation from './components/AlphabetsNavigation';
     import Sidebar from './components/Sidebar';
     import Main from './components/Main.js';
     import TopBar from './components/TopBar.js';
+    // import Footer from './components/Footer.js';
 
     import manufacturers from './assets/data/manufacturers.json';
     import pathogens from './assets/data/pathogens.json';
@@ -33,6 +35,7 @@
     const App = () => {
         const [activeTab, setActiveTab] = useState('Manufacturer');
         const [activeFilters, setActiveFilters] = useState({
+            firstAlphabet: '',
             searchKeyword: ''
         })
         const [ pathogensList, setPathogensList ] = useState();
@@ -45,6 +48,24 @@
         const [ selectedManufacturer, setSelectedManufacturer ] = useState({});
         const [ selectedLicenser, setSelectedLicenser ] = useState({})
         const [ changedFrom, setChangedFrom ] = useState('');
+
+        /**
+         * Handles the change in the selected alphabet filter.
+         * Updates the active filters and resets the selected item.
+         *
+         * @param {string} letter - The alphabet letter that is selected or deselected.
+         * @returns {void}
+         */
+
+        const handleAlphabetChange = letter => {
+            setActiveFilters({...activeFilters, 
+                firstAlphabet: activeFilters.firstAlphabet === letter ? '' : letter
+            });
+            setSelectedManufacturer({});
+            setSelectedPathogen({});
+            setSelectedVaccine({});
+            setSelectedLicenser({});
+        } 
 
         /**
          * Handles the search input change.
@@ -110,7 +131,6 @@
          *
          * @param {object} v - The selected vaccine object.
          */
-
         const handleSelectVaccine = v => {
             const vaccine = vaccines.find(vaccine => vaccine.vaccineId === v.vaccineId);
             setSelectedVaccine(vaccine);
@@ -122,7 +142,6 @@
          *
          * @param {object} manufacturer - The selected manufacturer object.
          */
-
         const handleSelectManufacturer = manufacturer => {
             setSelectedManufacturer(manufacturer);
             setActiveTab("Manufacturer");
@@ -133,7 +152,6 @@
          *
          * @param {string} licenser - The selected licenser.
          */
-
         const handleSelectLicenser = licenser => {
             setSelectedLicenser(licenser);
             setActiveTab("Licenser");
@@ -145,7 +163,6 @@
          * @param {object} vaccine - The vaccine object.
          * @returns {object} The pathogen object.
          */
-
         const getPathogenByVaccine = useCallback(vaccine => {
             return pathogens.find(pathogen => pathogen.pathogenId === vaccine.pathogenId);
         }, []);
@@ -155,7 +172,6 @@
          *
          * @returns {Array} List of vaccines with the selected licenser.
          */
-
         const getVaccinesByLicenser = useCallback(selectedLicenser => {
             return vaccinesList.filter(vaccine =>
                 vaccine.licensers.some(licenser => licenser.licenserId === selectedLicenser.licenserId)
@@ -168,7 +184,6 @@
          * @param {Object} [manufacturer=selectedManufacturer] - The manufacturer object to filter vaccines by. Defaults to `selectedManufacturer` if not provided.
          * @returns {Array} List of vaccines from the selected manufacturer.
          */
-
         const getVaccinesByManufacturer = useCallback((manufacturer = selectedManufacturer) => {
             if (!manufacturer || !manufacturer.manufacturerId) {
                 return []; 
@@ -184,7 +199,6 @@
          * @param {Object} pathogen - The pathogen object.
          * @returns {Array} List of vaccines associated with the given pathogen.
          */
-        
         const getVaccineByPathogen = useCallback(pathogen => {
             return vaccines.filter(vaccine => vaccine.pathogenId === pathogen.pathogenId);
         }, []);
@@ -195,7 +209,6 @@
          * @param {Object} vaccine - The vaccine object.
          * @returns {Array} List of manufacturers associated with the given vaccine.
          */
-
         const getManufacturersByVaccine = useCallback(vaccine => {
             return manufacturers.filter(manufacturer => manufacturer.manufacturerId === vaccine.manufacturerId);
         }, []);
@@ -206,7 +219,6 @@
          * @param {Object} id - The licenserId.
          * @returns {Array} Licenser associated with the given licenserId.
          */
-
         const getLicenserById = useCallback(id => {
             return licensers.find(licenser => licenser.licenserId === id) || null;
         }, []);
@@ -443,7 +455,6 @@
          * @param {string} string - The camel case string.
          * @returns {string} The readable string.
          */
-
         const convertCamelCaseToReadable = string => {
             return string==="ceo" ? "CEO" : string.replace(/([A-Z])/g, ' $1')
         };
@@ -454,7 +465,6 @@
          * @param {string} text - The text containing scientific names.
          * @returns {JSX.Element} The text with scientific names italicized.
          */
-
         const italizeScientificNames = text => {
             const parts = text.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
         
@@ -491,6 +501,12 @@
             <div className='vacciprofile-page'>
                 <div className='container'>
                     <Header/>
+                    <div className='row'>
+                        <AlphabetsNavigation
+                            handleAlphabetChange={handleAlphabetChange}
+                            activeFilters={activeFilters}
+                        />
+                    </div>
                     <TopBar
                         activeTab={activeTab}
                         handleTabChange={handleTabChange}
@@ -532,6 +548,7 @@
                             getLicenserById={getLicenserById}
                         />
                     </div>
+                    {/* <Footer/>  */}
                 </div>
             </div>
         );

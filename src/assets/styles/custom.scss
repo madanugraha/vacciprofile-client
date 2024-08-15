@@ -19,6 +19,7 @@ $pale: rgb(116, 161, 161);
 $accordian: rgb(195, 207, 207);
 $hover: rgb(123, 119, 6);
 $unselectable: rgb(173, 184, 181);
+$footer: rgb(41, 76, 76);
 
 $theme-colors: (
   "primary": $primary, 
@@ -38,7 +39,8 @@ $theme-colors: (
   "pale": $pale,
   "hover": $hover,
   "unselectable": $unselectable,
-  "selectable": $selectable
+  "selectable": $selectable,
+  "footer": $footer
 );
 
 @import '~bootstrap/scss/bootstrap.scss';
