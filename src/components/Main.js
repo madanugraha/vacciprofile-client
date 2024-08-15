@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import VaccineListTable from './information/VaccineListTable';
 import Pathogen from './information/Pathogen';
-import VaccineInformation from './information/VaccineInformation';
+import Vaccine from './information/Vaccine';
 import ManufacturerProfile from './information/ManufacturerProfile';
 import Licenser from './information/Licenser';
 
@@ -118,7 +118,7 @@ const Main = ({
                         selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
                     /> : activeTab==="Product" 
-                    ? <VaccineInformation 
+                    ? <Vaccine 
                         selectedVaccine={selectedVaccine}
                         italizeScientificNames={italizeScientificNames}
                     /> : activeTab==="Manufacturer" 

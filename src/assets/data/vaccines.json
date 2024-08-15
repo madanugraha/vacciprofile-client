@@ -10,12 +10,37 @@
             { "licenserId": 1 },
             { "licenserId": 2 }
         ],
+        "licensingDates": [
+                {
+                    "name": "FDA",
+                    "type": "Maternal",
+                    "date": "08/2023",
+                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+                },
+                {
+                    "name": "FDA",
+                    "type": "Older Adults",
+                    "date": "05/2023",
+                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+                },
+                {
+                    "name": "EMA",
+                    "type": "Maternal",
+                    "date": "08/2023",
+                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+                },
+                {
+                    "name": "EMA",
+                    "type": "Older Adults",
+                    "date": "08/2023",
+                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+                }
+        ],
+        "approvalDate": "2023",
         "description": "Abrysvo™ is a vaccine developed by Pfizer to prevent Respiratory Syncytial Virus (RSV) infection. RSV is a common respiratory virus that usually causes mild, cold-like symptoms. It can be serious, especially for infants and older adults. Abrysvo™ is aimed at providing protection against RSV and is approved for use in various countries.",
         "link": "https://www.pfizer.com/products/product-detail/abrysvotm",
         "packageInsertLink": "https://www.fda.gov/media/168889/download?attachment",
-        "lastUpdated": "TBU",
-        "fdaLicensingDate": "05/2023",
-        "emaLicensingDate": "08/2023"
+        "lastUpdated": "2024-AUG"
     },
     {
         "name": "Comirnaty",
@@ -29,6 +54,18 @@
             { "licenserId": 1 },
             { "licenserId": 2 }
         ],
+        "licensingDates": [
+                {
+                    "name": "FDA",
+                    "date": "23/08/2023",
+                    "source": "https://www.fda.gov/vaccines-blood-biologics/comirnaty"
+                },
+                {
+                    "name": "EMA",
+                    "date": "21/12/2023",
+                    "source": "https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/2023-biological-license-application-approvals"
+                }
+        ],
         "description": "Comirnaty is a COVID-19 vaccine developed by Pfizer and BioNTech. It uses mRNA technology to provide immunity against the SARS-CoV-2 virus, which causes COVID-19. The vaccine was one of the first COVID-19 vaccines to receive emergency use authorization and has been widely administered around the world to help control the pandemic.",
         "vaccineType": "mRNA Covid vaccine",
         "comments": "First license, 12/2020",
@@ -36,9 +73,7 @@
         "packageInsertLink": "https://www.fda.gov/media/151707/download?attachment",
         "revenue": "$11,220 million",
         "revenueLink": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf",
-        "lastUpdated": "2023",
-        "fdaLicensingDate": "09/2023",
-        "emaLicensingDate": "08/2023"
+        "lastUpdated": "2023"
     },
     {
         "name": "Penbraya™",
@@ -51,24 +86,42 @@
             { "licenserId": 1 },
             { "licenserId": 2 }
         ],
+        "licensingDates": [
+                {
+                    "name": "FDA",
+                    "date": "20/10/2023",
+                    "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/penbraya"
+                }
+        ],
         "description": "Penbraya™ is a pneumococcal vaccine developed by Pfizer. It is designed to protect against diseases caused by the bacterium Streptococcus pneumoniae, which can lead to conditions such as pneumonia, meningitis, and sepsis.",
         "link": "https://www.pfizer.com/products/product-detail/penbrayatm",
         "packageInsertLink": "https://www.fda.gov/media/173223/download?attachment",
-        "lastUpdated": "TBU",
-        "fdaLicensingDate": "10/2023"
+        "lastUpdated": "TBU"
     },
     {
         "name": "Pfizer-BioNTech COVID-19 Vaccine",
         "vaccineId": 4,
         "pathogenId": 2, 
         "manufacturers": [
-            {"manufacturerId": 5},
-            {"manufacturerId": 1}
+            { "manufacturerId": 5 },
+            { "manufacturerId": 1 }
         ],
         "licensers": [
             { "licenserId": 1 },
             { "licenserId": 2 },
             { "licenserId": 3 }
+        ],
+        "licensingDates": [
+                {
+                    "name": "FDA",
+                    "date": "11/12/2020",
+                    "source": "https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19"
+                },
+                {
+                    "name": "EMA",
+                    "date": "21/12/2020",
+                    "source": "https://www.ema.europa.eu/en/news/ema-recommends-first-covid-19-vaccine-authorisation-eu"
+                }
         ],
         "description": "The Pfizer-BioNTech COVID-19 Vaccine is an mRNA-based vaccine developed to prevent COVID-19, a disease caused by the SARS-CoV-2 virus. It works by instructing cells to produce a protein similar to the one found on the surface of the virus, which helps the immune system recognize and fight the virus if exposed. The vaccine has been widely distributed and is authorized for emergency use or fully approved in various countries.",
         "link": "https://www.pfizer.com/products/product-detail/pfizer-biontech-covid-19-vaccine",
@@ -85,6 +138,32 @@
             { "licenserId": 1 },
             { "licenserId": 2 },
             { "licenserId": 3 }
+        ],
+        "licensingDates": [
+                {
+                    "name": "FDA",
+                    "type": "Adults",
+                    "date": "12/07/2016",
+                    "source": "https://www.drugs.com/newdrugs/pfizer-receives-fda-approval-prevnar-13-adults-age-18-through-49-4409.html"
+                },
+                {
+                    "name": "FDA",
+                    "type": "Children (Aged 6-17)",
+                    "date": "25/01/2023",
+                    "source": "https://www.drugs.com/newdrugs/pfizer-receives-fda-approval-prevnar-13-vaccine-naive-children-adolescents-aged-6-years-through-17-3662.html"
+                },
+                {
+                    "name": "FDA",
+                    "type": "Older Adults (Aged 50 and Older)",
+                    "date": "03/01/2012",
+                    "source": "https://www.drugs.com/newdrugs/fda-expands-prevnar-13-vaccine-ages-50-older-3011.html"
+                },
+                {
+                    "name": "FDA",
+                    "type": "Children (6 weeks to 5 years)",
+                    "date": "24/02/2010",
+                    "source": "https://www.drugs.com/newdrugs/fda-expands-prevnar-13-vaccine-ages-50-older-3011.html"
+                }
         ],
         "description": "Prevnar 13 is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 13 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in children and adults to prevent infections such as pneumonia, meningitis, and bloodstream infections. It is widely used in various countries and is recommended for individuals at higher risk of pneumococcal disease.",
         "vaccineType": "13-valent pneumococcal conjugate vaccine",
@@ -104,6 +183,13 @@
             { "licenserId": 2 },
             { "licenserId": 3 }
         ],
+        "licensingDates": [
+                {
+                    "name": "FDA",
+                    "date": "10/06/2021",
+                    "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-20"
+                }
+        ],
         "description": "Prevnar 20™ is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 20 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in both children and adults to prevent severe infections such as pneumonia, meningitis, and bloodstream infections. Prevnar 20™ provides broader coverage than previous pneumococcal vaccines.",
         "link": "https://www.pfizer.com/products/product-detail/prevnar-20tm",
         "packageInsertLink": "https://fda.report/media/149987/Package+Insert+-+PREVNAR+20.pdf",
@@ -117,8 +203,14 @@
             {"manufacturerId": 1}
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 }
+            { "licenserId": 1 }
+        ],
+        "licensingDates": [
+                {
+                    "name": "FDA",
+                    "date": "08/2021",
+                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+                }
         ],
         "description": "TicoVac™ is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. TicoVac™ is designed to provide protection against TBE and is used in regions where the disease is endemic.",
         "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
@@ -136,6 +228,13 @@
         "licensers": [
             { "licenserId": 1 },
             { "licenserId": 2 }
+        ],
+        "licensingDates": [
+                {
+                    "name": "FDA",
+                    "date": "13/03/2017",
+                    "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/trumenba"
+                }
         ],
         "description": "Trumenba™ is a vaccine developed by Pfizer to protect against serogroup B of Neisseria meningitidis, a bacterium that causes meningococcal disease. Trumenba™ is designed to prevent invasive meningococcal B infections in adolescents and young adults.",
         "vaccineType": "Meningococcal B vaccine",

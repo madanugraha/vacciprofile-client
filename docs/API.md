@@ -14,7 +14,7 @@
 <dd><p>Pathogen Component</p>
 </dd>
 <dt><a href="#Vaccine">Vaccine</a> ⇒ <code>JSX.Element</code></dt>
-<dd><p>VaccineInformation Component</p>
+<dd><p>Vaccine Component</p>
 </dd>
 <dt><a href="#VaccineListTable">VaccineListTable</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>VaccineListTable Component</p>
@@ -141,7 +141,7 @@ Pathogen Component
 <a name="Vaccine"></a>
 
 ## Vaccine ⇒ <code>JSX.Element</code>
-VaccineInformation Component
+Vaccine Component
 
 **Kind**: global namespace  
 **Returns**: <code>JSX.Element</code> - The Vaccine Information component.  
@@ -159,7 +159,7 @@ VaccineInformation Component
 
 **Example**  
 ```js
-// Render the VaccineInformation component with a sample vaccine and italizeScientificNames function<VaccineInformation   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   italizeScientificNames={text => text.replace(/(scientificName)/gi, '<i>$1</i>')}/>
+// Render the Vaccine component with a sample vaccine and italizeScientificNames function<Vaccine   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   italizeScientificNames={text => text.replace(/(scientificName)/gi, '<i>$1</i>')}/>
 ```
 <a name="VaccineListTable"></a>
 
