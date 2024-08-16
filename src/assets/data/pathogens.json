@@ -43,8 +43,8 @@
     },
     {
         "pathogenId": 5,
-        "name": "Meningococcal B",
-        "description": "Meningococcal B is a type of bacterial infection that can cause severe and potentially life-threatening conditions, including meningitis and septicemia. The disease is particularly dangerous for adolescents and young adults. The vaccine aims to reduce the incidence of these infections.",
+        "name": "Neisseria meningitidis",
+        "description": "Neisseria meningitidis, often referred to as the meningococcus, is a Gram-negative bacterium that can cause meningitis and other forms of meningococcal disease such as meningococcemia, a life-threatening sepsis. ",
         "vaccines": [
             { "vaccineId": 8 }
         ],

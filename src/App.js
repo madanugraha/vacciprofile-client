@@ -3,7 +3,7 @@
     import './assets/animations/animations.css';
 
     import Header from './components/Header';
-    import AlphabetsNavigation from './components/AlphabetsNavigation';
+    import AlphabetsBar from './components/AlphabetsBar.js';
     import Sidebar from './components/Sidebar';
     import Main from './components/Main.js';
     import TopBar from './components/TopBar.js';
@@ -541,7 +541,7 @@
                 <div className='container'>
                     <Header/>
                     <div className='row'>
-                        <AlphabetsNavigation
+                        <AlphabetsBar
                             handleAlphabetChange={handleAlphabetChange}
                             activeFilters={activeFilters}
                         />
