@@ -160,14 +160,6 @@
     "website": "www.aemps.gob.es"
   },
   {
-    "licenserId": 21,
-    "name": "BfArM, Germany",
-    "fullName": "Federal Institute for Drugs and Medical Devices, Germany",
-    "region": "Germany",
-    "description": "BfArM is the German regulatory authority responsible for the authorization, monitoring, and safety of drugs and medical devices.",
-    "website": "www.bfarm.de"
-  },
-  {
     "licenserId": 22,
     "name": "NIFDC, China",
     "fullName": "National Institute for Food and Drug Control, China",

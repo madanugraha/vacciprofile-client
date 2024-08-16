@@ -95,7 +95,7 @@ const Main = ({
         }
     }, [changedFrom]);
 
-    return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${animationClass}`}>
+    return <div className={`bg-white col-6 col-sm-8 col-lg-10 p-0 pe-1 ${animationClass}`}>
         <div className='main-container border border-primary border-1 rounded-4 slide-left overflow-auto'>
             { 
             // manufacturersList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>

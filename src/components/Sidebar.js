@@ -118,7 +118,7 @@ const Sidebar = ({
         }
     },[changedFrom])
 
-    return <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 ${animationClass}`}>
+    return <div className={`sidebar col-6 col-sm-4 col-lg-2 ps-1 ${animationClass}`}>
         <div className='sidebar-items overflow-auto'>
         {sidebarList
             .map((item, i) => (

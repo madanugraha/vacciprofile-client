@@ -15,6 +15,7 @@ $sidebar-hover: rgb(152, 156, 155);
 $sidebar-selected: rgb(129, 138, 138);
 $selectable: rgb(31, 49, 185);
 $selected: rgb(13, 19, 147);
+$topbar-selected: rgb(144, 181, 181);
 $pale: rgb(116, 161, 161);
 $accordian: rgb(195, 207, 207);
 $hover: rgb(123, 119, 6);
@@ -36,6 +37,7 @@ $theme-colors: (
   "sidebar-selected": $sidebar-selected,
   "selected": $selected,
   "accordian": $accordian,
+  "topbar-selected": $topbar-selected,
   "pale": $pale,
   "hover": $hover,
   "unselectable": $unselectable,

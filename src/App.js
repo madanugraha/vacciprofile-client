@@ -540,18 +540,18 @@
             <div className='vacciprofile-page'>
                 <div className='container'>
                     <Header/>
+                    <TopBar
+                        activeTab={activeTab}
+                        handleTabChange={handleTabChange}
+                        handleSearch={handleSearch}
+                    />
                     <div className='row'>
                         <AlphabetsBar
                             handleAlphabetChange={handleAlphabetChange}
                             activeFilters={activeFilters}
                         />
                     </div>
-                    <TopBar
-                        activeTab={activeTab}
-                        handleTabChange={handleTabChange}
-                        handleSearch={handleSearch}
-                    />
-                    <div className='row py-4'>
+                    <div className='row pt-2 pb-4'>
                         <Sidebar
                             activeTab={activeTab}
                             sidebarList={sidebarList}

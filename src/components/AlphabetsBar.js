@@ -28,8 +28,9 @@ const Alphabets = ({
     handleAlphabetChange
  }) => {
 
-    return (
-        <div className="alphabet-container d-flex justify-content-around mx-auto mt-3 slide-down">
+    return (<div className='mt-1'>
+    <hr className='m-0'/>
+        <div className="alphabet-container d-flex justify-content-around mx-auto slide-down">
             {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map(alphabet => (
                 <span 
                     key={alphabet} 
@@ -40,7 +41,8 @@ const Alphabets = ({
                 </span>
             ))}
         </div>
-    );
+    <hr className='m-0'/>
+    </div>);
 }
 
 export default Alphabets;

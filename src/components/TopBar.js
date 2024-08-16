@@ -18,9 +18,9 @@ const TopBar = ({
     handleSearch
 }) => {
 
-    return <div className="topbar row pt-3 slide-down">
+    return <div className="topbar row pt-2 slide-down">
         <div className="position-relative">
-            <ul className="nav nav-tabs">
+            <ul className="nav nav-pills">
                 <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
                     Manufacturers
                 </li>
