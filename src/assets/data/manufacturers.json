@@ -40,7 +40,7 @@
         "name": "Johnson & Johnson",
         "description": "Johnson & Johnson engages in research and development, manufacture and sale of a broad range of products in the health care field. They are organized into three business segments: Consumer Health, Pharmaceutical and Medical Devices. With products sold in over 175 countries, Johnson & Johnson’s key pharmaceutical products include REMICADE®, SIMPONI®, SIMPONI ARIA®, STELARA®, DARZALEX®, IMBRUVICA®, etc. Johnson & Johnson also produces a COVID-19 vaccine: Janssen COVID-19 Vaccine.",
         "details": {
-            "founded": "January 1886; 138 years ago in New Brunswick, New Jersey, U.S.",
+            "founded": "January 1886",
             "headquarters": "Johnson and Johnson Plaza, New Brunswick, New Jersey, U.S.",
             "ceo": "Joaquin Duato",
             "revenue": "US$85.16 billion",
@@ -79,7 +79,7 @@
         "name": "GlaxoSmithKline",
         "description": "GlaxoSmithKline (GSK) is a multinational pharmaceutical company with a purpose to improve the quality of human life by helping people do more, feel better, and live longer. GSK is organized into three business segments: pharmaceuticals, vaccines, and consumer healthcare. GSK operates in more than 150 countries with employees across 96 markets. Key products include Bexsero, Fluarix/FluLaval, Shingrix, Boostrix, Synflorix, Rotarix, Infanrix, Pediarix, Hepatitis vaccine, etc.",
         "details": {
-            "founded": "27 December 2000; 23 years ago",
+            "founded": "27 December 2000",
             "headquarters": "London, England, UK",
             "ceo": "Emma Walmsley",
             "revenue": "£30.328 billion",
@@ -152,7 +152,7 @@
         "name": "BioNTech",
         "description": "T.B.A.",
         "details": {
-            "founded": "2008; 16 years ago",
+            "founded": "2008",
             "headquarters": "Mainz, Germany",
             "ceo": "Uğur Şahin",
             "revenue": "€3.819 billion",
@@ -180,7 +180,7 @@
         "name": "AstraZeneca",
         "description": "TBU",
         "details": {
-            "founded": "6 April 1999; 25 years ago",
+            "founded": "6 April 1999",
             "headquarters": "Cambridge Biomedical Campus, Cambridge, England",
             "ceo": "Sir Pascal Soriot",
             "revenue": "US$45.811 billion",
@@ -204,7 +204,7 @@
         "name": "Merck Group",
         "description": "The Merck Group, branded and commonly known as Merck, is a German multinational science and technology company headquartered in Darmstadt, with about 60,000 employees and a presence in 66 countries. The group includes around 250 companies; the main company is Merck KGaA in Germany. The company is divided into three business lines: Healthcare, Life Sciences and Electronics. Merck was founded in 1668 and is the world's oldest operating chemical and pharmaceutical company, as well as one of the largest pharmaceutical companies globally.",
         "details": {
-            "founded": "1668; 356 years ago",
+            "founded": "1668",
             "headquarters": "Darmstadt, Germany",
             "ceo": "Belén Garijo",
             "revenue": "€20.99 billion",

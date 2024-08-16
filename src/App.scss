@@ -135,6 +135,19 @@ td, th {
     cursor: pointer;
 }
 
+// Alphabet
+
+.alphabet-item:hover {
+    cursor: pointer;
+}
+
+.alphabet-item-selected {
+    background-color: $success;
+    padding: 0 7px;
+    border-radius: 5px;
+    color: white;
+}
+
 // Main
 
 .main-container {

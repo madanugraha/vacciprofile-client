@@ -33,7 +33,7 @@ const Alphabets = ({
             {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map(alphabet => (
                 <span 
                     key={alphabet} 
-                    className={`alphabet-item ${activeFilters.firstAlphabet === alphabet ? 'bg-primary' : ''}`} 
+                    className={`alphabet-item ${activeFilters.firstAlphabet === alphabet ? 'alphabet-item-selected' : 'alphabet-item'}`} 
                     onClick={() => handleAlphabetChange(alphabet)}
                 >
                     {alphabet}

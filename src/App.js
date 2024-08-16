@@ -118,6 +118,7 @@
          *
          * @param {object} pathogen - The selected pathogen object.
          */
+
         const handleSelectPathogen = pathogen => {
             const vaccine = vaccines.find(vaccine => vaccine.vaccineId === pathogen.vaccines[0].vaccineId);
             setSelectedVaccine(vaccine);
@@ -131,6 +132,7 @@
          *
          * @param {object} v - The selected vaccine object.
          */
+
         const handleSelectVaccine = v => {
             const vaccine = vaccines.find(vaccine => vaccine.vaccineId === v.vaccineId);
             setSelectedVaccine(vaccine);
@@ -142,6 +144,7 @@
          *
          * @param {object} manufacturer - The selected manufacturer object.
          */
+
         const handleSelectManufacturer = manufacturer => {
             setSelectedManufacturer(manufacturer);
             setActiveTab("Manufacturer");
@@ -152,6 +155,7 @@
          *
          * @param {string} licenser - The selected licenser.
          */
+
         const handleSelectLicenser = licenser => {
             setSelectedLicenser(licenser);
             setActiveTab("Licenser");
@@ -163,6 +167,7 @@
          * @param {object} vaccine - The vaccine object.
          * @returns {object} The pathogen object.
          */
+
         const getPathogenByVaccine = useCallback(vaccine => {
             return pathogens.find(pathogen => pathogen.pathogenId === vaccine.pathogenId);
         }, []);
@@ -172,6 +177,7 @@
          *
          * @returns {Array} List of vaccines with the selected licenser.
          */
+
         const getVaccinesByLicenser = useCallback(selectedLicenser => {
             return vaccinesList.filter(vaccine =>
                 vaccine.licensers.some(licenser => licenser.licenserId === selectedLicenser.licenserId)
@@ -184,6 +190,7 @@
          * @param {Object} [manufacturer=selectedManufacturer] - The manufacturer object to filter vaccines by. Defaults to `selectedManufacturer` if not provided.
          * @returns {Array} List of vaccines from the selected manufacturer.
          */
+
         const getVaccinesByManufacturer = useCallback((manufacturer = selectedManufacturer) => {
             if (!manufacturer || !manufacturer.manufacturerId) {
                 return []; 
@@ -199,6 +206,7 @@
          * @param {Object} pathogen - The pathogen object.
          * @returns {Array} List of vaccines associated with the given pathogen.
          */
+
         const getVaccineByPathogen = useCallback(pathogen => {
             return vaccines.filter(vaccine => vaccine.pathogenId === pathogen.pathogenId);
         }, []);
@@ -209,6 +217,7 @@
          * @param {Object} vaccine - The vaccine object.
          * @returns {Array} List of manufacturers associated with the given vaccine.
          */
+
         const getManufacturersByVaccine = useCallback(vaccine => {
             return manufacturers.filter(manufacturer => manufacturer.manufacturerId === vaccine.manufacturerId);
         }, []);
@@ -219,9 +228,31 @@
          * @param {Object} id - The licenserId.
          * @returns {Array} Licenser associated with the given licenserId.
          */
+
         const getLicenserById = useCallback(id => {
             return licensers.find(licenser => licenser.licenserId === id) || null;
         }, []);
+
+        /**
+         * Filters the list of items based on the first alphabet.
+         * 
+         * @function
+         * @name filterListByStartingAlphabet
+         * 
+         * @param {Array} list - A list of items for filtering.
+         * @returns {Array} - An array of filtered items.
+         */
+
+        const filterListByStartingAlphabet = useCallback((list) => {
+            const filteredList = activeFilters.firstAlphabet.toLowerCase() !== '' 
+                ? list.filter(item => {
+                    const startsWithAlphabet = item.name.toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    return startsWithAlphabet;
+                }) 
+                : list;
+            return filteredList;
+        }, [activeFilters.firstAlphabet]);
+        
 
         /**
          * Filters the list of manufacturers based on the search keyword.
@@ -234,8 +265,9 @@
          * @param {string} keywordLower - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered manufacturers.
          */
-        const filterManufacturersBySearch = useCallback((keyword) => {
-            return manufacturersList.filter(manufacturer => {
+
+        const filterManufacturersByAlphabetAndSearch = useCallback((keyword) => {
+            return filterListByStartingAlphabet(manufacturersList).filter(manufacturer => {
                 const matchesKeyword = manufacturer.name.toLowerCase().includes(keyword) ||
                                         manufacturer.description.toLowerCase().includes(keyword);
                 if (matchesKeyword) return true;
@@ -254,7 +286,7 @@
                     );
                 });
             });
-        }, [manufacturersList, getVaccinesByManufacturer, getPathogenByVaccine]);
+        }, [manufacturersList, filterListByStartingAlphabet, getVaccinesByManufacturer, getPathogenByVaccine]);
 
         /**
          * Filters the list of vaccines based on the search keyword.
@@ -267,8 +299,9 @@
          * @param {string} keyword - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered vaccines.
          */
-        const filterVaccinesBySearch = useCallback((keyword) => {
-            return vaccinesList.filter(vaccine => {
+
+        const filterVaccinesByAlphabetAndSearch = useCallback((keyword) => {
+            return filterListByStartingAlphabet(vaccinesList).filteredList.filter(vaccine => {
                 const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
                                     vaccine.description.toLowerCase().includes(keyword);
                 if (vaccineMatch) return true;
@@ -283,7 +316,7 @@
                 );
                 return pathogenMatch || manufacturersMatch;
             });
-        }, [vaccinesList, getPathogenByVaccine, getManufacturersByVaccine]);
+        }, [vaccinesList, filterListByStartingAlphabet, getPathogenByVaccine, getManufacturersByVaccine]);
 
         /**
          * Filters the list of pathogens based on the search keyword.
@@ -296,8 +329,9 @@
          * @param {string} keyword - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered pathogens.
          */
-        const filterPathogensBySearch = useCallback((keyword) => {
-            return pathogensList.filter(pathogen => {
+
+        const filterPathogensByAlphabetAndSearch = useCallback((keyword) => {
+            return filterListByStartingAlphabet(pathogensList).filteredList.filter(pathogen => {
                 const pathogenMatch = pathogen.name.toLowerCase().includes(keyword) ||
                                     pathogen.description.toLowerCase().includes(keyword);
                 
@@ -316,7 +350,7 @@
                     );
                 });
             });
-        }, [pathogensList, getVaccineByPathogen, getManufacturersByVaccine]);
+        }, [pathogensList, filterListByStartingAlphabet, getVaccineByPathogen, getManufacturersByVaccine]);
 
         /**
          * Filters the list of licensers based on the search keyword.
@@ -329,8 +363,9 @@
          * @param {string} keyword - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered licensers.
          */
-        const filterLicensersBySearch = useCallback((keyword) => {
-            return licensersList.filter(licenser => {
+        
+        const filterLicensersByAlphabetAndSearch = useCallback((keyword) => {
+            return filterListByStartingAlphabet(licensersList).filteredList.filter(licenser => {
                 const licenserMatch = licenser.fullName.toLowerCase().includes(keyword) ||
                                     licenser.description.toLowerCase().includes(keyword);
                 
@@ -358,7 +393,7 @@
                     );
                 });
             });
-        }, [licensersList, getVaccinesByLicenser, getPathogenByVaccine, getManufacturersByVaccine]);
+        }, [licensersList, filterListByStartingAlphabet, getVaccinesByLicenser, getPathogenByVaccine, getManufacturersByVaccine]);
 
         /**
          * Sorts a list of licensers with a custom priority for 'AMA', 'EMA', and 'WHO',
@@ -383,6 +418,7 @@
          * const sortedLicensers = sortLicensers(licensers);
          * // Result: [ { name: 'FDA' }, { name: 'EMA' }, { name: 'WHO' }, { name: 'CDC' }, { name: 'HSA' } ]
          */
+
         const sortLicensers = useCallback((list) => {
             const customOrder = ['FDA', 'EMA', 'WHO'];
 
@@ -414,40 +450,41 @@
          * 
          * @returns {void} This function does not return a value. It updates the `sidebarList` state directly.
          */
-        const filterListsBySearch = useCallback(() => {
+
+        const filterListsByAlphabetAndSearch = useCallback(() => {
             let filteredSidebarList = [];
             
             if (activeFilters.searchKeyword) {
                 const keywordLower = activeFilters.searchKeyword.toLowerCase()
                 
                 if (activeTab === 'Manufacturer') {
-                    filteredSidebarList = filterManufacturersBySearch(keywordLower).slice() 
+                    filteredSidebarList = filterManufacturersByAlphabetAndSearch(keywordLower).slice() 
             .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'Product') {
-                    filteredSidebarList = filterVaccinesBySearch(keywordLower).slice() 
+                    filteredSidebarList = filterVaccinesByAlphabetAndSearch(keywordLower).slice() 
             .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'Pathogen') {
-                    filteredSidebarList = filterPathogensBySearch(keywordLower).slice() 
+                    filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice() 
             .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'Licenser') {
-                    filteredSidebarList = sortLicensers(filterLicensersBySearch(keywordLower));
+                    filteredSidebarList = sortLicensers(filterLicensersByAlphabetAndSearch(keywordLower));
                 }
                 setSidebarList(filteredSidebarList);
             } else {
                 if (activeTab === 'Manufacturer') {
-                    setSidebarList(manufacturersList.slice() 
+                    setSidebarList(filterListByStartingAlphabet(manufacturersList).slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Product') {
-                    setSidebarList(vaccinesList.slice() 
+                    setSidebarList(filterListByStartingAlphabet(vaccinesList).slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Pathogen') {
-                    setSidebarList(pathogensList.slice() 
+                    setSidebarList(filterListByStartingAlphabet(pathogensList).slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Licenser') {
-                    setSidebarList(sortLicensers(licensersList));
+                    setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
                 }
             }
-        }, [activeFilters.searchKeyword, activeTab, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersBySearch, filterPathogensBySearch, filterVaccinesBySearch, filterLicensersBySearch, sortLicensers ]);        
+        }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers ]);        
         
         /**
          * Converts camel case strings to readable format.
@@ -455,6 +492,7 @@
          * @param {string} string - The camel case string.
          * @returns {string} The readable string.
          */
+
         const convertCamelCaseToReadable = string => {
             return string==="ceo" ? "CEO" : string.replace(/([A-Z])/g, ' $1')
         };
@@ -465,6 +503,7 @@
          * @param {string} text - The text containing scientific names.
          * @returns {JSX.Element} The text with scientific names italicized.
          */
+
         const italizeScientificNames = text => {
             const parts = text.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
         
@@ -489,13 +528,13 @@
             setLicensersList(licensers);
         },[])
 
-        useEffect(()=>{
-            filterListsBySearch();
-        },[activeTab, pathogensList, vaccinesList, manufacturersList, licensersList, filterListsBySearch])
+        // useEffect(()=>{
+        //     filterListsByAlphabetAndSearch();
+        // },[activeTab, pathogensList, vaccinesList, manufacturersList, licensersList, filterListsByAlphabetAndSearch])
 
         useEffect(() => {
-            filterListsBySearch();
-        }, [activeFilters, filterListsBySearch]);
+            filterListsByAlphabetAndSearch();
+        }, [activeFilters, filterListsByAlphabetAndSearch]);
         
         return (
             <div className='vacciprofile-page'>
