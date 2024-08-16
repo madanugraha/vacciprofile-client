@@ -23,51 +23,6 @@ a {
     font-size: 2em;
 }
 
-.sidebar-items {
-    height: 62.5vh;
-}
-
-// .sidebar-items::-webkit-scrollbar {
-//     width: 0; 
-// }
-
-.sidebar-item {
-    color: rgb(77, 77, 77) !important;
-    font-size: 14px;
-    padding-left: 9px;
-    padding-right: 9px;
-    position: relative;
-}
-
-.sidebar-item.active {
-    background-color: $sidebar-selected !important;
-    color: white !important;
-    cursor: pointer;
-}
-
-.sidebar-item:hover {
-    background-color: $sidebar-hover !important;
-    color: white !important;
-    cursor: pointer;
-}
-
-.sidebar-item.active::before {
-    content: '';
-    position: absolute;
-    right: -13px; 
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 11px solid transparent; 
-    border-bottom: 11px solid transparent;
-    border-left: 15px solid $sidebar-selected; 
-}
-
-.sidebar-item:hover::before {
-    border-left-color: $sidebar-hover; 
-}
-
 table {
     font-size: 14px;
     margin: 0;
@@ -121,6 +76,53 @@ td, th {
 }
 
 // Sidebar
+
+
+.sidebar-items {
+    height: 62.5vh;
+}
+
+// .sidebar-items::-webkit-scrollbar {
+//     width: 0; 
+// }
+
+.sidebar-item {
+    color: rgb(77, 77, 77) !important;
+    font-size: 14px;
+    padding-left: 9px;
+    padding-right: 9px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.sidebar-item.active {
+    background-color: $sidebar-selected !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    background-color: $sidebar-hover !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.sidebar-item.active::before {
+    content: '';
+    position: absolute;
+    right: -9px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent; 
+    border-bottom: 11px solid transparent;
+    border-left: 11px solid $sidebar-selected; 
+}
+
+.sidebar-item:hover::before {
+    border-left-color: $sidebar-hover; 
+}
 
 .selectable {
     color: $selectable;

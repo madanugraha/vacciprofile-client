@@ -118,13 +118,13 @@ const Sidebar = ({
         }
     },[changedFrom])
 
-    return <div className={`sidebar col-6 col-sm-4 col-lg-2 ps-1 ${animationClass}`}>
+    return <div className={`sidebar col-6 col-sm-4 col-lg-2 ps-1 pe-0 ${animationClass}`}>
         <div className='sidebar-items overflow-auto'>
         {sidebarList
             .map((item, i) => (
                 <div 
                     key={i} 
-                    className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 mt-1 me-3 ${
+                    className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 mt-1 ${
                         activeTab === 'Manufacturer' && selectedManufacturer === item ? 'active' :
                         activeTab === 'Product' && selectedVaccine === item ? 'active' :
                         activeTab === 'Pathogen' && selectedPathogen === item ? 'active' :
