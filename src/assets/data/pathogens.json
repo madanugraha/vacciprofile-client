@@ -10,7 +10,7 @@
     },
     {
         "pathogenId": 2,
-        "name": "COVID-19",
+        "name": "SARS-CoV-2",
         "description": "COVID-19 is a respiratory illness caused by the SARS-CoV-2 virus. It was first identified in Wuhan, China, in late 2019 and has since become a global pandemic. Symptoms can range from mild, such as fever and cough, to severe, including difficulty breathing and pneumonia. The virus primarily spreads through respiratory droplets and can lead to significant health complications, particularly in older adults and those with underlying health conditions.",
         "vaccines": [
             { "vaccineId" : 2 },
