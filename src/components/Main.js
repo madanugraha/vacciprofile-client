@@ -16,7 +16,10 @@ import Licenser from './information/Licenser';
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedLicenser - The currently selected licenser.
+ * @param {Array} props.sidebarList - List of items (manufacturers, products, or pathogens) available for selection.
  * @param {string} props.activeTab - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Licenser').
+ * @param {Object} props.activeFilters - The current active filters.
+ * @param {Object} props.setActiveFilters - Sets the current active filters.
  * @param {Function} props.handleSelectPathogen - Function to handle the selection of a pathogen.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
  * @param {Function} props.handleSelectLicenser - Function to handle the selection of an licenser.
@@ -36,7 +39,10 @@ import Licenser from './information/Licenser';
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
  *    selectedLicenser='LicenserZ'
+ *    sidebarList={[{ name: 'ItemA' }, { name: 'ItemB' }]}
  *    activeTab='Pathogen'
+ *    activeFilters={activeFilters}
+ *    setActiveFilters={filters=>console.log(activeFilters)}
  *    handleSelectPathogen={(pathogen) => console.log(pathogen)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
  *    handleSelectLicenser={(licenser) => console.log(licenser)}
@@ -52,10 +58,13 @@ import Licenser from './information/Licenser';
 
 const Main = ({
     activeTab,
+    sidebarList=[],
     selectedPathogen, 
     selectedVaccine, 
     selectedManufacturer,
     selectedLicenser, 
+    activeFilters,
+    setActiveFilters,
     handleSelectPathogen, 
     handleSelectVaccine, 
     handleSelectLicenser, 
@@ -85,24 +94,17 @@ const Main = ({
                 }, 5);
                 return () => clearTimeout(timeout);
             } 
-            // else {
-            //     setAnimationClass('');
-            //     const timeout = setTimeout(() => {
-            //         setAnimationClass('slide-right-out');
-            //     }, 5);
-            //     return () => clearTimeout(timeout);
-            // }
         }
-    }, [changedFrom]);
+    }, [changedFrom, activeTab, selectedLicenser, selectedManufacturer, selectedPathogen, selectedVaccine]);
 
     return <div className={`bg-white col-6 col-sm-8 col-lg-10 p-0 pe-1 ${animationClass}`}>
         <div className='main-container border border-primary border-1 rounded-4 slide-left overflow-auto'>
             { 
-            // manufacturersList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>
-            //         <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: ''})}>
-            //             Clear filters
-            //         </span>
-            //     </div> : 
+            sidebarList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>
+                <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchKeyword: '', firstAlphabet: ''})}>
+                    Clear filters
+                </span>
+            </div> : 
             (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
             (activeTab === 'Product' && Object.keys(selectedVaccine).length === 0) ||
             (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0) ||

@@ -334,16 +334,12 @@
             return filterListByStartingAlphabet(pathogensList).filteredList.filter(pathogen => {
                 const pathogenMatch = pathogen.name.toLowerCase().includes(keyword) ||
                                     pathogen.description.toLowerCase().includes(keyword);
-                
                 if (pathogenMatch) return true;
-                
                 const vaccines = getVaccineByPathogen(pathogen) || [];
                 return Array.isArray(vaccines) && vaccines.some(vaccine => {
                     const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
                                         vaccine.description.toLowerCase().includes(keyword);
-                    
                     if (vaccineMatch) return true;
-                    
                     return getManufacturersByVaccine(vaccine).some(manufacturer =>
                         manufacturer.name.toLowerCase().includes(keyword) ||
                         manufacturer.description.toLowerCase().includes(keyword)
@@ -454,7 +450,7 @@
         const filterListsByAlphabetAndSearch = useCallback(() => {
             let filteredSidebarList = [];
             
-            if (activeFilters.searchKeyword) {
+            if (activeFilters.searchKeyword && activeFilters.searchKeyword!=="") {
                 const keywordLower = activeFilters.searchKeyword.toLowerCase()
                 
                 if (activeTab === 'Manufacturer') {
@@ -534,6 +530,7 @@
 
         useEffect(() => {
             filterListsByAlphabetAndSearch();
+            console.log("ran");
         }, [activeFilters, filterListsByAlphabetAndSearch]);
         
         return (
@@ -570,6 +567,7 @@
                         />
                         <Main
                             activeTab={activeTab}
+                            sidebarList={sidebarList}
                             selectedPathogen={selectedPathogen}
                             selectedVaccine={selectedVaccine}
                             selectedManufacturer={selectedManufacturer}
@@ -578,6 +576,8 @@
                             handleSelectVaccine={handleSelectVaccine}
                             handleSelectManufacturer={handleSelectManufacturer}
                             handleSelectLicenser={handleSelectLicenser}
+                            activeFilters={activeFilters}
+                            setActiveFilters={setActiveFilters}
                             getPathogenByVaccine={getPathogenByVaccine}
                             getVaccinesByManufacturer={getVaccinesByManufacturer}
                             getVaccinesByLicenser={getVaccinesByLicenser}
