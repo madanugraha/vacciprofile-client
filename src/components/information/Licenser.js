@@ -46,7 +46,7 @@ const Licenser = ({
                 <tbody>
                     {getVaccinesByLicenser(selectedLicenser).map((vaccine, index) => (
                     <tr key={index}>
-                        <td><i>{<span className='text-primary fw-bold hover-underline' onClick={()=>handleSelectVaccine(vaccine.name)}>{vaccine.name}</span>}</i></td>
+                        <td><i>{<span className='text-primary fw-bold hover-cursor hover-underline' onClick={()=>handleSelectVaccine(vaccine.name)}>{vaccine.name}</span>}</i></td>
                         <td><i>{vaccine.vaccineType || '-'}</i></td>
                         <td><i>{vaccine.comments || '-'}</i></td>
                     </tr>

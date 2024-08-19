@@ -196,7 +196,10 @@
                 return []; 
             }
             return vaccinesList.filter(vaccine =>
-                vaccine.manufacturers.some(m => m.manufacturerId === manufacturer.manufacturerId)
+                vaccine.manufacturers.some(m => {
+                    console.log("manufacturer", manufacturer, "m", m)
+                    return m.manufacturerId === manufacturer.manufacturerId
+                })
             );
         }, [selectedManufacturer, vaccinesList]);
 
@@ -490,8 +493,12 @@
          */
 
         const convertCamelCaseToReadable = string => {
-            return string==="ceo" ? "CEO" : string.replace(/([A-Z])/g, ' $1')
+            const formattedString = string === "ceo"
+                ? "CEO"
+                : string.replace(/([A-Z])/g, ' $1');
+            return formattedString.charAt(0).toUpperCase() + formattedString.slice(1);
         };
+        
 
         /**
          * Italizes scientific names in a given text.

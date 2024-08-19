@@ -50,57 +50,51 @@ const ManufacturerProfile = ({
         </button>
       </h2>
       <div id="accordianManu" className="accordion-collapse collapse mb-1" aria-labelledby="accordianManufacturer" data-bs-parent="#accordianManufacturerInfo">
-        <div className="accordion-body">
+        <div className="accordion-body pb-1 px-0 pt-0">
             <div className=''>
                 {selectedManufacturer.details ? <><div className='table-responsive'>
-                    <table className='table table-light w-100 m-0'>
-                        <thead>
-                            <tr>
-                                <th className='text-center' colSpan={2}>Information</th>
-                            </tr>
-                        </thead>
+                    <table className='table table-light table-striped w-100 m-0'>
                         <tbody>
                             {Object.entries(selectedManufacturer.details).map(([attributeKey, attributeValue], index) => {
                                 if (attributeKey === 'revenue') {
                                     return (
                                         <tr key={index}>
-                                            <td className='text-center' style={{ width: '50%' }}>
+                                            <td className='' style={{ width: '50%' }}>
                                                 Revenue/Operating Income/Net Income
                                             </td>
-                                            <td className='text-center'>
+                                            <td className=''>
                                                 {selectedManufacturer.details.revenue}/{selectedManufacturer.details.operatingIncome}/{selectedManufacturer.details.netIncome}
                                             </td>
                                         </tr>
                                     );
                                 }
-
-                                if (attributeKey === 'totalAssets') {
+                                if (attributeKey==='totalAssets') {
                                     return (
                                         <tr key={index}>
-                                            <td className='text-center' style={{ width: '50%' }}>
+                                            <td className='' style={{ width: '50%' }}>
                                                 Total Assets/Total Equity
                                             </td>
-                                            <td className='text-center'>
+                                            <td className=''>
                                                 {selectedManufacturer.details.totalAssets}/{selectedManufacturer.details.totalEquity}
                                             </td>
                                         </tr>
                                     );
                                 }
-
                                 return attributeKey !== "sources" && attributeKey !== "lastUpdated" &&
                                     attributeKey !== "operatingIncome" && attributeKey !== "netIncome" && attributeKey !== "totalEquity" ? (
                                     <tr key={index}>
-                                        <td className='text-center text-capitalize' style={{ width: '50%' }}>
+                                        <td className='text-capitalize' style={{ width: '50%' }}>
                                             {convertCamelCaseToReadable(attributeKey)}
                                         </td>
-                                        <td className='text-center'>{attributeValue}</td>
+                                        <td className=''>{attributeValue}</td>
                                     </tr>
                                 ) : null;
                             })}
                         </tbody>
                     </table>
                 </div>
-                <span className='sources-list'>Source(s): {selectedManufacturer.details.sources.map((source, index)=><span key={index}>
+                ***Paragraph of a short history of the manufacturer will go here*** <br/>
+                <span className='sources-list ms-1'>Source(s): {selectedManufacturer.details.sources.map((source, index)=><span key={index}>
                     <a className='manufacturer-table-source' href={`${source.link}`} target="_blank" rel="noopener noreferrer">{source.title}</a>
                     <span> ({source.lastUpdated}){selectedManufacturer.details.sources.length>1 && index<selectedManufacturer.details.sources.length-1 ? ', ' : ''}</span></span>)}
                 </span></> : null}

@@ -113,7 +113,7 @@ const Main = ({
                 <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
                 <span className='select-prompt position-absolute'>Select a {activeTab}</span>
             </div> : <>
-                <div className='details-container px-2 py-1'>
+                <div className='details-container'>
                     {activeTab==="Pathogen" 
                     ? <Pathogen 
                         selectedPathogen={selectedPathogen} 
@@ -121,7 +121,7 @@ const Main = ({
                     /> : activeTab==="Vaccine" 
                     ? <Vaccine 
                         selectedVaccine={selectedVaccine}
-                        italizeScientificNames={italizeScientificNames}
+                        convertCamelCaseToReadable={convertCamelCaseToReadable}
                     /> : activeTab==="Manufacturer" 
                     ? <ManufacturerProfile
                         selectedManufacturer={selectedManufacturer}

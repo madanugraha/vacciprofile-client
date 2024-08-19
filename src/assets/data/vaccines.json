@@ -309,18 +309,39 @@
     {
         "name": "Valneva VLA1553 Chikungunya Vaccine",
         "vaccineId": 13,
-        "composition": "Monovalent live-attuned (CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))",
-        "strainCoverage": "All strains",
-        "indication": "'Adults and children'-P3:>18 years in endemic regions",
-        "dosing": "Single dose i.m.",
-        "immunogenicity": "Descriptive only (100% responders after 1 dose)",
-        "efficacyEndpointsPhase3": "immunogenicity (NT vs. surrogate) day 28",
-        "efficacyData": "Surrogate 'protective titer'",
-        "durationOfProtection": "Unknown, possibly lifelong",
-        "coAdministration": "None",
-        "reactogenicity": "Target? Similar to TdaP or other?",
-        "safety": "N=4,000 US adults",
-        "vaccinationGoal": "Individual protection",
-        "others": "Fast track and Breakthrough Designation (FDA), PRIME (EMA)"
+        "manufacturers": [
+        ],
+        "introduction": {
+            "General Information": {
+                "Map Vaccine Preventable Diseases": "Map by disease",
+                "Vaccine SmPCs (FDA, EMA, WHO, others)": "Search by disease, include combos",
+                "Product profiles": "",
+                "Pipeline products - summary table": "By click, TPP",
+                "Failed products": ""  
+            },
+            "Company products, pipeline": {
+                "VPD-BoD, Product presentations, Monograph": "",
+                "Pivotal publications / data vaccines": "",
+                "Interviews": "Advertorial",
+                "Relevant literature": "",
+                "Pipeline products - detailed information (TPP)": ""
+            }
+        },
+        "productProfile": {
+            "name": "Short Target Product Profile Phase 3:<br/>Valnea VLA1533 - Chikungunya vaccine (fast track)",
+            "composition": "Monovalent live-attuned <br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))",
+            "strainCoverage": "All strains",
+            "indication": "'Adults and children'-P3:>18 years in endemic regions",
+            "dosing": "Single dose i.m.",
+            "immunogenicity": "Descriptive only (100% responders after 1 dose)",
+            "efficacyEndpointsPhase3": "Immunogenicity (NT vs. surrogate) day 28",
+            "efficacyData": "Surrogate 'protective titer'",
+            "durationOfProtection": "Unknown, possibly lifelong",
+            "coAdministration": "None",
+            "reactogenicity": "Target? Similar to TdaP or other?",
+            "safety": "N=4,000 US adults",
+            "vaccinationGoal": "Individual protection",
+            "others": "Fast track and Breakthrough Designation (FDA), PRIME (EMA)"
+        }
     }
 ]

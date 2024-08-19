@@ -124,7 +124,7 @@ const Sidebar = ({
                 {filteredSidebarList.map((item, i) => (
                     <div 
                         key={i} 
-                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${
                             activeTab === 'Licenser' && selectedLicenser === item ? 'active' : 'inactive'
                         }`} 
                         onClick={() => handleClickSidebar(item)}
