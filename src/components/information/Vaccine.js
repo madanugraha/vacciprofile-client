@@ -43,7 +43,7 @@ const Vaccine = ({ selectedVaccine, italizeScientificNames }) => {
                 <thead>
                     <tr>
                     <th>Licenser</th>
-                    <th>Comments</th>
+                    <th>Indication</th>
                     <th>Date of Approval</th>
                     </tr>
                 </thead>

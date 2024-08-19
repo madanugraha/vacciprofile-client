@@ -16,7 +16,7 @@ import Licenser from './information/Licenser';
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedLicenser - The currently selected licenser.
- * @param {Array} props.sidebarList - List of items (manufacturers, products, or pathogens) available for selection.
+ * @param {Array} props.sidebarList - List of items (manufacturers, vaccines, or pathogens) available for selection.
  * @param {string} props.activeTab - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Licenser').
  * @param {Object} props.activeFilters - The current active filters.
  * @param {Object} props.setActiveFilters - Sets the current active filters.
@@ -83,10 +83,10 @@ const Main = ({
         if(changedFrom==="Sidebar"){
             const isSelectedObjectNotEmpty = (obj) => Object.keys(obj).length !== 0;
             if (
-                (activeTab === 'Manufacturer' && isSelectedObjectNotEmpty(selectedManufacturer)) ||
-                (activeTab === 'Product' && isSelectedObjectNotEmpty(selectedVaccine)) ||
-                (activeTab === 'Pathogen' && isSelectedObjectNotEmpty(selectedPathogen)) ||
-                (activeTab === 'Licenser' && isSelectedObjectNotEmpty(selectedLicenser))
+                (activeTab==='Manufacturer' && isSelectedObjectNotEmpty(selectedManufacturer)) ||
+                (activeTab==='Vaccine' && isSelectedObjectNotEmpty(selectedVaccine)) ||
+                (activeTab==='Pathogen' && isSelectedObjectNotEmpty(selectedPathogen)) ||
+                (activeTab==='Licenser' && isSelectedObjectNotEmpty(selectedLicenser))
             ){
                 setAnimationClass('');
                 const timeout = setTimeout(() => {
@@ -106,7 +106,7 @@ const Main = ({
                 </span>
             </div> : 
             (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
-            (activeTab === 'Product' && Object.keys(selectedVaccine).length === 0) ||
+            (activeTab === 'Vaccine' && Object.keys(selectedVaccine).length === 0) ||
             (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0) ||
             (activeTab === 'Licenser' && Object.keys(selectedLicenser).length === 0)
                 ? <div className='empty-main position-relative'>
@@ -118,7 +118,7 @@ const Main = ({
                     ? <Pathogen 
                         selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
-                    /> : activeTab==="Product" 
+                    /> : activeTab==="Vaccine" 
                     ? <Vaccine 
                         selectedVaccine={selectedVaccine}
                         italizeScientificNames={italizeScientificNames}

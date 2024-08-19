@@ -8,14 +8,14 @@ import React, { useState, useEffect } from 'react';
  * @component
  * @namespace Sidebar
  * @param {Object} props - The component accepts various props to handle sidebar functionality.
- * @param {string} props.activeTab - The currently active tab, which can be 'Manufacturer', 'Product', or 'Pathogen'.
- * @param {Function} props.setActiveTab - Function to set the type of details to be displayed ('Manufacturer', 'Product', or 'Pathogen').
+ * @param {string} props.activeTab - The currently active tab, which can be 'Manufacturer', 'Vaccine', or 'Pathogen'.
+ * @param {Function} props.setActiveTab - Function to set the type of details to be displayed ('Manufacturer', 'Vaccine', or 'Pathogen').
  * @param {Array} props.sidebarList - List of items (manufacturers, products, or pathogens) available for selection.
- * @param {Object} props.selectedVaccine - The currently selected product (vaccine).
+ * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedPathogen - The currently selected pathogen.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedLicenser - The currently selected licenser.
- * @param {Function} props.setSelectedVaccine - Function to update the selected product (vaccine).
+ * @param {Function} props.setSelectedVaccine - Function to update the selected vaccine.
  * @param {Function} props.setSelectedPathogen - Function to update the selected pathogen.
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.
  * @param {Function} props.setSelectedLicenser - Function to update the selected licenser.
@@ -62,18 +62,16 @@ const Sidebar = ({
 }) => {
 
     const [animationClass, setAnimationClass] = useState('slide-right');
-    
-    /**
-     * Handles the click events for sidebar items based on the active tab.
-     * It selects or unselects an item depending on the current selection state.
-     * The behavior varies depending on whether the item belongs to the Manufacturer, Product, or Pathogen tab.
-     *
-     * @param {Object} item - The item object that is clicked.
-     */
+    const [showCountries, setShowCountries] = useState(false);
+
+    const licenserFilter = ["FDA", "EMA", "WHO"];
+    const filteredSidebarList = activeTab === 'Licenser' 
+        ? sidebarList.filter(item => licenserFilter.includes(item.name))
+        : sidebarList;
+
     const handleClickSidebar = item => {
-        // Slide Left Animation
         setChangedFrom('Sidebar');
-    
+
         setTimeout(() => {
             if (activeTab === 'Manufacturer') {
                 if (item !== selectedManufacturer) {
@@ -82,10 +80,10 @@ const Sidebar = ({
                 } else {
                     setSelectedManufacturer({});
                 }
-            } else if (activeTab === 'Product') {
+            } else if (activeTab === 'Vaccine') {
                 if (item !== selectedVaccine) {
                     setSelectedVaccine(item);
-                    setActiveTab('Product');
+                    setActiveTab('Vaccine');
                 } else {
                     setSelectedVaccine({});
                 }
@@ -97,7 +95,9 @@ const Sidebar = ({
                     setSelectedPathogen({});
                 }
             } else if (activeTab === 'Licenser') {
-                if (item !== selectedLicenser) {
+                if (item.name === 'Countries') {
+                    setShowCountries(!showCountries);
+                } else if (item !== selectedLicenser) {
                     setSelectedLicenser(item);
                     setActiveTab('Licenser');
                 } else {
@@ -108,35 +108,53 @@ const Sidebar = ({
         }, 5);
     };
     
-    useEffect(()=>{
-        if(changedFrom==="Topbar"){
+    useEffect(() => {
+        if (changedFrom === "Topbar") {
             setAnimationClass('');
             const timeout = setTimeout(() => {
                 setAnimationClass('slide-right');
             }, 20);
             return () => clearTimeout(timeout);
         }
-    },[changedFrom])
+    }, [changedFrom]);
 
-    return <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
-        <div className='sidebar-items overflow-auto'>
-        {sidebarList
-            .map((item, i) => (
-                <div 
-                    key={i} 
-                    className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${
-                        activeTab === 'Manufacturer' && selectedManufacturer === item ? 'active' :
-                        activeTab === 'Product' && selectedVaccine === item ? 'active' :
-                        activeTab === 'Pathogen' && selectedPathogen === item ? 'active' :
-                        activeTab === 'Licenser' && selectedLicenser === item ? 'active' : 'inactive'
-                    }`} 
-                    onClick={() => handleClickSidebar(item)}
-                >{italizeScientificNames(item.name)}
-                </div>
-            ))
-        }
+    return (
+        <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
+            <div className='sidebar-items overflow-auto'>
+                {filteredSidebarList.map((item, i) => (
+                    <div 
+                        key={i} 
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${
+                            activeTab === 'Licenser' && selectedLicenser === item ? 'active' : 'inactive'
+                        }`} 
+                        onClick={() => handleClickSidebar(item)}
+                    >
+                        {italizeScientificNames(item.name)}
+                    </div>
+                ))}
+                {activeTab === 'Licenser' && (
+                    <div 
+                        key='Countries'
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${
+                            showCountries ? 'active' : 'inactive'
+                        }`} 
+                        onClick={() => handleClickSidebar({ name: 'Countries' })}
+                    >
+                        Countries
+                    </div>
+                )}
+                {showCountries && sidebarList.filter(item => !licenserFilter.includes(item.name)).map((item, i) => (
+                    <div 
+                        key={`country-${i}`} 
+                        className="sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1"
+                        onClick={() => handleClickSidebar(item)}
+                    >
+                        {italizeScientificNames(item.name)}
+                    </div>
+                ))}
+            </div>
         </div>
-    </div>
+    );
 }
 
 export default Sidebar;

@@ -70,7 +70,7 @@
         /**
          * Handles the search input change.
          *
-         * @param {string} tab - The selected tab type can be "Manufacturers", "Pathogens" or "Products".
+         * @param {string} tab - The selected tab type can be "Manufacturer", "Pathogen", "Vaccine" or "Licenser".
          */
         
         const handleTabChange = tab => {
@@ -136,7 +136,7 @@
         const handleSelectVaccine = v => {
             const vaccine = vaccines.find(vaccine => vaccine.vaccineId === v.vaccineId);
             setSelectedVaccine(vaccine);
-            setActiveTab("Product");
+            setActiveTab("Vaccine");
         };
 
         /**
@@ -456,7 +456,7 @@
                 if (activeTab === 'Manufacturer') {
                     filteredSidebarList = filterManufacturersByAlphabetAndSearch(keywordLower).slice() 
             .sort((a, b) => a.name.localeCompare(b.name));
-                } else if (activeTab === 'Product') {
+                } else if (activeTab === 'Vaccine') {
                     filteredSidebarList = filterVaccinesByAlphabetAndSearch(keywordLower).slice() 
             .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'Pathogen') {
@@ -470,7 +470,7 @@
                 if (activeTab === 'Manufacturer') {
                     setSidebarList(filterListByStartingAlphabet(manufacturersList).slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
-                } else if (activeTab === 'Product') {
+                } else if (activeTab === 'Vaccine') {
                     setSidebarList(filterListByStartingAlphabet(vaccinesList).slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Pathogen') {
@@ -530,7 +530,6 @@
 
         useEffect(() => {
             filterListsByAlphabetAndSearch();
-            console.log("ran");
         }, [activeFilters, filterListsByAlphabetAndSearch]);
         
         return (

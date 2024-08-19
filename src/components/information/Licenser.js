@@ -40,7 +40,7 @@ const Licenser = ({
                     <tr>
                         <th><i>Tradename</i></th>
                         <th><i>Vaccine Type</i></th>
-                        <th><i>Comments</i></th>
+                        <th><i>Indication</i></th>
                         <th><i>Revenue</i></th>
                     </tr>
                 </thead>
