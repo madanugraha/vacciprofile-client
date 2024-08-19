@@ -37,7 +37,9 @@ const ManufacturerProfile = ({
     selectedManufacturer, 
     convertCamelCaseToReadable
 }) => {
-    return <div className="accordion" id="accordianManufacturerInfo">
+    return <>
+    <h1 className='heading text-primary'>Updated {selectedManufacturer.name} Reported Data ({selectedManufacturer.lastUpdated})</h1>
+    <div className="accordion" id="accordianManufacturerInfo">
     <div className="accordion-item mb-1">
       <h2 className="accordion-header" id="accordianManufacturer">
         <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianManu" aria-expanded="false" aria-controls="collapseTwo">
@@ -75,6 +77,6 @@ const ManufacturerProfile = ({
       </div>
     </div>
   </div>
-}
+</>}
 
 export default ManufacturerProfile;

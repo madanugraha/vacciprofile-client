@@ -97,8 +97,8 @@ const Main = ({
         }
     }, [changedFrom, activeTab, selectedLicenser, selectedManufacturer, selectedPathogen, selectedVaccine]);
 
-    return <div className={`bg-white col-6 col-sm-8 col-lg-10 p-0 pe-1 ${animationClass}`}>
-        <div className='main-container border border-primary border-1 rounded-4 slide-left overflow-auto'>
+    return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${animationClass}`}>
+        <div className='main-container border border-primary border-1 rounded-3 slide-left overflow-auto'>
             { 
             sidebarList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>
                 <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchKeyword: '', firstAlphabet: ''})}>
@@ -113,8 +113,7 @@ const Main = ({
                 <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
                 <span className='select-prompt position-absolute'>Select a {activeTab}</span>
             </div> : <>
-                {activeTab==="Manufacturer" ? <h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data ({selectedManufacturer.lastUpdated})</h1>:null}
-                <div className='details-container px-3 pt-2 pb-3'>
+                <div className='details-container px-2 py-1'>
                     {activeTab==="Pathogen" 
                     ? <Pathogen 
                         selectedPathogen={selectedPathogen} 

@@ -71,7 +71,7 @@ td, th {
 .search-container {
     position: absolute;
     right: 0;
-    top: 0px;
+    top: 1px;
     width: 52vw;
 }
 
@@ -152,9 +152,8 @@ td, th {
 }
 
 .alphabet-item-selected {
-    background-color: $success;
-    padding: 0 7px;
-    border-radius: 5px;
+    background-color: $alphabet;
+    padding: 0 8px;
     color: white;
 }
 
