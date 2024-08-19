@@ -20,9 +20,12 @@ import React from 'react';
  *   selectedManufacturer={{
  *     name: 'Manufacturer X',
  *     description: 'A leading manufacturer in the industry.',
- *     information: {
- *       type: 'Biotechnology',
- *       country: 'USA',
+ *     details: {
+ *       revenue: '100M',
+ *       operatingIncome: '50M',
+ *       netIncome: '25M',
+ *       totalAssets: '500M',
+ *       totalEquity: '300M',
  *       sources: [
  *         { title: 'Source 1', link: 'http://source1.com', lastUpdated: '2024-01-01' },
  *         { title: 'Source 2', link: 'http://source2.com', lastUpdated: '2024-02-01' }
@@ -49,8 +52,6 @@ const ManufacturerProfile = ({
       <div id="accordianManu" className="accordion-collapse collapse mb-1" aria-labelledby="accordianManufacturer" data-bs-parent="#accordianManufacturerInfo">
         <div className="accordion-body">
             <div className=''>
-                {/* <h4 className='report-heading'>{selectedManufacturer.name}</h4>  */}
-                {/* <p>{selectedManufacturer.description}</p> */}
                 {selectedManufacturer.details ? <><div className='table-responsive'>
                     <table className='table table-light w-100 m-0'>
                         <thead>
@@ -60,10 +61,41 @@ const ManufacturerProfile = ({
                         </thead>
                         <tbody>
                             {Object.entries(selectedManufacturer.details).map(([attributeKey, attributeValue], index) => {
-                                return attributeKey !== "sources" && attributeKey !== "lastUpdated" ? <tr key={index}>
-                                    <td className='text-center text-capitalize' style={{ width: '50%' }}>{convertCamelCaseToReadable(attributeKey)}</td>
-                                    <td className='text-center'>{attributeValue}</td>
-                                </tr> : null ;
+                                if (attributeKey === 'revenue') {
+                                    return (
+                                        <tr key={index}>
+                                            <td className='text-center' style={{ width: '50%' }}>
+                                                Revenue/Operating Income/Net Income
+                                            </td>
+                                            <td className='text-center'>
+                                                {selectedManufacturer.details.revenue}/{selectedManufacturer.details.operatingIncome}/{selectedManufacturer.details.netIncome}
+                                            </td>
+                                        </tr>
+                                    );
+                                }
+
+                                if (attributeKey === 'totalAssets') {
+                                    return (
+                                        <tr key={index}>
+                                            <td className='text-center' style={{ width: '50%' }}>
+                                                Total Assets/Total Equity
+                                            </td>
+                                            <td className='text-center'>
+                                                {selectedManufacturer.details.totalAssets}/{selectedManufacturer.details.totalEquity}
+                                            </td>
+                                        </tr>
+                                    );
+                                }
+
+                                return attributeKey !== "sources" && attributeKey !== "lastUpdated" &&
+                                    attributeKey !== "operatingIncome" && attributeKey !== "netIncome" && attributeKey !== "totalEquity" ? (
+                                    <tr key={index}>
+                                        <td className='text-center text-capitalize' style={{ width: '50%' }}>
+                                            {convertCamelCaseToReadable(attributeKey)}
+                                        </td>
+                                        <td className='text-center'>{attributeValue}</td>
+                                    </tr>
+                                ) : null;
                             })}
                         </tbody>
                     </table>
