@@ -58,5 +58,13 @@
             { "vaccineId": 11 }
         ],
         "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
-    }    
+    },
+    {
+        "pathogenId": 7,
+        "name": "Chikungunya Virus",
+        "vaccines": [
+            { "vaccineId": 13 }
+        ],
+        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+    }
 ]

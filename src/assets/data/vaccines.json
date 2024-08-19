@@ -305,5 +305,22 @@
         "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
         "link": "https://www.pfizer.com/products/product-detail/ticovac",
         "lastUpdated": "TBU"
+    },
+    {
+        "name": "Valneva VLA1553 Chikungunya Vaccine",
+        "vaccineId": 13,
+        "composition": "Monovalent live-attuned (CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))",
+        "strainCoverage": "All strains",
+        "indication": "'Adults and children'-P3:>18 years in endemic regions",
+        "dosing": "Single dose i.m.",
+        "immunogenicity": "Descriptive only (100% responders after 1 dose)",
+        "efficacyEndpointsPhase3": "immunogenicity (NT vs. surrogate) day 28",
+        "efficacyData": "Surrogate 'protective titer'",
+        "durationOfProtection": "Unknown, possibly lifelong",
+        "coAdministration": "None",
+        "reactogenicity": "Target? Similar to TdaP or other?",
+        "safety": "N=4,000 US adults",
+        "vaccinationGoal": "Individual protection",
+        "others": "Fast track and Breakthrough Designation (FDA), PRIME (EMA)"
     }
 ]
