@@ -41,7 +41,6 @@ const Licenser = ({
                         <th><i>Tradename</i></th>
                         <th><i>Vaccine Type</i></th>
                         <th><i>Indication</i></th>
-                        <th><i>Revenue</i></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,7 +49,6 @@ const Licenser = ({
                         <td><i>{<span className='text-primary fw-bold hover-underline' onClick={()=>handleSelectVaccine(vaccine.name)}>{vaccine.name}</span>}</i></td>
                         <td><i>{vaccine.vaccineType || '-'}</i></td>
                         <td><i>{vaccine.comments || '-'}</i></td>
-                        <td><i>{vaccine.revenue || '-'}</i></td>
                     </tr>
                     ))}
                 </tbody>
