@@ -121,7 +121,7 @@ const Vaccine = ({
     return <div className='position-relative slide-left'>
                 <h1 className='heading text-primary text-center'>{selectedVaccine.name}
                     {/* {selectedVaccine.packageInsertLink && <i class="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}
-                    {selectedVaccine.productProfile && <i class="fa-regular fa-folder-open text-warning hover-cursor ms-2" onClick={openModal}></i>}
+                    {selectedVaccine.productProfile && <i class="fa-solid fa-file-medical text-warning hover-cursor ms-2" onClick={openModal}></i>}
                 </h1>
                 {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
                 {selectedVaccine.licensingDates && (
