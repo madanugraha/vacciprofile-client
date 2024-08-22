@@ -121,7 +121,7 @@ const Vaccine = ({
     return <div className='position-relative slide-left'>
                 <h1 className='heading text-primary text-center'>{selectedVaccine.name}
                     {/* {selectedVaccine.packageInsertLink && <i class="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}
-                    {selectedVaccine.productProfile && <i class="fa-solid fa-file-medical text-warning hover-cursor ms-2" onClick={openModal}></i>}
+                    {selectedVaccine.productProfile && <i class="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
                 </h1>
                 {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
                 {selectedVaccine.licensingDates && (
@@ -175,8 +175,8 @@ const Vaccine = ({
                 </tbody>
             </table>
         )}
-        <p className='mb-0'><a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
-        <span className='last-updated text-muted position-absolute end-0 bottom-0'>Last updated: {selectedVaccine.lastUpdated}</span>
+        <p className='mb-0 ms-1'><a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
+        <span className='last-updated text-muted position-absolute end-0 bottom-0 me-1'>Last updated: {selectedVaccine.lastUpdated}</span>
         {selectedVaccine.productProfile && <ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
             <i class="fa-solid fa-xmark fa-lg modal-close-btn position-absolute end-0 hover-cursor" onClick={closeModal}></i>
             <h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVaccine.productProfile.name)}</h1>
