@@ -35,20 +35,17 @@ const Licenser = ({
             <table className='table table-light w-100 m-0 mt-3'>
                 <thead>
                     <tr>
-                        <th colSpan={4} className='text-center'><i>Vaccines</i></th>
-                    </tr>
-                    <tr>
-                        <th><i>Tradename</i></th>
-                        <th><i>Vaccine Type</i></th>
-                        <th><i>Indication</i></th>
+                        <th>Tradename</th>
+                        <th>Vaccine Type</th>
+                        <th>Indication</th>
                     </tr>
                 </thead>
                 <tbody>
                     {getVaccinesByLicenser(selectedLicenser).map((vaccine, index) => (
                     <tr key={index}>
-                        <td><i>{<span className='text-primary fw-bold hover-cursor hover-underline' onClick={()=>handleSelectVaccine(vaccine.name)}>{vaccine.name}</span>}</i></td>
-                        <td><i>{vaccine.vaccineType || '-'}</i></td>
-                        <td><i>{vaccine.comments || '-'}</i></td>
+                        <td>{<span className='text-primary fw-bold hover-cursor hover-underline' onClick={()=>handleSelectVaccine(vaccine)}>{vaccine.name}</span>}</td>
+                        <td>{vaccine.vaccineType || '-'}</td>
+                        <td>{vaccine.comments || '-'}</td>
                     </tr>
                     ))}
                 </tbody>

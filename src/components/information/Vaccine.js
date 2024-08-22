@@ -128,14 +128,10 @@ const Vaccine = ({
                     <table className='table table-light table-striped w-100 m-0'>
                         <thead>
                             <tr>
-                                <td className='text-center fw-bold' colspan="3">Vaccine Approval Date</td>
-                            </tr>
-                        </thead>
-                        <thead>
-                            <tr>
                                 <th>Licenser</th>
                                 <th>Indication</th>
                                 <th>Date of Approval</th>
+                                <th>Number of Doses Given</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -143,7 +139,7 @@ const Vaccine = ({
                             <React.Fragment key={index}>
                                 <tr>
                                     <td><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
-                                    <td>{licensingDate.type && licensingDate.type}</td>
+                                    <td>{licensingDate.type ? licensingDate.type : '-'}</td>
                                     <td>
                                         <a 
                                         href={licensingDate.source} 
@@ -153,6 +149,7 @@ const Vaccine = ({
                                         {licensingDate.date}
                                         </a>
                                     </td>
+                                    <td>?</td>
                                 </tr>
                             </React.Fragment>
                             ))}
