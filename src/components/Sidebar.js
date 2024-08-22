@@ -125,7 +125,11 @@ const Sidebar = ({
                     <div 
                         key={i} 
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${
-                            activeTab === 'Licenser' && selectedLicenser === item ? 'active' : 'inactive'
+                            activeTab === 'Manufacturer' && selectedManufacturer === item
+                            ? 'active' : activeTab === 'Vaccine' && selectedVaccine === item
+                            ? 'active' : activeTab === 'Pathogen' && selectedPathogen === item
+                            ? 'active' : activeTab === 'Licenser' && selectedLicenser === item
+                            ? 'active' : 'inactive'
                         }`} 
                         onClick={() => handleClickSidebar(item)}
                     >
