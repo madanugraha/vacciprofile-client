@@ -84,18 +84,15 @@ const VaccineListTable = ({
                                 </td>
                                 <td className='licenser-cell'>
                                 {vaccine.licensers.map((l, index) => {
-                                    const { licenserId } = l;
-                                    const licenser = getLicenserById(licenserId); 
+                                    const licenser = getLicenserById(l.licenserId); 
 
                                     if (!licenser) return null; 
                                     
                                     return (
-                                        <span key={licenserId}>
-                                            <span 
-                                                className={`${activeTab === "Licenser" && selectedLicenser === licenser ? `selected` : `selectable`}`} 
-                                                onClick={() => handleSelectLicenser(licenser)}>
+                                        <span key={l.licenserId}>
+                                            <a href={l.link} className='selectable' target="_blank" rel="noopener noreferrer">
                                                 {licenser.name}
-                                            </span>
+                                            </a>
                                             {index < vaccine.licensers.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
                                         </span>
                                     );

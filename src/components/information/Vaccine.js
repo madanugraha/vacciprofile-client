@@ -142,7 +142,7 @@ const Vaccine = ({
                             {selectedVaccine.licensingDates.map((licensingDate, index) => (
                             <React.Fragment key={index}>
                                 <tr>
-                                    <td>{licensingDate.name}</td>
+                                    <td><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
                                     <td>{licensingDate.type && licensingDate.type}</td>
                                     <td>
                                         <a 

@@ -7,8 +7,8 @@
             {"manufacturerId": 1}
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 }
+            { "licenserId": 1, "link": "https://www.fda.gov/media/168889/download?attachment" },
+            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/abrysvo" }
         ],
         "licensingDates": [
                 {
@@ -39,7 +39,6 @@
         "approvalDate": "2023",
         "description": "Abrysvo™ is a vaccine developed by Pfizer to prevent Respiratory Syncytial Virus (RSV) infection. RSV is a common respiratory virus that usually causes mild, cold-like symptoms. It can be serious, especially for infants and older adults. Abrysvo™ is aimed at providing protection against RSV and is approved for use in various countries.",
         "link": "https://www.pfizer.com/products/product-detail/abrysvotm",
-        "packageInsertLink": "https://www.fda.gov/media/168889/download?attachment",
         "lastUpdated": "2024-AUG"
     },
     {
@@ -50,8 +49,8 @@
             {"manufacturerId": 1}
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 }
+            { "licenserId": 1, "link": "https://www.fda.gov/media/151707/download?attachment" },
+            { "licenserId": 2, "link": "https://catalogues.ema.europa.eu/node/3979/methodological-aspects" }
         ],
         "licensingDates": [
                 {
@@ -74,9 +73,9 @@
             { "manufacturerId": 1 }
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 },
-            { "licenserId": 3 }
+            { "licenserId": 1, "link": "https://www.fda.gov/vaccines-blood-biologics/coronavirus-covid-19-cber-regulated-biologics/pfizer-biontech-covid-19-vaccine" },
+            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/comirnaty" },
+            { "licenserId": 3, "link": "https://www.who.int/news-room/feature-stories/detail/who-can-take-the-pfizer-biontech-covid-19--vaccine-what-you-need-to-know" }
         ],
         "licensingDates": [
                 {
@@ -99,7 +98,6 @@
         "link": "https://www.pfizer.com/products/product-detail/pfizer-biontech-covid-19-vaccine",
         "vaccineType": "mRNA Covid vaccine",
         "comments": "First license, 12/2020",
-        "packageInsertLink": "https://www.fda.gov/media/151707/download?attachment",
         "revenue": "$11,220 million",
         "revenueLink": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf",
         "lastUpdated": "2023"
@@ -112,9 +110,9 @@
             {"manufacturerId": 1}
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 },
-            { "licenserId": 3 }
+            { "licenserId": 1, "link": "https://www.fda.gov/media/107657/download?attachment" },
+            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/documents/overview/prevenar-13-epar-summary-public_en.pdf" },
+            { "licenserId": 3, "link": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/pneumonia" }
         ],
         "licensingDates": [
                 {
@@ -145,7 +143,6 @@
         "description": "Prevnar 13 is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 13 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in children and adults to prevent infections such as pneumonia, meningitis, and bloodstream infections. It is widely used in various countries and is recommended for individuals at higher risk of pneumococcal disease.",
         "vaccineType": "13-valent pneumococcal conjugate vaccine",
         "link": "https://www.pfizer.com/products/product-detail/prevnar_13",
-        "packageInsertLink": "https://www.fda.gov/media/107657/download?attachment",
         "lastUpdated": "TBU"
     },
     {
@@ -156,9 +153,9 @@
             {"manufacturerId": 1}
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 },
-            { "licenserId": 3 }
+            { "licenserId": 1, "link": "https://www.fda.gov/media/151502/download?attachment" },
+            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-20-previously-apexxnar" },
+            { "licenserId": 3, "link": "https://cdn.who.int/media/docs/default-source/pvg/global-vaccine-safety/pneumococcal-vaccine-rates-information-sheet.pdf" }
         ],
         "licensingDates": [
                 {
@@ -180,7 +177,7 @@
             {"manufacturerId": 1}
         ],
         "licensers": [
-            { "licenserId": 1 }
+            { "licenserId": 1, "link": "https://www.fda.gov/media/151502/download" }
         ],
         "licensingDates": [
                 {
@@ -192,7 +189,6 @@
         "description": "TicoVac™ is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. TicoVac™ is designed to provide protection against TBE and is used in regions where the disease is endemic.",
         "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
         "link": "https://www.pfizer.com/products/product-detail/ticovac",
-        "packageInsertLink": "https://www.fda.gov/media/151502/download?attachment",
         "lastUpdated": "TBU"
     },
     {
@@ -200,11 +196,11 @@
         "vaccineId": 8,
         "pathogenId": 5,
         "manufacturers": [
-            {"manufacturerId": 1}
+            {"manufacturerId": 1, "link": "https://www.fda.gov/media/89936/download"}
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 }
+            { "licenserId": 1, "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/trumenba" },
+            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/trumenba" }
         ],
         "licensingDates": [
                 {
@@ -216,7 +212,6 @@
         "description": "Trumenba™ is a vaccine developed by Pfizer to protect against serogroup B of Neisseria meningitidis, a bacterium that causes meningococcal disease. Trumenba™ is designed to prevent invasive meningococcal B infections in adolescents and young adults.",
         "vaccineType": "Meningococcal B vaccine",
         "link": "https://www.pfizer.com/products/product-detail/trumenba",
-        "packageInsertLink": "https://www.fda.gov/media/89936/download",
         "lastUpdated": "TBU"
     },
     {
@@ -243,9 +238,8 @@
             {"manufacturerId": 6}
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 },
-            { "licenserId": 3 }
+            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/vaxzevria-previously-covid-19-vaccine-astrazeneca" },
+            { "licenserId": 3, "link": "https://extranet.who.int/prequal/vaccines/vaxzevria" }
         ],
         "description": "Vaxzevria is a COVID-19 vaccine developed by AstraZeneca. It uses a viral vector platform to stimulate an immune response against the SARS-CoV-2 virus. The vaccine has been used globally to combat the COVID-19 pandemic.",
         "link": "https://www.astrazeneca.com/media-centre/press-releases/2021/astrazeneca-announces-covid-19-vaccine-update.html",
@@ -259,9 +253,10 @@
             {"manufacturerId": 4}
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 },
-            { "licenserId": 3 }
+            { "licenserId": 1, "link": "https://www.fda.gov/files/vaccines,%20blood%20&%20biologics/published/Package-Insert---Gardasil.pdf" },
+            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/documents/product-information/gardasil-epar-product-information_en.pdf" },
+            { "licenserId": 3, "link": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/human-papillomavirus-vaccines-(HPV)" },
+            { "licenserId": 4, "link": "https://assets.publishing.service.gov.uk/media/62291db38fa8f526d907f6c7/UKHSA-12304-HPV-healthcare-professional-factsheet.pdf"}
         ],
         "description": "Gardasil is a vaccine developed by Merck & Co., Inc. to protect against human papillomavirus (HPV) infection. It provides protection against the most common HPV types that cause cervical cancer, other genital cancers, and genital warts.",
         "link": "https://www.merck.com/product/usa/pi_circulars/g/gardasil/gardasil_pi.pdf",
@@ -275,8 +270,7 @@
             { "manufacturerId": 1 }
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 }
+            { "licenserId": 1, "link": "https://www.fda.gov/media/151994/download" }
         ],
         "description": "Pfizer’s TBE vaccine, marketed under the brand names FSME-Immun® and TicoVac™ in Europe, and TICOVAC™ in the U.S., is developed using a master ‘seed’ virus that is similar to the TBE virus found in nature. It is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. It is designed to provide protection against TBE and is used in regions where the disease is endemic.",
         "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
@@ -287,6 +281,9 @@
         "name": "Valneva VLA1553 Chikungunya Vaccine",
         "vaccineId": 13,
         "manufacturers": [
+        ],
+        "licensers": [
+            { "licenserId": 1, "link": "https://www.fda.gov/files/vaccines%2C%20blood%20%26%20biologics/published/Package-Insert-IXCHIQ.pdf" }
         ],
         "introduction": {
             "General Information": {

@@ -164,7 +164,7 @@ td {
 
 .selectable {
     color: $selectable;
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 
 .selectable:hover {
