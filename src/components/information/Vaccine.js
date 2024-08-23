@@ -128,19 +128,21 @@ const Vaccine = ({
                     <table className='table table-light table-striped w-100 m-0'>
                         <thead>
                             <tr>
-                                <th>Licenser</th>
+                                <th className='text-center'>Link</th>
+                                <th className='text-center'>Licensing/ SmPC</th>
                                 <th>Indication</th>
-                                <th>Date of Approval</th>
-                                <th>Number of Doses Given</th>
+                                <th className='text-center'>Date of Approval</th>
+                                <th className='text-center'>Number of Doses Given</th>
                             </tr>
                         </thead>
                         <tbody>
                             {selectedVaccine.licensingDates.map((licensingDate, index) => (
                             <React.Fragment key={index}>
                                 <tr>
-                                    <td><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
+                                    <td className='text-center'><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></td>
+                                    <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
                                     <td>{licensingDate.type ? licensingDate.type : '-'}</td>
-                                    <td>
+                                    <td className='text-center'>
                                         <a 
                                         href={licensingDate.source} 
                                         target="_blank" 
@@ -149,7 +151,7 @@ const Vaccine = ({
                                         {licensingDate.date}
                                         </a>
                                     </td>
-                                    <td>?</td>
+                                    <td className='text-center'>{licensingDate.doses ? licensingDate.doses : `-`}</td>
                                 </tr>
                             </React.Fragment>
                             ))}

@@ -29,10 +29,10 @@ const Licenser = ({
     getVaccinesByLicenser
 }) => {
     return <div className='slide-left'>
-        <h1 className='heading text-primary pt-2'>{selectedLicenser.fullName} ({selectedLicenser.name})</h1>
+        <h1 className='heading text-primary pt-2'>{selectedLicenser.fullName}{selectedLicenser.country && ` (${selectedLicenser.country})`}</h1>
         {selectedLicenser.description}
         <div className='table-responsive'>
-            <table className='table table-light w-100 m-0 mt-3'>
+            {getVaccinesByLicenser(selectedLicenser).length !== 0 ? <table className='table table-light w-100 m-0 mt-3'>
                 <thead>
                     <tr>
                         <th>Tradename</th>
@@ -49,7 +49,7 @@ const Licenser = ({
                     </tr>
                     ))}
                 </tbody>
-            </table>
+            </table> : ``}
         </div>
     </div>
 }

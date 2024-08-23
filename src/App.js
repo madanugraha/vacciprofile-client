@@ -247,15 +247,15 @@
          */
 
         const filterListByStartingAlphabet = useCallback((list) => {
+            const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : 'name';
             const filteredList = activeFilters.firstAlphabet.toLowerCase() !== '' 
                 ? list.filter(item => {
-                    const startsWithAlphabet = item.name.toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
                     return startsWithAlphabet;
                 }) 
                 : list;
             return filteredList;
-        }, [activeFilters.firstAlphabet]);
-        
+        }, [activeFilters.firstAlphabet, activeTab]);
 
         /**
          * Filters the list of manufacturers based on the search keyword.
@@ -365,7 +365,7 @@
         
         const filterLicensersByAlphabetAndSearch = useCallback((keyword) => {
             return filterListByStartingAlphabet(licensersList).filteredList.filter(licenser => {
-                const licenserMatch = licenser.fullName.toLowerCase().includes(keyword) ||
+                const licenserMatch = licenser.acronym.toLowerCase().includes(keyword) ||
                                     licenser.description.toLowerCase().includes(keyword);
                 
                 if (licenserMatch) return true;
@@ -420,11 +420,14 @@
 
         const sortLicensers = useCallback((list) => {
             const customOrder = ['FDA', 'EMA', 'WHO'];
-
             return list.slice().sort((a, b) => {
-                const indexA = customOrder.indexOf(a.name);
-                const indexB = customOrder.indexOf(b.name);
-
+                if (!a.acronym || !b.acronym) {
+                    return (a.acronym ? 1 : -1) - (b.acronym ? 1 : -1);
+                }
+        
+                const indexA = customOrder.indexOf(a.acronym);
+                const indexB = customOrder.indexOf(b.acronym);
+        
                 if (indexA !== -1 && indexB !== -1) {
                     return indexA - indexB;
                 }
@@ -434,7 +437,7 @@
                 if (indexB !== -1) {
                     return 1;
                 }
-                return a.name.localeCompare(b.name);
+                return a.acronym.localeCompare(b.acronym);
             });
         }, []);
 
@@ -530,10 +533,6 @@
             setVaccinesList(vaccines);
             setLicensersList(licensers);
         },[])
-
-        // useEffect(()=>{
-        //     filterListsByAlphabetAndSearch();
-        // },[activeTab, pathogensList, vaccinesList, manufacturersList, licensersList, filterListsByAlphabetAndSearch])
 
         useEffect(() => {
             filterListsByAlphabetAndSearch();

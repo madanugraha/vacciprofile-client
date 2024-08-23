@@ -301,21 +301,42 @@
                 "Pipeline products - detailed information (TPP)": ""
             }
         },
-        "productProfile": {
-            "name": "Short Target Product Profile Phase 3:<br/>Valnea VLA1533 - Chikungunya vaccine (fast track)",
-            "composition": "Monovalent live-attuned <br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))",
-            "strainCoverage": "All strains",
-            "indication": "'Adults and children'-P3:>18 years in endemic regions",
-            "dosing": "Single dose i.m.",
-            "immunogenicity": "Descriptive only (100% responders after 1 dose)",
-            "efficacyEndpointsPhase3": "Immunogenicity (NT vs. surrogate) day 28",
-            "efficacyData": "Surrogate 'protective titer'",
-            "durationOfProtection": "Unknown, possibly lifelong",
-            "coAdministration": "None",
-            "reactogenicity": "Target? Similar to TdaP or other?",
-            "safety": "N=4,000 US adults",
-            "vaccinationGoal": "Individual protection",
-            "others": "Fast track and Breakthrough Designation (FDA), PRIME (EMA)"
-        }
+        "productProfile": [
+            {
+                "type": "ema",
+                "name": "Short Target Product Profile Phase 3:<br/>Valnea VLA1533 - Chikungunya vaccine (fast track)",
+                "composition": "Monovalent live-attuned <br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))",
+                "strainCoverage": "All strains",
+                "indication": "'Adults and children'-P3:>18 years in endemic regions",
+                "dosing": "Single dose i.m.",
+                "immunogenicity": "Descriptive only (100% responders after 1 dose)",
+                "efficacyEndpointsPhase3": "Immunogenicity (NT vs. surrogate) day 28",
+                "efficacyData": "Surrogate 'protective titer'",
+                "durationOfProtection": "Unknown, possibly lifelong",
+                "coAdministration": "None",
+                "reactogenicity": "Target? Similar to TdaP or other?",
+                "safety": "N=4,000 US adults",
+                "vaccinationGoal": "Individual protection",
+                "others": "Fast track and Breakthrough Designation (FDA), PRIME (EMA)"
+            },
+            {
+                "type": "fda",
+                "name": "FDA-Product Profile: MVA-BN (JYNNEOS®) (MAH: Bavarian Nordic A/S)<br/>Suspension for injection; smallpox and monkeypox vaccine (Live attenuated, non-replicating)",
+                "composition": "1 dose (0.5mL) contains modified vaccinia Ankara-Bavarian Nordic live virus (0.5x10% to 3.95x10 Inf.U); produced in chick embryo cells; storage: freezer, -20°C /refrigerator; shelf life: up to 3 yrs. at -20°C±10°C, 4 weeks at 2-8°C.",
+                "strainCoverage": "Smallpox and monkeypox viruses.",
+                "indication": "Active immunization against smallpox and mpox in adults ≥ 18 years at high risk of infection. To be used based on official recommendations.",
+                "dosing": "2 doses (0.5ml each); 4-week interval; S.C.<br/>Booster: limited data available, if necessary single dose in healthy adults and 2 doses in immunocompromised patients (0, >28day).",
+                "contraindication": "Hypersensitivity (administered if benefits > risk); limited data in pregnancy; no data in breastfeeding (administered if benefits > risk).",
+                "immunogenicity": "Immunogenicity was assessed by ELISA and PRNT; percentage of seroresponders: 2 doses, 4wks. Interval, in Vaccinia-naive individuals, 42 days f/u, 77.2-99.8%; 2 doses, 4 wks. Interval, in Vaccinia-naive individuals, 42 days f/u, 77.2-99.8%; 2 doses, 4 wks. Interval, in vaccinia-experienced individuals, 42 days f/u, 85.5-100%.",
+                "efficacyEndpointsPhase3": "Challenge study in NHP: 80-100% reduction in mortality; VEy based on immunogenicity and animal challenge studies.",
+                "efficacyData": "VEs not included in the label:\nVEs against mpox (Epic study): 1 dose, 35.8% (95% CI, 22.1; 47.1); 2 doses, 66.0% (95%CI,47.4; 78.1).\nVEs against mpox (Multijurisdictional study): 1 dose, 75.2% (95% CI, 61.2; 84.2); 2 doses, 85.9% (95% CI, 73.8; 92.4).\nVEs against mpox (New York state study): 1 dose, 68% (95% CI,25; 87), 2 doses, 89% (95% CI,44; 98).",
+                "durationOfProtection": "Unknown.",
+                "coAdministration": "No data on the concomitant use with other vaccines.",
+                "reactogenicity": "Vaccine-naive healthy adults: injection site pain (84.9%), redness (60.8%), swelling (51.6%), induration (45.4%), and itching (43.1%), muscle pain (42.8%), headache (34.8%), fatigue(30.4%), nausea (17.3%) and chills (10.4%); healthy adults previously vaccinated with smallpox vaccine: injection site redness (80.9%), pain (79.5%), induration (70.4%), swelling (67.2%), and itching (32.0%), fatigue (33.5%), headache (27.6%), and muscle pain (21.5%); similar reactogenicity in HIV-infected patients and adults with atopic dermatitis.",
+                "safety": "Higher frequency of injection site erythma and swelling, headache, myalgia, chills, nausea, and fatigue in atopic dermatitis patients; May cause flare-ups or worsening skin condition in atopic dermatitis patients.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/efficacy/effectiveness data in <18 yrs. and ≥ 65 yrs.; lower immune response in HIV-infected individuals; no data in other immunosuppressed individuals; dose intervals of less than 28 days should be avoided in immunosuppressed individuals.; authorization under exceptional circumstances; vial temperature should be 8-25°C before use."
+            }
+        ]
     }
 ]

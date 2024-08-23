@@ -66,7 +66,7 @@ const Sidebar = ({
 
     const licenserFilter = ["FDA", "EMA", "WHO"];
     const filteredSidebarList = activeTab === 'Licenser' 
-        ? sidebarList.filter(item => licenserFilter.includes(item.name))
+        ? sidebarList.filter(item => licenserFilter.includes(item.acronym))
         : sidebarList;
 
     const handleClickSidebar = item => {
@@ -133,27 +133,26 @@ const Sidebar = ({
                         }`} 
                         onClick={() => handleClickSidebar(item)}
                     >
-                        {italizeScientificNames(item.name)}
+                        {activeTab==="Pathogen" ? italizeScientificNames(item.name) : activeTab!=="Licenser" ? item.name : item.acronym}
                     </div>
                 ))}
                 {activeTab === 'Licenser' && (
                     <div 
                         key='Countries'
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${
-                            showCountries ? 'active' : 'inactive'
+                            showCountries ? 'active-country' : 'inactive'
                         }`} 
                         onClick={() => handleClickSidebar({ name: 'Countries' })}
-                    >
-                        Countries
+                    >Country Authorities
                     </div>
                 )}
-                {showCountries && sidebarList.filter(item => !licenserFilter.includes(item.name)).map((item, i) => (
+                {showCountries && sidebarList.filter(item=>!licenserFilter.includes(item.acronym)).map((item, i) => (
                     <div 
                         key={`country-${i}`} 
-                        className="sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1"
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${
+                            selectedLicenser === item ? 'active' : 'inactive' }`} 
                         onClick={() => handleClickSidebar(item)}
-                    >
-                        {italizeScientificNames(item.name)}
+                    >{item.acronym}{item.country && `, ${item.country}`}
                     </div>
                 ))}
             </div>

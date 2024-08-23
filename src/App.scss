@@ -111,7 +111,7 @@ td {
     position: absolute;
     right: 0;
     top: 1px;
-    width: 55.5vw;
+    width: 53vw;
 }
 
 // Sidebar
@@ -135,6 +135,12 @@ td {
 
 .sidebar-item.active {
     background-color: $sidebar-selected !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.sidebar-item.active-country {
+    background-color: rgb(134, 134, 120) !important;
     color: white !important;
     cursor: pointer;
 }
@@ -187,11 +193,16 @@ td {
 
 .alphabet-item:hover {
     cursor: pointer;
+    background-color: rgb(161, 161, 161);
+    padding: 0 8px;
+    margin: 0 -8px;
+    color: white;
 }
 
 .alphabet-item-selected {
     background-color: $alphabet;
     padding: 0 8px;
+    margin: 0 -8px;
     color: white;
 }
 
