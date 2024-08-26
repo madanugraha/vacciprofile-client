@@ -1,14 +1,3 @@
-## Members
-
-<dl>
-<dt><a href="#openModal">openModal</a> ⇒ <code>void</code></dt>
-<dd><p>This function determines sets the modal Open</p>
-</dd>
-<dt><a href="#openModal">openModal</a> ⇒ <code>void</code></dt>
-<dd><p>This function determines sets the modal Close</p>
-</dd>
-</dl>
-
 ## Objects
 
 <dl>
@@ -81,22 +70,14 @@ with the filtered list of items that match the search criteria.</p>
 <dd><p>A component that renders a list of alphabet letters as clickable items.
 Highlights the active filter alphabet and triggers a callback function when an alphabet is clicked.</p>
 </dd>
+<dt><a href="#openModal">openModal()</a> ⇒ <code>void</code></dt>
+<dd><p>This function determines sets the modal Open</p>
+</dd>
+<dt><a href="#openModal">openModal()</a> ⇒ <code>void</code></dt>
+<dd><p>This function determines sets the modal Close</p>
+</dd>
 </dl>
 
-<a name="openModal"></a>
-
-## openModal ⇒ <code>void</code>
-This function determines sets the modal Open
-
-**Kind**: global variable  
-**Returns**: <code>void</code> - This function does not return a value. It updates the `isOpen` state directly.  
-<a name="openModal"></a>
-
-## openModal ⇒ <code>void</code>
-This function determines sets the modal Close
-
-**Kind**: global variable  
-**Returns**: <code>void</code> - This function does not return a value. It updates the `isOpen` state directly.  
 <a name="Footer"></a>
 
 ## Footer ⇒ <code>JSX.Element</code>
@@ -212,6 +193,7 @@ Vaccine Component
 * [Vaccine](#Vaccine) ⇒ <code>JSX.Element</code>
     * [~formatContent(content)](#Vaccine..formatContent) ⇒ <code>Array.&lt;React.ReactNode&gt;</code>
     * [~formatHeading(content)](#Vaccine..formatHeading) ⇒ <code>Array.&lt;React.ReactNode&gt;</code>
+    * [~removeBrTags(text)](#Vaccine..removeBrTags) ⇒ <code>string</code>
 
 <a name="Vaccine..formatContent"></a>
 
@@ -244,6 +226,22 @@ Formats the given content by:1. Splitting it at `<br />` or `<br>` tags and ins
 **Example**  
 ```js
 // Example usageconst content = "Monovalent live-attuned <br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatHeading = formatHeading(content);// formatHeading will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
+```
+<a name="Vaccine..removeBrTags"></a>
+
+### Vaccine~removeBrTags(text) ⇒ <code>string</code>
+Removes all <br/> tags from a given string.
+
+**Kind**: inner method of [<code>Vaccine</code>](#Vaccine)  
+**Returns**: <code>string</code> - - The input string with all <br/> tags removed.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| text | <code>string</code> | The input string that may contain <br/> tags. |
+
+**Example**  
+```js
+const input = "This is a line.<br/>This is another line.<br/>";const output = removeBrTags(input);console.log(output); // "This is a line.This is another line."
 ```
 <a name="VaccineListTable"></a>
 
@@ -653,3 +651,17 @@ A component that renders a list of alphabet letters as clickable items.Highligh
 ```js
 const activeFilters = { firstAlphabet: 'A' };const handleAlphabetChange = (letter) => {    return (    <Alphabets       activeFilters={activeFilters}      handleAlphabetChange={handleAlphabetChange}    />  );};
 ```
+<a name="openModal"></a>
+
+## openModal() ⇒ <code>void</code>
+This function determines sets the modal Open
+
+**Kind**: global function  
+**Returns**: <code>void</code> - This function does not return a value. It updates the `isOpen` state directly.  
+<a name="openModal"></a>
+
+## openModal() ⇒ <code>void</code>
+This function determines sets the modal Close
+
+**Kind**: global function  
+**Returns**: <code>void</code> - This function does not return a value. It updates the `isOpen` state directly.  

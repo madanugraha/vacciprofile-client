@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~removeBrTags">removeBrTags</a></li><li data-type='method'><a href="Vaccine.html#~removeBrTags">removeBrTags</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
     
 </nav>
 
@@ -219,7 +219,7 @@
 
             
 
-            <td class="description last"><p>The currently active tab, which can be 'Manufacturer', 'Product', or 'Pathogen'.</p></td>
+            <td class="description last"><p>The currently active tab, which can be 'Manufacturer', 'Vaccine', or 'Pathogen'.</p></td>
         </tr>
 
     
@@ -243,7 +243,7 @@
 
             
 
-            <td class="description last"><p>Function to set the type of details to be displayed ('Manufacturer', 'Product', or 'Pathogen').</p></td>
+            <td class="description last"><p>Function to set the type of details to be displayed ('Manufacturer', 'Vaccine', or 'Pathogen').</p></td>
         </tr>
 
     
@@ -291,7 +291,7 @@
 
             
 
-            <td class="description last"><p>The currently selected product (vaccine).</p></td>
+            <td class="description last"><p>The currently selected vaccine.</p></td>
         </tr>
 
     
@@ -387,7 +387,7 @@
 
             
 
-            <td class="description last"><p>Function to update the selected product (vaccine).</p></td>
+            <td class="description last"><p>Function to update the selected vaccine.</p></td>
         </tr>
 
     
@@ -604,284 +604,6 @@
 
     
 
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    <h4 class="name" id="~handleClickSidebar"><span class="type-signature type-signature-inner">(inner) </span>handleClickSidebar<span class="signature">(item)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Handles the click events for sidebar items based on the active tab.
-It selects or unselects an item depending on the current selection state.
-The behavior varies depending on whether the item belongs to the Manufacturer, Product, or Pathogen tab.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_Sidebar.js.html">components/Sidebar.js</a>, <a href="components_Sidebar.js.html#line73">line 73</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>item</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The item object that is clicked.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="~handleClickSidebar"><span class="type-signature type-signature-inner">(inner) </span>handleClickSidebar<span class="signature">(item)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Handles the click events for sidebar items based on the active tab.
-It selects or unselects an item depending on the current selection state.
-The behavior varies depending on whether the item belongs to the Manufacturer, Product, or Pathogen tab.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_Sidebar.js.html">components/Sidebar.js</a>, <a href="components_Sidebar.js.html#line73">line 73</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>item</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The item object that is clicked.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
     
 
     
@@ -1073,7 +795,7 @@ The behavior varies depending on whether the item belongs to the Manufacturer, P
 
             
 
-            <td class="description last"><p>The currently active tab, which can be 'Manufacturer', 'Product', or 'Pathogen'.</p></td>
+            <td class="description last"><p>The currently active tab, which can be 'Manufacturer', 'Vaccine', or 'Pathogen'.</p></td>
         </tr>
 
     
@@ -1097,7 +819,7 @@ The behavior varies depending on whether the item belongs to the Manufacturer, P
 
             
 
-            <td class="description last"><p>Function to set the type of details to be displayed ('Manufacturer', 'Product', or 'Pathogen').</p></td>
+            <td class="description last"><p>Function to set the type of details to be displayed ('Manufacturer', 'Vaccine', or 'Pathogen').</p></td>
         </tr>
 
     
@@ -1145,7 +867,7 @@ The behavior varies depending on whether the item belongs to the Manufacturer, P
 
             
 
-            <td class="description last"><p>The currently selected product (vaccine).</p></td>
+            <td class="description last"><p>The currently selected vaccine.</p></td>
         </tr>
 
     
@@ -1241,7 +963,7 @@ The behavior varies depending on whether the item belongs to the Manufacturer, P
 
             
 
-            <td class="description last"><p>Function to update the selected product (vaccine).</p></td>
+            <td class="description last"><p>Function to update the selected vaccine.</p></td>
         </tr>
 
     
@@ -1459,284 +1181,6 @@ The behavior varies depending on whether the item belongs to the Manufacturer, P
     
 
     
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    <h4 class="name" id="~handleClickSidebar"><span class="type-signature type-signature-inner">(inner) </span>handleClickSidebar<span class="signature">(item)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Handles the click events for sidebar items based on the active tab.
-It selects or unselects an item depending on the current selection state.
-The behavior varies depending on whether the item belongs to the Manufacturer, Product, or Pathogen tab.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_Sidebar.js.html">components/Sidebar.js</a>, <a href="components_Sidebar.js.html#line73">line 73</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>item</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The item object that is clicked.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="~handleClickSidebar"><span class="type-signature type-signature-inner">(inner) </span>handleClickSidebar<span class="signature">(item)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Handles the click events for sidebar items based on the active tab.
-It selects or unselects an item depending on the current selection state.
-The behavior varies depending on whether the item belongs to the Manufacturer, Product, or Pathogen tab.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_Sidebar.js.html">components/Sidebar.js</a>, <a href="components_Sidebar.js.html#line73">line 73</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>item</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The item object that is clicked.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
 
     
 
@@ -1755,7 +1199,7 @@ The behavior varies depending on whether the item belongs to the Manufacturer, P
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 15 2024 10:35:32 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 18:06:45 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

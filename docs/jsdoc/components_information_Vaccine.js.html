@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~removeBrTags">removeBrTags</a></li><li data-type='method'><a href="Vaccine.html#~removeBrTags">removeBrTags</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
     
 </nav>
 
@@ -45,7 +45,7 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React from 'react';
+            <pre class="prettyprint source linenums"><code>import React, { useState } from 'react';
 import ReactModal from "react-modal";
 
 /**
@@ -80,11 +80,13 @@ const Vaccine = ({
     convertCamelCaseToReadable 
 }) => {
 
-    const [modalIsOpen, setModalIsOpen] = React.useState(false);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedVacciProfile, setSelectedVacciProfile] = useState({});
 
     /**
      * This function determines sets the modal Open
      * 
+     * @function
      * @name openModal
      * 
      * @returns {void} This function does not return a value. It updates the `isOpen` state directly.
@@ -97,6 +99,7 @@ const Vaccine = ({
     /**
      * This function determines sets the modal Close
      * 
+     * @function
      * @name openModal
      * 
      * @returns {void} This function does not return a value. It updates the `isOpen` state directly.
@@ -113,6 +116,7 @@ const Vaccine = ({
      * 
      * This function takes a string with `&lt;br />` or `&lt;br>` tags and returns an array of React elements. The string is split at each `&lt;br />` tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.
      * 
+     * @function
      * @param {string} content - The string containing text, `&lt;br />` or `&lt;br>` tags, and possibly single apostrophes.
      * @returns {React.ReactNode[]} An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original `&lt;br />` tags, and apostrophes are replaced with double quotes.
      * 
@@ -124,11 +128,18 @@ const Vaccine = ({
      * // formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
      */
     const formatContent = content => {
+        if (typeof content === 'object' &amp;&amp; content !== null) {
+            content = JSON.stringify(content, null, 2); 
+        }
+        if (typeof content !== 'string') {
+            return &lt;span>{String(content)}&lt;/span>; 
+        }
         const updatedContent = content.replace(/'/g, '"');
-        return updatedContent.split(/&lt;br\s*\/?>/gi).map((part, index) => (
+        const parts = updatedContent.split(/&lt;br\s*\/?>/gi);
+        return parts.map((part, index) => (
             &lt;React.Fragment key={index}>
                 {part}
-                {index &lt; updatedContent.split(/&lt;br\s*\/?>/gi).length - 1 &amp;&amp; &lt;br />}
+                {index &lt; parts.length - 1 &amp;&amp; &lt;br />}
             &lt;/React.Fragment>
         ));
     };
@@ -140,6 +151,7 @@ const Vaccine = ({
      * 
      * This function takes a string with `&lt;br />` or `&lt;br>` tags and returns an array of React elements. The string is split at each `&lt;br />` tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.
      * 
+     * @function
      * @param {string} content - The string containing text, `&lt;br />` or `&lt;br>` tags, and possibly single apostrophes.
      * @returns {React.ReactNode[]} An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original `&lt;br />` tags, and apostrophes are replaced with double quotes.
      * 
@@ -152,19 +164,37 @@ const Vaccine = ({
      */
 
     const formatHeading = content => {
+        if (!content) {
+            return &lt;span>No content available&lt;/span>;
+        }
         const updatedContent = content.replace(/'/g, '"');
-        return updatedContent.split(/&lt;br\s*\/?>/gi).map((part, index) => (
-            &lt;span key={index} className={`${index===1 ? `text-hover` : ``}`}>
+        return updatedContent.split(/&lt;br\s*\/?>/gi).map((part, index, array) => (
+            &lt;span key={index} className={`${index === 1 ? `text-hover` : ``}`}>
                 {part}
-                {index &lt; updatedContent.split(/&lt;br\s*\/?>/gi).length - 1 &amp;&amp; &lt;br />}
+                {index &lt; array.length - 1 &amp;&amp; &lt;br />}
             &lt;/span>
         ));
     };
 
+    /**
+     * Removes all &lt;br/> tags from a given string.
+     *
+     * @param {string} text - The input string that may contain &lt;br/> tags.
+     * @returns {string} - The input string with all &lt;br/> tags removed.
+     *
+     * @example
+     * const input = "This is a line.&lt;br/>This is another line.&lt;br/>";
+     * const output = removeBrTags(input);
+     * console.log(output); // "This is a line.This is another line."
+     */
+    function removeBrTags(text) {
+        return text.replace(/&lt;br\s*\/?>/gi, '');
+    }
+
     return &lt;div className='position-relative slide-left'>
                 &lt;h1 className='heading text-primary text-center'>{selectedVaccine.name}
-                    {/* {selectedVaccine.packageInsertLink &amp;&amp; &lt;i class="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}>&lt;/i>} */}
-                    {selectedVaccine.productProfile &amp;&amp; &lt;i class="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}>&lt;/i>}
+                    {/* {selectedVaccine.packageInsertLink &amp;&amp; &lt;i className="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}>&lt;/i>} */}
+                    {selectedVaccine.productProfile &amp;&amp; &lt;i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}>&lt;/i>}
                 &lt;/h1>
                 {/* &lt;p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}&lt;/p> */}
                 {selectedVaccine.licensingDates &amp;&amp; (
@@ -182,9 +212,9 @@ const Vaccine = ({
                             {selectedVaccine.licensingDates.map((licensingDate, index) => (
                             &lt;React.Fragment key={index}>
                                 &lt;tr>
-                                    &lt;td className='text-center'>&lt;i class="fa-solid fa-file-lines text-dark hover-cursor">&lt;/i>&lt;/td>
+                                &lt;td className='text-center'>&lt;a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">&lt;i class="fa-solid fa-file-lines text-dark hover-cursor">&lt;/i>&lt;/a>&lt;/td>
                                     &lt;td className='text-center'>&lt;a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}&lt;/a>&lt;/td>
-                                    &lt;td>{licensingDate.type ? licensingDate.type : '-'}&lt;/td>
+                                    &lt;td>{licensingDate.indication ? licensingDate.indication : '-'}&lt;/td>
                                     &lt;td className='text-center'>
                                         &lt;a 
                                         href={licensingDate.source} 
@@ -200,8 +230,33 @@ const Vaccine = ({
                             ))}
                         &lt;/tbody>
                     &lt;/table>
-                )}
-                {selectedVaccine.introduction &amp;&amp; (
+                )} 
+                {selectedVaccine.productProfiles &amp;&amp; (
+                &lt;table className='table table-striped w-100 m-0 mb-2'>
+                    &lt;thead>
+                        &lt;tr>
+                            &lt;th colSpan={2} className='text-center fw-bold'>VacciProfiles&lt;/th>
+                        &lt;/tr>
+                    &lt;/thead>
+                    &lt;tbody>
+                        {selectedVaccine.productProfiles.map((profile, index) => (
+                            &lt;tr key={index}>
+                                &lt;td className='text-center'>
+                                    &lt;i
+                                        className="fa-solid fa-file-medical text-hover hover-cursor"
+                                        onClick={() => {
+                                            setSelectedVacciProfile(profile);
+                                            openModal();
+                                        }}
+                                    >&lt;/i>
+                                &lt;/td>
+                                &lt;td>{removeBrTags(profile.name)}&lt;/td>
+                            &lt;/tr>
+                        ))}
+                    &lt;/tbody>
+                &lt;/table>
+            )}
+            {selectedVaccine.introduction &amp;&amp; (
             &lt;table className='table table-striped w-100 m-0 mb-2'>
                 &lt;tbody>
                     {Object.entries(selectedVaccine.introduction).map(([category, details], index) => (
@@ -222,12 +277,12 @@ const Vaccine = ({
         )}
         &lt;p className='mb-0 ms-1'>&lt;a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...&lt;/a>&lt;/p>
         &lt;span className='last-updated text-muted position-absolute end-0 bottom-0 me-1'>Last updated: {selectedVaccine.lastUpdated}&lt;/span>
-        {selectedVaccine.productProfile &amp;&amp; &lt;ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
+        {selectedVacciProfile &amp;&amp; &lt;ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
             &lt;i class="fa-solid fa-xmark fa-lg modal-close-btn position-absolute end-0 hover-cursor" onClick={closeModal}>&lt;/i>
-            &lt;h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVaccine.productProfile.name)}&lt;/h1>
+            &lt;h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVacciProfile.name)}&lt;/h1>
             &lt;table className='table table-light w-100 m-0'>
                 &lt;tbody>
-                    {Object.entries(selectedVaccine.productProfile).map(([key, value], index) => {
+                    {Object.entries(selectedVacciProfile).map(([key, value], index) => {
                         if (key==="name") return null;
                         return (
                             &lt;tr key={index}>
@@ -256,7 +311,7 @@ export default Vaccine;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 10:25:57 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 18:06:45 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

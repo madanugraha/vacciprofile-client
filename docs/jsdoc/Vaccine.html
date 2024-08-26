@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~removeBrTags">removeBrTags</a></li><li data-type='method'><a href="Vaccine.html#~removeBrTags">removeBrTags</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
     
 </nav>
 
@@ -81,7 +81,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line3">line 3</a>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line4">line 4</a>
     </li></ul></dd>
     
 
@@ -128,7 +128,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Render the Vaccine component with a sample vaccine and italizeScientificNames function&lt;Vaccine   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   italizeScientificNames={text => text.replace(/(scientificName)/gi, '&lt;i>$1&lt;/i>')}/></code></pre>
+    <pre class="prettyprint"><code>// Render the Vaccine component with a sample vaccine and italizeScientificNames function&lt;Vaccine   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   convertCamelCaseToReadable={key => key.replace(/([A-Z])/g, ' $1').toLowerCase()}/></code></pre>
 
 
 
@@ -347,7 +347,7 @@
 
         <tr>
             
-                <td class="name"><code>italizeScientificNames</code></td>
+                <td class="name"><code>convertCamelCaseToReadable</code></td>
             
 
             <td class="type">
@@ -364,7 +364,7 @@
 
             
 
-            <td class="description last"><p>Function that italicizes scientific names in the description.</p></td>
+            <td class="description last"><p>Function that converts camel case strings to a readable format.</p></td>
         </tr>
 
     
@@ -437,6 +437,1012 @@
 
     
 
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="~formatContent"><span class="type-signature type-signature-inner">(inner) </span>formatContent<span class="signature">(content)</span><span class="type-signature"> &rarr; {Array.&lt;React.ReactNode>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Formats the given content by:</p>
+<ol>
+<li>Splitting it at <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and inserting React line break elements (<code>&lt;br /&gt;</code>).</li>
+<li>Replacing any single apostrophes <code>'</code> with double inverted commas <code>&quot;</code> in the content.</li>
+</ol>
+<p>This function takes a string with <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and returns an array of React elements. The string is split at each <code>&lt;br /&gt;</code> tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line83">line 83</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>// Example usageconst content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatContent = formatContent(content);// formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string containing text, <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags, and possibly single apostrophes.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original <code>&lt;br /&gt;</code> tags, and apostrophes are replaced with double quotes.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;React.ReactNode></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~formatContent"><span class="type-signature type-signature-inner">(inner) </span>formatContent<span class="signature">(content)</span><span class="type-signature"> &rarr; {Array.&lt;React.ReactNode>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Formats the given content by:</p>
+<ol>
+<li>Splitting it at <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and inserting React line break elements (<code>&lt;br /&gt;</code>).</li>
+<li>Replacing any single apostrophes <code>'</code> with double inverted commas <code>&quot;</code> in the content.</li>
+</ol>
+<p>This function takes a string with <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and returns an array of React elements. The string is split at each <code>&lt;br /&gt;</code> tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line83">line 83</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>// Example usageconst content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatContent = formatContent(content);// formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string containing text, <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags, and possibly single apostrophes.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original <code>&lt;br /&gt;</code> tags, and apostrophes are replaced with double quotes.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;React.ReactNode></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~formatHeading"><span class="type-signature type-signature-inner">(inner) </span>formatHeading<span class="signature">(content)</span><span class="type-signature"> &rarr; {Array.&lt;React.ReactNode>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Formats the given content by:</p>
+<ol>
+<li>Splitting it at <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and inserting React line break elements (<code>&lt;br /&gt;</code>).</li>
+<li>Replacing any single apostrophes <code>'</code> with double inverted commas <code>&quot;</code> in the content.</li>
+</ol>
+<p>This function takes a string with <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and returns an array of React elements. The string is split at each <code>&lt;br /&gt;</code> tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line119">line 119</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>// Example usageconst content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatHeading = formatHeading(content);// formatHeading will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string containing text, <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags, and possibly single apostrophes.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original <code>&lt;br /&gt;</code> tags, and apostrophes are replaced with double quotes.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;React.ReactNode></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~formatHeading"><span class="type-signature type-signature-inner">(inner) </span>formatHeading<span class="signature">(content)</span><span class="type-signature"> &rarr; {Array.&lt;React.ReactNode>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Formats the given content by:</p>
+<ol>
+<li>Splitting it at <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and inserting React line break elements (<code>&lt;br /&gt;</code>).</li>
+<li>Replacing any single apostrophes <code>'</code> with double inverted commas <code>&quot;</code> in the content.</li>
+</ol>
+<p>This function takes a string with <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and returns an array of React elements. The string is split at each <code>&lt;br /&gt;</code> tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line119">line 119</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>// Example usageconst content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatHeading = formatHeading(content);// formatHeading will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string containing text, <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags, and possibly single apostrophes.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original <code>&lt;br /&gt;</code> tags, and apostrophes are replaced with double quotes.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;React.ReactNode></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~removeBrTags"><span class="type-signature type-signature-inner">(inner) </span>removeBrTags<span class="signature">(text)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Removes all <br/> tags from a given string.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line143">line 143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>const input = "This is a line.&lt;br/>This is another line.&lt;br/>";const output = removeBrTags(input);console.log(output); // "This is a line.This is another line."</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The input string that may contain <br/> tags.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>The input string with all <br/> tags removed.</li>
+</ul>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~removeBrTags"><span class="type-signature type-signature-inner">(inner) </span>removeBrTags<span class="signature">(text)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Removes all <br/> tags from a given string.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line143">line 143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>const input = "This is a line.&lt;br/>This is another line.&lt;br/>";const output = removeBrTags(input);console.log(output); // "This is a line.This is another line."</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The input string that may contain <br/> tags.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>The input string with all <br/> tags removed.</li>
+</ul>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
     
 
     
@@ -490,7 +1496,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line3">line 3</a>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line4">line 4</a>
     </li></ul></dd>
     
 
@@ -537,7 +1543,7 @@
 
     <h5 class="h5-examples">Example</h5>
     
-    <pre class="prettyprint"><code>// Render the Vaccine component with a sample vaccine and italizeScientificNames function&lt;Vaccine   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   italizeScientificNames={text => text.replace(/(scientificName)/gi, '&lt;i>$1&lt;/i>')}/></code></pre>
+    <pre class="prettyprint"><code>// Render the Vaccine component with a sample vaccine and italizeScientificNames function&lt;Vaccine   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   convertCamelCaseToReadable={key => key.replace(/([A-Z])/g, ' $1').toLowerCase()}/></code></pre>
 
 
 
@@ -756,7 +1762,7 @@
 
         <tr>
             
-                <td class="name"><code>italizeScientificNames</code></td>
+                <td class="name"><code>convertCamelCaseToReadable</code></td>
             
 
             <td class="type">
@@ -773,7 +1779,7 @@
 
             
 
-            <td class="description last"><p>Function that italicizes scientific names in the description.</p></td>
+            <td class="description last"><p>Function that converts camel case strings to a readable format.</p></td>
         </tr>
 
     
@@ -847,6 +1853,1012 @@
     
 
     
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="~formatContent"><span class="type-signature type-signature-inner">(inner) </span>formatContent<span class="signature">(content)</span><span class="type-signature"> &rarr; {Array.&lt;React.ReactNode>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Formats the given content by:</p>
+<ol>
+<li>Splitting it at <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and inserting React line break elements (<code>&lt;br /&gt;</code>).</li>
+<li>Replacing any single apostrophes <code>'</code> with double inverted commas <code>&quot;</code> in the content.</li>
+</ol>
+<p>This function takes a string with <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and returns an array of React elements. The string is split at each <code>&lt;br /&gt;</code> tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line83">line 83</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>// Example usageconst content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatContent = formatContent(content);// formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string containing text, <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags, and possibly single apostrophes.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original <code>&lt;br /&gt;</code> tags, and apostrophes are replaced with double quotes.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;React.ReactNode></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~formatContent"><span class="type-signature type-signature-inner">(inner) </span>formatContent<span class="signature">(content)</span><span class="type-signature"> &rarr; {Array.&lt;React.ReactNode>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Formats the given content by:</p>
+<ol>
+<li>Splitting it at <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and inserting React line break elements (<code>&lt;br /&gt;</code>).</li>
+<li>Replacing any single apostrophes <code>'</code> with double inverted commas <code>&quot;</code> in the content.</li>
+</ol>
+<p>This function takes a string with <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and returns an array of React elements. The string is split at each <code>&lt;br /&gt;</code> tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line83">line 83</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>// Example usageconst content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatContent = formatContent(content);// formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string containing text, <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags, and possibly single apostrophes.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original <code>&lt;br /&gt;</code> tags, and apostrophes are replaced with double quotes.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;React.ReactNode></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~formatHeading"><span class="type-signature type-signature-inner">(inner) </span>formatHeading<span class="signature">(content)</span><span class="type-signature"> &rarr; {Array.&lt;React.ReactNode>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Formats the given content by:</p>
+<ol>
+<li>Splitting it at <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and inserting React line break elements (<code>&lt;br /&gt;</code>).</li>
+<li>Replacing any single apostrophes <code>'</code> with double inverted commas <code>&quot;</code> in the content.</li>
+</ol>
+<p>This function takes a string with <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and returns an array of React elements. The string is split at each <code>&lt;br /&gt;</code> tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line119">line 119</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>// Example usageconst content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatHeading = formatHeading(content);// formatHeading will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string containing text, <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags, and possibly single apostrophes.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original <code>&lt;br /&gt;</code> tags, and apostrophes are replaced with double quotes.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;React.ReactNode></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~formatHeading"><span class="type-signature type-signature-inner">(inner) </span>formatHeading<span class="signature">(content)</span><span class="type-signature"> &rarr; {Array.&lt;React.ReactNode>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Formats the given content by:</p>
+<ol>
+<li>Splitting it at <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and inserting React line break elements (<code>&lt;br /&gt;</code>).</li>
+<li>Replacing any single apostrophes <code>'</code> with double inverted commas <code>&quot;</code> in the content.</li>
+</ol>
+<p>This function takes a string with <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags and returns an array of React elements. The string is split at each <code>&lt;br /&gt;</code> tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line119">line 119</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>// Example usageconst content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatHeading = formatHeading(content);// formatHeading will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string containing text, <code>&lt;br /&gt;</code> or <code>&lt;br&gt;</code> tags, and possibly single apostrophes.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original <code>&lt;br /&gt;</code> tags, and apostrophes are replaced with double quotes.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;React.ReactNode></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~removeBrTags"><span class="type-signature type-signature-inner">(inner) </span>removeBrTags<span class="signature">(text)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Removes all <br/> tags from a given string.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line143">line 143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>const input = "This is a line.&lt;br/>This is another line.&lt;br/>";const output = removeBrTags(input);console.log(output); // "This is a line.This is another line."</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The input string that may contain <br/> tags.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>The input string with all <br/> tags removed.</li>
+</ul>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~removeBrTags"><span class="type-signature type-signature-inner">(inner) </span>removeBrTags<span class="signature">(text)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Removes all <br/> tags from a given string.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_information_Vaccine.js.html">components/information/Vaccine.js</a>, <a href="components_information_Vaccine.js.html#line143">line 143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>const input = "This is a line.&lt;br/>This is another line.&lt;br/>";const output = removeBrTags(input);console.log(output); // "This is a line.This is another line."</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The input string that may contain <br/> tags.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>The input string with all <br/> tags removed.</li>
+</ul>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
 
     
 
@@ -865,7 +2877,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 15 2024 10:35:32 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 18:06:45 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
