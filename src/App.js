@@ -511,20 +511,21 @@
          */
 
         const italizeScientificNames = text => {
-            const parts = text.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
-        
-            return (
-                <span>
-                    {parts.map((part, index) => {
-                        const isScientificName = part && scientificNames.some(name => name.toLowerCase() === part.toLowerCase());
-                        return isScientificName ? (
-                            <i key={index}>{part}</i>
-                        ) : (
-                            part
-                        );
-                    })}
-                </span>
-            );
+            if (text) {
+                const parts = text.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
+                return (
+                    <span>
+                        {parts.map((part, index) => {
+                            const isScientificName = part && scientificNames.some(name => name.toLowerCase() === part.toLowerCase());
+                            return isScientificName ? (
+                                <i key={index}>{part}</i>
+                            ) : (
+                                part
+                            );
+                        })}
+                    </span>
+                );
+            } else return <span>{text}</span>
         };
 
         useEffect(()=>{

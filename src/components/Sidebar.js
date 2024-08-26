@@ -65,7 +65,7 @@ const Sidebar = ({
     const [showCountries, setShowCountries] = useState(false);
 
     const licenserFilter = ["FDA", "EMA", "WHO"];
-    const filteredSidebarList = activeTab === 'Licenser' 
+    const filteredLicenserSidebarList = activeTab === 'Licenser' 
         ? sidebarList.filter(item => licenserFilter.includes(item.acronym))
         : sidebarList;
 
@@ -121,7 +121,7 @@ const Sidebar = ({
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
             <div className='sidebar-items overflow-auto'>
-                {filteredSidebarList.map((item, i) => (
+                {filteredLicenserSidebarList.map((item, i) => (
                     <div 
                         key={i} 
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${
@@ -136,7 +136,7 @@ const Sidebar = ({
                         {activeTab==="Pathogen" ? italizeScientificNames(item.name) : activeTab!=="Licenser" ? item.name : item.acronym}
                     </div>
                 ))}
-                {activeTab === 'Licenser' && (
+                {activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (
                     <div 
                         key='Countries'
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${
