@@ -80,11 +80,16 @@ const Vaccine = ({
      * // formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
      */
     const formatContent = content => {
+        if (typeof content !== 'string') {
+            return <span>No content available</span>;
+        }
         const updatedContent = content.replace(/'/g, '"');
-        return updatedContent.split(/<br\s*\/?>/gi).map((part, index) => (
+        const parts = updatedContent.split(/<br\s*\/?>/gi);
+    
+        return parts.map((part, index) => (
             <React.Fragment key={index}>
                 {part}
-                {index < updatedContent.split(/<br\s*\/?>/gi).length - 1 && <br />}
+                {index < parts.length - 1 && <br />}
             </React.Fragment>
         ));
     };
@@ -109,11 +114,14 @@ const Vaccine = ({
      */
 
     const formatHeading = content => {
+        if (!content) {
+            return <span>No content available</span>;
+        }
         const updatedContent = content.replace(/'/g, '"');
-        return updatedContent.split(/<br\s*\/?>/gi).map((part, index) => (
-            <span key={index} className={`${index===1 ? `text-hover` : ``}`}>
+        return updatedContent.split(/<br\s*\/?>/gi).map((part, index, array) => (
+            <span key={index} className={`${index === 1 ? `text-hover` : ``}`}>
                 {part}
-                {index < updatedContent.split(/<br\s*\/?>/gi).length - 1 && <br />}
+                {index < array.length - 1 && <br />}
             </span>
         ));
     };
@@ -128,7 +136,7 @@ const Vaccine = ({
                     <table className='table table-light table-striped w-100 m-0'>
                         <thead>
                             <tr>
-                                <th className='text-center'>Link</th>
+                                <th className='text-center'>Product Profile</th>
                                 <th className='text-center'>Licensing/ SmPC</th>
                                 <th>Indication</th>
                                 <th className='text-center'>Date of Approval</th>
@@ -139,7 +147,7 @@ const Vaccine = ({
                             {selectedVaccine.licensingDates.map((licensingDate, index) => (
                             <React.Fragment key={index}>
                                 <tr>
-                                    <td className='text-center'><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></td>
+                                    <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td>
                                     <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
                                     <td>{licensingDate.type ? licensingDate.type : '-'}</td>
                                     <td className='text-center'>
