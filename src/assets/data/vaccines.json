@@ -279,12 +279,14 @@
     },
     {
         "name": "Valneva VLA1553 Chikungunya Vaccine",
+        "pathogenId": 4,
         "vaccineId": 13,
         "manufacturers": [
         ],
         "licensers": [
             { "licenserId": 1, "link": "https://www.fda.gov/files/vaccines%2C%20blood%20%26%20biologics/published/Package-Insert-IXCHIQ.pdf" }
         ],
+        "description": "-",
         "introduction": {
             "General Information": {
                 "Map Vaccine Preventable Diseases": "Map by disease",

@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>components/information/Licenser.js - Documentation</title>
+    <title>components/Footer.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,7 +35,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">components/information/Licenser.js</h1>
+    <h1 class="page-title">components/Footer.js</h1>
     
 
     
@@ -48,60 +48,25 @@
             <pre class="prettyprint source linenums"><code>import React from 'react';
 
 /**
- * Licenser Component
+ * Footer Component
  *
  * @component
- * @namespace Licenser
- * @param {Object} props - The component accepts handleSelectVaccine, selectedLicenser, and getVaccinesByLicenser as props.
- * @param {Function} props.handleSelectVaccine - Function that gets triggered once a vaccine is selected.
- * @param {string} props.selectedLicenser - The licenser that is selected.
- * @param {Function} props.getVaccinesByLicenser - Function that gets a list of vaccines for a specific licenser.
- * @returns {JSX.Element} The Licenser Information component.
+ * @namespace Footer
+ * @returns {JSX.Element} The Footer component that displays the footer and contact information.
  *
  * @example
- * // Render the Licenser component with dummy data and functions
- * &lt;Licenser 
- *   handleSelectVaccine={vaccineName => console.log('Selected vaccine:', vaccineName)}
- *   selectedLicenser="FDA"
- *   getVaccinesByLicenser={() => [
- *     { name: 'Vaccine A', vaccineType: 'Type 1', comments: 'Effective', revenue: '$1M' },
- *     { name: 'Vaccine B', vaccineType: 'Type 2', comments: 'Moderate', revenue: '$500K' }
- *   ]}
- * />
+ * // Example usage of Footer component
+ * &lt;Footer />
  */
 
-const Licenser = ({
-    handleSelectVaccine,
-    selectedLicenser,
-    getVaccinesByLicenser
-}) => {
-    return &lt;div className='slide-left'>
-        &lt;h1 className='heading text-primary pt-2'>{selectedLicenser.fullName}{selectedLicenser.country &amp;&amp; ` (${selectedLicenser.country})`}&lt;/h1>
-        {selectedLicenser.description}
-        &lt;div className='table-responsive'>
-            {getVaccinesByLicenser(selectedLicenser).length !== 0 ? &lt;table className='table table-light w-100 m-0 mt-3'>
-                &lt;thead>
-                    &lt;tr>
-                        &lt;th>Tradename&lt;/th>
-                        &lt;th>Vaccine Type&lt;/th>
-                        &lt;th>Indication&lt;/th>
-                    &lt;/tr>
-                &lt;/thead>
-                &lt;tbody>
-                    {getVaccinesByLicenser(selectedLicenser).map((vaccine, index) => (
-                    &lt;tr key={index}>
-                        &lt;td>{&lt;span className='text-primary fw-bold hover-cursor hover-underline' onClick={()=>handleSelectVaccine(vaccine)}>{vaccine.name}&lt;/span>}&lt;/td>
-                        &lt;td>{vaccine.vaccineType || '-'}&lt;/td>
-                        &lt;td>{vaccine.comments || '-'}&lt;/td>
-                    &lt;/tr>
-                    ))}
-                &lt;/tbody>
-            &lt;/table> : ``}
-        &lt;/div>
+const Footer = () => {
+    return &lt;div className='row bg-footer text-white py-4 slide-up'>
+    &lt;div className='col-12'>
     &lt;/div>
+&lt;/div>
 }
 
-export default Licenser;</code></pre>
+export default Footer;</code></pre>
         </article>
     </section>
 

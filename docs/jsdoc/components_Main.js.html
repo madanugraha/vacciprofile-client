@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
     
 </nav>
 
@@ -63,7 +63,10 @@ import Licenser from './information/Licenser';
  * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedLicenser - The currently selected licenser.
+ * @param {Array} props.sidebarList - List of items (manufacturers, vaccines, or pathogens) available for selection.
  * @param {string} props.activeTab - The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Licenser').
+ * @param {Object} props.activeFilters - The current active filters.
+ * @param {Object} props.setActiveFilters - Sets the current active filters.
  * @param {Function} props.handleSelectPathogen - Function to handle the selection of a pathogen.
  * @param {Function} props.handleSelectVaccine - Function to handle the selection of a vaccine.
  * @param {Function} props.handleSelectLicenser - Function to handle the selection of an licenser.
@@ -83,7 +86,10 @@ import Licenser from './information/Licenser';
  *    selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}
  *    selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}
  *    selectedLicenser='LicenserZ'
+ *    sidebarList={[{ name: 'ItemA' }, { name: 'ItemB' }]}
  *    activeTab='Pathogen'
+ *    activeFilters={activeFilters}
+ *    setActiveFilters={filters=>console.log(activeFilters)}
  *    handleSelectPathogen={(pathogen) => console.log(pathogen)}
  *    handleSelectVaccine={(vaccine) => console.log(vaccine)}
  *    handleSelectLicenser={(licenser) => console.log(licenser)}
@@ -99,10 +105,13 @@ import Licenser from './information/Licenser';
 
 const Main = ({
     activeTab,
+    sidebarList=[],
     selectedPathogen, 
     selectedVaccine, 
     selectedManufacturer,
     selectedLicenser, 
+    activeFilters,
+    setActiveFilters,
     handleSelectPathogen, 
     handleSelectVaccine, 
     handleSelectLicenser, 
@@ -121,10 +130,10 @@ const Main = ({
         if(changedFrom==="Sidebar"){
             const isSelectedObjectNotEmpty = (obj) => Object.keys(obj).length !== 0;
             if (
-                (activeTab === 'Manufacturer' &amp;&amp; isSelectedObjectNotEmpty(selectedManufacturer)) ||
-                (activeTab === 'Product' &amp;&amp; isSelectedObjectNotEmpty(selectedVaccine)) ||
-                (activeTab === 'Pathogen' &amp;&amp; isSelectedObjectNotEmpty(selectedPathogen)) ||
-                (activeTab === 'Licenser' &amp;&amp; isSelectedObjectNotEmpty(selectedLicenser))
+                (activeTab==='Manufacturer' &amp;&amp; isSelectedObjectNotEmpty(selectedManufacturer)) ||
+                (activeTab==='Vaccine' &amp;&amp; isSelectedObjectNotEmpty(selectedVaccine)) ||
+                (activeTab==='Pathogen' &amp;&amp; isSelectedObjectNotEmpty(selectedPathogen)) ||
+                (activeTab==='Licenser' &amp;&amp; isSelectedObjectNotEmpty(selectedLicenser))
             ){
                 setAnimationClass('');
                 const timeout = setTimeout(() => {
@@ -132,42 +141,34 @@ const Main = ({
                 }, 5);
                 return () => clearTimeout(timeout);
             } 
-            // else {
-            //     setAnimationClass('');
-            //     const timeout = setTimeout(() => {
-            //         setAnimationClass('slide-right-out');
-            //     }, 5);
-            //     return () => clearTimeout(timeout);
-            // }
         }
-    }, [changedFrom]);
+    }, [changedFrom, activeTab, selectedLicenser, selectedManufacturer, selectedPathogen, selectedVaccine]);
 
     return &lt;div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${animationClass}`}>
-        &lt;div className='main-container border border-primary border-1 rounded-4 slide-left overflow-auto'>
+        &lt;div className='main-container border border-primary border-1 rounded-3 slide-left overflow-auto'>
             { 
-            // manufacturersList.length === 0 ? &lt;div className='empty-main d-flex justify-content-center align-items-center'>
-            //         &lt;span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchString: ''})}>
-            //             Clear filters
-            //         &lt;/span>
-            //     &lt;/div> : 
+            sidebarList.length === 0 ? &lt;div className='empty-main d-flex justify-content-center align-items-center'>
+                &lt;span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchKeyword: '', firstAlphabet: ''})}>
+                    Clear filters
+                &lt;/span>
+            &lt;/div> : 
             (activeTab === 'Manufacturer' &amp;&amp; Object.keys(selectedManufacturer).length === 0) ||
-            (activeTab === 'Product' &amp;&amp; Object.keys(selectedVaccine).length === 0) ||
+            (activeTab === 'Vaccine' &amp;&amp; Object.keys(selectedVaccine).length === 0) ||
             (activeTab === 'Pathogen' &amp;&amp; Object.keys(selectedPathogen).length === 0) ||
             (activeTab === 'Licenser' &amp;&amp; Object.keys(selectedLicenser).length === 0)
                 ? &lt;div className='empty-main position-relative'>
                 &lt;img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
                 &lt;span className='select-prompt position-absolute'>Select a {activeTab}&lt;/span>
             &lt;/div> : &lt;>
-                {activeTab==="Manufacturer" ? &lt;h1 className='heading text-primary px-3 pt-2'>Updated {selectedManufacturer.name} Reported Data ({selectedManufacturer.lastUpdated})&lt;/h1>:null}
-                &lt;div className='details-container px-3 pt-2 pb-3'>
+                &lt;div className='details-container'>
                     {activeTab==="Pathogen" 
                     ? &lt;Pathogen 
                         selectedPathogen={selectedPathogen} 
                         italizeScientificNames={italizeScientificNames}
-                    /> : activeTab==="Product" 
+                    /> : activeTab==="Vaccine" 
                     ? &lt;Vaccine 
                         selectedVaccine={selectedVaccine}
-                        italizeScientificNames={italizeScientificNames}
+                        convertCamelCaseToReadable={convertCamelCaseToReadable}
                     /> : activeTab==="Manufacturer" 
                     ? &lt;ManufacturerProfile
                         selectedManufacturer={selectedManufacturer}
@@ -214,7 +215,7 @@ export default Main;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 15 2024 10:35:32 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 10:25:57 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

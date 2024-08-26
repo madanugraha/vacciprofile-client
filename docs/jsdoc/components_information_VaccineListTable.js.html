@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
     
 </nav>
 
@@ -104,7 +104,7 @@ const VaccineListTable = ({
             &lt;/button>
         &lt;/h2>
         &lt;div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
-            &lt;div className="accordion-body">
+            &lt;div className="accordion-body pb-1 px-0 pt-0">
                 &lt;div className='main-header table-responsive m-0'>
                     &lt;table className='table w-100 m-0'>
                         &lt;thead>
@@ -131,18 +131,15 @@ const VaccineListTable = ({
                                 &lt;/td>
                                 &lt;td className='licenser-cell'>
                                 {vaccine.licensers.map((l, index) => {
-                                    const { licenserId } = l;
-                                    const licenser = getLicenserById(licenserId); 
+                                    const licenser = getLicenserById(l.licenserId); 
 
                                     if (!licenser) return null; 
                                     
                                     return (
-                                        &lt;span key={licenserId}>
-                                            &lt;span 
-                                                className={`${activeTab === "Licenser" &amp;&amp; selectedLicenser === licenser ? `selected` : `selectable`}`} 
-                                                onClick={() => handleSelectLicenser(licenser)}>
+                                        &lt;span key={l.licenserId}>
+                                            &lt;a href={l.link} className='selectable' target="_blank" rel="noopener noreferrer">
                                                 {licenser.name}
-                                            &lt;/span>
+                                            &lt;/a>
                                             {index &lt; vaccine.licensers.length - 1 ? &lt;span className='text-decoration-none'>, &lt;/span> : ``}
                                         &lt;/span>
                                     );
@@ -172,7 +169,7 @@ export default VaccineListTable;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 15 2024 10:35:32 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 10:25:57 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

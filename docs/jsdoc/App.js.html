@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
     
 </nav>
 
@@ -45,14 +45,47 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>    import React, { useState, useEffect, useCallback } from 'react';
+            <pre class="prettyprint source linenums"><code>/**
+ * Main application component for the vaccine profile page.
+ *
+ * @component
+ *
+ * @description 
+ * This is the main component of the vaccine profile application. It manages the state of selected items, 
+ * handles user interactions, and renders the Header, Sidebar, Main, and other components. It 
+ * is the entry point into the application.
+ *
+ * @requires ./assets/data/manufacturers.json - List of vaccine manufacturers
+ * @requires ./assets/data/pathogens.json - List of pathogens
+ * @requires ./assets/data/vaccines.json - List of vaccines
+ * @requires ./assets/data/licensers.json - List of licensers
+ * @requires ./assets/scientificNames - List of scientific names
+ * 
+ * @requires ./components/Header - Header component
+ * @requires ./components/AlphabetsBar - AlphabetsBar component
+ * @requires ./components/Sidebar - Sidebar component
+ * @requires ./components/Main - Main component
+ * @requires ./components/TopBar - TopBar component
+ * @requires ./App.scss - Main SCSS file for styling
+ * @requires ./assets/animations/animations.css - CSS file for animations
+ * 
+ * @returns {JSX.Element} The main application component containing all sub-components and logic.
+ *
+ * @example
+ * // Example usage of App component
+ * &lt;App />
+ */
+
+    import React, { useState, useEffect, useCallback } from 'react';
     import './App.scss';
     import './assets/animations/animations.css';
 
     import Header from './components/Header';
+    import AlphabetsBar from './components/AlphabetsBar.js';
     import Sidebar from './components/Sidebar';
     import Main from './components/Main.js';
     import TopBar from './components/TopBar.js';
+    // import Footer from './components/Footer.js';
 
     import manufacturers from './assets/data/manufacturers.json';
     import pathogens from './assets/data/pathogens.json';
@@ -80,6 +113,7 @@
     const App = () => {
         const [activeTab, setActiveTab] = useState('Manufacturer');
         const [activeFilters, setActiveFilters] = useState({
+            firstAlphabet: '',
             searchKeyword: ''
         })
         const [ pathogensList, setPathogensList ] = useState();
@@ -94,9 +128,27 @@
         const [ changedFrom, setChangedFrom ] = useState('');
 
         /**
+         * Handles the change in the selected alphabet filter.
+         * Updates the active filters and resets the selected item.
+         *
+         * @param {string} letter - The alphabet letter that is selected or deselected.
+         * @returns {void}
+         */
+
+        const handleAlphabetChange = letter => {
+            setActiveFilters({...activeFilters, 
+                firstAlphabet: activeFilters.firstAlphabet === letter ? '' : letter
+            });
+            setSelectedManufacturer({});
+            setSelectedPathogen({});
+            setSelectedVaccine({});
+            setSelectedLicenser({});
+        } 
+
+        /**
          * Handles the search input change.
          *
-         * @param {string} tab - The selected tab type can be "Manufacturers", "Pathogens" or "Products".
+         * @param {string} tab - The selected tab type can be "Manufacturer", "Pathogen", "Vaccine" or "Licenser".
          */
         
         const handleTabChange = tab => {
@@ -144,6 +196,7 @@
          *
          * @param {object} pathogen - The selected pathogen object.
          */
+
         const handleSelectPathogen = pathogen => {
             const vaccine = vaccines.find(vaccine => vaccine.vaccineId === pathogen.vaccines[0].vaccineId);
             setSelectedVaccine(vaccine);
@@ -161,7 +214,7 @@
         const handleSelectVaccine = v => {
             const vaccine = vaccines.find(vaccine => vaccine.vaccineId === v.vaccineId);
             setSelectedVaccine(vaccine);
-            setActiveTab("Product");
+            setActiveTab("Vaccine");
         };
 
         /**
@@ -221,7 +274,10 @@
                 return []; 
             }
             return vaccinesList.filter(vaccine =>
-                vaccine.manufacturers.some(m => m.manufacturerId === manufacturer.manufacturerId)
+                vaccine.manufacturers.some(m => {
+                    console.log("manufacturer", manufacturer, "m", m)
+                    return m.manufacturerId === manufacturer.manufacturerId
+                })
             );
         }, [selectedManufacturer, vaccinesList]);
 
@@ -231,7 +287,7 @@
          * @param {Object} pathogen - The pathogen object.
          * @returns {Array} List of vaccines associated with the given pathogen.
          */
-        
+
         const getVaccineByPathogen = useCallback(pathogen => {
             return vaccines.filter(vaccine => vaccine.pathogenId === pathogen.pathogenId);
         }, []);
@@ -259,6 +315,27 @@
         }, []);
 
         /**
+         * Filters the list of items based on the first alphabet.
+         * 
+         * @function
+         * @name filterListByStartingAlphabet
+         * 
+         * @param {Array} list - A list of items for filtering.
+         * @returns {Array} - An array of filtered items.
+         */
+
+        const filterListByStartingAlphabet = useCallback((list) => {
+            const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : 'name';
+            const filteredList = activeFilters.firstAlphabet.toLowerCase() !== '' 
+                ? list.filter(item => {
+                    const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    return startsWithAlphabet;
+                }) 
+                : list;
+            return filteredList;
+        }, [activeFilters.firstAlphabet, activeTab]);
+
+        /**
          * Filters the list of manufacturers based on the search keyword.
          * 
          * This function filters manufacturers and also checks related vaccines and pathogens for matches with the search keyword.
@@ -269,8 +346,9 @@
          * @param {string} keywordLower - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered manufacturers.
          */
-        const filterManufacturersBySearch = useCallback((keyword) => {
-            return manufacturersList.filter(manufacturer => {
+
+        const filterManufacturersByAlphabetAndSearch = useCallback((keyword) => {
+            return filterListByStartingAlphabet(manufacturersList).filter(manufacturer => {
                 const matchesKeyword = manufacturer.name.toLowerCase().includes(keyword) ||
                                         manufacturer.description.toLowerCase().includes(keyword);
                 if (matchesKeyword) return true;
@@ -289,7 +367,7 @@
                     );
                 });
             });
-        }, [manufacturersList, getVaccinesByManufacturer, getPathogenByVaccine]);
+        }, [manufacturersList, filterListByStartingAlphabet, getVaccinesByManufacturer, getPathogenByVaccine]);
 
         /**
          * Filters the list of vaccines based on the search keyword.
@@ -302,8 +380,9 @@
          * @param {string} keyword - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered vaccines.
          */
-        const filterVaccinesBySearch = useCallback((keyword) => {
-            return vaccinesList.filter(vaccine => {
+
+        const filterVaccinesByAlphabetAndSearch = useCallback((keyword) => {
+            return filterListByStartingAlphabet(vaccinesList).filteredList.filter(vaccine => {
                 const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
                                     vaccine.description.toLowerCase().includes(keyword);
                 if (vaccineMatch) return true;
@@ -318,7 +397,7 @@
                 );
                 return pathogenMatch || manufacturersMatch;
             });
-        }, [vaccinesList, getPathogenByVaccine, getManufacturersByVaccine]);
+        }, [vaccinesList, filterListByStartingAlphabet, getPathogenByVaccine, getManufacturersByVaccine]);
 
         /**
          * Filters the list of pathogens based on the search keyword.
@@ -331,27 +410,24 @@
          * @param {string} keyword - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered pathogens.
          */
-        const filterPathogensBySearch = useCallback((keyword) => {
-            return pathogensList.filter(pathogen => {
+
+        const filterPathogensByAlphabetAndSearch = useCallback((keyword) => {
+            return filterListByStartingAlphabet(pathogensList).filteredList.filter(pathogen => {
                 const pathogenMatch = pathogen.name.toLowerCase().includes(keyword) ||
                                     pathogen.description.toLowerCase().includes(keyword);
-                
                 if (pathogenMatch) return true;
-                
                 const vaccines = getVaccineByPathogen(pathogen) || [];
                 return Array.isArray(vaccines) &amp;&amp; vaccines.some(vaccine => {
                     const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
                                         vaccine.description.toLowerCase().includes(keyword);
-                    
                     if (vaccineMatch) return true;
-                    
                     return getManufacturersByVaccine(vaccine).some(manufacturer =>
                         manufacturer.name.toLowerCase().includes(keyword) ||
                         manufacturer.description.toLowerCase().includes(keyword)
                     );
                 });
             });
-        }, [pathogensList, getVaccineByPathogen, getManufacturersByVaccine]);
+        }, [pathogensList, filterListByStartingAlphabet, getVaccineByPathogen, getManufacturersByVaccine]);
 
         /**
          * Filters the list of licensers based on the search keyword.
@@ -364,9 +440,10 @@
          * @param {string} keyword - The lowercased search keyword used for filtering.
          * @returns {Array} - An array of filtered licensers.
          */
-        const filterLicensersBySearch = useCallback((keyword) => {
-            return licensersList.filter(licenser => {
-                const licenserMatch = licenser.fullName.toLowerCase().includes(keyword) ||
+        
+        const filterLicensersByAlphabetAndSearch = useCallback((keyword) => {
+            return filterListByStartingAlphabet(licensersList).filteredList.filter(licenser => {
+                const licenserMatch = licenser.acronym.toLowerCase().includes(keyword) ||
                                     licenser.description.toLowerCase().includes(keyword);
                 
                 if (licenserMatch) return true;
@@ -393,7 +470,7 @@
                     );
                 });
             });
-        }, [licensersList, getVaccinesByLicenser, getPathogenByVaccine, getManufacturersByVaccine]);
+        }, [licensersList, filterListByStartingAlphabet, getVaccinesByLicenser, getPathogenByVaccine, getManufacturersByVaccine]);
 
         /**
          * Sorts a list of licensers with a custom priority for 'AMA', 'EMA', and 'WHO',
@@ -418,13 +495,17 @@
          * const sortedLicensers = sortLicensers(licensers);
          * // Result: [ { name: 'FDA' }, { name: 'EMA' }, { name: 'WHO' }, { name: 'CDC' }, { name: 'HSA' } ]
          */
+
         const sortLicensers = useCallback((list) => {
             const customOrder = ['FDA', 'EMA', 'WHO'];
-
             return list.slice().sort((a, b) => {
-                const indexA = customOrder.indexOf(a.name);
-                const indexB = customOrder.indexOf(b.name);
-
+                if (!a.acronym || !b.acronym) {
+                    return (a.acronym ? 1 : -1) - (b.acronym ? 1 : -1);
+                }
+        
+                const indexA = customOrder.indexOf(a.acronym);
+                const indexB = customOrder.indexOf(b.acronym);
+        
                 if (indexA !== -1 &amp;&amp; indexB !== -1) {
                     return indexA - indexB;
                 }
@@ -434,7 +515,7 @@
                 if (indexB !== -1) {
                     return 1;
                 }
-                return a.name.localeCompare(b.name);
+                return a.acronym.localeCompare(b.acronym);
             });
         }, []);
 
@@ -449,40 +530,41 @@
          * 
          * @returns {void} This function does not return a value. It updates the `sidebarList` state directly.
          */
-        const filterListsBySearch = useCallback(() => {
+
+        const filterListsByAlphabetAndSearch = useCallback(() => {
             let filteredSidebarList = [];
             
-            if (activeFilters.searchKeyword) {
+            if (activeFilters.searchKeyword &amp;&amp; activeFilters.searchKeyword!=="") {
                 const keywordLower = activeFilters.searchKeyword.toLowerCase()
                 
                 if (activeTab === 'Manufacturer') {
-                    filteredSidebarList = filterManufacturersBySearch(keywordLower).slice() 
+                    filteredSidebarList = filterManufacturersByAlphabetAndSearch(keywordLower).slice() 
             .sort((a, b) => a.name.localeCompare(b.name));
-                } else if (activeTab === 'Product') {
-                    filteredSidebarList = filterVaccinesBySearch(keywordLower).slice() 
+                } else if (activeTab === 'Vaccine') {
+                    filteredSidebarList = filterVaccinesByAlphabetAndSearch(keywordLower).slice() 
             .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'Pathogen') {
-                    filteredSidebarList = filterPathogensBySearch(keywordLower).slice() 
+                    filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice() 
             .sort((a, b) => a.name.localeCompare(b.name));
                 } else if (activeTab === 'Licenser') {
-                    filteredSidebarList = sortLicensers(filterLicensersBySearch(keywordLower));
+                    filteredSidebarList = sortLicensers(filterLicensersByAlphabetAndSearch(keywordLower));
                 }
                 setSidebarList(filteredSidebarList);
             } else {
                 if (activeTab === 'Manufacturer') {
-                    setSidebarList(manufacturersList.slice() 
+                    setSidebarList(filterListByStartingAlphabet(manufacturersList).slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
-                } else if (activeTab === 'Product') {
-                    setSidebarList(vaccinesList.slice() 
+                } else if (activeTab === 'Vaccine') {
+                    setSidebarList(filterListByStartingAlphabet(vaccinesList).slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Pathogen') {
-                    setSidebarList(pathogensList.slice() 
+                    setSidebarList(filterListByStartingAlphabet(pathogensList).slice() 
                     .sort((a, b) => a.name.localeCompare(b.name)));
                 } else if (activeTab === 'Licenser') {
-                    setSidebarList(sortLicensers(licensersList));
+                    setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
                 }
             }
-        }, [activeFilters.searchKeyword, activeTab, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersBySearch, filterPathogensBySearch, filterVaccinesBySearch, filterLicensersBySearch, sortLicensers ]);        
+        }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers ]);        
         
         /**
          * Converts camel case strings to readable format.
@@ -492,8 +574,12 @@
          */
 
         const convertCamelCaseToReadable = string => {
-            return string==="ceo" ? "CEO" : string.replace(/([A-Z])/g, ' $1')
+            const formattedString = string === "ceo"
+                ? "CEO"
+                : string.replace(/([A-Z])/g, ' $1');
+            return formattedString.charAt(0).toUpperCase() + formattedString.slice(1);
         };
+        
 
         /**
          * Italizes scientific names in a given text.
@@ -526,13 +612,9 @@
             setLicensersList(licensers);
         },[])
 
-        useEffect(()=>{
-            filterListsBySearch();
-        },[activeTab, pathogensList, vaccinesList, manufacturersList, licensersList, filterListsBySearch])
-
         useEffect(() => {
-            filterListsBySearch();
-        }, [activeFilters, filterListsBySearch]);
+            filterListsByAlphabetAndSearch();
+        }, [activeFilters, filterListsByAlphabetAndSearch]);
         
         return (
             &lt;div className='vacciprofile-page'>
@@ -543,7 +625,13 @@
                         handleTabChange={handleTabChange}
                         handleSearch={handleSearch}
                     />
-                    &lt;div className='row py-4'>
+                    &lt;div className='row'>
+                        &lt;AlphabetsBar
+                            handleAlphabetChange={handleAlphabetChange}
+                            activeFilters={activeFilters}
+                        />
+                    &lt;/div>
+                    &lt;div className='row pt-2 pb-4'>
                         &lt;Sidebar
                             activeTab={activeTab}
                             sidebarList={sidebarList}
@@ -562,6 +650,7 @@
                         />
                         &lt;Main
                             activeTab={activeTab}
+                            sidebarList={sidebarList}
                             selectedPathogen={selectedPathogen}
                             selectedVaccine={selectedVaccine}
                             selectedManufacturer={selectedManufacturer}
@@ -570,6 +659,8 @@
                             handleSelectVaccine={handleSelectVaccine}
                             handleSelectManufacturer={handleSelectManufacturer}
                             handleSelectLicenser={handleSelectLicenser}
+                            activeFilters={activeFilters}
+                            setActiveFilters={setActiveFilters}
                             getPathogenByVaccine={getPathogenByVaccine}
                             getVaccinesByManufacturer={getVaccinesByManufacturer}
                             getVaccinesByLicenser={getVaccinesByLicenser}
@@ -579,6 +670,7 @@
                             getLicenserById={getLicenserById}
                         />
                     &lt;/div>
+                    {/* &lt;Footer/>  */}
                 &lt;/div>
             &lt;/div>
         );
@@ -599,7 +691,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 15 2024 10:35:32 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 10:25:57 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

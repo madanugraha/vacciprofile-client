@@ -1,6 +1,20 @@
+## Members
+
+<dl>
+<dt><a href="#openModal">openModal</a> ⇒ <code>void</code></dt>
+<dd><p>This function determines sets the modal Open</p>
+</dd>
+<dt><a href="#openModal">openModal</a> ⇒ <code>void</code></dt>
+<dd><p>This function determines sets the modal Close</p>
+</dd>
+</dl>
+
 ## Objects
 
 <dl>
+<dt><a href="#Footer">Footer</a> ⇒ <code>JSX.Element</code></dt>
+<dd><p>Footer Component</p>
+</dd>
 <dt><a href="#Header">Header</a> ⇒ <code>JSX.Element</code></dt>
 <dd><p>Header Component</p>
 </dd>
@@ -39,6 +53,9 @@
 handles user interactions, and renders the Header, Sidebar, Main, and other components. It 
 is the entry point into the application.</p>
 </dd>
+<dt><a href="#filterListByStartingAlphabet">filterListByStartingAlphabet(list)</a> ⇒ <code>Array</code></dt>
+<dd><p>Filters the list of items based on the first alphabet.</p>
+</dd>
 <dt><a href="#filterManufacturers">filterManufacturers(keywordLower)</a> ⇒ <code>Array</code></dt>
 <dd><p>Filters the list of manufacturers based on the search keyword.</p>
 <p>This function filters manufacturers and also checks related vaccines and pathogens for matches with the search keyword.</p>
@@ -60,8 +77,38 @@ is the entry point into the application.</p>
 <p>This function determines which filtering function to use based on the active tab and updates the <code>sidebarList</code> state
 with the filtered list of items that match the search criteria.</p>
 </dd>
+<dt><a href="#Alphabets">Alphabets(props)</a> ⇒ <code>JSX.Element</code></dt>
+<dd><p>A component that renders a list of alphabet letters as clickable items.
+Highlights the active filter alphabet and triggers a callback function when an alphabet is clicked.</p>
+</dd>
 </dl>
 
+<a name="openModal"></a>
+
+## openModal ⇒ <code>void</code>
+This function determines sets the modal Open
+
+**Kind**: global variable  
+**Returns**: <code>void</code> - This function does not return a value. It updates the `isOpen` state directly.  
+<a name="openModal"></a>
+
+## openModal ⇒ <code>void</code>
+This function determines sets the modal Close
+
+**Kind**: global variable  
+**Returns**: <code>void</code> - This function does not return a value. It updates the `isOpen` state directly.  
+<a name="Footer"></a>
+
+## Footer ⇒ <code>JSX.Element</code>
+Footer Component
+
+**Kind**: global namespace  
+**Returns**: <code>JSX.Element</code> - The Footer component that displays the footer and contact information.  
+**Component**:   
+**Example**  
+```js
+// Example usage of Footer component<Footer />
+```
 <a name="Header"></a>
 
 ## Header ⇒ <code>JSX.Element</code>
@@ -115,7 +162,7 @@ ManufacturerProfile Component
 
 **Example**  
 ```js
-// Render the ManufacturerProfile component with dummy data and function<ManufacturerProfile   selectedManufacturer={{    name: 'Manufacturer X',    description: 'A leading manufacturer in the industry.',    information: {      type: 'Biotechnology',      country: 'USA',      sources: [        { title: 'Source 1', link: 'http://source1.com', lastUpdated: '2024-01-01' },        { title: 'Source 2', link: 'http://source2.com', lastUpdated: '2024-02-01' }      ]    }  }}  convertCamelCaseToReadable={key => key.replace(/([A-Z])/g, ' $1').toLowerCase()}/>
+// Render the ManufacturerProfile component with dummy data and function<ManufacturerProfile   selectedManufacturer={{    name: 'Manufacturer X',    description: 'A leading manufacturer in the industry.',    details: {      revenue: '100M',      operatingIncome: '50M',      netIncome: '25M',      totalAssets: '500M',      totalEquity: '300M',      sources: [        { title: 'Source 1', link: 'http://source1.com', lastUpdated: '2024-01-01' },        { title: 'Source 2', link: 'http://source2.com', lastUpdated: '2024-02-01' }      ]    }  }}  convertCamelCaseToReadable={key => key.replace(/([A-Z])/g, ' $1').toLowerCase()}/>
 ```
 <a name="Pathogen"></a>
 
@@ -155,11 +202,48 @@ Vaccine Component
 | props.selectedVaccine.description | <code>string</code> | The description of the selected vaccine. |
 | props.selectedVaccine.link | <code>string</code> | The URL link to learn more about the selected vaccine. |
 | props.selectedVaccine.lastUpdated | <code>string</code> | The last updated date for the selected vaccine. |
-| props.italizeScientificNames | <code>function</code> | Function that italicizes scientific names in the description. |
+| props.convertCamelCaseToReadable | <code>function</code> | Function that converts camel case strings to a readable format. |
 
 **Example**  
 ```js
-// Render the Vaccine component with a sample vaccine and italizeScientificNames function<Vaccine   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   italizeScientificNames={text => text.replace(/(scientificName)/gi, '<i>$1</i>')}/>
+// Render the Vaccine component with a sample vaccine and italizeScientificNames function<Vaccine   selectedVaccine={{     name: 'Vaccine X',     description: 'A description of Vaccine X with scientific names.',     link: 'https://example.com/vaccine-x',     lastUpdated: '2024-07-29'   }}   convertCamelCaseToReadable={key => key.replace(/([A-Z])/g, ' $1').toLowerCase()}/>
+```
+
+* [Vaccine](#Vaccine) ⇒ <code>JSX.Element</code>
+    * [~formatContent(content)](#Vaccine..formatContent) ⇒ <code>Array.&lt;React.ReactNode&gt;</code>
+    * [~formatHeading(content)](#Vaccine..formatHeading) ⇒ <code>Array.&lt;React.ReactNode&gt;</code>
+
+<a name="Vaccine..formatContent"></a>
+
+### Vaccine~formatContent(content) ⇒ <code>Array.&lt;React.ReactNode&gt;</code>
+Formats the given content by:1. Splitting it at `<br />` or `<br>` tags and inserting React line break elements (`<br />`).2. Replacing any single apostrophes `'` with double inverted commas `"` in the content.This function takes a string with `<br />` or `<br>` tags and returns an array of React elements. The string is split at each `<br />` tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.
+
+**Kind**: inner method of [<code>Vaccine</code>](#Vaccine)  
+**Returns**: <code>Array.&lt;React.ReactNode&gt;</code> - An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original `<br />` tags, and apostrophes are replaced with double quotes.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| content | <code>string</code> | The string containing text, `<br />` or `<br>` tags, and possibly single apostrophes. |
+
+**Example**  
+```js
+// Example usageconst content = "Monovalent live-attuned <br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatContent = formatContent(content);// formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
+```
+<a name="Vaccine..formatHeading"></a>
+
+### Vaccine~formatHeading(content) ⇒ <code>Array.&lt;React.ReactNode&gt;</code>
+Formats the given content by:1. Splitting it at `<br />` or `<br>` tags and inserting React line break elements (`<br />`).2. Replacing any single apostrophes `'` with double inverted commas `"` in the content.This function takes a string with `<br />` or `<br>` tags and returns an array of React elements. The string is split at each `<br />` tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.
+
+**Kind**: inner method of [<code>Vaccine</code>](#Vaccine)  
+**Returns**: <code>Array.&lt;React.ReactNode&gt;</code> - An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original `<br />` tags, and apostrophes are replaced with double quotes.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| content | <code>string</code> | The string containing text, `<br />` or `<br>` tags, and possibly single apostrophes. |
+
+**Example**  
+```js
+// Example usageconst content = "Monovalent live-attuned <br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";const formatHeading = formatHeading(content);// formatHeading will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
 ```
 <a name="VaccineListTable"></a>
 
@@ -205,7 +289,10 @@ Main Component
 | props.selectedVaccine | <code>Object</code> | The currently selected vaccine. |
 | props.selectedManufacturer | <code>Object</code> | The currently selected manufacturer. |
 | props.selectedLicenser | <code>Object</code> | The currently selected licenser. |
+| props.sidebarList | <code>Array</code> | List of items (manufacturers, vaccines, or pathogens) available for selection. |
 | props.activeTab | <code>string</code> | The type of details to display ('Pathogen', 'Vaccine', 'Manufacturer', 'Licenser'). |
+| props.activeFilters | <code>Object</code> | The current active filters. |
+| props.setActiveFilters | <code>Object</code> | Sets the current active filters. |
 | props.handleSelectPathogen | <code>function</code> | Function to handle the selection of a pathogen. |
 | props.handleSelectVaccine | <code>function</code> | Function to handle the selection of a vaccine. |
 | props.handleSelectLicenser | <code>function</code> | Function to handle the selection of an licenser. |
@@ -219,7 +306,7 @@ Main Component
 
 **Example**  
 ```js
-// Example usage of Main component<Main   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   activeTab='Pathogen'   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   changedFrom='Sidebar'   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/>
+// Example usage of Main component<Main   selectedPathogen={{ name: 'COVID-19', description: '...' }}   selectedVaccine={{ name: 'VaccineX', description: '...', link: '...', lastUpdated: '...' }}   selectedManufacturer={{ name: 'ManufacturerY', description: '...' }}   selectedLicenser='LicenserZ'   sidebarList={[{ name: 'ItemA' }, { name: 'ItemB' }]}   activeTab='Pathogen'   activeFilters={activeFilters}   setActiveFilters={filters=>console.log(activeFilters)}   handleSelectPathogen={(pathogen) => console.log(pathogen)}   handleSelectVaccine={(vaccine) => console.log(vaccine)}   handleSelectLicenser={(licenser) => console.log(licenser)}   getPathogenByVaccine={(vaccine) => ({ name: 'VirusX' })}   getVaccinesByManufacturer={() => [{ name: 'Vaccine1' }]}   getVaccinesByLicenser={() => [{ name: 'Vaccine2' }]}   changedFrom='Sidebar'   italizeScientificNames={(text) => <i>{text}</i>}   convertCamelCaseToReadable={(text) => text.replace(/([a-z])([A-Z])/g, '$1 $2')}   getLicenserById={(id) => ({ licenserId: id, name: 'LicenserZ' })}/>
 ```
 <a name="Sidebar"></a>
 
@@ -233,14 +320,14 @@ Sidebar ComponentA component that displays a sidebar for selecting manufacture
 | Param | Type | Description |
 | --- | --- | --- |
 | props | <code>Object</code> | The component accepts various props to handle sidebar functionality. |
-| props.activeTab | <code>string</code> | The currently active tab, which can be 'Manufacturer', 'Product', or 'Pathogen'. |
-| props.setActiveTab | <code>function</code> | Function to set the type of details to be displayed ('Manufacturer', 'Product', or 'Pathogen'). |
+| props.activeTab | <code>string</code> | The currently active tab, which can be 'Manufacturer', 'Vaccine', or 'Pathogen'. |
+| props.setActiveTab | <code>function</code> | Function to set the type of details to be displayed ('Manufacturer', 'Vaccine', or 'Pathogen'). |
 | props.sidebarList | <code>Array</code> | List of items (manufacturers, products, or pathogens) available for selection. |
-| props.selectedVaccine | <code>Object</code> | The currently selected product (vaccine). |
+| props.selectedVaccine | <code>Object</code> | The currently selected vaccine. |
 | props.selectedPathogen | <code>Object</code> | The currently selected pathogen. |
 | props.selectedManufacturer | <code>Object</code> | The currently selected manufacturer. |
 | props.selectedLicenser | <code>Object</code> | The currently selected licenser. |
-| props.setSelectedVaccine | <code>function</code> | Function to update the selected product (vaccine). |
+| props.setSelectedVaccine | <code>function</code> | Function to update the selected vaccine. |
 | props.setSelectedPathogen | <code>function</code> | Function to update the selected pathogen. |
 | props.setSelectedManufacturer | <code>function</code> | Function to update the selected manufacturer. |
 | props.setSelectedLicenser | <code>function</code> | Function to update the selected licenser. |
@@ -252,17 +339,6 @@ Sidebar ComponentA component that displays a sidebar for selecting manufacture
 ```js
 // Example usage of Sidebar component<Sidebar    activeTab="Manufacturer"   setActiveTab={(type) => console.log(type)}   sidebarList={[{ name: 'ItemA' }, { name: 'ItemB' }]}   selectedManufacturer={{ name: 'ItemA' }}   selectedVaccine={{ name: 'ItemB' }}   selectedPathogen={{ name: 'ItemC' }}   selectedLicenser={{ name: 'ItemC' }}   setSelectedManufacturer={(item) => console.log(item)}   setSelectedVaccine={(item) => console.log(item)}   setSelectedPathogen={(item) => console.log(item)}   setSelectedLicenser={(item) => console.log(item)}   changedFrom='Sidebar'   setChangedFrom={(source) => console.log(source)}   italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')}/>
 ```
-<a name="Sidebar..handleClickSidebar"></a>
-
-### Sidebar~handleClickSidebar(item)
-Handles the click events for sidebar items based on the active tab.It selects or unselects an item depending on the current selection state.The behavior varies depending on whether the item belongs to the Manufacturer, Product, or Pathogen tab.
-
-**Kind**: inner method of [<code>Sidebar</code>](#Sidebar)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| item | <code>Object</code> | The item object that is clicked. |
-
 <a name="TopBar"></a>
 
 ## TopBar : <code>object</code>
@@ -295,6 +371,7 @@ This is the main component of the vaccine profile application. It manages the st
     * [~getManufacturersByVaccine](#App..getManufacturersByVaccine) ⇒ <code>Array</code>
     * [~getLicenserById](#App..getLicenserById) ⇒ <code>Array</code>
     * [~sortLicensers](#App..sortLicensers) ⇒ <code>Array.&lt;Object&gt;</code>
+    * [~handleAlphabetChange(letter)](#App..handleAlphabetChange) ⇒ <code>void</code>
     * [~handleTabChange(tab)](#App..handleTabChange)
     * [~handleSearch(keyword)](#App..handleSearch)
     * [~handleSelectPathogen(pathogen)](#App..handleSelectPathogen)
@@ -388,6 +465,17 @@ Sorts a list of licensers with a custom priority for 'AMA', 'EMA', and 'WHO',fo
 ```js
 const licensers = [    { name: 'WHO' },    { name: 'EMA' },    { name: 'AMA' },    { name: 'FDA' },    { name: 'CDC' }];const sortedLicensers = sortLicensers(licensers);// Result: [ { name: 'FDA' }, { name: 'EMA' }, { name: 'WHO' }, { name: 'CDC' }, { name: 'HSA' } ]
 ```
+<a name="App..handleAlphabetChange"></a>
+
+### App~handleAlphabetChange(letter) ⇒ <code>void</code>
+Handles the change in the selected alphabet filter.Updates the active filters and resets the selected item.
+
+**Kind**: inner method of [<code>App</code>](#App)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| letter | <code>string</code> | The alphabet letter that is selected or deselected. |
+
 <a name="App..handleTabChange"></a>
 
 ### App~handleTabChange(tab)
@@ -397,7 +485,7 @@ Handles the search input change.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| tab | <code>string</code> | The selected tab type can be "Manufacturers", "Pathogens" or "Products". |
+| tab | <code>string</code> | The selected tab type can be "Manufacturer", "Pathogen", "Vaccine" or "Licenser". |
 
 <a name="App..handleSearch"></a>
 
@@ -478,6 +566,18 @@ Italizes scientific names in a given text.
 | --- | --- | --- |
 | text | <code>string</code> | The text containing scientific names. |
 
+<a name="filterListByStartingAlphabet"></a>
+
+## filterListByStartingAlphabet(list) ⇒ <code>Array</code>
+Filters the list of items based on the first alphabet.
+
+**Kind**: global function  
+**Returns**: <code>Array</code> - - An array of filtered items.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| list | <code>Array</code> | A list of items for filtering. |
+
 <a name="filterManufacturers"></a>
 
 ## filterManufacturers(keywordLower) ⇒ <code>Array</code>
@@ -533,3 +633,23 @@ Filters the sidebar list based on the currently selected tab and search keyword.
 
 **Kind**: global function  
 **Returns**: <code>void</code> - This function does not return a value. It updates the `sidebarList` state directly.  
+<a name="Alphabets"></a>
+
+## Alphabets(props) ⇒ <code>JSX.Element</code>
+A component that renders a list of alphabet letters as clickable items.Highlights the active filter alphabet and triggers a callback function when an alphabet is clicked.
+
+**Kind**: global function  
+**Returns**: <code>JSX.Element</code> - The rendered component.  
+**Component**:   
+
+| Param | Type | Description |
+| --- | --- | --- |
+| props | <code>Object</code> | The props object. |
+| props.activeFilters | <code>Object</code> | The current active filters. |
+| props.activeFilters.firstAlphabet | <code>string</code> | The currently selected alphabet for filtering. |
+| props.handleAlphabetChange | <code>function</code> | The function to call when an alphabet is clicked. |
+
+**Example**  
+```js
+const activeFilters = { firstAlphabet: 'A' };const handleAlphabetChange = (letter) => {    return (    <Alphabets       activeFilters={activeFilters}      handleAlphabetChange={handleAlphabetChange}    />  );};
+```

@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
     
 </nav>
 
@@ -55,14 +55,14 @@
  * @component
  * @namespace Sidebar
  * @param {Object} props - The component accepts various props to handle sidebar functionality.
- * @param {string} props.activeTab - The currently active tab, which can be 'Manufacturer', 'Product', or 'Pathogen'.
- * @param {Function} props.setActiveTab - Function to set the type of details to be displayed ('Manufacturer', 'Product', or 'Pathogen').
+ * @param {string} props.activeTab - The currently active tab, which can be 'Manufacturer', 'Vaccine', or 'Pathogen'.
+ * @param {Function} props.setActiveTab - Function to set the type of details to be displayed ('Manufacturer', 'Vaccine', or 'Pathogen').
  * @param {Array} props.sidebarList - List of items (manufacturers, products, or pathogens) available for selection.
- * @param {Object} props.selectedVaccine - The currently selected product (vaccine).
+ * @param {Object} props.selectedVaccine - The currently selected vaccine.
  * @param {Object} props.selectedPathogen - The currently selected pathogen.
  * @param {Object} props.selectedManufacturer - The currently selected manufacturer.
  * @param {Object} props.selectedLicenser - The currently selected licenser.
- * @param {Function} props.setSelectedVaccine - Function to update the selected product (vaccine).
+ * @param {Function} props.setSelectedVaccine - Function to update the selected vaccine.
  * @param {Function} props.setSelectedPathogen - Function to update the selected pathogen.
  * @param {Function} props.setSelectedManufacturer - Function to update the selected manufacturer.
  * @param {Function} props.setSelectedLicenser - Function to update the selected licenser.
@@ -109,18 +109,16 @@ const Sidebar = ({
 }) => {
 
     const [animationClass, setAnimationClass] = useState('slide-right');
-    
-    /**
-     * Handles the click events for sidebar items based on the active tab.
-     * It selects or unselects an item depending on the current selection state.
-     * The behavior varies depending on whether the item belongs to the Manufacturer, Product, or Pathogen tab.
-     *
-     * @param {Object} item - The item object that is clicked.
-     */
+    const [showCountries, setShowCountries] = useState(false);
+
+    const licenserFilter = ["FDA", "EMA", "WHO"];
+    const filteredSidebarList = activeTab === 'Licenser' 
+        ? sidebarList.filter(item => licenserFilter.includes(item.acronym))
+        : sidebarList;
+
     const handleClickSidebar = item => {
-        // Slide Left Animation
         setChangedFrom('Sidebar');
-    
+
         setTimeout(() => {
             if (activeTab === 'Manufacturer') {
                 if (item !== selectedManufacturer) {
@@ -129,10 +127,10 @@ const Sidebar = ({
                 } else {
                     setSelectedManufacturer({});
                 }
-            } else if (activeTab === 'Product') {
+            } else if (activeTab === 'Vaccine') {
                 if (item !== selectedVaccine) {
                     setSelectedVaccine(item);
-                    setActiveTab('Product');
+                    setActiveTab('Vaccine');
                 } else {
                     setSelectedVaccine({});
                 }
@@ -144,7 +142,9 @@ const Sidebar = ({
                     setSelectedPathogen({});
                 }
             } else if (activeTab === 'Licenser') {
-                if (item !== selectedLicenser) {
+                if (item.name === 'Countries') {
+                    setShowCountries(!showCountries);
+                } else if (item !== selectedLicenser) {
                     setSelectedLicenser(item);
                     setActiveTab('Licenser');
                 } else {
@@ -155,35 +155,56 @@ const Sidebar = ({
         }, 5);
     };
     
-    useEffect(()=>{
-        if(changedFrom==="Topbar"){
+    useEffect(() => {
+        if (changedFrom === "Topbar") {
             setAnimationClass('');
             const timeout = setTimeout(() => {
                 setAnimationClass('slide-right');
             }, 20);
             return () => clearTimeout(timeout);
         }
-    },[changedFrom])
+    }, [changedFrom]);
 
-    return &lt;div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 ${animationClass}`}>
-        &lt;div className='sidebar-items overflow-auto'>
-        {sidebarList
-            .map((item, i) => (
-                &lt;div 
-                    key={i} 
-                    className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 mt-1 me-3 ${
-                        activeTab === 'Manufacturer' &amp;&amp; selectedManufacturer === item ? 'active' :
-                        activeTab === 'Product' &amp;&amp; selectedVaccine === item ? 'active' :
-                        activeTab === 'Pathogen' &amp;&amp; selectedPathogen === item ? 'active' :
-                        activeTab === 'Licenser' &amp;&amp; selectedLicenser === item ? 'active' : 'inactive'
-                    }`} 
-                    onClick={() => handleClickSidebar(item)}
-                >{italizeScientificNames(item.name)}
-                &lt;/div>
-            ))
-        }
+    return (
+        &lt;div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
+            &lt;div className='sidebar-items overflow-auto'>
+                {filteredSidebarList.map((item, i) => (
+                    &lt;div 
+                        key={i} 
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${
+                            activeTab === 'Manufacturer' &amp;&amp; selectedManufacturer === item
+                            ? 'active' : activeTab === 'Vaccine' &amp;&amp; selectedVaccine === item
+                            ? 'active' : activeTab === 'Pathogen' &amp;&amp; selectedPathogen === item
+                            ? 'active' : activeTab === 'Licenser' &amp;&amp; selectedLicenser === item
+                            ? 'active' : 'inactive'
+                        }`} 
+                        onClick={() => handleClickSidebar(item)}
+                    >
+                        {activeTab==="Pathogen" ? italizeScientificNames(item.name) : activeTab!=="Licenser" ? item.name : item.acronym}
+                    &lt;/div>
+                ))}
+                {activeTab === 'Licenser' &amp;&amp; (
+                    &lt;div 
+                        key='Countries'
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${
+                            showCountries ? 'active-country' : 'inactive'
+                        }`} 
+                        onClick={() => handleClickSidebar({ name: 'Countries' })}
+                    >Country Authorities
+                    &lt;/div>
+                )}
+                {showCountries &amp;&amp; sidebarList.filter(item=>!licenserFilter.includes(item.acronym)).map((item, i) => (
+                    &lt;div 
+                        key={`country-${i}`} 
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${
+                            selectedLicenser === item ? 'active' : 'inactive' }`} 
+                        onClick={() => handleClickSidebar(item)}
+                    >{item.acronym}{item.country &amp;&amp; `, ${item.country}`}
+                    &lt;/div>
+                ))}
+            &lt;/div>
         &lt;/div>
-    &lt;/div>
+    );
 }
 
 export default Sidebar;</code></pre>
@@ -200,7 +221,7 @@ export default Sidebar;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 15 2024 10:35:32 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 10:25:57 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

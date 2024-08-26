@@ -304,7 +304,7 @@
          */
 
         const filterVaccinesByAlphabetAndSearch = useCallback((keyword) => {
-            return filterListByStartingAlphabet(vaccinesList).filteredList.filter(vaccine => {
+            return filterListByStartingAlphabet(vaccinesList).filter(vaccine => {
                 const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
                                     vaccine.description.toLowerCase().includes(keyword);
                 if (vaccineMatch) return true;
@@ -334,9 +334,9 @@
          */
 
         const filterPathogensByAlphabetAndSearch = useCallback((keyword) => {
-            return filterListByStartingAlphabet(pathogensList).filteredList.filter(pathogen => {
-                const pathogenMatch = pathogen.name.toLowerCase().includes(keyword) ||
-                                    pathogen.description.toLowerCase().includes(keyword);
+            return filterListByStartingAlphabet(pathogensList).filter(pathogen => {
+                const pathogenMatch = pathogen.name?.toLowerCase().includes(keyword) ||
+                                    pathogen.description?.toLowerCase().includes(keyword);
                 if (pathogenMatch) return true;
                 const vaccines = getVaccineByPathogen(pathogen) || [];
                 return Array.isArray(vaccines) && vaccines.some(vaccine => {
@@ -364,7 +364,7 @@
          */
         
         const filterLicensersByAlphabetAndSearch = useCallback((keyword) => {
-            return filterListByStartingAlphabet(licensersList).filteredList.filter(licenser => {
+            return filterListByStartingAlphabet(licensersList).filter(licenser => {
                 const licenserMatch = licenser.acronym.toLowerCase().includes(keyword) ||
                                     licenser.description.toLowerCase().includes(keyword);
                 

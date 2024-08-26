@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a><ul class='methods'><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li><li data-type='method'><a href="Sidebar.html#~handleClickSidebar">handleClickSidebar</a></li></ul></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Footer.html">Footer</a></li><li></li><li><a href="Header.html">Header</a></li><li></li><li><a href="Licenser.html">Licenser</a></li><li></li><li><a href="Main.html">Main</a></li><li></li><li><a href="Manufacturer.html">Manufacturer</a></li><li></li><li><a href="Pathogen.html">Pathogen</a></li><li></li><li><a href="Sidebar.html">Sidebar</a></li><li></li><li><a href="TopBar.html">TopBar</a></li><li></li><li><a href="Vaccine.html">Vaccine</a><ul class='methods'><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatContent">formatContent</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li><li data-type='method'><a href="Vaccine.html#~formatHeading">formatHeading</a></li></ul></li><li></li><li><a href="VaccineListTable.html">VaccineListTable</a></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#Alphabets">Alphabets</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#filterLicensers">filterLicensers</a></li><li><a href="global.html#filterListByStartingAlphabet">filterListByStartingAlphabet</a></li><li><a href="global.html#filterLists">filterLists</a></li><li><a href="global.html#filterManufacturers">filterManufacturers</a></li><li><a href="global.html#filterPathogens">filterPathogens</a></li><li><a href="global.html#filterVaccines">filterVaccines</a></li><li><a href="global.html#openModal">openModal</a></li></ul>
     
 </nav>
 
@@ -46,6 +46,7 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>import React from 'react';
+import ReactModal from "react-modal";
 
 /**
  * Vaccine Component
@@ -58,7 +59,7 @@
  * @param {string} props.selectedVaccine.description - The description of the selected vaccine.
  * @param {string} props.selectedVaccine.link - The URL link to learn more about the selected vaccine.
  * @param {string} props.selectedVaccine.lastUpdated - The last updated date for the selected vaccine.
- * @param {Function} props.italizeScientificNames - Function that italicizes scientific names in the description.
+ * @param {Function} props.convertCamelCaseToReadable - Function that converts camel case strings to a readable format.
  * @returns {JSX.Element} The Vaccine Information component.
  *
  * @example
@@ -70,50 +71,174 @@
  *     link: 'https://example.com/vaccine-x', 
  *     lastUpdated: '2024-07-29' 
  *   }} 
- *   italizeScientificNames={text => text.replace(/(scientificName)/gi, '&lt;i>$1&lt;/i>')}
+ *   convertCamelCaseToReadable={key => key.replace(/([A-Z])/g, ' $1').toLowerCase()}
  * />
  */
 
-const Vaccine = ({ selectedVaccine, italizeScientificNames }) => {
+const Vaccine = ({ 
+    selectedVaccine, 
+    convertCamelCaseToReadable 
+}) => {
+
+    const [modalIsOpen, setModalIsOpen] = React.useState(false);
+
+    /**
+     * This function determines sets the modal Open
+     * 
+     * @name openModal
+     * 
+     * @returns {void} This function does not return a value. It updates the `isOpen` state directly.
+     */
+    
+    function openModal() {
+        setModalIsOpen(true);
+    }
+
+    /**
+     * This function determines sets the modal Close
+     * 
+     * @name openModal
+     * 
+     * @returns {void} This function does not return a value. It updates the `isOpen` state directly.
+     */
+
+    function closeModal() {
+        setModalIsOpen(false);
+    }
+
+    /**
+     * Formats the given content by:
+     * 1. Splitting it at `&lt;br />` or `&lt;br>` tags and inserting React line break elements (`&lt;br />`).
+     * 2. Replacing any single apostrophes `'` with double inverted commas `"` in the content.
+     * 
+     * This function takes a string with `&lt;br />` or `&lt;br>` tags and returns an array of React elements. The string is split at each `&lt;br />` tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.
+     * 
+     * @param {string} content - The string containing text, `&lt;br />` or `&lt;br>` tags, and possibly single apostrophes.
+     * @returns {React.ReactNode[]} An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original `&lt;br />` tags, and apostrophes are replaced with double quotes.
+     * 
+     * @example
+     * // Example usage
+     * const content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";
+     * const formatContent = formatContent(content);
+     * 
+     * // formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
+     */
+    const formatContent = content => {
+        const updatedContent = content.replace(/'/g, '"');
+        return updatedContent.split(/&lt;br\s*\/?>/gi).map((part, index) => (
+            &lt;React.Fragment key={index}>
+                {part}
+                {index &lt; updatedContent.split(/&lt;br\s*\/?>/gi).length - 1 &amp;&amp; &lt;br />}
+            &lt;/React.Fragment>
+        ));
+    };
+
+    /**
+     * Formats the given content by:
+     * 1. Splitting it at `&lt;br />` or `&lt;br>` tags and inserting React line break elements (`&lt;br />`).
+     * 2. Replacing any single apostrophes `'` with double inverted commas `"` in the content.
+     * 
+     * This function takes a string with `&lt;br />` or `&lt;br>` tags and returns an array of React elements. The string is split at each `&lt;br />` tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.
+     * 
+     * @param {string} content - The string containing text, `&lt;br />` or `&lt;br>` tags, and possibly single apostrophes.
+     * @returns {React.ReactNode[]} An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original `&lt;br />` tags, and apostrophes are replaced with double quotes.
+     * 
+     * @example
+     * // Example usage
+     * const content = "Monovalent live-attuned &lt;br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";
+     * const formatHeading = formatHeading(content);
+     * 
+     * // formatHeading will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
+     */
+
+    const formatHeading = content => {
+        const updatedContent = content.replace(/'/g, '"');
+        return updatedContent.split(/&lt;br\s*\/?>/gi).map((part, index) => (
+            &lt;span key={index} className={`${index===1 ? `text-hover` : ``}`}>
+                {part}
+                {index &lt; updatedContent.split(/&lt;br\s*\/?>/gi).length - 1 &amp;&amp; &lt;br />}
+            &lt;/span>
+        ));
+    };
+
     return &lt;div className='position-relative slide-left'>
-        &lt;h1 className='heading text-primary pt-2'>{selectedVaccine.name}&lt;/h1>
-        {selectedVaccine.packageInsertLink &amp;&amp; &lt;i class="fa-regular fa-file-pdf text-warning hover-underline" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}>&lt;/i>}
-        {/* &lt;p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}&lt;/p> */}
-        {selectedVaccine.licensingDates &amp;&amp; (
-            &lt;table className='table w-100 m-0'>
-                &lt;thead>
-                    &lt;tr colspan="3">Vaccine Approval Date&lt;/tr>
-                &lt;/thead>
-                &lt;thead>
-                    &lt;tr>
-                    &lt;th>Licenser&lt;/th>
-                    &lt;th>Comments&lt;/th>
-                    &lt;th>Date of Approval&lt;/th>
-                    &lt;/tr>
-                &lt;/thead>
+                &lt;h1 className='heading text-primary text-center'>{selectedVaccine.name}
+                    {/* {selectedVaccine.packageInsertLink &amp;&amp; &lt;i class="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}>&lt;/i>} */}
+                    {selectedVaccine.productProfile &amp;&amp; &lt;i class="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}>&lt;/i>}
+                &lt;/h1>
+                {/* &lt;p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}&lt;/p> */}
+                {selectedVaccine.licensingDates &amp;&amp; (
+                    &lt;table className='table table-light table-striped w-100 m-0'>
+                        &lt;thead>
+                            &lt;tr>
+                                &lt;th className='text-center'>Link&lt;/th>
+                                &lt;th className='text-center'>Licensing/ SmPC&lt;/th>
+                                &lt;th>Indication&lt;/th>
+                                &lt;th className='text-center'>Date of Approval&lt;/th>
+                                &lt;th className='text-center'>Number of Doses Given&lt;/th>
+                            &lt;/tr>
+                        &lt;/thead>
+                        &lt;tbody>
+                            {selectedVaccine.licensingDates.map((licensingDate, index) => (
+                            &lt;React.Fragment key={index}>
+                                &lt;tr>
+                                    &lt;td className='text-center'>&lt;i class="fa-solid fa-file-lines text-dark hover-cursor">&lt;/i>&lt;/td>
+                                    &lt;td className='text-center'>&lt;a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}&lt;/a>&lt;/td>
+                                    &lt;td>{licensingDate.type ? licensingDate.type : '-'}&lt;/td>
+                                    &lt;td className='text-center'>
+                                        &lt;a 
+                                        href={licensingDate.source} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        >
+                                        {licensingDate.date}
+                                        &lt;/a>
+                                    &lt;/td>
+                                    &lt;td className='text-center'>{licensingDate.doses ? licensingDate.doses : `-`}&lt;/td>
+                                &lt;/tr>
+                            &lt;/React.Fragment>
+                            ))}
+                        &lt;/tbody>
+                    &lt;/table>
+                )}
+                {selectedVaccine.introduction &amp;&amp; (
+            &lt;table className='table table-striped w-100 m-0 mb-2'>
                 &lt;tbody>
-                    {selectedVaccine.licensingDates.map((licensingDate, index) => (
-                    &lt;React.Fragment key={index}>
-                        &lt;tr>
-                        &lt;td>{licensingDate.name}&lt;/td>
-                        &lt;td>{licensingDate.type &amp;&amp; licensingDate.type}&lt;/td>
-                        &lt;td>
-                            &lt;a 
-                            href={licensingDate.source} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            >
-                            {licensingDate.date}
-                            &lt;/a>
-                        &lt;/td>
-                        &lt;/tr>
-                    &lt;/React.Fragment>
+                    {Object.entries(selectedVaccine.introduction).map(([category, details], index) => (
+                        &lt;React.Fragment key={index}>
+                            &lt;tr>
+                                &lt;td colSpan={2} className='text-center fw-bold'>{category}&lt;/td>
+                            &lt;/tr>
+                            {Object.entries(details).map(([key, value], idx) => (
+                                &lt;tr key={idx}>
+                                    &lt;td className=''>{key}&lt;/td>
+                                    &lt;td>{value}&lt;/td>
+                                &lt;/tr>
+                            ))}
+                        &lt;/React.Fragment>
                     ))}
                 &lt;/tbody>
             &lt;/table>
         )}
-        &lt;p className='mb-0'>&lt;a className='read-more hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...&lt;/a>&lt;/p>
-        &lt;span className='last-updated text-muted position-absolute end-0 bottom-0'>Last updated: {selectedVaccine.lastUpdated}&lt;/span>
+        &lt;p className='mb-0 ms-1'>&lt;a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...&lt;/a>&lt;/p>
+        &lt;span className='last-updated text-muted position-absolute end-0 bottom-0 me-1'>Last updated: {selectedVaccine.lastUpdated}&lt;/span>
+        {selectedVaccine.productProfile &amp;&amp; &lt;ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
+            &lt;i class="fa-solid fa-xmark fa-lg modal-close-btn position-absolute end-0 hover-cursor" onClick={closeModal}>&lt;/i>
+            &lt;h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVaccine.productProfile.name)}&lt;/h1>
+            &lt;table className='table table-light w-100 m-0'>
+                &lt;tbody>
+                    {Object.entries(selectedVaccine.productProfile).map(([key, value], index) => {
+                        if (key==="name") return null;
+                        return (
+                            &lt;tr key={index}>
+                                &lt;td className={`align-middle ${key==="composition"?`text-white bg-black`:``}`}>{key==="composition" ? `Composition/Platform`: key==="coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}&lt;/td>
+                                &lt;td className={`align-middle ${key==="composition"?`text-white bg-black`:``}`}>{formatContent(value)}&lt;/td>
+                            &lt;/tr>
+                        );
+                    })}
+                &lt;/tbody>
+            &lt;/table>
+        &lt;/ReactModal>}
     &lt;/div> 
 }
 
@@ -131,7 +256,7 @@ export default Vaccine;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 15 2024 10:35:32 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Aug 26 2024 10:25:57 GMT+0800 (Singapore Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
