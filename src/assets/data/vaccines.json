@@ -303,7 +303,7 @@
                 "Pipeline products - detailed information (TPP)": ""
             }
         },
-        "productProfile": [
+        "productProfiles": [
             {
                 "type": "ema",
                 "name": "Short Target Product Profile Phase 3:<br/>Valnea VLA1533 - Chikungunya vaccine (fast track)",

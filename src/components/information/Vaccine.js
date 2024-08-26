@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactModal from "react-modal";
 
 /**
@@ -33,7 +33,8 @@ const Vaccine = ({
     convertCamelCaseToReadable 
 }) => {
 
-    const [modalIsOpen, setModalIsOpen] = React.useState(false);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedVacciProfile, setSelectedVacciProfile] = useState({});
 
     /**
      * This function determines sets the modal Open
@@ -80,12 +81,14 @@ const Vaccine = ({
      * // formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
      */
     const formatContent = content => {
+        if (typeof content === 'object' && content !== null) {
+            content = JSON.stringify(content, null, 2); 
+        }
         if (typeof content !== 'string') {
-            return <span>No content available</span>;
+            return <span>{String(content)}</span>; 
         }
         const updatedContent = content.replace(/'/g, '"');
         const parts = updatedContent.split(/<br\s*\/?>/gi);
-    
         return parts.map((part, index) => (
             <React.Fragment key={index}>
                 {part}
@@ -126,17 +129,32 @@ const Vaccine = ({
         ));
     };
 
+    /**
+     * Removes all <br/> tags from a given string.
+     *
+     * @param {string} text - The input string that may contain <br/> tags.
+     * @returns {string} - The input string with all <br/> tags removed.
+     *
+     * @example
+     * const input = "This is a line.<br/>This is another line.<br/>";
+     * const output = removeBrTags(input);
+     * console.log(output); // "This is a line.This is another line."
+     */
+    function removeBrTags(text) {
+        return text.replace(/<br\s*\/?>/gi, '');
+    }
+
     return <div className='position-relative slide-left'>
                 <h1 className='heading text-primary text-center'>{selectedVaccine.name}
-                    {/* {selectedVaccine.packageInsertLink && <i class="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}
-                    {selectedVaccine.productProfile && <i class="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
+                    {/* {selectedVaccine.packageInsertLink && <i className="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}
+                    {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
                 </h1>
                 {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
                 {selectedVaccine.licensingDates && (
                     <table className='table table-light table-striped w-100 m-0'>
                         <thead>
                             <tr>
-                                <th className='text-center'>Product Profile</th>
+                                <th className='text-center'>Link</th>
                                 <th className='text-center'>Licensing/ SmPC</th>
                                 <th>Indication</th>
                                 <th className='text-center'>Date of Approval</th>
@@ -147,9 +165,9 @@ const Vaccine = ({
                             {selectedVaccine.licensingDates.map((licensingDate, index) => (
                             <React.Fragment key={index}>
                                 <tr>
-                                    <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td>
+                                <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td>
                                     <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
-                                    <td>{licensingDate.type ? licensingDate.type : '-'}</td>
+                                    <td>{licensingDate.indication ? licensingDate.indication : '-'}</td>
                                     <td className='text-center'>
                                         <a 
                                         href={licensingDate.source} 
@@ -165,8 +183,33 @@ const Vaccine = ({
                             ))}
                         </tbody>
                     </table>
-                )}
-                {selectedVaccine.introduction && (
+                )} 
+                {selectedVaccine.productProfiles && (
+                <table className='table table-striped w-100 m-0 mb-2'>
+                    <thead>
+                        <tr>
+                            <th colSpan={2} className='text-center fw-bold'>VacciProfiles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {selectedVaccine.productProfiles.map((profile, index) => (
+                            <tr key={index}>
+                                <td className='text-center'>
+                                    <i
+                                        className="fa-solid fa-file-medical text-hover hover-cursor"
+                                        onClick={() => {
+                                            setSelectedVacciProfile(profile);
+                                            openModal();
+                                        }}
+                                    ></i>
+                                </td>
+                                <td>{removeBrTags(profile.name)}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            )}
+            {selectedVaccine.introduction && (
             <table className='table table-striped w-100 m-0 mb-2'>
                 <tbody>
                     {Object.entries(selectedVaccine.introduction).map(([category, details], index) => (
@@ -187,12 +230,12 @@ const Vaccine = ({
         )}
         <p className='mb-0 ms-1'><a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
         <span className='last-updated text-muted position-absolute end-0 bottom-0 me-1'>Last updated: {selectedVaccine.lastUpdated}</span>
-        {selectedVaccine.productProfile && <ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
+        {selectedVacciProfile && <ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
             <i class="fa-solid fa-xmark fa-lg modal-close-btn position-absolute end-0 hover-cursor" onClick={closeModal}></i>
-            <h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVaccine.productProfile.name)}</h1>
+            <h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVacciProfile.name)}</h1>
             <table className='table table-light w-100 m-0'>
                 <tbody>
-                    {Object.entries(selectedVaccine.productProfile).map(([key, value], index) => {
+                    {Object.entries(selectedVacciProfile).map(([key, value], index) => {
                         if (key==="name") return null;
                         return (
                             <tr key={index}>
