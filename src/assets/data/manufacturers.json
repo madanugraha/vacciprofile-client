@@ -17,20 +17,38 @@
                 {
                     "lastUpdated": "2023",
                     "title": "Annual Report on Form 10-K",
-                    "link" :"https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+                    "link": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
                 }
             ]
         },
         "vaccines": [
-            { "vaccineId": 1 },
-            { "vaccineId": 3 },
-            { "vaccineId": 5 },
-            { "vaccineId": 6 },
-            { "vaccineId": 7 },
-            { "vaccineId": 8 },
-            { "vaccineId": 2 },
-            { "vaccineId": 4 },
-            { "vaccineId": 12 }
+            {
+                "vaccineId": 1
+            },
+            {
+                "vaccineId": 3
+            },
+            {
+                "vaccineId": 5
+            },
+            {
+                "vaccineId": 6
+            },
+            {
+                "vaccineId": 7
+            },
+            {
+                "vaccineId": 8
+            },
+            {
+                "vaccineId": 2
+            },
+            {
+                "vaccineId": 4
+            },
+            {
+                "vaccineId": 12
+            }
         ],
         "link": "https://www.pfizer.com/products/product-list",
         "lastUpdated": "2024-Aug"
@@ -68,9 +86,7 @@
             ]
         },
         "vaccines": [
-            {
-            
-            }
+            {}
         ],
         "lastUpdated": "2024-Aug"
     },
@@ -107,9 +123,7 @@
             ]
         },
         "vaccines": [
-            {
-            
-            }
+            {}
         ],
         "lastUpdated": "2024-Aug"
     },
@@ -132,18 +146,16 @@
                     "lastUpdated": "2023",
                     "title": "Merck & Co. From Wikipedia, the free encyclopedia",
                     "link": "https://en.wikipedia.org/wiki/Merck_%26_Co."
-                },{
+                },
+                {
                     "lastUpdated": "2020",
                     "title": "Merck & Co., Inc. 2020 Form 10-K Annual Report",
                     "link": "https://www.sec.gov/ix?doc=/Archives/edgar/data/310158/000031015821000004/mrk-20201231.htm"
                 }
-                
             ]
         },
         "vaccines": [
-            {
-            
-            }
+            {}
         ],
         "lastUpdated": "2024-Aug"
     },
@@ -170,8 +182,12 @@
             ]
         },
         "vaccines": [
-            { "vaccineId": 2 },
-            { "vaccineId": 4 }
+            {
+                "vaccineId": 2
+            },
+            {
+                "vaccineId": 4
+            }
         ],
         "lastUpdated": "2024-Aug"
     },
@@ -193,7 +209,7 @@
                 {
                     "lastUpdated": "2023",
                     "title": "AstraZeneca From Wikipedia, the free encyclopedia",
-                    "link" :"https://en.wikipedia.org/wiki/AstraZeneca"
+                    "link": "https://en.wikipedia.org/wiki/AstraZeneca"
                 }
             ]
         },
@@ -222,8 +238,324 @@
             ]
         },
         "vaccines": [
-            {
+            {}
+        ],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 8,
+        "name": "Novartis",
+        "description": "A global healthcare company based in Switzerland that provides solutions to address the evolving needs of patients worldwide.",
+        "details": {
+            "founded": "1996",
+            "headquarters": "Basel, Switzerland",
+            "ceo": "Vasant Narasimhan",
+            "revenue": "$51.63 Billion",
+            "operatingIncome": "$10.55 Billion",
+            "netIncome": "$8.23 Billion",
+            "totalAssets": "$127.31 Billion",
+            "totalEquity": "$61.41 Billion",
+            "numberOfEmployees": "108,000",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Novartis - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Novartis"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Novartis Official Website - About Us",
+                    "link": "https://www.novartis.com/about"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Novartis Annual Report 2022",
+                    "link": "https://www.novartis.com/investors/novartis-annual-report-2022"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Novartis CEO Vasant Narasimhan on Strategic Priorities - Financial Times",
+                    "link": "https://www.ft.com/content/vasant-narasimhan-novartis-strategy"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Novartis Financial Data - Reuters",
+                    "link": "https://www.reuters.com/companies/NOVN.S"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Novartis Drug Development Pipeline - BioPharma Dive",
+                    "link": "https://www.biopharmadive.com/novartis-drug-pipeline"
+                }
+            ]
             
+        },
+        "vaccines": [
+            {
+                "vaccineId": 14
+            },
+            {
+                "vaccineId": 15
+            },
+            {
+                "vaccineId": 16
+            },
+            {
+                "vaccineId": 17
+            }
+        ],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 9,
+        "name": "Moderna, Inc.",
+        "description": "An American biotechnology company focused on developing messenger RNA (mRNA) therapeutics and vaccines.",
+        "details": {
+            "founded": "2010",
+            "headquarters": "Cambridge, Massachusetts, USA",
+            "ceo": "Stéphane Bancel",
+            "revenue": "$18.47 Billion",
+            "operatingIncome": "$10.54 Billion",
+            "netIncome": "$8.27 Billion",
+            "totalAssets": "$19.26 Billion",
+            "totalEquity": "$14.12 Billion",
+            "numberOfEmployees": "2,400",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Moderna - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Moderna"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Moderna, Inc. 2022 Annual Report",
+                    "link": "https://investors.modernatx.com/static-files/2022-annual-report"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Moderna Official Website - About Us",
+                    "link": "https://www.modernatx.com/about-us"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Moderna CEO Interview - CNBC",
+                    "link": "https://www.cnbc.com/2023/04/12/moderna-ceo-on-covid-19-vaccine-development.html"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Moderna's Financial Overview - Reuters",
+                    "link": "https://www.reuters.com/companies/MRNA.OQ"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Moderna R&D Pipeline - Science Direct",
+                    "link": "https://www.sciencedirect.com/journal/moderna-r-and-d"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "vaccineId": 18
+            },
+            {
+                "vaccineId": 19
+            },
+            {
+                "vaccineId": 20
+            },
+            {
+                "vaccineId": 21
+            },
+            {
+                "vaccineId": 22
+            },
+            {
+                "vaccineId": 23
+            },
+            {
+                "vaccineId": 24
+            },
+            {
+                "vaccineId": 25
+            }
+        ],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 10,
+        "name": "Sinovac Biotech",
+        "description": "A Chinese biopharmaceutical company that focuses on the research, development, manufacture, and commercialization of vaccines that protect against human infectious diseases.",
+        "details": {
+            "founded": "1999",
+            "headquarters": "Beijing, China",
+            "ceo": "Yin Weidong",
+            "revenue": "$510 Million",
+            "operatingIncome": "$170 Million",
+            "netIncome": "$120 Million",
+            "totalAssets": "$1.5 Billion",
+            "totalEquity": "$800 Million",
+            "numberOfEmployees": "1,200",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Sinovac Biotech - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Sinovac_Biotech"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Sinovac Biotech Company Overview - Bloomberg",
+                    "link": "https://www.bloomberg.com/profile/company/SVA:US"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Sinovac Biotech Official Website - About Us",
+                    "link": "http://www.sinovac.com/?lang=en"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Sinovac's COVID-19 Vaccine Development - Nature Journal",
+                    "link": "https://www.nature.com/articles/d41586-021-00232-5"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Sinovac Financial Statements - MarketScreener",
+                    "link": "https://www.marketscreener.com/quote/stock/SINOVAC-BIOTECH-LTD-38133/financials/"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Sinovac Biotech in the Global Vaccine Market - The Lancet",
+                    "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00224-5/fulltext"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "vaccineId": 26
+            },
+            {
+                "vaccineId": 27
+            },
+            {
+                "vaccineId": 28
+            },
+            {
+                "vaccineId": 29
+            }
+        ],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 11,
+        "name": "Serum Institute of India",
+        "description": "The world's largest vaccine manufacturer by number of doses produced and sold globally, providing vaccines for polio, diphtheria, tetanus, pertussis, Hib, BCG, r-Hepatitis B, measles, mumps, and rubella.",
+        "details": {
+            "founded": "1966",
+            "headquarters": "Pune, India",
+            "ceo": "Adar Poonawalla",
+            "revenue": "$840 Million",
+            "operatingIncome": "$320 Million",
+            "netIncome": "$230 Million",
+            "totalAssets": "$3.5 Billion",
+            "totalEquity": "$2.8 Billion",
+            "numberOfEmployees": "7,000",
+            "sources": [
+                [
+                    {
+                        "lastUpdated": "2023",
+                        "title": "Serum Institute of India - Wikipedia",
+                        "link": "https://en.wikipedia.org/wiki/Serum_Institute_of_India"
+                    },
+                    {
+                        "lastUpdated": "2023",
+                        "title": "Serum Institute of India Official Website - About Us",
+                        "link": "https://www.seruminstitute.com/about_us.php"
+                    },
+                    {
+                        "lastUpdated": "2023",
+                        "title": "Adar Poonawalla: CEO of Serum Institute of India - Forbes",
+                        "link": "https://www.forbes.com/profile/adar-poonawalla/"
+                    },
+                    {
+                        "lastUpdated": "2023",
+                        "title": "Serum Institute of India Financial Data - MoneyControl",
+                        "link": "https://www.moneycontrol.com/financials/serum-institute-of-india"
+                    },
+                    {
+                        "lastUpdated": "2023",
+                        "title": "The Serum Institute’s Role in Global Vaccination - The Guardian",
+                        "link": "https://www.theguardian.com/global-development/2023/mar/15/serum-institute-of-india-vaccine-production"
+                    },
+                    {
+                        "lastUpdated": "2023",
+                        "title": "Serum Institute of India's Impact on COVID-19 Vaccine Supply - BBC News",
+                        "link": "https://www.bbc.com/news/business-56730468"
+                    }
+                ]
+            ]
+        },
+        "vaccines": [
+            {
+                "vaccineId": 20
+            },
+            {
+                "vaccineId": 21
+            }
+        ],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 12,
+        "name": "Bharat Biotech",
+        "description": "An Indian biotechnology company that is known for developing innovative vaccines, biotherapeutics, and healthcare products.",
+        "details": {
+            "founded": "1996",
+            "headquarters": "Hyderabad, India",
+            "ceo": "Krishna Ella",
+            "revenue": "$350 Million",
+            "operatingIncome": "$110 Million",
+            "netIncome": "$80 Million",
+            "totalAssets": "$600 Million",
+            "totalEquity": "$400 Million",
+            "numberOfEmployees": "3,000",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Bharat Biotech - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Bharat_Biotech"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Bharat Biotech Official Website - About Us",
+                    "link": "https://www.bharatbiotech.com/about-us.html"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Bharat Biotech's COVID-19 Vaccine Development - Nature",
+                    "link": "https://www.nature.com/articles/s41591-021-01370-5"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Bharat Biotech's Covaxin: Approval and Global Use - World Health Organization (WHO)",
+                    "link": "https://www.who.int/news-room/feature-stories/detail/covaxin-bharat-biotech"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Bharat Biotech Financial Overview - Business Standard",
+                    "link": "https://www.business-standard.com/company/bharat-biotech-26537/information/company-history"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Interview with Bharat Biotech Founder Krishna Ella - Economic Times",
+                    "link": "https://economictimes.indiatimes.com/news/company/corporate-trends/interview-with-bharat-biotech-founder-krishna-ella"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "vaccineId": 22
+            },
+            {
+                "vaccineId": 23
             }
         ],
         "lastUpdated": "2024-Aug"

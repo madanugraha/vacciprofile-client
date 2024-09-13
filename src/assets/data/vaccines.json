@@ -2,39 +2,47 @@
     {
         "name": "Abrysvo™",
         "vaccineId": 1,
-        "pathogenId": 1, 
+        "pathogenId": 1,
         "manufacturers": [
-            {"manufacturerId": 1}
+            {
+                "manufacturerId": 1
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/media/168889/download?attachment" },
-            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/abrysvo" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/media/168889/download?attachment"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/abrysvo"
+            }
         ],
         "licensingDates": [
-                {
-                    "name": "FDA",
-                    "type": "Maternal",
-                    "date": "08/2023",
-                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
-                },
-                {
-                    "name": "FDA",
-                    "type": "Older Adults",
-                    "date": "05/2023",
-                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
-                },
-                {
-                    "name": "EMA",
-                    "type": "Maternal",
-                    "date": "08/2023",
-                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
-                },
-                {
-                    "name": "EMA",
-                    "type": "Older Adults",
-                    "date": "08/2023",
-                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
-                }
+            {
+                "name": "FDA",
+                "type": "Maternal",
+                "date": "08/2023",
+                "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+            },
+            {
+                "name": "FDA",
+                "type": "Older Adults",
+                "date": "05/2023",
+                "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+            },
+            {
+                "name": "EMA",
+                "type": "Maternal",
+                "date": "08/2023",
+                "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+            },
+            {
+                "name": "EMA",
+                "type": "Older Adults",
+                "date": "08/2023",
+                "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+            }
         ],
         "approvalDate": "2023",
         "description": "Abrysvo™ is a vaccine developed by Pfizer to prevent Respiratory Syncytial Virus (RSV) infection. RSV is a common respiratory virus that usually causes mild, cold-like symptoms. It can be serious, especially for infants and older adults. Abrysvo™ is aimed at providing protection against RSV and is approved for use in various countries.",
@@ -44,20 +52,28 @@
     {
         "name": "Penbraya™",
         "vaccineId": 3,
-        "pathogenId": 3, 
+        "pathogenId": 3,
         "manufacturers": [
-            {"manufacturerId": 1}
+            {
+                "manufacturerId": 1
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/media/151707/download?attachment" },
-            { "licenserId": 2, "link": "https://catalogues.ema.europa.eu/node/3979/methodological-aspects" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/media/151707/download?attachment"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://catalogues.ema.europa.eu/node/3979/methodological-aspects"
+            }
         ],
         "licensingDates": [
-                {
-                    "name": "FDA",
-                    "date": "20/10/2023",
-                    "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/penbraya"
-                }
+            {
+                "name": "FDA",
+                "date": "20/10/2023",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/penbraya"
+            }
         ],
         "description": "Penbraya™ is a pneumococcal vaccine developed by Pfizer. It is designed to protect against diseases caused by the bacterium Streptococcus pneumoniae, which can lead to conditions such as pneumonia, meningitis, and sepsis.",
         "link": "https://www.pfizer.com/products/product-detail/penbrayatm",
@@ -67,32 +83,45 @@
     {
         "name": "Pfizer-BioNTech COVID-19 Vaccine",
         "vaccineId": 4,
-        "pathogenId": 2, 
+        "pathogenId": 2,
         "manufacturers": [
-            { "manufacturerId": 5 },
-            { "manufacturerId": 1 }
+            {
+                "manufacturerId": 5
+            },
+            {
+                "manufacturerId": 1
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/vaccines-blood-biologics/coronavirus-covid-19-cber-regulated-biologics/pfizer-biontech-covid-19-vaccine" },
-            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/comirnaty" },
-            { "licenserId": 3, "link": "https://www.who.int/news-room/feature-stories/detail/who-can-take-the-pfizer-biontech-covid-19--vaccine-what-you-need-to-know" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/coronavirus-covid-19-cber-regulated-biologics/pfizer-biontech-covid-19-vaccine"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/comirnaty"
+            },
+            {
+                "licenserId": 3,
+                "link": "https://www.who.int/news-room/feature-stories/detail/who-can-take-the-pfizer-biontech-covid-19--vaccine-what-you-need-to-know"
+            }
         ],
         "licensingDates": [
-                {
-                    "name": "FDA",
-                    "date": "11/12/2020",
-                    "source": "https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19"
-                },
-                {
-                    "name": "EMA",
-                    "date": "21/12/2020",
-                    "source": "https://www.ema.europa.eu/en/news/ema-recommends-first-covid-19-vaccine-authorisation-eu"
-                },
-                {
-                    "name": "FDA",
-                    "date": "23/08/2023",
-                    "source": "https://www.fda.gov/vaccines-blood-biologics/comirnaty"
-                }
+            {
+                "name": "FDA",
+                "date": "11/12/2020",
+                "source": "https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19"
+            },
+            {
+                "name": "EMA",
+                "date": "21/12/2020",
+                "source": "https://www.ema.europa.eu/en/news/ema-recommends-first-covid-19-vaccine-authorisation-eu"
+            },
+            {
+                "name": "FDA",
+                "date": "23/08/2023",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/comirnaty"
+            }
         ],
         "description": "The Pfizer-BioNTech COVID-19 Vaccine is an mRNA-based vaccine developed to prevent COVID-19, a disease caused by the SARS-CoV-2 virus. It works by instructing cells to produce a protein similar to the one found on the surface of the virus, which helps the immune system recognize and fight the virus if exposed. The vaccine has been widely distributed and is authorized for emergency use or fully approved in various countries.",
         "link": "https://www.pfizer.com/products/product-detail/pfizer-biontech-covid-19-vaccine",
@@ -105,40 +134,51 @@
     {
         "name": "Prevnar 13",
         "vaccineId": 5,
-        "pathogenId": 3, 
+        "pathogenId": 3,
         "manufacturers": [
-            {"manufacturerId": 1}
+            {
+                "manufacturerId": 1
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/media/107657/download?attachment" },
-            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/documents/overview/prevenar-13-epar-summary-public_en.pdf" },
-            { "licenserId": 3, "link": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/pneumonia" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/media/107657/download?attachment"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/documents/overview/prevenar-13-epar-summary-public_en.pdf"
+            },
+            {
+                "licenserId": 3,
+                "link": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/pneumonia"
+            }
         ],
         "licensingDates": [
-                {
-                    "name": "FDA",
-                    "type": "Adults",
-                    "date": "12/07/2016",
-                    "source": "https://www.drugs.com/newdrugs/pfizer-receives-fda-approval-prevnar-13-adults-age-18-through-49-4409.html"
-                },
-                {
-                    "name": "FDA",
-                    "type": "Children (Aged 6-17)",
-                    "date": "25/01/2023",
-                    "source": "https://www.drugs.com/newdrugs/pfizer-receives-fda-approval-prevnar-13-vaccine-naive-children-adolescents-aged-6-years-through-17-3662.html"
-                },
-                {
-                    "name": "FDA",
-                    "type": "Older Adults (Aged 50 and Older)",
-                    "date": "03/01/2012",
-                    "source": "https://www.drugs.com/newdrugs/fda-expands-prevnar-13-vaccine-ages-50-older-3011.html"
-                },
-                {
-                    "name": "FDA",
-                    "type": "Children (6 weeks to 5 years)",
-                    "date": "24/02/2010",
-                    "source": "https://www.drugs.com/newdrugs/fda-expands-prevnar-13-vaccine-ages-50-older-3011.html"
-                }
+            {
+                "name": "FDA",
+                "type": "Adults",
+                "date": "12/07/2016",
+                "source": "https://www.drugs.com/newdrugs/pfizer-receives-fda-approval-prevnar-13-adults-age-18-through-49-4409.html"
+            },
+            {
+                "name": "FDA",
+                "type": "Children (Aged 6-17)",
+                "date": "25/01/2023",
+                "source": "https://www.drugs.com/newdrugs/pfizer-receives-fda-approval-prevnar-13-vaccine-naive-children-adolescents-aged-6-years-through-17-3662.html"
+            },
+            {
+                "name": "FDA",
+                "type": "Older Adults (Aged 50 and Older)",
+                "date": "03/01/2012",
+                "source": "https://www.drugs.com/newdrugs/fda-expands-prevnar-13-vaccine-ages-50-older-3011.html"
+            },
+            {
+                "name": "FDA",
+                "type": "Children (6 weeks to 5 years)",
+                "date": "24/02/2010",
+                "source": "https://www.drugs.com/newdrugs/fda-expands-prevnar-13-vaccine-ages-50-older-3011.html"
+            }
         ],
         "description": "Prevnar 13 is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 13 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in children and adults to prevent infections such as pneumonia, meningitis, and bloodstream infections. It is widely used in various countries and is recommended for individuals at higher risk of pneumococcal disease.",
         "vaccineType": "13-valent pneumococcal conjugate vaccine",
@@ -150,19 +190,30 @@
         "vaccineId": 6,
         "pathogenId": 3,
         "manufacturers": [
-            {"manufacturerId": 1}
+            {
+                "manufacturerId": 1
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/media/151502/download?attachment" },
-            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-20-previously-apexxnar" },
-            { "licenserId": 3, "link": "https://cdn.who.int/media/docs/default-source/pvg/global-vaccine-safety/pneumococcal-vaccine-rates-information-sheet.pdf" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/media/151502/download?attachment"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-20-previously-apexxnar"
+            },
+            {
+                "licenserId": 3,
+                "link": "https://cdn.who.int/media/docs/default-source/pvg/global-vaccine-safety/pneumococcal-vaccine-rates-information-sheet.pdf"
+            }
         ],
         "licensingDates": [
-                {
-                    "name": "FDA",
-                    "date": "10/06/2021",
-                    "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-20"
-                }
+            {
+                "name": "FDA",
+                "date": "10/06/2021",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-20"
+            }
         ],
         "description": "Prevnar 20™ is a pneumococcal conjugate vaccine developed by Pfizer to protect against pneumococcal disease caused by 20 types of Streptococcus pneumoniae bacteria. This vaccine is intended for use in both children and adults to prevent severe infections such as pneumonia, meningitis, and bloodstream infections. Prevnar 20™ provides broader coverage than previous pneumococcal vaccines.",
         "link": "https://www.pfizer.com/products/product-detail/prevnar-20tm",
@@ -174,17 +225,22 @@
         "vaccineId": 7,
         "pathogenId": 4,
         "manufacturers": [
-            {"manufacturerId": 1}
+            {
+                "manufacturerId": 1
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/media/151502/download" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/media/151502/download"
+            }
         ],
         "licensingDates": [
-                {
-                    "name": "FDA",
-                    "date": "08/2021",
-                    "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
-                }
+            {
+                "name": "FDA",
+                "date": "08/2021",
+                "source": "https://s28.q4cdn.com/781576035/files/doc_financials/2023/ar/2023-10k.pdf"
+            }
         ],
         "description": "TicoVac™ is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. TicoVac™ is designed to provide protection against TBE and is used in regions where the disease is endemic.",
         "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
@@ -196,18 +252,27 @@
         "vaccineId": 8,
         "pathogenId": 5,
         "manufacturers": [
-            {"manufacturerId": 1, "link": "https://www.fda.gov/media/89936/download"}
+            {
+                "manufacturerId": 1,
+                "link": "https://www.fda.gov/media/89936/download"
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/trumenba" },
-            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/trumenba" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/trumenba"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/trumenba"
+            }
         ],
         "licensingDates": [
-                {
-                    "name": "FDA",
-                    "date": "13/03/2017",
-                    "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/trumenba"
-                }
+            {
+                "name": "FDA",
+                "date": "13/03/2017",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/trumenba"
+            }
         ],
         "description": "Trumenba™ is a vaccine developed by Pfizer to protect against serogroup B of Neisseria meningitidis, a bacterium that causes meningococcal disease. Trumenba™ is designed to prevent invasive meningococcal B infections in adolescents and young adults.",
         "vaccineType": "Meningococcal B vaccine",
@@ -219,12 +284,20 @@
         "vaccineId": 9,
         "pathogenId": 2,
         "manufacturers": [
-            {"manufacturerId": 2}
+            {
+                "manufacturerId": 2
+            }
         ],
         "licensers": [
-            { "licenserId": 1 },
-            { "licenserId": 2 },
-            { "licenserId": 3 }
+            {
+                "licenserId": 1
+            },
+            {
+                "licenserId": 2
+            },
+            {
+                "licenserId": 3
+            }
         ],
         "description": "The Janssen COVID-19 Vaccine is a single-dose vaccine developed by Johnson & Johnson to protect against COVID-19. It is based on adenovirus technology and has been widely used for its convenience and effectiveness.",
         "link": "https://www.jnj.com/coronavirus/covid-19-vaccine",
@@ -235,11 +308,19 @@
         "vaccineId": 10,
         "pathogenId": 2,
         "manufacturers": [
-            {"manufacturerId": 6}
+            {
+                "manufacturerId": 6
+            }
         ],
         "licensers": [
-            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/vaxzevria-previously-covid-19-vaccine-astrazeneca" },
-            { "licenserId": 3, "link": "https://extranet.who.int/prequal/vaccines/vaxzevria" }
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/vaxzevria-previously-covid-19-vaccine-astrazeneca"
+            },
+            {
+                "licenserId": 3,
+                "link": "https://extranet.who.int/prequal/vaccines/vaxzevria"
+            }
         ],
         "description": "Vaxzevria is a COVID-19 vaccine developed by AstraZeneca. It uses a viral vector platform to stimulate an immune response against the SARS-CoV-2 virus. The vaccine has been used globally to combat the COVID-19 pandemic.",
         "link": "https://www.astrazeneca.com/media-centre/press-releases/2021/astrazeneca-announces-covid-19-vaccine-update.html",
@@ -250,13 +331,27 @@
         "vaccineId": 11,
         "pathogenId": 6,
         "manufacturers": [
-            {"manufacturerId": 4}
+            {
+                "manufacturerId": 4
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/files/vaccines,%20blood%20&%20biologics/published/Package-Insert---Gardasil.pdf" },
-            { "licenserId": 2, "link": "https://www.ema.europa.eu/en/documents/product-information/gardasil-epar-product-information_en.pdf" },
-            { "licenserId": 3, "link": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/human-papillomavirus-vaccines-(HPV)" },
-            { "licenserId": 4, "link": "https://assets.publishing.service.gov.uk/media/62291db38fa8f526d907f6c7/UKHSA-12304-HPV-healthcare-professional-factsheet.pdf"}
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/files/vaccines,%20blood%20&%20biologics/published/Package-Insert---Gardasil.pdf"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/documents/product-information/gardasil-epar-product-information_en.pdf"
+            },
+            {
+                "licenserId": 3,
+                "link": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/human-papillomavirus-vaccines-(HPV)"
+            },
+            {
+                "licenserId": 4,
+                "link": "https://assets.publishing.service.gov.uk/media/62291db38fa8f526d907f6c7/UKHSA-12304-HPV-healthcare-professional-factsheet.pdf"
+            }
         ],
         "description": "Gardasil is a vaccine developed by Merck & Co., Inc. to protect against human papillomavirus (HPV) infection. It provides protection against the most common HPV types that cause cervical cancer, other genital cancers, and genital warts.",
         "link": "https://www.merck.com/product/usa/pi_circulars/g/gardasil/gardasil_pi.pdf",
@@ -267,10 +362,15 @@
         "vaccineId": 12,
         "pathogenId": 4,
         "manufacturers": [
-            { "manufacturerId": 1 }
+            {
+                "manufacturerId": 1
+            }
         ],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/media/151994/download" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/media/151994/download"
+            }
         ],
         "description": "Pfizer’s TBE vaccine, marketed under the brand names FSME-Immun® and TicoVac™ in Europe, and TICOVAC™ in the U.S., is developed using a master ‘seed’ virus that is similar to the TBE virus found in nature. It is a vaccine developed by Pfizer for the prevention of tick-borne encephalitis (TBE), a viral infection transmitted by ticks. It is designed to provide protection against TBE and is used in regions where the disease is endemic.",
         "vaccineType": "Tick-borne-encephalitis (TBE) whole-virus vaccine.",
@@ -281,10 +381,12 @@
         "name": "Valneva VLA1553 Chikungunya Vaccine",
         "pathogenId": 4,
         "vaccineId": 13,
-        "manufacturers": [
-        ],
+        "manufacturers": [],
         "licensers": [
-            { "licenserId": 1, "link": "https://www.fda.gov/files/vaccines%2C%20blood%20%26%20biologics/published/Package-Insert-IXCHIQ.pdf" }
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/files/vaccines%2C%20blood%20%26%20biologics/published/Package-Insert-IXCHIQ.pdf"
+            }
         ],
         "description": "-",
         "introduction": {
@@ -293,7 +395,7 @@
                 "Vaccine SmPCs (FDA, EMA, WHO, others)": "Search by disease, include combos",
                 "Product profiles": "",
                 "Pipeline products - summary table": "By click, TPP",
-                "Failed products": ""  
+                "Failed products": ""
             },
             "Company products, pipeline": {
                 "VPD-BoD, Product presentations, Monograph": "",
@@ -340,5 +442,274 @@
                 "others": "No safety/efficacy/effectiveness data in <18 yrs. and ≥ 65 yrs.; lower immune response in HIV-infected individuals; no data in other immunosuppressed individuals; dose intervals of less than 28 days should be avoided in immunosuppressed individuals.; authorization under exceptional circumstances; vial temperature should be 8-25°C before use."
             }
         ]
+    },
+    {
+        "name": "Menveo",
+        "vaccineId": 14,
+        "pathogenId": 22,
+        "manufacturers": [
+            {
+                "manufacturerId": 8
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/menveo"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/menveo"
+            }
+        ],
+        "description": "Menveo is a meningococcal (Groups A, C, Y, and W-135) oligosaccharide diphtheria CRM197 conjugate vaccine. It is developed by Novartis (now part of GSK) for the prevention of invasive disease caused by Neisseria meningitidis in individuals aged 2 months to 55 years.",
+        "vaccineType": "Meningococcal conjugate vaccine.",
+        "link": "https://www.gsk.com/en-gb/products/our-vaccines/menveo/",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "Fluad",
+        "vaccineId": 15,
+        "pathogenId": 8,
+        "manufacturers": [
+            {
+                "manufacturerId": 8
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluad"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluad"
+            },
+            {
+                "licenserId": 6,
+                "link": "https://www.tga.gov.au/resources/auspmd/fluad"
+            }
+        ]
+        ,
+        "description": "Fluad is an adjuvanted seasonal influenza vaccine developed by Novartis (now part of Seqirus) for adults aged 65 years and older to provide protection against influenza. It includes an adjuvant called MF59 to enhance the immune response.",
+        "vaccineType": "Influenza vaccine.",
+        "link": "https://www.seqirus.com/products/influenza-vaccines/fluad",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "Bexsero",
+        "vaccineId": 16,
+        "pathogenId": 21,
+        "manufacturers": [
+            {
+                "manufacturerId": 8
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/bexsero"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/bexsero"
+            }
+        ],
+        "description": "Bexsero is a multicomponent vaccine against serogroup B meningococcal disease, designed to help prevent invasive disease caused by Neisseria meningitidis serogroup B.",
+        "vaccineType": "Meningococcal serogroup B vaccine.",
+        "link": "https://www.gsk.com/en-gb/products/our-vaccines/bexsero/",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "RabAvert",
+        "vaccineId": 17,
+        "pathogenId": 20,
+        "manufacturers": [
+            {
+                "manufacturerId": 8
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/rabavert"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/rabavert"
+            }
+        ],
+        "description": "RabAvert is a rabies vaccine used for pre-exposure and post-exposure prophylaxis against rabies. It is developed by Novartis for active immunization against the rabies virus.",
+        "vaccineType": "Rabies vaccine.",
+        "link": "https://www.gsk.com/en-gb/products/our-vaccines/rabavert/",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "mRNA-1273 (Spikevax)",
+        "vaccineId": 18,
+        "pathogenId": 2,
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/spikevax"
+            },
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/spikevax"
+            },
+            {
+                "licenserId": 3,
+                "link": "https://www.who.int/publications/i/item/spikevax"
+            }
+        ],
+        "description": "Spikevax is an mRNA-based COVID-19 vaccine that encodes a stabilized form of the spike protein of SARS-CoV-2. It is used for the prevention of COVID-19 in individuals aged 6 months and older.",
+        "vaccineType": "mRNA vaccine.",
+        "link": "https://www.modernatx.com/covid19vaccine-eua/",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "mRNA-1647",
+        "vaccineId": 19,
+        "pathogenId": 19,
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/development/clinical-trials-cytomegalovirus-vaccine"
+            }
+        ],
+        "description": "mRNA-1647 is a cytomegalovirus (CMV) vaccine candidate designed to elicit an immune response against CMV, which is the leading cause of birth defects due to infection in the United States.",
+        "vaccineType": "mRNA vaccine.",
+        "link": "https://www.modernatx.com/our-pipeline/cmvrna-vaccine",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "mRNA-1345",
+        "vaccineId": 20,
+        "pathogenId": 1,
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 1,
+                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/rsv-vaccine"
+            }
+        ],
+        "description": "mRNA-1345 is a vaccine candidate against Respiratory Syncytial Virus (RSV) developed to provide immunity and reduce the incidence of RSV-related illness in older adults and children.",
+        "vaccineType": "mRNA vaccine.",
+        "link": "https://www.modernatx.com/rsv-vaccine-development",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "mRNA-1893",
+        "vaccineId": 21,
+        "pathogenId": 18,
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 3,
+                "link": "https://www.who.int/vaccines/clinical-trials/zika-virus-vaccine"
+            }
+        ],
+        "description": "mRNA-1893 is a Zika virus vaccine candidate developed by Moderna for use in individuals at risk of Zika infection, particularly pregnant women, to prevent Zika-associated birth defects.",
+        "vaccineType": "mRNA vaccine.",
+        "link": "https://www.modernatx.com/zika-virus-vaccine",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "mRNA-1010",
+        "vaccineId": 22,
+        "pathogenId": 8,
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 2,
+                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/influenza-vaccine"
+            }
+        ],
+        "description": "mRNA-1010 is an influenza vaccine candidate designed to provide broader protection against multiple strains of the influenza virus, including A/H1N1, A/H3N2, B/Yamagata, and B/Victoria.",
+        "vaccineType": "mRNA vaccine.",
+        "link": "https://www.modernatx.com/flu-vaccine-program",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "mRNA-1189",
+        "vaccineId": 23,
+        "pathogenId": 17,
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 196,
+                "link": "https://www.niaid.nih.gov/research/epstein-barr-virus-vaccine"
+            }
+        ],
+        "description": "mRNA-1189 is a vaccine candidate against the Epstein-Barr Virus (EBV), aimed at preventing infectious mononucleosis and potentially reducing the risk of EBV-associated cancers.",
+        "vaccineType": "mRNA vaccine.",
+        "link": "https://www.modernatx.com/ebv-vaccine-development",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "mRNA-1574",
+        "vaccineId": 24,
+        "pathogenId": 16,
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 196,
+                "link": "https://www.niaid.nih.gov/research/hiv-vaccine-clinical-research"
+            }
+        ],
+        "description": "mRNA-1574 is a vaccine candidate for HIV, developed using Moderna's mRNA technology platform to elicit an immune response against multiple strains of the Human Immunodeficiency Virus.",
+        "vaccineType": "mRNA vaccine.",
+        "link": "https://www.modernatx.com/hiv-vaccine-development",
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "name": "mRNA-1388",
+        "vaccineId": 25,
+        "pathogenId": 7,
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "licensers": [
+            {
+                "licenserId": 3,
+                "link": "https://www.who.int/news-room/fact-sheets/detail/chikungunya"
+            }
+        ],
+        "description": "mRNA-1388 is a vaccine candidate targeting Chikungunya virus, designed to protect against the severe joint pain and other symptoms associated with the infection.",
+        "vaccineType": "mRNA vaccine.",
+        "link": "https://www.modernatx.com/chikungunya-vaccine",
+        "lastUpdated": "2024-Aug"
     }
 ]
