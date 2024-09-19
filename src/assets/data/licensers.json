@@ -1544,5 +1544,21 @@
     "description": "The Ministry of Health in Zimbabwe oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
     "website": "www.mohcc.gov.zw",
     "country": "Zimbabwe"
+  },
+  {
+    "licenserId": 196,
+    "acronym": "NIAID",
+    "fullName": "National Institute of Allergy and Infectious Diseases",
+    "description": "The National Institute of Allergy and Infectious Diseases (NIAID) is part of the U.S. National Institutes of Health (NIH). It conducts and supports research to better understand, treat, and prevent infectious, immunologic, and allergic diseases. NIAID's work includes funding research, conducting clinical trials, and developing new diagnostics, therapeutics, and vaccines.",
+    "website": "www.niaid.nih.gov",
+    "country": "United States"
+  },
+  {
+    "licenserId": 197,
+    "acronym": "NCBI",
+    "fullName": "National Center for Biotechnology Information",
+    "description": "The National Center for Biotechnology Information (NCBI) is part of the United States National Library of Medicine (NLM), a branch of the National Institutes of Health (NIH). Founded in 1988, NCBI advances science and health by providing access to biomedical and genomic information. It houses a series of databases relevant to biotechnology and biomedicine, including GenBank for DNA sequences and PubMed for biomedical literature. NCBI also offers bioinformatics tools and services.",
+    "website": "www.ncbi.nlm.nih.gov",
+    "country": "United States"
   }
 ]
