@@ -86,7 +86,9 @@
             ]
         },
         "vaccines": [
-            {}
+            {
+                "vaccineId": 9
+            }
         ],
         "lastUpdated": "2024-Aug"
     },
@@ -155,7 +157,9 @@
             ]
         },
         "vaccines": [
-            {}
+            {
+                "vaccineId": 11
+            }
         ],
         "lastUpdated": "2024-Aug"
     },
@@ -182,9 +186,6 @@
             ]
         },
         "vaccines": [
-            {
-                "vaccineId": 2
-            },
             {
                 "vaccineId": 4
             }
@@ -238,7 +239,9 @@
             ]
         },
         "vaccines": [
-            {}
+            {
+                "vaccineId": 10
+            }
         ],
         "lastUpdated": "2024-Aug"
     },
@@ -288,7 +291,6 @@
                     "link": "https://www.biopharmadive.com/novartis-drug-pipeline"
                 }
             ]
-            
         },
         "vaccines": [
             {
@@ -494,12 +496,7 @@
             ]
         },
         "vaccines": [
-            {
-                "vaccineId": 20
-            },
-            {
-                "vaccineId": 21
-            }
+            {}
         ],
         "lastUpdated": "2024-Aug"
     },
@@ -551,12 +548,7 @@
             ]
         },
         "vaccines": [
-            {
-                "vaccineId": 22
-            },
-            {
-                "vaccineId": 23
-            }
+            {}
         ],
         "lastUpdated": "2024-Aug"
     }

@@ -1305,6 +1305,18 @@
                 "link": "https://www.fda.gov/vaccines-blood-biologics/development/clinical-trials-cytomegalovirus-vaccine"
             }
         ],
+        "licensingDates": [
+            {
+                "name": "TGA",
+                "date": "Not yet approved",
+                "source": "https://www.tga.gov.au/covid-19-vaccine-provisional-determinations"
+            },
+            {
+                "name": "Health Canada",
+                "date": "Not yet approved",
+                "source": "https://www.canada.ca/en/health-canada/services/drugs-health-products/covid19-industry/drugs-vaccines-treatments/vaccines.html"
+            }
+        ],
         "description": "mRNA-1647 is an investigational cytomegalovirus (CMV) vaccine used for active immunization to prevent CMV infection.",
         "introduction": {
             "General Information": {
@@ -1359,6 +1371,13 @@
             {
                 "licenserId": 1,
                 "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/rsv-vaccine"
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "date": "05/12/2024",
+                "source": "https://www.contagionlive.com/view/moderna-s-investigational-rsv-vaccine-preparing-for-potential-launch-this-year"
             }
         ],
         "description": "mRNA-1345 is an investigational respiratory syncytial virus (RSV) vaccine used for active immunization to prevent RSV infection.",
@@ -1417,6 +1436,23 @@
                 "link": "https://www.who.int/vaccines/clinical-trials/zika-virus-vaccine"
             }
         ],
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "date": "Not yet approved",
+                "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7761420/"
+            },
+            {
+                "name": "TGA",
+                "date": "Not yet approved",
+                "source": "https://www.tga.gov.au/covid-19-vaccine-provisional-determinations"
+            },
+            {
+                "name": "Health Canada",
+                "date": "Not yet approved",
+                "source": "https://www.canada.ca/en/health-canada/services/drugs-health-products/covid19-industry/drugs-vaccines-treatments/vaccines.html"
+            }
+        ],
         "description": "mRNA-1893 is an investigational Zika virus vaccine used for active immunization to prevent Zika virus infection.",
         "introduction": {
             "General Information": {
@@ -1471,6 +1507,13 @@
             {
                 "licenserId": 2,
                 "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/influenza-vaccine"
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "TGA",
+                "date": "Not yet approved",
+                "source": "https://www.tga.gov.au/covid-19-vaccine-provisional-determinations"
             }
         ],
         "description": "mRNA-1010 is an investigational quadrivalent seasonal influenza vaccine designed to prevent influenza caused by the A/H1N1, A/H3N2, B/Yamagata, and B/Victoria strains.",
@@ -1529,6 +1572,13 @@
                 "link": "https://www.niaid.nih.gov/research/epstein-barr-virus-vaccine"
             }
         ],
+        "licensingDates": [
+            {
+                "name": "TGA",
+                "date": "Not yet approved",
+                "source": "https://www.tga.gov.au/covid-19-vaccine-provisional-determinations"
+            }
+        ],
         "description": "mRNA-1189 is an investigational Epstein-Barr virus (EBV) vaccine used for active immunization to prevent EBV infection.",
         "introduction": {
             "General Information": {
@@ -1585,6 +1635,13 @@
                 "link": "https://www.niaid.nih.gov/research/hiv-vaccine-clinical-research"
             }
         ],
+        "licensingDates": [
+            {
+                "name": "TGA",
+                "date": "Not yet approved",
+                "source": "https://www.tga.gov.au/covid-19-vaccine-provisional-determinations"
+            }
+        ],
         "description": "mRNA-1574 is an investigational HIV vaccine candidate that utilizes multiple mRNAs encoded native-like HIV trimers to induce sustained protective levels of HIV-neutralizing antibodies.",
         "introduction": {
             "General Information": {
@@ -1639,6 +1696,13 @@
             {
                 "licenserId": 3,
                 "link": "https://www.who.int/news-room/fact-sheets/detail/chikungunya"
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "TGA",
+                "date": "Not yet approved",
+                "source": "https://www.tga.gov.au/covid-19-vaccine-provisional-determinations"
             }
         ],
         "description": "mRNA-1388 is a vaccine candidate targeting Chikungunya virus, designed to protect against the severe joint pain and other symptoms associated with the infection.",
