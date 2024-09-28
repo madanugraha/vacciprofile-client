@@ -277,5 +277,23 @@
             }
         ],
         "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+    },
+    {
+        "pathogenId": 24,
+        "name": "Norovirus",
+        "description": "Norovirus is a highly contagious virus that causes gastroenteritis, leading to inflammation of the stomach and intestines. It is often associated with outbreaks of vomiting and diarrhea, especially in enclosed environments like cruise ships, hospitals, and schools. The virus is transmitted through contaminated food, water, surfaces, or from person to person. While typically mild, norovirus infections can cause severe dehydration, particularly in vulnerable populations such as young children, the elderly, and immunocompromised individuals.",
+        "vaccines": [
+            {}
+        ],
+        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+    },
+    {
+        "pathogenId": 25,
+        "name": "Melanoma (Head and Neck)",
+        "description": "Melanoma of the head and neck is a rare, aggressive cancer that originates from melanocytes. It can affect skin and mucosal areas like the nasal and oral cavities. Risk factors include UV exposure, fair skin, immunosuppression, and genetic predisposition.",
+        "vaccines": [
+            {}
+        ],
+        "link": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/melanoma-of-the-head-and-neck"
     }
 ]

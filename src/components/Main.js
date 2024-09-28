@@ -5,6 +5,7 @@ import Pathogen from './information/Pathogen';
 import Vaccine from './information/Vaccine';
 import ManufacturerProfile from './information/ManufacturerProfile';
 import Licenser from './information/Licenser';
+import PipelineVaccineListTable from './information/PipelineVaccineListTable';
 
 /**
  * Main Component
@@ -58,18 +59,20 @@ import Licenser from './information/Licenser';
 
 const Main = ({
     activeTab,
-    sidebarList=[],
-    selectedPathogen, 
-    selectedVaccine, 
+    sidebarList = [],
+    selectedPathogen,
+    selectedVaccine,
     selectedManufacturer,
-    selectedLicenser, 
+    selectedLicenser,
     activeFilters,
     setActiveFilters,
-    handleSelectPathogen, 
-    handleSelectVaccine, 
-    handleSelectLicenser, 
+    handleSelectPathogen,
+    handleSelectVaccine,
+    handleSelectLicenser,
     getPathogenByVaccine,
+    getPathogenById,
     getVaccinesByManufacturer,
+    getPipelineVaccinesByManufacturer,
     getVaccinesByLicenser,
     changedFrom,
     italizeScientificNames,
@@ -80,76 +83,96 @@ const Main = ({
     const [animationClass, setAnimationClass] = useState('slide-left');
 
     useEffect(() => {
-        if(changedFrom==="Sidebar"){
+        if (changedFrom === "Sidebar") {
             const isSelectedObjectNotEmpty = (obj) => Object.keys(obj).length !== 0;
             if (
-                (activeTab==='Manufacturer' && isSelectedObjectNotEmpty(selectedManufacturer)) ||
-                (activeTab==='Vaccine' && isSelectedObjectNotEmpty(selectedVaccine)) ||
-                (activeTab==='Pathogen' && isSelectedObjectNotEmpty(selectedPathogen)) ||
-                (activeTab==='Licenser' && isSelectedObjectNotEmpty(selectedLicenser))
-            ){
+                (activeTab === 'Manufacturer' && isSelectedObjectNotEmpty(selectedManufacturer)) ||
+                (activeTab === 'Vaccine' && isSelectedObjectNotEmpty(selectedVaccine)) ||
+                (activeTab === 'Pathogen' && isSelectedObjectNotEmpty(selectedPathogen)) ||
+                (activeTab === 'Licenser' && isSelectedObjectNotEmpty(selectedLicenser))
+            ) {
                 setAnimationClass('');
                 const timeout = setTimeout(() => {
                     setAnimationClass('slide-left');
                 }, 5);
                 return () => clearTimeout(timeout);
-            } 
+            }
         }
     }, [changedFrom, activeTab, selectedLicenser, selectedManufacturer, selectedPathogen, selectedVaccine]);
 
     return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${animationClass}`}>
         <div className='main-container border border-primary border-1 rounded-3 slide-left overflow-auto'>
-            { 
-            sidebarList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>
-                <span className='clear-filters text-decoration-underline' onClick={()=>setActiveFilters({...activeFilters, searchKeyword: '', firstAlphabet: ''})}>
-                    Clear filters
-                </span>
-            </div> : 
-            (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
-            (activeTab === 'Vaccine' && Object.keys(selectedVaccine).length === 0) ||
-            (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0) ||
-            (activeTab === 'Licenser' && Object.keys(selectedLicenser).length === 0)
-                ? <div className='empty-main position-relative'>
-                <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100}/>
-                <span className='select-prompt position-absolute'>Select a {activeTab}</span>
-            </div> : <>
-                <div className='details-container'>
-                    {activeTab==="Pathogen" 
-                    ? <Pathogen 
-                        selectedPathogen={selectedPathogen} 
-                        italizeScientificNames={italizeScientificNames}
-                    /> : activeTab==="Vaccine" 
-                    ? <Vaccine 
-                        selectedVaccine={selectedVaccine}
-                        convertCamelCaseToReadable={convertCamelCaseToReadable}
-                    /> : activeTab==="Manufacturer" 
-                    ? <ManufacturerProfile
-                        selectedManufacturer={selectedManufacturer}
-                        getVaccinesByManufacturer={getVaccinesByManufacturer}
-                        convertCamelCaseToReadable={convertCamelCaseToReadable}
-                    /> : activeTab==="Licenser" 
-                    ? <Licenser
-                        getVaccinesByLicenser={getVaccinesByLicenser}
-                        handleSelectVaccine={handleSelectVaccine}
-                        selectedLicenser={selectedLicenser}
-                    />
-                    : null}
-                    {activeTab==="Manufacturer" && getVaccinesByManufacturer().length>0 
-                    ? <VaccineListTable 
-                        activeTab={activeTab}
-                        selectedPathogen={selectedPathogen}
-                        selectedVaccine={selectedVaccine}
-                        selectedLicenser={selectedLicenser}
-                        handleSelectVaccine={handleSelectVaccine}
-                        handleSelectPathogen={handleSelectPathogen} 
-                        handleSelectLicenser={handleSelectLicenser}
-                        getVaccinesByManufacturer={getVaccinesByManufacturer}
-                        getPathogenByVaccine={getPathogenByVaccine}
-                        getLicenserById={getLicenserById}
-                        italizeScientificNames={italizeScientificNames}
-                    /> : ``}
-                </div>
-            </>}
+            {
+                sidebarList.length === 0 ? <div className='empty-main d-flex justify-content-center align-items-center'>
+                    <span className='clear-filters text-decoration-underline' onClick={() => setActiveFilters({ ...activeFilters, searchKeyword: '', firstAlphabet: '' })}>
+                        Clear filters
+                    </span>
+                </div> :
+                    (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
+                        (activeTab === 'Vaccine' && Object.keys(selectedVaccine).length === 0) ||
+                        (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0) ||
+                        (activeTab === 'Licenser' && Object.keys(selectedLicenser).length === 0)
+                        ? <div className='empty-main position-relative'>
+                            <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100} />
+                            <span className='select-prompt position-absolute'>Select a {activeTab}</span>
+                        </div> : <>
+                            <div className='details-container'>
+                                {activeTab === "Pathogen"
+                                    ? <Pathogen
+                                        selectedPathogen={selectedPathogen}
+                                        italizeScientificNames={italizeScientificNames}
+                                    /> : activeTab === "Vaccine"
+                                        ? <Vaccine
+                                            selectedVaccine={selectedVaccine}
+                                            convertCamelCaseToReadable={convertCamelCaseToReadable}
+                                        /> : activeTab === "Manufacturer"
+                                            ? <ManufacturerProfile
+                                                selectedManufacturer={selectedManufacturer}
+                                                getVaccinesByManufacturer={getVaccinesByManufacturer}
+                                                convertCamelCaseToReadable={convertCamelCaseToReadable}
+                                            /> : activeTab === "Licenser"
+                                                ? <Licenser
+                                                    getVaccinesByLicenser={getVaccinesByLicenser}
+                                                    handleSelectVaccine={handleSelectVaccine}
+                                                    selectedLicenser={selectedLicenser}
+                                                />
+                                                : null}
+                                {activeTab === "Manufacturer" && getVaccinesByManufacturer().length > 0
+                                    ?
+                                    <VaccineListTable
+                                        activeTab={activeTab}
+                                        selectedPathogen={selectedPathogen}
+                                        selectedVaccine={selectedVaccine}
+                                        selectedLicenser={selectedLicenser}
+                                        handleSelectVaccine={handleSelectVaccine}
+                                        handleSelectPathogen={handleSelectPathogen}
+                                        handleSelectLicenser={handleSelectLicenser}
+                                        getVaccinesByManufacturer={getVaccinesByManufacturer}
+                                        getPathogenByVaccine={getPathogenByVaccine}
+                                        getLicenserById={getLicenserById}
+                                        italizeScientificNames={italizeScientificNames}
+                                    />
+                                    : ``}
+
+                                {activeTab === "Manufacturer" && getPipelineVaccinesByManufacturer().length > 0
+                                    ?
+                                    <PipelineVaccineListTable
+                                        activeTab={activeTab}
+                                        selectedPathogen={selectedPathogen}
+                                        selectedVaccine={selectedVaccine}
+                                        selectedLicenser={selectedLicenser}
+                                        handleSelectVaccine={handleSelectVaccine}
+                                        handleSelectPathogen={handleSelectPathogen}
+                                        handleSelectLicenser={handleSelectLicenser}
+                                        getPipelineVaccinesByManufacturer={getPipelineVaccinesByManufacturer}
+                                        getPathogenByVaccine={getPathogenByVaccine}
+                                        getPathogenById={getPathogenById}
+                                        getLicenserById={getLicenserById}
+                                        italizeScientificNames={italizeScientificNames}
+                                    />
+                                    : ``}
+                            </div>
+                        </>}
         </div>
     </div>
 }

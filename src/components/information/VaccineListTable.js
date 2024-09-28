@@ -91,7 +91,7 @@ const VaccineListTable = ({
                                     return (
                                         <span key={l.licenserId}>
                                             <a href={l.link} className='selectable' target="_blank" rel="noopener noreferrer">
-                                                {licenser.name}
+                                                {licenser.acronym}
                                             </a>
                                             {index < vaccine.licensers.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
                                         </span>

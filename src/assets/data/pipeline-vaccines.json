@@ -1,0 +1,112 @@
+[
+    {
+        "pipelineVaccineId": 1,
+        "manufacturerId": 9,
+        "name": "mRNA-1283",
+        "pathogen": [2],
+        "status": "Phase 3",
+        "licensing_authority": [
+            1,
+            2,
+            4
+        ],
+        "milestones": {
+            "description": "Next-generation COVID-19 vaccine designed for improved stability at refrigerator temperatures.",
+            "expected_filing": "2024",
+            "key_trial_results": "Phase 3 study ongoing; data expected in early 2024"
+        }
+    },
+    {
+        "pipelineVaccineId": 2,
+        "manufacturerId": 9,
+        "name": "mRNA-1083",
+        "pathogen": [2,8],
+        "status": "Phase 3",
+        "licensing_authority": [
+            1,
+            2
+        ],
+        "milestones": {
+            "description": "Combination vaccine for both COVID-19 and seasonal influenza, targeting annual immunization.",
+            "expected_filing": "2024",
+            "key_trial_results": "Positive results in early trials; ongoing Phase 3 with data anticipated in 2024."
+        }
+    },
+    {
+        "pipelineVaccineId": 3,
+        "manufacturerId": 9,
+        "name": "mRNA-1010",
+        "pathogen": [8],
+        "status": "Phase 3",
+        "licensing_authority": [
+            1,
+            2
+        ],
+        "milestones": {
+            "description": "Standalone seasonal flu vaccine aimed at improved protection over standard flu vaccines.",
+            "expected_filing": "2024",
+            "key_trial_results": "Met primary endpoints in Phase 3 trials; showed superior immune response compared to Fluzone HD®."
+        }
+    },
+    {
+        "pipelineVaccineId": 4,
+        "manufacturerId": 9,
+        "name": "mRNA-1345",
+        "pathogen": [1],
+        "status": "Filed for approval",
+        "licensing_authority": [
+            1
+        ],
+        "milestones": {
+            "description": "RSV vaccine for prevention in older adults, particularly effective in preventing RSV-related lower respiratory disease.",
+            "expected_approval": "First half of 2024",
+            "key_trial_results": "Filed with strong Phase 3 efficacy data."
+        }
+    },
+    {
+        "pipelineVaccineId": 5,
+        "manufacturerId": 9,
+        "name": "mRNA-1647",
+        "pathogen": [19],
+        "status": "Phase 3",
+        "licensing_authority": [
+            1,
+            2
+        ],
+        "milestones": {
+            "description": "Vaccine for prevention of CMV, a leading cause of birth defects.",
+            "expected_filing": "Late 2024",
+            "key_trial_results": "Phase 3 interim analysis expected by end of 2024."
+        }
+    },
+    {
+        "pipelineVaccineId": 6,
+        "manufacturerId": 9,
+        "name": "mRNA-1403",
+        "pathogen": [24],
+        "status": "Phase 1",
+        "licensing_authority": [
+            1
+        ],
+        "milestones": {
+            "description": "Vaccine targeting norovirus, a leading cause of acute gastroenteritis worldwide.",
+            "expected_next_phase": "2024",
+            "key_trial_results": "Phase 1 trial showed robust immune responses; pivotal Phase 3 trials expected to begin soon."
+        }
+    },
+    {
+        "pipelineVaccineId": 7,
+        "manufacturerId": 9,
+        "name": "mRNA-4157",
+        "pathogen": [25],
+        "status": "Phase 3",
+        "licensing_authority": [
+            1
+        ],
+        "milestones": {
+            "description": "Personalized cancer vaccine in partnership with Merck, designed to improve outcomes in combination with Keytruda.",
+            "expected_filing": "2025",
+            "key_trial_results": "Phase 3 trials ongoing with promising results in early trials."
+        }
+    }
+]
