@@ -41,13 +41,7 @@ const PipelineVaccineListTable = ({
     activeTab,
     selectedPathogen,
     selectedVaccine,
-    selectedLicenser,
-    handleSelectPathogen,
-    handleSelectVaccine,
-    handleSelectLicenser,
-    getVaccinesByManufacturer,
     getPipelineVaccinesByManufacturer,
-    getPathogenByVaccine,
     getPathogenById,
     getLicenserById,
     italizeScientificNames
@@ -103,7 +97,7 @@ const PipelineVaccineListTable = ({
                                     <td className='licenser-cell'>
                                         {vaccine.licensing_authority.map((l, index) => {
                                             const licenser = getLicenserById(l);
-                                            if (licenser === null) return
+                                            if (licenser === null) return ""
                                             return (
                                                 <a href={licenser.website} className='selectable' target="_blank" rel="noopener noreferrer">
                                                     {licenser.acronym}{ index < vaccine.licensing_authority.length - 1 ? ', ' : `` }
@@ -113,7 +107,7 @@ const PipelineVaccineListTable = ({
                                     </td>
                                     <td className='milestones-cell'>
                                         <div className='d-flex flex-col'>
-                                            <span>{JSON.stringify(vaccine.milestones)}</span>
+                                            <span><button>Open Detail</button></span>
                                         </div>
                                     </td>
                                 </tr>)}
