@@ -8,7 +8,7 @@
                 "vaccineId": 1
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=RSV"
     },
     {
         "pathogenId": 2,
@@ -25,7 +25,7 @@
                 "vaccineId": 10
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=SARS"
     },
     {
         "pathogenId": 3,
@@ -42,7 +42,7 @@
                 "vaccineId": 6
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#BACTERIA"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Streptococcus"
     },
     {
         "pathogenId": 4,
@@ -59,7 +59,7 @@
                 "vaccineId": 13
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=TBE"
     },
     {
         "pathogenId": 5,
@@ -70,7 +70,7 @@
                 "vaccineId": 8
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#BACTERIA"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Neisseria"
     },
     {
         "pathogenId": 6,
@@ -81,7 +81,7 @@
                 "vaccineId": 11
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=HPV"
     },
     {
         "pathogenId": 7,
@@ -91,7 +91,7 @@
                 "vaccineId": 25
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Chikungunya"
     },
     {
         "pathogenId": 8,
@@ -108,7 +108,7 @@
                 "vaccineId": 28
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=influenza"
     },
     {
         "pathogenId": 9,
@@ -119,7 +119,7 @@
                 "vaccineId": 15
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Hepatitis"
     },
     {
         "pathogenId": 10,
@@ -130,7 +130,7 @@
                 "vaccineId": 27
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Hepatitis"
     },
     {
         "pathogenId": 11,
@@ -141,7 +141,7 @@
                 "vaccineId": 17
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Varicella"
     },
     {
         "pathogenId": 12,
@@ -152,7 +152,7 @@
                 "vaccineId": 18
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Measles"
     },
     {
         "pathogenId": 13,
@@ -163,7 +163,7 @@
                 "vaccineId": 19
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=mumps"
     },
     {
         "pathogenId": 14,
@@ -174,7 +174,7 @@
                 "vaccineId": 20
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=rubella"
     },
     {
         "pathogenId": 15,
@@ -185,7 +185,7 @@
                 "vaccineId": 21
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=yellow+fever"
     },
     {
         "pathogenId": 16,
@@ -196,7 +196,7 @@
                 "vaccineId": 24
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=hiv"
     },
     {
         "pathogenId": 17,
@@ -243,7 +243,7 @@
                 "vaccineId": 30
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Rabies"
     },
     {
         "pathogenId": 21,
@@ -254,7 +254,7 @@
                 "vaccineId": 16
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Neisseria"
     },
     {
         "pathogenId": 22,
@@ -265,7 +265,7 @@
                 "vaccineId": 14
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Neisseria"
     },
     {
         "pathogenId": 23,
@@ -276,7 +276,7 @@
                 "vaccineId": 29
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=JEV"
     },
     {
         "pathogenId": 24,

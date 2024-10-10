@@ -158,7 +158,7 @@ const Vaccine = ({
                                 <th className='text-center'>Licensing/ SmPC</th>
                                 <th>Indication</th>
                                 <th className='text-center'>Date of Approval</th>
-                                <th className='text-center'>Number of Doses Given</th>
+                                <th className='text-center'>Number of Doses Sold</th>
                             </tr>
                         </thead>
                         <tbody>

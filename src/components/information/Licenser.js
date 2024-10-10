@@ -29,8 +29,8 @@ const Licenser = ({
     getVaccinesByLicenser
 }) => {
     return <div className='slide-left'>
-        <h1 className='heading text-primary pt-2'>{selectedLicenser.fullName}{selectedLicenser.country && ` (${selectedLicenser.country})`}</h1>
-        {selectedLicenser.description}
+        <a className='heading text-primary pt-2' href={selectedLicenser.website} target='_blank' rel='noreferrer'>{selectedLicenser.fullName}{selectedLicenser.country && ` (${selectedLicenser.country})`}</a>
+        <p>{selectedLicenser.description}</p>
         <div className='table-responsive'>
             {getVaccinesByLicenser(selectedLicenser).length !== 0 ? <table className='table table-light w-100 m-0 mt-3'>
                 <thead>
@@ -42,11 +42,11 @@ const Licenser = ({
                 </thead>
                 <tbody>
                     {getVaccinesByLicenser(selectedLicenser).map((vaccine, index) => (
-                    <tr key={index}>
-                        <td>{<span className='text-primary fw-bold hover-cursor hover-underline' onClick={()=>handleSelectVaccine(vaccine)}>{vaccine.name}</span>}</td>
-                        <td>{vaccine.vaccineType || '-'}</td>
-                        <td>{vaccine.comments || '-'}</td>
-                    </tr>
+                        <tr key={index}>
+                            <td>{<span className='text-primary fw-bold hover-cursor hover-underline' onClick={() => handleSelectVaccine(vaccine)}>{vaccine.name}</span>}</td>
+                            <td>{vaccine.vaccineType || '-'}</td>
+                            <td>{vaccine.comments || '-'}</td>
+                        </tr>
                     ))}
                 </tbody>
             </table> : ``}
