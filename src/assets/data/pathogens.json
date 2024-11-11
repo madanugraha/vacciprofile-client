@@ -207,7 +207,7 @@
                 "vaccineId": 23
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=ebv"
     },
     {
         "pathogenId": 18,
@@ -218,7 +218,7 @@
                 "vaccineId": 21
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Zika"
     },
     {
         "pathogenId": 19,
@@ -229,7 +229,7 @@
                 "vaccineId": 19
             }
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=cmv"
     },
     {
         "pathogenId": 20,
@@ -285,7 +285,7 @@
         "vaccines": [
             {}
         ],
-        "link": "https://vaccitutor.com/documents/LOM.html#VIRUSES"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=norovirus"
     },
     {
         "pathogenId": 25,
@@ -294,6 +294,6 @@
         "vaccines": [
             {}
         ],
-        "link": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/melanoma-of-the-head-and-neck"
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=melanoma"
     }
 ]
