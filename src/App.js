@@ -34,15 +34,15 @@ import scientificNames from './assets/scientificNames';
  */
 
 const App = () => {
-    const [activeTab, setActiveTab] = useState('Manufacturer');
+    const [activeTab, setActiveTab] = useState('Pathogen');
     const [activeFilters, setActiveFilters] = useState({
         firstAlphabet: '',
         searchKeyword: ''
     })
-    const [pathogensList, setPathogensList] = useState();
+    const [pathogensList, setPathogensList] = useState(pathogens);
     const [vaccinesList, setVaccinesList] = useState();
     const [pipelineVaccineList, setPipelineVaccinesList] = useState();
-    const [manufacturersList, setManufacturersList] = useState(manufacturers);
+    const [manufacturersList, setManufacturersList] = useState();
     const [licensersList, setLicensersList] = useState();
     const [sidebarList, setSidebarList] = useState();
     const [selectedPathogen, setSelectedPathogen] = useState({});

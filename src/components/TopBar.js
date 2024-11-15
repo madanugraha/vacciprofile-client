@@ -17,7 +17,6 @@ const TopBar = ({
     handleTabChange,
     handleSearch
 }) => {
-
     return <div className="topbar row pt-1 slide-down">
         <div className="position-relative">
             <ul className="nav nav-pills">
