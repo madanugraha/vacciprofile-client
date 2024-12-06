@@ -6,6 +6,7 @@ import Vaccine from './information/Vaccine';
 import ManufacturerProfile from './information/ManufacturerProfile';
 import Licenser from './information/Licenser';
 import PipelineVaccineListTable from './information/PipelineVaccineListTable';
+import Comparison from './information/Comparison';
 
 /**
  * Main Component
@@ -77,7 +78,10 @@ const Main = ({
     changedFrom,
     italizeScientificNames,
     convertCamelCaseToReadable,
-    getLicenserById
+    getLicenserById,
+    handleSelectCompare,
+    selectedCompare,
+    getComparisonByName
 }) => {
 
     const [animationClass, setAnimationClass] = useState('slide-left');
@@ -135,8 +139,12 @@ const Main = ({
                                                     getVaccinesByLicenser={getVaccinesByLicenser}
                                                     handleSelectVaccine={handleSelectVaccine}
                                                     selectedLicenser={selectedLicenser}
+                                                /> : activeTab === "Compare" ? <Comparison
+                                                    getComparisonDataByName={getComparisonByName}
+                                                    handleSelectComparison={handleSelectCompare}
+                                                    selectedComparison={selectedCompare}
                                                 />
-                                                : null}
+                                                    : null}
                                 {activeTab === "Manufacturer" && getVaccinesByManufacturer().length > 0
                                     ?
                                     <VaccineListTable

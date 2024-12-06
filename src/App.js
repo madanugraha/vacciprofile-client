@@ -15,7 +15,7 @@ import vaccines from './assets/data/vaccines.json';
 import pipelineVaccines from './assets/data/pipeline-vaccines.json';
 import licensers from './assets/data/licensers.json';
 import scientificNames from './assets/scientificNames';
-
+import { finalParsedDataCompare } from './assets/data/compare-vaccine.js';
 /**
  * Main application component for the vaccine profile page.
  *
@@ -44,11 +44,13 @@ const App = () => {
     const [pipelineVaccineList, setPipelineVaccinesList] = useState();
     const [manufacturersList, setManufacturersList] = useState();
     const [licensersList, setLicensersList] = useState();
+    const [compareList, setCompareList] = useState();
     const [sidebarList, setSidebarList] = useState();
     const [selectedPathogen, setSelectedPathogen] = useState({});
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const [selectedManufacturer, setSelectedManufacturer] = useState({});
     const [selectedLicenser, setSelectedLicenser] = useState({})
+    const [selectedCompare, setSelectedCompare] = useState({});
     const [changedFrom, setChangedFrom] = useState('');
 
     /**
@@ -96,6 +98,9 @@ const App = () => {
                     break;
                 case 'Licenser':
                     setSelectedLicenser({});
+                    break;
+                case 'Compare':
+                    setSelectedCompare({});
                     break;
                 default:
                     break;
@@ -166,6 +171,17 @@ const App = () => {
     }
 
     /**
+     * Handles selecting an Vaccine to Compare.
+     *
+     * @param {string} compare - The selected vaccine comparison.
+     */
+
+    const handleSelectCompare = compare => {
+        setSelectedCompare(compare);
+        setActiveTab("Compare");
+    }
+
+    /**
      * Retrieves the pathogen associated with a vaccine.
      *
      * @param {object} vaccine - The vaccine object.
@@ -174,6 +190,11 @@ const App = () => {
 
     const getPathogenByVaccine = useCallback(vaccine => {
         return pathogens.find(pathogen => pathogen.pathogenId === vaccine.pathogenId);
+    }, []);
+
+
+    const getComparisonByName = useCallback(vaccine => {
+        return finalParsedDataCompare().find(vac => vac.name === vaccine.name);
     }, []);
 
     /**
@@ -513,6 +534,8 @@ const App = () => {
                     .sort((a, b) => a.name.localeCompare(b.name)));
             } else if (activeTab === 'Licenser') {
                 setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
+            } else if (activeTab === 'Compare') {
+                setSidebarList(finalParsedDataCompare().sort((a, b) => `${a.name} - ${a.manufactureName}`.localeCompare(`${b.name} - ${b.manufactureName}`)))
             }
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
@@ -540,7 +563,6 @@ const App = () => {
      */
 
     const italizeScientificNames = text => {
-
         // check if texts are array because Pipeline vaccines can be more than one Pathogens included
         if (Array.isArray(text)) {
             if (text.length > 0) {
@@ -585,6 +607,7 @@ const App = () => {
         setVaccinesList(vaccines);
         setPipelineVaccinesList(pipelineVaccines);
         setLicensersList(licensers);
+        setCompareList(finalParsedDataCompare())
     }, [])
 
     useEffect(() => {
@@ -614,10 +637,12 @@ const App = () => {
                         selectedPathogen={selectedPathogen}
                         selectedManufacturer={selectedManufacturer}
                         selectedLicenser={selectedLicenser}
+                        selectedCompare={selectedCompare}
                         setSelectedVaccine={setSelectedVaccine}
                         setSelectedPathogen={setSelectedPathogen}
                         setSelectedManufacturer={setSelectedManufacturer}
                         setSelectedLicenser={setSelectedLicenser}
+                        setSelectedCompare={setSelectedCompare}
                         changedFrom={changedFrom}
                         setChangedFrom={setChangedFrom}
                         setActiveTab={setActiveTab}
@@ -630,13 +655,16 @@ const App = () => {
                         selectedVaccine={selectedVaccine}
                         selectedManufacturer={selectedManufacturer}
                         selectedLicenser={selectedLicenser}
+                        selectedCompare={selectedCompare}
                         handleSelectPathogen={handleSelectPathogen}
                         handleSelectVaccine={handleSelectVaccine}
                         handleSelectManufacturer={handleSelectManufacturer}
                         handleSelectLicenser={handleSelectLicenser}
+                        handleSelectCompare={handleSelectCompare}
                         activeFilters={activeFilters}
                         setActiveFilters={setActiveFilters}
                         getPathogenByVaccine={getPathogenByVaccine}
+                        getComparisonByName={getComparisonByName}
                         getPathogenById={getPathogenById}
                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                         getPipelineVaccinesByManufacturer={getPipelineVaccinesByManufacturer}

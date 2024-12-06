@@ -15,7 +15,7 @@
             },
             {
                 "licenserId": 2,
-                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/abrysvo"
+                "link": "https://www.ema.europa.eu/en/documents/product-information/abrysvo-epar-product-information_en.pdf"
             }
         ],
         "licensingDates": [
@@ -172,7 +172,7 @@
             },
             {
                 "licenserId": 2,
-                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/comirnaty"
+                "link": "https://www.ema.europa.eu/en/documents/product-information/comirnaty-epar-product-information_en.pdf"
             },
             {
                 "licenserId": 3,
@@ -240,7 +240,7 @@
         "lastUpdated": "2023"
     },
     {
-        "name": "Prevnar 13",
+        "name": "Prevnar/Prevenar 13",
         "vaccineId": 5,
         "pathogenId": 3,
         "manufacturers": [
@@ -321,7 +321,7 @@
                 "reactogenicity": "Common side effects include injection site pain, fever, irritability, and decreased appetite in infants.",
                 "safety": "Generally well tolerated, with a safety profile similar to other pneumococcal vaccines. Rare hypersensitivity reactions may occur.",
                 "vaccinationGoal": "To reduce the incidence of invasive pneumococcal disease, pneumonia, and other pneumococcal infections in at-risk populations.",
-                "others": "Prevnar 13 is part of routine pediatric and adult vaccination schedules in many countries, significantly lowering disease burden globally."
+                "others": "Prev`nar 13 is part of routine pediatric and adult vaccination schedules in many countries, significantly lowering disease burden globally."
             }
         ],
         "vaccineType": "13-valent pneumococcal conjugate vaccine",
@@ -329,7 +329,7 @@
         "lastUpdated": "TBU"
     },
     {
-        "name": "Prevnar 20™",
+        "name": "Prevnar/Prevenar 20™",
         "vaccineId": 6,
         "pathogenId": 3,
         "manufacturers": [
@@ -344,7 +344,7 @@
             },
             {
                 "licenserId": 2,
-                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-20-previously-apexxnar"
+                "link": "https://www.ema.europa.eu/en/documents/product-information/prevenar-20-epar-product-information_en.pdf"
             },
             {
                 "licenserId": 3,
@@ -473,11 +473,11 @@
         "licensers": [
             {
                 "licenserId": 1,
-                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/trumenba"
+                "link": "https://www.fda.gov/media/89936/download?attachment"
             },
             {
                 "licenserId": 2,
-                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/trumenba"
+                "link": "https://www.ema.europa.eu/en/documents/product-information/trumenba-epar-product-information_en.pdf"
             }
         ],
         "licensingDates": [
@@ -543,7 +543,7 @@
             },
             {
                 "licenserId": 2,
-                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/jcovden"
+                "source": "https://www.ema.europa.eu/en/documents/product-information/jcovden-epar-product-information_en.pdf"
             },
             {
                 "licenserId": 4,
@@ -631,11 +631,11 @@
         "licensers": [
             {
                 "licenserId": 2,
-                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/vaxzevria-previously-covid-19-vaccine-astrazeneca"
+                "link": "https://www.ema.europa.eu/en/documents/product-information/vaxzevria-epar-product-information_en.pdf"
             },
             {
                 "licenserId": 3,
-                "link": "https://extranet.who.int/prequal/vaccines/vaxzevria"
+                "link": "https://extranet.who.int/prequal/sites/default/files/document_files/smpc-azd1222_Jan2023.pdf"
             }
         ],
         "licensingDates": [
@@ -1072,7 +1072,7 @@
         "licensers": [
             {
                 "licenserId": 1,
-                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/bexsero"
+                "link": "https://www.fda.gov/media/90996/download?attachment"
             },
             {
                 "licenserId": 2,
@@ -1084,7 +1084,7 @@
                 "name": "FDA",
                 "type": "Approval Letter",
                 "date": "02/2015",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/bexsero"
+                "source": "https://www.fda.gov/media/90996/download?attachment"
             },
             {
                 "name": "EMA",
@@ -1146,7 +1146,7 @@
         "licensers": [
             {
                 "licenserId": 1,
-                "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/rabavert"
+                "link": "https://www.fda.gov/media/83874/download?attachment"
             }
         ],
         "licensingDates": [
@@ -1222,7 +1222,7 @@
             },
             {
                 "licenserId": 2,
-                "link": "https://www.ema.europa.eu/en/medicines/human/EPAR/spikevax"
+                "link": "https://www.ema.europa.eu/en/documents/product-information/spikevax-epar-product-information_en.pdf"
             },
             {
                 "licenserId": 3,

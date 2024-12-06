@@ -2,6 +2,7 @@
     {
         "manufacturerId": 1,
         "name": "Pfizer",
+        "history": "Pfizer, founded in 1849 by Charles Pfizer and Charles Erhart in Brooklyn, New York, began as a fine-chemicals company producing antiparasitic drugs. Its breakthrough came during World War II when it mass-produced penicillin using deep-tank fermentation, transforming the antibiotic into a widely available medicine. This innovation established Pfizer as a global pharmaceutical leader. Over the decades, the company expanded its portfolio with groundbreaking treatments, including cholesterol-lowering drugs, vaccines, and oncology therapies. Notably, Pfizer co-developed the first mRNA-based COVID-19 vaccine, BNT162b2, in partnership with BioNTech, which became a pivotal tool in combating the pandemic. Today, Pfizer remains a leading global biopharmaceutical company focused on research, innovation, and public health solutions.",
         "description": "",
         "details": {
             "founded": "1849",
@@ -56,6 +57,7 @@
     {
         "manufacturerId": 2,
         "name": "Johnson & Johnson",
+        "history": "Johnson & Johnson (J&J), founded in 1886 by Robert Wood Johnson and his brothers James Wood Johnson and Edward Mead Johnson, is one of the world's largest and most influential healthcare companies. Headquartered in New Brunswick, New Jersey, the company began as a manufacturer of sterile surgical supplies, inspired by the need to reduce infections in medical procedures. J&J introduced innovative products like ready-to-use surgical dressings and the first mass-produced antiseptic bandages, which revolutionized healthcare practices. Over time, the company expanded its product lines to include consumer health goods, pharmaceuticals, and medical devices. Iconic products such as Johnson’s Baby Powder and Band-Aid adhesive bandages cemented its reputation in consumer health. Today, J&J operates globally, employing over 150,000 people and remaining at the forefront of healthcare innovation, focusing on research, sustainability, and improving global health outcomes.",
         "description": "Johnson & Johnson engages in research and development, manufacture and sale of a broad range of products in the health care field. They are organized into three business segments: Consumer Health, Pharmaceutical and Medical Devices. With products sold in over 175 countries, Johnson & Johnson’s key pharmaceutical products include REMICADE®, SIMPONI®, SIMPONI ARIA®, STELARA®, DARZALEX®, IMBRUVICA®, etc. Johnson & Johnson also produces a COVID-19 vaccine: Janssen COVID-19 Vaccine.",
         "details": {
             "founded": "January 1886",
@@ -95,6 +97,7 @@
     {
         "manufacturerId": 3,
         "name": "GlaxoSmithKline",
+        "history": "GlaxoSmithKline (GSK) is a leading global healthcare company with a rich history dating back to the 19th century. Its origins lie in the pharmaceutical and nutritional industries, beginning in 1873 when New Zealand-based company Joseph Nathan & Co. launched a dried milk product named 'Glaxo.' In the UK, Glaxo Laboratories was established in the 1920s, focusing on pharmaceuticals. Meanwhile, SmithKline Beckman traces its roots to a 19th-century drugstore in Philadelphia, evolving through mergers, including with French-based Beecham in 1989, to become SmithKline Beecham. GSK as we know it today was formed in 2000 through the merger of Glaxo Wellcome and SmithKline Beecham, combining decades of expertise in vaccines, consumer health, and pharmaceuticals. Headquartered in Brentford, UK, GSK continues to innovate, emphasizing respiratory, immunology, and oncology therapies while addressing global healthcare challenges.",
         "description": "GlaxoSmithKline (GSK) is a multinational pharmaceutical company with a purpose to improve the quality of human life by helping people do more, feel better, and live longer. GSK is organized into three business segments: pharmaceuticals, vaccines, and consumer healthcare. GSK operates in more than 150 countries with employees across 96 markets. Key products include Bexsero, Fluarix/FluLaval, Shingrix, Boostrix, Synflorix, Rotarix, Infanrix, Pediarix, Hepatitis vaccine, etc.",
         "details": {
             "founded": "27 December 2000",
@@ -132,6 +135,7 @@
     {
         "manufacturerId": 4,
         "name": "Merck & Co., Inc.",
+        "history": "Merck & Co., Inc., founded in 1891 in the United States, traces its origins to a family-owned pharmacy established by Friedrich Jacob Merck in Darmstadt, Germany, in 1668. George Merck, a descendant of Friedrich, brought the business to America and began producing fine chemicals. By the early 20th century, Merck & Co. expanded into pharmaceuticals, becoming a key player in the emerging industry. The company made groundbreaking contributions, such as mass-producing penicillin during World War II and developing vaccines like those for measles and HPV. Today, Merck is renowned for its research-driven innovations, producing medicines and vaccines that address major global health challenges.",
         "description": "Merck & Co., Inc. is a global health care company that delivers innovative health solutions through its prescription medicines, vaccines, biologic therapies, and animal health products. Merck operates in two segments: Pharmaceutical and Animal Health segments. The Pharmaceutical segment includes human health pharmaceutical and vaccine products while the Animal Health segment discovers, develops, manufactures and markets a wide range of veterinary pharmaceutical and vaccine products, as well as health management solutions and services, for the prevention, treatment and control of disease in all major livestock and companion animal species. Merck operates in more than 140 countries worldwide with key products such as Gardasil, Varivax, Pneumovax, ProQuad, M-M-R II, etc.",
         "details": {
             "founded": "January 1891 (as a subsidiary of Merck) 1917 (as an independent company)",
@@ -166,6 +170,7 @@
     {
         "manufacturerId": 5,
         "name": "BioNTech",
+        "history": "BioNTech SE, founded in 2008 by scientists Uğur Şahin, Özlem Türeci, and Christoph Huber, is a German biotechnology company headquartered in Mainz, Germany. The company specializes in the development of immunotherapies, particularly mRNA-based therapeutics, for the treatment of cancer and infectious diseases. BioNTech initially focused on personalized cancer vaccines, leveraging its expertise in messenger RNA (mRNA) technology. However, the company gained global recognition during the COVID-19 pandemic for its rapid development of the first approved mRNA vaccine, BNT162b2, in collaboration with Pfizer. This vaccine played a pivotal role in combating the pandemic, marking a major breakthrough in biotechnology and mRNA therapeutics. BioNTech continues to innovate in oncology, infectious diseases, and rare genetic conditions, building on its vision of using cutting-edge science to improve global health.",
         "description": "T.B.A.",
         "details": {
             "founded": "2008",
@@ -196,6 +201,7 @@
         "manufacturerId": 6,
         "name": "AstraZeneca",
         "description": "TBU",
+        "history": "AstraZeneca is a global, science-led biopharmaceutical company formed in 1999 through the merger of two companies: Astra AB, a Swedish pharmaceutical firm established in 1913, and Zeneca Group, a British company created in 1993 after the demerger of Imperial Chemical Industries' healthcare business. Headquartered in Cambridge, United Kingdom, AstraZeneca specializes in the discovery, development, and commercialization of prescription medicines in oncology, cardiovascular, renal, metabolic, respiratory, and immunology. The company operates manufacturing facilities across the globe, producing medications to support its wide-ranging research and development efforts. Its innovative contributions include the development of life-saving drugs and, more recently, the co-development of the Oxford-AstraZeneca COVID-19 vaccine, underscoring its role as a leader in global healthcare.",
         "details": {
             "founded": "6 April 1999",
             "headquarters": "Cambridge Biomedical Campus, Cambridge, England",
@@ -219,6 +225,7 @@
     {
         "manufacturerId": 7,
         "name": "Merck Group",
+        "history": "The Merck Group, founded in 1668 in Darmstadt, Germany, is one of the oldest pharmaceutical and chemical companies in the world. Initially established as a small pharmacy by Friedrich Jacob Merck, the business evolved into a prominent manufacturer of medicinal chemicals. In the 19th century, under the leadership of Emanuel Merck, the company transitioned into an industrial enterprise, pioneering the production of alkaloids and other key compounds. Merck's innovations played a significant role in the development of modern pharmaceuticals. Over time, the company expanded its portfolio to include life sciences and performance materials, maintaining a strong focus on innovation and sustainability. Today, Merck operates globally, emphasizing cutting-edge research in healthcare, electronics, and scientific advancements, while remaining headquartered in Darmstadt.",
         "description": "The Merck Group, branded and commonly known as Merck, is a German multinational science and technology company headquartered in Darmstadt, with about 60,000 employees and a presence in 66 countries. The group includes around 250 companies; the main company is Merck KGaA in Germany. The company is divided into three business lines: Healthcare, Life Sciences and Electronics. Merck was founded in 1668 and is the world's oldest operating chemical and pharmaceutical company, as well as one of the largest pharmaceutical companies globally.",
         "details": {
             "founded": "1668",
@@ -248,6 +255,7 @@
     {
         "manufacturerId": 8,
         "name": "Novartis",
+        "history": "Novartis, a global healthcare company, was established in 1996 through the merger of two Swiss pharmaceutical giants, Ciba-Geigy and Sandoz. Both companies had deep roots in the chemical and pharmaceutical industries, dating back to the 19th century. Ciba-Geigy, founded in 1859 as a dye manufacturer, evolved into a major player in agricultural and pharmaceutical chemicals. Sandoz, established in 1886, was known for innovations in chemicals and life sciences, including the development of early antibiotics and pioneering work in biotechnology. The merger aimed to leverage their combined expertise, creating a diversified pharmaceutical powerhouse. Headquartered in Basel, Switzerland, Novartis focuses on innovative medicines, generics, and biosimilars, driving advancements in areas like oncology, immunology, and neuroscience. Over the years, the company has continued to grow through strategic acquisitions and investments in research, solidifying its position as a leader in global healthcare.",
         "description": "A global healthcare company based in Switzerland that provides solutions to address the evolving needs of patients worldwide.",
         "details": {
             "founded": "1996",
@@ -311,6 +319,7 @@
     {
         "manufacturerId": 9,
         "name": "Moderna, Inc.",
+        "history": "Moderna, Inc., founded in 2010 and headquartered in Cambridge, Massachusetts, is a biotechnology company specializing in messenger RNA (mRNA) technology for therapeutic and vaccine development. The company was initially focused on leveraging mRNA to produce proteins within cells to treat various diseases. Over the years, Moderna expanded its platform to include vaccines for infectious diseases, cancer treatments, and rare diseases. It gained worldwide recognition during the COVID-19 pandemic by rapidly developing and manufacturing one of the first mRNA-based vaccines, branded as Spikevax. Approved in 2020, this vaccine marked a breakthrough in biotechnology and positioned Moderna as a leader in innovative medicine. The company continues to invest in research and development to explore the vast potential of mRNA technology across various medical fields.",
         "description": "An American biotechnology company focused on developing messenger RNA (mRNA) therapeutics and vaccines.",
         "details": {
             "founded": "2010",
@@ -504,6 +513,7 @@
         "manufacturerId": 12,
         "name": "Bharat Biotech",
         "description": "An Indian biotechnology company that is known for developing innovative vaccines, biotherapeutics, and healthcare products.",
+        "history": "Bharat Manufacture has its roots in the industrial development of India, reflecting the nation's rise as a global manufacturing hub. Emerging during the post-independence era, when India sought to establish self-reliance in key industries, Bharat Manufacture initially focused on producing essential goods to reduce dependence on imports. As the country embraced economic reforms in the 1990s, Bharat Manufacture diversified and modernized, adopting advanced technologies and global best practices. This transformation was fueled by the 'Make in India' initiative, launched in 2014, which encouraged domestic production and foreign investments. Today, Bharat Manufacture spans various sectors, from automotive and textiles to cutting-edge electronics and pharmaceuticals, symbolizing India's innovative spirit and industrial prowess on the world stage.",
         "details": {
             "founded": "1996",
             "headquarters": "Hyderabad, India",

@@ -28,9 +28,9 @@ import ReactModal from "react-modal";
  * />
  */
 
-const Vaccine = ({ 
-    selectedVaccine, 
-    convertCamelCaseToReadable 
+const Vaccine = ({
+    selectedVaccine,
+    convertCamelCaseToReadable
 }) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -44,7 +44,7 @@ const Vaccine = ({
      * 
      * @returns {void} This function does not return a value. It updates the `isOpen` state directly.
      */
-    
+
     function openModal() {
         setModalIsOpen(true);
     }
@@ -82,10 +82,10 @@ const Vaccine = ({
      */
     const formatContent = content => {
         if (typeof content === 'object' && content !== null) {
-            content = JSON.stringify(content, null, 2); 
+            content = JSON.stringify(content, null, 2);
         }
         if (typeof content !== 'string') {
-            return <span>{String(content)}</span>; 
+            return <span>{String(content)}</span>;
         }
         const updatedContent = content.replace(/'/g, '"');
         const parts = updatedContent.split(/<br\s*\/?>/gi);
@@ -145,71 +145,71 @@ const Vaccine = ({
     }
 
     return <div className='position-relative slide-left'>
-                <h1 className='heading text-primary text-center'>{selectedVaccine.name}
-                    {/* {selectedVaccine.packageInsertLink && <i className="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}
-                    {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
-                </h1>
-                {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
-                {selectedVaccine.licensingDates && (
-                    <table className='table table-light table-striped w-100 m-0'>
-                        <thead>
+        <h1 className='heading text-primary text-center'>{selectedVaccine.name}
+            {/* {selectedVaccine.packageInsertLink && <i className="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}
+            {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
+        </h1>
+        {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
+        {selectedVaccine.licensingDates && (
+            <table className='table table-light table-striped w-100 m-0'>
+                <thead>
+                    <tr>
+                        <th className='text-center'>Link</th>
+                        <th className='text-center'>Licensing/ SmPC</th>
+                        <th>Indication</th>
+                        <th className='text-center'>Date of Approval</th>
+                        <th className='text-center'>Number of Doses Sold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {selectedVaccine.licensingDates.map((licensingDate, index) => (
+                        <React.Fragment key={index}>
                             <tr>
-                                <th className='text-center'>Link</th>
-                                <th className='text-center'>Licensing/ SmPC</th>
-                                <th>Indication</th>
-                                <th className='text-center'>Date of Approval</th>
-                                <th className='text-center'>Number of Doses Sold</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {selectedVaccine.licensingDates.map((licensingDate, index) => (
-                            <React.Fragment key={index}>
-                                <tr>
                                 <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td>
-                                    <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
-                                    <td>{licensingDate.indication ? licensingDate.indication : '-'}</td>
-                                    <td className='text-center'>
-                                        <a 
-                                        href={licensingDate.source} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        >
-                                        {licensingDate.date}
-                                        </a>
-                                    </td>
-                                    <td className='text-center'>{licensingDate.doses ? licensingDate.doses : `-`}</td>
-                                </tr>
-                            </React.Fragment>
-                            ))}
-                        </tbody>
-                    </table>
-                )} 
-                {selectedVaccine.productProfiles && (
-                <table className='table table-striped w-100 m-0 mb-2'>
-                    <thead>
-                        <tr>
-                            <th colSpan={2} className='text-center fw-bold'>VacciProfiles</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {selectedVaccine.productProfiles.map((profile, index) => (
-                            <tr key={index}>
+                                <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
+                                <td>{licensingDate.indication ? licensingDate.indication : '-'}</td>
                                 <td className='text-center'>
-                                    <i
-                                        className="fa-solid fa-file-medical text-hover hover-cursor"
-                                        onClick={() => {
-                                            setSelectedVacciProfile(profile);
-                                            openModal();
-                                        }}
-                                    ></i>
+                                    <a
+                                        href={licensingDate.source}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {licensingDate.date}
+                                    </a>
                                 </td>
-                                <td>{removeBrTags(profile.name)}</td>
+                                <td className='text-center'>{licensingDate.doses ? licensingDate.doses : `-`}</td>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
-            )}
-            {selectedVaccine.introduction && (
+                        </React.Fragment>
+                    ))}
+                </tbody>
+            </table>
+        )}
+        {selectedVaccine.productProfiles && (
+            <table className='table table-striped w-100 m-0 mb-2'>
+                <thead>
+                    <tr>
+                        <th colSpan={2} className='text-center fw-bold'>VacciProfiles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {selectedVaccine.productProfiles.map((profile, index) => (
+                        <tr key={index}>
+                            <td className='text-center'>
+                                <i
+                                    className="fa-solid fa-file-medical text-hover hover-cursor"
+                                    onClick={() => {
+                                        setSelectedVacciProfile(profile);
+                                        openModal();
+                                    }}
+                                ></i>
+                            </td>
+                            <td>{removeBrTags(profile.name)}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        )}
+        {selectedVaccine.introduction && (
             <table className='table table-striped w-100 m-0 mb-2'>
                 <tbody>
                     {Object.entries(selectedVaccine.introduction).map(([category, details], index) => (
@@ -236,18 +236,18 @@ const Vaccine = ({
             <table className='table table-light w-100 m-0'>
                 <tbody>
                     {Object.entries(selectedVacciProfile).map(([key, value], index) => {
-                        if (key==="name") return null;
+                        if (key === "name") return null;
                         return (
                             <tr key={index}>
-                                <td className={`align-middle ${key==="composition"?`text-white bg-black`:``}`}>{key==="composition" ? `Composition/Platform`: key==="coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                <td className={`align-middle ${key==="composition"?`text-white bg-black`:``}`}>{formatContent(value)}</td>
+                                <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{formatContent(value)}</td>
                             </tr>
                         );
                     })}
                 </tbody>
             </table>
         </ReactModal>}
-    </div> 
+    </div>
 }
 
 export default Vaccine;

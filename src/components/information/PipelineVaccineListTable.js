@@ -100,15 +100,16 @@ const PipelineVaccineListTable = ({
                                             if (licenser === null) return ""
                                             return (
                                                 <a href={licenser.website} className='selectable' target="_blank" rel="noopener noreferrer">
-                                                    {licenser.acronym}{ index < vaccine.licensing_authority.length - 1 ? ', ' : `` }
+                                                    {licenser.acronym}{index < vaccine.licensing_authority.length - 1 ? ', ' : ``}
                                                 </a>
                                             );
                                         })}
                                     </td>
                                     <td className='milestones-cell'>
-                                        <div className='d-flex flex-col'>
+                                        <span>-</span>
+                                        {/* <div className='d-flex flex-col'>
                                             <span><button>Open Detail</button></span>
-                                        </div>
+                                        </div> */}
                                     </td>
                                 </tr>)}
                             </tbody>

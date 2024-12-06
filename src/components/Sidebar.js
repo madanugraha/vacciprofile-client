@@ -44,18 +44,20 @@ import React, { useState, useEffect } from 'react';
  * />
  */
 
-const Sidebar = ({ 
+const Sidebar = ({
     activeTab,
     setActiveTab,
     sidebarList = [],
     selectedVaccine,
     selectedPathogen,
+    selectedCompare,
     selectedManufacturer,
     selectedLicenser,
     setSelectedVaccine,
     setSelectedPathogen,
     setSelectedManufacturer,
-    setSelectedLicenser,  
+    setSelectedLicenser,
+    setSelectedCompare,
     setChangedFrom,
     changedFrom,
     italizeScientificNames
@@ -65,7 +67,7 @@ const Sidebar = ({
     const [showCountries, setShowCountries] = useState(false);
 
     const licenserFilter = ["FDA", "EMA", "WHO"];
-    const filteredLicenserSidebarList = activeTab === 'Licenser' 
+    const filteredLicenserSidebarList = activeTab === 'Licenser'
         ? sidebarList.filter(item => licenserFilter.includes(item.acronym))
         : sidebarList;
 
@@ -103,11 +105,18 @@ const Sidebar = ({
                 } else {
                     setSelectedLicenser({});
                 }
+            } else if (activeTab === 'Compare') {
+                if (item !== selectedCompare) {
+                    setSelectedCompare(item);
+                    setActiveTab('Compare');
+                } else {
+                    setSelectedCompare({});
+                }
             }
             setChangedFrom('');
         }, 5);
     };
-    
+
     useEffect(() => {
         if (changedFrom === "Topbar") {
             setAnimationClass('');
@@ -122,35 +131,34 @@ const Sidebar = ({
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
             <div className='sidebar-items overflow-auto'>
                 {filteredLicenserSidebarList.map((item, i) => (
-                    <div 
-                        key={i} 
-                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${
-                            activeTab === 'Manufacturer' && selectedManufacturer === item
+                    <div
+                        key={i}
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${activeTab === 'Manufacturer' && selectedManufacturer === item
                             ? 'active' : activeTab === 'Vaccine' && selectedVaccine === item
-                            ? 'active' : activeTab === 'Pathogen' && selectedPathogen === item
-                            ? 'active' : activeTab === 'Licenser' && selectedLicenser === item
-                            ? 'active' : 'inactive'
-                        }`} 
-                        onClick={() => handleClickSidebar(item)}
+                                ? 'active' : activeTab === 'Pathogen' && selectedPathogen === item
+                                    ? 'active' : activeTab === 'Licenser' && selectedLicenser === item
+                                        ? 'active' : 'inactive'
+                            }`}
+                        onClick={() => {
+                            handleClickSidebar(item)
+                        }}
                     >
-                        {activeTab==="Pathogen" ? italizeScientificNames(item.name) : activeTab!=="Licenser" ? item.name : item.acronym}
+                        {activeTab === "Pathogen" ? italizeScientificNames(item.name) : activeTab === "Compare" ? `${item.name} - ${item.manufactureName}` : activeTab != "Licenser" ? item.name : item.acronym}
                     </div>
                 ))}
                 {activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (
-                    <div 
+                    <div
                         key='Countries'
-                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${
-                            showCountries ? 'active-country' : 'inactive'
-                        }`} 
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${showCountries ? 'active-country' : 'inactive'
+                            }`}
                         onClick={() => handleClickSidebar({ name: 'Countries' })}
                     >Country Authorities
                     </div>
                 )}
-                {showCountries && sidebarList.filter(item=>!licenserFilter.includes(item.acronym)).map((item, i) => (
-                    <div 
-                        key={`country-${i}`} 
-                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${
-                            selectedLicenser === item ? 'active' : 'inactive' }`} 
+                {showCountries && sidebarList.filter(item => !licenserFilter.includes(item.acronym)).map((item, i) => (
+                    <div
+                        key={`country-${i}`}
+                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${selectedLicenser === item ? 'active' : 'inactive'}`}
                         onClick={() => handleClickSidebar(item)}
                     >{item.acronym}{item.country && `, ${item.country}`}
                     </div>
