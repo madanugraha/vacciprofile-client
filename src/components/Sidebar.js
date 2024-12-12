@@ -160,7 +160,7 @@ const Sidebar = ({
                         key={`country-${i}`}
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${selectedLicenser === item ? 'active' : 'inactive'}`}
                         onClick={() => handleClickSidebar(item)}
-                    >{item.acronym}{item.country && `, ${item.country}`}
+                    >{item.country && `${item.country}, ${item.acronym}`}
                     </div>
                 ))}
             </div>
