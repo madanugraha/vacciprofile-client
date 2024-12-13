@@ -137,13 +137,13 @@ const Sidebar = ({
                             ? 'active' : activeTab === 'Vaccine' && selectedVaccine === item
                                 ? 'active' : activeTab === 'Pathogen' && selectedPathogen === item
                                     ? 'active' : activeTab === 'Licenser' && selectedLicenser === item
-                                        ? 'active' : 'inactive'
+                                        ? 'active' : activeTab === 'Compare' && selectedCompare === item ? 'active' : 'inactive'
                             }`}
                         onClick={() => {
                             handleClickSidebar(item)
                         }}
                     >
-                        {activeTab === "Pathogen" ? italizeScientificNames(item.name) : activeTab === "Compare" ? `${item.name} - ${item.manufactureName}` : activeTab != "Licenser" ? item.name : item.acronym}
+                        {activeTab === "Pathogen" ? italizeScientificNames(item.name) : activeTab === "Compare" ? item.name : activeTab != "Licenser" ? item.name : item.acronym}
                     </div>
                 ))}
                 {activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (

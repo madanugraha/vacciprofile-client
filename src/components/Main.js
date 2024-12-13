@@ -6,7 +6,26 @@ import Vaccine from './information/Vaccine';
 import ManufacturerProfile from './information/ManufacturerProfile';
 import Licenser from './information/Licenser';
 import PipelineVaccineListTable from './information/PipelineVaccineListTable';
-import Comparison from './information/Comparison';
+import manufacturers from '../assets/data/manufacturers.json';
+import pathogens from '../assets/data/pathogens.json';
+import vaccines from '../assets/data/vaccines.json';
+import { getPathogenDetailByName, getVaccinesByPathogenId } from '../utils/pathogens';
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: '80%',
+    height: '80%',
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 6,
+    borderRadius: 4
+};
 
 /**
  * Main Component
@@ -86,6 +105,124 @@ const Main = ({
 
     const [animationClass, setAnimationClass] = useState('slide-left');
 
+    // pathogens compare
+    const [pathognCompare1, setPathogenCompare1] = useState(pathogens);
+    const [pathogenComparee2, setPathogenCompare2] = useState(pathogens);
+
+    // vaccinee comparee
+    const [vaccineCompare1, setVaccineCompare1] = useState(vaccines);
+    const [vaccineComparee2, setVaccineCompare2] = useState(vaccines);
+
+    // manufacture compare
+    const [manufactureCompare1, setManufactureCompare1] = useState(manufacturers);
+    const [manufactureComparee2, setManufactureCompare2] = useState(manufacturers);
+    const [targetCompare1, setTargetCompare1] = useState('');
+    const [targetCompare2, setTargetCompare2] = useState('');
+
+    const [open, setOpen] = useState(false);
+    const [modalSelectedVaccine, setModalSelectedVaccine] = useState({});
+
+    const [compareState, setCompareState] = useState('pre-compare');
+    const handleSetActivePathogenCompare1 = (name) => {
+        const d = pathognCompare1.map((x) => {
+            if (x.name === name) {
+                return {
+                    ...x,
+                    isActive: true
+                }
+            } else {
+                return {
+                    ...x,
+                    isActive: false
+                }
+            }
+        });
+        setPathogenCompare1(d);
+    };
+
+    const handleSetActivePathogenCompare2 = (name) => {
+        const d = pathogenComparee2.map((x) => {
+            if (x.name === name) {
+                return {
+                    ...x,
+                    isActive: true
+                }
+            } else {
+                return {
+                    ...x,
+                    isActive: false
+                }
+            }
+        });
+        setPathogenCompare2(d);
+    };
+
+    const handleSetActiveVaccineCompare1 = (name) => {
+        const d = vaccineCompare1.map((x) => {
+            if (x.name === name) {
+                return {
+                    ...x,
+                    isActive: true
+                }
+            } else {
+                return {
+                    ...x,
+                    isActive: false
+                }
+            }
+        });
+        setVaccineCompare1(d);
+    };
+    const handleSetActiveVaccineCompare2 = (name) => {
+        const d = vaccineComparee2.map((x) => {
+            if (x.name === name) {
+                return {
+                    ...x,
+                    isActive: true
+                }
+            } else {
+                return {
+                    ...x,
+                    isActive: false
+                }
+            }
+        });
+        setVaccineCompare2(d);
+    };
+    const handleSetActiveManufactureCompare1 = (name) => {
+        const d = manufactureCompare1.map((x) => {
+            if (x.name === name) {
+                return {
+                    ...x,
+                    isActive: true
+                }
+            } else {
+                return {
+                    ...x,
+                    isActive: false
+                }
+            }
+        });
+        setManufactureCompare1(d);
+    };
+
+    const handleSetActiveManufactureCompare2 = (name) => {
+        const d = manufactureComparee2.map((x) => {
+            if (x.name === name) {
+                return {
+                    ...x,
+                    isActive: true
+                }
+            } else {
+                return {
+                    ...x,
+                    isActive: false
+                }
+            }
+        });
+        setManufactureCompare2(d);
+    };
+
     useEffect(() => {
         if (changedFrom === "Sidebar") {
             const isSelectedObjectNotEmpty = (obj) => Object.keys(obj).length !== 0;
@@ -93,7 +230,8 @@ const Main = ({
                 (activeTab === 'Manufacturer' && isSelectedObjectNotEmpty(selectedManufacturer)) ||
                 (activeTab === 'Vaccine' && isSelectedObjectNotEmpty(selectedVaccine)) ||
                 (activeTab === 'Pathogen' && isSelectedObjectNotEmpty(selectedPathogen)) ||
-                (activeTab === 'Licenser' && isSelectedObjectNotEmpty(selectedLicenser))
+                (activeTab === 'Licenser' && isSelectedObjectNotEmpty(selectedLicenser)) ||
+                (activeTab === 'Compare' && isSelectedObjectNotEmpty(selectedCompare))
             ) {
                 setAnimationClass('');
                 const timeout = setTimeout(() => {
@@ -102,8 +240,37 @@ const Main = ({
                 return () => clearTimeout(timeout);
             }
         }
-    }, [changedFrom, activeTab, selectedLicenser, selectedManufacturer, selectedPathogen, selectedVaccine]);
+    }, [changedFrom, activeTab, selectedLicenser, selectedManufacturer, selectedPathogen, selectedVaccine, selectedCompare]);
 
+
+    useEffect(() => {
+        const newPathogensArray = pathogens.map((v) => {
+            return {
+                ...v,
+                isActive: false
+            }
+        });
+        setPathogenCompare1(newPathogensArray);
+        setPathogenCompare2(newPathogensArray);
+
+        const newVaccinesArrray = vaccines.map((v) => {
+            return {
+                ...v,
+                isActive: false
+            }
+        });
+        setVaccineCompare1(newVaccinesArrray);
+        setVaccineCompare2(newVaccinesArrray);
+
+        const newManufactureeArrray = manufacturers.map((v) => {
+            return {
+                ...v,
+                isActive: false
+            }
+        });
+        setManufactureCompare1(newManufactureeArrray);
+        setManufactureCompare2(newManufactureeArrray);
+    }, [])
     return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${animationClass}`}>
         <div className='main-container border border-primary border-1 rounded-3 slide-left overflow-auto'>
             {
@@ -115,7 +282,8 @@ const Main = ({
                     (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
                         (activeTab === 'Vaccine' && Object.keys(selectedVaccine).length === 0) ||
                         (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0) ||
-                        (activeTab === 'Licenser' && Object.keys(selectedLicenser).length === 0)
+                        (activeTab === 'Licenser' && Object.keys(selectedLicenser).length === 0) ||
+                        (activeTab === 'Compare' && Object.keys(selectedCompare).length === 0)
                         ? <div className='empty-main position-relative'>
                             <img className='arrow-image position-absolute' src="/images/arrow.png" alt="Arrow" width={100} height={100} />
                             <span className='select-prompt position-absolute'>Select a {activeTab}</span>
@@ -139,11 +307,224 @@ const Main = ({
                                                     getVaccinesByLicenser={getVaccinesByLicenser}
                                                     handleSelectVaccine={handleSelectVaccine}
                                                     selectedLicenser={selectedLicenser}
-                                                /> : activeTab === "Compare" ? <Comparison
-                                                    getComparisonDataByName={getComparisonByName}
-                                                    handleSelectComparison={handleSelectCompare}
-                                                    selectedComparison={selectedCompare}
-                                                />
+                                                /> : activeTab === "Compare" ? (
+                                                    <>
+                                                        {compareState === 'pre-compare' ? (
+                                                            <div className='d-flex flex-row'>
+                                                                {/** TO-COMPARE-1 */}
+                                                                <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
+                                                                    {selectedCompare?.name === "Pathogen" && (
+                                                                        <div className='sidebar-items overflow-auto'>
+                                                                            {pathognCompare1.map((pathogen) => {
+                                                                                return (
+                                                                                    <div
+                                                                                        key={1}
+                                                                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${pathogen?.isActive ? 'active' : 'inactive'}`}
+                                                                                        onClick={() => {
+                                                                                            setTargetCompare1(pathogen.name)
+                                                                                            handleSetActivePathogenCompare1(pathogen.name)
+                                                                                        }}
+                                                                                    >
+                                                                                        {pathogen?.name}
+                                                                                    </div>
+                                                                                )
+                                                                            })}
+                                                                        </div>
+                                                                    )}
+                                                                    {selectedCompare?.name === "Vaccine" && (
+                                                                        <div className='sidebar-items overflow-auto'>
+                                                                            {vaccineCompare1.map((vaccine) => {
+                                                                                return (
+                                                                                    <div
+                                                                                        key={1}
+                                                                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${vaccine?.isActive ? 'active' : 'inactive'}`}
+                                                                                        onClick={() => {
+                                                                                            setTargetCompare1(vaccine.name)
+                                                                                            handleSetActiveVaccineCompare1(vaccine.name)
+                                                                                        }}
+                                                                                    >
+                                                                                        {vaccine?.name}
+                                                                                    </div>
+                                                                                )
+                                                                            })}
+                                                                        </div>
+                                                                    )}
+                                                                    {selectedCompare?.name === "Manufacturer" && (
+                                                                        <div className='sidebar-items overflow-auto'>
+                                                                            {manufactureCompare1.map((manufacture) => {
+                                                                                return (
+                                                                                    <div
+                                                                                        key={1}
+                                                                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${manufacture?.isActive ? 'active' : 'inactive'}`}
+                                                                                        onClick={() => {
+                                                                                            setTargetCompare1(manufacture.name)
+                                                                                            handleSetActiveManufactureCompare1(manufacture.name)
+                                                                                        }}
+                                                                                    >
+                                                                                        {manufacture?.name}
+                                                                                    </div>
+                                                                                )
+                                                                            })}
+                                                                        </div>
+                                                                    )}
+                                                                </div>
+                                                                {/** TO-COMPARE-2 */}
+                                                                <div style={{ marginLeft: 10 }} className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
+                                                                    {selectedCompare?.name === "Pathogen" && (
+                                                                        <div className='sidebar-items overflow-auto'>
+                                                                            {pathogenComparee2.map((pathogen) => {
+                                                                                return (
+                                                                                    <div
+                                                                                        key={1}
+                                                                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${pathogen?.isActive ? 'active' : 'inactive'}`}
+                                                                                        onClick={() => {
+                                                                                            setTargetCompare2(pathogen.name)
+                                                                                            handleSetActivePathogenCompare2(pathogen.name)
+                                                                                        }}
+                                                                                    >
+                                                                                        {pathogen?.name}
+                                                                                    </div>
+                                                                                )
+                                                                            })}
+                                                                        </div>
+                                                                    )}
+                                                                    {selectedCompare?.name === "Vaccine" && (
+                                                                        <div className='sidebar-items overflow-auto'>
+                                                                            {vaccineComparee2.map((vaccine) => {
+                                                                                return (
+                                                                                    <div
+                                                                                        key={1}
+                                                                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${vaccine?.isActive ? 'active' : 'inactive'}`}
+                                                                                        onClick={() => {
+                                                                                            setTargetCompare2(vaccine.name)
+                                                                                            handleSetActiveVaccineCompare2(vaccine.name)
+                                                                                        }}
+                                                                                    >
+                                                                                        {vaccine?.name}
+                                                                                    </div>
+                                                                                )
+                                                                            })}
+                                                                        </div>
+                                                                    )}
+                                                                    {selectedCompare?.name === "Manufacturer" && (
+                                                                        <div className='sidebar-items overflow-auto'>
+                                                                            {manufactureComparee2.map((manufacture) => {
+                                                                                return (
+                                                                                    <div
+                                                                                        key={1}
+                                                                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${manufacture?.isActive ? 'active' : 'inactive'}`}
+                                                                                        onClick={() => {
+                                                                                            setTargetCompare2(manufacture.name)
+                                                                                            handleSetActiveManufactureCompare2(manufacture.name)
+                                                                                        }}
+                                                                                    >
+                                                                                        {manufacture?.name}
+                                                                                    </div>
+                                                                                )
+                                                                            })}
+                                                                        </div>
+                                                                    )}
+                                                                </div>
+                                                                <div onClick={() => setCompareState(`compare-result-${selectedCompare?.name.toLowerCase()}`)} className='cursor-pointer' style={{ width: 180, backgroundColor: 'blue', height: 30, borderRadius: 8, alignItems: 'center', justifyContent: 'center' }}>
+                                                                    <p className='' style={{ padding: 4, borderRadius: 8, alignSelf: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 'bolder' }}>Proceed Compare</p>
+                                                                </div>
+                                                            </div>
+                                                        ) : (
+                                                            <div style={{ height: '100%', width: '100%' }}>
+                                                                <div style={{ flex: 1, flexDirection: 'column' }} className='d-flex flex-col'>
+                                                                    <span style={{ fontWeight: 'bolder', fontSize: 18 }}>Comparison Result</span>
+                                                                    <span style={{ marginBottom: 20 }}>Between: {targetCompare1} and {targetCompare2}</span>
+                                                                    {compareState === "compare-result-pathogen" && (
+                                                                        <table border={1}>
+                                                                            <tr>
+                                                                                <td>Name</td>
+                                                                                <td colSpan={2}>{getPathogenDetailByName(targetCompare1).name}</td>
+                                                                                <td colSpan={2}>{getPathogenDetailByName(targetCompare2).name}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>General</td>
+                                                                                <td><img src={getPathogenDetailByName(targetCompare1)?.image} width={80} height={80} alt='pathogen-1-img' /></td>
+                                                                                <td>{getPathogenDetailByName(targetCompare1)?.description}</td>
+                                                                                <td><img src={getPathogenDetailByName(targetCompare2)?.image} width={80} height={80} alt='pathogen-1-img' /></td>
+                                                                                <td>{getPathogenDetailByName(targetCompare2)?.description}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Key Factor</td>
+                                                                                <td colSpan={2}> {getPathogenDetailByName(targetCompare1)?.bulletpoints ? getPathogenDetailByName(targetCompare1)?.bulletpoints.split('|').map((bullet) => {
+                                                                                    return (
+                                                                                        <li className='d-flex flex-row mb-2'>
+                                                                                            <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(getPathogenDetailByName(targetCompare1).name, `<span classname="text-primary" style={{ color: "blue" }}>${getPathogenDetailByName(targetCompare1).name}</span>`) }}></div>
+                                                                                        </li>
+                                                                                    )
+                                                                                }) : (
+                                                                                    <li className='flex flex-row mb-2'>
+                                                                                        <span className='mt-2'>No Data Found</span>
+                                                                                    </li>
+                                                                                )}</td>
+                                                                                <td colSpan={2}>
+                                                                                    {getPathogenDetailByName(targetCompare2)?.bulletpoints ? getPathogenDetailByName(targetCompare2)?.bulletpoints.split('|').map((bullet) => {
+                                                                                        return (
+                                                                                            <li className='d-flex flex-row mb-2'>
+                                                                                                <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(getPathogenDetailByName(targetCompare2).name, `<span classname="text-primary" style={{ color: "blue" }}>${`&#8226;` + getPathogenDetailByName(targetCompare2).name}</span>`) }}></div>
+                                                                                            </li>
+                                                                                        )
+                                                                                    }) : (
+                                                                                        <li className='flex flex-row mb-2'>
+                                                                                            <span className='mt-2'>No Data Found</span>
+                                                                                        </li>
+                                                                                    )}
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Related Vaccines</td>
+                                                                                <td colSpan={2}>
+                                                                                    {getVaccinesByPathogenId(getPathogenDetailByName(targetCompare1)?.pathogenId).length > 0 ? getVaccinesByPathogenId(getPathogenDetailByName(targetCompare1)?.pathogenId).map((vaccine) => {
+                                                                                        return (
+                                                                                            <div onClick={() => {
+                                                                                                setModalSelectedVaccine(vaccine)
+                                                                                                setOpen(true)
+                                                                                            }} className='flex flex-row mb-2'>
+                                                                                                <span className='mt-2 fw-semibold text-primary cursor-pointer'>&#8226;{" "}{vaccine.name}</span>
+                                                                                            </div>
+                                                                                        )
+                                                                                    }) : (
+                                                                                        <div className='flex flex-row mb-2'>
+                                                                                            &#8226;{" "}
+                                                                                            <span className='mt-2'>No Data Found</span>
+                                                                                        </div>
+                                                                                    )}
+                                                                                </td>
+                                                                                <td colSpan={2}>
+                                                                                    {getVaccinesByPathogenId(getPathogenDetailByName(targetCompare2)?.pathogenId).length > 0 ? getVaccinesByPathogenId(getPathogenDetailByName(targetCompare2)?.pathogenId).map((vaccine) => {
+                                                                                        return (
+                                                                                            <div onClick={() => {
+                                                                                                setModalSelectedVaccine(vaccine)
+                                                                                                setOpen(true)
+                                                                                            }} className='flex flex-row mb-2'>
+                                                                                                <span className='mt-2 fw-semibold text-primary cursor-pointer'>&#8226;{" "}{vaccine.name}</span>
+                                                                                            </div>
+                                                                                        )
+                                                                                    }) : (
+                                                                                        <div className='flex flex-row mb-2'>
+                                                                                            &#8226;{" "}
+                                                                                            <span className='mt-2'>No Data Found</span>
+                                                                                        </div>
+                                                                                    )}
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    )}
+                                                                </div>
+                                                            </div>
+                                                        )}
+
+                                                    </>
+                                                )
+                                                    // activeTab === "Compare" ? <Comparison
+                                                    //     getComparisonDataByName={getComparisonByName}
+                                                    //     handleSelectComparison={handleSelectCompare}
+                                                    //     selectedComparison={selectedCompare}
+                                                    // />
                                                     : null}
                                 {activeTab === "Manufacturer" && getVaccinesByManufacturer().length > 0
                                     ?
@@ -180,6 +561,17 @@ const Main = ({
                                     />
                                     : ``}
                             </div>
+                            <Modal
+                                keepMounted
+                                open={open}
+                                onClose={() => setOpen(false)}
+                                aria-labelledby="keep-mounted-modal-title"
+                                aria-describedby="keep-mounted-modal-description"
+                            >
+                                <Box sx={style}>
+                                    <Vaccine selectedVaccine={modalSelectedVaccine} convertCamelCaseToReadable={convertCamelCaseToReadable} />
+                                </Box>
+                            </Modal>
                         </>}
         </div>
     </div>

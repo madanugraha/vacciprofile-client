@@ -15,7 +15,7 @@ import vaccines from './assets/data/vaccines.json';
 import pipelineVaccines from './assets/data/pipeline-vaccines.json';
 import licensers from './assets/data/licensers.json';
 import scientificNames from './assets/scientificNames';
-import { finalParsedDataCompare } from './assets/data/compare-vaccine.js';
+import { compareMenu } from './assets/data/compare-vaccine.js';
 /**
  * Main application component for the vaccine profile page.
  *
@@ -193,8 +193,8 @@ const App = () => {
     }, []);
 
 
-    const getComparisonByName = useCallback(vaccine => {
-        return finalParsedDataCompare().find(vac => vac.name === vaccine.name);
+    const getComparisonByName = useCallback(item => {
+        return compareMenu.find(menu => menu.name === item.name);
     }, []);
 
     /**
@@ -535,7 +535,7 @@ const App = () => {
             } else if (activeTab === 'Licenser') {
                 setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
             } else if (activeTab === 'Compare') {
-                setSidebarList(finalParsedDataCompare().sort((a, b) => `${a.name} - ${a.manufactureName}`.localeCompare(`${b.name} - ${b.manufactureName}`)))
+                setSidebarList(compareMenu.sort((a, b) => a.name))
             }
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
@@ -607,7 +607,7 @@ const App = () => {
         setVaccinesList(vaccines);
         setPipelineVaccinesList(pipelineVaccines);
         setLicensersList(licensers);
-        setCompareList(finalParsedDataCompare())
+        setCompareList(compareMenu)
     }, [])
 
     useEffect(() => {

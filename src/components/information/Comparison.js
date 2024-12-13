@@ -16,9 +16,9 @@ const mergeArray = (arr) => {
         return []
     }
 };
+// eslint-disable-next-line no-unused-vars
 const getFactorValueByNameAndLicenser = (name, data, manufacture) => {
     if (data && data?.data.length > 0) {
-        console.log('manufacture >> ', manufacture);
         if (data.name === manufacture) {
             const f = data?.data.filter((dat) => dat.name === name);
             if (f.length > 0) {

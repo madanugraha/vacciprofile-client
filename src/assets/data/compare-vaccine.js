@@ -1,4 +1,12 @@
-const titleSeparator = ['Composition/Platform', 'Strain coverage', 'Indication', 'Dosing', 'Contraindication', 'Immunogenicity', 'Efficacy', 'Duration of protection',
+const titleSeparator = [
+    'Composition/Platform',
+    'Strain coverage',
+    'Indication',
+    'Dosing',
+    'Contraindication',
+    'Immunogenicity',
+    'Efficacy',
+    'Duration of protection',
     'Co-Administration',
     'Reactogenicity',
     'Safety',
@@ -716,4 +724,20 @@ export function finalParsedDataCompare() {
         }
     };
     return tempArr;
-}
+};
+
+
+export const compareMenu = [
+    {
+        name:'Pathogen',
+        data: []
+    },
+    {
+        name:'Vaccine',
+        data: []
+    },
+    {
+        name: 'Manufacturer',
+        data: []
+    },
+]
