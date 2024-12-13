@@ -9,9 +9,11 @@ import PipelineVaccineListTable from './information/PipelineVaccineListTable';
 import manufacturers from '../assets/data/manufacturers.json';
 import pathogens from '../assets/data/pathogens.json';
 import vaccines from '../assets/data/vaccines.json';
-import { getPathogenDetailByName, getVaccinesByPathogenId } from '../utils/pathogens';
+import { getLicenserDetailById, getManufactureDetailByName, getPathogenDetailById, getPathogenDetailByName, getVaccineDetailById, getVaccineDetailByName, getVaccinesByPathogenId } from '../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import ReactModal from 'react-modal';
+import { toast } from 'react-toastify';
 
 
 const style = {
@@ -122,7 +124,37 @@ const Main = ({
     const [open, setOpen] = useState(false);
     const [modalSelectedVaccine, setModalSelectedVaccine] = useState({});
 
+
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedVacciProfile, setSelectedVacciProfile] = useState({});
+
+    /**
+     * This function determines sets the modal Open
+     * 
+     * @function
+     * @name openModal
+     * 
+     * @returns {void} This function does not return a value. It updates the `isOpen` state directly.
+     */
+
+    function openModal() {
+        setModalIsOpen(true);
+    }
+
+    /**
+     * This function determines sets the modal Close
+     * 
+     * @function
+     * @name openModal
+     * 
+     * @returns {void} This function does not return a value. It updates the `isOpen` state directly.
+     */
+
+    function closeModal() {
+        setModalIsOpen(false);
+    }
     const [compareState, setCompareState] = useState('pre-compare');
+
     const handleSetActivePathogenCompare1 = (name) => {
         const d = pathognCompare1.map((x) => {
             if (x.name === name) {
@@ -223,6 +255,98 @@ const Main = ({
         setManufactureCompare2(d);
     };
 
+    const formatHeading = content => {
+        if (!content) {
+            return <span>No content available</span>;
+        }
+        const updatedContent = content.replace(/'/g, '"');
+        return updatedContent.split(/<br\s*\/?>/gi).map((part, index, array) => (
+            <span key={index} className={`${index === 1 ? `text-hover` : ``}`}>
+                {part}
+                {index < array.length - 1 && <br />}
+            </span>
+        ));
+    };
+
+    /**
+     * Removes all <br/> tags from a given string.
+     *
+     * @param {string} text - The input string that may contain <br/> tags.
+     * @returns {string} - The input string with all <br/> tags removed.
+     *
+     * @example
+     * const input = "This is a line.<br/>This is another line.<br/>";
+     * const output = removeBrTags(input);
+     * console.log(output); // "This is a line.This is another line."
+     */
+    // function removeBrTags(text) {
+    //     return text.replace(/<br\s*\/?>/gi, '');
+    // }
+
+    /**
+        * Formats the given content by:
+        * 1. Splitting it at `<br />` or `<br>` tags and inserting React line break elements (`<br />`).
+        * 2. Replacing any single apostrophes `'` with double inverted commas `"` in the content.
+        * 
+        * This function takes a string with `<br />` or `<br>` tags and returns an array of React elements. The string is split at each `<br />` tag, and a line break is inserted between each part, except after the last part. It also replaces single apostrophes with double inverted commas.
+        * 
+        * @function
+        * @param {string} content - The string containing text, `<br />` or `<br>` tags, and possibly single apostrophes.
+        * @returns {React.ReactNode[]} An array of React elements where each element represents a part of the original string. Line breaks are inserted between parts based on the original `<br />` tags, and apostrophes are replaced with double quotes.
+        * 
+        * @example
+        * // Example usage
+        * const content = "Monovalent live-attuned <br/>(CHIKV-LR2006-OPY1; deleted nsPr3 (replicase complex))";
+        * const formatContent = formatContent(content);
+        * 
+        * // formatContent will be an array of React elements with line breaks appropriately inserted and single apostrophes replaced.
+        */
+    const formatContent = content => {
+        if (typeof content === 'object' && content !== null) {
+            content = JSON.stringify(content, null, 2);
+        }
+        if (typeof content !== 'string') {
+            return <span>{String(content)}</span>;
+        }
+        const updatedContent = content.replace(/'/g, '"');
+        const parts = updatedContent.split(/<br\s*\/?>/gi);
+        return parts.map((part, index) => (
+            <React.Fragment key={index}>
+                {part}
+                {index < parts.length - 1 && <br />}
+            </React.Fragment>
+        ));
+    };
+
+    const resetAllActiveSelected = () => {
+        const newPathogensArray = pathogens.map((v) => {
+            return {
+                ...v,
+                isActive: false
+            }
+        });
+        setPathogenCompare1(newPathogensArray);
+        setPathogenCompare2(newPathogensArray);
+
+        const newVaccinesArrray = vaccines.map((v) => {
+            return {
+                ...v,
+                isActive: false
+            }
+        });
+        setVaccineCompare1(newVaccinesArrray);
+        setVaccineCompare2(newVaccinesArrray);
+
+        const newManufactureeArrray = manufacturers.map((v) => {
+            return {
+                ...v,
+                isActive: false
+            }
+        });
+        setManufactureCompare1(newManufactureeArrray);
+        setManufactureCompare2(newManufactureeArrray);
+    }
+
     useEffect(() => {
         if (changedFrom === "Sidebar") {
             const isSelectedObjectNotEmpty = (obj) => Object.keys(obj).length !== 0;
@@ -240,6 +364,10 @@ const Main = ({
                 return () => clearTimeout(timeout);
             }
         }
+        resetAllActiveSelected();
+        setTargetCompare1('');
+        setTargetCompare2('');
+        setCompareState('pre-compare');
     }, [changedFrom, activeTab, selectedLicenser, selectedManufacturer, selectedPathogen, selectedVaccine, selectedCompare]);
 
 
@@ -270,7 +398,16 @@ const Main = ({
         });
         setManufactureCompare1(newManufactureeArrray);
         setManufactureCompare2(newManufactureeArrray);
-    }, [])
+    }, []);
+
+
+
+    // useEffect(() => {
+    //     console.log(compareState, targetCompare1, targetCompare2)
+    //     resetAllActiveSelected();
+    // }, [compareState, targetCompare1, targetCompare2])
+
+
     return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${animationClass}`}>
         <div className='main-container border border-primary border-1 rounded-3 slide-left overflow-auto'>
             {
@@ -310,7 +447,7 @@ const Main = ({
                                                 /> : activeTab === "Compare" ? (
                                                     <>
                                                         {compareState === 'pre-compare' ? (
-                                                            <div className='d-flex flex-row'>
+                                                            <div className='d-inline-flex'>
                                                                 {/** TO-COMPARE-1 */}
                                                                 <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
                                                                     {selectedCompare?.name === "Pathogen" && (
@@ -318,7 +455,7 @@ const Main = ({
                                                                             {pathognCompare1.map((pathogen) => {
                                                                                 return (
                                                                                     <div
-                                                                                        key={1}
+                                                                                        key={`pathogen-1-${pathogen.name}`}
                                                                                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${pathogen?.isActive ? 'active' : 'inactive'}`}
                                                                                         onClick={() => {
                                                                                             setTargetCompare1(pathogen.name)
@@ -336,7 +473,7 @@ const Main = ({
                                                                             {vaccineCompare1.map((vaccine) => {
                                                                                 return (
                                                                                     <div
-                                                                                        key={1}
+                                                                                        key={`vaccine-1-${vaccine.name}`}
                                                                                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${vaccine?.isActive ? 'active' : 'inactive'}`}
                                                                                         onClick={() => {
                                                                                             setTargetCompare1(vaccine.name)
@@ -354,7 +491,7 @@ const Main = ({
                                                                             {manufactureCompare1.map((manufacture) => {
                                                                                 return (
                                                                                     <div
-                                                                                        key={1}
+                                                                                        key={`manufacturer-1-${manufacture.name}`}
                                                                                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${manufacture?.isActive ? 'active' : 'inactive'}`}
                                                                                         onClick={() => {
                                                                                             setTargetCompare1(manufacture.name)
@@ -375,7 +512,7 @@ const Main = ({
                                                                             {pathogenComparee2.map((pathogen) => {
                                                                                 return (
                                                                                     <div
-                                                                                        key={1}
+                                                                                        key={`pathogen-2-${pathogen.name}`}
                                                                                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${pathogen?.isActive ? 'active' : 'inactive'}`}
                                                                                         onClick={() => {
                                                                                             setTargetCompare2(pathogen.name)
@@ -393,7 +530,7 @@ const Main = ({
                                                                             {vaccineComparee2.map((vaccine) => {
                                                                                 return (
                                                                                     <div
-                                                                                        key={1}
+                                                                                        key={`vaccine-2-${vaccine.name}`}
                                                                                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${vaccine?.isActive ? 'active' : 'inactive'}`}
                                                                                         onClick={() => {
                                                                                             setTargetCompare2(vaccine.name)
@@ -411,7 +548,7 @@ const Main = ({
                                                                             {manufactureComparee2.map((manufacture) => {
                                                                                 return (
                                                                                     <div
-                                                                                        key={1}
+                                                                                        key={`manufacture-2-${manufacture.name}`}
                                                                                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${manufacture?.isActive ? 'active' : 'inactive'}`}
                                                                                         onClick={() => {
                                                                                             setTargetCompare2(manufacture.name)
@@ -425,21 +562,37 @@ const Main = ({
                                                                         </div>
                                                                     )}
                                                                 </div>
-                                                                <div onClick={() => setCompareState(`compare-result-${selectedCompare?.name.toLowerCase()}`)} className='cursor-pointer' style={{ width: 180, backgroundColor: 'blue', height: 30, borderRadius: 8, alignItems: 'center', justifyContent: 'center' }}>
+                                                                <div onClick={() => {
+                                                                    if (!targetCompare1 || !targetCompare2) {
+                                                                        return toast.error('Please select to compare first.')
+                                                                    }
+                                                                    setCompareState(`compare-result-${selectedCompare?.name.toLowerCase()}`)
+                                                                }} className='cursor-pointer' style={{ width: 180, backgroundColor: 'blue', height: 30, borderRadius: 8, alignItems: 'center', justifyContent: 'center' }}>
                                                                     <p className='' style={{ padding: 4, borderRadius: 8, alignSelf: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 'bolder' }}>Proceed Compare</p>
                                                                 </div>
                                                             </div>
                                                         ) : (
                                                             <div style={{ height: '100%', width: '100%' }}>
-                                                                <div style={{ flex: 1, flexDirection: 'column' }} className='d-flex flex-col'>
-                                                                    <span style={{ fontWeight: 'bolder', fontSize: 18 }}>Comparison Result</span>
-                                                                    <span style={{ marginBottom: 20 }}>Between: {targetCompare1} and {targetCompare2}</span>
+                                                                <div className='d-flex flex-column'>
+                                                                    <div onClick={() => {
+                                                                        resetAllActiveSelected();
+                                                                        setTargetCompare1('');
+                                                                        setTargetCompare2('');
+                                                                        setCompareState('pre-compare');
+                                                                    }} className='cursor-pointer d-inline-flex text-center align-items-center' style={{ paddingTop: 2, paddingBottom: 2, paddingLeft: 4, paddingRight: 4, backgroundColor: 'red', borderRadius: 10, width: 80, marginBottom: 20 }}>
+                                                                        <i className='fa-solid fa-arrow-left' style={{ color: 'white' }} />
+                                                                        <span className='' style={{ marginLeft: 5, color: 'white', fontWeight: 'bolder' }}>Back</span>
+                                                                    </div>
+                                                                    <div className='d-flex flex-column' style={{ marginBottom: 10 }}>
+                                                                        <span style={{ fontWeight: 'bolder', fontSize: 18 }}>Comparison Result</span>
+                                                                        <span style={{ marginBottom: 20 }}>Between: {targetCompare1} and {targetCompare2}</span>
+                                                                    </div>
                                                                     {compareState === "compare-result-pathogen" && (
                                                                         <table border={1}>
                                                                             <tr>
                                                                                 <td>Name</td>
-                                                                                <td colSpan={2}>{getPathogenDetailByName(targetCompare1).name}</td>
-                                                                                <td colSpan={2}>{getPathogenDetailByName(targetCompare2).name}</td>
+                                                                                <td colSpan={2}>{getPathogenDetailByName(targetCompare1)?.name}</td>
+                                                                                <td colSpan={2}>{getPathogenDetailByName(targetCompare2)?.name}</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>General</td>
@@ -514,17 +667,261 @@ const Main = ({
                                                                             </tr>
                                                                         </table>
                                                                     )}
+                                                                    {compareState === "compare-result-vaccine" && (
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold' }}>Name</td>
+                                                                                <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare1}</td>
+                                                                                <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare2}</td>
+                                                                            </tr>
+                                                                            {/** LICENSING TARGET 1 */}
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing - {targetCompare1}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Link</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Licensing/ SmPC</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Indication</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Approval Date</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Doses Sold</td>
+                                                                            </tr>
+                                                                            {
+                                                                                getVaccineDetailByName(targetCompare1)?.licensingDates && getVaccineDetailByName(targetCompare1).licensingDates.length > 0 ? getVaccineDetailByName(targetCompare1).licensingDates.map((licenser, idx) => {
+                                                                                    return (
+                                                                                        <>
+                                                                                            <tr>
+                                                                                                <td><a href={licenser?.source} target="_blank" rel="noreferrer" style={{ fontWeight: 'normal', color: 'blue' }}>{licenser?.name || "click here"}</a></td>
+                                                                                                <td colSpan={2}>{licenser?.name || "-"}</td>
+                                                                                                <td colSpan={2}>{licenser?.indication || "-"}</td>
+                                                                                                <td>{licenser.date}</td>
+                                                                                                <td>{licenser?.dosesSold || "-"}</td>
+                                                                                            </tr>
+                                                                                        </>
+                                                                                    )
+                                                                                }) : <tr>
+                                                                                    <td colSpan={5}>- No Data Available -</td>
+                                                                                </tr>
+                                                                            }
+                                                                            {/** LICENSING TARGET 2 */}
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing - {targetCompare2}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Link</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Licensing/ SmPC</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Indication</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Approval Date</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Doses Sold</td>
+                                                                            </tr>
+                                                                            {
+                                                                                getVaccineDetailByName(targetCompare1)?.licensingDates && getVaccineDetailByName(targetCompare1).licensingDates.length > 0 ? getVaccineDetailByName(targetCompare2).licensingDates.map((licenser, idx) => {
+                                                                                    return (
+                                                                                        <>
+                                                                                            <tr>
+                                                                                                <td><a href={licenser?.source} target="_blank" rel="noreferrer" style={{ fontWeight: 'normal', color: 'blue' }}>{licenser?.name || "click here"}</a></td>
+                                                                                                <td colSpan={2}>{licenser?.name || "-"}</td>
+                                                                                                <td colSpan={2}>{licenser?.indication || "-"}</td>
+                                                                                                <td>{licenser.date}</td>
+                                                                                                <td>{licenser?.dosesSold || "-"}</td>
+                                                                                            </tr>
+                                                                                        </>
+                                                                                    )
+                                                                                }) : <tr>
+                                                                                    <td colSpan={5}>- No Data Available -</td>
+                                                                                </tr>
+                                                                            }
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>VacciProfiles</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold' }}>{targetCompare1}</td>
+                                                                                <td colSpan={6} className='text-left'>
+                                                                                    <i
+                                                                                        className="fa-solid fa-file-medical text-hover hover-cursor"
+                                                                                        onClick={() => {
+                                                                                            setSelectedVacciProfile(getVaccineDetailByName(targetCompare1).productProfiles[0]);
+                                                                                            openModal();
+                                                                                        }}
+                                                                                    ></i>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold' }}>{targetCompare2}</td>
+                                                                                <td colSpan={6} className='text-left'>
+                                                                                    <i
+                                                                                        className="fa-solid fa-file-medical text-hover hover-cursor"
+                                                                                        onClick={() => {
+                                                                                            setSelectedVacciProfile(getVaccineDetailByName(targetCompare2).productProfiles[0]);
+                                                                                            openModal();
+                                                                                        }}
+                                                                                    ></i>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colSpan={7} align='center' style={{ fontWeight: 'bold' }}>General Information</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Factor</td>
+                                                                                <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare1}</td>
+                                                                                <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare2}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Map Vaccine Preventable Diseases</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["General Information"]["Map Vaccine Preventable Diseases"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["General Information"]["Map Vaccine Preventable Diseases"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Vaccine SmPCs (FDA, EMA, WHO, others)</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["General Information"]["Vaccine SmPCs (FDA, EMA, WHO, others)"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["General Information"]["Vaccine SmPCs (FDA, EMA, WHO, others)"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Product profiles</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["General Information"]["Product profiles"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["General Information"]["Product profiles"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Pipeline products - summary table</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["General Information"]["Pipeline products - summary table"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["General Information"]["Pipeline products - summary table"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Failed products</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["General Information"]["Failed products"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["General Information"]["Failed products"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colSpan={7} style={{ fontWeight: 'bold' }} align='center'>Company products, pipeline</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Factor</td>
+                                                                                <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare1}</td>
+                                                                                <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare2}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>VPD-BoD, Product presentations, Monograph</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["Company products, pipeline"]["VPD-BoD, Product presentations, Monograph"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["Company products, pipeline"]["VPD-BoD, Product presentations, Monograph"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Pivotal publications / data vaccines</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["Company products, pipeline"]["Pivotal publications / data vaccines"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["Company products, pipeline"]["Pivotal publications / data vaccines"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Interviews</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["Company products, pipeline"]["Interviews"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["Company products, pipeline"]["Interviews"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Relevant literature</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["Company products, pipeline"]["Relevant literature"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["Company products, pipeline"]["Relevant literature"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Pipeline products - detailed information (TPP)</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare1)?.introduction["Company products, pipeline"]["Pipeline products - detailed information (TPP)"] : "-"}</td>
+                                                                                <td colSpan={3}>{getVaccineDetailByName(targetCompare1)?.introduction ? getVaccineDetailByName(targetCompare2)?.introduction["Company products, pipeline"]["Pipeline products - detailed information (TPP)"] : "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Last Updated</td>
+                                                                                <td style={{ fontWeight: 'bold' }} align='right' colSpan={3}>{getVaccineDetailByName(targetCompare1)?.lastUpdated}</td>
+                                                                                <td style={{ fontWeight: 'bold' }} align='right' colSpan={3}>{getVaccineDetailByName(targetCompare2)?.lastUpdated}</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    )}
+                                                                    {compareState === "compare-result-manufacturer" && (
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold' }}>Name</td>
+                                                                                <td style={{ fontWeight: 'bold' }}>{targetCompare1}</td>
+                                                                                <td style={{ fontWeight: 'bold' }}>{targetCompare2}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Founded</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare1)?.details?.founded || "-"}</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare2)?.details?.founded || "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Headquarter</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare1)?.details?.headquarters || "-"}</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare2)?.details?.headquarters || "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>CEO</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare1)?.details?.ceo || "-"}</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare2)?.details?.ceo || "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Revenue/Operating Income/Net Income</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare1)?.details?.revenue || "-"}/{getManufactureDetailByName(targetCompare1)?.details?.operatingIncome || "-"}/{getManufactureDetailByName(targetCompare1)?.details?.netIncome || "-"}</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare2)?.details?.revenue || "-"}/{getManufactureDetailByName(targetCompare2)?.details?.operatingIncome || "-"}/{getManufactureDetailByName(targetCompare2)?.details?.netIncome || "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Total Assets/Total Equity</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare1)?.details?.totalAssets || "-"}/{getManufactureDetailByName(targetCompare1)?.details?.totalEquity || "-"}</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare2)?.details?.totalAssets || "-"}/{getManufactureDetailByName(targetCompare2)?.details?.totalEquity || "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Number of Employees</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare1)?.details?.numberOfEmployees || "-"}</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare2)?.details?.numberOfEmployees || "-"}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align='center' colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare1} - List of Vaccines</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Vaccine Name</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Pathogen</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Licensing</td>
+                                                                            </tr>
+                                                                            {
+                                                                                getManufactureDetailByName(targetCompare1)?.vaccines && getManufactureDetailByName(targetCompare1).vaccines.length > 0 ? getManufactureDetailByName(targetCompare1).vaccines?.map((vaccine) => {
+                                                                                    return (
+                                                                                        <tr>
+                                                                                            <td>{getVaccineDetailById(vaccine?.vaccineId)?.name || "-"}</td>
+                                                                                            <td>{getPathogenDetailById(vaccine?.pathogenId)?.name || "-"}</td>
+                                                                                            <td>{getVaccineDetailById(vaccine?.vaccineId)?.licensers.length > 0 ? getVaccineDetailById(vaccine?.vaccineId)?.licensers.map((lic) => getLicenserDetailById(lic.licenserId).acronym).join(', ') : "-"}</td>
+                                                                                        </tr>
+                                                                                    )
+                                                                                }) : <tr>
+                                                                                    <td colSpan={3}>- No Data Available</td>
+                                                                                </tr>
+                                                                            }
+
+                                                                            <tr>
+                                                                                <td align='center' colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare2} - List of Vaccines</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Vaccine Name</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Pathogen</td>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Licensing</td>
+                                                                            </tr>
+                                                                            {
+                                                                                getManufactureDetailByName(targetCompare2)?.vaccines && getManufactureDetailByName(targetCompare2).vaccines.length > 0 ? getManufactureDetailByName(targetCompare2).vaccines?.map((vaccine) => {
+                                                                                    return (
+                                                                                        <tr>
+                                                                                            <td>{getVaccineDetailById(vaccine?.vaccineId)?.name || "-"}</td>
+                                                                                            <td>{getPathogenDetailById(vaccine?.pathogenId)?.name || "-"}</td>
+                                                                                            <td>{getVaccineDetailById(vaccine?.vaccineId)?.licensers.length > 0 ? getVaccineDetailById(vaccine?.vaccineId)?.licensers.map((lic) => getLicenserDetailById(lic.licenserId).acronym).join(', ') : "-"}</td>
+                                                                                        </tr>
+                                                                                    )
+                                                                                }) : <tr>
+                                                                                    <td colSpan={3}>- No Data Available</td>
+                                                                                </tr>
+                                                                            }
+                                                                            <tr>
+                                                                                <td style={{ fontWeight: 'bold', color: 'gray' }}>Last Updated</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare1)?.lastUpdated || "-"}</td>
+                                                                                <td>{getManufactureDetailByName(targetCompare2)?.lastUpdated || "-"}</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    )}
                                                                 </div>
                                                             </div>
                                                         )}
-
                                                     </>
                                                 )
-                                                    // activeTab === "Compare" ? <Comparison
-                                                    //     getComparisonDataByName={getComparisonByName}
-                                                    //     handleSelectComparison={handleSelectCompare}
-                                                    //     selectedComparison={selectedCompare}
-                                                    // />
                                                     : null}
                                 {activeTab === "Manufacturer" && getVaccinesByManufacturer().length > 0
                                     ?
@@ -572,6 +969,24 @@ const Main = ({
                                     <Vaccine selectedVaccine={modalSelectedVaccine} convertCamelCaseToReadable={convertCamelCaseToReadable} />
                                 </Box>
                             </Modal>
+
+                            {selectedVacciProfile && <ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
+                                <i class="fa-solid fa-xmark fa-lg modal-close-btn position-absolute end-0 hover-cursor" onClick={closeModal}></i>
+                                <h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVacciProfile.name)}</h1>
+                                <table className='table table-light w-100 m-0'>
+                                    <tbody>
+                                        {Object.entries(selectedVacciProfile).map(([key, value], index) => {
+                                            if (key === "name") return null;
+                                            return (
+                                                <tr key={index}>
+                                                    <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                    <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{formatContent(value)}</td>
+                                                </tr>
+                                            );
+                                        })}
+                                    </tbody>
+                                </table>
+                            </ReactModal>}
                         </>}
         </div>
     </div>

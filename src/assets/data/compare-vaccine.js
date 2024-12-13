@@ -729,15 +729,19 @@ export function finalParsedDataCompare() {
 
 export const compareMenu = [
     {
-        name:'Pathogen',
+        name: 'Pathogen',
         data: []
     },
     {
-        name:'Vaccine',
+        name: 'Vaccine',
         data: []
     },
     {
         name: 'Manufacturer',
+        data: []
+    },
+    {
+        name: 'Licensing Authorities (Coming Soon)',
         data: []
     },
 ]

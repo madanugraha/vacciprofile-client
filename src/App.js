@@ -8,6 +8,9 @@ import Sidebar from './components/Sidebar';
 import Main from './components/Main.js';
 import TopBar from './components/TopBar.js';
 // import Footer from './components/Footer.js';
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 import manufacturers from './assets/data/manufacturers.json';
 import pathogens from './assets/data/pathogens.json';
@@ -677,6 +680,7 @@ const App = () => {
                 </div>
                 {/* <Footer/>  */}
             </div>
+            <ToastContainer />
         </div>
     );
 };
