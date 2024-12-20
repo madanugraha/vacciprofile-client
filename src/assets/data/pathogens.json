@@ -14,7 +14,7 @@
     },
     {
         "pathogenId": 2,
-        "name": "SARS-CoV-2",
+        "name": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
         "description": "COVID-19 is a respiratory illness caused by the SARS-CoV-2 virus. It was first identified in Wuhan, China, in late 2019 and has since become a global pandemic. Symptoms can range from mild, such as fever and cough, to severe, including difficulty breathing and pneumonia. The virus primarily spreads through respiratory droplets and can lead to significant health complications, particularly in older adults and those with underlying health conditions.",
         "vaccines": [
             {
@@ -256,83 +256,186 @@
         "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=norovirus"
     },
     {
-        "pathogenId": 26,
-        "name": "Adenovirus"
+        "pathogenId": 25,
+        "name": "Adenovirus",
+        "description": "Adenoviruses are medium-sized, nonenveloped viruses that primarily cause respiratory illnesses, but can also lead to gastroenteritis, conjunctivitis, and neurological diseases. They contain a double-stranded DNA genome and are known for their resilience in the environment.",
+        "vaccines": [
+            {}
+        ],
+        "bulletpoints": "Viral vector vaccines use harmless, non-replicating or replicating viruses to deliver genetic material for production of vaccine antigens into host cell cytoplasm. |While viral vector vaccines may theoretically induce life-long immunity with low antigen concentrations, their attenuation, safety and spread to the community are of concern. |Vaccines based on recombinant viral vectors can induce both humoral and cellular immune responses. |Adenovirus vectors are versatile gene transfer vectors that can be easily manufactured, and which may allow simultaneous expression of multiple antigens by a single vector construct. |Adenovirus vector vaccines based on the adenovirus Ad26 vector have been widely used as vaccines against Ebola and COVID19 (see Chapters 44 and 56). |A common concern of using viral vector vaccines is pre-existing immunity or induction of immunity against the vector itself, but in some circumstances it has no meaningful impact and it can be resolved in several ways. |Several harmless viruses are already used as vectors for innovative vaccines and many more are in research.",
+        "link": "https://www.cdc.gov/adenovirus/about/index.html",
+        "image": "https://vaccitutor.com/pluginfile.php/477/course/overviewfiles/08%20-%20Vector%20Vaccines%20small.png"
     },
     {
-        "pathogenId": 27,
-        "name": "Variola Virus (Smallpox Virus)"
+        "pathogenId": 26,
+        "name": "Variola Virus",
+        "description": "Variola virus is the causative agent of smallpox, a highly contagious and deadly disease that has been eradicated through vaccination efforts. It belongs to the genus Orthopoxvirus and is characterized by its ability to cause severe illness in humans.",
+        "vaccines": [
+            {}
+        ],
+        "bulletpoints": "Smallpox was a severe disease causing substantial mortality among populations over several thousand years.| It is caused by an orthopoxvirus, the variola (= smallpox) virus. |Smallpox is a febrile disease with a maculo-, papulo-, vesicular and finally pustular rash, the typical pox lesions, numerous complications and a fatality rate of approximately 30%. |Material from smallpox patients was used to inoculate healthy subjects (“variolation”) in medieval China, possibly offering some protection, but it was associated with high risk of complications and death. |In 1796, the English physician Edward Jenner discovered that material from cowpox lesions inoculated into healthy subjects protected against smallpox in a comparatively safe way. This discovery was the invention of vaccination. |Vaccination campaigns in the 19th and 20th century controlled smallpox, and following a global WHO-coordinated eradication campaign, it was finally declared eradicated by 1980. |Other orthopoxviruses, such as the mpox virus, are still causing human disease in some geographies and may be emerging due to waning population immunity and population growth in previously rural or forested areas. |Two antiviral compounds have been licensed for specific treatment. |Various vaccines based on Jenner’s invention, using scarification with replicating live vaccinia strains, are still available globally for outbreaks. |In the Western world, two smallpox vaccines are licensed and stockpiled today for emergency use: |ACAM2000, a cell culture GMP-produced vaccinia strain; and |a non-replicating, “Modified Vaccinia Ankara” (MVA) vaccine, GMP-produced on chicken embryo fibroblasts.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=variola+virus",
+        "image": "https://vaccitutor.com/pluginfile.php/499/course/overviewfiles/Picture1.png"
     },
     {
         "pathogenId": 28,
-        "name": "Monkeypox (MPV,MPXV, or hMPXV)"
+        "name": "Monkeypox (MPV,MPXV, or hMPXV)",
+        "description": "Monkeypox, also known as MPV, MPXV, or hMPXV, is a viral disease caused by the monkeypox virus, a species of double-stranded DNA virus belonging to the Orthopoxvirus genus. It primarily spreads through close contact with infected individuals or animals and can lead to symptoms such as fever, rash, and swollen lymph nodes.",
+        "vaccines": [
+            {}
+        ],
+        "link": "https://www.who.int/health-topics/mpox"
     },
     {
         "pathogenId": 29,
-        "name": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)"
+        "name": "Ebolavirus",
+        "description": "Ebolavirus is a group of viruses that cause Ebola virus disease (EVD), a severe and often fatal illness in humans and nonhuman primates, characterized by symptoms such as fever, fatigue, muscle pain, and bleeding. The virus is transmitted through direct contact with infected bodily fluids or contaminated surfaces.",
+        "vaccines": [
+            {}
+        ],
+        "bulletpoints": "Ebola virus disease (EVD) is a rare but severe, often fatal hemorrhagic illness occurring either sporadically or with large local outbreaks originating in (western) Africa.|The virus is first transmitted from wild animals to humans (hunters; food handlers) followed by human-to-human transmission via blood or via body secretions. |The average EVD case fatality rate is around 50% (range: 25% to 90% in past outbreaks). |Community engagement is key to successfully controlling outbreaks using several interventions (case management, prevention and control practices, surveillance and contact tracing, good laboratory service, safe and dignified burials and social mobilization). |Early supportive care with rehydration and symptomatic treatment improves survival. |Two monoclonal antibodies (Inmazeb and Ebanga) were approved for the treatment of Zaire ebolavirus (Ebolavirus) infection in adults and children by the FDA in late 2020. |Two vaccine regimens to protect against EVD were recently licensed and helped control outbreaks in Guinea and the Democratic Republic of the Congo (DRC).",
+        "image": "https://vaccitutor.com/pluginfile.php/424/course/overviewfiles/56%20-%20Ebola%20small.png",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=ebola"
     },
     {
         "pathogenId": 30,
-        "name": "Ebolavirus"
+        "name": "Dengue Virus",
+        "description": "Denguevirus is a mosquito-borne viral infection caused by any of the four closely related viruses: DEN-1, DEN-2, DEN-3, and DEN-4. Symptoms typically begin 3 to 14 days after infection and may include high fever, severe headache, pain behind the eyes, joint and muscle aches, nausea, vomiting, and rash. While many infections are asymptomatic or mild, severe cases can lead to serious complications such as bleeding and shock.",
+        "vaccines": [
+            {}
+        ],
+        "bulletpoints": "Dengue is a mosquito-borne flavivirus infection, found in tropical and sub-tropical climates worldwide, mostly in urban and semi-urban areas. |There are four distinct dengue virus (DENV) serotypes, meaning that it is possible to be infected four times. |While 75% of DENV infections are asymptomatic, 20% of result in mild to moderate disease (Dengue fever [DF]), and 5% can cause severe disease with activation of the coagulation system (Dengue hemorrhagic fever [DHF ]), which is usually seen with subsequent DENV infections. |Antibody-mediated disease enhancement (ADE) is a phenomenon that has been observed in various in vitro assays: low concentrations of cross-reacting antibodies from a previous DENV infection in a subsequent infection with another serotype do not neutralize DENV. Instead, they bind to the virus and attach to host cells; thus, enabling viral replication. ADE is one hypothesis proposed, among many, to explain sensitization to severe disease. |There is no specific treatment for DENV. Early detection of disease progression and access to proper medical care lower fatality rates of DHF from about 2.5% to <1%. |Severe dengue is a leading cause of serious illness and death in some Asian and Latin American countries. |The global incidence of dengue has grown dramatically in recent decades. About half of the world's population is now at risk. There are an estimated 100–400 million infections each year. |Dengue prevention and control relies on effective vector control measures. Sustained community involvement can improve vector control efforts substantially. |There is one licensed dengue vaccine, CYD live attenuated tetravalent dengue vaccine (Dengvaxia®) developed by Sanofi Pasteur, which is approved for use in several dengue endemic countries for persons 9–45 years of age living in endemic areas who have had a previously documented dengue virus infection. Several other vaccines are in clinical development.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=dengue",
+        "image": "https://vaccitutor.com/pluginfile.php/505/course/overviewfiles/55%20-%20Dengue%20small.png"
     },
     {
         "pathogenId": 31,
-        "name": "Dengue Virus"
+        "name": "Poliovirus",
+        "description": "Poliovirus is a highly infectious viral disease that primarily affects children under 5 years of age, transmitted mainly through the faecal-oral route. It can invade the nervous system and lead to paralysis in a small percentage of cases.",
+        "vaccines": [
+            {}
+        ],
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Poliovirus",
+        "image": "https://vaccitutor.com/pluginfile.php/545/course/overviewfiles/33%20-%20Poliomyelitis%20small.png",
+        "bulletpoints": "Wild poliovirus (WPV) comprises 3 serotypes (1, 2, 3) which may infect and destroy spinal cord lower motor neurons. |PV is shed via salivary droplets and feces, and it is transmitted person-to-person.|One case of polio occurs following ~200 (WPV type 1) to ~1000 (type 2 or 3) WPV infections. Thus, one case is the tiny “tip of the iceberg” of widespread infection. |Infection induces long-lasting type-specific immunity, protecting from risk of disease when re-infected, but not from re-infection per se. |In low-income countries, polio occurs early in life and immunity plateaus at 5 years of age with almost 100%; in richer countries the age of polio has shifted towards older ages since the 1940s. |While the majority of WPV-infected persons remain asymptomatic a small proportion has short fever with upper respiratory or gastrointestinal symptoms. |In a few subjects, this first phase may be followed by an acute onset of paralysis of skeletal muscles, due to loss of lower motor neurons from PV infection (=poliomyelitis) with a case-fatality rate of 5%–20%; bulbar involvement increases risk of death, cortical functions (other than emotional, due to physical deformity/disability) are unaffected. |Recurrence of pain and worsening of residual motor power may occur 3–4 decades later ('post-polio syndrome'). |With no specific treatment available, prevention with one of 2 basic vaccine types (live = oral polio vaccines (OPV); and inactivated (IPV) whole virus vaccine) is of highest importance. |With IPV,3 primary doses and one booster protect nearly 100%, whereas 2 priming and 1 booster doses are sufficient, provided the first dose is given at or after 8 weeks of age and second dose again at or after 8 weeks and one booster at least 6 months after the previous dose. |OPV is given orally to induce systemic and gut mucosal immunity, following intestinal infection by vaccination. |In the USA and in most temperate regions one dose induces protective immunity in ~75% of subjects against the 3 virus types and the immunity gap is closed by 2 additional doses. |In tropical/developing countries vaccine efficacy is as low as ~10% for types 1 or 3 and it may take 10-15 doses to induce immunity in >90%. |While there are no safety concerns with IPV, with OPV attenuating mutations may revert, rarely resulting in “vaccine-associated paralytic poliomyelitis” (VAPP), clinically indistinguishable from WPV-caused polio. |VPV can spread and cause VAPP in susceptible contacts. In under-vaccinated communities VPV may circulate, mutate, become WPV-like highly transmissible, and even cause outbreaks of polio. Such virus variants are called circulating Vaccine-derived polioviruses (cVDPVs). |In the 2020s, only 2 countries continue to have indigenous transmission of WPV 1. |Transmission of WPV type 2 had been globally interrupted in 1999 and WPV type 3 in 2012. |Nearly all rich countries have abandoned OPV in favor of IPV in order to avoid VAPP. |cVDPV type 2 and cVDPV type 1, in their order of frequency, are now the major causes of polio outbreaks in African and Asian countries"
     },
     {
         "pathogenId": 32,
-        "name": "Adenovirus"
+        "name": "Enterovirus",
+        "description": "Enteroviruses are a genus of positive-sense single-stranded RNA viruses associated with a wide range of human diseases, including mild respiratory illnesses, hand-foot-and-mouth disease, aseptic meningitis, myocarditis, and acute flaccid paralysis. They are primarily transmitted through the fecal-oral and respiratory routes and can lead to severe conditions, particularly in infants and young children.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/509/course/overviewfiles/48%20-%20Enterovirus%20diseases%20small.png",
+        "bulletpoints": "Enterovirus A71 (EV A71) (genus enterovirus, family pircornaviridae) causes benign vesicular lesions on skin (hand, foot and mouth disease, HFMD) and mucous membranes of the mouth (herpangina), and also severe to life-threatening infections of the brain, the heart, and other internal organs. |Disease outbreaks in the Asia-Pacific region regularly involve thousands of children <5 years resulting in many deaths. Such outbreaks are caused by specific EV genotypes that vary by time and place. |While there are various promising and innovative options for treatment in development, none are licensed to date. Immunoglobulins may be beneficial through virus neutralization and modulation of the inflammatory response by the host. |In China,3 different highly efficacious and safe vaccines are commercially available; however, none are licensed outside the country. Roughly half a dozen vaccines are in the development pipeline, with some using innovative approaches and trying to broaden strain coverage.",
+        "link": "https://www.msdmanuals.com/professional/infectious-diseases/enteroviruses/overview-of-enterovirus-infections"
     },
     {
         "pathogenId": 33,
-        "name": "Poliovirus"
+        "name": "Rotavirus",
+        "description": "Rotavirus is a highly contagious virus that causes severe gastroenteritis, particularly in infants and young children. Symptoms include watery diarrhea, vomiting, fever, and abdominal pain, which can lead to dehydration.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/527/course/overviewfiles/42%20-%20Rotavirus%20small.png",
+        "bulletpoints": "Rotavirus is a double-stranded RNA virus that causes vomiting and diarrhea among children under 5 years.  |The main cause of mortality from rotavirus gastroenteritis (RVGE) is dehydration if not corrected appropriately with oral rehydration salts (ORS). |Though the prevalence of RVGE is similar across countries and socio-economic groups, the higher mortality in Sub-Saharan Africa and South Asia is presumably due to poor awareness and poor health system responsiveness rather than poor hygiene. |Enzyme immunoassays are the most commonly used tools for diagnosis of RVGE from stool samples. |ORS and zinc remain the mainstay of treatment. Water, sanitation and hygiene measures did not appear to be very effective leaving vaccination among young children as the primary means of prevention. |4 WHO prequalified live attenuated, oral vaccines are available with different efficacy in high- versus low-mortality countries. There is a high degree of protection in countries with low RV mortality, and lower protection in countries with high RV morbidity and more fatalities. |Rotavirus vaccines were associated with intussusception, though larger trials failed to establish increased risk in vaccinated groups compared to placebo recipients.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Rotavirus"
     },
     {
         "pathogenId": 34,
-        "name": "Enterovirus"
+        "name": "Bacillus anthracis",
+        "description": "Bacillus anthracis is a gram-positive, rod-shaped bacterium that causes anthrax, a serious zoonotic disease primarily affecting livestock and occasionally humans. It forms resilient spores that can survive in the environment for decades, and its pathogenicity is linked to two plasmids responsible for producing toxins and a protective capsule that evades the immune response.",
+        "vaccines": [
+            {}
+        ],
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=bacillus+anthracis"
     },
     {
         "pathogenId": 35,
-        "name": "Rotavirus"
+        "name": "Corynebacterium diphtheriae",
+        "description": "Corynebacterium diphtheriae is a Gram-positive bacterium responsible for causing diphtheria, characterized by the production of a potent exotoxin that can lead to severe respiratory issues and systemic infections. The bacterium typically infects the nasopharynx or skin, causing symptoms such as pharyngitis, fever, and the formation of a pseudomembrane in the throat.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/551/course/overviewfiles/30%20-%20Diphtheria%20small.png",
+        "bulletpoints": "Diphtheria is caused by toxin-producing bacteria, Corynebacterium diphtheriae, and less frequently by one of two other, zoonotic, Corynebacteria. |Diphtheria toxin destroys tissue, which builds up in the throat and tonsils, making breathing and swallowing almost impossible. |The bacteria are transmitted by respiratory droplets, by direct physical contact with skin lesions, via secretions from infected patients, or contaminated materials. |Clinically, tonsillitis, pharyngitis, laryngitis, and skin infections (wound infection; ulcers) appear; diphtheria once was a terrible killer of young children. |Antibiotics (penicillin, erythromycin, others) are used to eradicate the bacteria; for respiratory infections, diphtheria antitoxin is used to neutralize circulating toxins and reduce/prevent complications like myocarditis, neuritis (nerve palsies). |Case fatality rates of up to 10% have been reported during diphtheria outbreaks, and are even higher in settings where diphtheria antitoxin is unavailable. |Diphtheria vaccines consist of inactivated toxins, called toxoids, and are available in combinations with other antigens such as tetanus, pertussis, and others. |These combinations are usually well-tolerated, local reactions are the most frequently observed side effects. |Efficacy studies are not available but various observational studies consistently indicate high vaccine effectiveness between 87% and 96%.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=corynebacterium+diphtheriae"
     },
     {
         "pathogenId": 36,
-        "name": "Bacillus anthracis"
+        "name": "Mycobacterium tuberculosis",
+        "description": "Mycobacterium tuberculosis, also known as Koch's bacillus, is the bacterium responsible for tuberculosis (TB). It primarily affects the lungs but can infect other parts of the body, including the kidneys, spine, and brain. This pathogen is notable for its ability to adapt and survive within the host, often entering a latent phase where it causes no symptoms. TB is spread through airborne transmission when an infected person coughs or sneezes.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/511/course/overviewfiles/46%20-%20Tuberculosis%20small.png",
+        "bulletpoints": "Tuberculosis (TB) is a major health threat caused by the intracellular bacterial pathogen Mycobacterium tuberculosis (Mtb). |Globally, 10 million individuals fell ill of TB and 1.4 million died in 2019. The COVID-19 pandemic has severely impacted on TB notifications in 2020, thereby markedly increasing morbidity and mortality caused by TB. |The lung is the most frequent site of disease manifestation, the site of pathogen entry and the source of dissemination. |In the infected lung, granulomas are formed at the site of Mtb persistence which primarily consist of macrophages of different maturation stages and T lymphocytes. Solid granulomas contain Mtb, thus preventing outbreak of active disease. The individual is now latently infected. |Once Mtb evades immune control, granulomas become necrotic and later caseous. Active TB disease has started. |Diagnosis of TB is done by chest X-ray, microscopy, bacterial culture, molecular test, and immunologic test. |TB can be cured by a combination of 3-4 specific drugs given over a period of 6-9 months. |Increasing incidences of multi-drug and extensively drug-resistant Mtb render therapy difficult to impossible. |The current vaccine, Bacille Calmette-Guérin (BCG) prevents extrapulmonary childhood TB but fails to protect against pulmonary TB in all age groups. |New vaccines against TB are urgently needed. New candidates that have entered clinical trials are killed whole cell vaccines, recombinant live vaccines, Mtb antigen-adjuvant formulations or viral vectors expressing Mtb antigens.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Mycobacterium+tuberculosis"
     },
     {
         "pathogenId": 37,
-        "name": "Corynebacterium diphtheriae"
+        "name": "Salmonella Typhi",
+        "description": "Salmonella Typhi is a bacterium that causes typhoid fever, a serious infection characterized by prolonged high fever, fatigue, headache, abdominal pain, and gastrointestinal disturbances. It is transmitted through contaminated food or water and primarily affects humans, with no known animal reservoirs.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/517/course/overviewfiles/47%20-%20Enteric%20fever%20%28Salmonella%20Typhi%29%20small.png",
+        "bulletpoints": "Typhoid and Paratyphoid fevers (collectively, enteric fever) are indistinguishable, acute generalized febrile infections caused by Salmonella enterica serovars Typhi and Paratyphi A and Paratyphi B sensu stricto.|Enteric Fever is a significant cause of morbidity and mortality worldwide, particularly in low- and middle-income countries (LMIC), where social and sanitary conditions are poor. In 2017, approximately 14.3 million cases of disease and 135, 900 deaths were reported. |Antibiotic treatment reduces severity and duration of disease. However, the emergence of several multidrug resistant strains (MDR) and, more recently, of extensively drug-resistant (XDR) strains of S. Typhi has decreased treatment options. |Due to significant disease burden and increasing antimicrobial resistance, particularly in South/South-East Asia and sub-Saharan Africa, it is essential to implement vaccination campaigns with safe and effective vaccines. |Three vaccine types are available against S. Typhi: the live attenuated vaccine (Ty21a), the unconjugated Vi polysaccharide vaccine (Vi-PS) and the typhoid conjugated vaccine (TCV), while no vaccine is yet available against S. Paratyphi strains. |Most recently licensed and WHO prequalified TCVs can be used for immunization of infants starting at 6 months of age. Field trials in endemic Asian and African countries have shown that TCV has a >80% clinical efficacy. ",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=salmonella%20typhi"
     },
     {
         "pathogenId": 38,
-        "name": "Mycobacterium tuberculosis"
+        "name": "Vibrio cholerae",
+        "description": "Vibrio cholerae is a species of Gram-negative, facultative anaerobe and comma-shaped bacteria that causes cholera, a highly contagious diarrheal disease characterized by profuse watery diarrhea. It primarily resides in brackish or saltwater and can be transmitted through contaminated water or undercooked seafood. The bacterium produces cholera toxin, which leads to severe dehydration and electrolyte imbalance.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/519/course/overviewfiles/52%20-%20Vibrio%20Cholerae-diarrhea%20b%20small.png",
+        "bulletpoints": "Cholera is an acute infectious diarrhea caused by ingestion of food or water contaminated with the bacterium Vibrio cholerae. |There are two major serogroups of V. cholerae: O1 and O139. Recently, all outbreaks were caused by serogroup O1, El Tor biotype. |In 2017, 1,227,391 cholera cases were reported and 5,654 associated deaths, with a case fatality rate of 0.5%, worldwide. |Cholera is transmitted through the fecal-oral route, directly from person-to-person or indirectly through contaminated fluids from an environmental reservoir, food, and potentially from flies and fomites. |Patients present with acute watery diarrhea with copious rice-watery stools, abdominal cramps, vomiting, and fever. Severe cholera results in a rapid loss of body fluids within only a few hours which leads to dehydration, shock, and death. |Rapid rehydration with replacement of electrolytes though oral rehydration solution or IV fluid administration is the mainstay of treatment for cholera. |Improving access to clean potable Water, adequate Sanitation, and Hygiene (WaSH) practices remain the mainstay of prevention of cholera. |Cholera vaccination is only considered as a complementary cholera prevention and control measure. |Currently, three WHO prequalified oral cholera vaccines (OCV) are available: Dukoral®, Shanchol™, and Euvichol-Plus® (improved version of Euvichol). These vaccines have a good safety profile and require two doses for full protection. |Dukoral is an inactivated whole cell monovalent (O1) vaccine with a recombinant B subunit of cholera toxin, given to individuals ≥2 years (VE ~85% for about 2 years in adults and 6 months in children 2–5 years of age). It also provides protection against enterotoxigenic Escherichia coli (ETEC) infections. Dukoral is mainly used for travelers. |Shanchol and Euvichol are inactivated modified whole-cell bivalent (O1 and O139) vaccines and can be given to individuals ≥1 year. These vaccines have protective efficacy of ~65% for 5 years against cholera.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Vibrio+cholerae"
     },
     {
         "pathogenId": 39,
-        "name": "Salmonella Typhi"
+        "name": "Bordetella pertussis",
+        "description": "Bordetella pertussis is a Gram-negative, aerobic bacterium that causes pertussis, commonly known as whooping cough. It is highly contagious and primarily spreads through respiratory droplets. The disease is characterized by severe coughing fits that can lead to a 'whooping' sound during inhalation, especially in infants and young children.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/549/course/overviewfiles/31%20-%20Pertussis.png",
+        "bulletpoints": "The bacterium Bordetella pertussis causes disease by producing various virulence and adhesion factors, among them pertussis toxin (PT), filamentous hemagglutinin (FHA), pertactin (PRN) and agglutinogens (Agg), also called fimbriae (FIM) |'Typical' pertussis or whooping cough starts with unspecific respiratory symptoms (catarrhal phase) followed by severe coughing spasms with whoops and vomiting (paroxysmal phase) and only after weeks or months disease severity slowly wanes (convalescent phase). |'Atypical pertussis' with unspecific, long-lasting coughing episodes is seen in adolescents and adults; very young infants may die from apnoea. |B. pertussis is transmitted by droplets, and neither infection nor vaccination produce long lasting protection. |Macrolide antibiotics are given to patients and their contacts to reduce spread of the organism; however, antibiotics do NOT change the duration or course of the disease once symptoms are present. |Whole cell pertussis vaccines (wP) consist of whole inactivated B. pertussis-cells, whereas acellular vaccines (aP) consist of one to five single components like PT, FHA, PRN or FIM. Pertussis vaccines are currently only available as combination vaccines with tetanus und diphtheria (DTP). Among these are DTwP; DTaP; TdaP; and various DTP-combinations with Hib, IPV, HBV vaccines.  |Whole cell pertussis (DTwP) combination vaccines are more reactogenic, whereas DTaP vaccines are generally well tolerated. |Some DTwP had good efficacy/effectiveness (90%), it was low (40%) with others. Vaccine efficacy of DTaP vaccines ranges between 70% and 90%. As with most vaccines, efficiency is higher for severe disease. |While pertussis vaccines did control clinical disease, protection is limited. Vaccination is recommended for all infants (three doses) worldwide with a booster in the second year of life. Many countries give additional doses at school entry and in adolescents, and some to adults. Vaccination of pregnant women effectively protects newborn infants and is increasingly recommended.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Bordetella+pertussis"
     },
     {
         "pathogenId": 40,
-        "name": "Vibrio cholerae"
+        "name": "Haemophilus influenzae",
+        "description": "Haemophilus influenzae is a Gram-negative bacterium that can cause a variety of infections, ranging from mild conditions like ear infections to severe diseases such as pneumonia, meningitis, and bloodstream infections. It is often spread through respiratory droplets from coughing or sneezing.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/547/course/overviewfiles/32%20-%20Haemophilus%20Influenzae%20Type%20B%20%28HIB%29%20small.png",
+        "bulletpoints": "Haemophilus influenzae is a small Gram negative coccobacillus colonizing the respiratory tract of humans. The bacterium may cause direct local infections like otitis media, as well as severe invasive diseases like meningitis. |In the prevaccine era, of the 6 capsular serotypes (a–f), type b caused the majority of invasive disease cases, whereas “nontypeable H. influenzae” (NTHi) and other capsular types predominate today. |H. influenzae infections affect mainly children <5 years as well as persons >60 years with underlying diseases like COPD. |Diagnosis of Hib disease is performed by classical microbiological culture techniques, antigen detection tests and polymerase chain reaction from blood samples, CSF or puncture samples. |If untreated or if treatment is delayed, invasive Hib diseases may result in severe consequences such as hearing loss, chronic seizures, learning disabilities, and even death. |Safe and effective polysaccharide-conjugate vaccines have been available for children for almost 30 years, reducing invasive Hib-incidences from about 60 to <1 / 105. Today, largely DTP-based Hib-combinations are used. |After the primary series with 2 or 3 doses depending on the product and local recommendations, a booster dose in the second year of life is needed to ensure long-term protection.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Haemophilus+influenzae"
     },
     {
         "pathogenId": 41,
-        "name": "Bordetella pertussis"
+        "name": "Clostridium tetani",
+        "description": "Clostridium tetani is a common soil bacterium and the causative agent of tetanus. It is an anaerobic, spore-forming bacillus that produces a potent toxin, tetanospasmin, which disrupts neurotransmitter release, leading to muscle spasms and rigidity.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/553/course/overviewfiles/29%20-%20Tetanus%20small.png",
+        "bulletpoints": "Tetanus is acquired through exposure to the environmental spore-forming Gram-positive bacillus Clostridium tetani, which may infect human wounds and cause disease by production of an exotoxin (tetanospasmin). There is no human-to-human transmission. |The disease occurs worldwide and it is sporadic in high-income countries with universal access to well-accepted immunization programs. It is more common in agricultural regions and in low-income countries where contact with animal excreta is more likely and immunization programs are inadequate. |Neonatal tetanus (NNT) following unclean deliveries and poor postnatal hygiene is still responsible for the majority of tetanus cases and deaths; the majority of NNT occurs in poor Asian and African countries, whereas in high-income countries the disease is extremely rare. |Three forms of clinical disease can be distinguished: the most common form is generalized tetanus, whereas local tetanus and cephalic tetanus are rare. Neonatal tetanus (NNT) is a form of generalized tetanus in newborns. |The case fatality rate of tetanus is high, 3%–95% depending on age, immune- and immunization-status, form of disease, and availability of proper medical care. |The efficacy of tetanus toxoid vaccines was never formally studied, but cases in adequately vaccinated subjects are extremely rare and impact data (e.g. for NNT) convincingly show high vaccine effectiveness. |WHO estimates that in 2018, 25,000 newborns died from NNT, an 88% reduction from the situation in 2000.",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=tetanus"
     },
     {
         "pathogenId": 42,
-        "name": "Haemophilus influenzae"
-    },
-    {
-        "pathogenId": 43,
-        "name": "Clostridium tetani"
-    },
-    {
-        "pathogenId": 44,
-        "name": "Plasmodium falciparum"
-    },
-    {
-        "pathogenId": 44,
-        "name": "Plasmodium falciparum"
+        "name": "Plasmodium falciparum",
+        "description": "Plasmodium falciparum is a unicellular protozoan parasite and the deadliest species of Plasmodium that causes malaria in humans. It is transmitted through the bite of a female Anopheles mosquito and is responsible for the majority of malaria-related deaths worldwide, particularly in Sub-Saharan Africa.",
+        "vaccines": [
+            {}
+        ],
+        "image": "https://vaccitutor.com/pluginfile.php/503/course/overviewfiles/56%20-%20Malaria.png",
+        "bulletpoints": "Malaria is a life-threatening disease caused by protozoan parasites that are transmitted to humans through the bite of infected female Anopheles mosquitoes. |More than 3 billion people live in endemic areas, and there are >200 million cases resulting in >400,000 deaths annually. |The malaria parasite life cycle involves two hosts, humans and mosquitos. |Five Plasmodium species infect humans: Plasmodium falciparum, P. vivax, P. malariae, P. ovale, and the monkey parasite P. knowlesi, with more than 90% of deaths in sub-Saharan Africa due to P. falciparum. |Young children and pregnant women are at highest risk for severe and deadly disease courses. |While there are several dozen vaccine candidates, the only approved vaccine as of 2021 is RTS,S/ASO1 (Mosquirix®). In a 5-year phase 3 study, 4 doses of RTS,S prevented 39% malaria cases over a 4-year follow-up and 29% of severe malaria cases.  |It requires four injections and has a short-term efficacy around 30%. |Following pilot programs in Ghana, Kenya and Malawi in 2019 to address concerns, in October 2021, WHO recommended “. . . the RTS,S/AS01 malaria vaccine be used for the prevention of P. falciparum malaria in children living in regions with moderate to high transmission as defined by WHO.”",
+        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Plasmodium+falciparum"
     }
 ]

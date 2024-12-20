@@ -618,7 +618,7 @@ const Main = ({
                                                                                     {getPathogenDetailByName(targetCompare2)?.bulletpoints ? getPathogenDetailByName(targetCompare2)?.bulletpoints.split('|').map((bullet) => {
                                                                                         return (
                                                                                             <li className='d-flex flex-row mb-2'>
-                                                                                                <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(getPathogenDetailByName(targetCompare2).name, `<span classname="text-primary" style={{ color: "blue" }}>${`&#8226;` + getPathogenDetailByName(targetCompare2).name}</span>`) }}></div>
+                                                                                                <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(getPathogenDetailByName(targetCompare2).name, `<span classname="text-primary" style={{ color: "blue" }}>${`•` + getPathogenDetailByName(targetCompare2).name}</span>`) }}></div>
                                                                                             </li>
                                                                                         )
                                                                                     }) : (
