@@ -27,43 +27,58 @@ export const getPathogenDetailByName = (name) => {
     return null;
 };
 
+export const getPathogenVaccinesByName = (name) => {
+    const data = pathogens;
+    const result = data.filter((vac) => vac.name === name);
+    if (result.length > 0) {
+        const data = result[0];
+        const vaccines = getVaccineListByPathogenId(data.pathogenId);
+        if (vaccines && vaccines.length > 0) {
+            return vaccines;
+        } else {
+            return []
+        }
+    } else {
+        return [];
+    }
+};
 
 export const getVaccineDetailByName = (name) => {
     const data = vaccines;
-
     const result = data.filter((vac) => vac.name === name);
-
     if (result.length > 0) {
         return result[0];
     }
-
     return null;
 };
 
 export const getManufactureDetailByName = (name) => {
     const data = manufacturers;
-
     const result = data.filter((vac) => vac.name === name);
-
     if (result.length > 0) {
         return result[0];
     }
-
     return null;
 };
 
 
 export const getVaccineDetailById = (id) => {
     const data = vaccines;
-
     const result = data.filter((vac) => vac.vaccineId === id);
-
     if (result.length > 0) {
         return result[0];
-    }
-
+    };
     return null;
 };
+
+export const getVaccineListByPathogenId = (id) => {
+    const data = vaccines;
+    const result = data.filter((vac) => vac.pathogenId === id);
+    if (result.length > 0) {
+        return result;
+    };
+    return null;
+}
 
 export const getLicenserDetailById = (id) => {
     const data = licensers;

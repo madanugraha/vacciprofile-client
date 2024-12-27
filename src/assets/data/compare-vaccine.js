@@ -733,10 +733,6 @@ export const compareMenu = [
         data: []
     },
     {
-        name: 'Vaccine',
-        data: []
-    },
-    {
         name: 'Manufacturer',
         data: []
     },

@@ -9,7 +9,7 @@ import PipelineVaccineListTable from './information/PipelineVaccineListTable';
 import manufacturers from '../assets/data/manufacturers.json';
 import pathogens from '../assets/data/pathogens.json';
 import vaccines from '../assets/data/vaccines.json';
-import { getLicenserDetailById, getManufactureDetailByName, getPathogenDetailById, getPathogenDetailByName, getVaccineDetailById, getVaccineDetailByName, getVaccinesByPathogenId } from '../utils/pathogens';
+import { getLicenserDetailById, getManufactureDetailByName, getPathogenDetailById, getPathogenVaccinesByName, getVaccineDetailById, getVaccineDetailByName } from '../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import ReactModal from 'react-modal';
@@ -120,6 +120,8 @@ const Main = ({
     const [manufactureComparee2, setManufactureCompare2] = useState(manufacturers);
     const [targetCompare1, setTargetCompare1] = useState('');
     const [targetCompare2, setTargetCompare2] = useState('');
+    const [targetCompareVaccine1, setTargetCompareVaccine1] = useState('');
+    const [targetCompareVaccine2, setTargetCompareVaccine2] = useState('');
 
     const [open, setOpen] = useState(false);
     const [modalSelectedVaccine, setModalSelectedVaccine] = useState({});
@@ -152,7 +154,8 @@ const Main = ({
 
     function closeModal() {
         setModalIsOpen(false);
-    }
+    };
+
     const [compareState, setCompareState] = useState('pre-compare');
 
     const handleSetActivePathogenCompare1 = (name) => {
@@ -456,6 +459,7 @@ const Main = ({
                                                                                 return (
                                                                                     <div
                                                                                         key={`pathogen-1-${pathogen.name}`}
+                                                                                        style={{ width: 1200 }}
                                                                                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${pathogen?.isActive ? 'active' : 'inactive'}`}
                                                                                         onClick={() => {
                                                                                             setTargetCompare1(pathogen.name)
@@ -508,22 +512,41 @@ const Main = ({
                                                                 {/** TO-COMPARE-2 */}
                                                                 <div style={{ marginLeft: 10 }} className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
                                                                     {selectedCompare?.name === "Pathogen" && (
-                                                                        <div className='sidebar-items overflow-auto'>
-                                                                            {pathogenComparee2.map((pathogen) => {
-                                                                                return (
-                                                                                    <div
-                                                                                        key={`pathogen-2-${pathogen.name}`}
-                                                                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${pathogen?.isActive ? 'active' : 'inactive'}`}
-                                                                                        onClick={() => {
-                                                                                            setTargetCompare2(pathogen.name)
-                                                                                            handleSetActivePathogenCompare2(pathogen.name)
-                                                                                        }}
-                                                                                    >
-                                                                                        {pathogen?.name}
-                                                                                    </div>
-                                                                                )
-                                                                            })}
+                                                                        <div className='d-inline-flex'>
+                                                                            <div className='sidebar-items overflow-auto'>
+                                                                                {getPathogenVaccinesByName(targetCompare1).map((pathogen) => {
+                                                                                    return (
+                                                                                        <div
+                                                                                            key={`pathogen-2-${pathogen.name}`}
+                                                                                            className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${targetCompareVaccine1 === pathogen.name ? 'active' : 'inactive'}`}
+                                                                                            onClick={() => {
+                                                                                                setTargetCompareVaccine1(pathogen.name)
+                                                                                                // handleSetActivePathogenCompare2(pathogen.name)
+                                                                                            }}
+                                                                                        >
+                                                                                            {pathogen?.name}
+                                                                                        </div>
+                                                                                    )
+                                                                                })}
+                                                                            </div>
+                                                                            <div className='sidebar-items overflow-auto'>
+                                                                                {getPathogenVaccinesByName(targetCompare1).map((pathogen) => {
+                                                                                    return (
+                                                                                        <div
+                                                                                            key={`pathogen-2-${pathogen.name}`}
+                                                                                            className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${targetCompareVaccine2 === pathogen.name ? 'active' : 'inactive'}`}
+                                                                                            onClick={() => {
+                                                                                                setTargetCompareVaccine2(pathogen.name)
+                                                                                                // handleSetActivePathogenCompare2(pathogen.name)
+                                                                                            }}
+                                                                                        >
+                                                                                            {pathogen?.name}
+                                                                                        </div>
+                                                                                    )
+                                                                                })}
+                                                                            </div>
                                                                         </div>
+
                                                                     )}
                                                                     {selectedCompare?.name === "Vaccine" && (
                                                                         <div className='sidebar-items overflow-auto'>
@@ -562,14 +585,18 @@ const Main = ({
                                                                         </div>
                                                                     )}
                                                                 </div>
-                                                                <div onClick={() => {
-                                                                    if (!targetCompare1 || !targetCompare2) {
-                                                                        return toast.error('Please select to compare first.')
-                                                                    }
-                                                                    setCompareState(`compare-result-${selectedCompare?.name.toLowerCase()}`)
-                                                                }} className='cursor-pointer' style={{ width: 180, backgroundColor: 'blue', height: 30, borderRadius: 8, alignItems: 'center', justifyContent: 'center' }}>
-                                                                    <p className='' style={{ padding: 4, borderRadius: 8, alignSelf: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 'bolder' }}>Proceed Compare</p>
-                                                                </div>
+                                                                {
+                                                                    (targetCompareVaccine1 && targetCompareVaccine2) || (targetCompare1 && targetCompare2) ? (
+                                                                        <div onClick={() => {
+                                                                            if ((!targetCompareVaccine1 && !targetCompareVaccine2) || (!targetCompare1 && !targetCompare2)) {
+                                                                                return toast.error('Please select to compare first.')
+                                                                            }
+                                                                            setCompareState(`compare-result-${selectedCompare?.name.toLowerCase()}`)
+                                                                        }} className='cursor-pointer' style={{ width: 180, backgroundColor: 'blue', height: 30, borderRadius: 8, alignItems: 'center', justifyContent: 'center' }}>
+                                                                            <p className='' style={{ padding: 4, borderRadius: 8, alignSelf: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 'bolder' }}>Proceed Compare</p>
+                                                                        </div>
+                                                                    ) : null
+                                                                }
                                                             </div>
                                                         ) : (
                                                             <div style={{ height: '100%', width: '100%' }}>
@@ -585,87 +612,173 @@ const Main = ({
                                                                     </div>
                                                                     <div className='d-flex flex-column' style={{ marginBottom: 10 }}>
                                                                         <span style={{ fontWeight: 'bolder', fontSize: 18 }}>Comparison Result</span>
-                                                                        <span style={{ marginBottom: 20 }}>Between: {targetCompare1} and {targetCompare2}</span>
+                                                                        <span style={{ marginBottom: 20 }}>Between: {targetCompareVaccine1 || targetCompare1} and {targetCompareVaccine2 || targetCompare2}</span>
                                                                     </div>
                                                                     {compareState === "compare-result-pathogen" && (
-                                                                        <table border={1}>
-                                                                            <tr>
-                                                                                <td>Name</td>
-                                                                                <td colSpan={2}>{getPathogenDetailByName(targetCompare1)?.name}</td>
-                                                                                <td colSpan={2}>{getPathogenDetailByName(targetCompare2)?.name}</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>General</td>
-                                                                                <td><img src={getPathogenDetailByName(targetCompare1)?.image} width={80} height={80} alt='pathogen-1-img' /></td>
-                                                                                <td>{getPathogenDetailByName(targetCompare1)?.description}</td>
-                                                                                <td><img src={getPathogenDetailByName(targetCompare2)?.image} width={80} height={80} alt='pathogen-1-img' /></td>
-                                                                                <td>{getPathogenDetailByName(targetCompare2)?.description}</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Key Factor</td>
-                                                                                <td colSpan={2}> {getPathogenDetailByName(targetCompare1)?.bulletpoints ? getPathogenDetailByName(targetCompare1)?.bulletpoints.split('|').map((bullet) => {
-                                                                                    return (
-                                                                                        <li className='d-flex flex-row mb-2'>
-                                                                                            <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(getPathogenDetailByName(targetCompare1).name, `<span classname="text-primary" style={{ color: "blue" }}>${getPathogenDetailByName(targetCompare1).name}</span>`) }}></div>
-                                                                                        </li>
-                                                                                    )
-                                                                                }) : (
-                                                                                    <li className='flex flex-row mb-2'>
-                                                                                        <span className='mt-2'>No Data Found</span>
-                                                                                    </li>
-                                                                                )}</td>
-                                                                                <td colSpan={2}>
-                                                                                    {getPathogenDetailByName(targetCompare2)?.bulletpoints ? getPathogenDetailByName(targetCompare2)?.bulletpoints.split('|').map((bullet) => {
+                                                                        <>
+                                                                            <table border={1}>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold' }}>Name</td>
+                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
+                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
+                                                                                </tr>
+                                                                                {/** LICENSING TARGET 1 */}
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing - {targetCompareVaccine1}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Link</td>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Licensing/ SmPC</td>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Indication</td>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Approval Date</td>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Doses Sold</td>
+                                                                                </tr>
+                                                                                {
+                                                                                    getVaccineDetailByName(targetCompareVaccine1)?.licensingDates && getVaccineDetailByName(targetCompareVaccine1).licensingDates.length > 0 ? getVaccineDetailByName(targetCompareVaccine1).licensingDates.map((licenser, idx) => {
                                                                                         return (
-                                                                                            <li className='d-flex flex-row mb-2'>
-                                                                                                <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(getPathogenDetailByName(targetCompare2).name, `<span classname="text-primary" style={{ color: "blue" }}>${`•` + getPathogenDetailByName(targetCompare2).name}</span>`) }}></div>
-                                                                                            </li>
+                                                                                            <>
+                                                                                                <tr>
+                                                                                                    <td><a href={licenser?.source} target="_blank" rel="noreferrer" style={{ fontWeight: 'normal', color: 'blue' }}>{licenser?.name || "click here"}</a></td>
+                                                                                                    <td colSpan={2}>{licenser?.name || "-"}</td>
+                                                                                                    <td colSpan={2}>{licenser?.indication || "-"}</td>
+                                                                                                    <td>{licenser.date}</td>
+                                                                                                    <td>{licenser?.dosesSold || "-"}</td>
+                                                                                                </tr>
+                                                                                            </>
                                                                                         )
-                                                                                    }) : (
-                                                                                        <li className='flex flex-row mb-2'>
-                                                                                            <span className='mt-2'>No Data Found</span>
-                                                                                        </li>
-                                                                                    )}
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Related Vaccines</td>
-                                                                                <td colSpan={2}>
-                                                                                    {getVaccinesByPathogenId(getPathogenDetailByName(targetCompare1)?.pathogenId).length > 0 ? getVaccinesByPathogenId(getPathogenDetailByName(targetCompare1)?.pathogenId).map((vaccine) => {
+                                                                                    }) : <tr>
+                                                                                        <td colSpan={5}>- No Data Available -</td>
+                                                                                    </tr>
+                                                                                }
+                                                                                {/** LICENSING TARGET 2 */}
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing - {targetCompareVaccine2}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Link</td>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Licensing/ SmPC</td>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Indication</td>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Approval Date</td>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Doses Sold</td>
+                                                                                </tr>
+                                                                                {
+                                                                                    getVaccineDetailByName(targetCompareVaccine2)?.licensingDates && getVaccineDetailByName(targetCompareVaccine2).licensingDates.length > 0 ? getVaccineDetailByName(targetCompareVaccine2).licensingDates.map((licenser, idx) => {
                                                                                         return (
-                                                                                            <div onClick={() => {
-                                                                                                setModalSelectedVaccine(vaccine)
-                                                                                                setOpen(true)
-                                                                                            }} className='flex flex-row mb-2'>
-                                                                                                <span className='mt-2 fw-semibold text-primary cursor-pointer'>&#8226;{" "}{vaccine.name}</span>
-                                                                                            </div>
+                                                                                            <>
+                                                                                                <tr>
+                                                                                                    <td><a href={licenser?.source} target="_blank" rel="noreferrer" style={{ fontWeight: 'normal', color: 'blue' }}>{licenser?.name || "click here"}</a></td>
+                                                                                                    <td colSpan={2}>{licenser?.name || "-"}</td>
+                                                                                                    <td colSpan={2}>{licenser?.indication || "-"}</td>
+                                                                                                    <td>{licenser.date}</td>
+                                                                                                    <td>{licenser?.dosesSold || "-"}</td>
+                                                                                                </tr>
+                                                                                            </>
                                                                                         )
-                                                                                    }) : (
-                                                                                        <div className='flex flex-row mb-2'>
-                                                                                            &#8226;{" "}
-                                                                                            <span className='mt-2'>No Data Found</span>
-                                                                                        </div>
-                                                                                    )}
-                                                                                </td>
-                                                                                <td colSpan={2}>
-                                                                                    {getVaccinesByPathogenId(getPathogenDetailByName(targetCompare2)?.pathogenId).length > 0 ? getVaccinesByPathogenId(getPathogenDetailByName(targetCompare2)?.pathogenId).map((vaccine) => {
-                                                                                        return (
-                                                                                            <div onClick={() => {
-                                                                                                setModalSelectedVaccine(vaccine)
-                                                                                                setOpen(true)
-                                                                                            }} className='flex flex-row mb-2'>
-                                                                                                <span className='mt-2 fw-semibold text-primary cursor-pointer'>&#8226;{" "}{vaccine.name}</span>
-                                                                                            </div>
-                                                                                        )
-                                                                                    }) : (
-                                                                                        <div className='flex flex-row mb-2'>
-                                                                                            &#8226;{" "}
-                                                                                            <span className='mt-2'>No Data Found</span>
-                                                                                        </div>
-                                                                                    )}
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
+                                                                                    }) : <tr>
+                                                                                        <td colSpan={5}>- No Data Available -</td>
+                                                                                    </tr>
+                                                                                }
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>VacciProfiles</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
+                                                                                    <td colSpan={6} className='text-left'>
+                                                                                        <i
+                                                                                            className="fa-solid fa-file-medical text-hover hover-cursor"
+                                                                                            onClick={() => {
+                                                                                                setSelectedVacciProfile(getVaccineDetailByName(targetCompareVaccine1).productProfiles[0]);
+                                                                                                openModal();
+                                                                                            }}
+                                                                                        ></i>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
+                                                                                    <td colSpan={6} className='text-left'>
+                                                                                        <i
+                                                                                            className="fa-solid fa-file-medical text-hover hover-cursor"
+                                                                                            onClick={() => {
+                                                                                                setSelectedVacciProfile(getVaccineDetailByName(targetCompareVaccine2).productProfiles[0]);
+                                                                                                openModal();
+                                                                                            }}
+                                                                                        ></i>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td colSpan={7} align='center' style={{ fontWeight: 'bold' }}>General Information</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Factor</td>
+                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
+                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Map Vaccine Preventable Diseases</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["General Information"]["Map Vaccine Preventable Diseases"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Map Vaccine Preventable Diseases"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Vaccine SmPCs (FDA, EMA, WHO, others)</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["General Information"]["Vaccine SmPCs (FDA, EMA, WHO, others)"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Vaccine SmPCs (FDA, EMA, WHO, others)"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Product profiles</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["General Information"]["Product profiles"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Product profiles"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Pipeline products - summary table</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Pipeline products - summary table"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Pipeline products - summary table"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Failed products</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["General Information"]["Failed products"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Failed products"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td colSpan={7} style={{ fontWeight: 'bold' }} align='center'>Company products, pipeline</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Factor</td>
+                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
+                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>VPD-BoD, Product presentations, Monograph</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["VPD-BoD, Product presentations, Monograph"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["VPD-BoD, Product presentations, Monograph"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Pivotal publications / data vaccines</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["Pivotal publications / data vaccines"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["Pivotal publications / data vaccines"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Interviews</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["Interviews"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["Interviews"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Relevant literature</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["Relevant literature"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["Relevant literature"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Pipeline products - detailed information (TPP)</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["Pipeline products - detailed information (TPP)"] : "-"}</td>
+                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["Pipeline products - detailed information (TPP)"] : "-"}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Last Updated</td>
+                                                                                    <td style={{ fontWeight: 'bold' }} align='right' colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.lastUpdated}</td>
+                                                                                    <td style={{ fontWeight: 'bold' }} align='right' colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.lastUpdated}</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </>
+
                                                                     )}
                                                                     {compareState === "compare-result-vaccine" && (
                                                                         <table>

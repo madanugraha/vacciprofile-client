@@ -33,7 +33,7 @@ const TopBar = ({
                     Licensing Authorities
                 </li>
                 <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
-                    Compares
+                    Comparison
                 </li>
             </ul>
             <div className='search-container mb-3'>

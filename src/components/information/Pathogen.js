@@ -76,7 +76,25 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     </ul>
                 </div>
                 <div className='mt-4'>
-                    <h1 className='heading text-primary pt-2 mb-2'>Related Vaccines</h1>
+                    <h1 className='heading text-primary pt-2 mb-2'>Licensing Vaccines</h1>
+                    {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine) => {
+                        return (
+                            <div onClick={() => {
+                                setSelectedVaccine(vaccine)
+                                setOpen(true)
+                            }} className='flex flex-row mb-2'>
+                                <span className='mt-2 fw-semibold text-primary cursor-pointer'>&#8226;{" "}{vaccine.name}</span>
+                            </div>
+                        )
+                    }) : (
+                        <div className='flex flex-row mb-2'>
+                            &#8226;{" "}
+                            <span className='mt-2'>No Data Found</span>
+                        </div>
+                    )}
+                </div>
+                <div className='mt-4'>
+                    <h1 className='heading text-primary pt-2 mb-2'>Candidate Vaccines</h1>
                     {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine) => {
                         return (
                             <div onClick={() => {

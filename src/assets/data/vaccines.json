@@ -2119,5 +2119,665 @@
         "vaccineType": "Inactivated virus vaccine.",
         "link": "https://www.sinovac.com/pvrv",
         "lastUpdated": "2024-Aug"
+    },
+    {
+        "vaccineId": 31,
+        "name": "IXCHIQ®",
+        "pathogenId": 7
+    },
+    {
+        "vaccineId": 32,
+        "name": "Adenovirus Type 4",
+        "pathogenId": 25
+    },
+    {
+        "vaccineId": 33,
+        "name": "Type 7 Vaccine, Live, Oral®",
+        "pathogenId": 25
+    },
+    {
+        "vaccineId": 34,
+        "name": "BioThrax®",
+        "pathogenId": 34
+    },
+    {
+        "vaccineId": 35,
+        "name": "CYFENDUS®",
+        "pathogenId": 34
+    },
+    {
+        "vaccineId": 36,
+        "name": "Infanrix®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 37,
+        "name": "Adacel®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 38,
+        "name": "DAPTACEL®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 39,
+        "name": "Boostrix®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 40,
+        "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 41,
+        "name": "DTP Vaccine®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 42,
+        "name": "TRIPVAC®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 43,
+        "name": "DTwPHepatitisBHibadsorbed®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 44,
+        "name": "DTwPHepatitisBHib®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 45,
+        "name": "Easyfive TT®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 46,
+        "name": "Eupenta®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 47,
+        "name": "ComBE Five (Liquid)®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 48,
+        "name": "ComBE Five (Reconstituted)®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 49,
+        "name": "Pentabio®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 50,
+        "name": "DTwPHib®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 51,
+        "name": "KINRIX®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 52,
+        "name": "Quadracel®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 53,
+        "name": "PEDIARIX®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 54,
+        "name": "Vaxelis®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 55,
+        "name": "HEXASIIL®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 56,
+        "name": "Infanrix Hexa®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 57,
+        "name": "Pentacel®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 58,
+        "name": "Hexacima; Hexaxim®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 59,
+        "name": "Hexyon®",
+        "pathogenId": 39
+    },
+    {
+        "vaccineId": 62,
+        "name": "BEtt®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 63,
+        "name": "TETAVAX®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 64,
+        "name": "TT vaccine®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 65,
+        "name": "Tetanus Toxoid Vaccine Adsorbed®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 66,
+        "name": "Tetatox®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 67,
+        "name": "Tenivac®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 68,
+        "name": "Adsorbed DT Vaccine®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 69,
+        "name": "Diftet®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 70,
+        "name": "ADSORBED Td VACCINE®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 71,
+        "name": "BE Td®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 72,
+        "name": "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric)®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 73,
+        "name": "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 74,
+        "name": "IMOVAX dT adult®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 75,
+        "name": "Infanrix®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 76,
+        "name": "Tetadif®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 77,
+        "name": "Adacel®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 78,
+        "name": "DAPTACEL®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 79,
+        "name": "Boostrix®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 80,
+        "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 81,
+        "name": "DTP Vaccine®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 82,
+        "name": "TRIPVAC®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 83,
+        "name": "DTwPHepatitisBHibadsorbed®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 84,
+        "name": "DTwPHepatitisBHib®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 85,
+        "name": "Easyfive TT®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 86,
+        "name": "Eupenta®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 87,
+        "name": "ComBE Five (Liquid)®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 88,
+        "name": "ComBE Five (Reconstituted)®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 89,
+        "name": "Pentabio®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 90,
+        "name": "DTwPHib®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 91,
+        "name": "KINRIX®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 92,
+        "name": "Quadracel®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 93,
+        "name": "PEDIARIX®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 94,
+        "name": "Vaxelis®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 95,
+        "name": "HEXASIIL®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 96,
+        "name": "Infanrix Hexa®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 97,
+        "name": "Pentacel®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 98,
+        "name": "Hexacima; Hexaxim®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 99,
+        "name": "Hexyon®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 100,
+        "name": "Hexyon®",
+        "pathogenId": 41
+    },
+    {
+        "vaccineId": 101,
+        "name": "TDVAX®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 102,
+        "name": "Tenivac®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 103,
+        "name": "Adsorbed DT Vaccine®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 104,
+        "name": "Diftet®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 105,
+        "name": "ADSORBED Td VACCINE®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 106,
+        "name": "BE Td®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 107,
+        "name": "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric)®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 108,
+        "name": "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 109,
+        "name": "IMOVAX dT adult®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 110,
+        "name": "Tetadif®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 111,
+        "name": "Adacel®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 112,
+        "name": "DAPTACEL®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 113,
+        "name": "Boostrix®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 114,
+        "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 115,
+        "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 116,
+        "name": "DTP Vaccine®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 117,
+        "name": "TRIPVAC®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 118,
+        "name": "DTwPHepatitisBHibadsorbed®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 119,
+        "name": "DTwPHepatitisBHib®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 120,
+        "name": "Easyfive TT®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 121,
+        "name": "Eupenta®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 122,
+        "name": "ComBE Five (Reconstituted)®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 123,
+        "name": "ComBE Five (Reconstituted)®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 124,
+        "name": "Pentabio®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 125,
+        "name": "DTwPHib®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 126,
+        "name": "KINRIX®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 127,
+        "name": "Quadracel®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 128,
+        "name": "PEDIARIX®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 129,
+        "name": "Vaxelis®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 130,
+        "name": "HEXASIIL®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 131,
+        "name": "Infanrix Hexa®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 132,
+        "name": "Pentacel®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 133,
+        "name": "Hexacima; Hexaxim®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 134,
+        "name": "Hexyon®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 134,
+        "name": "Hexyon®",
+        "pathogenId": 35
+    },
+    {
+        "vaccineId": 135,
+        "name": "Dengvaxia®",
+        "pathogenId": 30
+    },
+    {
+        "vaccineId": 136,
+        "name": "Qdenga®",
+        "pathogenId": 30
+    },
+    {
+        "vaccineId": 137,
+        "name": "Ervebo®",
+        "pathogenId": 29
+    },
+    {
+        "vaccineId": 138,
+        "name": "Zabdeno+Mvabea®",
+        "pathogenId": 29
+    },
+    {
+        "vaccineId": 139,
+        "name": "ActHIB; Act-HIB®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 140,
+        "name": "Haemophilus influenzae type b Conjugate Vaccine®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 141,
+        "name": "HIBERIX®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 142,
+        "name": "HIBERIX®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 143,
+        "name": "Liquid PedvaxHIB®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 144,
+        "name": "Quimi Hib®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 145,
+        "name": "DTwPHepatitisBHibadsorbed®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 146,
+        "name": "DTwPHepatitisBHib®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 147,
+        "name": "Easyfive TT®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 148,
+        "name": "Eupenta®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 149,
+        "name": "ComBE Five (Liquid)®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 150,
+        "name": "ComBE Five (Reconstituted)®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 151,
+        "name": "Pentabio®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 152,
+        "name": "DTwPHib®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 153,
+        "name": "Vaxelis®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 154,
+        "name": "HEXASIIL®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 154,
+        "name": "Infanrix Hexa®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 155,
+        "name": "Pentacel®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 156,
+        "name": "Pentacel®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 157,
+        "name": "Hexacima; Hexaxim®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 158,
+        "name": "Hexyon®",
+        "pathogenId": 40
+    },
+    {
+        "vaccineId": 159,
+        "name": "Gardasil 9®",
+        "pathogenId": 6
+    },
+    {
+        "vaccineId": 160,
+        "name": "Cecolin®",
+        "pathogenId": 6
+    },
+    {
+        "vaccineId": 161,
+        "name": "Cervarix®",
+        "pathogenId": 6
+    },
+    {
+        "vaccineId": 162,
+        "name": "Walrinvax®",
+        "pathogenId": 6
     }
 ]

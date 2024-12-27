@@ -89,6 +89,18 @@
         "vaccines": [
             {
                 "vaccineId": 11
+            },
+            {
+                "vaccineId": 159
+            },
+            {
+                "vaccineId": 160
+            },
+            {
+                "vaccineId": 161
+            },
+            {
+                "vaccineId": 162
             }
         ],
         "image": "https://vaccitutor.com/pluginfile.php/507/course/overviewfiles/45%20-%20Human%20Papillomavirus%20diseases%20small.png",
@@ -100,7 +112,7 @@
         "name": "Chikungunya Virus",
         "vaccines": [
             {
-                "vaccineId": 25
+                "vaccineId": 31
             }
         ],
         "image": "https://vaccitutor.com/pluginfile.php/491/course/overviewfiles/59%20-%20Chikungunya.png",
@@ -260,7 +272,12 @@
         "name": "Adenovirus",
         "description": "Adenoviruses are medium-sized, nonenveloped viruses that primarily cause respiratory illnesses, but can also lead to gastroenteritis, conjunctivitis, and neurological diseases. They contain a double-stranded DNA genome and are known for their resilience in the environment.",
         "vaccines": [
-            {}
+            {
+                "vaccineId": 32
+            },
+            {
+                "vaccineId": 33
+            }
         ],
         "bulletpoints": "Viral vector vaccines use harmless, non-replicating or replicating viruses to deliver genetic material for production of vaccine antigens into host cell cytoplasm. |While viral vector vaccines may theoretically induce life-long immunity with low antigen concentrations, their attenuation, safety and spread to the community are of concern. |Vaccines based on recombinant viral vectors can induce both humoral and cellular immune responses. |Adenovirus vectors are versatile gene transfer vectors that can be easily manufactured, and which may allow simultaneous expression of multiple antigens by a single vector construct. |Adenovirus vector vaccines based on the adenovirus Ad26 vector have been widely used as vaccines against Ebola and COVID19 (see Chapters 44 and 56). |A common concern of using viral vector vaccines is pre-existing immunity or induction of immunity against the vector itself, but in some circumstances it has no meaningful impact and it can be resolved in several ways. |Several harmless viruses are already used as vectors for innovative vaccines and many more are in research.",
         "link": "https://www.cdc.gov/adenovirus/about/index.html",
@@ -291,7 +308,12 @@
         "name": "Ebolavirus",
         "description": "Ebolavirus is a group of viruses that cause Ebola virus disease (EVD), a severe and often fatal illness in humans and nonhuman primates, characterized by symptoms such as fever, fatigue, muscle pain, and bleeding. The virus is transmitted through direct contact with infected bodily fluids or contaminated surfaces.",
         "vaccines": [
-            {}
+            {
+                "vaccineId": 137
+            },
+            {
+                "vaccineId": 138
+            }
         ],
         "bulletpoints": "Ebola virus disease (EVD) is a rare but severe, often fatal hemorrhagic illness occurring either sporadically or with large local outbreaks originating in (western) Africa.|The virus is first transmitted from wild animals to humans (hunters; food handlers) followed by human-to-human transmission via blood or via body secretions. |The average EVD case fatality rate is around 50% (range: 25% to 90% in past outbreaks). |Community engagement is key to successfully controlling outbreaks using several interventions (case management, prevention and control practices, surveillance and contact tracing, good laboratory service, safe and dignified burials and social mobilization). |Early supportive care with rehydration and symptomatic treatment improves survival. |Two monoclonal antibodies (Inmazeb and Ebanga) were approved for the treatment of Zaire ebolavirus (Ebolavirus) infection in adults and children by the FDA in late 2020. |Two vaccine regimens to protect against EVD were recently licensed and helped control outbreaks in Guinea and the Democratic Republic of the Congo (DRC).",
         "image": "https://vaccitutor.com/pluginfile.php/424/course/overviewfiles/56%20-%20Ebola%20small.png",
@@ -302,7 +324,12 @@
         "name": "Dengue Virus",
         "description": "Denguevirus is a mosquito-borne viral infection caused by any of the four closely related viruses: DEN-1, DEN-2, DEN-3, and DEN-4. Symptoms typically begin 3 to 14 days after infection and may include high fever, severe headache, pain behind the eyes, joint and muscle aches, nausea, vomiting, and rash. While many infections are asymptomatic or mild, severe cases can lead to serious complications such as bleeding and shock.",
         "vaccines": [
-            {}
+            {
+                "vaccineId": 135
+            },
+            {
+                "vaccineId": 136
+            }
         ],
         "bulletpoints": "Dengue is a mosquito-borne flavivirus infection, found in tropical and sub-tropical climates worldwide, mostly in urban and semi-urban areas. |There are four distinct dengue virus (DENV) serotypes, meaning that it is possible to be infected four times. |While 75% of DENV infections are asymptomatic, 20% of result in mild to moderate disease (Dengue fever [DF]), and 5% can cause severe disease with activation of the coagulation system (Dengue hemorrhagic fever [DHF ]), which is usually seen with subsequent DENV infections. |Antibody-mediated disease enhancement (ADE) is a phenomenon that has been observed in various in vitro assays: low concentrations of cross-reacting antibodies from a previous DENV infection in a subsequent infection with another serotype do not neutralize DENV. Instead, they bind to the virus and attach to host cells; thus, enabling viral replication. ADE is one hypothesis proposed, among many, to explain sensitization to severe disease. |There is no specific treatment for DENV. Early detection of disease progression and access to proper medical care lower fatality rates of DHF from about 2.5% to <1%. |Severe dengue is a leading cause of serious illness and death in some Asian and Latin American countries. |The global incidence of dengue has grown dramatically in recent decades. About half of the world's population is now at risk. There are an estimated 100–400 million infections each year. |Dengue prevention and control relies on effective vector control measures. Sustained community involvement can improve vector control efforts substantially. |There is one licensed dengue vaccine, CYD live attenuated tetravalent dengue vaccine (Dengvaxia®) developed by Sanofi Pasteur, which is approved for use in several dengue endemic countries for persons 9–45 years of age living in endemic areas who have had a previously documented dengue virus infection. Several other vaccines are in clinical development.",
         "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=dengue",
@@ -346,7 +373,12 @@
         "name": "Bacillus anthracis",
         "description": "Bacillus anthracis is a gram-positive, rod-shaped bacterium that causes anthrax, a serious zoonotic disease primarily affecting livestock and occasionally humans. It forms resilient spores that can survive in the environment for decades, and its pathogenicity is linked to two plasmids responsible for producing toxins and a protective capsule that evades the immune response.",
         "vaccines": [
-            {}
+            {
+                "vaccineId": 34
+            },
+            {
+                "vaccineId": 35
+            }
         ],
         "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=bacillus+anthracis"
     },
@@ -355,7 +387,108 @@
         "name": "Corynebacterium diphtheriae",
         "description": "Corynebacterium diphtheriae is a Gram-positive bacterium responsible for causing diphtheria, characterized by the production of a potent exotoxin that can lead to severe respiratory issues and systemic infections. The bacterium typically infects the nasopharynx or skin, causing symptoms such as pharyngitis, fever, and the formation of a pseudomembrane in the throat.",
         "vaccines": [
-            {}
+            {
+                "vaccineId": 101
+            },
+            {
+                "vaccineId": 102
+            },
+            {
+                "vaccineId": 103
+            },
+            {
+                "vaccineId": 104
+            },
+            {
+                "vaccineId": 105
+            },
+            {
+                "vaccineId": 106
+            },
+            {
+                "vaccineId": 107
+            },
+            {
+                "vaccineId": 108
+            },
+            {
+                "vaccineId": 109
+            },
+            {
+                "vaccineId": 110
+            },
+            {
+                "vaccineId": 111
+            },
+            {
+                "vaccineId": 112
+            },
+            {
+                "vaccineId": 113
+            },
+            {
+                "vaccineId": 114
+            },
+            {
+                "vaccineId": 115
+            },
+            {
+                "vaccineId": 116
+            },
+            {
+                "vaccineId": 117
+            },
+            {
+                "vaccineId": 118
+            },
+            {
+                "vaccineId": 119
+            },
+            {
+                "vaccineId": 120
+            },
+            {
+                "vaccineId": 121
+            },
+            {
+                "vaccineId": 122
+            },
+            {
+                "vaccineId": 123
+            },
+            {
+                "vaccineId": 124
+            },
+            {
+                "vaccineId": 125
+            },
+            {
+                "vaccineId": 126
+            },
+            {
+                "vaccineId": 127
+            },
+            {
+                "vaccineId": 128
+            },
+            {
+                "vaccineId": 129
+            },
+            {
+                "vaccineId": 130
+            },
+            {
+                "vaccineId": 131
+            },
+            {
+                "vaccineId": 132
+            },
+            {
+                "vaccineId": 133
+            },
+            {
+                "vaccineId": 134
+            }
         ],
         "image": "https://vaccitutor.com/pluginfile.php/551/course/overviewfiles/30%20-%20Diphtheria%20small.png",
         "bulletpoints": "Diphtheria is caused by toxin-producing bacteria, Corynebacterium diphtheriae, and less frequently by one of two other, zoonotic, Corynebacteria. |Diphtheria toxin destroys tissue, which builds up in the throat and tonsils, making breathing and swallowing almost impossible. |The bacteria are transmitted by respiratory droplets, by direct physical contact with skin lesions, via secretions from infected patients, or contaminated materials. |Clinically, tonsillitis, pharyngitis, laryngitis, and skin infections (wound infection; ulcers) appear; diphtheria once was a terrible killer of young children. |Antibiotics (penicillin, erythromycin, others) are used to eradicate the bacteria; for respiratory infections, diphtheria antitoxin is used to neutralize circulating toxins and reduce/prevent complications like myocarditis, neuritis (nerve palsies). |Case fatality rates of up to 10% have been reported during diphtheria outbreaks, and are even higher in settings where diphtheria antitoxin is unavailable. |Diphtheria vaccines consist of inactivated toxins, called toxoids, and are available in combinations with other antigens such as tetanus, pertussis, and others. |These combinations are usually well-tolerated, local reactions are the most frequently observed side effects. |Efficacy studies are not available but various observational studies consistently indicate high vaccine effectiveness between 87% and 96%.",
@@ -399,7 +532,78 @@
         "name": "Bordetella pertussis",
         "description": "Bordetella pertussis is a Gram-negative, aerobic bacterium that causes pertussis, commonly known as whooping cough. It is highly contagious and primarily spreads through respiratory droplets. The disease is characterized by severe coughing fits that can lead to a 'whooping' sound during inhalation, especially in infants and young children.",
         "vaccines": [
-            {}
+            {
+                "vaccineId": 36
+            },
+            {
+                "vaccineId": 37
+            },
+            {
+                "vaccineId": 38
+            },
+            {
+                "vaccineId": 39
+            },
+            {
+                "vaccineId": 40
+            },
+            {
+                "vaccineId": 41
+            },
+            {
+                "vaccineId": 42
+            },
+            {
+                "vaccineId": 43
+            },
+            {
+                "vaccineId": 44
+            },
+            {
+                "vaccineId": 45
+            },
+            {
+                "vaccineId": 46
+            },
+            {
+                "vaccineId": 47
+            },
+            {
+                "vaccineId": 48
+            },
+            {
+                "vaccineId": 49
+            },
+            {
+                "vaccineId": 50
+            },
+            {
+                "vaccineId": 51
+            },
+            {
+                "vaccineId": 52
+            },
+            {
+                "vaccineId": 53
+            },
+            {
+                "vaccineId": 54
+            },
+            {
+                "vaccineId": 55
+            },
+            {
+                "vaccineId": 56
+            },
+            {
+                "vaccineId": 57
+            },
+            {
+                "vaccineId": 58
+            },
+            {
+                "vaccineId": 59
+            }
         ],
         "image": "https://vaccitutor.com/pluginfile.php/549/course/overviewfiles/31%20-%20Pertussis.png",
         "bulletpoints": "The bacterium Bordetella pertussis causes disease by producing various virulence and adhesion factors, among them pertussis toxin (PT), filamentous hemagglutinin (FHA), pertactin (PRN) and agglutinogens (Agg), also called fimbriae (FIM) |'Typical' pertussis or whooping cough starts with unspecific respiratory symptoms (catarrhal phase) followed by severe coughing spasms with whoops and vomiting (paroxysmal phase) and only after weeks or months disease severity slowly wanes (convalescent phase). |'Atypical pertussis' with unspecific, long-lasting coughing episodes is seen in adolescents and adults; very young infants may die from apnoea. |B. pertussis is transmitted by droplets, and neither infection nor vaccination produce long lasting protection. |Macrolide antibiotics are given to patients and their contacts to reduce spread of the organism; however, antibiotics do NOT change the duration or course of the disease once symptoms are present. |Whole cell pertussis vaccines (wP) consist of whole inactivated B. pertussis-cells, whereas acellular vaccines (aP) consist of one to five single components like PT, FHA, PRN or FIM. Pertussis vaccines are currently only available as combination vaccines with tetanus und diphtheria (DTP). Among these are DTwP; DTaP; TdaP; and various DTP-combinations with Hib, IPV, HBV vaccines.  |Whole cell pertussis (DTwP) combination vaccines are more reactogenic, whereas DTaP vaccines are generally well tolerated. |Some DTwP had good efficacy/effectiveness (90%), it was low (40%) with others. Vaccine efficacy of DTaP vaccines ranges between 70% and 90%. As with most vaccines, efficiency is higher for severe disease. |While pertussis vaccines did control clinical disease, protection is limited. Vaccination is recommended for all infants (three doses) worldwide with a booster in the second year of life. Many countries give additional doses at school entry and in adolescents, and some to adults. Vaccination of pregnant women effectively protects newborn infants and is increasingly recommended.",
@@ -410,7 +614,66 @@
         "name": "Haemophilus influenzae",
         "description": "Haemophilus influenzae is a Gram-negative bacterium that can cause a variety of infections, ranging from mild conditions like ear infections to severe diseases such as pneumonia, meningitis, and bloodstream infections. It is often spread through respiratory droplets from coughing or sneezing.",
         "vaccines": [
-            {}
+            {
+                "vaccineId": 139
+            },
+            {
+                "vaccineId": 140
+            },
+            {
+                "vaccineId": 141
+            },
+            {
+                "vaccineId": 142
+            },
+            {
+                "vaccineId": 143
+            },
+            {
+                "vaccineId": 144
+            },
+            {
+                "vaccineId": 145
+            },
+            {
+                "vaccineId": 146
+            },
+            {
+                "vaccineId": 147
+            },
+            {
+                "vaccineId": 148
+            },
+            {
+                "vaccineId": 149
+            },
+            {
+                "vaccineId": 150
+            },
+            {
+                "vaccineId": 151
+            },
+            {
+                "vaccineId": 152
+            },
+            {
+                "vaccineId": 153
+            },
+            {
+                "vaccineId": 154
+            },
+            {
+                "vaccineId": 155
+            },
+            {
+                "vaccineId": 156
+            },
+            {
+                "vaccineId": 157
+            },
+            {
+                "vaccineId": 158
+            }
         ],
         "image": "https://vaccitutor.com/pluginfile.php/547/course/overviewfiles/32%20-%20Haemophilus%20Influenzae%20Type%20B%20%28HIB%29%20small.png",
         "bulletpoints": "Haemophilus influenzae is a small Gram negative coccobacillus colonizing the respiratory tract of humans. The bacterium may cause direct local infections like otitis media, as well as severe invasive diseases like meningitis. |In the prevaccine era, of the 6 capsular serotypes (a–f), type b caused the majority of invasive disease cases, whereas “nontypeable H. influenzae” (NTHi) and other capsular types predominate today. |H. influenzae infections affect mainly children <5 years as well as persons >60 years with underlying diseases like COPD. |Diagnosis of Hib disease is performed by classical microbiological culture techniques, antigen detection tests and polymerase chain reaction from blood samples, CSF or puncture samples. |If untreated or if treatment is delayed, invasive Hib diseases may result in severe consequences such as hearing loss, chronic seizures, learning disabilities, and even death. |Safe and effective polysaccharide-conjugate vaccines have been available for children for almost 30 years, reducing invasive Hib-incidences from about 60 to <1 / 105. Today, largely DTP-based Hib-combinations are used. |After the primary series with 2 or 3 doses depending on the product and local recommendations, a booster dose in the second year of life is needed to ensure long-term protection.",
@@ -421,7 +684,120 @@
         "name": "Clostridium tetani",
         "description": "Clostridium tetani is a common soil bacterium and the causative agent of tetanus. It is an anaerobic, spore-forming bacillus that produces a potent toxin, tetanospasmin, which disrupts neurotransmitter release, leading to muscle spasms and rigidity.",
         "vaccines": [
-            {}
+            {
+                "vaccineId": 62
+            },
+            {
+                "vaccineId": 63
+            },
+            {
+                "vaccineId": 64
+            },
+            {
+                "vaccineId": 65
+            },
+            {
+                "vaccineId": 66
+            },
+            {
+                "vaccineId": 67
+            },
+            {
+                "vaccineId": 68
+            },
+            {
+                "vaccineId": 69
+            },
+            {
+                "vaccineId": 70
+            },
+            {
+                "vaccineId": 71
+            },
+            {
+                "vaccineId": 72
+            },
+            {
+                "vaccineId": 73
+            },
+            {
+                "vaccineId": 74
+            },
+            {
+                "vaccineId": 75
+            },
+            {
+                "vaccineId": 76
+            },
+            {
+                "vaccineId": 77
+            },
+            {
+                "vaccineId": 78
+            },
+            {
+                "vaccineId": 79
+            },
+            {
+                "vaccineId": 80
+            },
+            {
+                "vaccineId": 81
+            },
+            {
+                "vaccineId": 82
+            },
+            {
+                "vaccineId": 83
+            },
+            {
+                "vaccineId": 84
+            },
+            {
+                "vaccineId": 85
+            },
+            {
+                "vaccineId": 86
+            },
+            {
+                "vaccineId": 87
+            },
+            {
+                "vaccineId": 88
+            },
+            {
+                "vaccineId": 89
+            },
+            {
+                "vaccineId": 90
+            },
+            {
+                "vaccineId": 91
+            },
+            {
+                "vaccineId": 92
+            },
+            {
+                "vaccineId": 93
+            },
+            {
+                "vaccineId": 94
+            },
+            {
+                "vaccineId": 95
+            },
+            {
+                "vaccineId": 96
+            },
+            {
+                "vaccineId": 97
+            },
+            {
+                "vaccineId": 98
+            },
+            {
+                "vaccineId": 99
+            }
         ],
         "image": "https://vaccitutor.com/pluginfile.php/553/course/overviewfiles/29%20-%20Tetanus%20small.png",
         "bulletpoints": "Tetanus is acquired through exposure to the environmental spore-forming Gram-positive bacillus Clostridium tetani, which may infect human wounds and cause disease by production of an exotoxin (tetanospasmin). There is no human-to-human transmission. |The disease occurs worldwide and it is sporadic in high-income countries with universal access to well-accepted immunization programs. It is more common in agricultural regions and in low-income countries where contact with animal excreta is more likely and immunization programs are inadequate. |Neonatal tetanus (NNT) following unclean deliveries and poor postnatal hygiene is still responsible for the majority of tetanus cases and deaths; the majority of NNT occurs in poor Asian and African countries, whereas in high-income countries the disease is extremely rare. |Three forms of clinical disease can be distinguished: the most common form is generalized tetanus, whereas local tetanus and cephalic tetanus are rare. Neonatal tetanus (NNT) is a form of generalized tetanus in newborns. |The case fatality rate of tetanus is high, 3%–95% depending on age, immune- and immunization-status, form of disease, and availability of proper medical care. |The efficacy of tetanus toxoid vaccines was never formally studied, but cases in adequately vaccinated subjects are extremely rare and impact data (e.g. for NNT) convincingly show high vaccine effectiveness. |WHO estimates that in 2018, 25,000 newborns died from NNT, an 88% reduction from the situation in 2000.",
