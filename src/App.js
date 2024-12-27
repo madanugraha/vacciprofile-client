@@ -218,9 +218,17 @@ const App = () => {
      */
 
     const getVaccinesByLicenser = useCallback(selectedLicenser => {
-        return vaccinesList.filter(vaccine =>
-            vaccine.licensers.some(licenser => licenser.licenserId === selectedLicenser.licenserId)
-        );
+
+        return vaccinesList.filter(vaccine => {
+            if (vaccine?.licensers) {
+                return vaccine.licensers.some(licenser => licenser.licenserId === selectedLicenser.licenserId)
+            } else {
+                return []
+            }
+        });
+        // return vaccinesList.filter(vaccine =>
+        //     vaccine.licensers.some(licenser => licenser.licenserId === selectedLicenser.licenserId)
+        // );
     }, [vaccinesList]);
 
     /**
@@ -234,12 +242,21 @@ const App = () => {
         if (!manufacturer || !manufacturer.manufacturerId) {
             return [];
         }
-        return vaccinesList.filter(vaccine =>
-            vaccine.manufacturers.some(m => {
-                console.log("manufacturer", manufacturer, "m", m)
-                return m.manufacturerId === manufacturer.manufacturerId
-            })
-        );
+        return vaccinesList.filter((vaccine) => {
+            if (vaccine?.manufacturers) {
+                return vaccine.manufacturers.some((m) => {
+                    return m.manufacturerId === manufacturer.manufacturerId
+                })
+            } else {
+                return []
+            }
+        });
+        // return vaccinesList.filter(vaccine =>
+        //     vaccine.manufacturers.some(m => {
+        //         console.log("manufacturer", manufacturer, "m", m)
+        //         return m.manufacturerId === manufacturer.manufacturerId
+        //     })
+        // );
     }, [selectedManufacturer, vaccinesList]);
 
     /**

@@ -37,75 +37,75 @@ import React from 'react';
  */
 
 const VaccineListTable = ({
-    activeTab, 
-    selectedPathogen, 
-    selectedVaccine, 
+    activeTab,
+    selectedPathogen,
+    selectedVaccine,
     selectedLicenser,
-    handleSelectPathogen, 
-    handleSelectVaccine, 
-    handleSelectLicenser, 
+    handleSelectPathogen,
+    handleSelectVaccine,
+    handleSelectLicenser,
     getVaccinesByManufacturer,
     getPathogenByVaccine,
     getLicenserById,
     italizeScientificNames
 }) => {
     return <div className="accordion" id="accordianVaccineList">
-    <div className="accordion-item">
-        <h2 className="accordion-header" id="accordianVaccines">
-            <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
-            List of Vaccines
-            </button>
-        </h2>
-        <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
-            <div className="accordion-body pb-1 px-0 pt-0">
-                <div className='main-header table-responsive m-0'>
-                    <table className='table w-100 m-0'>
-                        <thead>
-                            <tr>
-                                <th>Vaccine Brand Name</th>
-                                <th>Pathogen</th>
-                                <th>Licensing Authorities</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {getVaccinesByManufacturer().map((vaccine, key)=><tr key={key}>
-                                <td className='vaccine-cell'>
-                                    <span
-                                        className={`${activeTab==="Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`} 
-                                        onClick={()=>handleSelectVaccine(vaccine)}>
-                                        {vaccine.name}
-                                    </span>
-                                </td>
-                                <td className='pathogen-cell'>
-                                    <span 
-                                        className={`${activeTab==="Pathogen" && selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`} 
-                                        onClick={()=>{handleSelectPathogen(getPathogenByVaccine(vaccine))}}>{italizeScientificNames(getPathogenByVaccine(vaccine).name)}
-                                    </span>
-                                </td>
-                                <td className='licenser-cell'>
-                                {vaccine.licensers.map((l, index) => {
-                                    const licenser = getLicenserById(l.licenserId); 
-
-                                    if (!licenser) return null; 
-                                    
-                                    return (
-                                        <span key={l.licenserId}>
-                                            <a href={l.link} className='selectable' target="_blank" rel="noopener noreferrer">
-                                                {licenser.acronym}
-                                            </a>
-                                            {index < vaccine.licensers.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+        <div className="accordion-item">
+            <h2 className="accordion-header" id="accordianVaccines">
+                <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
+                    Licensed Vaccines
+                </button>
+            </h2>
+            <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
+                <div className="accordion-body pb-1 px-0 pt-0">
+                    <div className='main-header table-responsive m-0'>
+                        <table className='table w-100 m-0'>
+                            <thead>
+                                <tr>
+                                    <th>Vaccine Brand Name</th>
+                                    <th>Pathogen</th>
+                                    <th>Licensing Authorities</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {getVaccinesByManufacturer().map((vaccine, key) => <tr key={key}>
+                                    <td className='vaccine-cell'>
+                                        <span
+                                            className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
+                                            onClick={() => handleSelectVaccine(vaccine)}>
+                                            {vaccine.name}
                                         </span>
-                                    );
-                                })}
-                                </td>
-                            </tr>)}
-                        </tbody>
-                    </table>
+                                    </td>
+                                    <td className='pathogen-cell'>
+                                        <span
+                                            className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`}
+                                            onClick={() => { handleSelectPathogen(getPathogenByVaccine(vaccine)) }}>{getPathogenByVaccine(vaccine)?.name ? italizeScientificNames(getPathogenByVaccine(vaccine).name) : "-"}
+                                        </span>
+                                    </td>
+                                    <td className='licenser-cell'>
+                                        {vaccine.licensers ? vaccine.licensers.map((l, index) => {
+                                            const licenser = getLicenserById(l.licenserId);
+
+                                            if (!licenser) return null;
+
+                                            return (
+                                                <span key={l.licenserId}>
+                                                    <a href={l.link} className='selectable' target="_blank" rel="noopener noreferrer">
+                                                        {licenser.acronym}
+                                                    </a>
+                                                    {index < vaccine.licensers.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                                </span>
+                                            );
+                                        }) : '- no data -'}
+                                    </td>
+                                </tr>)}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
 }
 
 export default VaccineListTable;

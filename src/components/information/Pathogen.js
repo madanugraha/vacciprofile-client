@@ -76,7 +76,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     </ul>
                 </div>
                 <div className='mt-4'>
-                    <h1 className='heading text-primary pt-2 mb-2'>Licensing Vaccines</h1>
+                    <h1 className='heading text-primary pt-2 mb-2'>Licensed Vaccines</h1>
                     {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine) => {
                         return (
                             <div onClick={() => {

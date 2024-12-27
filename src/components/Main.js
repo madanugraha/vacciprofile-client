@@ -495,6 +495,7 @@ const Main = ({
                                                                             {manufactureCompare1.map((manufacture) => {
                                                                                 return (
                                                                                     <div
+                                                                                        style={{ width: 1000 }}
                                                                                         key={`manufacturer-1-${manufacture.name}`}
                                                                                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${manufacture?.isActive ? 'active' : 'inactive'}`}
                                                                                         onClick={() => {
@@ -588,7 +589,9 @@ const Main = ({
                                                                 {
                                                                     (targetCompareVaccine1 && targetCompareVaccine2) || (targetCompare1 && targetCompare2) ? (
                                                                         <div onClick={() => {
-                                                                            if ((!targetCompareVaccine1 && !targetCompareVaccine2) || (!targetCompare1 && !targetCompare2)) {
+                                                                            console.log((!targetCompareVaccine1 && !targetCompareVaccine2));
+                                                                            console.log((!targetCompare1 && !targetCompare2))
+                                                                            if ((!targetCompareVaccine1 && !targetCompareVaccine2) && (!targetCompare1 && !targetCompare2)) {
                                                                                 return toast.error('Please select to compare first.')
                                                                             }
                                                                             setCompareState(`compare-result-${selectedCompare?.name.toLowerCase()}`)
@@ -682,8 +685,13 @@ const Main = ({
                                                                                     <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>VacciProfiles</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
-                                                                                    <td colSpan={6} className='text-left'>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Name</td>
+                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={3}>{targetCompareVaccine1}</td>
+                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={3}>{targetCompareVaccine2}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Product Profile</td>
+                                                                                    <td colSpan={3} className='text-left'>
                                                                                         <i
                                                                                             className="fa-solid fa-file-medical text-hover hover-cursor"
                                                                                             onClick={() => {
@@ -692,10 +700,7 @@ const Main = ({
                                                                                             }}
                                                                                         ></i>
                                                                                     </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
-                                                                                    <td colSpan={6} className='text-left'>
+                                                                                    <td colSpan={3} className='text-left'>
                                                                                         <i
                                                                                             className="fa-solid fa-file-medical text-hover hover-cursor"
                                                                                             onClick={() => {
