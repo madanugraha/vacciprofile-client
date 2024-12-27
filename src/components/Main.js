@@ -9,7 +9,7 @@ import PipelineVaccineListTable from './information/PipelineVaccineListTable';
 import manufacturers from '../assets/data/manufacturers.json';
 import pathogens from '../assets/data/pathogens.json';
 import vaccines from '../assets/data/vaccines.json';
-import { getLicenserDetailById, getManufactureDetailByName, getPathogenDetailById, getPathogenVaccinesByName, getVaccineDetailById, getVaccineDetailByName } from '../utils/pathogens';
+import { getLicenserDetailById, getManufactureDetailByName, getPathogenDetailById, getPathogenVaccinesByName, getProductProfileTypeByVaccineName, getProductProfileValueByVaccineName, getVaccineDetailById, getVaccineDetailByName } from '../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import ReactModal from 'react-modal';
@@ -404,6 +404,24 @@ const Main = ({
     }, []);
 
 
+    const platforms = [
+        "type",
+        "name",
+        "composition",
+        "strainCoverage",
+        "indication",
+        "dosing",
+        "contraindication",
+        "immunogenicity",
+        "efficacyEndpointsPhase3",
+        "efficacyData",
+        "durationOfProtection",
+        "coAdministration",
+        "reactogenicity",
+        "safety",
+        "vaccinationGoal",
+        "others"
+    ]
 
     // useEffect(() => {
     //     console.log(compareState, targetCompare1, targetCompare2)
@@ -589,8 +607,6 @@ const Main = ({
                                                                 {
                                                                     (targetCompareVaccine1 && targetCompareVaccine2) || (targetCompare1 && targetCompare2) ? (
                                                                         <div onClick={() => {
-                                                                            console.log((!targetCompareVaccine1 && !targetCompareVaccine2));
-                                                                            console.log((!targetCompare1 && !targetCompare2))
                                                                             if ((!targetCompareVaccine1 && !targetCompareVaccine2) && (!targetCompare1 && !targetCompare2)) {
                                                                                 return toast.error('Please select to compare first.')
                                                                             }
@@ -627,7 +643,7 @@ const Main = ({
                                                                                 </tr>
                                                                                 {/** LICENSING TARGET 1 */}
                                                                                 <tr>
-                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing - {targetCompareVaccine1}</td>
+                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing ({targetCompareVaccine1})</td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td style={{ fontWeight: 'bold', color: 'gray' }}>Link</td>
@@ -655,7 +671,7 @@ const Main = ({
                                                                                 }
                                                                                 {/** LICENSING TARGET 2 */}
                                                                                 <tr>
-                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing - {targetCompareVaccine2}</td>
+                                                                                    <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing ({targetCompareVaccine2})</td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td style={{ fontWeight: 'bold', color: 'gray' }}>Link</td>
@@ -685,36 +701,27 @@ const Main = ({
                                                                                     <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>VacciProfiles</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Name</td>
+                                                                                    <td style={{ fontWeight: 'bold' }}>Factor</td>
                                                                                     <td style={{ fontWeight: 'bold' }} colSpan={3}>{targetCompareVaccine1}</td>
                                                                                     <td style={{ fontWeight: 'bold' }} colSpan={3}>{targetCompareVaccine2}</td>
                                                                                 </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Product Profile</td>
-                                                                                    <td colSpan={3} className='text-left'>
-                                                                                        <i
-                                                                                            className="fa-solid fa-file-medical text-hover hover-cursor"
-                                                                                            onClick={() => {
-                                                                                                setSelectedVacciProfile(getVaccineDetailByName(targetCompareVaccine1).productProfiles[0]);
-                                                                                                openModal();
-                                                                                            }}
-                                                                                        ></i>
-                                                                                    </td>
-                                                                                    <td colSpan={3} className='text-left'>
-                                                                                        <i
-                                                                                            className="fa-solid fa-file-medical text-hover hover-cursor"
-                                                                                            onClick={() => {
-                                                                                                setSelectedVacciProfile(getVaccineDetailByName(targetCompareVaccine2).productProfiles[0]);
-                                                                                                openModal();
-                                                                                            }}
-                                                                                        ></i>
-                                                                                    </td>
-                                                                                </tr>
+                                                                                {platforms.map((key) => {
+                                                                                    return key === "name" ? null : (
+                                                                                        <>
+                                                                                            <tr>
+                                                                                                <td colSpan={1} style={{ color: key === 'type' ? 'black' : 'gray', fontWeight: 'bold' }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                                                                <td colSpan={3} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{getProductProfileValueByVaccineName(key, targetCompareVaccine1)}</td>
+                                                                                                <td colSpan={3} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{getProductProfileValueByVaccineName(key, targetCompareVaccine2)}</td>
+                                                                                            </tr>
+                                                                                        </>
+
+                                                                                    )
+                                                                                })}
                                                                                 <tr>
                                                                                     <td colSpan={7} align='center' style={{ fontWeight: 'bold' }}>General Information</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Factor</td>
+                                                                                    <td style={{ fontWeight: 'bold' }}>Factor</td>
                                                                                     <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
                                                                                     <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
                                                                                 </tr>
@@ -747,7 +754,7 @@ const Main = ({
                                                                                     <td colSpan={7} style={{ fontWeight: 'bold' }} align='center'>Company products, pipeline</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Factor</td>
+                                                                                    <td style={{ fontWeight: 'bold' }}>Factor</td>
                                                                                     <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
                                                                                     <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
                                                                                 </tr>
@@ -986,7 +993,7 @@ const Main = ({
                                                                                 <td>{getManufactureDetailByName(targetCompare2)?.details?.numberOfEmployees || "-"}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td align='center' colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare1} - List of Vaccines</td>
+                                                                                <td align='center' colSpan={3} style={{ fontWeight: 'bold' }}>Licensed Vaccines ({targetCompare1})</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td style={{ fontWeight: 'bold', color: 'gray' }}>Vaccine Name</td>
@@ -1003,12 +1010,12 @@ const Main = ({
                                                                                         </tr>
                                                                                     )
                                                                                 }) : <tr>
-                                                                                    <td colSpan={3}>- No Data Available</td>
+                                                                                    <td align='center' colSpan={3}>- No Data Available -</td>
                                                                                 </tr>
                                                                             }
 
                                                                             <tr>
-                                                                                <td align='center' colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompare2} - List of Vaccines</td>
+                                                                                <td align='center' colSpan={3} style={{ fontWeight: 'bold' }}>Licensed Vaccines ({targetCompare2})</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td style={{ fontWeight: 'bold', color: 'gray' }}>Vaccine Name</td>
@@ -1025,7 +1032,7 @@ const Main = ({
                                                                                         </tr>
                                                                                     )
                                                                                 }) : <tr>
-                                                                                    <td colSpan={3}>- No Data Available</td>
+                                                                                    <td align='center' colSpan={3}>- No Data Available -</td>
                                                                                 </tr>
                                                                             }
                                                                             <tr>
