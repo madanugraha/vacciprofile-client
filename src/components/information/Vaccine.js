@@ -209,7 +209,7 @@ const Vaccine = ({
                 </tbody>
             </table>
         )}
-        {selectedVaccine.introduction && (
+        {/* {selectedVaccine.introduction && (
             <table className='table table-striped w-100 m-0 mb-2'>
                 <tbody>
                     {Object.entries(selectedVaccine.introduction).map(([category, details], index) => (
@@ -227,7 +227,7 @@ const Vaccine = ({
                     ))}
                 </tbody>
             </table>
-        )}
+        )} */}
         <p className='mb-0 ms-1'><a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
         <span className='last-updated text-muted position-absolute end-0 bottom-0 me-1'>Last updated: {selectedVaccine.lastUpdated}</span>
         {selectedVacciProfile && <ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>

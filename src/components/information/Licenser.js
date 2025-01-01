@@ -36,16 +36,16 @@ const Licenser = ({
                 <thead>
                     <tr>
                         <th>Tradename</th>
-                        <th>Vaccine Type</th>
-                        <th>Indication</th>
+                        {/* <th>Vaccine Type</th>
+                        <th>Indication</th> */}
                     </tr>
                 </thead>
                 <tbody>
                     {getVaccinesByLicenser(selectedLicenser).map((vaccine, index) => (
                         <tr key={index}>
                             <td>{<span className='text-primary fw-bold hover-cursor hover-underline' onClick={() => handleSelectVaccine(vaccine)}>{vaccine.name}</span>}</td>
-                            <td>{vaccine.vaccineType || '-'}</td>
-                            <td>{vaccine.comments || '-'}</td>
+                            {/* <td>{vaccine.vaccineType || '-'}</td>
+                            <td>{vaccine.comments || '-'}</td> */}
                         </tr>
                     ))}
                 </tbody>

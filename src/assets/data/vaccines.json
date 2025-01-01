@@ -2638,7 +2638,60 @@
     {
         "vaccineId": 135,
         "name": "Dengvaxia®",
-        "pathogenId": 30
+        "pathogenId": 30,
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Dengvaxia® (MAH: Sanofi)",
+                "composition": "Chimeric Yellow Fever Dengue Virus serotypes 1,2,3,4 (live, attenuated); produced in Vero cells, recombinant DNA technology (GMO); storage: 2-8°C; shelf life: 3 years",
+                "strainCoverage": "Dengue virus, all 4 virus serotypes.",
+                "indication": "Dengue prevention against all 4 serotypes in individuals 6-45 years of age with test-confirmed previous dengue infection. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; immunocompromised patients*; pregnancy; breastfeeding ",
+                "dosing": "3 S.C. (e.g. in the deltoid region) doses (0.5 mL each); 6-month intervals.",
+                "immunogenicity": "Higher antibody responses in adults versus children after 3 doses.",
+                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "Pooled VEy vs. symptomatic VCD, children 6-16 years: 62-64% x 25 mo f/u; seropositives: 79.7 – 79.9%VEy-bridging to adults: Immunogenicity after 3 doses is higher in adults than in children, no VEy data.",
+                "durationOfProtection": "VEy in year 5 and 6: 14% in subjects 6-16 years with previous DV-infection.",
+                "coAdministration": "Before the use of IgG: 6 wk.- 3 mo. waiting period; TdaP with Dengvaxia first dose: equal responses vs. sequential dosing; only descriptive data with bivalent HPV (similar GMTs co-ad vs sequential) and quadrivalent HPV (ratios in GMT from 0.8 to 1 for co-ad vs sequential) vaccines.",
+                "reactogenicity": "Headache (51%), pain (49%), malaise (41%), myalgia (41%), asthenia (32%), fever (14%) – independent of serostatus prior to vaccination.",
+                "safety": "Increased risk of severe Dengue in not-previously DV-infected subjects, mainly 3 years after 1st dose.",
+                "vaccinationGoal": "Individual protection",
+                "others": "No notes."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Dengvaxia® (MAH: Sanofi)",
+                "composition": "Chimeric Yellow Fever Dengue Virus serotypes 1,2,3,4 (live, attenuated); produced in Vero cells, recombinant DNA technology (GMO); storage: 2-8°C; shelf life: 3 years",
+                "strainCoverage": "Dengue virus, all 4 virus serotypes.",
+                "indication": "Dengue prevention (against all 4 serotypes) in individuals 6 to 16 years of age with test-confirmed previous dengue infection and living in endemic areas. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity, immunocompromised patients*.",
+                "dosing": "3 S.C. (e.g. in the deltoid region) doses (0.5 mL each); 6-month intervals.",
+                "immunogenicity": "No data are available.",
+                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "VEy against VCD (dengue with acute febrile illness (temperature ≥38°C on at least 2 consecutive days) confirmed by dengue RT-PCR (any serotype) and/or dengue non-structural protein 1 (NS1) ELISA Antigen Test) after 3 doses x 12 mo. f/u, 9-16 years: 80.6 % (CI 95% = 50.7, 93.2); 6-14 years: 79.5 % (CI 95% = 44.2, 93.5)",
+                "durationOfProtection": "No data are available.",
+                "coAdministration": "tuberculin PPD testing: before vaccination or at least 1 month following vaccination.",
+                "reactogenicity": "9-16 years: headache (40%), injection site pain (32%), malaise (25%), weakness (25%), myalgia (29%); 6-8 years: headache (27%), injection site pain (28%), malaise (19%), weakness (13%), and myalgia (15%).",
+                "safety": "Increased risk of severe Dengue in not-previously DV-infected subjects.",
+                "vaccinationGoal": "Individual protection",
+                "others": "Safety and effectiveness in the geriatric population (65 years of age and older), pregnant women, and breastfeeding have not been established."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Dengvaxia® (MAH: Sanofi)",
+                "composition": "Chimeric Yellow Fever Dengue Virus serotypes 1,2,3,4 (live, attenuated); produced in Vero cells, recombinant DNA technology (GMO); storage: 2-8°C; shelf life: 3 years",
+                "strainCoverage": "Dengue virus, all 4 virus serotypes.",
+                "indication": "Dengue prevention (against all 4 serotypes) in individuals 6 to 45 years of age with test-confirmed previous dengue infection. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity, immunocompromised patients; pregnancy; breastfeeding.",
+                "dosing": "3 S.C. (e.g. in the deltoid region) doses (0.5 mL each); 6-month intervals.",
+                "immunogenicity": "Higher antibody responses in adults versus children.",
+                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "Pooled VEy vs. symptomatic VCD, children 6-16 years: 62-64% x 25 mo f/u; seropositives: 79.7 – 79.9% VEy-bridging to adults: Immunogenicity after 3 doses is higher in adults than in children, no VEy data.",
+                "durationOfProtection": "VEy in year 5 and 6: 14% in subjects 6-16 years with previous DV-infection.",
+                "coAdministration": "Before the use of IgG: 6 wk- 3 mo waiting period; can be co-administer with Tdap and HPV vaccines.",
+                "reactogenicity": "Very common (1 in 10 people): Headache, myalgia, malaise, myalgia, weakness, fever, erythema.",
+                "safety": "Increased risk of severe Dengue in not-previously DV-infected subjects, mainly 3 years after 1st dose.",
+                "vaccinationGoal": "Individual protection",
+                "others": "Vaccination is not recommended for travelers who have never lived in an endemic area."
+            }
+        ]
     },
     {
         "vaccineId": 136,

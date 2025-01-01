@@ -1094,7 +1094,6 @@ const Main = ({
                                     <Vaccine selectedVaccine={modalSelectedVaccine} convertCamelCaseToReadable={convertCamelCaseToReadable} />
                                 </Box>
                             </Modal>
-
                             {selectedVacciProfile && <ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
                                 <i class="fa-solid fa-xmark fa-lg modal-close-btn position-absolute end-0 hover-cursor" onClick={closeModal}></i>
                                 <h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVacciProfile.name)}</h1>
