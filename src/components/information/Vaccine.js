@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactModal from "react-modal";
+import { getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 
 /**
  * Vaccine Component
@@ -144,13 +145,30 @@ const Vaccine = ({
         return text.replace(/<br\s*\/?>/gi, '');
     }
 
+    const platforms = [
+        "type",
+        "name",
+        "composition",
+        "strainCoverage",
+        "indication",
+        "dosing",
+        "contraindication",
+        "immunogenicity",
+        "Efficacy(VEy vs virologically confirmed dengue (VCD))",
+        "durationOfProtection",
+        "coAdministration",
+        "reactogenicity",
+        "safety",
+        "vaccinationGoal",
+        "others"
+    ];
     return <div className='position-relative slide-left'>
         <h1 className='heading text-primary text-center'>{selectedVaccine.name}
             {/* {selectedVaccine.packageInsertLink && <i className="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}
             {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
         </h1>
         {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
-        {selectedVaccine.licensingDates && (
+        {/* {selectedVaccine.licensingDates && (
             <table className='table table-light table-striped w-100 m-0'>
                 <thead>
                     <tr>
@@ -183,31 +201,32 @@ const Vaccine = ({
                     ))}
                 </tbody>
             </table>
-        )}
+        )} */}
         {selectedVaccine.productProfiles && (
-            <table className='table table-striped w-100 m-0 mb-2'>
-                <thead>
-                    <tr>
-                        <th colSpan={2} className='text-center fw-bold'>VacciProfiles</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {selectedVaccine.productProfiles.map((profile, index) => (
-                        <tr key={index}>
-                            <td className='text-center'>
-                                <i
-                                    className="fa-solid fa-file-medical text-hover hover-cursor"
-                                    onClick={() => {
-                                        setSelectedVacciProfile(profile);
-                                        openModal();
-                                    }}
-                                ></i>
-                            </td>
-                            <td>{removeBrTags(profile.name)}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            <div className="d-inline-flex w-100 inner">
+                {getVaccinesByPathogenId(selectedVaccine.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedVaccine.pathogenId).map((vaccine, vaccineIdx) => {
+                    return vaccine?.productProfiles && (
+                        <table style={{ overflow: 'hidden' }} key={vaccine.description} border={1}>
+                            <tbody>
+                                {platforms.map((key) => {
+                                    return key === "name" ? null : (
+                                        <>
+                                            <tr key={Math.random() * 999}>
+                                                {vaccineIdx === 0 && (
+                                                    <td colSpan={1} style={{ color: key === 'type' ? 'white' : 'black', fontWeight: 'bold' }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                )}
+                                                <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
+                                                <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
+                                                <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
+                                            </tr>
+                                        </>
+                                    )
+                                })}
+                            </tbody>
+                        </table>
+                    )
+                }) : null}
+            </div>
         )}
         {/* {selectedVaccine.introduction && (
             <table className='table table-striped w-100 m-0 mb-2'>

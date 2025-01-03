@@ -146,14 +146,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                     {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine, vaccineIdx) => {
                                                         return vaccine?.productProfiles && (
                                                             <table style={{ marginLeft: vaccineIdx === 0 ? 400 : 0, overflow: 'hidden' }} className='table-fixed' key={vaccine.description} border={1}>
-                                                                {/* <thead>
-                                                            <tr>
-                                                                <td width={200} style={{ marginLeft: '50%', width: '20%', fontWeight: 'bold' }} colSpan={7} align='center'>VacciProfiles</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width={200} style={{ marginLeft: '50%', width: '20%', fontWeight: 'bold' }} align='center' colSpan={7}>{vaccine.name}</td>
-                                                            </tr>
-                                                        </thead> */}
                                                                 <tbody>
                                                                     {platforms.map((key) => {
                                                                         return key === "name" ? null : (
