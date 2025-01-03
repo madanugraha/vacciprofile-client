@@ -69,7 +69,9 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         "safety",
         "vaccinationGoal",
         "others"
-    ]
+    ];
+
+    const [compareActive, setCompareActive] = useState(false);
 
     return (
         <>
@@ -136,34 +138,45 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                             <span className='mt-2'>No Data Found</span>
                                         </div>
                                     )}
-                                    <span className='fw-bold cursor-pointer' style={{ color: 'blue', marginTop: 20 }}>&#8226;{" "}Compare Vaccines</span>
-                                    <div class="list-group list-group-horizontal text-nowrap overflow-auto">
-                                        {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine) => {
-                                            return vaccine?.productProfiles && (
-                                                <table border={1} class="list-group-item">
-                                                    <tr>
-                                                        <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>VacciProfiles</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style={{ fontWeight: 'bold' }} align='center' colSpan={7}>{vaccine.name}</td>
-                                                    </tr>
-                                                    {platforms.map((key) => {
-                                                        return key === "name" ? null : (
-                                                            <>
-                                                                <tr>
-                                                                    <td colSpan={1} style={{ color: key === 'type' ? 'black' : 'gray', fontWeight: 'bold' }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                                                    <td colSpan={2} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
-                                                                    <td colSpan={2} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
-                                                                    <td colSpan={2} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
-                                                                </tr>
-                                                            </>
-
+                                    <span onClick={() => setCompareActive(!compareActive)} className='fw-bold cursor-pointer compare-color-text' style={{ marginTop: 20 }}>&#8226;{" "}Compare Vaccines</span>
+                                    {
+                                        compareActive && (
+                                            <div className='outer'>
+                                                <div className="d-inline-flex w-100 inner">
+                                                    {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine, vaccineIdx) => {
+                                                        return vaccine?.productProfiles && (
+                                                            <table style={{ marginLeft: vaccineIdx === 0 ? 400 : 0, overflow: 'hidden' }} className='table-fixed' key={vaccine.description} border={1}>
+                                                                {/* <thead>
+                                                            <tr>
+                                                                <td width={200} style={{ marginLeft: '50%', width: '20%', fontWeight: 'bold' }} colSpan={7} align='center'>VacciProfiles</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width={200} style={{ marginLeft: '50%', width: '20%', fontWeight: 'bold' }} align='center' colSpan={7}>{vaccine.name}</td>
+                                                            </tr>
+                                                        </thead> */}
+                                                                <tbody>
+                                                                    {platforms.map((key) => {
+                                                                        return key === "name" ? null : (
+                                                                            <>
+                                                                                <tr key={Math.random() * 999}>
+                                                                                    {vaccineIdx === 0 && (
+                                                                                        <td colSpan={1} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`align-middle ${vaccineIdx === 0 && 'fix'} ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                                                    )}
+                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
+                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
+                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
+                                                                                </tr>
+                                                                            </>
+                                                                        )
+                                                                    })}
+                                                                </tbody>
+                                                            </table>
                                                         )
-                                                    })}
-                                                </table>
-                                            )
-                                        }) : null}
-                                    </div>
+                                                    }) : null}
+                                                </div>
+                                            </div>
+                                        )
+                                    }
                                 </div>
                             </div>
                         </div>

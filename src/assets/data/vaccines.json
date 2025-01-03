@@ -2696,7 +2696,60 @@
     {
         "vaccineId": 136,
         "name": "Qdenga®",
-        "pathogenId": 30
+        "pathogenId": 30,
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Qdenga® (MAH: Takeda)",
+                "composition": "Dengue Virus serotypes 1,2,3,4 (live, attenuated); produced in Vero cells, recombinant DNA technology (GMO); storage: 2-8°C; shelf life: 18 months",
+                "strainCoverage": "Dengue tetravalent (all 4 virus serotypes) vaccine",
+                "indication": "Dengue prevention (against all 4 serotypes) in individuals > 4 years of age. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute febrile illness; immunosuppressed individuals*; pregnancy; breastfeeding.",
+                "dosing": "Two S.C. doses (0.5 mL each) e.g. in the deltoid region; 3-month intervals.",
+                "immunogenicity": "In the absence of correlates of protection for dengue, the clinical relevance of immunogenicity data remains to be fully understood.",
+                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "VEy in preventing VCD fever in children 4-16 years: 80.2% (CI 95% = 73.3, 85.3); VEy in preventing hospitalizations due to VCD fever: 90.4 (CI 95% =  82.6, 94.7.",
+                "durationOfProtection": "VEy in preventing VCD fever and hospitalizations in children 4-16 years 4.5 years after vaccination: 84.1% (CI 95% = 77.8, 88.6).",
+                "coAdministration": "Before use of IgG: 6 wk. - 3 mo. waiting period; can be administered with HepA vaccine (adults) or yellow fever vaccine.",
+                "reactogenicity": "Injection site pain (50%), headache (35%), myalgia (31%), injection site erythema (27%), malaise (24%), weakness (20%) and fever (11%).",
+                "safety": "Transient vaccine viremia was observed after 1st dose in 49% of study participants never infected and in 16% of study participants who had been previously infected. Vaccine viraemia was rarely detected after the second dose. ",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "Safety and efficacy of Qdenga in <4 years not yet established; no data on the use >60 years; limited data in patients with chronic medical conditions; no clinical efficacy study available in subjects >17 years of age, clinical efficacy for >17 years has been inferred from the clinical efficacy in 4-16 years."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Qdenga® (MAH:Takeda)",
+                "composition": "-",
+                "strainCoverage": "-",
+                "indication": "-",
+                "contraindication": "-",
+                "dosing": "-",
+                "immunogenicity": "-",
+                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "-",
+                "durationOfProtection": "-",
+                "coAdministration": "-",
+                "reactogenicity": "-",
+                "safety": "-",
+                "vaccinationGoal": "-",
+                "others": "-"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Qdenga® (MAH:Takeda)",
+                "composition": "Dengue Virus serotypes 1,2,3,4 (live, attenuated); produced in Vero cells, recombinant DNA technology (GMO); storage: 2-8°C; shelf life: 18 months",
+                "strainCoverage": "Dengue tetravalent (all 4 virus serotypes) vaccine",
+                "indication": "Dengue prevention (against all 4 serotypes) in individuals > 6 years of age. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute febrile illness; immunosuppressed individuals*; pregnancy; breastfeeding.",
+                "dosing": "Two S.C. doses (0.5 mL each) e.g. in the deltoid region; 3-month intervals.",
+                "immunogenicity": "In the absence of correlates of protection for dengue, the clinical relevance of immunogenicity data remains to be fully understood.",
+                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "VEy in preventing VCD fever in children 4-16 years: 80.2% (CI 95% = 73.3, 85.3); VEy in preventing hospitalizations due to VCD fever: 90.4 (CI 95% =  82.6, 94.7)",
+                "durationOfProtection": "VEy in preventing VCD fever and hospitalizations in children 4-16 years 4.5 years after vaccination: 84.1% (CI 95% = 77.8, 88.6).",
+                "coAdministration": "Before use of IgG: 6 wk. - 3 mo. waiting period; can be administered with HepA vaccine (adults) or yellow fever vaccine.",
+                "reactogenicity": "Very common (>10%): injection site pain or redness, headache, muscle pain, generally feeling unwell, weakness, infections of the nose or throat, fever.",
+                "safety": "Transient vaccine viremia was observed after 1st dose in 49% of study participants never infected and in 16% of study participants who had been previously infected. Vaccine viraemia was rarely detected after the second dose. ",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No data in adults above 60 years of age."
+            }
+        ]
     },
     {
         "vaccineId": 137,

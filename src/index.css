@@ -12,6 +12,48 @@ code {
     monospace;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
+}
+
+.table-fixed {
+  table-layout: fixed;
+  width: 100%;
+  /*ie7*/
+}
+
+.fixed-td,
+.fixed-th {
+  vertical-align: top;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  width: 100px;
+}
+
+.fix {
+  position: absolute;
+  /*ie7*/
+  margin-left: -400px;
+  width: 400px;
+  z-index: 9999;
+  background: rgba(88, 26, 233, 1);
+}
+
+.compare-color {
+  background: rgba(88, 26, 233, 1);
+}
+
+.compare-color-text {
+  color: rgba(88, 26, 233, 1);
+}
+
+.outer {
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  overflow-x: scroll;
+  overflow-y: visible;
+  width: 900px;
 }

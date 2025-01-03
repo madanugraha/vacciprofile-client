@@ -642,10 +642,10 @@ const Main = ({
                                                                                     <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
                                                                                 </tr>
                                                                                 {/** LICENSING TARGET 1 */}
-                                                                                <tr>
+                                                                                {/* <tr>
                                                                                     <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing ({targetCompareVaccine1})</td>
-                                                                                </tr>
-                                                                                <tr>
+                                                                                </tr> */}
+                                                                                {/* <tr>
                                                                                     <td style={{ fontWeight: 'bold', color: 'gray' }}>Link</td>
                                                                                     <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Licensing/ SmPC</td>
                                                                                     <td style={{ fontWeight: 'bold', color: 'gray' }} colSpan={2}>Indication</td>
@@ -668,9 +668,9 @@ const Main = ({
                                                                                     }) : <tr>
                                                                                         <td colSpan={5}>- No Data Available -</td>
                                                                                     </tr>
-                                                                                }
+                                                                                } */}
                                                                                 {/** LICENSING TARGET 2 */}
-                                                                                <tr>
+                                                                                {/* <tr>
                                                                                     <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>Licensing ({targetCompareVaccine2})</td>
                                                                                 </tr>
                                                                                 <tr>
@@ -696,7 +696,7 @@ const Main = ({
                                                                                     }) : <tr>
                                                                                         <td colSpan={5}>- No Data Available -</td>
                                                                                     </tr>
-                                                                                }
+                                                                                } */}
                                                                                 <tr>
                                                                                     <td style={{ fontWeight: 'bold' }} colSpan={7} align='center'>VacciProfiles</td>
                                                                                 </tr>
@@ -717,77 +717,6 @@ const Main = ({
 
                                                                                     )
                                                                                 })}
-                                                                                <tr>
-                                                                                    <td colSpan={7} align='center' style={{ fontWeight: 'bold' }}>General Information</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold' }}>Factor</td>
-                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
-                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Map Vaccine Preventable Diseases</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["General Information"]["Map Vaccine Preventable Diseases"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Map Vaccine Preventable Diseases"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Vaccine SmPCs (FDA, EMA, WHO, others)</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["General Information"]["Vaccine SmPCs (FDA, EMA, WHO, others)"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Vaccine SmPCs (FDA, EMA, WHO, others)"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Product profiles</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["General Information"]["Product profiles"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Product profiles"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Pipeline products - summary table</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Pipeline products - summary table"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Pipeline products - summary table"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Failed products</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["General Information"]["Failed products"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["General Information"]["Failed products"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td colSpan={7} style={{ fontWeight: 'bold' }} align='center'>Company products, pipeline</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold' }}>Factor</td>
-                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
-                                                                                    <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine2}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>VPD-BoD, Product presentations, Monograph</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["VPD-BoD, Product presentations, Monograph"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["VPD-BoD, Product presentations, Monograph"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Pivotal publications / data vaccines</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["Pivotal publications / data vaccines"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["Pivotal publications / data vaccines"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Interviews</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["Interviews"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["Interviews"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Relevant literature</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["Relevant literature"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["Relevant literature"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Pipeline products - detailed information (TPP)</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.introduction ? getVaccineDetailByName(targetCompareVaccine1)?.introduction["Company products, pipeline"]["Pipeline products - detailed information (TPP)"] : "-"}</td>
-                                                                                    <td colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.introduction ? getVaccineDetailByName(targetCompareVaccine2)?.introduction["Company products, pipeline"]["Pipeline products - detailed information (TPP)"] : "-"}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style={{ fontWeight: 'bold', color: 'gray' }}>Last Updated</td>
-                                                                                    <td style={{ fontWeight: 'bold' }} align='right' colSpan={3}>{getVaccineDetailByName(targetCompareVaccine1)?.lastUpdated}</td>
-                                                                                    <td style={{ fontWeight: 'bold' }} align='right' colSpan={3}>{getVaccineDetailByName(targetCompareVaccine2)?.lastUpdated}</td>
-                                                                                </tr>
                                                                             </table>
                                                                         </>
 
