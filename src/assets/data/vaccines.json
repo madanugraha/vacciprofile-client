@@ -68,10 +68,7 @@
                 "name": "FDA-Product Profile: Abrysvo™ (Pfizer)<br/>Respiratory Syncytial Virus (RSV) vaccine",
                 "composition": "Abrysvo contains RSVPreF, a protein-based vaccine designed to prevent RSV infections in targeted populations.",
                 "strainCoverage": "RSV strains A and B.",
-                "indication": {
-                    "Pregnant individuals": "Protects infants from birth to 6 months from RSV-related lower respiratory tract disease (LRTD) when administered between 32 to 36 weeks of pregnancy.",
-                    "Adults 60+": "Prevents LRTD caused by RSV in older adults."
-                },
+                "indication": "Protects infants from birth to 6 months from RSV-related lower respiratory tract disease (LRTD) when administered between 32 to 36 weeks of pregnancy. Prevents LRTD caused by RSV in older adults.",
                 "dosing": "Single-dose intramuscular injection.",
                 "immunogenicity": "Demonstrated strong immune response in pregnant women and older adults, with high neutralizing antibody levels against RSV.",
                 "efficacyEndpointsPhase3": "Reduction in RSV-related lower respiratory tract disease in infants and older adults.",
