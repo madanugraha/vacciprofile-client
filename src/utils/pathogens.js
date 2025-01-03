@@ -43,6 +43,27 @@ export const getPathogenVaccinesByName = (name) => {
     }
 };
 
+export const getPathogenVaccinesByArrayName = (name) => {
+    const data = vaccines;
+    const tempArray = [];
+
+    if (name && name.length > 0) {
+        name.map((n) => {
+            const result = data.filter((vac) => vac.name === n);
+            if (result.length > 0) {
+                const data = result[0];
+                tempArray.push(data);
+            } else {
+                return []
+            }
+        })
+    } else {
+        return []
+    }
+
+    return tempArray.length > 0 ? tempArray : []
+};
+
 export const getVaccineDetailByName = (name) => {
     const data = vaccines;
     const result = data.filter((vac) => vac.name === name);

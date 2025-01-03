@@ -9,12 +9,11 @@ import PipelineVaccineListTable from './information/PipelineVaccineListTable';
 import manufacturers from '../assets/data/manufacturers.json';
 import pathogens from '../assets/data/pathogens.json';
 import vaccines from '../assets/data/vaccines.json';
-import { getLicenserDetailById, getManufactureDetailByName, getPathogenDetailById, getPathogenVaccinesByName, getProductProfileTypeByVaccineName, getProductProfileValueByVaccineName, getVaccineDetailById, getVaccineDetailByName } from '../utils/pathogens';
+import { getLicenserDetailById, getManufactureDetailByName, getPathogenDetailById, getPathogenVaccinesByArrayName, getPathogenVaccinesByName, getProductProfileValueByVaccineNameAndType, getVaccineDetailById, getVaccineDetailByName } from '../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import ReactModal from 'react-modal';
 import { toast } from 'react-toastify';
-
 
 const style = {
     position: 'absolute',
@@ -632,11 +631,37 @@ const Main = ({
                                                                     </div>
                                                                     <div className='d-flex flex-column' style={{ marginBottom: 10 }}>
                                                                         <span style={{ fontWeight: 'bolder', fontSize: 18 }}>Comparison Result</span>
-                                                                        <span style={{ marginBottom: 20 }}>Between: {targetCompareVaccine1 || targetCompare1} and {targetCompareVaccine2 || targetCompare2}</span>
+                                                                        <span style={{ marginBottom: 20 }}>Between: {targetCompareVaccine1} and {targetCompareVaccine2}</span>
                                                                     </div>
                                                                     {compareState === "compare-result-pathogen" && (
                                                                         <>
-                                                                            <table border={1}>
+                                                                            <div className='outer'>
+                                                                                <div className="d-inline-flex w-100 inner">
+                                                                                    {getPathogenVaccinesByArrayName([targetCompareVaccine1, targetCompareVaccine2]).length > 0 ? getPathogenVaccinesByArrayName([targetCompareVaccine1, targetCompareVaccine2]).map((vaccine, vaccineIdx) => {
+                                                                                        return vaccine?.productProfiles && (
+                                                                                            <table style={{ marginLeft: vaccineIdx === 0 ? 400 : 0, overflow: 'hidden' }} className='table-fixed' key={vaccine.description} border={1}>
+                                                                                                <tbody>
+                                                                                                    {platforms.map((key) => {
+                                                                                                        return key === "name" ? null : (
+                                                                                                            <>
+                                                                                                                <tr key={Math.random() * 999}>
+                                                                                                                    {vaccineIdx === 0 && (
+                                                                                                                        <td colSpan={1} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`align-middle ${vaccineIdx === 0 && 'fix'} ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                                                                                    )}
+                                                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
+                                                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
+                                                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
+                                                                                                                </tr>
+                                                                                                            </>
+                                                                                                        )
+                                                                                                    })}
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        )
+                                                                                    }) : null}
+                                                                                </div>
+                                                                            </div>
+                                                                            {/* <table border={1}>
                                                                                 <tr>
                                                                                     <td style={{ fontWeight: 'bold' }}>Name</td>
                                                                                     <td colSpan={3} style={{ fontWeight: 'bold' }}>{targetCompareVaccine1}</td>
@@ -662,9 +687,8 @@ const Main = ({
 
                                                                                     )
                                                                                 })}
-                                                                            </table>
+                                                                            </table> */}
                                                                         </>
-
                                                                     )}
                                                                     {compareState === "compare-result-vaccine" && (
                                                                         <table>
