@@ -204,28 +204,23 @@ const Vaccine = ({
         )} */}
         {selectedVaccine.productProfiles && (
             <div className="d-inline-flex w-100 inner">
-                {getVaccinesByPathogenId(selectedVaccine.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedVaccine.pathogenId).map((vaccine, vaccineIdx) => {
-                    return vaccine?.productProfiles && (
-                        <table style={{ overflow: 'hidden' }} key={vaccine.description} border={1}>
-                            <tbody>
-                                {platforms.map((key) => {
-                                    return key === "name" ? null : (
-                                        <>
-                                            <tr key={Math.random() * 999}>
-                                                {vaccineIdx === 0 && (
-                                                    <td colSpan={1} style={{ color: key === 'type' ? 'white' : 'black', fontWeight: 'bold' }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                                )}
-                                                <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
-                                                <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
-                                                <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
-                                            </tr>
-                                        </>
-                                    )
-                                })}
-                            </tbody>
-                        </table>
-                    )
-                }) : null}
+                <table style={{ overflow: 'hidden' }} key={selectedVaccine.description} border={1}>
+                    <tbody>
+                        {platforms.map((key) => {
+                            return key === "name" ? null : (
+                                <>
+                                    <tr>
+                                        <td colSpan={1} style={{ color: key === 'type' ? 'white' : 'black', fontWeight: 'bold' }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, selectedVaccine.name)}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, selectedVaccine.name)}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, selectedVaccine.name)}</td>
+                                    </tr>
+                                </>
+                            )
+                        })}
+                    </tbody>
+                </table>
+                )
             </div>
         )}
         {/* {selectedVaccine.introduction && (
