@@ -29,10 +29,10 @@ export const getPathogenDetailByName = (name) => {
 
 export const getPathogenVaccinesByName = (name) => {
     const data = pathogens;
-    const result = data.filter((vac) => vac.name === name);
+    const result = data.filter((vac) => vac.name === name)
     if (result.length > 0) {
         const data = result[0];
-        const vaccines = getVaccineListByPathogenId(data.pathogenId);
+        const vaccines = getVaccineListByPathogenId(data.pathogenId).sort((a, b) => a.name.localeCompare(b.name));
         if (vaccines && vaccines.length > 0) {
             return vaccines;
         } else {
