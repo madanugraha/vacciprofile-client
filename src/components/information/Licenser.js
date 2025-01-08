@@ -1,4 +1,5 @@
 import React from 'react';
+import { removeDuplicatesFromArray, sortArrayAscending } from '../../utils/array';
 
 /**
  * Licenser Component
@@ -59,7 +60,7 @@ const Licenser = ({
                         <div>
                             <div className='mt-4' style={{ paddingLeft: 10 }}>
                                 <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
-                                {getVaccinesByLicenser(selectedLicenser) && getVaccinesByLicenser(selectedLicenser).length > 0 ? getVaccinesByLicenser(selectedLicenser).map((vaccine, index) => (
+                                {removeDuplicatesFromArray(getVaccinesByLicenser(selectedLicenser), "name") && removeDuplicatesFromArray(getVaccinesByLicenser(selectedLicenser), "name").length > 0 ? sortArrayAscending(removeDuplicatesFromArray(getVaccinesByLicenser(selectedLicenser), "name"), "name").map((vaccine, index) => (
                                     <div onClick={() => handleSelectVaccine(vaccine)} className='flex flex-row mb-2 cursor-pointer' style={{ marginLeft: 12, marginTop: 5 }}>
                                         &#8226;{" "}
                                         <span className='mt-2'>{vaccine.name}</span>

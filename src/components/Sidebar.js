@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { removeDuplicatesFromArray } from '../utils/array';
+import { removeDuplicatesFromArray, sortArrayAscending } from '../utils/array';
 
 /**
  * Sidebar Component
@@ -255,7 +255,7 @@ const Sidebar = ({
                     >Licensing authorities in other countries
                     </div>
                 )}
-                {showCountries && sidebarList.filter(item => !licenserFilter.includes(item.acronym)).map((item, i) => (
+                {showCountries && sortArrayAscending(sidebarList.filter(item => !licenserFilter.includes(item.acronym)), "acronym").map((item, i) => (
                     <div
                         key={`country-${i}`}
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${selectedLicenser === item ? 'active' : 'inactive'}`}

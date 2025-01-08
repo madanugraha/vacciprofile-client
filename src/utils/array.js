@@ -8,4 +8,11 @@ export const removeDuplicatesFromArray = (arr, prop) => {
         }, [])
     };
     return [];
+};
+
+export const sortArrayAscending = (arr, prop) => {
+    if (arr && arr.length > 0) {
+        return arr.sort((a, b) => a[prop].localeCompare(b[prop]))
+    }
+    return []
 }
