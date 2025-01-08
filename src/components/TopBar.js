@@ -32,9 +32,9 @@ const TopBar = ({
                 <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => handleTabChange('Licenser')}>
                     Licensing Authorities
                 </li>
-                <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
+                {/* <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
                     Comparison
-                </li>
+                </li> */}
             </ul>
             <div className='search-container mb-3'>
                 <span className="position-relative">

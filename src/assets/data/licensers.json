@@ -2,22 +2,24 @@
   {
     "licenserId": 1,
     "acronym": "FDA",
+    "region": "(USA)",
     "fullName": "U.S. Food and Drug Administration",
-    "description": "The FDA is a U.S. government agency responsible for protecting public health by ensuring the safety, efficacy, and security of drugs, biological products, medical devices, food, and cosmetics.",
+    "description": "The Food and Drug Administration (FDA) is a U.S. federal agency responsible for protecting public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, medical devices, food, cosmetics, and tobacco products. It regulates the development and marketing of these products, monitors adverse events, and enforces laws to ensure compliance with standards that promote consumer safety and innovation.",
     "website": "https://www.fda.gov"
   },
   {
     "licenserId": 2,
     "acronym": "EMA",
+    "region": "(Europe)",
     "fullName": "European Medicines Agency",
-    "description": "The EMA is a European Union agency that evaluates and supervises medicinal products to ensure their safety and effectiveness within the EU.",
+    "description": "The European Medicines Agency (EMA) is a decentralized agency of the European Union responsible for evaluating, monitoring, and approving medicinal products for human and veterinary use across Europe. Headquartered in Amsterdam, the EMA ensures the safety, efficacy, and quality of medicines, fostering innovation while safeguarding public and animal health.",
     "website": "https://www.ema.europa.eu"
   },
   {
     "licenserId": 3,
     "acronym": "WHO",
     "fullName": "World Health Organization",
-    "description": "The WHO is a specialized agency of the United Nations responsible for international public health, providing leadership on global health matters, and coordinating health-related initiatives.",
+    "description": "The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health. Established in 1948, its primary role is to coordinate global health responses, set health standards, and provide leadership on critical health issues to promote better health outcomes worldwide.",
     "website": "https://www.who.int"
   },
   {

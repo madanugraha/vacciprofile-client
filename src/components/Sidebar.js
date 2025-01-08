@@ -143,7 +143,7 @@ const Sidebar = ({
                             handleClickSidebar(item)
                         }}
                     >
-                        {activeTab === "Pathogen" ? italizeScientificNames(item.name) : activeTab === "Compare" ? item.name : activeTab != "Licenser" ? item.name : item.acronym}
+                        {activeTab === "Pathogen" ? italizeScientificNames(item.name) : activeTab === "Compare" ? item.name : activeTab !== "Licenser" ? item.name : `${item.acronym} ${item?.region || ""}`}
                     </div>
                 ))}
                 {activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (
@@ -152,7 +152,7 @@ const Sidebar = ({
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${showCountries ? 'active-country' : 'inactive'
                             }`}
                         onClick={() => handleClickSidebar({ name: 'Countries' })}
-                    >Country Authorities
+                    >Licensing authorities in other countries
                     </div>
                 )}
                 {showCountries && sidebarList.filter(item => !licenserFilter.includes(item.acronym)).map((item, i) => (
@@ -160,7 +160,7 @@ const Sidebar = ({
                         key={`country-${i}`}
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${selectedLicenser === item ? 'active' : 'inactive'}`}
                         onClick={() => handleClickSidebar(item)}
-                    >{item.country && `${item.country}, ${item.acronym}`}
+                    >{item.country && `${item.country}, ${item.fullName}`}
                     </div>
                 ))}
             </div>
