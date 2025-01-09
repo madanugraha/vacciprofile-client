@@ -3,6 +3,9 @@ import { getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } f
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Vaccine from './Vaccine';
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
 
 
 const style = {
@@ -50,6 +53,9 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
             : string.replace(/([A-Z])/g, ' $1');
         return formattedString.charAt(0).toUpperCase() + formattedString.slice(1);
     };
+    const [compareSubmitted, setCompareSubmitted] = useState(false);
+
+
 
     const platforms = [
         "type",
@@ -72,6 +78,56 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
     ];
 
     const [compareActive, setCompareActive] = useState(false);
+
+    const tableFields = [
+        { title: 'Type', alt: 'type' },
+        { title: 'Name', alt: 'name' },
+        { title: 'Composition/Platform', alt: 'composition' },
+        { title: 'Strain Coverage', alt: 'strainCoverage' },
+        { title: 'Indication', alt: 'indication' },
+        { title: 'Dosing', alt: 'dosing' },
+        { title: 'Contraindication', alt: 'contraindication' },
+        { title: 'Immunogenicity', alt: 'immunogenicity' },
+        { title: 'Immunogenicity', alt: 'immunogenicity' },
+        { title: 'Efficacy(VEy vs virologically confirmed dengue (VCD))', alt: 'Efficacy(VEy vs virologically confirmed dengue (VCD))' },
+        { title: 'Duration of Protection', alt: 'durationOfProtection' },
+        { title: 'Co-Administration', alt: 'coAdministration' },
+        { title: 'Reactogenicity', alt: 'reactogenicity' },
+        { title: 'Safety', alt: 'safety' },
+        { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
+        { title: 'Others', alt: 'others' }
+    ];
+
+    const vaccineFields = getVaccinesByPathogenId(selectedPathogen.pathogenId) && getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((x) => {
+        return {
+            ...x,
+            title: x.name,
+            alt: x.name
+        }
+    }) : []
+    const licenserFields = [
+        {
+            title: 'FDA',
+            alt: 'fda'
+        },
+        {
+            title: 'EMA',
+            alt: 'ema'
+        },
+        {
+            title: 'WHO',
+            alt: 'who'
+        }
+    ];
+
+    const [selectedFilterVaccine, setSelectedFilterVaccine] = useState([vaccineFields[0]]);
+    const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1]]);
+    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0]]);
+
+    const handleProceedComparison = () => {
+        console.log(selectedFilterVaccine, selectedFilterLicenser, selectedFilterTableFields)
+        setCompareSubmitted(true);
+    };
 
     return (
         <>
@@ -139,24 +195,114 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                         </div>
                                     )}
                                     <span onClick={() => setCompareActive(!compareActive)} className='fw-bold cursor-pointer compare-color-text' style={{ marginTop: 20 }}>&#8226;{" "}Compare Vaccines</span>
+
                                     {
                                         compareActive && (
+                                            <>
+                                                <div style={{ marginTop: 20, zIndex: 99999 }}>
+                                                    <Stack spacing={3} sx={{ width: 500 }}>
+                                                        <Autocomplete
+                                                            multiple
+                                                            id="tags-standard"
+                                                            options={vaccineFields}
+                                                            getOptionLabel={(option) => option.title}
+                                                            defaultValue={[vaccineFields[0]]}
+                                                            onChange={(event, newValue) => {
+                                                                setSelectedFilterVaccine(newValue);
+                                                            }}
+                                                            limitTags={3}
+                                                            renderInput={(params) => (
+                                                                <TextField
+                                                                    {...params}
+                                                                    variant="standard"
+                                                                    label="Select Vaccines (Max. 3)"
+                                                                    placeholder=""
+                                                                />
+                                                            )}
+                                                        />
+                                                    </Stack>
+                                                    <div style={{ marginTop: 10 }}>
+                                                        <Stack spacing={3} sx={{ width: 500 }}>
+                                                            <Autocomplete
+                                                                multiple
+                                                                id="tags-standard"
+                                                                options={licenserFields}
+                                                                getOptionLabel={(option) => option.title}
+                                                                defaultValue={[licenserFields[0], licenserFields[1]]}
+                                                                onChange={(event, newValue) => {
+                                                                    setSelectedFilterLicenser(newValue);
+                                                                }}
+                                                                renderInput={(params) => (
+                                                                    <TextField
+                                                                        {...params}
+                                                                        variant="standard"
+                                                                        label="Select Licensing Authorities"
+                                                                        placeholder=""
+                                                                    />
+                                                                )}
+                                                            />
+                                                        </Stack>
+                                                    </div>
+                                                    <div style={{ marginTop: 10 }}>
+                                                        <Stack spacing={3} sx={{ width: 500 }}>
+                                                            <Autocomplete
+                                                                multiple
+                                                                id="tags-standard"
+                                                                options={tableFields}
+                                                                getOptionLabel={(option) => option.title}
+                                                                defaultValue={[tableFields[0]]}
+                                                                onChange={(event, newValue) => {
+                                                                    setSelectedFilterTableFields(newValue);
+                                                                }}
+                                                                renderInput={(params) => (
+                                                                    <TextField
+                                                                        {...params}
+                                                                        variant="standard"
+                                                                        label="Select items need to be shown"
+                                                                        placeholder=""
+                                                                    />
+                                                                )}
+                                                            />
+                                                        </Stack>
+                                                    </div>
+                                                </div>
+                                                <p onClick={() => {
+                                                    handleProceedComparison();
+                                                }} className='fw-bold cursor-pointer compare-color-text' style={{ marginTop: 20 }}>&#8226;{" "}Proceed Comparison</p>
+                                            </>
+                                        )
+                                    }
+                                    {
+                                        compareSubmitted && (
                                             <div className='outer'>
                                                 <div className="d-inline-flex w-100 inner">
-                                                    {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine, vaccineIdx) => {
+                                                    {selectedFilterVaccine.length > 0 ? selectedFilterVaccine.map((vaccine, vaccineIdx) => {
                                                         return vaccine?.productProfiles && (
                                                             <table style={{ marginLeft: vaccineIdx === 0 ? 400 : 0, overflow: 'hidden' }} className='table-fixed' key={vaccine.description} border={1}>
                                                                 <tbody>
-                                                                    {platforms.map((key) => {
+                                                                    {selectedFilterTableFields.map((field) => {
+                                                                        const key = field.alt;
                                                                         return key === "name" ? null : (
                                                                             <>
                                                                                 <tr key={Math.random() * 999}>
                                                                                     {vaccineIdx === 0 && (
                                                                                         <td colSpan={1} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`align-middle ${vaccineIdx === 0 && 'fix'} ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                                                     )}
-                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
-                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
-                                                                                    <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
+                                                                                    {
+                                                                                        selectedFilterLicenser.some((x) => x.title === "EMA") && (
+                                                                                            <td width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
+                                                                                        )
+                                                                                    }
+                                                                                    {
+                                                                                        selectedFilterLicenser.some((x) => x.title === "FDA") && (
+                                                                                            <td width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
+                                                                                        )
+                                                                                    }
+                                                                                    {
+                                                                                        selectedFilterLicenser.some((x) => x.title === 'WHO') && (
+                                                                                            <td width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
+                                                                                        )
+                                                                                    }
                                                                                 </tr>
                                                                             </>
                                                                         )
