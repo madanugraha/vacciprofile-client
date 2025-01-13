@@ -33,9 +33,9 @@ code {
 .fix {
   position: absolute;
   /*ie7*/
-  margin-left: -400px;
-  width: 400px;
-  z-index: 9999;
+  margin-left: -200px;
+  width: 200px;
+  z-index: 10;
   background: rgba(88, 26, 233, 1);
 }
 
@@ -56,4 +56,9 @@ code {
   overflow-x: scroll;
   overflow-y: visible;
   width: 900px;
+}
+
+.subgroup-colour {
+  color: black !important;
+  background-color: #C7EAE4 !important;
 }

@@ -168,7 +168,7 @@ const Vaccine = ({
             {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
         </h1>
         {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
-        {/* {selectedVaccine.licensingDates && (
+        {selectedVaccine.licensingDates && (
             <table className='table table-light table-striped w-100 m-0'>
                 <thead>
                     <tr>
@@ -201,7 +201,7 @@ const Vaccine = ({
                     ))}
                 </tbody>
             </table>
-        )} */}
+        )}
         {selectedVaccine.productProfiles && (
             <div className="d-inline-flex w-100 inner">
                 <table style={{ overflow: 'hidden' }} key={selectedVaccine.description} border={1}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { removeDuplicatesFromArray } from '../../utils/array';
 
 /**
  * VaccineListTable Component
@@ -68,7 +69,7 @@ const VaccineListTable = ({
                                 </tr>
                             </thead>
                             <tbody>
-                                {getVaccinesByManufacturer().map((vaccine, key) => <tr key={key}>
+                                {getVaccinesByManufacturer().sort((a, b) => a.name.localeCompare(b.name)).map((vaccine, key) => <tr key={key}>
                                     <td className='vaccine-cell'>
                                         <span
                                             className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}

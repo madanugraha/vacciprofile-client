@@ -454,6 +454,7 @@ const Main = ({
                                     /> : activeTab === "Vaccine"
                                         ? <Vaccine
                                             selectedVaccine={selectedVaccine}
+                                            italizeScientificNames={italizeScientificNames}
                                             convertCamelCaseToReadable={convertCamelCaseToReadable}
                                         /> : activeTab === "Manufacturer"
                                             ? <ManufacturerProfile
