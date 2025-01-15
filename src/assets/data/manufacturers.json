@@ -2918,5 +2918,102 @@
             }
         ],
         "lastUpdated": "2024-Dec"
+    },
+    {
+        "manufacturerId": 64,
+        "name": "Dynavax Technologies Corporation",
+        "description": "A commercial-stage biopharmaceutical company focused on developing and commercializing novel vaccines to protect against infectious diseases.",
+        "history": "Dynavax Technologies Corporation has been involved in the development of innovative vaccines, with a notable achievement being the FDA approval of Heplisav-B for the prevention of hepatitis B in adults. The company has a strong commitment to utilizing proven adjuvant technology in its vaccine development.",
+        "details": {
+            "founded": "Not specified",
+            "headquarters": "Emeryville, CA, USA",
+            "ceo": "Not specified",
+            "revenue": "Not specified",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "275 (U.S.-based)",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Dynavax Technologies Corporation - Drugs.com",
+                    "link": "https://www.drugs.com/manufacturer/dynavax-technologies-corporation-611.html"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Dynavax Technologies Corporation - Official Website",
+                    "link": "https://www.dynavax.com"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Working at Dynavax - Great Place To Work",
+                    "link": "https://www.greatplacetowork.com/certified-company/7052307"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Heplisav-B",
+                "description": "A hepatitis B vaccine for adults, utilizing Dynavax's CpG 1018 adjuvant technology."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 65,
+        "name": "Beijing Institute of Biological Products",
+        "description": "A leading Chinese manufacturer specializing in the research, development, and production of vaccines and biological products, particularly known for its COVID-19 vaccine.",
+        "history": "Established as a significant player in the Chinese pharmaceutical industry, the Beijing Institute of Biological Products (BIBP) has been at the forefront of vaccine development since its inception. In recent years, especially during the COVID-19 pandemic, BIBP expanded its operations and capabilities to meet the increasing demand for vaccines. It is part of the China National Pharmaceutical Group (Sinopharm) and has played a crucial role in developing inactivated vaccines for various diseases, including COVID-19. The institute has also been involved in international collaborations to enhance vaccine distribution and efficacy.",
+        "details": {
+            "founded": "1998",
+            "headquarters": "Beijing, China",
+            "ceo": "Zhang Yuntao",
+            "revenue": "$1 Billion",
+            "operatingIncome": "$300 Million",
+            "netIncome": "$200 Million",
+            "totalAssets": "$1.5 Billion",
+            "totalEquity": "$1 Billion",
+            "numberOfEmployees": "5,000",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Beijing Institute of Biological Products Official Website - About Us",
+                    "link": "https://www.bjbpi.com/About-Us/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Sinopharm Group and Beijing Institute of Biological Products - GenEngNews",
+                    "link": "https://www.genengnews.com/news/sinopharm-group-china-national-biotech-group-beijing-institute-of-biological-products-and-chinese-center-for-disease-control-and-prevention/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Beijing Institute of Biological Products - Lindström Group",
+                    "link": "https://lindstromgroup.com/beijing-institute-of-biological-products-focusing-on-covid-19-vaccinations/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "BBIBP-CorV",
+                "type": "Inactivated vaccine",
+                "targetDisease": "COVID-19"
+            },
+            {
+                "name": "Poliomyelitis Vaccine",
+                "type": "Inactivated vaccine",
+                "targetDisease": "Poliomyelitis"
+            },
+            {
+                "name": "Measles, Mumps, and Rubella Combined Vaccine",
+                "type": "Live attenuated vaccine",
+                "targetDisease": [
+                    "Measles",
+                    "Mumps",
+                    "Rubella"
+                ]
+            }
+        ],
+        "lastUpdated": "2024-Aug"
     }
 ]

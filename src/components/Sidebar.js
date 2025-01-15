@@ -98,6 +98,9 @@ const Sidebar = ({
                 }
             } else if (activeTab === 'Pathogen') {
                 if (item !== selectedPathogen) {
+                    const timeout = setTimeout(() => {
+                        setAnimationClass('slide-right');
+                    }, 20);
                     setSelectedPathogen(item);
                     setActiveTab('Pathogen');
                 } else {

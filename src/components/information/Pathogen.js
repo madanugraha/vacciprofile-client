@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
@@ -96,13 +96,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Others', alt: 'others' }
     ];
 
-    const vaccineFields = getVaccinesByPathogenId(selectedPathogen.pathogenId) && getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((x) => {
-        return {
-            ...x,
-            title: x.name,
-            alt: x.name
-        }
-    }) : []
     const licenserFields = [
         {
             title: 'FDA',
@@ -118,6 +111,18 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         }
     ];
 
+    const vaccineFields = getVaccinesByPathogenId(selectedPathogen.pathogenId) && getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((x) => {
+        return {
+            ...x,
+            title: x.name,
+            alt: x.name,
+            licenser: [licenserFields[0]],
+            hasDuplicate: false,
+            errorMessage: ""
+        }
+    }) : [];
+
+    const [licenserFieldsVaccine, setLicenserFieldsVaccine] = useState([vaccineFields[0]]);
     const [selectedFilterVaccine, setSelectedFilterVaccine] = useState([vaccineFields[0]]);
     const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1]]);
     const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1]]);
@@ -127,13 +132,41 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
     };
 
     const [duplicateVaccineError, setDuplicateVaccineError] = useState(false);
-    const [dupicateLicenserError, setDuplicateLicenserError] = useState(false);
     const [duplicateTableFieldsError, setDuplicateTableFieldsError] = useState(false);
 
     const [vaccineErrorMessage, setVaccineErrorMessage] = useState("");
-    const [licenserErrorMessage, setLicenserErrorMessage] = useState("");
     const [tableFieldsErrorMessage, setTableFieldsErrorMessage] = useState("");
 
+
+    const handleSelectLicenserFieldsVaccine = (name, value) => {
+        if (name) {
+            const n = licenserFieldsVaccine;
+            const c = n.some((x) => x.name === name);
+            if (c) {
+                const f = n.map((x) => {
+                    if (x.name === name) {
+                        return {
+                            ...value
+                        }
+                    } else {
+                        return {
+                            ...x
+                        }
+                    }
+                });
+                setLicenserFieldsVaccine(f);
+                return;
+            } else {
+                setLicenserFieldsVaccine([...value]);
+            }
+        }
+    };
+
+    useEffect(() => {
+        setCompareActive(false);
+        setLicenserFieldsVaccine([]);
+        setSelectedFilterVaccine([]);
+    }, [selectedPathogen])
     return (
         <>
             <div className="accordion" id="accordianPathogenInfo">
@@ -156,7 +189,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                     <ul>
                                         {selectedPathogen?.bulletpoints ? selectedPathogen?.bulletpoints.split('|').map((bullet) => {
                                             return (
-                                                <li className='flex flex-row mb-2'>
+                                                <li key={bullet} className='flex flex-row mb-2'>
                                                     <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(selectedPathogen.name, `<span classname="text-primary" style={{ color: "blue" }}>${selectedPathogen.name}</span>`) }}></div>
                                                 </li>
                                             )
@@ -186,7 +219,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                     <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
                                     {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine) => {
                                         return (
-                                            <div onClick={() => {
+                                            <div key={Math.random() * 999} onClick={() => {
                                                 // setSelectedVaccine(vaccine)
                                                 // setOpen(true)
                                             }} className='flex flex-row' style={{ marginLeft: 12, marginTop: 5 }}>
@@ -220,7 +253,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 if (event.target?.textContent &&
                                                                     selectedFilterVaccine.some((item) => item.title === (event.target)?.textContent)
                                                                 ) {
-                                                                    setVaccineErrorMessage(`${(event.target)?.textContent} cannot have more than one`);
+                                                                    setVaccineErrorMessage(`${(event.target)?.textContent} cannot be duplicated`);
                                                                     setDuplicateVaccineError(true);
                                                                     return;
                                                                 }
@@ -232,21 +265,14 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
 
                                                                 setDuplicateVaccineError(false);
                                                                 setSelectedFilterVaccine(newValue);
+                                                                const obj = {
+                                                                    name: (event.target)?.textContent,
+                                                                    licenser: [licenserFields[0]],
+                                                                    hasDuplicate: false,
+                                                                    errorMessage: ""
+                                                                };
+                                                                setLicenserFieldsVaccine([...licenserFieldsVaccine, obj]);
                                                             }}
-                                                            // onKeyUp={(event) => {
-                                                            //     if (event.target?.textContent &&
-                                                            //         selectedFilterVaccine.some((item) => item.title === (event.target)?.textContent)
-                                                            //     ) {
-                                                            //         setDuplicateVaccineError(true);
-                                                            //         return;
-                                                            //     }
-                                                            //     if (selectedFilterVaccine.length > 2) {
-                                                            //         setVaccineErrorMessage(`Vaccine selection limited by 2.`);
-                                                            //         setDuplicateVaccineError(true);
-                                                            //         return
-                                                            //     }
-                                                            //     setDuplicateVaccineError(false);
-                                                            // }}
                                                             autoComplete
                                                             freeSolo
                                                             limitTags={3}
@@ -262,64 +288,52 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                             )}
                                                         />
                                                     </Stack>
-                                                    <div style={{ marginTop: 10 }}>
-                                                        <Stack spacing={3} sx={{ width: 500 }}>
-                                                            <Autocomplete
-                                                                multiple
-                                                                id="tags-standard"
-                                                                options={licenserFields}
-                                                                value={selectedFilterLicenser}
-                                                                getOptionLabel={(option) => option.title}
-                                                                defaultValue={[licenserFields[0]]}
-                                                                autoComplete
-                                                                freeSolo
-                                                                limitTags={3}
-                                                                onChange={(event, newValue) => {
-                                                                    if (event.target?.textContent &&
-                                                                        selectedFilterLicenser.some((item) => item.title === (event.target)?.textContent)
-                                                                    ) {
-                                                                        setLicenserErrorMessage(`${(event.target)?.textContent} cannot have more than one`)
-                                                                        setDuplicateLicenserError(true);
-                                                                        return;
-                                                                    }
-
-                                                                    // if (newValue.length > 2) {
-                                                                    //     setLicenserErrorMessage(`Licensing Authorities selection limited by 2.`);
-                                                                    //     setDuplicateLicenserError(true);
-                                                                    //     return
-                                                                    // };
-                                                                    setDuplicateLicenserError(false);
-                                                                    setSelectedFilterLicenser(newValue);
-                                                                }}
-                                                                // onKeyUp={(event) => {
-                                                                //     if (event.target?.textContent &&
-                                                                //         selectedFilterLicenser.some((item) => item.title === (event.target)?.textContent)
-                                                                //     ) {
-                                                                //         setLicenserErrorMessage(`${(event.target)?.textContent} cannot have more than one`)
-                                                                //         setDuplicateLicenserError(true);
-                                                                //         return;
-                                                                //     };
-
-                                                                //     if (selectedFilterLicenser.length > 2) {
-                                                                //         setLicenserErrorMessage(`Licensing Authorities selection limited by 2.`);
-                                                                //         setDuplicateLicenserError(true);
-                                                                //         return
-                                                                //     };
-                                                                //     setDuplicateLicenserError(false);
-                                                                // }}
-                                                                renderInput={(params) => (
-                                                                    <TextField
-                                                                        {...params}
-                                                                        variant="standard"
-                                                                        label="Select Licensing Authorities"
-                                                                        placeholder=""
-                                                                        error={dupicateLicenserError}
-                                                                        helperText={dupicateLicenserError ? licenserErrorMessage : null}
-                                                                    />
-                                                                )}
-                                                            />
-                                                        </Stack>
-                                                    </div>
+                                                    {
+                                                        selectedFilterVaccine.length > 0 && (
+                                                            selectedFilterVaccine.map((vaccine) => {
+                                                                return (
+                                                                    <div key={vaccine.name} style={{ marginTop: 10 }}>
+                                                                        <Stack spacing={3} sx={{ width: 500 }}>
+                                                                            <Autocomplete
+                                                                                multiple
+                                                                                id="tags-standard"
+                                                                                options={licenserFields}
+                                                                                value={[...vaccine.licenser]}
+                                                                                getOptionLabel={(option) => option.title}
+                                                                                defaultValue={[licenserFields[0]]}
+                                                                                autoComplete
+                                                                                freeSolo
+                                                                                limitTags={3}
+                                                                                onChange={(event, newValue) => {
+                                                                                    if (event.target?.textContent &&
+                                                                                        vaccine.licenser.some((item) => item.title === (event.target)?.textContent)
+                                                                                    ) {
+                                                                                        vaccine.errorMessage = `${vaccine.name}: ${(event.target)?.textContent} cannot be duplicated`
+                                                                                        vaccine.hasDuplicate = true;
+                                                                                        return;
+                                                                                    }
+                                                                                    vaccine.hasDuplicate = false;
+                                                                                    vaccine.licenser = newValue;
+                                                                                    handleSelectLicenserFieldsVaccine(vaccine.name, vaccine)
+                                                                                    // setLicenserFieldsVaccine([...licenserFieldsVaccine, vaccine]);
+                                                                                }}
+                                                                                renderInput={(params) => (
+                                                                                    <TextField
+                                                                                        {...params}
+                                                                                        variant="standard"
+                                                                                        label={`Select Licensing Authorities for: ${vaccine.name}`}
+                                                                                        placeholder=""
+                                                                                        error={vaccine.hasDuplicate}
+                                                                                        helperText={vaccine.hasDuplicate ? vaccine.errorMessage : null}
+                                                                                    />
+                                                                                )}
+                                                                            />
+                                                                        </Stack>
+                                                                    </div>
+                                                                )
+                                                            })
+                                                        )
+                                                    }
                                                     <div style={{ marginTop: 10 }}>
                                                         <Stack spacing={3} sx={{ width: 500 }}>
                                                             <Autocomplete
@@ -335,7 +349,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                     if (event.target?.textContent &&
                                                                         selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
                                                                     ) {
-                                                                        setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot have more than one`)
+                                                                        setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
                                                                         setDuplicateTableFieldsError(true);
                                                                         return;
                                                                     }
@@ -387,49 +401,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                             </>
                                         )
                                     }
-                                    {/* {
-                                        compareSubmitted && (
-                                            <div className='outer'>
-                                                <div className="d-inline-flex w-100 inner">
-                                                    {selectedFilterVaccine.length > 0 ? selectedFilterVaccine.map((vaccine, vaccineIdx) => {
-                                                        return vaccine?.productProfiles && (
-                                                            <table style={{ marginLeft: vaccineIdx === 0 ? 400 : 0, overflow: 'hidden' }} className='table-fixed' key={vaccine.description}>
-                                                                <tbody>
-                                                                    {selectedFilterTableFields.map((field) => {
-                                                                        const key = field.alt;
-                                                                        return key === "name" ? null : (
-                                                                            <>
-                                                                                <tr key={Math.random() * 999}>
-                                                                                    {vaccineIdx === 0 && (
-                                                                                        <td style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`align-middle ${vaccineIdx === 0 && 'fix'} ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                                                                    )}
-                                                                                    {
-                                                                                        selectedFilterLicenser.some((x) => x.title === "EMA") && (
-                                                                                            <td width={500} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
-                                                                                        )
-                                                                                    }
-                                                                                    {
-                                                                                        selectedFilterLicenser.some((x) => x.title === "FDA") && (
-                                                                                            <td width={500} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
-                                                                                        )
-                                                                                    }
-                                                                                    {
-                                                                                        selectedFilterLicenser.some((x) => x.title === 'WHO') && (
-                                                                                            <td width={300} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
-                                                                                        )
-                                                                                    }
-                                                                                </tr>
-                                                                            </>
-                                                                        )
-                                                                    })}
-                                                                </tbody>
-                                                            </table>
-                                                        )
-                                                    }) : null}
-                                                </div>
-                                            </div>
-                                        )
-                                    } */}
                                 </div>
                             </div>
                         </div>
@@ -470,58 +441,16 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                 aria-describedby="keep-mounted-modal-description"
             >
                 <Box sx={style}>
-                    {/* <div className='outer'>
-                        <div className="d-inline-flex w-100 inner">
-                            <table style={{ marginLeft: 180, overflow: 'hidden' }} className='table-fixed'>
-                                <tbody>
-                                    {selectedFilterVaccine.length > 0 ? selectedFilterVaccine.map((vaccine, vaccineIdx) => {
-                                        return vaccine.productProfiles ? (
-                                            <>
-                                                {selectedFilterTableFields.map((field) => {
-                                                    const tdWidthLogic = selectedFilterLicenser.length === 1 ? 202 : selectedFilterLicenser.length === 2 ? 202 * 2 : 270
-                                                    const key = field.alt;
-                                                    return key === "name" ? null : (
-                                                        <>
-                                                            <tr key={vaccine.description}>
-                                                                {vaccineIdx === 0 && (
-                                                                    <td style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`align-middle ${vaccineIdx === 0 && 'fix'} ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                                                )}
-                                                                {
-                                                                    selectedFilterLicenser.some((x) => x.title === "EMA") && (
-                                                                        <td width={tdWidthLogic} height={30} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccine.name)}</td>
-                                                                    )
-                                                                }
-                                                                {
-                                                                    selectedFilterLicenser.some((x) => x.title === "FDA") && (
-                                                                        <td width={tdWidthLogic} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccine.name)}</td>
-                                                                    )
-                                                                }
-                                                                {
-                                                                    selectedFilterLicenser.some((x) => x.title === 'WHO') && (
-                                                                        <td width={tdWidthLogic} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccine.name)}</td>
-                                                                    )
-                                                                }
-                                                            </tr >
-                                                        </>
-                                                    )
-                                                })}
-                                            </>
-                                        ) : null
-                                    }) : null}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div> */}
                     <div className='outer'>
                         <div className="d-inline-flex w-100 inner">
-                            {selectedFilterVaccine.length >= 1 ? (
+                            {licenserFieldsVaccine.length >= 1 ? (
                                 <table style={{ marginLeft: 240, overflow: 'hidden' }} className='w-100'>
                                     <tbody>
                                         {selectedFilterTableFields.map((field) => {
                                             const key = field.alt;
-                                            const vaccineOne = selectedFilterVaccine[0];
-                                            const vaccineTwo = selectedFilterVaccine[1];
-                                            const vaccineThree = selectedFilterVaccine[2];
+                                            const vaccineOne = licenserFieldsVaccine[0];
+                                            const vaccineTwo = licenserFieldsVaccine[1];
+                                            const vaccineThree = licenserFieldsVaccine[2];
 
                                             const licenserOne = selectedFilterLicenser[0];
                                             const licenserTwo = selectedFilterLicenser[1];
@@ -532,70 +461,24 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                         {/* {vaccineIdx === 0 && ( */}
                                                         <td width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`align-middle fix ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                         {/* // )} */}
+
+                                                        {/** ONE */}
                                                         {
-                                                            selectedFilterLicenser.some((x) => x.title === "EMA") && (
-                                                                <>
-                                                                    {
-                                                                        vaccineOne && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccineOne.name)}</td>
-                                                                        )
-                                                                    }
-                                                                    {
-                                                                        vaccineTwo && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccineTwo.name)}</td>
-                                                                        )
-                                                                    }
-                                                                    {
-                                                                        vaccineThree && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${vaccineThree.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, vaccineThree.name)}</td>
-                                                                        )
-                                                                    }
-                                                                </>
-                                                            )
-                                                        }
-                                                        {
-                                                            selectedFilterLicenser.some((x) => x.title === "FDA") && (
-                                                                <>
-                                                                    {
-                                                                        vaccineOne && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccineOne.name)}</td>
-                                                                        )
-                                                                    }
-                                                                    {
-                                                                        vaccineTwo && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccineTwo.name)}</td>
-                                                                        )
-                                                                    }
-                                                                    {
-                                                                        vaccineThree && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${vaccineThree.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, vaccineThree.name)}</td>
-                                                                        )
-                                                                    }
-                                                                </>
-                                                            )
-                                                        }
-                                                        {
-                                                            selectedFilterLicenser.some((x) => x.title === "WHO") && (
-                                                                <>
-                                                                    {
-                                                                        vaccineOne && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccineOne.name)}</td>
-                                                                        )
-                                                                    }
-                                                                    {
-                                                                        vaccineTwo && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccineTwo.name)}</td>
-                                                                        )
-                                                                    }
-                                                                    {
-                                                                        vaccineThree && (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${vaccineThree.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, vaccineThree.name)}</td>
-                                                                        )
-                                                                    }
-                                                                </>
-                                                            )
+                                                            vaccineOne && vaccineOne.licenser.length > 0 && vaccineOne.licenser.map((licenser, idx) => {
+                                                                return (
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineOne.name)}</td>
+                                                                )
+                                                            })
                                                         }
 
+                                                        {/** TWO */}
+                                                        {
+                                                            vaccineTwo && vaccineTwo.licenser.length > 0 && vaccineTwo.licenser.map((licenser, idx) => {
+                                                                return (
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineTwo.name)}</td>
+                                                                )
+                                                            })
+                                                        }
                                                     </tr>
                                                 </>
                                             )
