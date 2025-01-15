@@ -561,5 +561,2362 @@
             {}
         ],
         "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 13,
+        "name": "Barr Laboratories",
+        "description": "A global specialty and generic drug manufacturer that was acquired by Teva Pharmaceutical Industries in 2008.",
+        "history": "Barr Laboratories was founded in 1970 by Edwin A. Cohen in New York. It was one of the early pioneers in the generic pharmaceutical industry. The company faced challenges, including a scandal related to GMP regulations in the early 1990s. Despite these challenges, Barr achieved significant growth by targeting drugs with weak patents, notably gaining approval for generic versions of tamoxifen citrate and Prozac.",
+        "details": {
+            "founded": "1970",
+            "headquarters": "Pomona, New York, USA",
+            "ceo": "Bruce L. Downey (1994-2008)",
+            "revenue": "$1.19 billion (2002)",
+            "operatingIncome": "$293.88 million (2002)",
+            "netIncome": "$210.27 million (2002)",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Approximately 467 (as of 1998)",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Barr Pharmaceuticals - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Barr_Pharmaceuticals"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Barr Laboratories, Inc. - Encyclopedia.com",
+                    "link": "https://www.encyclopedia.com/books/politics-and-business-magazines/barr-laboratories-inc"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Barr Laboratories Annual Report 2002",
+                    "link": "http://media.corporate-ir.net/media_files/NYS/BRL/reports/ar2002.pdf"
+                }
+            ]
+        },
+        "products": [
+            {
+                "name": "Generic Tamoxifen Citrate",
+                "description": "A treatment for breast cancer."
+            },
+            {
+                "name": "Generic Prozac",
+                "description": "A treatment for depression."
+            },
+            {
+                "name": "Generic Warfarin",
+                "description": "An anticoagulant."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 14,
+        "name": "Emergent BioDefense Operations Lansing",
+        "description": "A biodefense manufacturing facility located in Lansing, Michigan, specializing in vaccines and biologics for infectious diseases and biodefense purposes.",
+        "history": "Emergent BioDefense Operations Lansing LLC is part of Emergent BioSolutions, which was founded in 1998 as BioPort. The company acquired the Michigan Biological Products Institute facility in Lansing, Michigan, and has since expanded its operations to include a wide range of biodefense products.",
+        "details": {
+            "founded": "1998 (as part of Emergent BioSolutions)",
+            "headquarters": "Lansing, Michigan, USA",
+            "parentCompany": "Emergent BioSolutions",
+            "address": "3500 N. Martin Luther King Jr. Blvd., Lansing, MI 48906",
+            "contact": "Tel: 517-327-1500, Fax: 517-327-1551",
+            "products": "Anthrax vaccine (BioThrax), other biodefense-related products",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Emergent BioSolutions - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Emergent_BioSolutions"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Emergent BioSolutions Official Website",
+                    "link": "https://www.emergentbiosolutions.com"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Emergent Biodefense Operations Lansing LLC - Company Profile",
+                    "link": "https://www.dnb.com/business-directory/company-profiles.emergent_biodefense_operations_lansing_llc.065b5b28911413681ded02205e85ccbc.html"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "BioThrax (Anthrax Vaccine Adsorbed)",
+                "description": "The only FDA-licensed anthrax vaccine for use in the U.S."
+            }
+        ],
+        "lastUpdated": "2024-Dec"
+    },
+    {
+        "manufacturerId": 15,
+        "name": "Emergent BioDefense Operations Gaithersburg",
+        "description": "A global life sciences company specializing in developing, manufacturing, and delivering protections against public health threats. Emergent offers vaccines, therapeutics, drug-device combination products, and contract development and manufacturing services.",
+        "history": "Emergent BioSolutions was founded in 1998 and has since become a leading provider of solutions for complex public health challenges. The company has expanded its capabilities through various contracts and agreements, including a significant role in manufacturing COVID-19 treatments.",
+        "details": {
+            "founded": "1998",
+            "headquarters": "Gaithersburg, Maryland, USA",
+            "ceo": "Robert G. Kramer Sr.",
+            "revenue": "Varies by year; significant contracts and agreements",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "1,600",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Emergent BioSolutions Inc. Company Profile - GlobalData",
+                    "link": "https://www.globaldata.com/company-profile/emergent-biosolutions-inc/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "About Emergent BioSolutions Inc. - CPHI Online",
+                    "link": "https://www.cphi-online.com/emergent-biosolutions-inc-comp247544.html"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Emergent BioSolutions – Global Specialty Life Sciences Company",
+                    "link": "https://www.emergentbiosolutions.com"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "BioThrax - Anthrax Vaccine",
+                "description": "A vaccine for anthrax."
+            },
+            {
+                "name": "ACAM2000 - Smallpox (Vaccinia) Vaccine",
+                "description": "A vaccine for smallpox and recently approved for preventing Mpox."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 16,
+        "name": "Biological E. Limited",
+        "description": "An Indian biotechnology and biopharmaceutical company specializing in low-cost vaccine production. It is a leading manufacturer of vaccines and biologics, supplying products to over 140 countries.",
+        "history": "Biological E. Limited was founded in 1953 by Dr. D.V.K. Raju and Mr. G.A.N. Raju. It is the first private sector biological products company in India and has played a significant role in the country's National Immunization Program. Over the years, the company has expanded its product portfolio to include a range of pediatric and adult vaccines.",
+        "details": {
+            "founded": "1953",
+            "headquarters": "Hyderabad, Telangana, India",
+            "ceo": "Mahima Datla",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Biological E. Limited - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Biological_E._Limited"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Biological E. Limited - Company Profile",
+                    "link": "https://www.biologicale.com/about.html"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Biological E. Limited - DCVMN",
+                    "link": "https://dcvmn.org/member/biologicale/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Pentavalent (DTP Hib HepB) Vaccine",
+                "description": "A combination vaccine protecting against diphtheria, tetanus, pertussis, Haemophilus influenzae type b, and hepatitis B."
+            },
+            {
+                "name": "Japanese Encephalitis Vaccine",
+                "description": "Used to prevent Japanese encephalitis, a mosquito-borne disease."
+            },
+            {
+                "name": "CORBEVAX",
+                "description": "A COVID-19 vaccine developed by Biological E. Limited."
+            },
+            {
+                "name": "Hepatitis B Vaccine",
+                "description": "Protects against hepatitis B infection."
+            },
+            {
+                "name": "Hepatitis A Vaccine",
+                "description": "Used to prevent hepatitis A infection."
+            },
+            {
+                "name": "Measles & Rubella Vaccine",
+                "description": "Combination vaccine for measles and rubella."
+            },
+            {
+                "name": "Pneumococcal Polysaccharide Conjugate Vaccine",
+                "description": "Protects against pneumococcal infections."
+            },
+            {
+                "name": "Typhoid Conjugate Vaccine",
+                "description": "Used to prevent typhoid fever."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 17,
+        "name": "GSK",
+        "description": "A British multinational pharmaceutical and biotechnology company known for developing innovative medicines and vaccines.",
+        "history": "GSK was formed in 2000 through the merger of Glaxo Wellcome and SmithKline Beecham. Its legacy companies have a long history dating back to the Plough Court Pharmacy in London in 1715. GSK has developed numerous essential medicines and vaccines, including the first malaria vaccine, RTS,S, and has played a significant role in global healthcare.",
+        "details": {
+            "founded": "2000 (through merger)",
+            "headquarters": "London, UK",
+            "ceo": "Emma Walmsley",
+            "revenue": "Approximately £29 billion (2022)",
+            "operatingIncome": "Varies by year",
+            "netIncome": "Varies by year",
+            "totalAssets": "Over £70 billion",
+            "totalEquity": "Varies by year",
+            "numberOfEmployees": "Over 99,000 (as of 2013)",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "GSK plc - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/GSK_plc"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "GSK Official Website - About Us",
+                    "link": "https://www.gsk.com/en-gb/about-us/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "RTS,S (malaria vaccine)",
+                "description": "The first vaccine approved for the prevention of malaria."
+            },
+            {
+                "name": "COVID-19 vaccine (with Sanofi)",
+                "description": "A recombinant protein-based vaccine developed in collaboration with Sanofi."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 18,
+        "name": "LG Chem Ltd",
+        "description": "A South Korean chemical company and the largest in Korea, known for its diverse portfolio in petrochemicals, advanced materials, and life sciences.",
+        "history": "LG Chem was founded in 1947 as Lucky Chemical Industrial Corporation and has since evolved into a global leader in various industries. It has expanded its operations through strategic mergers and acquisitions, including the merger with LG Petrochemicals Co., Ltd. in 2007. Today, LG Chem is recognized for its innovative products and commitment to sustainability.",
+        "details": {
+            "founded": "1947",
+            "headquarters": "Seoul, South Korea",
+            "ceo": "Shin Hak-Cheol",
+            "revenue": "KRW 55.25 trillion (as of 2023)",
+            "operatingIncome": "KRW 2.529 trillion (as of 2023)",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "19,250",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "LG Chem - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/LG_Chem"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "LG Chem Official Website - About Us",
+                    "link": "https://www.lgchem.com/company/company-information/about"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "LG Chem Company Profile - EMIS",
+                    "link": "https://www.emis.com/php/company-profile/KR/Lg_Chem_CoLtd_en_1651022.html"
+                }
+            ]
+        },
+        "products": [
+            {
+                "category": "Petrochemicals",
+                "examples": [
+                    "ABS, PVC, Acrylates"
+                ]
+            },
+            {
+                "category": "Advanced Materials",
+                "examples": [
+                    "Cathode Material, IT Materials"
+                ]
+            },
+            {
+                "category": "Life Sciences",
+                "examples": [
+                    "Zemiglo, Euvox"
+                ]
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 19,
+        "name": "MCM Vaccine B.V",
+        "description": "A vaccine manufacturer based in the Netherlands, known for its pediatric hexavalent vaccine solutions. It is a partnership between MSD and Sanofi Pasteur Inc., focusing on vaccine development and antigen production.",
+        "history": "MCM Vaccine B.V. has been involved in vaccine development for over 30 years, with a strong focus on pediatric vaccines. The company collaborates with major pharmaceutical companies to provide comprehensive vaccine solutions.",
+        "details": {
+            "founded": "2016",
+            "headquarters": "Robert Boyleweg 4, 2333 CG Leiden, Netherlands",
+            "ceo": "Not specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "MCM Vaccine B.V. - Patsnap Synapse",
+                    "link": "https://synapse.patsnap.com/organization/7b5495179916b86fc3e1213a90defbe1"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "MCM Vaccine B.V. Official Website",
+                    "link": "https://www.mcmbv.eu"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "MCM Vaccine B.V. - Creditsafe",
+                    "link": "https://www.creditsafe.com/business-index/en-gb/company/mcm-vaccine-bv-nl04289872"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Pediatric Hexavalent Vaccine",
+                "description": "Indicated for primary and booster vaccination against diseases caused by six infectious agents: diphtheria, tetanus, pertussis, hepatitis B, poliomyelitis, and Haemophilus type b."
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 20,
+        "name": "Panacea Biotec Ltd.",
+        "description": "An India-based pharmaceutical and biotechnology company engaged in research, development, manufacture, and marketing of branded vaccines, pharmaceutical formulations, nutraceuticals, and food and nutrition products.",
+        "history": "Panacea Biotec was founded in 1984 and has since become a prominent player in the Indian pharmaceutical and biotechnology sector. The company specializes in developing fully liquid combination vaccines and has a diverse portfolio of products.",
+        "details": {
+            "founded": "1984",
+            "headquarters": "New Delhi, India",
+            "ceo": "Dr. Rajesh Jain, Managing Director",
+            "revenue": "INR 5.50 billion (TTM)",
+            "operatingIncome": "Not specified",
+            "netIncome": "INR -148.63 million",
+            "totalAssets": "INR 26.82 billion",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "1,150",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Panacea Biotec Ltd - FT.com",
+                    "link": "https://markets.ft.com/data/equities/tearsheet/profile?s=PANACEABIO%3ANSI"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Panacea Biotec Limited - DCVMN",
+                    "link": "https://dcvmn.org/panacea-biotec-limited/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Panacea Biotec | LinkedIn",
+                    "link": "https://in.linkedin.com/company/panacea-biotec"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "EasySix",
+                "description": "DTwP-Hib-HepB-IPV"
+            },
+            {
+                "name": "EasyFive-TITM",
+                "description": "DTwP-Hib-HepB"
+            },
+            {
+                "name": "EasyFour-TI",
+                "description": "DTwP-Hib"
+            },
+            {
+                "name": "EasyFourPol",
+                "description": "DTwP-IPV"
+            },
+            {
+                "name": "Bivalent Oral Polio Vaccine",
+                "description": "Type-1 and Type-3"
+            },
+            {
+                "name": "NucoVac 11",
+                "description": "Pipeline vaccine"
+            },
+            {
+                "name": "DengiALL",
+                "description": "Pipeline vaccine"
+            },
+            {
+                "name": "Td (Tetanus and Diphtheria - Reduced)",
+                "description": "Pipeline vaccine"
+            }
+        ],
+        "lastUpdated": "2024-Dec"
+    },
+    {
+        "manufacturerId": 21,
+        "name": "PT Bio Farma (Persero)",
+        "description": "An Indonesian state-owned enterprise specializing in the production of vaccines and sera to support immunization programs in Indonesia and globally.",
+        "history": "Founded in 1890 as *Parc-vaccinogène* during the Dutch East Indies period, Bio Farma has evolved through various name changes and legal entities. It moved to Bandung in the early 1920s and has since become a key player in vaccine manufacturing, supporting national and international health initiatives.",
+        "details": {
+            "founded": "1890",
+            "headquarters": "Bandung, West Java, Indonesia",
+            "ceo": "Not specified",
+            "revenue": "$155.6 million",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "1,165",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "PT Bio Farma (Persero) - Official Website",
+                    "link": "https://www.biofarma.co.id/en/pt-bio-farma-persero"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Bio Farma - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Bio_Farma"
+                },
+                {
+                    "lastUpdated": "2022",
+                    "title": "Bio Farma - RocketReach",
+                    "link": "https://rocketreach.co/bio-farma-indonesia-profile_b5e0f88df42e69b4"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "BCG Vaccine",
+                "description": "Used against tuberculosis"
+            },
+            {
+                "name": "DTP-HB Vaccine",
+                "description": "Combination vaccine for diphtheria, tetanus, and hepatitis B"
+            },
+            {
+                "name": "DT Vaccine",
+                "description": "Vaccine for diphtheria and tetanus"
+            },
+            {
+                "name": "Td Vaccine",
+                "description": "Vaccine for tetanus and diphtheria"
+            },
+            {
+                "name": "Hepatitis B Vaccine",
+                "description": "Vaccine for hepatitis B"
+            },
+            {
+                "name": "Polio Vaccine",
+                "description": "Vaccine for poliomyelitis"
+            },
+            {
+                "name": "Measles Vaccine",
+                "description": "Vaccine for measles"
+            },
+            {
+                "name": "Pentavalent Vaccine",
+                "description": "Combination vaccine for diphtheria, tetanus, pertussis, hepatitis B, and Haemophilus influenzae type b"
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 22,
+        "name": "Sanofi",
+        "description": "A multinational pharmaceutical company known for its extensive portfolio of medicines and vaccines, including treatments for cancer, rare diseases, and multiple sclerosis.",
+        "history": "Sanofi's history dates back to the 19th century through its predecessor companies. It was formally established in 1973 as a subsidiary of Elf Aquitaine. Over the years, Sanofi has grown through strategic mergers and acquisitions, becoming one of the world's leading healthcare companies. Sanofi's legacy includes pioneering work in rare diseases and vaccines, with a global presence in over 90 countries.",
+        "details": {
+            "founded": "1973",
+            "headquarters": "Paris, France",
+            "ceo": "Paul Hudson",
+            "revenue": "Approximately €42.99 billion (2022)",
+            "operatingIncome": "Approximately €9.6 billion (2022)",
+            "netIncome": "Approximately €6.7 billion (2022)",
+            "totalAssets": "Approximately €133.4 billion (2022)",
+            "totalEquity": "Approximately €73.6 billion (2022)",
+            "numberOfEmployees": "Over 91,000",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Sanofi Company Profile - GlobalData",
+                    "link": "https://www.globaldata.com/company-profile/sanofi/"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Sanofi History - Sanofi.com",
+                    "link": "https://www.sanofi.com/en/our-company/our-legacy"
+                },
+                {
+                    "lastUpdated": "2022",
+                    "title": "Sanofi Strategy Study - Cascade.app",
+                    "link": "https://www.cascade.app/studies/sanofi-strategy-study"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Sanofi Pasteur Vaccines",
+                "description": "Sanofi Pasteur is the largest company in the world devoted entirely to vaccines, producing vaccines for diseases such as yellow fever, influenza, and polio."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 23,
+        "name": "Valneva SE",
+        "description": "A French biotechnology company specializing in the development, manufacture, and commercialization of vaccines for infectious diseases.",
+        "history": "Valneva was founded in 2013 through the merger of Austrian company Intercell and French company Vivalis SA. It has been listed on the Euronext Paris since May 28, 2013.",
+        "details": {
+            "founded": "2013",
+            "headquarters": "Saint-Herblain, France",
+            "ceo": "Thomas Lingelbach",
+            "revenue": "€153.7 million (2023)",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Over 700",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Valneva SE Company Profile - GlobalData",
+                    "link": "https://www.globaldata.com/company-profile/valneva-se/"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Valneva SE - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Valneva_SE"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "About Us - Valneva",
+                    "link": "https://valneva.com/about-us/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Ixiaro",
+                "description": "Vaccine against Japanese encephalitis."
+            },
+            {
+                "name": "Dukoral",
+                "description": "Vaccine against cholera."
+            },
+            {
+                "name": "Ixchiq",
+                "description": "Chikungunya vaccine, approved by the FDA in November 2023."
+            },
+            {
+                "name": "VLA15",
+                "description": "Vaccine against Lyme disease, planned for release around 2024."
+            },
+            {
+                "name": "VLA2001",
+                "description": "COVID-19 vaccine, approved by the UK MHRA in April 2022."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 24,
+        "name": "BB-NCIPD Ltd.",
+        "description": "A Bulgarian pharmaceutical company specializing in the production of vaccines, serums, allergens, blood products, immunostimulants, and diagnostic preparations. It is 100% state-owned and belongs to the Ministry of Health of Bulgaria.",
+        "history": "BB-NCIPD Ltd. was established at the end of 2000 as a separate entity from the production department of the National Center of Infectious and Parasitic Diseases, which has a history dating back over 130 years. The company has continued to develop and expand its operations, focusing on meeting international standards for vaccine production.",
+        "details": {
+            "founded": "2000",
+            "headquarters": "Sofia, Bulgaria",
+            "ceo": "Dr. Roumen Kofinov",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "434 (as of 2023)",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "BB-NCIPD Company Profile",
+                    "link": "https://www.bulbio.com/en/firmen-profil"
+                },
+                {
+                    "lastUpdated": "2020",
+                    "title": "WHO Inspection Report for BB-NCIPD",
+                    "link": "https://extranet.who.int/prequal/sites/default/files/whopir_files/WHOPIR_BB_NCIPD_11-13March2020.pdf"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "BB-NCIPD on LinkedIn",
+                    "link": "https://bg.linkedin.com/company/bb-ncipd-bulbio"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "BCG Vaccine",
+                "description": "Freeze-dried vaccine for intradermal use against tuberculosis."
+            },
+            {
+                "name": "Tetatox",
+                "description": "Tetanus vaccine absorbed."
+            },
+            {
+                "name": "Diftet",
+                "description": "Diphtheria and Tetanus vaccine, adsorbed."
+            },
+            {
+                "name": "Diftetkok",
+                "description": "Diphtheria, Tetanus, and Pertussis vaccine, adsorbed."
+            },
+            {
+                "name": "Tetadif",
+                "description": "Tetanus and Diphtheria vaccine (adsorbed) with a reduced dose of diphtheria component for adults."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 26,
+        "name": "MassBiologics",
+        "description": "MassBiologics is a nonprofit, FDA-licensed manufacturer of vaccines and biologic products. It is a division of the University of Massachusetts Medical School and is known for developing and manufacturing vaccines, plasma derivatives, and monoclonal antibodies.",
+        "history": "MassBiologics was established in 1894 by the Commonwealth of Massachusetts Board of Health to combat diphtheria. Over the years, it has developed and manufactured biologic products for diseases such as smallpox, typhoid, scarlet fever, tetanus, and pertussis. In 1997, MassBiologics was transferred from the state health department to the University of Massachusetts Medical School.",
+        "details": {
+            "founded": "1894",
+            "headquarters": "Boston, Massachusetts",
+            "ceo": "Mark Klempner, MD (Executive Vice Chancellor)",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Approximately 128",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "MassBiologics - PharmaSource",
+                    "link": "https://pharmasource.global/directory/massbiologics/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "MassBiologics founded 125 years ago to protect public health",
+                    "link": "https://www.massachusetts.edu/news/massbiologics-founded-125-years-ago-protect-public-health"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "History - About - MassBiologics",
+                    "link": "https://www.umassmed.edu/massbiologics/about/history/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Diphtheria Vaccine",
+                "introductionYear": "1914"
+            },
+            {
+                "name": "Smallpox Vaccine",
+                "introductionYear": "1904"
+            },
+            {
+                "name": "Typhoid Vaccine",
+                "introductionYear": "1912"
+            },
+            {
+                "name": "Tetanus Vaccine",
+                "introductionYear": "1941"
+            },
+            {
+                "name": "Pertussis Vaccine",
+                "introductionYear": "1949"
+            },
+            {
+                "name": "Diphtheria-Tetanus-Pertussis (DTP) Vaccine",
+                "introductionYear": "1950"
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 28,
+        "name": "Takeda Pharmaceutical Co., Ltd.",
+        "description": "A global, values-based, patient-focused, R&D-driven biopharmaceutical leader committed to bringing Better Health and a Brighter Future to people worldwide. Takeda focuses on oncology, rare diseases, neuroscience, gastroenterology, plasma-derived therapies, and vaccines.",
+        "history": "Founded in 1781, Takeda has a rich history in Japan. It was incorporated in 1925 and has since grown into one of the largest pharmaceutical companies globally. Takeda expanded its global footprint through significant acquisitions, including Millennium Pharmaceuticals in 2008 and Shire in 2019.",
+        "details": {
+            "founded": "1781",
+            "headquarters": "Tokyo, Japan (with a major office in Osaka)",
+            "ceo": "Christophe Weber",
+            "revenue": "Approximately $19.3 billion (2018 fiscal year)",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Over 49,578",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Takeda Pharmaceutical Co Ltd Company Profile - GlobalData",
+                    "link": "https://www.globaldata.com/company-profile/takeda-pharmaceutical-co-ltd/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Company Information - Takeda Pharmaceuticals",
+                    "link": "https://www.takeda.com/en-in/who-we-are/company-information"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Takeda Pharmaceutical Company - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Takeda_Pharmaceutical_Company"
+                }
+            ]
+        },
+        "products": [
+            {
+                "name": "Actos (pioglitazone)",
+                "description": "Used for type 2 diabetes treatment."
+            },
+            {
+                "name": "Velcade",
+                "description": "Indicated for hematological malignancies."
+            },
+            {
+                "name": "Ixazomib",
+                "description": "Used in combination with lenalidomide and dexamethasone for multiple myeloma treatment."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 29,
+        "name": "MSD (Merck Sharp & Dohme)",
+        "description": "A global health care company known for delivering innovative health solutions through prescription medicines, vaccines, biologic therapies, and animal health products.",
+        "history": "MSD, known as Merck & Co., Inc. in the U.S. and Canada, was founded in 1891 as the American affiliate of Merck Group. It has a long history of developing important medicines and vaccines, advancing the prevention and treatment of diseases in people and animals.",
+        "details": {
+            "founded": "1891",
+            "headquarters": "Rahway, New Jersey, USA",
+            "ceo": "Robert M. Davis",
+            "revenue": "$60.1 billion (2023)",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Approximately 72,000 (as of Dec. 31, 2023)",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "MSD Company Fact Sheet",
+                    "link": "https://www.msd.com/media/company-fact-sheet/"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "MSD New Zealand Company Overview",
+                    "link": "https://www.msd-newzealand.com/company-overview/"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Merck & Co., Inc. Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Merck_&_Co."
+                }
+            ]
+        },
+        "products": [
+            {
+                "type": "Prescription Medicines",
+                "examples": [
+                    "JANUVIA (sitagliptin) for diabetes",
+                    "cancer immunotherapies"
+                ]
+            },
+            {
+                "type": "Vaccines",
+                "examples": [
+                    "GARDASIL for HPV",
+                    "vaccines for chickenpox"
+                ]
+            },
+            {
+                "type": "Biologic Therapies",
+                "examples": "Not specified"
+            },
+            {
+                "type": "Animal Health Products",
+                "examples": "Veterinary medicines for farm and companion animals"
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 29,
+        "name": "Centro de Ingeniería Genética y Biotecnología (CIGB)",
+        "description": "A Cuban research institute focused on developing bio-products through genetic engineering and biotechnology techniques. It is known for creating innovative vaccines and therapeutic solutions.",
+        "history": "CIGB was established in 1986, following Cuba's initiative to develop a biotechnology research institution despite not receiving UNIDO funding in 1982. The center has since become a significant player in Cuba's biotech industry, developing products like Heberprot-P for treating foot ulcers and COVID-19 vaccines.",
+        "details": {
+            "founded": "1986",
+            "headquarters": "Havana, Cuba",
+            "ceo": "Not specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Approximately 1,600 (as of 2017)",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Center for Genetic Engineering and Biotechnology - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Center_for_Genetic_Engineering_and_Biotechnology"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "CIGB Official Website",
+                    "link": "https://www.cigb.edu.cu/en/home/"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "CIGB Company Profile - Devex",
+                    "link": "https://www.devex.com/organizations/centro-de-ingenieria-genetica-y-biotecnologia-cigb-132162"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Abdala",
+                "description": "A COVID-19 vaccine developed by CIGB."
+            },
+            {
+                "name": "Mambisa",
+                "description": "A COVID-19 vaccine in the final stages of clinical trials."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 32,
+        "name": "VBI Vaccines Inc.",
+        "description": "A biopharmaceutical company specializing in the development of innovative vaccines using virus-like particles (VLPs) and mRNA-launched eVLP technologies. VBI focuses on preventing and treating significant infectious diseases and cancers.",
+        "history": "VBI Vaccines was originally incorporated in 1965 and later renamed in 2016. It has received financial support from various organizations and has been involved in developing vaccines for diseases like COVID-19 and hepatitis B.",
+        "details": {
+            "founded": "1965 (as Variation Biotechnologies Inc.)",
+            "headquarters": "Cambridge, Massachusetts, USA",
+            "ceo": "Jeff Baxter",
+            "revenue": "Not specified",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Not specified",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "VBI Vaccines Company Information",
+                    "link": "https://www.vbivaccines.com/investors/company-information/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "VBI Vaccines Wikipedia Page",
+                    "link": "https://en.wikipedia.org/wiki/VBI_Vaccines"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "VBI Vaccines Restructuring Proceedings",
+                    "link": "https://www.vbivaccines.com/press-releases/vbi-vaccines-provides-an-update-on-its-restructuring-proceedings/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "PreHevbrio",
+                "description": "A hepatitis B vaccine (recombinant) that was voluntarily recalled due to company restructuring."
+            },
+            {
+                "name": "VBI-2902",
+                "description": "A monovalent COVID-19-specific vaccine expressing the SARS-CoV-2 spike protein."
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 33,
+        "name": "Xiamen Innovax Biotech Co. Ltd.",
+        "description": "A Chinese biotechnology company specializing in the development, manufacturing, and marketing of vaccines. It is known for its innovative vaccines, including the Hepatitis E vaccine and HPV vaccines.",
+        "history": "Xiamen Innovax Biotech was established in March 2005 in Xiamen, China. It is a subsidiary of Beijing Wantai Biological Pharmacy Enterprise Co., Ltd. and is part of the Yangshengtang Co., Ltd. group. The company has made significant contributions to vaccine development, particularly with its Hepatitis E vaccine, Hecolin, which was launched in 2012.",
+        "details": {
+            "founded": "2005",
+            "headquarters": "Xiamen, Fujian, China",
+            "ceo": "Not specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "1,001-5,000",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Xiamen Innovax Biotech - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Xiamen_Innovax_Biotech"
+                },
+                {
+                    "lastUpdated": "2021",
+                    "title": "WHO Inspection Report for Xiamen Innovax Biotech Co., Ltd.",
+                    "link": "https://extranet.who.int/prequal/sites/default/files/whopir_files/WHOPIR_Innovax02-06February2021.pdf"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Our Milestones - Wantai BioPharm",
+                    "link": "https://www.ystwt.cn/our-milestones/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Hecolin (Hepatitis E Vaccine)",
+                "description": "A recombinant Hepatitis E vaccine approved in China in 2011."
+            },
+            {
+                "name": "Recombinant Human Papillomavirus Bivalent (Types 16, 18) Vaccine",
+                "description": "A vaccine for cervical cancer prevention, currently under WHO prequalification."
+            },
+            {
+                "name": "9-Valent HPV Vaccine",
+                "description": "A vaccine for broader protection against Human Papillomavirus infections, in the process of receiving clinical approval."
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 34,
+        "name": "Yuxi Zerun Biotechnology Co., Ltd.",
+        "description": "An innovation-driven biopharmaceutical company focusing on the industrialization, production, and operation of new recombinant vaccines for human use. It is a fully owned subsidiary of Shanghai Zerun Biotechnology under Walvax Biotechnology Co., Ltd.",
+        "history": "Yuxi Zerun Biotechnology Co., Ltd. was established to promote the industrialization of a bivalent HPV vaccine. The company's facility in Yuxi City, Yunnan Province, was designed and constructed with support from the Bill & Melinda Gates Foundation to meet both Chinese and WHO prequalification requirements.",
+        "details": {
+            "founded": "Established as a subsidiary in 2016",
+            "headquarters": "Yuxi City, Yunnan Province, China",
+            "parentCompany": "Shanghai Zerun Biotechnology under Walvax Biotechnology Co., Ltd.",
+            "products": "Walrinvax (bivalent HPV vaccine)",
+            "capacity": "Initial capacity of 15 million doses per year",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Yuxi Zerun Biotechnology Co., Ltd. Overview",
+                    "link": "http://www.zerunbio.com/en/site/introduce"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "New HPV Vaccine from Zerun Bio Receives WHO Prequalification",
+                    "link": "https://www.path.org/our-impact/media-center/new-hpv-vaccine-from-zerun-bio-receives-who-prequalification/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Walrinvax Package Insert",
+                    "link": "https://en.walvax.com/media/upload/product/Package%20Insert%20of%20HPV2.pdf"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Walrinvax",
+                "type": "Bivalent HPV Vaccine",
+                "description": "Protects against HPV types 16 and 18, the most common virus types leading to cervical cancer."
+            }
+        ],
+        "lastUpdated": "2024-Sep"
+    },
+    {
+        "manufacturerId": 35,
+        "name": "Abbott Biologicals",
+        "description": "Abbott Biologicals is part of Abbott Laboratories, a multinational healthcare company specializing in medical devices, diagnostics, branded generic medicines, and nutritional products. Abbott Biologicals focuses on biologics manufacturing, offering state-of-the-art capabilities for process design, analytical characterization, and cGMP manufacturing.",
+        "history": "Abbott Laboratories was founded in 1888 by Wallace Calvin Abbott. Over the years, it has expanded its operations globally, including biologics manufacturing. Abbott Biologicals leverages this legacy to support the development and commercialization of biopharmaceutical products.",
+        "details": {
+            "founded": "Abbott Laboratories founded in 1888; specific founding date for Abbott Biologicals not specified",
+            "headquarters": "Abbott Park, Illinois, USA (Abbott Laboratories)",
+            "ceo": "Robert B. Ford (Abbott Laboratories)",
+            "revenue": "Not specified for Abbott Biologicals; Abbott Laboratories' revenue is substantial but varies by year",
+            "operatingIncome": "Not specified for Abbott Biologicals",
+            "netIncome": "Not specified for Abbott Biologicals",
+            "totalAssets": "Not specified for Abbott Biologicals; significant for Abbott Laboratories",
+            "totalEquity": "Not specified for Abbott Biologicals",
+            "numberOfEmployees": "Approximately 1,900+ in Malaysia alone; global workforce is much larger",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Abbott Laboratories - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Abbott_Laboratories"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Biologics Manufacturing - Abbott",
+                    "link": "https://www.bioprocessonline.com/doc/biologics-manufacturing-0002"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Abbott in Malaysia",
+                    "link": "https://www.my.abbott/about-us/abbott-in-malaysia.html"
+                }
+            ]
+        },
+        "biologics": [
+            {
+                "name": "Bioresearch Center",
+                "description": "Located in Worcester, Massachusetts, this facility specializes in cGMP biological Active Pharmaceutical Ingredient (API) manufacturing."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 36,
+        "name": "Changchun Institute of Biological Products Co., Ltd.",
+        "description": "A State-owned bio-tech corporation in China, specializing in the production, development, and sale of biological products, including vaccines and genetic engineering products.",
+        "history": "Founded in 1946 in Changchun, Jilin Province, China. It is known for its contributions to China's disease prevention and control efforts, particularly as the first pilot trial base of interferon and the first industrial production base of hepatitis B vaccines.",
+        "details": {
+            "founded": "1946",
+            "headquarters": "Changchun, Jilin, China",
+            "ceo": "Not specified",
+            "revenue": "Not specified",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "1.6 billion CNY (approximately $240 million USD)",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Over 900",
+            "sources": [
+                {
+                    "lastUpdated": "2021",
+                    "title": "Changchun Institute of Biological Products Co Ltd - Jilin Government",
+                    "link": "https://www.gojilin.gov.cn/2021/07/26/c_6909.htm"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Influenza (quadrivalent, split virion) vaccine by Changchun Institute of Biological Products",
+                    "link": "https://www.pharmaceutical-technology.com/data-insights/influenza-quadrivalent-split-virion-vaccine-changchun-institute-of-biological-products-influenza-a-virus-h1n1-subtype-infections-likelihood-of-approval/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Changchun Institute of Biological Products - Patsnap Synapse",
+                    "link": "https://synapse.patsnap.com/organization/97e7272cba01881134f8ef0b18d6fd9f"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Influenza (quadrivalent, split virion) vaccine",
+                "status": "Phase I clinical trials"
+            },
+            {
+                "name": "Hepatitis B vaccine",
+                "status": "Approved and in production"
+            },
+            {
+                "name": "Rabies Vaccine for Human Use (Vero Cell)",
+                "status": "Approved"
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 37,
+        "name": "CSL Limited",
+        "description": "An Australian multinational specialty biotechnology company that researches, develops, manufactures, and markets products to treat and prevent serious human medical conditions. CSL's product areas include blood plasma derivatives, vaccines, antivenom, and cell culture reagents.",
+        "history": "CSL was founded in 1916 as Commonwealth Serum Laboratories, an Australian government body focused on vaccine manufacture. It was privatized in 1994 and has since expanded through significant acquisitions, including ZLB Bioplasma AG, Aventis Behring, and Vifor Pharma AG.",
+        "details": {
+            "founded": "1916",
+            "headquarters": "Parkville, Melbourne, Australia",
+            "ceo": "Paul McKenzie",
+            "revenue": "AUD 24.08 billion (TTM)",
+            "operatingIncome": "Not specified",
+            "netIncome": "AUD 4.30 billion",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "30,400",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "CSL Limited - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/CSL_Limited"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "CSL Ltd, CSL:ASX profile - Financial Times",
+                    "link": "https://markets.ft.com/data/equities/tearsheet/profile?s=CSL%3AASX"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "CSL Ltd Company Profile - GlobalData",
+                    "link": "https://www.globaldata.com/company-profile/csl-ltd/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Influenza Vaccines",
+                "description": "CSL Seqirus is a major provider of influenza vaccines and pandemic services."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 38,
+        "name": "GC Biopharma",
+        "description": "A leading South Korean biopharmaceutical company specializing in the development and manufacturing of plasma derivatives, vaccines, and therapies for rare diseases.",
+        "history": "GC Biopharma was established as 'Sudo Microorganism Medical Supplies Co.' in 1967 and later renamed 'Green Cross' in 1971. Over the years, it has developed several groundbreaking products, including the world's third hepatitis B vaccine, the world's first vaccine against epidemic hemorrhagic fever, and the world's second treatment for Hunter syndrome. Today, GC Biopharma is a global leader in plasma protein therapeutics and vaccines.",
+        "details": {
+            "founded": "1967",
+            "headquarters": "Yongin, South Korea",
+            "ceo": "Eun-Chul Huh (Current CEO)",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Over 5,000",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "GC Biopharma - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Green_Cross_(South_Korean_company)"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "GC Biopharma - CPHI Online",
+                    "link": "https://www.cphi-online.com/gc-biopharma-comp308253.html"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "GC Biopharma USA, Inc. - Our History",
+                    "link": "https://gcbiopharma.us/history.html"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Hepavax B",
+                "description": "The world's third hepatitis B vaccine."
+            },
+            {
+                "name": "Hantavax",
+                "description": "The world's first vaccine against epidemic hemorrhagic fever."
+            },
+            {
+                "name": "Varicella Vaccine",
+                "description": "The world's second varicella vaccine."
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 39,
+        "name": "Hualan Biological Bacterin Inc.",
+        "description": "A Chinese biotechnology company specializing in the research, development, production, and sales of human vaccines, including influenza, meningococcal, and hepatitis B vaccines.",
+        "history": "Hualan Biological Bacterin Inc. was founded in 2005 and is headquartered in Xinxiang City, Henan Province. It is a subsidiary of Hualan Biological Engineering Inc. and has become a significant player in China's vaccine manufacturing industry, achieving WHO prequalification for its influenza vaccines.",
+        "details": {
+            "founded": "2005",
+            "headquarters": "Xinxiang City, Henan Province, China",
+            "ceo": "Not publicly specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Hualan Biological Vaccine Inc. Company Profile - EMIS",
+                    "link": "https://www.emis.com/php/company-profile/CN/Hualan_Biological_Vaccine_Inc__%E5%8D%8E%E5%85%B0%E7%94%9F%E7%89%A9%E7%96%AB%E8%8B%97%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8__en_13347783.html"
+                },
+                {
+                    "lastUpdated": "2021",
+                    "title": "WHO Inspection Report for Hualan Biological Bacterin Inc.",
+                    "link": "https://extranet.who.int/prequal/sites/default/files/whopir_files/WHOPIR_Hualan18-22October2021.pdf"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Hualan Biological Bacterin Inc. - CPHI Online",
+                    "link": "https://www.cphi-online.com/hualan-biological-bacterin-inc-comp265118.html"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Influenza Vaccine (Split Virion), Inactivated",
+                "description": "Used for seasonal influenza prevention."
+            },
+            {
+                "name": "Influenza Vaccine (Split Virion), Inactivated Quadrivalent",
+                "description": "Provides broader protection against four strains of influenza."
+            },
+            {
+                "name": "ACYW135 Meningococcal Polysaccharide Vaccine",
+                "description": "Protects against meningitis caused by Neisseria meningitidis serogroups A, C, Y, and W135."
+            },
+            {
+                "name": "Recombinant Hepatitis B Vaccine (Hansenula Polymorpha)",
+                "description": "Prevents hepatitis B infection."
+            },
+            {
+                "name": "Group A and C Meningococcal Polysaccharide Vaccine",
+                "description": "Protects against meningitis caused by Neisseria meningitidis serogroups A and C."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 40,
+        "name": "ID Biomedical Corporation of Quebec",
+        "description": "A subsidiary of GlaxoSmithKline (GSK), specializing in the development and manufacturing of influenza vaccines for the global market.",
+        "history": "ID Biomedical Corporation of Quebec is a key player in the production of seasonal flu vaccines. It operates under GSK and is located in Sainte-Foy, Quebec, Canada. The facility is subject to regular inspections by Health Canada to ensure compliance with Good Manufacturing Practices (GMPs).",
+        "details": {
+            "founded": "Not specified",
+            "headquarters": "2323 Boul Parc Technologique Quebec, Quebec, G1P 4R8, Canada",
+            "ceo": "Not specified",
+            "revenue": "Not specified",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Not specified",
+            "sources": [
+                {
+                    "lastUpdated": "2025",
+                    "title": "Health Canada - ID Biomedical Corporation of Quebec",
+                    "link": "https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement/good-manufacturing-practices/summary-report-biomedical-corporate-quebec.html"
+                },
+                {
+                    "lastUpdated": "2025",
+                    "title": "Drug and Health Product Portal - ID Biomedical Corporation of Quebec",
+                    "link": "https://dhpp.hpfb-dgpsa.ca/dhpp/company/11915"
+                },
+                {
+                    "lastUpdated": "2025",
+                    "title": "FDA - FluLaval",
+                    "link": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flulaval"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "FluLaval",
+                "description": "Influenza vaccine for active immunization against influenza A and B viruses."
+            },
+            {
+                "name": "Fluviral",
+                "description": "Influenza vaccine for active immunization against influenza A and B viruses."
+            },
+            {
+                "name": "Arepanrix H5N1",
+                "description": "Influenza A (H5N1) virus monovalent vaccine."
+            }
+        ],
+        "lastUpdated": "2025-Jan"
+    },
+    {
+        "manufacturerId": 41,
+        "name": "IL-YANG PHARMACEUTICAL",
+        "description": "A Korea-based company that specializes in the manufacture and distribution of pharmaceutical products, including prostatitis agents, anti-inflammatory drugs, diabetic agents, gastritis agents, nourishing tonics, and health supplements.",
+        "history": "IL-YANG PHARMACEUTICAL was established in 1946 and has been a key player in the growth of the Korean pharmaceutical industry. It has expanded its operations globally, exporting products to over 30 countries, including the US and Europe. The company is known for its innovative products such as Ilaprazole, a next-generation anti-ulcer drug, and its involvement in vaccine development.",
+        "details": {
+            "founded": "1946",
+            "headquarters": "Seoul, South Korea",
+            "ceo": "Kim Dong-yeon",
+            "revenue": "Approximately 371 billion KRW (2023)",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "637",
+            "sources": [
+                {
+                    "lastUpdated": "2025",
+                    "title": "IL-YANG PHARMACEUTICAL Company Introduction",
+                    "link": "https://home.ilyang.co.kr/english/ilyang/ilyang01.asp"
+                },
+                {
+                    "lastUpdated": "2025",
+                    "title": "IL-YANG PHARMACEUTICAL Company Profile - MarketScreener",
+                    "link": "https://www.marketscreener.com/quote/stock/ILYANG-PHARMACEUTICAL-CO--20699440/company/"
+                },
+                {
+                    "lastUpdated": "2025",
+                    "title": "IL-YANG PHARMACEUTICAL Press Releases",
+                    "link": "https://home.ilyang.co.kr/english/pr/pr02.asp"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "IL-YANG FLU Vaccine Prefilled Syringe INJ.",
+                "description": "A trivalent influenza vaccine for the prevention of influenza."
+            },
+            {
+                "name": "TERATECT Prefilled Syringe INJ.",
+                "description": "A quadrivalent influenza vaccine for active immunization against influenza virus subtypes A and B."
+            }
+        ],
+        "lastUpdated": "2025-Jan"
+    },
+    {
+        "manufacturerId": 42,
+        "name": "Instituto Butantan",
+        "description": "A century-old Brazilian institution focused on the research and development of biological medicines for public health. It is the largest immunobiologicals and biopharmaceuticals producer in Latin America and one of the largest in the world.",
+        "history": "Founded in 1901, Instituto Butantan has a long history of producing serums and vaccines in Brazil. It is affiliated with the São Paulo State Secretariat of Health and is known for its significant contributions to public health through the development of antivenoms and vaccines against diseases such as rabies, tetanus, and influenza.",
+        "details": {
+            "founded": "1901",
+            "headquarters": "São Paulo, Brazil",
+            "ceo": "Not specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not specified",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Instituto Butantan - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Instituto_Butantan"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Instituto Butantan - DCVMN",
+                    "link": "https://dcvmn.org/member/butantan/"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Butantan Institute | Uniting to Combat NTDs partner",
+                    "link": "https://unitingtocombatntds.org/en/about-us/partners/butantan-institute/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Influenza Vaccine",
+                "description": "Manufactures 100% of the influenza vaccine doses used by the Brazilian Ministry of Health."
+            },
+            {
+                "name": "Coronavac (COVID-19 Vaccine)",
+                "description": "Produced in partnership with Sinovac Life Science Pharmaceuticals."
+            },
+            {
+                "name": "Hepatitis A and B Vaccines",
+                "description": "Part of the vaccines supplied to the Ministry of Health."
+            },
+            {
+                "name": "Rabies Vaccine",
+                "description": "One of the vaccines produced by Instituto Butantan."
+            },
+            {
+                "name": "DTaP Vaccine",
+                "description": "Part of the vaccines supplied to the Ministry of Health."
+            },
+            {
+                "name": "HPV Vaccine",
+                "description": "Part of the vaccines supplied to the Ministry of Health."
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 43,
+        "name": "MedImmune",
+        "description": "MedImmune was the global biologics research and development arm of AstraZeneca, focusing on innovative biologic prescription medicines across various therapeutic areas including Oncology, Respiratory, Cardiovascular & Metabolic Diseases, and Infection and Vaccines.",
+        "history": "MedImmune was founded in 1988 as Molecular Vaccines, Inc. It was acquired by AstraZeneca in 2007 for approximately $15.2 billion. The company was known for its contributions to vaccine development, including FluMist and Synagis. In February 2019, the MedImmune name and branding were discontinued in favor of AstraZeneca.",
+        "details": {
+            "founded": "1988",
+            "headquarters": "Gaithersburg, Maryland, USA",
+            "ceo": "Bahija Jallal (as President of MedImmune before its rebranding)",
+            "revenue": "$1.5 billion (historical figure)",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Over 1,000 (historical figure)",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "MedImmune - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/MedImmune"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "MedImmune Information - RocketReach",
+                    "link": "https://rocketreach.co/medimmune-profile_b5c601cbf42e0c57"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "MedImmune Company Profile - American Pharmaceutical Review",
+                    "link": "https://www.americanpharmaceuticalreview.com/105310-MedImmune-LLC/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "FluMist",
+                "description": "A nasal spray influenza vaccine."
+            },
+            {
+                "name": "Synagis",
+                "description": "A drug for the prevention of respiratory infections in infants."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 44,
+        "name": "Protein Sciences Corporation",
+        "description": "A biotechnology company specializing in vaccine development and protein production. It is known for its proprietary BEVS protein expression technology and the development of innovative vaccines like Flublok.",
+        "history": "Protein Sciences Corporation was established in 1983 and was headquartered in Meriden, Connecticut. It was acquired by Sanofi in 2017, expanding Sanofi's influenza vaccine portfolio with the addition of Flublok, a recombinant protein-based influenza vaccine.",
+        "details": {
+            "founded": "1983",
+            "headquarters": "Meriden, Connecticut, USA (pre-acquisition)",
+            "ceo": "Manon M.J. Cox (pre-acquisition)",
+            "revenue": "$8 million (pre-acquisition)",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "51-200 (pre-acquisition)",
+            "sources": [
+                {
+                    "lastUpdated": "2022",
+                    "title": "Protein Sciences Corporation - LeadIQ",
+                    "link": "https://leadiq.com/c/protein-sciences-corporation/5a1d98c4230000520087636f"
+                },
+                {
+                    "lastUpdated": "2017",
+                    "title": "Sanofi Completes Acquisition of Protein Sciences - Sanofi US News",
+                    "link": "https://www.news.sanofi.us/press-releases?item=137157"
+                },
+                {
+                    "lastUpdated": "2017",
+                    "title": "Sanofi to Acquire Protein Sciences - Sanofi",
+                    "link": "https://www.sanofi.com/en/media-room/press-releases/2017/2017-07-11-05-00-00-1042282"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Flublok Quadrivalent",
+                "description": "A recombinant protein-based influenza vaccine approved by the FDA for adults 18 years and older."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 45,
+        "name": "Seqirus",
+        "description": "Seqirus is a leading global influenza vaccine manufacturer, known for its innovative technologies and differentiated products. It operates state-of-the-art facilities across three continents and supplies vaccines worldwide.",
+        "history": "Seqirus was formed following CSL Limited's acquisition of Novartis' influenza vaccine business in 2016. It integrated with CSL's vaccines division, bioCSL, and has since become a major player in the global influenza vaccine market.",
+        "details": {
+            "founded": "2016 (as Seqirus, following acquisition)",
+            "headquarters": "Australia (parent company CSL Limited)",
+            "ceo": "Not specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not specified, but significant presence globally",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Seqirus Vaccine Manufacturing Facility Expansion - Pharmaceutical Technology",
+                    "link": "https://www.pharmaceutical-technology.com/projects/seqirus-vaccine-manufacturing-facility-expansion/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "CSL Seqirus Manufacturing Technologies",
+                    "link": "https://www.cslseqirus.com.au/manufacturing"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "CSL Seqirus Overview - CSL Limited",
+                    "link": "https://www.csl.com/we-are-csl/our-businesses-and-products/csl-seqirus"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Flucelvax Quadrivalent",
+                "description": "A cell-based influenza vaccine for people aged four years and older."
+            },
+            {
+                "name": "Fluad Quadrivalent",
+                "description": "An adjuvanted influenza vaccine."
+            },
+            {
+                "name": "Afluria Quadrivalent",
+                "description": "An egg-based influenza vaccine."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 46,
+        "name": "SK Bioscience",
+        "description": "A Korea-based company primarily engaged in the manufacture and sale of biological products, including vaccines such as SKYCellflu and Rotatech. SK Bioscience is a subsidiary of SK Group, one of Korea's largest enterprises.",
+        "history": "SK Bioscience was spun off from SK Chemicals in 2018. It has a strong background in vaccine distribution and has developed its own R&D capabilities. The company launched cell culture-based influenza vaccines and has collaborated with global partners like Sanofi and the International Vaccine Institute.",
+        "details": {
+            "founded": "2018",
+            "headquarters": "310, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Korea 13494",
+            "ceo": "Jaeyong Ahn",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "SK Bioscience - Company Profile",
+                    "link": "https://www.emis.com/php/company-profile/KR/Sk_Bio_Science_CoLtd_en_9656371.html"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "SK Bioscience Official Website",
+                    "link": "https://www.skbioscience.com/en/main"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "SK Bioscience Expands Vaccine Manufacturing Plant",
+                    "link": "https://www.pharmaceutical-technology.com/news/sk-bioscience-vaccine-manufacturing-plant/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "SKYCellflu",
+                "type": "Cell culture-based influenza vaccine"
+            },
+            {
+                "name": "SKYZoster",
+                "type": "Shingles vaccine"
+            },
+            {
+                "name": "SKYVaricella",
+                "type": "Chickenpox vaccine"
+            },
+            {
+                "name": "SKYCovione",
+                "type": "COVID-19 vaccine"
+            },
+            {
+                "name": "GBP410",
+                "type": "Next-generation pneumococcal conjugate vaccine candidate"
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 47,
+        "name": "Chengdu Institute of Biological Products",
+        "description": "A leading Chinese biotechnology company specializing in the research and production of biological products, including vaccines and plasma-derived products.",
+        "history": "Established in 1958, the Chengdu Institute of Biological Products is part of the China National Biotec Group, one of the largest vaccine manufacturers in China. It has played a significant role in developing and supplying vaccines for national immunization programs and has contributed to global health initiatives through collaborations with international organizations.",
+        "details": {
+            "founded": "1958",
+            "headquarters": "Chengdu, Sichuan, China",
+            "ceo": "Not publicly disclosed",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Chengdu Institute of Biological Products - CMOCRO",
+                    "link": "https://www.cmocro.com/company/ChengDu+Institute+of+Biological+Products+Co.,+Ltd./index.html"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Chengdu Institute of Biological Products - CB Insights",
+                    "link": "https://www.cbinsights.com/company/chengdu-institute-of-biological-products"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "China National Biotec Group/Chengdu Institute of Biological Products and PATH announce collaboration",
+                    "link": "https://www.path.org/our-impact/media-center/china-national-biotec-groupchengdu-institute-of-biological-products-and-path-announce-collaboration-to-accelerate-pneumococcal-vaccine-development/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Japanese Encephalitis Vaccine, Live",
+                "description": "A vaccine used to prevent Japanese Encephalitis, a serious viral disease."
+            },
+            {
+                "name": "BCG Vaccine",
+                "description": "A vaccine used to prevent tuberculosis."
+            },
+            {
+                "name": "Diphtheria Vaccine, Adsorbed",
+                "description": "A vaccine used to prevent diphtheria."
+            },
+            {
+                "name": "Varicella Vaccine, Live",
+                "description": "A vaccine used to prevent chickenpox."
+            },
+            {
+                "name": "Vi polysaccharide typhoid vaccine",
+                "description": "A vaccine used to prevent typhoid fever."
+            }
+        ],
+        "lastUpdated": "2024-Dec"
+    },
+    {
+        "manufacturerId": 48,
+        "name": "GPO-MBP Co.",
+        "description": "A joint venture between the Government Pharmaceutical Organization (GPO) and Sanofi Pasteur, specializing in vaccine production, particularly for children's vaccines in Thailand.",
+        "history": "GPO-MBP was established as a collaboration between GPO and Sanofi Pasteur to meet local vaccine needs. The company has been involved in discussions with other vaccine manufacturers like Sinovac and has provided fill-finish capacity for COVID-19 vaccines.",
+        "details": {
+            "founded": "1997",
+            "headquarters": "Thailand",
+            "ownership": "GPO (40%), Sanofi (49%), CPB Equity Co., Ltd. (remainder)",
+            "products": "Children's vaccines, COVID-19 vaccine fill-finish services",
+            "sources": [
+                {
+                    "lastUpdated": "2022",
+                    "title": "GPO-MBP Overview - ISPE",
+                    "link": "https://ispe.org/pharmaceutical-engineering/ispeak/covid-19-vaccines-thailand"
+                },
+                {
+                    "lastUpdated": "2021",
+                    "title": "Thailand's Vaccine Efforts - The Chemical Engineer",
+                    "link": "https://www.thechemicalengineer.com/features/thailand-covid-19-and-the-vaccine/"
+                },
+                {
+                    "lastUpdated": "2020",
+                    "title": "GPO-MBP Facility Upgrade - RMK Corporation",
+                    "link": "https://www.rmkcorp.com/projects/gpo-mbp/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "COVID-19 Vaccine Fill-Finish",
+                "description": "Provides fill-finish capacity for COVID-19 vaccines."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 49,
+        "name": "Bavarian Nordic A/S",
+        "description": "A Denmark-based biotechnology company specializing in the research, development, and manufacturing of vaccines, particularly those using viral vectors for infectious diseases.",
+        "history": "Bavarian Nordic A/S was founded in 1992 and has since become a leading player in vaccine development, focusing on public health and preparedness. The company has expanded its operations globally, with significant contributions to vaccine solutions for diseases like smallpox, monkeypox, and tick-borne encephalitis.",
+        "details": {
+            "founded": "1992",
+            "headquarters": "Hellerup, Denmark",
+            "ceo": "Paul Chaplin",
+            "revenue": "DKK 6.07 billion (TTM)",
+            "netIncome": "DKK 1.12 billion",
+            "numberOfEmployees": "1,609",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Bavarian Nordic A/S - FT.com",
+                    "link": "https://markets.ft.com/data/equities/tearsheet/profile?s=BAVA%3ACPH"
+                },
+                {
+                    "lastUpdated": "2025",
+                    "title": "Bavarian Nordic AS Company Profile - GlobalData",
+                    "link": "https://www.globaldata.com/company-profile/bavarian-nordic-as/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Bavarian Nordic - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Bavarian_Nordic"
+                },
+                {
+                    "lastUpdated": "2025",
+                    "title": "Company Bavarian Nordic A/S - MarketScreener",
+                    "link": "https://www.marketscreener.com/quote/stock/BAVARIAN-NORDIC-A-S-1412846/company/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Encepur",
+                "description": "Tick-borne encephalitis vaccine"
+            },
+            {
+                "name": "Jynneos",
+                "description": "Smallpox and monkeypox vaccine"
+            },
+            {
+                "name": "Imvamune/Imvanex",
+                "description": "Smallpox vaccine"
+            },
+            {
+                "name": "Rabipur/RabAvert",
+                "description": "Rabies vaccines"
+            },
+            {
+                "name": "Vaxchora",
+                "description": "Cholera vaccine"
+            },
+            {
+                "name": "Vivotif",
+                "description": "Typhoid vaccine"
+            }
+        ],
+        "lastUpdated": "2025-Jan"
+    },
+    {
+        "manufacturerId": 51,
+        "name": "AJ Vaccines",
+        "description": "AJ Vaccines is a global pharmaceutical company based in Copenhagen, Denmark. It specializes in developing and manufacturing vaccines, diagnostics, and therapeutic solutions for infectious diseases. The company contributes to public health globally, particularly through collaborations with WHO and UNICEF.",
+        "history": "AJ Vaccines was established in 2017 following the divestment of the vaccine production arm from Statens Serum Institut (SSI), which has a history dating back to 1902. SSI played a crucial role in preventing and treating major epidemics in Denmark. AJ Vaccines continues this legacy by innovating and expanding access to vaccines worldwide.",
+        "details": {
+            "founded": "2017",
+            "headquarters": "Copenhagen, Denmark",
+            "ceo": "Not specified in available data",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Over 600",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "AJ Vaccines - About Us",
+                    "link": "https://ajvaccines.com/about"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "AJ Vaccines A/S - Medicines.org.uk",
+                    "link": "https://www.medicines.org.uk/emc/company/3934"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Stablepharma and AJ Vaccines Sign Strategic Letter of Intent",
+                    "link": "https://www.bioindustry.org/resource/stablepharma-and-aj-vaccines-sign-strategic-letter-of-intent.html"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "BCG Vaccine AJV",
+                "description": "Used for tuberculosis prevention and treatment of bladder cancer."
+            },
+            {
+                "name": "TdaP Vaccine",
+                "description": "Combination vaccine for tetanus, diphtheria, and pertussis."
+            },
+            {
+                "name": "Td Vaccine",
+                "description": "Combination vaccine for tetanus and diphtheria."
+            },
+            {
+                "name": "SPVX02",
+                "description": "Fridge-free adult booster vaccine for tetanus and diphtheria."
+            }
+        ],
+        "lastUpdated": "2024-Dec"
+    },
+    {
+        "manufacturerId": 52,
+        "name": "Japan BCG Laboratory",
+        "description": "A Japanese company specializing in the production of BCG vaccines and other medical products. It was founded in 1952 and is known for its freeze-dried glutamate BCG vaccine, which is used for the prevention of tuberculosis.",
+        "history": "Japan BCG Laboratory was established in 1952 as a separate entity focused on producing BCG vaccines. Over the years, it has maintained a strong presence in the global vaccine market, particularly with its Tokyo 172-1 strain of the BCG vaccine. The company has also been involved in other medical product developments and has a history of adhering to strict quality control measures.",
+        "details": {
+            "founded": "1952",
+            "headquarters": "Kiyose-shi, Tokyo, Japan",
+            "ceo": "Not publicly disclosed",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "WHO Statement on BCG Vaccine",
+                    "link": "https://www.who.int/news/item/09-08-2019-who-statement-on-product-by-biological-e-limited-india"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Japan BCG Laboratory Overview",
+                    "link": "https://extranet.who.int/prequal/sites/default/files/whopir_files/WHOPIR_JapanBCG-Lab15-17May2019.pdf"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "BCG Vaccine Manufacturers",
+                    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5777639/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Freeze-Dried Glutamate BCG Vaccine",
+                "strain": "Tokyo 172-1",
+                "use": "Prevention of tuberculosis"
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 53,
+        "name": "Organon Teknika",
+        "description": "A company associated with the production of pharmaceutical ingredients, notably pancuronium bromide, a neuromuscular blocking agent.",
+        "history": "Organon Teknika was part of the broader Organon group, which has a long history in pharmaceuticals. However, specific details about Organon Teknika's history are limited. It was located in Boxtel, Netherlands.",
+        "details": {
+            "founded": "Not specified",
+            "headquarters": "Boxtel, Netherlands",
+            "ceo": "Not specified",
+            "revenue": "Not specified",
+            "operatingIncome": "Not specified",
+            "netIncome": "Not specified",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Not specified",
+            "sources": [
+                {
+                    "lastUpdated": "2000",
+                    "title": "Organon Teknika b.v. Inspection Report",
+                    "link": "https://redica.com/document-store/sites/siteprofile/100273894/organon-teknika-b-v-boxtel-netherlands"
+                },
+                {
+                    "lastUpdated": "Not specified",
+                    "title": "Organon Teknika Brand of Pancuronium Bromide API",
+                    "link": "https://www.pharmacompass.com/listed-active-pharmaceutical-ingredients/organon-teknika-brand-of-pancuronium-bromide"
+                }
+            ]
+        },
+        "products": [
+            {
+                "name": "Pancuronium Bromide",
+                "description": "A neuromuscular blocking agent used in medical procedures."
+            }
+        ],
+        "lastUpdated": "2000"
+    },
+    {
+        "manufacturerId": 54,
+        "name": "Bilthoven Biologicals",
+        "description": "A biopharmaceutical company specializing in the production of inactivated polio vaccines (IPV), tetanus vaccines, diphtheria-tetanus-polio vaccines (DT-PV), and bacillus Calmette-Guérin (BCG) for bladder cancer treatment.",
+        "history": "Bilthoven Biologicals emerged after the privatization of NVI, formerly part of RIVM. It was acquired by the Cyrus Poonawalla Group in 2012 and later became a subsidiary of Serum Institute of India. The company has been instrumental in supporting global health initiatives, particularly in the eradication of polio.",
+        "details": {
+            "founded": "Privatized in 2012",
+            "headquarters": "Bilthoven, Netherlands",
+            "ceo": "Not specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Over 500",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Bilthoven Biologicals - BCF Career Event",
+                    "link": "https://www.bcfcareer.nl/companies/bbio"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Bharat Biotech and Bilthoven Biologicals B.V. Collaboration",
+                    "link": "https://www.bharatbiotech.com/images/press/BBIL-SII-OPV-DS-Press%20Note.pdf"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Bilthoven Biologicals - LeadIQ",
+                    "link": "https://leadiq.com/c/bilthoven-biologicals/5a1d97272300005c0085bbfb"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Inactivated Polio Vaccine (IPV)",
+                "description": "Used in global polio eradication efforts."
+            },
+            {
+                "name": "Tetanus Vaccine",
+                "description": "Protects against tetanus infections."
+            },
+            {
+                "name": "Diphtheria-Tetanus-Polio Vaccine (DT-PV)",
+                "description": "Combination vaccine for diphtheria, tetanus, and polio."
+            },
+            {
+                "name": "Bacillus Calmette-Guérin (BCG)",
+                "description": "Used for bladder cancer treatment."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 55,
+        "name": "Haffkine Bio-Pharmaceutical Corporation Ltd.",
+        "description": "A government of Maharashtra undertaking, Haffkine Bio-Pharmaceutical Corporation Ltd. is a pioneering company in the development and production of bacterial and viral vaccines, pharmaceutical products, disinfectants, ointments, injectables, syrups, and mixtures.",
+        "history": "Established as part of the Haffkine Institute's legacy, the company has been involved in vaccine production since its inception. It plays a crucial role in supplying life-saving drugs and vaccines, contributing significantly to public health initiatives like the Pulse Polio Immunization Programme.",
+        "details": {
+            "founded": "1974",
+            "headquarters": "Parel, Mumbai, India",
+            "ceo": "Varies (Governor of Maharashtra appoints directors)",
+            "revenue": "Approximately ₹315.70 crore (2013-2014)",
+            "operatingIncome": "Not specified",
+            "netIncome": "₹21.14 crore (2013-2014)",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "Not specified",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Haffkine Bio-Pharmaceutical Corporation Ltd. - Company Profile",
+                    "link": "https://www.vaccinehaffkine.com/about-us/company-profile.html"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Haffkine Bio-Pharmaceutical Corporation Ltd. - LinkedIn",
+                    "link": "https://in.linkedin.com/company/haffkine-bio-pharmaceutical-corporation-ltd."
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "Haffkine Bio-Pharmaceutical Corporation Ltd. - Economic Times",
+                    "link": "https://economictimes.com/company/haffkine-bio-pharmaceutical-corporation-limited/U24239MH1974SGC017341"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Diphtheria Vaccine",
+                "description": "Part of the DPT vaccine series."
+            },
+            {
+                "name": "Tetanus Vaccine",
+                "description": "Also part of the DPT vaccine series."
+            },
+            {
+                "name": "Whooping Cough Vaccine",
+                "description": "Part of the DPT vaccine series."
+            },
+            {
+                "name": "Plague Vaccine",
+                "description": "Developed historically, though current production status may vary."
+            },
+            {
+                "name": "Poliomyelitis Vaccine (OPV)",
+                "description": "Significant contributor to the Pulse Polio Immunization Programme."
+            },
+            {
+                "name": "Rabies Vaccine",
+                "description": "Used for post-exposure prophylaxis."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 56,
+        "name": "Zydus Lifesciences Ltd",
+        "description": "A leading Indian pharmaceutical company that discovers, develops, manufactures, and markets a broad range of healthcare therapies. It operates globally, offering active pharmaceutical ingredients (APIs), human formulations, animal health products, and wellness solutions.",
+        "history": "Zydus Lifesciences was founded in 1952 by Mr. Ramanbhai B. Patel. Initially known as Cadila Healthcare, it was restructured in 1995. The company has since grown significantly, becoming one of India's largest pharmaceutical companies with a global presence.",
+        "details": {
+            "founded": "1952",
+            "headquarters": "Ahmedabad, Gujarat, India",
+            "ceo": "Pankaj R. Patel",
+            "revenue": "INR 214.84 billion (TTM)",
+            "operatingIncome": "Not specified",
+            "netIncome": "INR 42.78 billion (TTM)",
+            "totalAssets": "Not specified",
+            "totalEquity": "Not specified",
+            "numberOfEmployees": "26,240",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Zydus Lifesciences Ltd Company Profile - GlobalData",
+                    "link": "https://www.globaldata.com/company-profile/zydus-lifesciences-ltd/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Zydus Lifesciences Ltd, ZYDUSLIFE:NSI profile - FT.com",
+                    "link": "https://markets.ft.com/data/equities/tearsheet/profile?s=ZYDUSLIFE%3ANSI"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Zydus Pharmaceuticals Overview",
+                    "link": "https://zydususa.com/overview/"
+                },
+                {
+                    "lastUpdated": "2022",
+                    "title": "About Zydus Group - The Leading Indian Pharma Company",
+                    "link": "https://www.zyduslife.com/company.html"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "ZyCoV-D",
+                "description": "The world's first plasmid DNA vaccine approved for human use, currently approved in India."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 57,
+        "name": "Hipra Human Health",
+        "description": "A division of Hipra, a biotech pharmaceutical company focused on prevention for animal and human health, specializing in vaccines and diagnostic services.",
+        "history": "Hipra was founded in 1971 in Madrid, Spain. It began internationalization in 2000 and shifted its focus to prevention in 2009. The Human Health division was established in 2021.",
+        "details": {
+            "founded": "1971",
+            "headquarters": "Amer, Catalonia, Spain",
+            "ceo": "Not specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Over 2,000",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "HIPRA - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/HIPRA"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Hipra Official Website",
+                    "link": "https://www.hipra.com/en"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "BIMERVAX®",
+                "description": "A COVID-19 vaccine developed by Hipra, approved by the World Health Organization (WHO)."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 58,
+        "name": "Novavax Inc.",
+        "description": "An American biotechnology company that discovers, develops, and commercializes vaccines for the prevention of infectious diseases.",
+        "history": "Novavax was founded with a focus on developing innovative vaccines. Prior to 2020, the company worked on vaccines for influenza, respiratory syncytial virus (RSV), Ebola, and other emerging diseases. In 2020, Novavax shifted its focus to develop the NVX-CoV2373 vaccine for COVID-19. The company has since expanded its portfolio to include vaccines for various infectious diseases.",
+        "details": {
+            "founded": "1987",
+            "headquarters": "Gaithersburg, Maryland, USA",
+            "ceo": "John C. Jacobs",
+            "revenue": "Varies by year; check latest financial reports",
+            "operatingIncome": "Varies by year; check latest financial reports",
+            "netIncome": "Varies by year; check latest financial reports",
+            "totalAssets": "Varies by year; check latest financial reports",
+            "totalEquity": "Varies by year; check latest financial reports",
+            "numberOfEmployees": "1,992",
+            "sources": [
+                {
+                    "lastUpdated": "2025",
+                    "title": "Novavax Inc. - Wikipedia",
+                    "link": "https://en.wikipedia.org/wiki/Novavax"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Novavax Inc Company Profile - GlobalData",
+                    "link": "https://www.globaldata.com/company-profile/novavax-inc/"
+                },
+                {
+                    "lastUpdated": "2025",
+                    "title": "Novavax Official Website",
+                    "link": "https://global.novavax.com"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Nuvaxovid (NVX-CoV2373)",
+                "description": "A COVID-19 vaccine approved in the EU and Canada."
+            },
+            {
+                "name": "NanoFlu",
+                "description": "A quadrivalent influenza vaccine."
+            },
+            {
+                "name": "ResVax",
+                "description": "A vaccine for respiratory syncytial virus (RSV)."
+            },
+            {
+                "name": "Ebola Vaccine",
+                "description": "Experimental vaccine for Ebola virus."
+            },
+            {
+                "name": "MERS and SARS Vaccines",
+                "description": "Vaccines in development for Middle East respiratory syndrome (MERS) and severe acute respiratory syndrome (SARS)."
+            }
+        ],
+        "lastUpdated": "2025-Jan"
+    },
+    {
+        "manufacturerId": 59,
+        "name": "EuBiologics Co., Ltd.",
+        "description": "A biopharmaceutical company focused on improving global public health by supplying safe and effective vaccines, particularly known for its oral cholera vaccines.",
+        "history": "EuBiologics was incorporated in March 2010 and has since become the largest supplier of oral cholera vaccines. It has supplied over 45 million doses of oral cholera vaccines since its prequalification in December 2015. The company has expanded its capabilities with a second manufacturing site inaugurated in April 2019.",
+        "details": {
+            "founded": "2010",
+            "headquarters": "6F BomnalAChim BD, Mabangro8, Seochogu Seoul, South Korea",
+            "ceo": "Dr. Baik Yeong-Ok",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "EuBiologics - DCVMN",
+                    "link": "https://dcvmn.org/member/eubiologics/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "EuBiologics Achieves WHO Prequalification for Euvichol-S",
+                    "link": "https://www.ivi.int/eubiologics-simplified-ocv-achieves-who-pq/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "EuBiologics Company Overview",
+                    "link": "http://eubiologics.com/eng/sub1_1.php"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Euvichol",
+                "type": "Oral Cholera Vaccine",
+                "description": "Supplied in glass vials."
+            },
+            {
+                "name": "Euvichol-Plus",
+                "type": "Oral Cholera Vaccine",
+                "description": "Supplied in plastic containers, more affordable and user-friendly."
+            },
+            {
+                "name": "Euvichol-S",
+                "type": "Oral Cholera Vaccine",
+                "description": "Improved version with increased productivity, achieved WHO prequalification in 2024."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 60,
+        "name": "Bio-Manguinhos",
+        "description": "A Brazilian unit of the Oswaldo Cruz Foundation (Fiocruz), responsible for the development and production of vaccines, reagents, and biopharmaceuticals to meet public health demands.",
+        "history": "Founded in 1976, Bio-Manguinhos has played a crucial role in Brazil's public health programs by investing in innovation, technological development, and manufacturing. It is renowned for producing vaccines like the yellow fever vaccine and has partnerships with national and international institutions to enhance its capabilities.",
+        "details": {
+            "founded": "1976",
+            "headquarters": "Rio de Janeiro, Brazil",
+            "ceo": "Mauricio Zuma Medeiros (Director)",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Bio-Manguinhos - DCVMN",
+                    "link": "https://dcvmn.org/member/biomanguinhos/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Bio-Manguinhos - CB Insights",
+                    "link": "https://www.cbinsights.com/company/bio-manguinhos"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "PATH and Bio-Manguinhos/Fiocruz Partnership",
+                    "link": "https://www.path.org/our-impact/media-center/path-and-bio-manguinhosfiocruz-commit-to-boosting-technological-platforms-and-increasing-local-production/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Bio-Manguinhos Joins CEPI’s Manufacturing Network",
+                    "link": "https://cepi.net/mobilising-brazils-manufacturing-might-support-vaccine-production-global-south"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Yellow Fever Vaccine",
+                "description": "WHO-approved and widely exported to over 70 countries."
+            },
+            {
+                "name": "Other Vaccines and Biopharmaceuticals",
+                "description": "Bio-Manguinhos produces over 40 products, including vaccines, diagnostics, and biopharmaceuticals."
+            }
+        ],
+        "lastUpdated": "2024-Nov"
+    },
+    {
+        "manufacturerId": 61,
+        "name": "Fiocruz",
+        "description": "A leading Brazilian public health institution known for vaccine and drug manufacturing, particularly contributing to the Brazilian Unified Public Health System (SUS). Fiocruz operates through its institutes, such as Bio-Manguinhos and Farmanguinhos.",
+        "history": "Founded in 1900 as the Oswaldo Cruz Institute, Fiocruz has a long history of developing and manufacturing vaccines and drugs. It has expanded its capabilities over the years, becoming a major player in Latin America's vaccine production. Fiocruz has collaborated with international partners like GSK to enhance its vaccine production and research capabilities.",
+        "details": {
+            "founded": "1900",
+            "headquarters": "Rio de Janeiro, Brazil",
+            "ceo": "Mario Moreira (President of Fiocruz)",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Approximately 10,000 across all Fiocruz units",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "Fiocruz Official Website",
+                    "link": "https://portal.fiocruz.br/en/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Fiocruz Vaccine Manufacturing - Pharmaceutical Technology",
+                    "link": "https://www.pharmaceutical-technology.com/projects/fiocruz/"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Fiocruz and CEPI Partnership - CEPI",
+                    "link": "https://cepi.net/mobilising-brazils-manufacturing-might-support-vaccine-production-global-south"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Yellow Fever Vaccine",
+                "description": "Fiocruz is the world's largest manufacturer of the yellow fever vaccine and the only Latin American laboratory certified by the WHO for this purpose."
+            },
+            {
+                "name": "MMR Vaccine",
+                "description": "Manufactured in partnership with GSK, this vaccine protects against measles, mumps, and rubella."
+            },
+            {
+                "name": "Polio Vaccine",
+                "description": "Fiocruz produces oral polio vaccines as part of its vaccine portfolio."
+            },
+            {
+                "name": "Meningitis A and C Vaccines",
+                "description": "These vaccines are part of Fiocruz's production to combat meningitis outbreaks."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 62,
+        "name": "Chumakov Federal Scientific Center",
+        "description": "A leading Russian scientific center specializing in medical virology, including the study and development of vaccines for poliomyelitis, tick-borne encephalitis, rabies, and other viral diseases.",
+        "history": "Established in 1955 as the Institute of Poliomyelitis and Viral Encephalitis, the Chumakov Center was founded by Dr. Mikhail Chumakov. It is renowned for its contributions to vaccine development, particularly the oral polio vaccine, which was exported to over 60 countries and significantly reduced polio outbreaks in Eastern Europe and Japan.",
+        "details": {
+            "founded": "1955",
+            "headquarters": "Moscow, Russia",
+            "director": "Dr. Aydar Ishmukhametov",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2023",
+                    "title": "Chumakov Federal Scientific Center - Global Virus Network",
+                    "link": "https://gvn.org/gvn-centers-of-excellence/europe/russia/"
+                },
+                {
+                    "lastUpdated": "2023",
+                    "title": "M.P. Chumakov Federal Scientific Center Publications",
+                    "link": "https://colab.ws/organizations/04rawk951"
+                },
+                {
+                    "lastUpdated": "2022",
+                    "title": "Chumakov Federal Scientific Center Overview",
+                    "link": "https://clarivate.com.cn/?drug-company=chumakov-federal-scientific-center-for-research-and-development-of-immune-and-biological-products-of-russian-academy-of-science"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Oral Polio Vaccine",
+                "description": "Developed from strains by Dr. Albert Sabin, this vaccine has been instrumental in reducing polio outbreaks globally."
+            },
+            {
+                "name": "Tick-Borne Encephalitis (TBE) Vaccine",
+                "description": "Includes the Evervac vaccine, which is adjuvant-free and has shown safety and immunogenicity in clinical trials."
+            },
+            {
+                "name": "Rabies Vaccine",
+                "description": "Part of the center's vaccine portfolio, contributing to national demand."
+            },
+            {
+                "name": "Yellow Fever Vaccine",
+                "description": "Supports UNICEF's Eliminating Yellow Fever Epidemics (EYE) Strategy."
+            },
+            {
+                "name": "CoviVac COVID-19 Vaccine",
+                "description": "Developed in collaboration with Nanolek for production in Russia."
+            }
+        ],
+        "lastUpdated": "2024-Jan"
+    },
+    {
+        "manufacturerId": 63,
+        "name": "Institut Pasteur de Dakar",
+        "description": "A Senegalese non-profit public interest foundation dedicated to advancing public health and well-being in Senegal and Africa through research, training, scientific knowledge sharing, and vaccine production.",
+        "history": "Founded in 1896, Institut Pasteur de Dakar has been a leading force against infectious diseases in West Africa. It is one of the four WHO prequalified manufacturers for yellow fever vaccines and has recently expanded its capacity to produce COVID-19 and other vaccines.",
+        "details": {
+            "founded": "1896",
+            "headquarters": "Dakar, Senegal",
+            "ceo": "Not specified",
+            "revenue": "Not publicly disclosed",
+            "operatingIncome": "Not publicly disclosed",
+            "netIncome": "Not publicly disclosed",
+            "totalAssets": "Not publicly disclosed",
+            "totalEquity": "Not publicly disclosed",
+            "numberOfEmployees": "Not publicly disclosed",
+            "sources": [
+                {
+                    "lastUpdated": "2024",
+                    "title": "IFC and Institut Pasteur de Dakar Deepen Partnership",
+                    "link": "https://www.ifc.org/en/pressroom/2022/ifc-and-institut-pasteur-de-dakar-deepen-their-partnership-to-build-covid-19-vaccine-manufacturing-facility"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "CEPI and Institut Pasteur de Dakar Announce Partnership",
+                    "link": "https://cepi.net/cepi-and-institut-pasteur-de-dakar-announce-10-year-partnership-boost-manufacturing-affordable"
+                },
+                {
+                    "lastUpdated": "2024",
+                    "title": "Institut Pasteur de Dakar Official Website",
+                    "link": "https://institutpasteurdakar.sn/"
+                }
+            ]
+        },
+        "vaccines": [
+            {
+                "name": "Yellow Fever Vaccine",
+                "description": "One of the four WHO prequalified manufacturers for yellow fever vaccines."
+            },
+            {
+                "name": "COVID-19 Vaccine",
+                "description": "Expanded capacity to produce COVID-19 vaccines as part of recent partnerships."
+            }
+        ],
+        "lastUpdated": "2024-Dec"
     }
 ]

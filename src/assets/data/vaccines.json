@@ -2,522 +2,592 @@
     {
         "vaccineId": 31,
         "name": "IXCHIQ®",
-        "pathogenId": 7
+        "pathogenId": 7,
+        "manufacturers": [
+            {
+                "manufacturerId": 23
+            }
+        ]
     },
     {
         "vaccineId": 32,
         "name": "Adenovirus Type 4",
-        "pathogenId": 25
+        "pathogenId": 25,
+        "manufacturers": [
+            {
+                "manufacturerId": 13
+            }
+        ]
     },
     {
         "vaccineId": 33,
         "name": "Type 7 Vaccine, Live, Oral®",
-        "pathogenId": 25
+        "pathogenId": 25,
+        "manufacturers": [
+            {
+                "manufacturerId": 13
+            }
+        ]
     },
     {
         "vaccineId": 34,
         "name": "BioThrax®",
-        "pathogenId": 34
+        "pathogenId": 34,
+        "manufacturers": [
+            {
+                "manufacturerId": 14
+            }
+        ]
     },
     {
         "vaccineId": 35,
         "name": "CYFENDUS®",
-        "pathogenId": 34
+        "pathogenId": 34,
+        "manufacturers": [
+            {
+                "manufacturerId": 15
+            }
+        ]
     },
     {
         "vaccineId": 36,
         "name": "Infanrix®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 37,
         "name": "Adacel®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 38,
         "name": "DAPTACEL®",
-        "pathogenId": 39
-    },
-    {
-        "vaccineId": 39,
-        "name": "Boostrix®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 40,
         "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
-        "pathogenId": 39
-    },
-    {
-        "vaccineId": 41,
-        "name": "DTP Vaccine®",
-        "pathogenId": 39
-    },
-    {
-        "vaccineId": 42,
-        "name": "TRIPVAC®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 43,
         "name": "DTwPHepatitisBHibadsorbed®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 44,
         "name": "DTwPHepatitisBHib®",
-        "pathogenId": 39
-    },
-    {
-        "vaccineId": 45,
-        "name": "Easyfive TT®",
-        "pathogenId": 39
-    },
-    {
-        "vaccineId": 46,
-        "name": "Eupenta®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 47,
         "name": "ComBE Five (Liquid)®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
     },
     {
         "vaccineId": 48,
         "name": "ComBE Five (Reconstituted)®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
     },
     {
         "vaccineId": 49,
         "name": "Pentabio®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 21
+            }
+        ]
     },
     {
         "vaccineId": 50,
         "name": "DTwPHib®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 51,
         "name": "KINRIX®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 52,
         "name": "Quadracel®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 53,
         "name": "PEDIARIX®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 54,
         "name": "Vaxelis®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 19
+            }
+        ]
     },
     {
         "vaccineId": 55,
         "name": "HEXASIIL®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 56,
-        "name": "Infanrix Hexa®",
-        "pathogenId": 39
+        "name": "Heberbiovac HB®",
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
+    },
+    {
+        "vaccineId": 45,
+        "name": "Healive®",
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 10
+            }
+        ]
+    },
+    {
+        "vaccineId": 60,
+        "name": "Heplisav B®",
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 64
+            }
+        ]
     },
     {
         "vaccineId": 57,
         "name": "Pentacel®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 58,
         "name": "Hexacima; Hexaxim®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 59,
         "name": "Hexyon®",
-        "pathogenId": 39
+        "pathogenId": 39,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 61,
+        "name": "Ambirix®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 62,
         "name": "BEtt®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
     },
     {
         "vaccineId": 63,
         "name": "TETAVAX®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 64,
         "name": "TT vaccine®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 21
+            }
+        ]
     },
     {
         "vaccineId": 65,
         "name": "Tetanus Toxoid Vaccine Adsorbed®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 66,
         "name": "Tetatox®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 24
+            }
+        ]
     },
     {
         "vaccineId": 67,
         "name": "Tenivac®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 68,
         "name": "Adsorbed DT Vaccine®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 21
+            }
+        ]
     },
     {
         "vaccineId": 69,
         "name": "Diftet®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 24
+            }
+        ]
     },
     {
         "vaccineId": 70,
         "name": "ADSORBED Td VACCINE®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 21
+            }
+        ]
     },
     {
         "vaccineId": 71,
         "name": "BE Td®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
     },
     {
         "vaccineId": 72,
         "name": "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric)®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 73,
         "name": "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 74,
         "name": "IMOVAX dT adult®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 75,
-        "name": "Infanrix®",
-        "pathogenId": 41
+        "name": "Engerix-B®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 76,
         "name": "Tetadif®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 24
+            }
+        ]
     },
     {
         "vaccineId": 77,
-        "name": "Adacel®",
-        "pathogenId": 41
+        "name": "Fendrix®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 78,
-        "name": "DAPTACEL®",
-        "pathogenId": 41
+        "name": "Havrix; Havrix 720 Junior; Havrix 1440 Adult®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 79,
-        "name": "Boostrix®",
-        "pathogenId": 41
+        "name": "Twinrix®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 80,
-        "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
-        "pathogenId": 41
+        "name": "Euvax B®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 18
+            }
+        ]
     },
     {
         "vaccineId": 81,
         "name": "DTP Vaccine®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 21
+            }
+        ]
     },
     {
         "vaccineId": 82,
         "name": "TRIPVAC®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
     },
     {
         "vaccineId": 83,
-        "name": "DTwPHepatitisBHibadsorbed®",
-        "pathogenId": 41
+        "name": "HBVaxPro®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
     },
     {
         "vaccineId": 84,
-        "name": "DTwPHepatitisBHib®",
-        "pathogenId": 41
+        "name": "Recombivax HB®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
     },
     {
         "vaccineId": 85,
-        "name": "Easyfive TT®",
-        "pathogenId": 41
+        "name": "VAQTA®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
     },
     {
         "vaccineId": 86,
         "name": "Eupenta®",
-        "pathogenId": 41
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 18
+            }
+        ]
     },
     {
         "vaccineId": 87,
-        "name": "ComBE Five (Liquid)®",
-        "pathogenId": 41
+        "name": "Hepatitis B vaccine (rDNA)®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 88,
-        "name": "ComBE Five (Reconstituted)®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 89,
-        "name": "Pentabio®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 90,
-        "name": "DTwPHib®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 91,
-        "name": "KINRIX®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 92,
-        "name": "Quadracel®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 93,
-        "name": "PEDIARIX®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 94,
-        "name": "Vaxelis®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 95,
-        "name": "HEXASIIL®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 96,
-        "name": "Infanrix Hexa®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 97,
-        "name": "Pentacel®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 98,
-        "name": "Hexacima; Hexaxim®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 99,
-        "name": "Hexyon®",
-        "pathogenId": 41
-    },
-    {
-        "vaccineId": 100,
-        "name": "Hexyon®",
-        "pathogenId": 41
+        "name": "PreHevbri; PreHevbrio®",
+        "pathogenId": 41,
+        "manufacturers": [
+            {
+                "manufacturerId": 32
+            }
+        ]
     },
     {
         "vaccineId": 101,
         "name": "TDVAX®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 102,
-        "name": "Tenivac®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 103,
-        "name": "Adsorbed DT Vaccine®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 104,
-        "name": "Diftet®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 105,
-        "name": "ADSORBED Td VACCINE®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 106,
-        "name": "BE Td®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 107,
-        "name": "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric)®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 108,
-        "name": "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 109,
-        "name": "IMOVAX dT adult®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 110,
-        "name": "Tetadif®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 111,
-        "name": "Adacel®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 112,
-        "name": "DAPTACEL®",
-        "pathogenId": 35
+        "pathogenId": 35,
+        "manufacturers": [
+            {
+                "manufacturerId": 26
+            }
+        ]
     },
     {
         "vaccineId": 113,
         "name": "Boostrix®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 114,
-        "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 115,
-        "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 116,
-        "name": "DTP Vaccine®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 117,
-        "name": "TRIPVAC®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 118,
-        "name": "DTwPHepatitisBHibadsorbed®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 119,
-        "name": "DTwPHepatitisBHib®",
-        "pathogenId": 35
+        "pathogenId": 35,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 120,
         "name": "Easyfive TT®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 121,
-        "name": "Eupenta®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 122,
-        "name": "ComBE Five (Reconstituted)®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 123,
-        "name": "ComBE Five (Reconstituted)®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 124,
-        "name": "Pentabio®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 125,
-        "name": "DTwPHib®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 126,
-        "name": "KINRIX®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 127,
-        "name": "Quadracel®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 128,
-        "name": "PEDIARIX®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 129,
-        "name": "Vaxelis®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 130,
-        "name": "HEXASIIL®",
-        "pathogenId": 35
+        "pathogenId": 35,
+        "manufacturers": [
+            {
+                "manufacturerId": 20
+            }
+        ]
     },
     {
         "vaccineId": 131,
         "name": "Infanrix Hexa®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 132,
-        "name": "Pentacel®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 133,
-        "name": "Hexacima; Hexaxim®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 134,
-        "name": "Hexyon®",
-        "pathogenId": 35
-    },
-    {
-        "vaccineId": 134,
-        "name": "Hexyon®",
-        "pathogenId": 35
+        "pathogenId": 35,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 135,
         "name": "Dengvaxia®",
         "pathogenId": 30,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
         "licensingDates": [
             {
                 "name": "EMA",
@@ -596,6 +666,11 @@
         "vaccineId": 136,
         "name": "Qdenga®",
         "pathogenId": 30,
+        "manufacturers": [
+            {
+                "manufacturerId": 28
+            }
+        ],
         "productProfiles": [
             {
                 "type": "EMA",
@@ -653,137 +728,102 @@
     {
         "vaccineId": 137,
         "name": "Ervebo®",
-        "pathogenId": 29
+        "pathogenId": 29,
+        "manufacturers": [
+            {
+                "manufacturerId": 19
+            }
+        ]
     },
     {
         "vaccineId": 138,
         "name": "Zabdeno+Mvabea®",
-        "pathogenId": 29
+        "pathogenId": 29,
+        "manufacturers": [
+            {
+                "manufacturerId": 2
+            }
+        ]
     },
     {
         "vaccineId": 139,
         "name": "ActHIB; Act-HIB®",
-        "pathogenId": 40
+        "pathogenId": 40,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
     },
     {
         "vaccineId": 140,
         "name": "Haemophilus influenzae type b Conjugate Vaccine®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 141,
-        "name": "HIBERIX®",
-        "pathogenId": 40
+        "pathogenId": 40,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
     },
     {
         "vaccineId": 142,
         "name": "HIBERIX®",
-        "pathogenId": 40
+        "pathogenId": 40,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "vaccineId": 143,
         "name": "Liquid PedvaxHIB®",
-        "pathogenId": 40
+        "pathogenId": 40,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
     },
     {
         "vaccineId": 144,
         "name": "Quimi Hib®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 145,
-        "name": "DTwPHepatitisBHibadsorbed®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 146,
-        "name": "DTwPHepatitisBHib®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 147,
-        "name": "Easyfive TT®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 148,
-        "name": "Eupenta®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 149,
-        "name": "ComBE Five (Liquid)®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 150,
-        "name": "ComBE Five (Reconstituted)®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 151,
-        "name": "Pentabio®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 152,
-        "name": "DTwPHib®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 153,
-        "name": "Vaxelis®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 154,
-        "name": "HEXASIIL®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 154,
-        "name": "Infanrix Hexa®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 155,
-        "name": "Pentacel®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 156,
-        "name": "Pentacel®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 157,
-        "name": "Hexacima; Hexaxim®",
-        "pathogenId": 40
-    },
-    {
-        "vaccineId": 158,
-        "name": "Hexyon®",
-        "pathogenId": 40
+        "pathogenId": 40,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
     },
     {
         "vaccineId": 159,
         "name": "Gardasil 9®",
-        "pathogenId": 6
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
     },
     {
         "vaccineId": 160,
         "name": "Cecolin®",
-        "pathogenId": 6
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 33
+            }
+        ]
     },
     {
         "vaccineId": 161,
         "name": "Cervarix®",
-        "pathogenId": 6
-    },
-    {
-        "vaccineId": 162,
-        "name": "Walrinvax®",
-        "pathogenId": 6
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
     },
     {
         "name": "Abrysvo®",
@@ -891,5 +931,1075 @@
         ],
         "link": "https://www.pfizer.com/products/product-detail/abrysvotm",
         "lastUpdated": "2024-AUG"
+    },
+    {
+        "vaccineId": 162,
+        "name": "Walrinvax®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 34
+            }
+        ]
+    },
+    {
+        "vaccineId": 163,
+        "name": "Gardasil®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
+    },
+    {
+        "vaccineId": 164,
+        "name": "Influvac Tetra®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 35
+            }
+        ]
+    },
+    {
+        "vaccineId": 165,
+        "name": "Serinflu®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 35
+            }
+        ]
+    },
+    {
+        "vaccineId": 166,
+        "name": "Fluenz Tetra®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 6
+            }
+        ]
+    },
+    {
+        "vaccineId": 167,
+        "name": "Fluenz®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 6
+            }
+        ]
+    },
+    {
+        "vaccineId": 168,
+        "name": "Pandemic Influenza Vaccine H5N1 AstraZeneca®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 6
+            }
+        ]
+    },
+    {
+        "vaccineId": 169,
+        "name": "Influenza Vaccine (Split Virion), Inactivated®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 36
+            }
+        ]
+    },
+    {
+        "vaccineId": 170,
+        "name": "Influenza A(H1N1) 2009 Monovalent (CSL Limited)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 37
+            }
+        ]
+    },
+    {
+        "vaccineId": 171,
+        "name": "GC FLU inj.®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 38
+            }
+        ]
+    },
+    {
+        "vaccineId": 172,
+        "name": "GC FLU Quadrivalent inj.®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 38
+            }
+        ]
+    },
+    {
+        "vaccineId": 173,
+        "name": "Green Flu S®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 38
+            }
+        ]
+    },
+    {
+        "vaccineId": 174,
+        "name": "Adjupanrix®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 175,
+        "name": "FLUARIX QUADRIVALENT®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 176,
+        "name": "FLUARIX®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 177,
+        "name": "Influenza Vaccine (Split virion, inactivated)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 39
+            }
+        ]
+    },
+    {
+        "vaccineId": 178,
+        "name": "Arepanrix®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 40
+            }
+        ]
+    },
+    {
+        "vaccineId": 179,
+        "name": "FluLaval Quadrivalent®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 40
+            }
+        ]
+    },
+    {
+        "vaccineId": 180,
+        "name": "FLULAVAL®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 40
+            }
+        ]
+    },
+    {
+        "vaccineId": 181,
+        "name": "Influenza A (H1N1) 2009 Monovalent (ID Biomedical Corporation of Quebec)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 40
+            }
+        ]
+    },
+    {
+        "vaccineId": 182,
+        "name": "Influenza A (H5N1) Virus Monovalent Vaccine, Adjuvanted®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 40
+            }
+        ]
+    },
+    {
+        "vaccineId": 183,
+        "name": "IL YANG FLU Vaccine INJ.®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 41
+            }
+        ]
+    },
+    {
+        "vaccineId": 184,
+        "name": "Influenza Trivalent Vaccine (split virion, inactivated)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 42
+            }
+        ]
+    },
+    {
+        "vaccineId": 185,
+        "name": "FluMist Quadrivalent®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 43
+            }
+        ]
+    },
+    {
+        "vaccineId": 186,
+        "name": "FluMist®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 43
+            }
+        ]
+    },
+    {
+        "vaccineId": 187,
+        "name": "Influenza A (H1N1) 2009 Monovalent (MedImmune)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 43
+            }
+        ]
+    },
+    {
+        "vaccineId": 188,
+        "name": "Influenza A (H1N1) 2009 Monovalent (Novartis)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 8
+            }
+        ]
+    },
+    {
+        "vaccineId": 189,
+        "name": "Flublok Quadrivalent®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 44
+            }
+        ]
+    },
+    {
+        "vaccineId": 190,
+        "name": "Flublok®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 44
+            }
+        ]
+    },
+    {
+        "vaccineId": 191,
+        "name": "Fluzone Quadrivalent; Fluzone High-Dose Quadrivalent; Fluzone Intradermal Quadrivalent®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 192,
+        "name": "Fluzone; Fluzone High-Dose-®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 193,
+        "name": "Influenza A (H1N1) 2009 Monovalent Vaccine (Sanofi)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 194,
+        "name": "Influenza Virus Vaccine, H5N1®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 195,
+        "name": "Panenza®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 196,
+        "name": "Supemtek®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 197,
+        "name": "Vaxigrip®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 198,
+        "name": "VaxigripTetra®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 199,
+        "name": "Aflunov®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 200,
+        "name": "Afluria Quadrivalent®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 201,
+        "name": "Afluria®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 202,
+        "name": "AUDENZ®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 203,
+        "name": "Celldemic®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 204,
+        "name": "Celtura®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 205,
+        "name": "Fluad Tetra; FLUAD QUADRIVALENT®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 206,
+        "name": "FLUAD®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 207,
+        "name": "Flucelvax Tetra; Flucelvax Quadrivalent®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 208,
+        "name": "Flucelvax®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 209,
+        "name": "Fluvirin®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 210,
+        "name": "Focetria®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 211,
+        "name": "Foclivia®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 212,
+        "name": "Incellipan®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 213,
+        "name": "Panvax®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 214,
+        "name": "Zoonotic Influenza Vaccine Seqirus®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ]
+    },
+    {
+        "vaccineId": 215,
+        "name": "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze Dried®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
+    },
+    {
+        "vaccineId": 216,
+        "name": "Nasovac-S Influenza Vaccine, Live, Attenuated (Human)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
+    },
+    {
+        "vaccineId": 217,
+        "name": "SKYCellflu inj.®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 46
+            }
+        ]
+    },
+    {
+        "vaccineId": 218,
+        "name": "SKYCellflu Quadrivalent inj.®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 46
+            }
+        ]
+    },
+    {
+        "vaccineId": 219,
+        "name": "JEEV (3µg)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
+    },
+    {
+        "vaccineId": 220,
+        "name": "JEEV (6µg)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
+    },
+    {
+        "vaccineId": 221,
+        "name": "Japanese Encephalitis Vaccine live (SA14-14-2)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 47
+            }
+        ]
+    },
+    {
+        "vaccineId": 222,
+        "name": "IMOJEV MD®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 48
+            }
+        ]
+    },
+    {
+        "vaccineId": 223,
+        "name": "Ixiaro®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 23
+            }
+        ]
+    },
+    {
+        "vaccineId": 224,
+        "name": "Measles and Rubella Vaccine (Live) (Attenuated, Freeze Dried)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
+    },
+    {
+        "vaccineId": 225,
+        "name": "Priorix®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 226,
+        "name": "M M Rvaxpro; M M R II; rHA M M R II®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
+    },
+    {
+        "vaccineId": 227,
+        "name": "ProQuad®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ]
+    },
+    {
+        "vaccineId": 228,
+        "name": "Measles vaccine®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 21
+            }
+        ]
+    },
+    {
+        "vaccineId": 229,
+        "name": "Measles and Rubella Vaccine, Live, Attenuated®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
+    },
+    {
+        "vaccineId": 230,
+        "name": "Measles Vaccine, Live, Attenuated®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
+    },
+    {
+        "vaccineId": 231,
+        "name": "Measles, Mumps and Rubella Vaccine, Live, Attenuated®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
+    },
+    {
+        "vaccineId": 232,
+        "name": "MVA BN (Imvanex; JYNNEOS)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 49
+            }
+        ]
+    },
+    {
+        "vaccineId": 233,
+        "name": "ACAM2000®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 15
+            }
+        ]
+    },
+    {
+        "vaccineId": 234,
+        "name": "BCG vaccine AJV®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 51
+            }
+        ]
+    },
+    {
+        "vaccineId": 235,
+        "name": "BCG vaccine (BB-NCIPD)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 24
+            }
+        ]
+    },
+    {
+        "vaccineId": 236,
+        "name": "BCG Freeze Dried Glutamate vaccine®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 52
+            }
+        ]
+    },
+    {
+        "vaccineId": 237,
+        "name": "BCG Vaccine®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 53
+            }
+        ]
+    },
+    {
+        "vaccineId": 238,
+        "name": "TICE BCG®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 53
+            }
+        ]
+    },
+    {
+        "vaccineId": 239,
+        "name": "BCG vaccine (Serum Institute of India)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
+    },
+    {
+        "vaccineId": 240,
+        "name": "Bexsero®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 241,
+        "name": "Menveo®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 242,
+        "name": "Nimenrix®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 1
+            }
+        ]
+    },
+    {
+        "vaccineId": 243,
+        "name": "Penbraya®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 1
+            }
+        ]
+    },
+    {
+        "vaccineId": 244,
+        "name": "Trumenba®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 1
+            }
+        ]
+    },
+    {
+        "vaccineId": 245,
+        "name": "Menactra®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 246,
+        "name": "Menquadfi®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ]
+    },
+    {
+        "vaccineId": 247,
+        "name": "MenFive®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
+    },
+    {
+        "vaccineId": 248,
+        "name": "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 1
+            }
+        ]
+    },
+    {
+        "vaccineId": 249,
+        "name": "Meningococcal A Conjugate MenAfriVac®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 1
+            }
+        ]
+    },
+    {
+        "vaccineId": 250,
+        "name": "Mosquirix®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 251,
+        "name": "CYVAC®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ]
+    },
+    {
+        "vaccineId": 252,
+        "name": "IPV Vaccine AJV®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 51
+            }
+        ]
+    },
+    {
+        "vaccineId": 253,
+        "name": "Picovax®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 51
+            }
+        ]
+    },
+    {
+        "vaccineId": 254,
+        "name": "Poliomyelitis Vaccine (live, oral attenuated, human Diploid Cell), type 1 and 3®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 65
+            }
+        ]
+    },
+    {
+        "vaccineId": 255,
+        "name": "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains (Beijing Institute)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 65
+            }
+        ]
+    },
+    {
+        "vaccineId": 256,
+        "name": "BIOPOLIO B1,3®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 12
+            }
+        ]
+    },
+    {
+        "vaccineId": 257,
+        "name": "BIOPOLIO®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 12
+            }
+        ]
+    },
+    {
+        "vaccineId": 258,
+        "name": "Poliomyelitis vaccine; Poliomyelitis vaccine multidose®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 54
+            }
+        ]
+    },
+    {
+        "vaccineId": 259,
+        "name": "Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ]
+    },
+    {
+        "vaccineId": 260,
+        "name": "Polio Sabin Mono T1®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 261,
+        "name": "Polio Sabin Mono Three (oral)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 262,
+        "name": "Polio Sabin Mono Two (oral)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 263,
+        "name": "Polio Sabin One and Three®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ]
+    },
+    {
+        "vaccineId": 264,
+        "name": "Bivalent type 1&3 Oral Poliomyelitis vaccine, IP (bOPV1&3)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 55
+            }
+        ]
+    },
+    {
+        "vaccineId": 265,
+        "name": "Polioviral vaccine®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 55
+            }
+        ]
+    },
+    {
+        "vaccineId": 266,
+        "name": "Monovalent type 1 Oral Poliomyelitis vaccine, IP (mOPV1)®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 55
+            }
+        ]
+    },
+    {
+        "vaccineId": 267,
+        "name": "Eupolio Inj®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 18
+            }
+        ]
+    },
+    {
+        "vaccineId": 268,
+        "name": "Vaxelis®",
+        "pathogenId": 6,
+        "manufacturers": [
+            {
+                "manufacturerId": 19
+            }
+        ]
     }
 ]
