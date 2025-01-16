@@ -451,21 +451,15 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                             const vaccineTwo = licenserFieldsVaccine[1];
                                             const vaccineThree = licenserFieldsVaccine[2];
 
-                                            const licenserOne = selectedFilterLicenser[0];
-                                            const licenserTwo = selectedFilterLicenser[1];
-                                            const licenserThree = selectedFilterLicenser[2];
                                             return key === "name" ? null : (
                                                 <>
                                                     <tr key={Math.random() * 999}>
-                                                        {/* {vaccineIdx === 0 && ( */}
-                                                        <td width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`fix ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                                        {/* // )} */}
-
+                                                        <td width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`baseline fix ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                         {/** ONE */}
                                                         {
                                                             vaccineOne && vaccineOne.licenser.length > 0 && vaccineOne.licenser.map((licenser, idx) => {
                                                                 return (
-                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineOne.name)}</td>
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineOne.name)}</td>
                                                                 )
                                                             })
                                                         }
@@ -474,7 +468,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                         {
                                                             vaccineTwo && vaccineTwo.licenser.length > 0 && vaccineTwo.licenser.map((licenser, idx) => {
                                                                 return (
-                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={` ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineTwo.name)}</td>
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineTwo.name)}</td>
                                                                 )
                                                             })
                                                         }

@@ -39,6 +39,9 @@ code {
   background: rgba(88, 26, 233, 1);
 }
 
+.baseline {
+  align-content: baseline;
+}
 .compare-color {
   background: rgba(88, 26, 233, 1);
 }
