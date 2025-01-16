@@ -6,8 +6,18 @@ import licensers from '../assets/data/licensers.json';
 export const getVaccinesByPathogenId = (id) => {
     const data = vaccines;
 
-    const result = data.filter((vac) => vac.pathogenId === id);
+    // const result = data.filter((vac) => vac.pathogenId === id);
 
+    let result = data.map((x) => {
+        return {
+            ...x,
+            pathogenId: x.pathogenId.filter((y) => y === id)[0]
+        }
+    });
+
+    result = result.filter((x) => x.pathogenId === id)
+
+    // const result = data.filter((x) => x.pathogenId.filter((y) => y === id[0]));
     if (result.length > 0) {
         return result;
     }

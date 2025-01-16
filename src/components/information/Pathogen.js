@@ -6,6 +6,7 @@ import Vaccine from './Vaccine';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
+import { sortArrayAscending } from '../../utils/array';
 
 
 const style = {
@@ -54,8 +55,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         return formattedString.charAt(0).toUpperCase() + formattedString.slice(1);
     };
     const [compareSubmitted, setCompareSubmitted] = useState(false);
-
-
 
     const platforms = [
         "type",
@@ -217,7 +216,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                             <div>
                                 <div className='mt-4' style={{ paddingLeft: 10 }}>
                                     <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
-                                    {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((vaccine) => {
+                                    {getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? sortArrayAscending(getVaccinesByPathogenId(selectedPathogen.pathogenId), "name").map((vaccine) => {
                                         return (
                                             <div key={Math.random() * 999} onClick={() => {
                                                 // setSelectedVaccine(vaccine)
@@ -459,14 +458,14 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                 <>
                                                     <tr key={Math.random() * 999}>
                                                         {/* {vaccineIdx === 0 && ( */}
-                                                        <td width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`align-middle fix ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                        <td width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`fix ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                         {/* // )} */}
 
                                                         {/** ONE */}
                                                         {
                                                             vaccineOne && vaccineOne.licenser.length > 0 && vaccineOne.licenser.map((licenser, idx) => {
                                                                 return (
-                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineOne.name)}</td>
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineOne.name)}</td>
                                                                 )
                                                             })
                                                         }
@@ -475,7 +474,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                         {
                                                             vaccineTwo && vaccineTwo.licenser.length > 0 && vaccineTwo.licenser.map((licenser, idx) => {
                                                                 return (
-                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineTwo.name)}</td>
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={` ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineTwo.name)}</td>
                                                                 )
                                                             })
                                                         }

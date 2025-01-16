@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactModal from "react-modal";
-import { getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
+import { getProductProfileValueByVaccineNameAndType } from '../../utils/pathogens';
 
 /**
  * Vaccine Component
