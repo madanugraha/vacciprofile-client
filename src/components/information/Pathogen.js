@@ -86,6 +86,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Dosing', alt: 'dosing' },
         { title: 'Contraindication', alt: 'contraindication' },
         { title: 'Immunogenicity', alt: 'immunogenicity' },
+        { title: 'Efficacy', alt: 'Efficacy' },
         { title: 'Efficacy(VEy vs virologically confirmed dengue (VCD))', alt: 'Efficacy(VEy vs virologically confirmed dengue (VCD))' },
         { title: 'Duration of Protection', alt: 'durationOfProtection' },
         { title: 'Co-Administration', alt: 'coAdministration' },
@@ -256,8 +257,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                     setDuplicateVaccineError(true);
                                                                     return;
                                                                 }
-                                                                if (newValue.length > 2) {
-                                                                    setVaccineErrorMessage(`Vaccine selection limited by 2.`);
+                                                                if (newValue.length > 6) {
+                                                                    setVaccineErrorMessage(`Vaccine selection limited by 6.`);
                                                                     setDuplicateVaccineError(true);
                                                                     return
                                                                 }
@@ -279,7 +280,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 <TextField
                                                                     {...params}
                                                                     variant="standard"
-                                                                    label="Select Vaccines (Max. 2)"
+                                                                    label="Select Vaccines (Max. 6)"
                                                                     placeholder=""
                                                                     error={duplicateVaccineError}
                                                                     helperText={duplicateVaccineError ? vaccineErrorMessage : null}
@@ -451,6 +452,9 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                             const vaccineTwo = licenserFieldsVaccine[1];
                                             const vaccineThree = licenserFieldsVaccine[2];
 
+                                            const vaccineFour = licenserFieldsVaccine[3];
+                                            const vaccineFive = licenserFieldsVaccine[4];
+                                            const vaccineSix = licenserFieldsVaccine[5];
                                             return key === "name" ? null : (
                                                 <>
                                                     <tr key={Math.random() * 999}>
@@ -469,6 +473,42 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                             vaccineTwo && vaccineTwo.licenser.length > 0 && vaccineTwo.licenser.map((licenser, idx) => {
                                                                 return (
                                                                     <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineTwo.name)}</td>
+                                                                )
+                                                            })
+                                                        }
+
+                                                        {/** THREE */}
+                                                        {
+                                                            vaccineThree && vaccineThree.licenser.length > 0 && vaccineThree.licenser.map((licenser, idx) => {
+                                                                return (
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineThree.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineThree.name)}</td>
+                                                                )
+                                                            })
+                                                        }
+
+                                                        {/** FOUR */}
+                                                        {
+                                                            vaccineFour && vaccineFour.licenser.length > 0 && vaccineFour.licenser.map((licenser, idx) => {
+                                                                return (
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineFour.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineFour.name)}</td>
+                                                                )
+                                                            })
+                                                        }
+
+                                                        {/** FIVE */}
+                                                        {
+                                                            vaccineFive && vaccineFive.licenser.length > 0 && vaccineFive.licenser.map((licenser, idx) => {
+                                                                return (
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineFive.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineFive.name)}</td>
+                                                                )
+                                                            })
+                                                        }
+
+                                                        {/** SIX */}
+                                                        {
+                                                            vaccineSix && vaccineSix.licenser.length > 0 && vaccineSix.licenser.map((licenser, idx) => {
+                                                                return (
+                                                                    <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `${licenser.title} - ${vaccineSix.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineSix.name)}</td>
                                                                 )
                                                             })
                                                         }

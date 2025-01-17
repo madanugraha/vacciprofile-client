@@ -812,19 +812,19 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: Qdenga® (MAH:Takeda)",
-                "composition": "-",
-                "strainCoverage": "-",
-                "indication": "-",
-                "contraindication": "-",
-                "dosing": "-",
-                "immunogenicity": "-",
-                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "-",
-                "durationOfProtection": "-",
-                "coAdministration": "-",
-                "reactogenicity": "-",
-                "safety": "-",
-                "vaccinationGoal": "-",
-                "others": "-"
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
             },
             {
                 "type": "WHO",
@@ -1057,19 +1057,19 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Abrysvo® (MAH: Pfizer)",
-                "composition": "-",
-                "strainCoverage": "-",
-                "indication": "-",
-                "contraindication": "-",
-                "dosing": "-",
-                "immunogenicity": "-",
-                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "-",
-                "durationOfProtection": "-",
-                "coAdministration": "-",
-                "reactogenicity": "-",
-                "safety": "-",
-                "vaccinationGoal": "-",
-                "others": "-"
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy(VEy vs virologically confirmed dengue (VCD))": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
             }
         ],
         "link": "https://www.pfizer.com/products/product-detail/abrysvotm",
@@ -1133,6 +1133,59 @@
             {
                 "manufacturerId": 6
             }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.2 mL) contains 107.0±0.5 FFU of each four influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Darwin/9/2021 (H3N2)-like, B/Phuket/3073/2013-like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 18 weeks.",
+                "strainCoverage": "Influenza virus.",
+                "indication": "Active immunization for prophylaxis of influenza in individuals 2-17 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; immunodeficiency (acute/ chronic leukemias, lymphoma, symptomatic HIV infection, cellular immune deficiencies, high-dose corticosteroids); individuals on salicylate therapy (risk of Reye’s syndrome; avoid using salicylates for 4 weeks after vaccination unless medically indicated); severe asthma or active wheezing (inadequate data); pregnancy; breastfeeding.",
+                "dosing": "Nasal; single dose; each dose is 0.2 mL (0.1 mL per nostril); in children with no previous vaccination against seasonal influenza a 2nd dose should be given after an interval of at least 4 weeks.",
+                "immunogenicity": "Fluenz Tetra® was non-inferior to Fluenz®.",
+                "Efficacy": "Clinical experience with Fluenz® is relevant to Fluenz Tetra® because both vaccines are manufactured using the same process and have overlapping compositions (Vey of Fluenz® during 7 flu seasons: against vaccine strains: 62.2-100%; against all influenza strains: 46.6-93.4%).",
+                "durationOfProtection": "Annual revaccination is recommended because immunity declines during the year after vaccination and circulating strains of influenza virus change yearly.",
+                "coAdministration": "Can be co-administered with MMR, OPV and varicella vaccines; co-administration with inactivated vaccines has not been studied; avoid administration for 48 hours after the cessation of influenza antiviral therapy; administration of influenza antiviral agents within 2 weeks of vaccination may affect the vaccine response (in case of co-administration, revaccinate based on clinical judgment).",
+                "reactogenicity": "Very common: nasal congestion/rhinorrhoea; malaise; decreased appetite; common: pyrexia; myalgia; headache.",
+                "safety": "An increased rate of hospitalizations in infants and toddlers 6-11 mo. of age due to GI and respiratory tract infections (occurs more than 6 weeks post-vaccination); an increased rate of wheezing in infants and toddlers 6-23 mo. of age; very rare reports of Guillain-Barré Syndrome and exacerbation of symptoms of Leigh syndrome in the post-marketing setting.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "Avoid using in individuals <24 mo. (increased rates of hospitalization and wheezing); after administering half of the dose in 1 nostril, administer the other half of the dose in the other nostril immediately or shortly thereafter; no need to actively inhale or sniff; not contraindicated in asymptomatic HIV-infected individuals; potential for transmission to close contacts (vaccinees should avoid close contact with severely immunocompromised individuals 1-2 weeks following vaccination), if contact is unavoidable, the potential risk of transmission of the vaccine virus should be weighed against the risk of transmitting wild-type influenza virus; no safety data for children with unrepaired craniofacial malformations."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
         ]
     },
     {
@@ -1144,6 +1197,59 @@
         "manufacturers": [
             {
                 "manufacturerId": 6
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.2 mL) contains 107.0±0.5 FFU of each three influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Thailand/8/2022 (H3N2) –like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 15 weeks.",
+                "strainCoverage": "Influenza virus.",
+                "indication": "Active immunization for prophylaxis of influenza in individuals 2-17 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; immunodeficiency (acute/ chronic leukemias, lymphoma, symptomatic HIV infection, cellular immune deficiencies, high-dose corticosteroids); individuals on salicylate therapy (risk of Reye’s syndrome; avoid using salicylates for 4 weeks after vaccination unless medically indicated); severe asthma or active wheezing (inadequate data); pregnancy; breastfeeding.",
+                "dosing": "Nasal; single dose; each dose is 0.2 mL (0.1 mL per nostril); in children with no previous vaccination against seasonal influenza a 2nd dose should be given after an interval of at least 4 weeks.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "VEy during 7 flu seasons: against vaccine strains: 62.2-100%; against all influenza strains: 46.6-93.4%.",
+                "durationOfProtection": "Annual revaccination is recommended because immunity declines during the year after vaccination and circulating strains of influenza virus change yearly.",
+                "coAdministration": "Can be co-administered with MMR, OPV and varicella vaccines; co-administration with inactivated vaccines has not been studied; avoid administration for 48 hours after the cessation of influenza antiviral therapy; administration of influenza antiviral agents within 2 weeks of vaccination may affect the vaccine response (in case of co-administration, revaccinate based on clinical judgment).",
+                "reactogenicity": "Very common: nasal congestion/rhinorrhoea; malaise; decreased appetite; common: pyrexia; myalgia; headache.",
+                "safety": "An increased rate of hospitalizations in infants and toddlers 6-11 mo. of age due to GI and respiratory tract infections (occurs more than 6 weeks post-vaccination); an increased rate of wheezing in infants and toddlers 6-23 mo. of age; very rare reports of Guillain-Barré Syndrome and exacerbation of symptoms of Leigh syndrome in the post-marketing setting.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "Avoid using in individuals <24 mo. (increased rates of hospitalization and wheezing); after administering half of the dose in 1 nostril, administer the other half of the dose in the other nostril immediately or shortly thereafter; no need to actively inhale or sniff; not contraindicated in asymptomatic HIV-infected individuals; potential for transmission to close contacts (vaccinees should avoid close contact with severely immunocompromised individuals 1-2 weeks following vaccination), if contact is unavoidable, the potential risk of transmission of the vaccine virus should be weighed against the risk of transmitting wild-type influenza virus; no safety data for children with unrepaired craniofacial malformations."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
             }
         ]
     },
@@ -1529,6 +1635,59 @@
             {
                 "manufacturerId": 45
             }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Aflunov® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 7.5µg influenza virus HA (A/turkey/Turkey/1/2005 (H5N1)-like (NIBRG-23) (clade 2.2.1) strain); propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 2 years.",
+                "strainCoverage": "Influenza virus H5N1.",
+                "indication": "Active immunization against H5N1 subtype of Influenza A virus in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg/chicken protein allergy (in a pandemic situation use with caution); febrile illness until the fever is resolved; use risk/benefit strategy in bleeding disorder; use risk/benefit strategy in pregnancy and breastfeeding.",
+                "dosing": "I.M; 2 doses (each 0.5 mL); at least 3 weeks intervals; in the event of a pandemic, a single dose may be administered in previously vaccinated individuals.",
+                "immunogenicity": "Seroprotection rate (anti-HA antibody): 6 mo.- 8 yrs.: 86-87% against vaccine strain; 18-60 yrs.: 91% (95% CI: 85; 94) against vaccine strain, 62-83% against heterologous H5N1 strains; ≥61 yrs.: 82% (95% CI: 74; 88) against vaccine strain, 45-61% against heterologous H5N1 strains.",
+                "Efficacy": "Data from animal challenge studies in the ferret model; VEy (2 doses): 100% against vaccine strain; 87-92% against heterologous H5N1 strains.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "May be co-administered with non-adjuvanted seasonal influenza vaccines.",
+                "reactogenicity": "Very common: injection site pain, swelling, induration, redness; malaise; chills; fatigue; myalgia; headache; common: arthralgia; nausea; sweating; injection site ecchymosis; fever.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/efficacy data in <18 yrs.; no data for S.C route of administration; no safety/immunogenicity/efficacy data to support interchangeability with other H5N1 monovalent vaccines."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Aflunov® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Aflunov® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
         ]
     },
     {
@@ -1565,6 +1724,59 @@
             {
                 "manufacturerId": 45
             }
+        ],
+        "productProfiles": [
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: AUDENZ® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 7.5µg influenza virus HA (A/turkey/Turkey/1/2005 NIBRG-23 strain); propagated in MDCK cells; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A virus H5N1.",
+                "indication": "Active immunization to prevent disease caused by the influenza A virus H5N1 subtype in individuals ≥6 mo. at increased risk of exposure to the virus; to be used based on official recommendations.",
+                "contraindication": "I.M; 2 doses (each 0.5 mL); 3 weeks apart.",
+                "dosing": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "immunogenicity": "Seroconversion rate (HI antibody titers): 6 mo.- 17 yrs.: 96% (95% CI: 93; 98); 18-64 yrs.: 79.9% (95% CI: 77.4; 82.3); ≥65 yrs.: 54% (95% CI: 51; 57)",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: 18-64 yrs.: injection site pain (64%); fatigue (25%); headache (25%); malaise (22%); myalgia (14%); arthralgia (10%); nausea (10%); ≥ 65 yrs.: injection site pain (36%); fatigue (20%); malaise (16%); headache (16%); arthralgia (10%); 6 mo.-5 yrs.: injection site tenderness (56%); irritability (30%); sleepiness (25%); change in eating habits (18%); fever (16%); 6-17 yrs.: injection site pain (68%); myalgia (30%); fatigue (27%); malaise (25%); headache (22%); loss of appetite (14%); nausea (13%); arthralgia (13%). ",
+                "safety": "An increased risk of GBS was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo.; avoid injection in the gluteal region or areas with a major nerve trunk."
+            },
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: AUDENZ® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: AUDENZ® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
         ]
     },
     {
@@ -1576,6 +1788,59 @@
         "manufacturers": [
             {
                 "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Celldemic® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 7.5µg influenza virus HA (A/turkey/Turkey/1/2005 (H5N1)-like strain (NIBRG-23) (clade 2.2.1)); propagated in MDCK cells; storage: 2-8°C (protect from light); shelf life: 1 years.",
+                "strainCoverage": "Influenza virus H5N1.",
+                "indication": "Active immunization against H5N1 subtype of Influenza A virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute severe febrile illness or acute infection; caution in bleeding disorder; use risk/benefit strategy in pregnancy; no data in breastfeeding.",
+                "dosing": "I.M; 2 doses (each 0.5 mL); 3 weeks interval.",
+                "immunogenicity": "Seroconversion rate (HI antibody titers): 6 mo.- 17 yrs.: 96% (95% CI: 93; 98) against vaccine strain, 32-72% against heterologous H5N1 strains; 18-64 yrs.: 79.9% (95% CI: 77.4; 82.3) against vaccine strain, 28-55% against heterologous H5N1 strains; ≥65 yrs.: 54% (95% CI: 51.0; 57.0) against vaccine strain, 17-46% against heterologous H5N1 strains.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "The duration of protection following the primary vaccination schedule is unknown. A reduction of antibody titres was observed when assessed 6-12 mo. after the primary vaccination series.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "≥18 yrs.: very common: injection site pain; fatigue; malaise; arthralgia; myalgia; headache; common: loss of appetite; nausea; injection site bruising, induration; chills; fever; 6 mo.- 5 yrs.: very common: decreased appetite; injection site pain, tenderness; somnolence; irritability; fever; common: vomiting; diarrhea; injections site induration, erythema; 6-18 yrs.: injection site pain, tenderness; fatigue; malaise; arthralgia; myalgia; decreased appetite; nausea; headache; common: vomiting; diarrhea; injections site induration, erythema; fever.",
+                "safety": "Cases of convulsion (with and without fever) were reported during the 2009 pandemic for H1N1 vaccines manufactured with the MF59 adjuvant, specially in paediatric subjects and subjects with a history of epilepsy.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/efficacy data in <6 mo.; no efficacy/safety/ immunogenicity data in immunocompromised individuals; no data for interchangeability with other H5 monovalent vaccines; no established data for the need to booster dose (early waning of the antibody levels observed especially in adults)."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Celldemic® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Celldemic® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
             }
         ]
     },
@@ -1600,6 +1865,60 @@
         "manufacturers": [
             {
                 "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: FLUAD QUADRIVALENT® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each A/Victoria/4897/2022 (H1N1)pdm09-like strain, A/Darwin/9/2021 (H3N2)-like strain, B/Austria/1359417/2021-like strain, and B/Phuket/3073/2013-like strain); propagated in the allantoic cavity of embryonated hens’ eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization against influenza disease caused by influenza virus subtypes A and types B contained in the vaccine in individuals ≥65 years; to be used based on official recommendations.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination, ",
+                "contraindication": "Seroconversion rate (HI antibody titers): ≥65 yrs.: 78.0% (95% CI: 75.7; 80.2) against A/H1N1, 84.6% (95% CI: 82.5%; 86.5) against A/H3N2, 60.8% (95% CI: 58.1; 63.4) against B/Yamagata, 65.5% (95% CI: 62.9; 68.1) against B/Victoria.",
+                "efficacyEndpointsPhase3": "No immunogenicity data available in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: injection site pain (16.3%); headache (10.8%); fatigue (10.5%).",
+                "safety": "GBS was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. of age and in children >72 mo. of age."
+            },
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluad Tetra® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Victoria/4897/2022 (H1N1)pdm09-like, A/Thailand/8/2022 (H3N2)-like, B/Austria/1359417/2021-like, and B/Phuket/3073/2013-like strains); propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 1 years.",
+                "strainCoverage": "Influenza virus.",
+                "indication": "Active immunization for the prophylaxis of influenza in ≥50 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; febrile illness until the fever is resolved; caution in bleeding disorders; pregnancy; breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "50-64 yrs.: Fluad Tetra elicited higher immune responses compared to a nonadjuvanted quadrivalent comparator influenza vaccine; seroconversion rate (HI antibody titers), ≥65 yrs.: 13.4-39.3% (Fluad Tetra® was non-inferior to comparators (two adjuvanted flu vaccines containing B-Victoria and B-Yamagata strains)).",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "Annual revaccination is recommended because immunity declines during the year after vaccination and circulating strains of influenza virus change yearly..",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: injection site pain; fatigue; myalgia; arthralgia; headache; common: loss of appetite; nausea; diarrhea; injection site ecchymosis, erythema, induration; chills; influenza-like illness; fever (≥38 °C).",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluad Tetra®; FLUAD QUADRIVALENT® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
             }
         ]
     },
@@ -1672,6 +1991,59 @@
         "manufacturers": [
             {
                 "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Foclivia® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluad Tetra®; FLUAD QUADRIVALENT® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluad Tetra®; FLUAD QUADRIVALENT® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
             }
         ]
     },
