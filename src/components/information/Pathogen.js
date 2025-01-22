@@ -330,7 +330,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                         </div>
                                                     )}
                                                 </div>
-
                                                 <div style={{ position: 'absolute', right: 10, top: 0 }}>
                                                     <Button disabled={licenserFieldsVaccine.length <= 0} variant="contained" onClick={() => setCompareActive(!compareActive)}>Compare Vaccines {licenserFieldsVaccine.length >= 1 ? `(${licenserFieldsVaccine.length})` : null}</Button>
                                                     {/* <span onClick={() => } className='fw-bold cursor-pointer compare-color-text' style={{}}>&#8226;{" "}Compare Vaccines</span> */}
@@ -563,7 +562,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                             }
                         </div>
                         <div style={{ overflow: 'scroll' }}>
-                            <div className="d-inline-flex w-100 horizontal-scroll-except-first-column">
+                            <div style={{ overflowY: 'scroll', maxHeight: '60vh' }} className="d-inline-flex w-100 horizontal-scroll-except-first-column">
                                 {licenserFieldsVaccine.length >= 1 ? (
                                     <table className='w-100'>
                                         <tbody>
