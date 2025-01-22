@@ -78,7 +78,7 @@ code {
 }
 
 .horizontal-scroll-except-first-column>table {
-  margin-left: 350px;
+  margin-left: 0;
 }
 
 .horizontal-scroll-except-first-column>table>*>tr>th:first-child,
