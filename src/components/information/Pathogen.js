@@ -177,48 +177,9 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         };
     };
 
-
-
-
-    // const handleCheckIfOnChangeVaccine = () => {
-    //     const arr = licenserFieldsVaccine;
-    //     const tmp = [];
-
-    //     if (arr.length > 0) {
-    //         arr.map((x) => {
-    //             if (!checkForCheckedVaccines(x.name)) {
-    //                 tmp.push(x.name)
-    //             }
-    //         });
-    //         const f = vaccineFieldsState.map((x) => {
-    //             const c = (tmp.filter((y) => y === x.name));
-    //             if (c.length > 0) {
-    //                 return {
-    //                     ...x,
-    //                     checked: false
-    //                 }
-    //             } else {
-    //                 return {
-    //                     ...x,
-    //                     checked: x.checked
-    //                 }
-    //             }
-    //         });
-    //         setVaccineFieldsState(f);
-    //     } else {
-    //         const f = vaccineFieldsState.map((x) => {
-    //             return {
-    //                 ...x,
-    //                 checked: false
-    //             }
-    //         });
-    //         setVaccineFieldsState(f);
-    //     }
-    // };
-
-    useEffect(() => {
-        checkForCheckedVaccines();
-    }, [vaccineFieldsState])
+    // useEffect(() => {
+    //     checkForCheckedVaccines();
+    // }, [vaccineFieldsState])
     const handleOnSelectVaccineDeletedCheckBox = (name) => {
         const f = vaccineFieldsState.map((x) => {
             if (x.name === name) {
@@ -370,7 +331,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                     )}
                                                 </div>
 
-                                                <div style={{ position: 'fixed', right: 60 }}>
+                                                <div style={{ position: 'absolute', right: 10, top: 0 }}>
                                                     <Button disabled={licenserFieldsVaccine.length <= 0} variant="contained" onClick={() => setCompareActive(!compareActive)}>Compare Vaccines {licenserFieldsVaccine.length >= 1 ? `(${licenserFieldsVaccine.length})` : null}</Button>
                                                     {/* <span onClick={() => } className='fw-bold cursor-pointer compare-color-text' style={{}}>&#8226;{" "}Compare Vaccines</span> */}
                                                     {
@@ -396,11 +357,11 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                     setDuplicateVaccineError(true);
                                                                                     return;
                                                                                 }
-                                                                                if (newValue.length > 6) {
-                                                                                    setVaccineErrorMessage(`Vaccine selection limited by 6.`);
-                                                                                    setDuplicateVaccineError(true);
-                                                                                    return
-                                                                                }
+                                                                                // if (newValue.length > 6) {
+                                                                                //     setVaccineErrorMessage(`Vaccine selection limited by 6.`);
+                                                                                //     setDuplicateVaccineError(true);
+                                                                                //     return
+                                                                                // }
 
                                                                                 setDuplicateVaccineError(false);
                                                                                 setSelectedFilterVaccine(newValue);
@@ -426,7 +387,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 <TextField
                                                                                     {...params}
                                                                                     variant="standard"
-                                                                                    label="Select Vaccines (Max. 6)"
+                                                                                    label="Select Vaccines"
                                                                                     placeholder=""
                                                                                     error={duplicateVaccineError}
                                                                                     helperText={duplicateVaccineError ? vaccineErrorMessage : null}
