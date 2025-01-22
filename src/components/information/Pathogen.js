@@ -49,6 +49,8 @@ const style = {
  * />
  */
 const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
+
+
     const [open, setOpen] = useState(false);
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const convertCamelCaseToReadable = string => {
@@ -333,229 +335,233 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     </div>
                 </div>
             </div>
-            <div className="accordion" id="accordianVaccineInfo">
-                <div className="accordion-item mb-1">
-                    <h2 className="accordion-header" id="accordianVaccine">
-                        <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="false" aria-controls="collapseTwo">
-                            Licensed Vaccines
-                        </button>
-                    </h2>
-                    <div id="accordianVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
-                        <div className="accordion-body pb-1 px-0 pt-0">
-                            <div>
-                                <div className='mt-4' style={{ paddingLeft: 10 }}>
-                                    <div style={{ position: 'relative', width: '100%' }} className='d-inline-flex'>
-                                        <div>
-                                            <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
-                                            {vaccineFieldsState.length > 0 ? sortArrayAscending(vaccineFieldsState, "name").map((vaccine) => {
-                                                return (
-                                                    <li key={Math.random() * 999} onClick={() => {
-                                                        // setSelectedVaccine(vaccine)
-                                                        // setOpen(true)
-                                                    }} className='' style={{ marginTop: 15, maxWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
-                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                            <Checkbox checked={vaccine.checked} onChange={(() => handleCheckBox(vaccine))} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+            {
+                selectedPathogen === "Pathogen A" || selectedPathogen === "Pathogen B" ? null : (
+                    <div className="accordion" id="accordianVaccineInfo">
+                        <div className="accordion-item mb-1">
+                            <h2 className="accordion-header" id="accordianVaccine">
+                                <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="false" aria-controls="collapseTwo">
+                                    Licensed Vaccines
+                                </button>
+                            </h2>
+                            <div id="accordianVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
+                                <div className="accordion-body pb-1 px-0 pt-0">
+                                    <div>
+                                        <div className='mt-4' style={{ paddingLeft: 10 }}>
+                                            <div style={{ position: 'relative', width: '100%' }} className='d-inline-flex'>
+                                                <div>
+                                                    <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
+                                                    {vaccineFieldsState.length > 0 ? sortArrayAscending(vaccineFieldsState, "name").map((vaccine) => {
+                                                        return (
+                                                            <li key={Math.random() * 999} onClick={() => {
+                                                                // setSelectedVaccine(vaccine)
+                                                                // setOpen(true)
+                                                            }} className='' style={{ marginTop: 15, maxWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
+                                                                <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                    <Checkbox checked={vaccine.checked} onChange={(() => handleCheckBox(vaccine))} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+                                                                </div>
+                                                            </li>
+                                                        )
+                                                    }) : (
+                                                        <div className='flex flex-row mb-2'>
+                                                            &#8226;{" "}
+                                                            <span className='mt-2'>No Data Found</span>
                                                         </div>
-                                                    </li>
-                                                )
-                                            }) : (
-                                                <div className='flex flex-row mb-2'>
-                                                    &#8226;{" "}
-                                                    <span className='mt-2'>No Data Found</span>
+                                                    )}
                                                 </div>
-                                            )}
-                                        </div>
 
-                                        <div style={{ position: 'fixed', right: 60 }}>
-                                            <Button disabled={licenserFieldsVaccine.length <= 0} variant="contained" onClick={() => setCompareActive(!compareActive)}>Compare Vaccines {licenserFieldsVaccine.length >= 1 ? `(${licenserFieldsVaccine.length})` : null}</Button>
-                                            {/* <span onClick={() => } className='fw-bold cursor-pointer compare-color-text' style={{}}>&#8226;{" "}Compare Vaccines</span> */}
-                                            {
-                                                compareActive && (
-                                                    <>
-                                                        <div style={{ marginTop: 20, zIndex: 99999 }}>
-                                                            <Stack spacing={3} sx={{ width: 500 }}>
-                                                                <Autocomplete
-                                                                    multiple
-                                                                    id="tags-standard"
-                                                                    options={sortArrayAscending(vaccineFieldsState, "name").map((data) => {
-                                                                        return data
-                                                                    })}
-                                                                    value={selectedFilterVaccine}
-                                                                    getOptionLabel={(option) => option.title}
-                                                                    defaultValue={[vaccineFieldsState[0]]}
-                                                                    isOptionEqualToValue={(option, value) => false}
-                                                                    onChange={(event, newValue, reason, detail) => {
-                                                                        if (event.target?.textContent &&
-                                                                            selectedFilterVaccine.some((item) => item.title === (event.target)?.textContent)
-                                                                        ) {
-                                                                            setVaccineErrorMessage(`${(event.target)?.textContent} cannot be duplicated`);
-                                                                            setDuplicateVaccineError(true);
-                                                                            return;
-                                                                        }
-                                                                        if (newValue.length > 6) {
-                                                                            setVaccineErrorMessage(`Vaccine selection limited by 6.`);
-                                                                            setDuplicateVaccineError(true);
-                                                                            return
-                                                                        }
+                                                <div style={{ position: 'fixed', right: 60 }}>
+                                                    <Button disabled={licenserFieldsVaccine.length <= 0} variant="contained" onClick={() => setCompareActive(!compareActive)}>Compare Vaccines {licenserFieldsVaccine.length >= 1 ? `(${licenserFieldsVaccine.length})` : null}</Button>
+                                                    {/* <span onClick={() => } className='fw-bold cursor-pointer compare-color-text' style={{}}>&#8226;{" "}Compare Vaccines</span> */}
+                                                    {
+                                                        compareActive && (
+                                                            <>
+                                                                <div style={{ marginTop: 20, zIndex: 99999 }}>
+                                                                    <Stack spacing={3} sx={{ width: 500 }}>
+                                                                        <Autocomplete
+                                                                            multiple
+                                                                            id="tags-standard"
+                                                                            options={sortArrayAscending(vaccineFieldsState, "name").map((data) => {
+                                                                                return data
+                                                                            })}
+                                                                            value={selectedFilterVaccine}
+                                                                            getOptionLabel={(option) => option.title}
+                                                                            defaultValue={[vaccineFieldsState[0]]}
+                                                                            isOptionEqualToValue={(option, value) => false}
+                                                                            onChange={(event, newValue, reason, detail) => {
+                                                                                if (event.target?.textContent &&
+                                                                                    selectedFilterVaccine.some((item) => item.title === (event.target)?.textContent)
+                                                                                ) {
+                                                                                    setVaccineErrorMessage(`${(event.target)?.textContent} cannot be duplicated`);
+                                                                                    setDuplicateVaccineError(true);
+                                                                                    return;
+                                                                                }
+                                                                                if (newValue.length > 6) {
+                                                                                    setVaccineErrorMessage(`Vaccine selection limited by 6.`);
+                                                                                    setDuplicateVaccineError(true);
+                                                                                    return
+                                                                                }
 
-                                                                        setDuplicateVaccineError(false);
-                                                                        setSelectedFilterVaccine(newValue);
-                                                                        setLicenserFieldsVaccine(newValue);
+                                                                                setDuplicateVaccineError(false);
+                                                                                setSelectedFilterVaccine(newValue);
+                                                                                setLicenserFieldsVaccine(newValue);
 
-                                                                        if (reason === "selectOption") {
-                                                                            const added = detail.option;
-                                                                            if (added?.alt) {
-                                                                                handleOnSelectVaccineAddedCheckBox(added.title);
-                                                                            }
-                                                                        }
-                                                                        if (reason === 'removeOption') {
-                                                                            const deleted = detail.option;
-                                                                            if (deleted?.alt) {
-                                                                                handleOnSelectVaccineDeletedCheckBox(deleted.title);
-                                                                            }
-                                                                        };
-                                                                    }}
-                                                                    autoComplete
-                                                                    freeSolo
-                                                                    limitTags={3}
-                                                                    renderInput={(params) => (
-                                                                        <TextField
-                                                                            {...params}
-                                                                            variant="standard"
-                                                                            label="Select Vaccines (Max. 6)"
-                                                                            placeholder=""
-                                                                            error={duplicateVaccineError}
-                                                                            helperText={duplicateVaccineError ? vaccineErrorMessage : null}
+                                                                                if (reason === "selectOption") {
+                                                                                    const added = detail.option;
+                                                                                    if (added?.alt) {
+                                                                                        handleOnSelectVaccineAddedCheckBox(added.title);
+                                                                                    }
+                                                                                }
+                                                                                if (reason === 'removeOption') {
+                                                                                    const deleted = detail.option;
+                                                                                    if (deleted?.alt) {
+                                                                                        handleOnSelectVaccineDeletedCheckBox(deleted.title);
+                                                                                    }
+                                                                                };
+                                                                            }}
+                                                                            autoComplete
+                                                                            freeSolo
+                                                                            limitTags={3}
+                                                                            renderInput={(params) => (
+                                                                                <TextField
+                                                                                    {...params}
+                                                                                    variant="standard"
+                                                                                    label="Select Vaccines (Max. 6)"
+                                                                                    placeholder=""
+                                                                                    error={duplicateVaccineError}
+                                                                                    helperText={duplicateVaccineError ? vaccineErrorMessage : null}
+                                                                                />
+                                                                            )}
                                                                         />
-                                                                    )}
-                                                                />
-                                                            </Stack>
-                                                            {
-                                                                selectedFilterVaccine.length > 0 && (
-                                                                    selectedFilterVaccine.map((vaccine) => {
-                                                                        return (
-                                                                            <div key={vaccine.name} style={{ marginTop: 10 }}>
-                                                                                <Stack spacing={3} sx={{ width: 500 }}>
-                                                                                    <Autocomplete
-                                                                                        multiple
-                                                                                        id="tags-standard"
-                                                                                        options={licenserFields}
-                                                                                        value={[...vaccine.licenser]}
-                                                                                        getOptionLabel={(option) => option.title}
-                                                                                        defaultValue={[licenserFields[0]]}
-                                                                                        autoComplete
-                                                                                        freeSolo
-                                                                                        limitTags={3}
-                                                                                        onChange={(event, newValue) => {
-                                                                                            if (event.target?.textContent &&
-                                                                                                vaccine.licenser.some((item) => item.title === (event.target)?.textContent)
-                                                                                            ) {
-                                                                                                vaccine.errorMessage = `${vaccine.name}: ${(event.target)?.textContent} cannot be duplicated`
-                                                                                                vaccine.hasDuplicate = true;
-                                                                                                return;
-                                                                                            }
-                                                                                            vaccine.hasDuplicate = false;
-                                                                                            vaccine.licenser = newValue;
-                                                                                            handleSelectLicenserFieldsVaccine(vaccine.name, vaccine)
-                                                                                            // setLicenserFieldsVaccine([...licenserFieldsVaccine, vaccine]);
-                                                                                        }}
-                                                                                        renderInput={(params) => (
-                                                                                            <TextField
-                                                                                                {...params}
-                                                                                                variant="standard"
-                                                                                                label={`Select Licensing Authorities for: ${vaccine.name}`}
-                                                                                                placeholder=""
-                                                                                                error={vaccine.hasDuplicate}
-                                                                                                helperText={vaccine.hasDuplicate ? vaccine.errorMessage : null}
+                                                                    </Stack>
+                                                                    {
+                                                                        selectedFilterVaccine.length > 0 && (
+                                                                            selectedFilterVaccine.map((vaccine) => {
+                                                                                return (
+                                                                                    <div key={vaccine.name} style={{ marginTop: 10 }}>
+                                                                                        <Stack spacing={3} sx={{ width: 500 }}>
+                                                                                            <Autocomplete
+                                                                                                multiple
+                                                                                                id="tags-standard"
+                                                                                                options={licenserFields}
+                                                                                                value={[...vaccine.licenser]}
+                                                                                                getOptionLabel={(option) => option.title}
+                                                                                                defaultValue={[licenserFields[0]]}
+                                                                                                autoComplete
+                                                                                                freeSolo
+                                                                                                limitTags={3}
+                                                                                                onChange={(event, newValue) => {
+                                                                                                    if (event.target?.textContent &&
+                                                                                                        vaccine.licenser.some((item) => item.title === (event.target)?.textContent)
+                                                                                                    ) {
+                                                                                                        vaccine.errorMessage = `${vaccine.name}: ${(event.target)?.textContent} cannot be duplicated`
+                                                                                                        vaccine.hasDuplicate = true;
+                                                                                                        return;
+                                                                                                    }
+                                                                                                    vaccine.hasDuplicate = false;
+                                                                                                    vaccine.licenser = newValue;
+                                                                                                    handleSelectLicenserFieldsVaccine(vaccine.name, vaccine)
+                                                                                                    // setLicenserFieldsVaccine([...licenserFieldsVaccine, vaccine]);
+                                                                                                }}
+                                                                                                renderInput={(params) => (
+                                                                                                    <TextField
+                                                                                                        {...params}
+                                                                                                        variant="standard"
+                                                                                                        label={`Select Licensing Authorities for: ${vaccine.name}`}
+                                                                                                        placeholder=""
+                                                                                                        error={vaccine.hasDuplicate}
+                                                                                                        helperText={vaccine.hasDuplicate ? vaccine.errorMessage : null}
+                                                                                                    />
+                                                                                                )}
                                                                                             />
-                                                                                        )}
-                                                                                    />
-                                                                                </Stack>
-                                                                            </div>
+                                                                                        </Stack>
+                                                                                    </div>
+                                                                                )
+                                                                            })
                                                                         )
-                                                                    })
-                                                                )
-                                                            }
-                                                            <div style={{ marginTop: 10 }}>
-                                                                <Stack spacing={3} sx={{ width: 500 }}>
-                                                                    <Autocomplete
-                                                                        multiple
-                                                                        id="tags-standard"
-                                                                        options={tableFields}
-                                                                        value={selectedFilterTableFields}
-                                                                        getOptionLabel={(option) => option.title}
-                                                                        defaultValue={[tableFields[0], tableFields[1]]}
-                                                                        autoComplete
-                                                                        freeSolo
-                                                                        onChange={(event, newValue) => {
-                                                                            if (event.target?.textContent &&
-                                                                                selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
-                                                                            ) {
-                                                                                setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
-                                                                                setDuplicateTableFieldsError(true);
-                                                                                return;
-                                                                            }
-                                                                            const checkForType = newValue.some((item) => item.title === "Type");
-                                                                            const checkForComposition = newValue.some((item) => item.title === "Composition/Platform");
+                                                                    }
+                                                                    <div style={{ marginTop: 10 }}>
+                                                                        <Stack spacing={3} sx={{ width: 500 }}>
+                                                                            <Autocomplete
+                                                                                multiple
+                                                                                id="tags-standard"
+                                                                                options={tableFields}
+                                                                                value={selectedFilterTableFields}
+                                                                                getOptionLabel={(option) => option.title}
+                                                                                defaultValue={[tableFields[0], tableFields[1]]}
+                                                                                autoComplete
+                                                                                freeSolo
+                                                                                onChange={(event, newValue) => {
+                                                                                    if (event.target?.textContent &&
+                                                                                        selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
+                                                                                    ) {
+                                                                                        setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
+                                                                                        setDuplicateTableFieldsError(true);
+                                                                                        return;
+                                                                                    }
+                                                                                    const checkForType = newValue.some((item) => item.title === "Type");
+                                                                                    const checkForComposition = newValue.some((item) => item.title === "Composition/Platform");
 
-                                                                            if (!checkForType) {
-                                                                                setTableFieldsErrorMessage("Type cannot be removed")
-                                                                                setDuplicateTableFieldsError(true);
-                                                                                return;
-                                                                            }
-                                                                            if (!checkForComposition) {
-                                                                                setTableFieldsErrorMessage("Composition/Platform cannot be removed")
-                                                                                setDuplicateTableFieldsError(true);
-                                                                                return;
-                                                                            }
-                                                                            setDuplicateTableFieldsError(false);
-                                                                            setSelectedFilterTableFields(newValue);
-                                                                        }}
-                                                                        onKeyUp={(event) => {
-                                                                            if (event.target?.textContent &&
-                                                                                selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
-                                                                            ) {
-                                                                                setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
-                                                                                setDuplicateTableFieldsError(true);
-                                                                                return;
-                                                                            } else {
-                                                                                setDuplicateTableFieldsError(false);
-                                                                            }
-                                                                        }}
-                                                                        renderInput={(params) => (
-                                                                            <TextField
-                                                                                {...params}
-                                                                                variant="standard"
-                                                                                label="Select items need to be shown"
-                                                                                placeholder=""
-                                                                                error={duplicateTableFieldsError}
-                                                                                helperText={duplicateTableFieldsError ? tableFieldsErrorMessage : null}
+                                                                                    if (!checkForType) {
+                                                                                        setTableFieldsErrorMessage("Type cannot be removed")
+                                                                                        setDuplicateTableFieldsError(true);
+                                                                                        return;
+                                                                                    }
+                                                                                    if (!checkForComposition) {
+                                                                                        setTableFieldsErrorMessage("Composition/Platform cannot be removed")
+                                                                                        setDuplicateTableFieldsError(true);
+                                                                                        return;
+                                                                                    }
+                                                                                    setDuplicateTableFieldsError(false);
+                                                                                    setSelectedFilterTableFields(newValue);
+                                                                                }}
+                                                                                onKeyUp={(event) => {
+                                                                                    if (event.target?.textContent &&
+                                                                                        selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
+                                                                                    ) {
+                                                                                        setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
+                                                                                        setDuplicateTableFieldsError(true);
+                                                                                        return;
+                                                                                    } else {
+                                                                                        setDuplicateTableFieldsError(false);
+                                                                                    }
+                                                                                }}
+                                                                                renderInput={(params) => (
+                                                                                    <TextField
+                                                                                        {...params}
+                                                                                        variant="standard"
+                                                                                        label="Select items need to be shown"
+                                                                                        placeholder=""
+                                                                                        error={duplicateTableFieldsError}
+                                                                                        helperText={duplicateTableFieldsError ? tableFieldsErrorMessage : null}
+                                                                                    />
+                                                                                )}
                                                                             />
-                                                                        )}
-                                                                    />
-                                                                </Stack>
-                                                            </div>
-                                                        </div>
-                                                        <p onClick={() => {
-                                                            setOpen(true);
-                                                            handleProceedComparison();
-                                                        }} className='fw-bold cursor-pointer compare-color-text' style={{ marginTop: 20 }}>&#8226;{" "}Proceed Comparison</p>
-                                                    </>
-                                                )
-                                            }
+                                                                        </Stack>
+                                                                    </div>
+                                                                </div>
+                                                                <p onClick={() => {
+                                                                    setOpen(true);
+                                                                    handleProceedComparison();
+                                                                }} className='fw-bold cursor-pointer compare-color-text' style={{ marginTop: 20 }}>&#8226;{" "}Proceed Comparison</p>
+                                                            </>
+                                                        )
+                                                    }
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                )
+            }
             <div className="accordion" id="accordianCandidateVaccineInfo">
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianCandidateVaccine">
                         <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianCandVac" aria-expanded="false" aria-controls="collapseTwo">
-                            Vaccines Candidate
+                            Vaccine Candidates
                         </button>
                     </h2>
                     <div id="accordianCandVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianCandidateVaccine" data-bs-parent="#accordianCandidateVaccineInfo">
