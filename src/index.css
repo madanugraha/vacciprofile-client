@@ -42,6 +42,7 @@ code {
 .baseline {
   align-content: baseline;
 }
+
 .compare-color {
   background: rgba(88, 26, 233, 1);
 }
@@ -64,4 +65,37 @@ code {
 .subgroup-colour {
   color: black !important;
   background-color: #C7EAE4 !important;
+}
+
+.bg-compare-column {
+  background: rgba(88, 26, 233, 1);
+}
+
+
+.horizontal-scroll-except-first-column {
+  width: 100%;
+  overflow: auto;
+}
+
+.horizontal-scroll-except-first-column>table {
+  margin-left: 350px;
+}
+
+.horizontal-scroll-except-first-column>table>*>tr>th:first-child,
+.horizontal-scroll-except-first-column>table>*>tr>td:first-child {
+  position: absolute;
+  width: 200px;
+  margin-left: -350px;
+  background: rgba(88, 26, 233, 1);
+  height: '40%';
+}
+
+.horizontal-scroll-except-first-column>table>*>tr>th,
+.horizontal-scroll-except-first-column>table>*>tr>td {
+  /* Without this, if a cell wraps onto two lines, the first column
+   * will look bad, and may need padding. */
+  /* white-space: nowrap; */
+  min-width: 350px;
+  max-width: 450px;
+  height: '100%';
 }
