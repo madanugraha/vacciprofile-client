@@ -152,9 +152,9 @@ export const getProductProfileValueByVaccineName = (prop, vaccineName) => {
 export const getProductProfileValueByVaccineNameAndType = (type, prop, vaccineName) => {
     const data = vaccines;
     const result = data.filter((vac) => vac.name === vaccineName);
-    if (result.length > 0) {
+    if (type && result.length > 0) {
         if (result[0]?.productProfiles && result[0]?.productProfiles.length > 0) {
-            const propValue = result[0].productProfiles.filter((x) => x.type === type)[0][prop];
+            const propValue = result[0]?.productProfiles.filter((x) => x.type === type)[0][prop];
             if (propValue) {
                 return propValue
             } else {
@@ -182,3 +182,27 @@ export const getProductProfileTypeByVaccineName = (vaccineName) => {
         return []
     }
 }
+
+export const getAvailableLicensingByVaccineName = (name, licenserArr) => {
+    const data = vaccines;
+    const result = data.filter((vac) => vac.name === name);
+    if (result.length > 0) {
+        if (result[0].productProfiles && result[0].productProfiles.length > 0) {
+            const typeValues = result[0].productProfiles.filter((x) => x.composition !== "- not licensed yet -");
+            if (typeValues.length > 0) {
+                const z = typeValues.map((x) => {
+                    return {
+                        title: x.type
+                    }
+                });
+                return z;
+            } else {
+                return []
+            }
+        } else {
+            return []
+        }
+    } else {
+        return []
+    }
+};

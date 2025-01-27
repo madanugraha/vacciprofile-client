@@ -99,3 +99,46 @@ code {
   max-width: 450px;
   height: '100%';
 }
+
+
+.view {
+  overflow: auto;
+  width: '100%';
+}
+
+.wrapper {
+  position: relative;
+  overflow: auto;
+  border: 1px solid black;
+  /* white-space: nowrap; */
+}
+
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  background: rgba(88, 26, 233, 1);
+  height: '100%';
+}
+
+.first-col {
+  min-width: 250px;
+  max-width: 250px;
+  height: '100%';
+  left: 0px;
+}
+
+.main-col {
+  height: '100%';
+  align-content: baseline;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+
+.horizontal-scroll-except-first-column>table>*>tr>.main-col {
+  /* Without this, if a cell wraps onto two lines, the first column
+   * will look bad, and may need padding. */
+  /* white-space: nowrap; */
+  min-width: 350px;
+  max-width: 450px;
+}

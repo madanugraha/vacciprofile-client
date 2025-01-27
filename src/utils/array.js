@@ -5,7 +5,7 @@ export const removeDuplicatesFromArray = (arr, prop) => {
                 accumulator.push(current);
             }
             return accumulator;
-        }, [])
+        }, []);
     };
     return [];
 };
@@ -13,9 +13,9 @@ export const removeDuplicatesFromArray = (arr, prop) => {
 export const sortArrayAscending = (arr, prop) => {
     if (arr && arr.length > 0) {
         return arr.sort((a, b) => a[prop].localeCompare(b[prop]))
-    }
-    return []
-}
+    };
+    return [];
+};
 
 const vaccineBackups = [
     {
@@ -1583,3 +1583,7 @@ const vaccineBackups = [
         "lastUpdated": "2024-Aug"
     },
 ]
+
+export const getAvailableLicensingByVaccineName = (name, licenserArr) => {
+
+};
