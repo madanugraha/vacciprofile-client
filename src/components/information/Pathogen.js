@@ -11,6 +11,8 @@ import tableDragger from 'table-dragger'
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 import { toast } from 'react-toastify';
+import { cutStringMoreThan32 } from '../../utils/string';
+import * as _ from 'lodash';
 
 const style = {
     position: 'absolute',
@@ -103,6 +105,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
     const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1]]);
     const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1]]);
     const [vaccineFieldsState, setVaccineFieldsState] = useState([]);
+    const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
 
     const handleProceedComparison = () => {
         setCompareSubmitted(true);
@@ -156,14 +159,16 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         return;
     };
 
-    const handleCheckBox = (vaccine) => {
-        const c3 = vaccineFieldsState.some((x) => x.title === vaccine.name);
+    const handleCheckBox = (vaccine, isSecondary) => {
+        let c3 = vaccineFieldsState.some((x) => x.title === vaccine.name);
+
         if (c3) {
-            const f = vaccineFieldsState.map((x) => {
+            let f = (vaccineFieldsState).map((x) => {
                 if (x.title === vaccine.name) {
                     return {
                         ...x,
-                        checked: !x.checked
+                        checked: !x.checked,
+                        licenser: x.licenser
                     }
                 } else {
                     return {
@@ -171,18 +176,28 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     }
                 }
             });
-            const f2 = selectedFilterVaccine.filter((x) => x.title === vaccine.name);
-
-            if (f2.length > 0) {
-                const excl = selectedFilterVaccine.filter((x) => x.title !== vaccine.name);
-                setLicenserFieldsVaccine(excl);
-                setSelectedFilterVaccine(excl);
-            } else {
-                setSelectedFilterVaccine([...selectedFilterVaccine, vaccine]);
-                setLicenserFieldsVaccine([...licenserFieldsVaccine, vaccine]);
-            };
             setVaccineFieldsState(f);
         };
+    };
+
+
+    const handleSecondaryCheckBox = (vaccine) => {
+        let f = secondaryVaccineFields.map((data) => {
+            return data.map((x) => {
+                if (x.title === vaccine.name) {
+                    return {
+                        ...x,
+                        checked: !x.checked,
+                        licenser: x.licenser
+                    }
+                } else {
+                    return {
+                        ...x,
+                    }
+                }
+            });
+        });
+        setSecondaryVaccineFields(f);
     };
 
     // useEffect(() => {
@@ -226,7 +241,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         setCompareActive(false);
         setLicenserFieldsVaccine([]);
         setSelectedFilterVaccine([]);
-
         const vaccineFields = getVaccinesByPathogenId(selectedPathogen.pathogenId) && getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((x) => {
             return {
                 ...x,
@@ -257,7 +271,9 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                 }
             }) : [];
             setVaccineFieldsState(vaccineFields);
+            setCompareActive(false);
         };
+
 
         var el = document.getElementById('comparison-table');
         if (el) {
@@ -277,9 +293,199 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         }
     };
 
+    const handleCheckboxLicenserByVaccine = (vacineName, licenser, checked, vaccineChecked, isSecondary) => {
+        let f = [];
+        f = vaccineFieldsState.map((x) => {
+            if (x.name === vacineName) {
+                return {
+                    ...x,
+                    licenser: x.licenser.map((y) => {
+                        if (y.title === licenser) {
+                            return {
+                                ...y,
+                                checked: checked
+                            }
+                        } else {
+                            return {
+                                ...y
+                            }
+                        }
+                    })
+                };
+            } else {
+                return {
+                    ...x
+                }
+            }
+        });
+
+        const checkIfLicenserHasSomeChecked = (vaccineFieldsState).filter((x) => x.name === vacineName);
+        if (checkIfLicenserHasSomeChecked.length > 0) {
+            const d = checkIfLicenserHasSomeChecked[0].licenser.some((x) => x.checked);
+            if (!d) {
+                if (!vaccineChecked) {
+                    f = (vaccineFieldsState).map((x) => {
+                        if (x.name === vacineName) {
+                            return {
+                                ...x,
+                                checked: true,
+                                licenser: x.licenser.map((y) => {
+                                    if (y.title === licenser) {
+                                        return {
+                                            ...y,
+                                            checked: checked
+                                        }
+                                    } else {
+                                        return {
+                                            ...y
+                                        }
+                                    }
+                                })
+                            };
+                        } else {
+                            return {
+                                ...x
+                            }
+                        }
+                    });
+                }
+            };
+        };
+
+
+        const licenserData = checkIfLicenserHasSomeChecked[0].licenser.filter((x) => x.checked);
+        const lenLicenserData = licenserData.length;
+
+        if (vaccineChecked && !checked && lenLicenserData === 1) {
+            f = (vaccineFieldsState).map((x) => {
+                if (x.name === vacineName) {
+                    return {
+                        ...x,
+                        checked: false,
+                        licenser: x.licenser.map((z) => {
+                            return {
+                                ...z,
+                                checked: false
+                            }
+                        })
+                    };
+                } else {
+                    return {
+                        ...x
+                    }
+                }
+            });
+        }
+        setVaccineFieldsState(f);
+        if (isSecondary) {
+            const nf = _.chunk(f, 5);
+            setSecondaryVaccineFields(nf);
+        }
+    };
+
+
+    const handleSecondaryCheckboxLicenserByVaccine = (vacineName, licenser, checked, vaccineChecked, arrIdx) => {
+        let f = [];
+        f = secondaryVaccineFields.map((data) => {
+            return data.map((x) => {
+                if (x.name === vacineName) {
+                    return {
+                        ...x,
+                        licenser: x.licenser.map((y) => {
+                            if (y.title === licenser) {
+                                return {
+                                    ...y,
+                                    checked: checked
+                                }
+                            } else {
+                                return {
+                                    ...y
+                                }
+                            }
+                        })
+                    };
+                } else {
+                    return {
+                        ...x
+                    }
+                }
+            });
+        });
+
+        const checkIfLicenserHasSomeChecked = secondaryVaccineFields[arrIdx].filter((x) => x.name === vacineName);
+        if (checkIfLicenserHasSomeChecked.length > 0) {
+            const d = checkIfLicenserHasSomeChecked[0].licenser.some((x) => x.checked);
+            if (!d) {
+                if (!vaccineChecked) {
+                    f = secondaryVaccineFields.map((data) => {
+                        return data.map((x) => {
+                            if (x.name === vacineName) {
+                                return {
+                                    ...x,
+                                    checked: true,
+                                    licenser: x.licenser.map((y) => {
+                                        if (y.title === licenser) {
+                                            return {
+                                                ...y,
+                                                checked: checked
+                                            }
+                                        } else {
+                                            return {
+                                                ...y
+                                            }
+                                        }
+                                    })
+                                };
+                            } else {
+                                return {
+                                    ...x
+                                }
+                            }
+                        });
+                    });
+                }
+            };
+        };
+
+
+        const licenserData = checkIfLicenserHasSomeChecked[0].licenser.filter((x) => x.checked);
+        const lenLicenserData = licenserData.length;
+
+        if (vaccineChecked && !checked && lenLicenserData === 1) {
+            f = secondaryVaccineFields.map((data) => {
+                return data.map((x) => {
+                    console.log('xxxx')
+                    if (x.name === vacineName) {
+                        return {
+                            ...x,
+                            checked: false,
+                            licenser: x.licenser.map((z) => {
+                                return {
+                                    ...z,
+                                    checked: false
+                                }
+                            })
+                        };
+                    } else {
+                        return {
+                            ...x
+                        }
+                    }
+                });
+            })
+        };
+        setSecondaryVaccineFields(f);
+    };
 
     useEffect(() => {
+        const f = vaccineFieldsState.filter((x) => x.checked)
+        if (f.length > 0) {
+            const nf = _.chunk(f, 5);
+            setSecondaryVaccineFields(nf);
+        }
+    }, [vaccineFieldsState])
 
+    useEffect(() => {
         if (allFactorShows) {
             setSelectedFilterTableFields(tableFields);
         } else {
@@ -342,27 +548,30 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                     <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
                                                     {vaccineFieldsState.length > 0 ? sortArrayAscending(vaccineFieldsState, "name").map((vaccine) => {
                                                         return (
-                                                            <li key={Math.random() * 999} onClick={() => {
-                                                                // setSelectedVaccine(vaccine)
-                                                                // setOpen(true)
-                                                            }} className='' style={{ marginTop: 15, maxWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
+                                                            <div>
                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
-                                                                        console.log(checked);
-                                                                        const c = vaccineFieldsState.filter((x) => x.checked);
-                                                                        if (c.length > 5) {
-                                                                            if (!checked) {
-                                                                                handleCheckBox(vaccine)
-                                                                            } else {
-                                                                                toast.warn("Vaccine Selected limited by 6.");
-                                                                                return;
-                                                                            }
-                                                                        } else {
-                                                                            handleCheckBox(vaccine);
-                                                                        };
-                                                                    })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+                                                                    <li key={Math.random() * 999} onClick={() => {
+                                                                        // setSelectedVaccine(vaccine)
+                                                                        // setOpen(true)
+                                                                    }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
+                                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                            <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                handleCheckBox(vaccine, false);
+                                                                            })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+                                                                        </div>
+                                                                    </li>
+                                                                    {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
+                                                                        return (
+                                                                            <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                                <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                    handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                                                                })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
+                                                                            </div>
+                                                                        )
+                                                                    })}
+
                                                                 </div>
-                                                            </li>
+                                                            </div>
                                                         )
                                                     }) : (
                                                         <div className='flex flex-row mb-2'>
@@ -372,13 +581,34 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                     )}
                                                 </div>
                                                 <div style={{ marginRight: 10 }}>
-                                                    <Button disabled={licenserFieldsVaccine.length <= 0} variant="contained" onClick={() => setCompareActive(!compareActive)}>Compare Vaccines {licenserFieldsVaccine.length >= 1 ? `(${licenserFieldsVaccine.length})` : null}</Button>
+                                                    <Button disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
+                                                        const check = vaccineFieldsState.filter((x) => x.checked).map((x) => {
+                                                            return {
+                                                                ...x,
+                                                                hasLicenserChecked: x.licenser.some((y) => y.checked)
+                                                            }
+                                                        });
+                                                        if (check.length > 0) {
+                                                            let ctx = 0;
+                                                            check.map((x) => {
+                                                                if (!x.hasLicenserChecked) {
+                                                                    ctx += 1;
+                                                                    const msg = `Vaccine: ${x.name} should have atleast one Licenser selected`
+                                                                    return toast.error(msg);
+                                                                }
+                                                            })
+                                                            if (ctx === 0) {
+                                                                setCompareActive(!compareActive)
+                                                            }
+                                                        }
+
+                                                    }}>Compare Vaccines {vaccineFieldsState.filter((x) => x.checked).length >= 1 ? `(${vaccineFieldsState.filter((x) => x.checked).length})` : null}</Button>
                                                     {/* <span onClick={() => } className='fw-bold cursor-pointer compare-color-text' style={{}}>&#8226;{" "}Compare Vaccines</span> */}
                                                     {
                                                         compareActive && (
                                                             <>
                                                                 <div style={{ marginTop: 20 }}>
-                                                                    <Stack spacing={3} sx={{ width: 500 }}>
+                                                                    {/* <Stack spacing={3} sx={{ width: 500 }}>
                                                                         <Autocomplete
                                                                             multiple
                                                                             id="tags-standard"
@@ -434,8 +664,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 />
                                                                             )}
                                                                         />
-                                                                    </Stack>
-                                                                    {
+                                                                    </Stack> */}
+                                                                    {/* {
                                                                         selectedFilterVaccine.length > 0 && (
                                                                             selectedFilterVaccine.map((vaccine) => {
                                                                                 return (
@@ -479,7 +709,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 )
                                                                             })
                                                                         )
-                                                                    }
+                                                                    } */}
                                                                     <div style={{ marginTop: 10 }}>
                                                                         <Stack spacing={3} sx={{ width: 500 }}>
                                                                             <Autocomplete
@@ -627,9 +857,9 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                         <div style={{ position: 'absolute', right: -10, top: -20 }}>
                             <button type='button' onClick={() => printTable()} className='btn btn-primary'>Print Document</button>
                         </div>
-                        <div className='d-inline-flex' style={{ marginTop: 20, marginBottom: 20 }}>
+                        <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '230vh' }}>
                             <div>
-                                <Stack spacing={3} sx={{ width: 500 }}>
+                                {/* <Stack spacing={3} sx={{ width: 500 }}>
                                     <Autocomplete
                                         multiple
                                         id="tags-standard"
@@ -679,7 +909,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                             />
                                         )}
                                     />
-                                </Stack>
+                                </Stack> */}
                                 <div style={{ marginTop: 10 }}>
                                     <Stack spacing={3} sx={{ width: 500 }}>
                                         <Autocomplete
@@ -740,7 +970,44 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                     </Stack>
                                 </div>
                             </div>
-                            <div className='d-inline-flex' style={{ marginLeft: 50 }}>
+                            {secondaryVaccineFields.length > 0 ? secondaryVaccineFields.map((data, secondaryIdx) => {
+                                return (
+                                    <div style={{ marginLeft: 10, marginRight: 40, alignItems: 'center' }}>
+                                        {
+                                            data.length >= 1 ? data.map((vaccine) => {
+                                                return (
+                                                    <div className='d-flex border border-secondary rounded' style={{ alignItems: 'center', marginBottom: 5 }}>
+                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                            <li key={Math.random() * 999} onClick={() => {
+                                                                // setSelectedVaccine(vaccine)
+                                                                // setOpen(true)
+                                                            }} className='' style={{ maxWidth: 200, minWidth: 200, alignItems: 'center', display: 'flex' }}>
+                                                                <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                        handleSecondaryCheckBox(vaccine);
+                                                                    })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${cutStringMoreThan32(vaccine.name)}</span>` }}></div>
+                                                                </div>
+                                                            </li>
+                                                            {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
+                                                                return (
+                                                                    <div className='d-inline-flex' style={{ alignItems: 'center', marginRight: 5 }}>
+                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                            handleSecondaryCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, secondaryIdx);
+                                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
+                                                                    </div>
+                                                                )
+                                                            })}
+                                                        </div>
+                                                    </div>
+                                                )
+                                            }) : null
+                                        }
+                                        {/* <div className='vertical-divider' style={{ width: 20, height: '100%', borderWidth: 1 }} /> */}
+                                    </div>
+                                )
+                            }) : null}
+
+                            {/* <div className='d-inline-flex' style={{ marginLeft: 50 }}>
                                 <div>
                                     {
                                         selectedFilterVaccine.length > 0 && (
@@ -837,11 +1104,11 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                         )
                                     }
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className='view' style={{ overflow: 'scroll' }}>
                             <div style={{ overflowY: 'scroll', maxHeight: '60vh' }} className="d-inline-flex w-100 wrapper">
-                                {licenserFieldsVaccine.length >= 1 ? (
+                                {secondaryVaccineFields.length >= 1 ? (
                                     <table className='w-100' id="comparison-table" border={1}>
                                         <tbody>
                                             {selectedFilterTableFields.map((field, idx) => {
@@ -856,15 +1123,16 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
-                                                            <td width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%' }} className={`sticky-col first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                            <td width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline' }} className={`sticky-col first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                             {/** TEST */}
-
                                                             {
-                                                                licenserFieldsVaccine.length > 0 && licenserFieldsVaccine.map((vaccine) => {
-                                                                    return vaccine.licenser.map((licenser) => {
-                                                                        return (
-                                                                            <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</td>
-                                                                        )
+                                                                secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
+                                                                    return data.filter((x) => x.checked).map((vaccine) => {
+                                                                        return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser) => {
+                                                                            return (
+                                                                                <td width={9999} key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</td>
+                                                                            )
+                                                                        }) : null
                                                                     })
                                                                 })
                                                             }

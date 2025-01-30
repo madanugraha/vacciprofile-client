@@ -192,7 +192,8 @@ export const getAvailableLicensingByVaccineName = (name, licenserArr) => {
             if (typeValues.length > 0) {
                 const z = typeValues.map((x) => {
                     return {
-                        title: x.type
+                        title: x.type,
+                        checked: false
                     }
                 });
                 return z;
