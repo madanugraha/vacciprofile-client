@@ -39,6 +39,11 @@ code {
   background: rgba(88, 26, 233, 1);
 }
 
+.fix-first {
+  position: sticky;
+  top: 0;
+}
+
 .baseline {
   align-content: baseline;
 }
@@ -103,7 +108,7 @@ code {
 
 .view {
   overflow: auto;
-  width: '100%';
+  /* width: '100%'; */
 }
 
 .wrapper {
@@ -118,6 +123,7 @@ code {
   position: sticky;
   background: rgba(88, 26, 233, 1);
   height: '100%';
+  border-bottom: 1px;
 }
 
 .first-col {
@@ -125,6 +131,8 @@ code {
   max-width: 250px;
   height: '100%';
   left: 0px;
+  top: 0;
+  z-index: 9999;
 }
 
 .main-col {

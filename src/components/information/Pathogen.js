@@ -124,6 +124,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
     const [showEma, setShowEma] = useState(false);
     const [showFda, setShowFda] = useState(false);
     const [showWho, setShowWho] = useState(false);
+    const [vaccineSelectedOnly, setVaccineSelectedOnly] = useState(false);
 
 
     const handleSelectLicenserFieldsVaccine = (name, value) => {
@@ -491,7 +492,17 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         } else {
             setSelectedFilterTableFields([tableFields[0], tableFields[1]])
         }
-    }, [showEma, showFda, showWho, allFactorShows, licensedOnly])
+    }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
+
+    // useEffect(() => {
+    //     // let f = []
+    //     // if (vaccineSelectedOnly) {
+    //     //     f = vaccineFieldsState.filter((x) => x.checked);
+    //     // } else {
+
+    //     // }
+    //     // setVaccineFieldsState(f);
+    // }, [vaccineSelectedOnly])
     return (
         <>
             <div className="accordion" id="accordianPathogenInfo">
@@ -546,7 +557,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                             <div className='d-inline-flex justify-content-between w-100'>
                                                 <div>
                                                     <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
-                                                    {vaccineFieldsState.length > 0 ? sortArrayAscending(vaccineFieldsState, "name").map((vaccine) => {
+                                                    {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
                                                         return (
                                                             <div>
                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
@@ -581,7 +592,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                     )}
                                                 </div>
                                                 <div style={{ marginRight: 10 }}>
-                                                    <Button disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
+                                                    <Button style={{ marginLeft: 10 }} disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
                                                         const check = vaccineFieldsState.filter((x) => x.checked).map((x) => {
                                                             return {
                                                                 ...x,
@@ -603,6 +614,13 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                         }
 
                                                     }}>Compare Vaccines {vaccineFieldsState.filter((x) => x.checked).length >= 1 ? `(${vaccineFieldsState.filter((x) => x.checked).length})` : null}</Button>
+                                                    <div style={{ marginRight: 0 }}>
+                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                            <Checkbox checked={vaccineSelectedOnly} onChange={((e, checked) => {
+                                                                setVaccineSelectedOnly(checked);
+                                                            })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Show Selected Vaccine only</span>` }}></div>
+                                                        </div>
+                                                    </div>
                                                     {/* <span onClick={() => } className='fw-bold cursor-pointer compare-color-text' style={{}}>&#8226;{" "}Compare Vaccines</span> */}
                                                     {
                                                         compareActive && (
@@ -1109,7 +1127,13 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                         <div className='view' style={{ overflow: 'scroll' }}>
                             <div style={{ overflowY: 'scroll', maxHeight: '60vh' }} className="d-inline-flex w-100 wrapper">
                                 {secondaryVaccineFields.length >= 1 ? (
-                                    <table className='w-100' id="comparison-table" border={1}>
+                                    <table className='' id="comparison-table" border={1}
+                                        data-toolbar=".toolbar"
+                                        data-show-columns="true"
+                                        data-search="true"
+                                        data-show-toggle="true"
+                                        data-pagination="true"
+                                        data-reorderable-columns="true">
                                         <tbody>
                                             {selectedFilterTableFields.map((field, idx) => {
                                                 const key = field.alt;
@@ -1123,14 +1147,19 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
-                                                            <td width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline' }} className={`sticky-col first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                            <td data-sortable="false" width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline' }} className={`sticky-col ${idx === 0 ? "fix-first" : ""} first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                             {/** TEST */}
                                                             {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
                                                                     return data.filter((x) => x.checked).map((vaccine) => {
-                                                                        return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser) => {
+                                                                        return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser, licenserIdx) => {
+
+                                                                            const conditionedFirstRow = idx === 0 && licenserIdx === 0 ? {
+                                                                                background: "black",
+                                                                                color: "white"
+                                                                            } : {}
                                                                             return (
-                                                                                <td width={9999} key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</td>
+                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 && licenserIdx === 0 ? "fix-first" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</td>
                                                                             )
                                                                         }) : null
                                                                     })
