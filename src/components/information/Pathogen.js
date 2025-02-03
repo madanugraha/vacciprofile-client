@@ -875,7 +875,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                         <div style={{ position: 'absolute', right: -10, top: -20 }}>
                             <button type='button' onClick={() => printTable()} className='btn btn-primary'>Print Document</button>
                         </div>
-                        <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '230vh' }}>
+                        <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
                                 {/* <Stack spacing={3} sx={{ width: 500 }}>
                                     <Autocomplete
@@ -1154,12 +1154,12 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                     return data.filter((x) => x.checked).map((vaccine) => {
                                                                         return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser, licenserIdx) => {
 
-                                                                            const conditionedFirstRow = idx === 0 && licenserIdx === 0 ? {
+                                                                            const conditionedFirstRow = idx === 0 ? {
                                                                                 background: "black",
                                                                                 color: "white"
                                                                             } : {}
                                                                             return (
-                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 && licenserIdx === 0 ? "fix-first" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</td>
+                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</td>
                                                                             )
                                                                         }) : null
                                                                     })

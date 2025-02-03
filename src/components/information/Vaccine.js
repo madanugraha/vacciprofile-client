@@ -154,7 +154,7 @@ const Vaccine = ({
         "dosing",
         "contraindication",
         "immunogenicity",
-        "Efficacy(VEy vs virologically confirmed dengue (VCD))",
+        "Efficacy",
         "durationOfProtection",
         "coAdministration",
         "reactogenicity",

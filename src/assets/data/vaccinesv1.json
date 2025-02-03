@@ -937,8 +937,8 @@
                 "others": "Safety and efficacy of Qdenga in <4 years not yet established; no data on the use >60 years; limited data in patients with chronic medical conditions; no clinical efficacy study available in subjects >17 years of age, clinical efficacy for >17 years has been inferred from the clinical efficacy in 4-16 years."
             },
             {
-                "type": "FDA",
-                "name": "FDA-Product Profile: Qdenga® (MAH: Takeda)",
+                "type": "EMA",
+                "name": "EMA-Product Profile: Qdenga® (MAH: Takeda)",
                 "composition": "- not licensed yet -",
                 "strainCoverage": "- not licensed yet -",
                 "indication": "- not licensed yet -",
@@ -1197,7 +1197,7 @@
             },
             {
                 "type": "FDA",
-                "name": "FDA-Product Profile: Adsorbed DT Vaccine® [MAH: PT Bio Farma (Persero)]",
+                "name": "FDA-Product Profile: Adsorbed DT Vaccine® [MAH: PT Bio Farma (Persero)]              ",
                 "composition": "- not licensed yet -",
                 "strainCoverage": "- not licensed yet -",
                 "indication": "- not licensed yet -",
@@ -1214,7 +1214,7 @@
             },
             {
                 "type": "WHO",
-                "name": "WHO-Product Profile: Adsorbed DT Vaccine® [MAH: PT Bio Farma (Persero)]",
+                "name": "WHO-Product Profile: Adsorbed DT Vaccine® [MAH: PT Bio Farma (Persero)",
                 "composition": "1 dose (0.5 mL) contains 20 Lf diphtheria toxoid, and 7.5 Lf tetanus toxoid; storage: 2-8°C; shelf life: 3 years.",
                 "strainCoverage": "Clostridium tetani, Corynebacterium diphtheriae.",
                 "indication": "Active immunization for the prevention of tetanus and diphtheria and post-exposure diphtheria prophylaxis in individuals <7 years. To be used based on official recommendations.",
@@ -1974,7 +1974,7 @@
             },
             {
                 "type": "FDA",
-                "name": "FDA-Product Profile: DTP Vaccine® [MAH: PT Bio Farma (Persero)]",
+                "name": "FDA-Product Profile: DTP Vaccine® [MAH: PT Bio Farma (Persero)]              ",
                 "composition": "- not licensed yet -",
                 "strainCoverage": "- not licensed yet -",
                 "indication": "- not licensed yet -",
@@ -3256,7 +3256,7 @@
         ],
         "productProfiles": [
             {
-                "type": "EMA",
+                "type": "WHO",
                 "name": "EMA-Product Profile: ERVEBO® (MAH: MSD)",
                 "composition": "1 dose (1 ml) contains 72 million plaque-forming units (pfu) of vaccine virus, vesicular stomatitis virus (VSV) backbone deleted for the VSV envelope glycoprotein and substituted with the envelope glycoprotein of the Zaire ebolavirus (Kikwit 1995 strain) in a stabilizer solution, storage: -80°C to -60°C, shelf life: 3 years",
                 "strainCoverage": "Prevention of disease caused by Zaire ebolavirus. Does not protect against other Filoviruses.",
@@ -3338,8 +3338,8 @@
                 "others": "Efficacy has not been established in <1 year; for vaccination errors consult the label; no dose adjustment in HIV-infected individuals with infection controlled through antiretroviral therapy."
             },
             {
-                "type": "FDA",
-                "name": "FDA-Product Profile: : ZABDENO® + MVABEA® (MAH: Janssen)",
+                "type": "EMA",
+                "name": "EMA-Product Profile: : ZABDENO® + MVABEA® (MAH: Janssen)",
                 "composition": "- not licensed yet -",
                 "strainCoverage": "- not licensed yet -",
                 "indication": "- not licensed yet -",
@@ -4786,20 +4786,7 @@
             },
             {
                 "type": "WHO",
-                "name": "WHO-Product Profile: Engerix® (MAH: GSK)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
+                "name": "WHO-Product Profile: Engerix® (MAH: GSK)"
             }
         ]
     },
