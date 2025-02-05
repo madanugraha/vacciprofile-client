@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAvailableLicensingByVaccineName, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
+import { getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Vaccine from './Vaccine';
@@ -116,7 +116,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
 
     const [vaccineErrorMessage, setVaccineErrorMessage] = useState("");
     const [tableFieldsErrorMessage, setTableFieldsErrorMessage] = useState("");
-
+    const [viewSinglePathogenVaccine, setViewSinglePathogenVaccine] = useState(true);
 
     // custom filters
     const [licensedOnly, setLicensedOnly] = useState(true);
@@ -201,43 +201,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         setSecondaryVaccineFields(f);
     };
 
-    // useEffect(() => {
-    //     checkForCheckedVaccines();
-    // }, [vaccineFieldsState])
-    const handleOnSelectVaccineDeletedCheckBox = (name) => {
-        const f = vaccineFieldsState.map((x) => {
-            if (x.name === name) {
-                return {
-                    ...x,
-                    checked: false
-                }
-            } else {
-                return {
-                    ...x,
-                    checked: x.checked
-                }
-            }
-        });
-        setVaccineFieldsState(f);
-    };
-
-    const handleOnSelectVaccineAddedCheckBox = (name) => {
-        const f = vaccineFieldsState.map((x) => {
-            if (x.name === name) {
-                return {
-                    ...x,
-                    checked: true
-                }
-            } else {
-                return {
-                    ...x,
-                    checked: x.checked
-                }
-            }
-        });
-        setVaccineFieldsState(f);
-    };
-
     useEffect(() => {
         setCompareActive(false);
         setLicenserFieldsVaccine([]);
@@ -255,6 +218,25 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         }) : [];
         setVaccineFieldsState(vaccineFields);
     }, [selectedPathogen]);
+
+
+    useEffect(() => {
+        setCompareActive(false);
+        setLicenserFieldsVaccine([]);
+        setSelectedFilterVaccine([]);
+        const vaccineFields = (viewSinglePathogenVaccine ? getVaccinesByPathogenId(selectedPathogen.pathogenId) : getCombinationVaccineByPathogenId(selectedPathogen.pathogenId)) && (viewSinglePathogenVaccine ? getVaccinesByPathogenId(selectedPathogen.pathogenId) : getCombinationVaccineByPathogenId(selectedPathogen.pathogenId)).length > 0 ? (viewSinglePathogenVaccine ? getVaccinesByPathogenId(selectedPathogen.pathogenId) : getCombinationVaccineByPathogenId(selectedPathogen.pathogenId)).map((x) => {
+            return {
+                ...x,
+                title: x.name,
+                alt: x.name,
+                licenser: [...getAvailableLicensingByVaccineName(x.name, [])],
+                hasDuplicate: false,
+                errorMessage: "",
+                checked: false
+            }
+        }) : [];
+        setVaccineFieldsState(vaccineFields);
+    }, [viewSinglePathogenVaccine, selectedPathogen]);
 
     useEffect(() => {
         if (!open) {
@@ -554,43 +536,123 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                 <div className="accordion-body pb-1 px-0 pt-0">
                                     <div>
                                         <div className='mt-4' style={{ paddingLeft: 10 }}>
-                                            <div className='d-inline-flex justify-content-between w-100'>
-                                                <div>
-                                                    <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
-                                                    {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
-                                                        return (
-                                                            <div>
-                                                                <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                    <li key={Math.random() * 999} onClick={() => {
-                                                                        // setSelectedVaccine(vaccine)
-                                                                        // setOpen(true)
-                                                                    }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
-                                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                            <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
-                                                                                handleCheckBox(vaccine, false);
-                                                                            })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
-                                                                        </div>
-                                                                    </li>
-                                                                    {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
-                                                                        return (
-                                                                            <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                <Checkbox checked={licenser.checked} onChange={((e, checked) => {
-                                                                                    handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
-                                                                                })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
-                                                                            </div>
-                                                                        )
-                                                                    })}
-
-                                                                </div>
-                                                            </div>
-                                                        )
-                                                    }) : (
-                                                        <div className='flex flex-row mb-2'>
-                                                            &#8226;{" "}
-                                                            <span className='mt-2'>No Data Found</span>
-                                                        </div>
-                                                    )}
+                                            <div className='d-inline-flex justify-content-between w-100' style={{ marginBottom: 50 }}>
+                                                <div className='d-inline-flex w-100'>
+                                                    <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                        <Checkbox checked={viewSinglePathogenVaccine === true} onChange={((e, checked) => {
+                                                            setViewSinglePathogenVaccine(true)
+                                                            // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Single Pathogen Vaccine"}</span>` }}></div>
+                                                    </div>
+                                                    <div className='d-inline-flex' style={{ alignItems: 'center', marginLeft: 20 }}>
+                                                        <Checkbox checked={!viewSinglePathogenVaccine} onChange={((e, checked) => {
+                                                            setViewSinglePathogenVaccine(false)
+                                                            // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Combination Vaccine"}</span>` }}></div>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <div className='d-inline-flex justify-content-between w-100'>
+                                                {
+                                                    viewSinglePathogenVaccine ? (
+                                                        <table>
+                                                            <tr>
+                                                                <td colSpan={4} style={{ fontWeight: 'bold' }}>Single Pathogen Vaccine</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
+                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensed Authority</td>
+                                                            </tr>
+                                                            {/* <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span> */}
+                                                            {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
+                                                                return (
+                                                                    <tr>
+                                                                        <td>
+                                                                            <li key={Math.random() * 999} onClick={() => {
+                                                                                // setSelectedVaccine(vaccine)
+                                                                                // setOpen(true)
+                                                                            }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
+                                                                                <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                        handleCheckBox(vaccine, false);
+                                                                                    })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </td>
+                                                                        {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
+                                                                            return (
+                                                                                <td colSpan={4}>
+                                                                                    <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                            handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            )
+                                                                        })}
+                                                                    </tr>
+                                                                )
+                                                            }) : (
+                                                                <tr>
+                                                                    <td>
+                                                                        <div className='flex flex-row mb-2'>
+                                                                            &#8226;{" "}
+                                                                            <span className='mt-2'>No Data Found</span>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            )}
+                                                        </table>
+                                                    ) : (
+                                                        <table>
+                                                            <tr>
+                                                                <td colSpan={4} style={{ fontWeight: 'bold' }}>Combination Vaccine</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
+                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensed Authority</td>
+                                                            </tr>
+                                                            {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
+                                                                return (
+                                                                    <tr>
+                                                                        <td>
+                                                                            <li key={Math.random() * 999} onClick={() => {
+                                                                                // setSelectedVaccine(vaccine)
+                                                                                // setOpen(true)
+                                                                            }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
+                                                                                <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                        handleCheckBox(vaccine, false);
+                                                                                    })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </td>
+                                                                        {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
+                                                                            return (
+                                                                                <td colSpan={4}>
+                                                                                    <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                            handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            )
+                                                                        })}
+                                                                    </tr>
+                                                                )
+                                                            }) : (
+                                                                <tr>
+                                                                    <td>
+                                                                        <div className='flex flex-row mb-2'>
+                                                                            &#8226;{" "}
+                                                                            <span className='mt-2'>No Data Found</span>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            )}
+                                                        </table>
+                                                    )
+                                                }
                                                 <div style={{ marginRight: 10 }}>
                                                     <Button style={{ marginLeft: 10 }} disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
                                                         const check = vaccineFieldsState.filter((x) => x.checked).map((x) => {

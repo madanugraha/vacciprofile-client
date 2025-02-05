@@ -4936,6 +4936,7 @@
     {
         "vaccineId": 77,
         "name": "Fluad Tetra, FLUAD QUADRIVALENT®",
+        "vaccineType": "combination",
         "pathogenId": [
             8
         ],

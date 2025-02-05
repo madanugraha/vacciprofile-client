@@ -134,6 +134,11 @@
                 "vaccineId": 28
             }
         ],
+        "combinedVaccines": [
+            {
+                "vaccineId": 15
+            }
+        ],
         "image": "https://vaccitutor.com/pluginfile.php/525/course/overviewfiles/43%20-%20Influenza.png",
         "bulletpoints": "The influenza virus is a segmented RNA virus with different mechanisms for mutations, and hence for minor (antigenic drift) and major (antigenic shift) changes.|Influenza virus A was responsible for pandemics on average every 30 years in the past, with the most recent being the 2009 swine-origin influenza A H1N1 (SO-H1N1). |The clinical picture is unspecific: seasonal or pandemic influenza cannot be differentiated from other viral respiratory infections on clinical grounds. PCR has become the standard for microbiological confirmation of the diagnosis. |Treatment options remain limited with neuraminidase inhibitors (oseltamivir; zanamivir). Resistance may occur under treatment or under prophylaxis; however, it is still rare overall. |Vaccination is still the preferred method for prevention. However, the long lead time for production (at least 6 months) poses a challenge. Innovative new techniques like cell culture or recombinant productions are urgently needed. |Pandemic influenza vaccines for SO-H1N1 were shown to be effective and safe in children, pregnant women, adults, and also in elderly",
         "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=influenza"
