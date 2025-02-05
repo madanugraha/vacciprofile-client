@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import { toast } from 'react-toastify';
 import { cutStringMoreThan32 } from '../../utils/string';
 import * as _ from 'lodash';
+import DraggableIcon from '../../assets/icons/draggable';
 
 const style = {
     position: 'absolute',
@@ -51,8 +52,6 @@ const style = {
  * />
  */
 const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
-
-
     const [open, setOpen] = useState(false);
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const convertCamelCaseToReadable = string => {
@@ -62,10 +61,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         return formattedString.charAt(0).toUpperCase() + formattedString.slice(1);
     };
     const [compareSubmitted, setCompareSubmitted] = useState(false);
-
-
     const [compareActive, setCompareActive] = useState(false);
-
     const tableFields = [
         { title: 'Type', alt: 'type' },
         { title: 'Composition/Platform', alt: 'composition' },
@@ -82,7 +78,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
         { title: 'Others', alt: 'others' }
     ];
-
     const licenserFields = [
         {
             title: 'FDA',
@@ -97,8 +92,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
             alt: 'who'
         }
     ];
-
-
 
     const [licenserFieldsVaccine, setLicenserFieldsVaccine] = useState([]);
     const [selectedFilterVaccine, setSelectedFilterVaccine] = useState([]);
@@ -265,6 +258,25 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
             tableDragger(el);
         }
     }, [open]);
+
+    useEffect(() => {
+        var el = document.getElementById('comparison-table');
+        if (el) {
+            var dragger = tableDragger(el);
+            dragger.destroy();
+            tableDragger(el);
+        }
+    }, [secondaryVaccineFields]);
+
+    useEffect(() => {
+        var el = document.getElementById('comparison-table');
+        if (el) {
+            var dragger = tableDragger(el);
+            dragger.destroy();
+            tableDragger(el);
+        }
+    }, [selectedFilterTableFields]);
+
 
     const printTable = () => {
         var divToPrint = document.getElementById("comparison-table");
@@ -466,6 +478,12 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
             const nf = _.chunk(f, 5);
             setSecondaryVaccineFields(nf);
         }
+        var el = document.getElementById('comparison-table');
+        if (el) {
+            var dragger = tableDragger(el);
+            dragger.destroy();
+            tableDragger(el);
+        }
     }, [vaccineFieldsState])
 
     useEffect(() => {
@@ -542,13 +560,13 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                         <Checkbox checked={viewSinglePathogenVaccine === true} onChange={((e, checked) => {
                                                             setViewSinglePathogenVaccine(true)
                                                             // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
-                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Single Pathogen Vaccine"}</span>` }}></div>
+                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Single Pathogen Vaccines"}</span>` }}></div>
                                                     </div>
                                                     <div className='d-inline-flex' style={{ alignItems: 'center', marginLeft: 20 }}>
                                                         <Checkbox checked={!viewSinglePathogenVaccine} onChange={((e, checked) => {
                                                             setViewSinglePathogenVaccine(false)
                                                             // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
-                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Combination Vaccine"}</span>` }}></div>
+                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Combination Vaccines"}</span>` }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -557,7 +575,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                     viewSinglePathogenVaccine ? (
                                                         <table>
                                                             <tr>
-                                                                <td colSpan={4} style={{ fontWeight: 'bold' }}>Single Pathogen Vaccine</td>
+                                                                <td colSpan={4} style={{ fontWeight: 'bold' }}>Single Pathogen Vaccines</td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
@@ -579,22 +597,24 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 </div>
                                                                             </li>
                                                                         </td>
-                                                                        {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
-                                                                            return (
-                                                                                <td colSpan={4}>
+                                                                        <td colSpan={4}>
+                                                                            {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
+                                                                                return (
+
                                                                                     <div className='d-inline-flex' style={{ alignItems: 'center' }}>
                                                                                         <Checkbox checked={licenser.checked} onChange={((e, checked) => {
                                                                                             handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                                     </div>
-                                                                                </td>
-                                                                            )
-                                                                        })}
+
+                                                                                )
+                                                                            })}
+                                                                        </td>
                                                                     </tr>
                                                                 )
                                                             }) : (
                                                                 <tr>
-                                                                    <td>
+                                                                    <td colSpan={4}>
                                                                         <div className='flex flex-row mb-2'>
                                                                             &#8226;{" "}
                                                                             <span className='mt-2'>No Data Found</span>
@@ -606,7 +626,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                     ) : (
                                                         <table>
                                                             <tr>
-                                                                <td colSpan={4} style={{ fontWeight: 'bold' }}>Combination Vaccine</td>
+                                                                <td colSpan={4} style={{ fontWeight: 'bold' }}>Combination Vaccines</td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
@@ -627,22 +647,23 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 </div>
                                                                             </li>
                                                                         </td>
-                                                                        {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
-                                                                            return (
-                                                                                <td colSpan={4}>
-                                                                                    <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                        <td colSpan={4}>
+                                                                            {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
+                                                                                return (
+
+                                                                                    <div className='d-inline-flex' style={{ alignItems: 'center', marginRight: 5 }}>
                                                                                         <Checkbox checked={licenser.checked} onChange={((e, checked) => {
                                                                                             handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                                     </div>
-                                                                                </td>
-                                                                            )
-                                                                        })}
+                                                                                )
+                                                                            })}
+                                                                        </td>
                                                                     </tr>
                                                                 )
                                                             }) : (
                                                                 <tr>
-                                                                    <td>
+                                                                    <td colSpan={4}>
                                                                         <div className='flex flex-row mb-2'>
                                                                             &#8226;{" "}
                                                                             <span className='mt-2'>No Data Found</span>
@@ -680,7 +701,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                         <div className='d-inline-flex' style={{ alignItems: 'center' }}>
                                                             <Checkbox checked={vaccineSelectedOnly} onChange={((e, checked) => {
                                                                 setVaccineSelectedOnly(checked);
-                                                            })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Show Selected Vaccine only</span>` }}></div>
+                                                            })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Show Selected Vaccines only</span>` }}></div>
                                                         </div>
                                                     </div>
                                                     {/* <span onClick={() => } className='fw-bold cursor-pointer compare-color-text' style={{}}>&#8226;{" "}Compare Vaccines</span> */}
@@ -1059,8 +1080,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                     <div className='d-flex border border-secondary rounded' style={{ alignItems: 'center', marginBottom: 5 }}>
                                                         <div className='d-inline-flex' style={{ alignItems: 'center' }}>
                                                             <li key={Math.random() * 999} onClick={() => {
-                                                                // setSelectedVaccine(vaccine)
-                                                                // setOpen(true)
                                                             }} className='' style={{ maxWidth: 200, minWidth: 200, alignItems: 'center', display: 'flex' }}>
                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
                                                                     <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
@@ -1087,104 +1106,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                 )
                             }) : null}
 
-                            {/* <div className='d-inline-flex' style={{ marginLeft: 50 }}>
-                                <div>
-                                    {
-                                        selectedFilterVaccine.length > 0 && (
-                                            selectedFilterVaccine.slice(0, 3).map((vaccine) => {
-                                                return (
-                                                    <div key={vaccine.name} style={{ marginTop: 10 }}>
-                                                        <Stack spacing={3} sx={{ width: 500 }}>
-                                                            <Autocomplete
-                                                                multiple
-                                                                id="tags-standard"
-                                                                options={licenserFields}
-                                                                value={[...vaccine.licenser]}
-                                                                getOptionLabel={(option) => option.title}
-                                                                defaultValue={[licenserFields[0]]}
-                                                                autoComplete
-                                                                freeSolo
-                                                                limitTags={3}
-                                                                onChange={(event, newValue) => {
-                                                                    if (event.target?.textContent &&
-                                                                        vaccine.licenser.some((item) => item.title === (event.target)?.textContent)
-                                                                    ) {
-                                                                        vaccine.errorMessage = `${vaccine.name}: ${(event.target)?.textContent} cannot be duplicated`
-                                                                        vaccine.hasDuplicate = true;
-                                                                        return;
-                                                                    }
-                                                                    vaccine.hasDuplicate = false;
-                                                                    vaccine.licenser = newValue;
-                                                                    handleSelectLicenserFieldsVaccine(vaccine.name, vaccine)
-                                                                    // setLicenserFieldsVaccine([...licenserFieldsVaccine, vaccine]);
-                                                                }}
-                                                                renderInput={(params) => (
-                                                                    <TextField
-                                                                        {...params}
-                                                                        variant="standard"
-                                                                        label={<span style={{ color: 'black' }}>Filter Licensing Authorities for: {vaccine.name}</span>}
-                                                                        placeholder=""
-                                                                        error={vaccine.hasDuplicate}
-                                                                        helperText={vaccine.hasDuplicate ? vaccine.errorMessage : null}
-                                                                    />
-                                                                )}
-                                                            />
-                                                        </Stack>
-                                                    </div>
-                                                )
-                                            })
-                                        )
-                                    }
-                                </div>
-                                <div style={{ marginLeft: 50 }}>
-                                    {
-                                        selectedFilterVaccine.length > 0 && (
-                                            selectedFilterVaccine.slice(3, 6).map((vaccine) => {
-                                                return (
-                                                    <div key={vaccine.name} style={{ marginTop: 10 }}>
-                                                        <Stack spacing={3} sx={{ width: 500 }}>
-                                                            <Autocomplete
-                                                                multiple
-                                                                id="tags-standard"
-                                                                options={[...getAvailableLicensingByVaccineName(vaccine.name, [])]}
-                                                                value={[...vaccine.licenser]}
-                                                                getOptionLabel={(option) => option.title}
-                                                                defaultValue={[licenserFields[0]]}
-                                                                autoComplete
-                                                                freeSolo
-                                                                limitTags={3}
-                                                                onChange={(event, newValue) => {
-                                                                    if (event.target?.textContent &&
-                                                                        vaccine.licenser.some((item) => item.title === (event.target)?.textContent)
-                                                                    ) {
-                                                                        vaccine.errorMessage = `${vaccine.name}: ${(event.target)?.textContent} cannot be duplicated`
-                                                                        vaccine.hasDuplicate = true;
-                                                                        return;
-                                                                    }
-                                                                    vaccine.hasDuplicate = false;
-                                                                    vaccine.licenser = newValue;
-                                                                    handleSelectLicenserFieldsVaccine(vaccine.name, vaccine)
-                                                                    // setLicenserFieldsVaccine([...licenserFieldsVaccine, vaccine]);
-                                                                }}
-                                                                renderInput={(params) => (
-                                                                    <TextField
-                                                                        {...params}
-                                                                        variant="standard"
-                                                                        label={<span>Filter Licensing Authorities for: {vaccine.name}</span>}
-                                                                        placeholder=""
-                                                                        error={vaccine.hasDuplicate}
-                                                                        helperText={vaccine.hasDuplicate ? vaccine.errorMessage : null}
-                                                                    />
-                                                                )}
-                                                            />
-                                                        </Stack>
-                                                    </div>
-                                                )
-                                            })
-                                        )
-                                    }
-                                </div>
-                            </div> */}
+
                         </div>
                         <div className='view' style={{ overflow: 'scroll' }}>
                             <div style={{ overflowY: 'scroll', maxHeight: '60vh' }} className="d-inline-flex w-100 wrapper">
@@ -1199,17 +1121,11 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                         <tbody>
                                             {selectedFilterTableFields.map((field, idx) => {
                                                 const key = field.alt;
-                                                // const vaccineOne = licenserFieldsVaccine[0];
-                                                // const vaccineTwo = licenserFieldsVaccine[1];
-                                                // const vaccineThree = licenserFieldsVaccine[2];
-                                                // const vaccineFour = licenserFieldsVaccine[3];
-                                                // const vaccineFive = licenserFieldsVaccine[4];
-                                                // const vaccineSix = licenserFieldsVaccine[5];
 
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
-                                                            <td data-sortable="false" width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline' }} className={`sticky-col ${idx === 0 ? "fix-first" : ""} first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                            <td key={convertCamelCaseToReadable(key)} data-sortable="false" width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)} {idx === 0 && <DraggableIcon />}</td>
                                                             {/** TEST */}
                                                             {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
@@ -1221,7 +1137,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 color: "white"
                                                                             } : {}
                                                                             return (
-                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</td>
+                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)} {idx === 0 && <DraggableIcon />}</td>
                                                                             )
                                                                         }) : null
                                                                     })

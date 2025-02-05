@@ -15,7 +15,7 @@ export const getVaccinesByPathogenId = (id) => {
         }
     });
 
-    result = result.filter((x) => x.pathogenId === id)
+    result = result.filter((x) => x.pathogenId === id && x.vaccineType === "single")
 
     // const result = data.filter((x) => x.pathogenId.filter((y) => y === id[0]));
     if (result.length > 0) {
@@ -129,14 +129,14 @@ export const getVaccineListByPathogenId = (id) => {
         return result;
     };
     return null;
-}
+};
 
 export const getLicenserDetailById = (id) => {
     const data = licensers;
     const result = data.filter((vac) => vac.licenserId === id);
     if (result.length > 0) {
         return result[0];
-    }
+    };
     return null;
 };
 
@@ -145,10 +145,27 @@ export const getPathogenDetailById = (id) => {
     const result = data.filter((vac) => vac.pathogenId === id);
     if (result.length > 0) {
         return result[0];
-    }
+    };
     return null;
 };
 
+
+export const getSinglePathogenVaccineArray = (data) => {
+    if (data && data.length > 0) {
+        const d = data.filter((x) => x.vaccineType === "single");
+        return d;
+    } else {
+        return []
+    }
+};
+
+export const getCombinationVaccineneArray = (data) => {
+    if (data && data.length > 0) {
+        return data.filter((x) => x.vaccineType === "combination")
+    } else {
+        return []
+    }
+};
 export const getProductProfileValueByVaccineName = (prop, vaccineName) => {
     const data = vaccines;
 
