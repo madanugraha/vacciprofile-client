@@ -265,7 +265,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
             var dragger = tableDragger(el);
             dragger.destroy();
             tableDragger(el);
-        }
+        };
     }, [secondaryVaccineFields]);
 
     useEffect(() => {
@@ -1125,7 +1125,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
-                                                            <td key={convertCamelCaseToReadable(key)} data-sortable="false" width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)} {idx === 0 && <DraggableIcon />}</td>
+                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                             {/** TEST */}
                                                             {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
@@ -1137,7 +1137,14 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 color: "white"
                                                                             } : {}
                                                                             return (
-                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)} {idx === 0 && <DraggableIcon />}</td>
+                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>
+
+                                                                                    <div className='d-inline-flex justify-content-between w-100'>
+                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
+                                                                                        <span>  {idx === 0 && <DraggableIcon />}</span>
+
+                                                                                    </div>
+                                                                                </td>
                                                                             )
                                                                         }) : null
                                                                     })

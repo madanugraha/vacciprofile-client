@@ -213,7 +213,7 @@ const Sidebar = ({
                                         {showSinglePathogenVaccines && filteredLicenserSidebarList && filteredLicenserSidebarList.length > 0 && getSinglePathogenVaccineArray(filteredLicenserSidebarList).map((item, i) => (
                                             <div
                                                 key={i}
-                                                className={`sidebar-item subgroup-colour text-dark rounded-3 ms-5 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item
+                                                className={`sidebar-item subgroup-colour text-dark rounded-3 ms-5 mb-1 ${showSinglePathogenVaccines && activeTab === 'Vaccine' && selectedVaccine === item
                                                     ? 'active' : 'inactive'
                                                     }`}
                                                 onClick={() => {
@@ -232,7 +232,7 @@ const Sidebar = ({
                                         {showCombinationVaccines && filteredLicenserSidebarList && filteredLicenserSidebarList.length > 0 && getCombinationVaccineneArray(filteredLicenserSidebarList).map((item, i) => (
                                             <div
                                                 key={i}
-                                                className={`sidebar-item subgroup-colour text-dark rounded-3 ms-5 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item
+                                                className={`sidebar-item subgroup-colour text-dark rounded-3 ms-5 mb-1 ${showCombinationVaccines && activeTab === 'Vaccine' && selectedVaccine === item
                                                     ? 'active' : 'inactive'
                                                     }`}
                                                 onClick={() => {

@@ -66,6 +66,7 @@ const VaccineListTable = ({
                             <thead>
                                 <tr>
                                     <th>Vaccine Brand Name</th>
+                                    <th>Vaccine Type</th>
                                     <th>Pathogen</th>
                                     <th>Licensing Authorities</th>
                                 </tr>
@@ -77,6 +78,12 @@ const VaccineListTable = ({
                                             className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
                                             onClick={() => handleSelectVaccine(vaccine)}>
                                             {vaccine.name}
+                                        </span>
+                                    </td>
+                                    <td className='vaccine-cell'>
+                                        <span
+                                            className={`selected`}>
+                                            {vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}
                                         </span>
                                     </td>
                                     <td className='pathogen-cell'>
