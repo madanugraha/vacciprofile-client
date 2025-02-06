@@ -1,5 +1,6 @@
 import React from 'react';
 import { removeDuplicatesFromArray } from '../../utils/array';
+import { getPathogenDetailById } from '../../utils/pathogens';
 
 /**
  * VaccineListTable Component
@@ -50,6 +51,7 @@ const VaccineListTable = ({
     getLicenserById,
     italizeScientificNames
 }) => {
+    console.log(selectedVaccine);
     return <div className="accordion" id="accordianVaccineList">
         <div className="accordion-item">
             <h2 className="accordion-header" id="accordianVaccines">
@@ -78,23 +80,29 @@ const VaccineListTable = ({
                                         </span>
                                     </td>
                                     <td className='pathogen-cell'>
-                                        <span
-                                            className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenByVaccine(vaccine).name ? `selected` : `selectable`}`}
-                                            onClick={() => { handleSelectPathogen(getPathogenByVaccine(vaccine)) }}>{getPathogenByVaccine(vaccine)?.name ? italizeScientificNames(getPathogenByVaccine(vaccine).name) : "-"}
-                                        </span>
+                                        <div className='d-inline-flex align-items-center'>
+                                            {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen) => {
+                                                return (
+                                                    <span
+                                                        className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenDetailById(pathogen).name ? `selected` : `selectable`}`}
+                                                        onClick={() => { handleSelectPathogen(getPathogenDetailById(pathogen)) }}>{getPathogenDetailById(pathogen)?.name ? italizeScientificNames(getPathogenDetailById(pathogen)?.name) : "-"}
+                                                    </span>
+                                                )
+                                            })}
+                                        </div>
                                     </td>
                                     <td className='licenser-cell'>
-                                        {vaccine.licensers ? vaccine.licensers.map((l, index) => {
-                                            const licenser = getLicenserById(l.licenserId);
+                                        {vaccine.productProfiles ? vaccine.productProfiles.filter((x) => x.composition !== "- not licensed yet -").map((l, index) => {
+                                            const licenser = l.type;
 
                                             if (!licenser) return null;
 
                                             return (
-                                                <span key={l.licenserId}>
-                                                    <a href={l.link} className='selectable' target="_blank" rel="noopener noreferrer">
-                                                        {licenser.acronym}
+                                                <span key={l.name}>
+                                                    <a href="#" className='selectable' target="_blank" rel="noopener noreferrer">
+                                                        {licenser}
                                                     </a>
-                                                    {index < vaccine.licensers.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                                    {index < vaccine.productProfiles.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
                                                 </span>
                                             );
                                         }) : '- no data -'}
