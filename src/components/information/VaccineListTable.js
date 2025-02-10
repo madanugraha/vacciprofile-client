@@ -101,9 +101,7 @@ const VaccineListTable = ({
                                     <td className='licenser-cell'>
                                         {vaccine.productProfiles ? vaccine.productProfiles.filter((x) => x.composition !== "- not licensed yet -").map((l, index) => {
                                             const licenser = l.type;
-
                                             if (!licenser) return null;
-
                                             return (
                                                 <span key={l.name}>
                                                     <a href="#" className='selectable' target="_blank" rel="noopener noreferrer">
