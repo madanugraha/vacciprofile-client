@@ -10362,6 +10362,14 @@
                 "manufacturerId": 6
             }
         ],
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "Approval",
+                "approvalDate": "07/08/2023",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluenz-tetra"
+            }
+        ],
         "productProfiles": [
             {
                 "type": "EMA",
@@ -10426,6 +10434,14 @@
         "manufacturers": [
             {
                 "manufacturerId": 6
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "Approval",
+                "approvalDate": "20/11/2024",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluenz"
             }
         ],
         "productProfiles": [
@@ -10954,6 +10970,21 @@
         "manufacturers": [
             {
                 "manufacturerId": 6
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "Approval",
+                "approvalDate": "20/05/2016",
+                "lastUpdated": "24/04/2024",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/pandemic-influenza-vaccine-h5n1-astrazeneca"
+            },
+            {
+                "name": "WHO",
+                "type": "Pre-Qualification",
+                "approvalDate": "18/12/2020",
+                "source": "https://extranet.who.int/prequal/vaccines/p/pandemic-live-attenuated-vaccine"
             }
         ],
         "productProfiles": [
@@ -12342,6 +12373,14 @@
                 "manufacturerId": 35
             }
         ],
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "Pre-Qualification",
+                "approvalDate": "19/02/2024",
+                "source": "https://extranet.who.int/prequal/vaccines/p/influvacr-tetra"
+            }
+        ],
         "productProfiles": [
             {
                 "type": "EMA",
@@ -13398,6 +13437,14 @@
                 "manufacturerId": 36
             }
         ],
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "Pre-Qualification",
+                "approvalDate": "20/10/2023",
+                "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated-0"
+            }
+        ],
         "productProfiles": [
             {
                 "type": "EMA",
@@ -13594,6 +13641,14 @@
         "manufacturers": [
             {
                 "manufacturerId": 35
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "Pre-Qualification",
+                "approvalDate": "25/05/2018",
+                "source": "https://extranet.who.int/prequal/vaccines/p/serinflu"
             }
         ],
         "productProfiles": [

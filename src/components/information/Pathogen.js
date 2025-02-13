@@ -709,108 +709,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                         compareActive && (
                                                             <>
                                                                 <div style={{ marginTop: 20 }}>
-                                                                    {/* <Stack spacing={3} sx={{ width: 500 }}>
-                                                                        <Autocomplete
-                                                                            multiple
-                                                                            id="tags-standard"
-                                                                            options={sortArrayAscending(vaccineFieldsState, "name").map((data) => {
-                                                                                return data
-                                                                            })}
-                                                                            value={selectedFilterVaccine}
-                                                                            getOptionLabel={(option) => option.title}
-                                                                            defaultValue={[vaccineFieldsState[0]]}
-                                                                            isOptionEqualToValue={(option, value) => false}
-                                                                            onChange={(event, newValue, reason, detail) => {
-                                                                                if (event.target?.textContent &&
-                                                                                    selectedFilterVaccine.some((item) => item.title === (event.target)?.textContent)
-                                                                                ) {
-                                                                                    setVaccineErrorMessage(`${(event.target)?.textContent} cannot be duplicated`);
-                                                                                    setDuplicateVaccineError(true);
-                                                                                    return;
-                                                                                }
-                                                                                if (newValue.length > 6) {
-                                                                                    setVaccineErrorMessage(`Vaccine selection limited by 6.`);
-                                                                                    setDuplicateVaccineError(true);
-                                                                                    return
-                                                                                }
-
-                                                                                setDuplicateVaccineError(false);
-                                                                                setSelectedFilterVaccine(newValue);
-                                                                                setLicenserFieldsVaccine(newValue);
-
-                                                                                if (reason === "selectOption") {
-                                                                                    const added = detail.option;
-                                                                                    if (added?.alt) {
-                                                                                        handleOnSelectVaccineAddedCheckBox(added.title);
-                                                                                    }
-                                                                                }
-                                                                                if (reason === 'removeOption') {
-                                                                                    const deleted = detail.option;
-                                                                                    if (deleted?.alt) {
-                                                                                        handleOnSelectVaccineDeletedCheckBox(deleted.title);
-                                                                                    }
-                                                                                };
-                                                                            }}
-                                                                            autoComplete
-                                                                            freeSolo
-                                                                            limitTags={3}
-                                                                            renderInput={(params) => (
-                                                                                <TextField
-                                                                                    {...params}
-                                                                                    variant="standard"
-                                                                                    label={<span style={{ color: 'black' }}>Select Vaccines (Max. 6)</span>}
-                                                                                    placeholder=""
-                                                                                    error={duplicateVaccineError}
-                                                                                    helperText={duplicateVaccineError ? vaccineErrorMessage : null}
-                                                                                />
-                                                                            )}
-                                                                        />
-                                                                    </Stack> */}
-                                                                    {/* {
-                                                                        selectedFilterVaccine.length > 0 && (
-                                                                            selectedFilterVaccine.map((vaccine) => {
-                                                                                return (
-                                                                                    <div key={vaccine.name} style={{ marginTop: 10 }}>
-                                                                                        <Stack spacing={3} sx={{ width: 500 }}>
-                                                                                            <Autocomplete
-                                                                                                multiple
-                                                                                                id="tags-standard"
-                                                                                                options={[...getAvailableLicensingByVaccineName(vaccine.name, [])]}
-                                                                                                value={[...vaccine.licenser]}
-                                                                                                getOptionLabel={(option) => option.title}
-                                                                                                autoComplete
-                                                                                                freeSolo
-                                                                                                limitTags={3}
-                                                                                                onChange={(event, newValue) => {
-                                                                                                    if (event.target?.textContent &&
-                                                                                                        vaccine.licenser.some((item) => item.title === (event.target)?.textContent)
-                                                                                                    ) {
-                                                                                                        vaccine.errorMessage = `${vaccine.name}: ${(event.target)?.textContent} cannot be duplicated`
-                                                                                                        vaccine.hasDuplicate = true;
-                                                                                                        return;
-                                                                                                    }
-                                                                                                    vaccine.hasDuplicate = false;
-                                                                                                    vaccine.licenser = newValue;
-                                                                                                    handleSelectLicenserFieldsVaccine(vaccine.name, vaccine)
-                                                                                                    // setLicenserFieldsVaccine([...licenserFieldsVaccine, vaccine]);
-                                                                                                }}
-                                                                                                renderInput={(params) => (
-                                                                                                    <TextField
-                                                                                                        {...params}
-                                                                                                        variant="standard"
-                                                                                                        label={<span style={{ color: 'black' }}>Select Licensing Authorities for: {vaccine.name}</span>}
-                                                                                                        placeholder=""
-                                                                                                        error={vaccine.hasDuplicate}
-                                                                                                        helperText={vaccine.hasDuplicate ? vaccine.errorMessage : null}
-                                                                                                    />
-                                                                                                )}
-                                                                                            />
-                                                                                        </Stack>
-                                                                                    </div>
-                                                                                )
-                                                                            })
-                                                                        )
-                                                                    } */}
                                                                     <div style={{ marginTop: 10 }}>
                                                                         <Stack spacing={3} sx={{ width: 500 }}>
                                                                             <Autocomplete
@@ -872,29 +770,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                     </div>
                                                                 </div>
                                                                 <div>
-                                                                    {/* <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                        <Checkbox checked={showEma} onChange={((e, checked) => {
-                                                                            setShowEma(checked);
-                                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Set all EMA Licenser</span>` }}></div>
-                                                                        <Checkbox checked={showFda} onChange={((e, checked) => {
-                                                                            setShowFda(checked)
-                                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Set all FDA Licenser</span>` }}></div>
-                                                                        <Checkbox checked={showWho} onChange={((e, checked) => {
-                                                                            setShowWho(checked);
-                                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Set all WHO Licenser</span>` }}></div>
-                                                                    </div> */}
-                                                                    {/* <div>
-                                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                            <Checkbox checked={licensedOnly} onChange={((e, checked) => {
-                                                                                setLicensedOnly(true)
-                                                                            })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Set All Licensed Only</span>` }}></div>
-                                                                        </div>
-                                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                            <Checkbox checked={!licensedOnly ? true : false} onChange={((e, checked) => {
-                                                                                setLicensedOnly(false);
-                                                                            })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Set All Licensed + Unlicensed</span>` }}></div>
-                                                                        </div>
-                                                                    </div> */}
                                                                     <div>
                                                                         <div className='d-inline-flex' style={{ alignItems: 'center' }}>
                                                                             <Checkbox checked={allFactorShows} onChange={((e, checked) => {

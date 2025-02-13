@@ -168,40 +168,34 @@ const Vaccine = ({
             {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
         </h1>
         {/* <p className='mb-3'>{italizeScientificNames(selectedVaccine.description)}</p> */}
-        {selectedVaccine.licensingDates && (
-            <table className='table table-light table-striped w-100 m-0'>
-                <thead>
-                    <tr>
-                        <th className='text-center'>Link</th>
-                        <th className='text-center'>Licensing/ SmPC</th>
-                        <th>Indication</th>
-                        <th className='text-center'>Date of Approval</th>
-                        <th className='text-center'>Number of Doses Sold</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {selectedVaccine.licensingDates.map((licensingDate, index) => (
-                        <React.Fragment key={index}>
-                            <tr>
-                                <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td>
-                                <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
-                                <td>{licensingDate.indication ? licensingDate.indication : '-'}</td>
-                                <td className='text-center'>
-                                    <a
-                                        href={licensingDate.source}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        {licensingDate.date}
-                                    </a>
-                                </td>
-                                <td className='text-center'>{licensingDate.doses ? licensingDate.doses : `-`}</td>
-                            </tr>
-                        </React.Fragment>
-                    ))}
-                </tbody>
-            </table>
-        )}
+        {/* {selectedVaccine.licensingDates && ( */}
+        <table className='table table-light table-striped w-100 m-0'>
+            <thead>
+                <tr>
+                    <th className='text-center'>Licensing/ SmPC</th>
+                    {/* <th className='text-center'>Number of Doses Sold</th> */}
+                    {/* <th>Indication</th> */}
+                    <th className='text-center'>Date of Approval</th>
+                    <th className='text-center'>Last Updated</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {selectedVaccine.licensingDates && selectedVaccine.licensingDates.length > 0 ? selectedVaccine.licensingDates.map((licensingDate, index) => (
+                    <React.Fragment key={index}>
+                        <tr>
+                            {/* <td className='text-center'><a href="#" className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td> */}
+                            <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
+                            <td className='text-center'>{licensingDate.approvalDate}</td>
+                            <td className='text-center'>{licensingDate.approvalDate}</td>
+                        </tr>
+                    </React.Fragment>
+                )) : <tr>
+                    <td>- No Data Available -</td>
+                </tr>}
+            </tbody>
+        </table>
+        {/* // )} */}
         {selectedVaccine.productProfiles && (
             <div className="d-inline-flex w-100 inner">
                 <table style={{ overflow: 'hidden' }} key={selectedVaccine.description} border={1}>

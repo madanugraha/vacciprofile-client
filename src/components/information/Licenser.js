@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { removeDuplicatesFromArray, sortArrayAscending } from '../../utils/array';
+import { getVaccineByLicenserName } from '../../utils/pathogens';
+import Checkbox from '@mui/material/Checkbox';
 
 /**
  * Licenser Component
@@ -29,6 +31,8 @@ const Licenser = ({
     selectedLicenser,
     getVaccinesByLicenser
 }) => {
+
+    const [viewSinglePathogenVaccine, setViewSinglePathogenVaccine] = useState(true);
     return <div className='slide-left'>
 
         <div className="accordion" id="accordianLicenserInfo">
@@ -57,25 +61,93 @@ const Licenser = ({
                 </h2>
                 <div id="accordianVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
                     <div className="accordion-body pb-1 px-0 pt-0">
-                        <div>
-                            <div className='mt-4' style={{ paddingLeft: 10 }}>
-                                <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span>
-                                <div className='flex flex-row mb-2'>
-                                    &#8226;{" "}
-                                    <span className='mt-2'>No Data Found</span>
+                        <div className='d-inline-flex justify-content-between w-100' style={{ marginBottom: 20 }}>
+                            <div className='d-inline-flex w-100'>
+                                <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                    <Checkbox checked={viewSinglePathogenVaccine === true} onChange={((e, checked) => {
+                                        setViewSinglePathogenVaccine(true)
+                                        // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                    })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Single Pathogen Vaccines"}</span>` }}></div>
                                 </div>
-                                {/* {removeDuplicatesFromArray(getVaccinesByLicenser(selectedLicenser), "name") && removeDuplicatesFromArray(getVaccinesByLicenser(selectedLicenser), "name").length > 0 ? sortArrayAscending(removeDuplicatesFromArray(getVaccinesByLicenser(selectedLicenser), "name"), "name").map((vaccine, index) => (
-                                    <div onClick={() => handleSelectVaccine(vaccine)} className='flex flex-row mb-2 cursor-pointer' style={{ marginLeft: 12, marginTop: 5 }}>
-                                        &#8226;{" "}
-                                        <span className='mt-2'>{vaccine.name}</span>
-                                    </div>
-                                )) : (
-                                    <div className='flex flex-row mb-2'>
-                                        &#8226;{" "}
-                                        <span className='mt-2'>No Data Found</span>
-                                    </div>
-                                )} */}
+                                <div className='d-inline-flex' style={{ alignItems: 'center', marginLeft: 20 }}>
+                                    <Checkbox checked={!viewSinglePathogenVaccine} onChange={((e, checked) => {
+                                        setViewSinglePathogenVaccine(false)
+                                        // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                    })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Combination Vaccines"}</span>` }}></div>
+                                </div>
                             </div>
+                        </div>
+                        <div style={{ marginLeft: 10 }}>
+                            {
+                                viewSinglePathogenVaccine ? (
+                                    <table>
+                                        <tr>
+                                            <td colSpan={4} style={{ fontWeight: 'bold' }}>Single Pathogen Vaccines</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
+                                        </tr>
+                                        {removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym, "single"), "name").length > 0 ? removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym, "single"), "name").map((vaccine) => {
+                                            return (
+                                                <tr>
+                                                    <td>
+                                                        <li key={Math.random() * 999} onClick={() => {
+                                                            // setSelectedVaccine(vaccine)
+                                                            // setOpen(true)
+                                                        }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
+                                                            <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                <div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+                                                            </div>
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                            )
+                                        }) : (
+                                            <tr>
+                                                <td colSpan={4}>
+                                                    <div className='flex flex-row mb-2'>
+                                                        &#8226;{" "}
+                                                        <span className='mt-2'>No Data Found</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        )}
+                                    </table>
+                                ) : (
+                                    <table>
+                                        <tr>
+                                            <td colSpan={4} style={{ fontWeight: 'bold' }}>Combination Vaccines</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
+                                        </tr>
+                                        {removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym, "combination"), "name").length > 0 ? removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym, "combination"), "name").map((vaccine) => {
+                                            return (
+                                                <tr>
+                                                    <td>
+                                                        <li key={Math.random() * 999} onClick={() => {
+                                                            // setSelectedVaccine(vaccine)
+                                                            // setOpen(true)
+                                                        }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
+                                                            <div className='d-inline-flex' style={{ alignItems: 'center' }}><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+                                                            </div>
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                            )
+                                        }) : (
+                                            <tr>
+                                                <td colSpan={4}>
+                                                    <div className='flex flex-row mb-2'>
+                                                        &#8226;{" "}
+                                                        <span className='mt-2'>No Data Found</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        )}
+                                    </table>
+                                )
+                            }
                         </div>
                     </div>
                 </div>
@@ -104,7 +176,7 @@ const Licenser = ({
                 </div>
             </div>
         </div>
-    </div>
+    </div >
 }
 
 export default Licenser;

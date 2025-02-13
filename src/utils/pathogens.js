@@ -220,6 +220,23 @@ export const getProductProfileTypeByVaccineName = (vaccineName) => {
     }
 }
 
+export const getVaccineByLicenserName = (licenserName, type) => {
+    const data = vaccines;
+    const result = data.map((x) => {
+        return {
+            ...x,
+            productProfiles: x.productProfiles.filter((y) => y.type === licenserName && y.composition !== "- not licensed yet -")
+        }
+    });
+    const result2 = result.filter((x) => x.productProfiles.length > 0);
+
+    if (type === "single") {
+        return result2.filter((x) => x.vaccineType === "single")
+    } else {
+        return result2.filter((x) => x.vaccineType === "combination")
+    };
+};
+
 export const getAvailableLicensingByVaccineName = (name, licenserArr) => {
     const data = vaccines;
     const result = data.filter((vac) => vac.name === name);
