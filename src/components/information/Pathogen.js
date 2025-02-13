@@ -984,7 +984,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
 
                         </div>
                         <div className='view' style={{ overflow: 'scroll' }}>
-                            <div style={{ overflowY: 'scroll', maxHeight: '60vh' }} className="d-inline-flex w-100 wrapper">
+                            <div style={{ overflowY: 'scroll' }} className="max-h-table-comparison d-inline-flex w-100 wrapper">
                                 {secondaryVaccineFields.length >= 1 ? (
                                     <table className='' id="comparison-table" border={1}
                                         data-toolbar=".toolbar"
