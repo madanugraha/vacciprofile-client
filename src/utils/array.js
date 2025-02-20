@@ -1,3 +1,6 @@
+import vaccines from '../assets/data/candidate-vaccines.json';
+import pathogens from '../assets/data/candidate-pathogens.json';
+
 export const removeDuplicatesFromArray = (arr, prop) => {
     if (arr && arr.length > 0) {
         return arr.reduce((accumulator, current) => {
@@ -16,6 +19,14 @@ export const sortArrayAscending = (arr, prop) => {
     };
     return [];
 };
+
+export const getCandidatePathogens = () => {
+    return pathogens
+};
+
+export const getCandidateVaccines = () => {
+    return vaccines.sort((a, b) => a.name.localeCompare(b.name))
+}
 
 const vaccineBackups = [
     {

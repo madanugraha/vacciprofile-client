@@ -1,6 +1,6 @@
 import React from 'react';
 import { removeDuplicatesFromArray } from '../../utils/array';
-import { getPathogenDetailById } from '../../utils/pathogens';
+import { getLicensedVaccineByManufacturerId, getPathogenDetailById } from '../../utils/pathogens';
 
 /**
  * VaccineListTable Component
@@ -43,6 +43,7 @@ const VaccineListTable = ({
     selectedPathogen,
     selectedVaccine,
     selectedLicenser,
+    selectedManufacturer,
     handleSelectPathogen,
     handleSelectVaccine,
     handleSelectLicenser,
@@ -51,7 +52,6 @@ const VaccineListTable = ({
     getLicenserById,
     italizeScientificNames
 }) => {
-    console.log(selectedVaccine);
     return <div className="accordion" id="accordianVaccineList">
         <div className="accordion-item">
             <h2 className="accordion-header" id="accordianVaccines">
@@ -72,7 +72,7 @@ const VaccineListTable = ({
                                 </tr>
                             </thead>
                             <tbody>
-                                {getVaccinesByManufacturer().sort((a, b) => a.name.localeCompare(b.name)).map((vaccine, key) => <tr key={key}>
+                                {getLicensedVaccineByManufacturerId(selectedManufacturer.manufacturerId).sort((a, b) => a.name.localeCompare(b.name)).map((vaccine, key) => <tr key={key}>
                                     <td className='vaccine-cell'>
                                         <span
                                             className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}

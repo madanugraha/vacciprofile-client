@@ -41,7 +41,7 @@ const ManufacturerProfile = ({
     convertCamelCaseToReadable
 }) => {
     return <>
-        <h1 className='heading text-primary'>Updated {selectedManufacturer.name} Reported Data ({selectedManufacturer.lastUpdated})</h1>
+        <h1 className='heading text-primary'>{selectedManufacturer.name}</h1>
         <div className="accordion" id="accordianManufacturerInfo">
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianManufacturer">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { removeDuplicatesFromArray, sortArrayAscending } from '../utils/array';
+import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from '../utils/array';
 import { getCombinationVaccineneArray, getPathogenDetailById, getSinglePathogenVaccineArray } from '../utils/pathogens';
 
 /**
@@ -141,8 +141,8 @@ const Sidebar = ({
         }
     }, [changedFrom]);
 
-    const sampleVaccineCandidatePathogen = ["Pathogen A", 'Pathogen B'];
-    const sampleVaccineCandidatesVaccine = ['Vaccine A', "Vaccine B"];
+    const sampleVaccineCandidatePathogen = getCandidatePathogens();
+    const sampleVaccineCandidatesVaccine = getCandidateVaccines();
 
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
@@ -185,7 +185,7 @@ const Sidebar = ({
                                         handleClickSidebar(item)
                                     }}
                                 >
-                                    {italizeScientificNames(item)}
+                                    {item.name}
                                 </div>
                             ))}
                         </>
@@ -244,20 +244,6 @@ const Sidebar = ({
                                         ))}
                                     </>
                                 )}
-
-                            {/* {showLicensedVaccines && removeDuplicatesFromArray(filteredLicenserSidebarList, "name").map((item, i) => (
-                                <div
-                                    key={i}
-                                    className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Vaccine' && selectedVaccine === item
-                                        ? 'active' : 'inactive'
-                                        }`}
-                                    onClick={() => {
-                                        handleClickSidebar(item)
-                                    }}
-                                >
-                                    {item.name || "-"}
-                                </div>
-                            ))} */}
                             <div onClick={() => {
                                 setShowLicensedVaccines(false);
                                 setShowVaccineCandidates(!showVaccineCandidates)
@@ -274,7 +260,7 @@ const Sidebar = ({
                                         handleClickSidebar(item)
                                     }}
                                 >
-                                    {item}
+                                    {item.name}
                                 </div>
                             ))}
                         </>

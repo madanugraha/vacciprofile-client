@@ -961,6 +961,7 @@ const Main = ({
                                         getPathogenByVaccine={getPathogenByVaccine}
                                         getLicenserById={getLicenserById}
                                         italizeScientificNames={italizeScientificNames}
+                                        selectedManufacturer={selectedManufacturer}
                                     />
                                     : ``}
 

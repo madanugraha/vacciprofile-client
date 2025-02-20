@@ -220,6 +220,23 @@ export const getProductProfileTypeByVaccineName = (vaccineName) => {
     }
 }
 
+export const getLicensedVaccineByManufacturerId = (manufacturerId) => {
+    const data = vaccines;
+    let arr = [];
+
+    for (let i = 0; i < data.length; i++) {
+        for (let x = 0; x < data[i].manufacturers.length; x++) {
+            if (data[i]?.manufacturers[x]?.manufacturerId && data[i]?.manufacturers[x]?.manufacturerId === manufacturerId) {
+                arr.push(data[i])
+            }
+        }
+    };
+    return arr;
+}
+
+
+
+
 export const getVaccineByLicenserName = (licenserName, type) => {
     const data = vaccines;
     const result = data.map((x) => {

@@ -1,0 +1,218 @@
+[
+    {
+        "pathogenId": 1,
+        "name": "Bacillus anthracis"
+    },
+    {
+        "pathogenId": 2,
+        "name": "Clostridium tetani"
+    },
+    {
+        "pathogenId": 3,
+        "name": "Corynebacterium diphtheriae"
+    },
+    {
+        "pathogenId": 4,
+        "name": "Bordetella pertussis"
+    },
+    {
+        "pathogenId": 5,
+        "name": "Borrelia burgdorferi"
+    },
+    {
+        "pathogenId": 6,
+        "name": "Chikungunya Virus"
+    },
+    {
+        "pathogenId": 7,
+        "name": "Clostridium difficile"
+    },
+    {
+        "pathogenId": 8,
+        "name": "Cytomegalovirus (CMV)"
+    },
+    {
+        "pathogenId": 9,
+        "name": "Cytomegalovirus"
+    },
+    {
+        "pathogenId": 10,
+        "name": "Dengue Virus"
+    },
+    {
+        "pathogenId": 11,
+        "name": "Enterotoxigenic Escherichia coli (ETEC)"
+    },
+    {
+        "pathogenId": 12,
+        "name": "Epstein–Barr Virus"
+    },
+    {
+        "pathogenId": 13,
+        "name": "Escherichia coli (E. coli)"
+    },
+    {
+        "pathogenId": 14,
+        "name": "Hepatitis A Virus"
+    },
+    {
+        "pathogenId": 15,
+        "name": "Hepatitis E Virus"
+    },
+    {
+        "pathogenId": 16,
+        "name": "Herpes Simplex Virus (HSV)"
+    },
+    {
+        "pathogenId": 17,
+        "name": "Herpes Zoster Virus"
+    },
+    {
+        "pathogenId": 18,
+        "name": "HIV"
+    },
+    {
+        "pathogenId": 19,
+        "name": "Respiratory Syncytial Virus (RSV)"
+    },
+    {
+        "pathogenId": 20,
+        "name": "Human metapneumovirus (hMPV)"
+    },
+    {
+        "pathogenId": 21,
+        "name": "Human Papillomavirus (HPV)"
+    },
+    {
+        "pathogenId": 22,
+        "name": "Influenza Virus"
+    },
+    {
+        "pathogenId": 23,
+        "name": "Influenza Virus (Pandemic)"
+    },
+    {
+        "pathogenId": 24,
+        "name": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)"
+    },
+    {
+        "pathogenId": 25,
+        "name": "Men ABCWY"
+    },
+    {
+        "pathogenId": 26,
+        "name": "MMRV"
+    },
+    {
+        "pathogenId": 27,
+        "name": "Monkeypox Virus (MPV, MPXV, or hMPXV)"
+    },
+    {
+        "pathogenId": 28,
+        "name": "Mycobacterium Tuberculosis"
+    },
+    {
+        "pathogenId": 29,
+        "name": "Mycobacterium tuberculosis"
+    },
+    {
+        "pathogenId": 30,
+        "name": "Neisseria gonorrhoeae"
+    },
+    {
+        "pathogenId": 31,
+        "name": "Neisseria meningitidis A, B, C, W, Y"
+    },
+    {
+        "pathogenId": 32,
+        "name": "Neisseria meningitidis A, C, W, X, Y"
+    },
+    {
+        "pathogenId": 33,
+        "name": "Neisseria meningitidis A, C, W, Y"
+    },
+    {
+        "pathogenId": 34,
+        "name": "Nipah Virus"
+    },
+    {
+        "pathogenId": 35,
+        "name": "non-typhoidal Salmonella"
+    },
+    {
+        "pathogenId": 36,
+        "name": "salmonella Typhi"
+    },
+    {
+        "pathogenId": 37,
+        "name": "Norovirus"
+    },
+    {
+        "pathogenId": 38,
+        "name": "Plasmodium falciparum"
+    },
+    {
+        "pathogenId": 39,
+        "name": "Plasmodium vivax"
+    },
+    {
+        "pathogenId": 40,
+        "name": "Rabies Virus"
+    },
+    {
+        "pathogenId": 41,
+        "name": "Rotavirus"
+    },
+    {
+        "pathogenId": 42,
+        "name": "Salmonella Paratyphi"
+    },
+    {
+        "pathogenId": 43,
+        "name": "Salmonella Typhi"
+    },
+    {
+        "pathogenId": 44,
+        "name": "Salmonella Paratyphi A"
+    },
+    {
+        "pathogenId": 45,
+        "name": "Schistosoma"
+    },
+    {
+        "pathogenId": 46,
+        "name": "Shigella"
+    },
+    {
+        "pathogenId": 47,
+        "name": "GBS)"
+    },
+    {
+        "pathogenId": 48,
+        "name": "Streptococcus agalactiae (Group B Streptococcus"
+    },
+    {
+        "pathogenId": 49,
+        "name": "Streptococcus pneumoniae"
+    },
+    {
+        "pathogenId": 50,
+        "name": "Varicella-Zoster Virus (VZV)"
+    },
+    {
+        "pathogenId": 51,
+        "name": "Western, Eastern and Venezuelan equine encephalitis viruses"
+    },
+    {
+        "pathogenId": 52,
+        "name": "Yellow fever Virus"
+    },
+    {
+        "pathogenId": 53,
+        "name": "Yersinia pestis"
+    },
+    {
+        "pathogenId": 54,
+        "name": "Zika Virus"
+    }
+]

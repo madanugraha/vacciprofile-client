@@ -95,79 +95,6 @@
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 3,
-        "name": "GlaxoSmithKline",
-        "history": "GlaxoSmithKline (GSK) is a leading global healthcare company with a rich history dating back to the 19th century. Its origins lie in the pharmaceutical and nutritional industries, beginning in 1873 when New Zealand-based company Joseph Nathan & Co. launched a dried milk product named 'Glaxo.' In the UK, Glaxo Laboratories was established in the 1920s, focusing on pharmaceuticals. Meanwhile, SmithKline Beckman traces its roots to a 19th-century drugstore in Philadelphia, evolving through mergers, including with French-based Beecham in 1989, to become SmithKline Beecham. GSK as we know it today was formed in 2000 through the merger of Glaxo Wellcome and SmithKline Beecham, combining decades of expertise in vaccines, consumer health, and pharmaceuticals. Headquartered in Brentford, UK, GSK continues to innovate, emphasizing respiratory, immunology, and oncology therapies while addressing global healthcare challenges.",
-        "description": "GlaxoSmithKline (GSK) is a multinational pharmaceutical company with a purpose to improve the quality of human life by helping people do more, feel better, and live longer. GSK is organized into three business segments: pharmaceuticals, vaccines, and consumer healthcare. GSK operates in more than 150 countries with employees across 96 markets. Key products include Bexsero, Fluarix/FluLaval, Shingrix, Boostrix, Synflorix, Rotarix, Infanrix, Pediarix, Hepatitis vaccine, etc.",
-        "details": {
-            "founded": "27 December 2000",
-            "headquarters": "London, England, UK",
-            "ceo": "Emma Walmsley",
-            "revenue": "£30.328 Billion",
-            "operatingIncome": "£6.745 Billion",
-            "netIncome": "£5.308 Billion",
-            "totalAssets": "£59.005 Billion",
-            "totalEquity": "£12.795 Billion",
-            "numberOfEmployees": "70,000",
-            "sources": [
-                {
-                    "lastUpdated": "2023",
-                    "title": "GSK plc From Wikipedia, the free encyclopedia",
-                    "link": "https://en.wikipedia.org/wiki/GSK_plc"
-                },
-                {
-                    "lastUpdated": "2020",
-                    "title": "Full year and fourth quarter 2020 report",
-                    "link": "https://www.gsk.com/media/6557/fy-2020-results-announcement.pdf"
-                },
-                {
-                    "lastUpdated": "2020",
-                    "title": "GSK Key Facts",
-                    "link": "https://www.gsk.com/en-gb/company/gsk-at-a-glance/"
-                }
-            ]
-        },
-        "vaccines": [
-            {}
-        ],
-        "lastUpdated": "2024-Aug"
-    },
-    {
-        "manufacturerId": 4,
-        "name": "Merck & Co., Inc.",
-        "history": "Merck & Co., Inc., founded in 1891 in the United States, traces its origins to a family-owned pharmacy established by Friedrich Jacob Merck in Darmstadt, Germany, in 1668. George Merck, a descendant of Friedrich, brought the business to America and began producing fine chemicals. By the early 20th century, Merck & Co. expanded into pharmaceuticals, becoming a key player in the emerging industry. The company made groundbreaking contributions, such as mass-producing penicillin during World War II and developing vaccines like those for measles and HPV. Today, Merck is renowned for its research-driven innovations, producing medicines and vaccines that address major global health challenges.",
-        "description": "Merck & Co., Inc. is a global health care company that delivers innovative health solutions through its prescription medicines, vaccines, biologic therapies, and animal health products. Merck operates in two segments: Pharmaceutical and Animal Health segments. The Pharmaceutical segment includes human health pharmaceutical and vaccine products while the Animal Health segment discovers, develops, manufactures and markets a wide range of veterinary pharmaceutical and vaccine products, as well as health management solutions and services, for the prevention, treatment and control of disease in all major livestock and companion animal species. Merck operates in more than 140 countries worldwide with key products such as Gardasil, Varivax, Pneumovax, ProQuad, M-M-R II, etc.",
-        "details": {
-            "founded": "January 1891 (as a subsidiary of Merck) 1917 (as an independent company)",
-            "headquarters": "Rahway, New Jersey, U.S.",
-            "ceo": "Robert M. Davis",
-            "revenue": "US $60.12 Billion",
-            "operatingIncome": "US$1.889 Billion",
-            "netIncome": "US $365 million",
-            "totalAssets": "US $106.7 Billion",
-            "totalEquity": "US $37.58 Billion",
-            "numberOfEmployees": "72,000",
-            "sources": [
-                {
-                    "lastUpdated": "2023",
-                    "title": "Merck & Co. From Wikipedia, the free encyclopedia",
-                    "link": "https://en.wikipedia.org/wiki/Merck_%26_Co."
-                },
-                {
-                    "lastUpdated": "2020",
-                    "title": "Merck & Co., Inc. 2020 Form 10-K Annual Report",
-                    "link": "https://www.sec.gov/ix?doc=/Archives/edgar/data/310158/000031015821000004/mrk-20201231.htm"
-                }
-            ]
-        },
-        "vaccines": [
-            {
-                "vaccineId": 11
-            }
-        ],
-        "lastUpdated": "2024-Aug"
-    },
-    {
         "manufacturerId": 5,
         "name": "BioNTech",
         "history": "BioNTech SE, founded in 2008 by scientists Uğur Şahin, Özlem Türeci, and Christoph Huber, is a German biotechnology company headquartered in Mainz, Germany. The company specializes in the development of immunotherapies, particularly mRNA-based therapeutics, for the treatment of cancer and infectious diseases. BioNTech initially focused on personalized cancer vaccines, leveraging its expertise in messenger RNA (mRNA) technology. However, the company gained global recognition during the COVID-19 pandemic for its rapid development of the first approved mRNA vaccine, BNT162b2, in collaboration with Pfizer. This vaccine played a pivotal role in combating the pandemic, marking a major breakthrough in biotechnology and mRNA therapeutics. BioNTech continues to innovate in oncology, infectious diseases, and rare genetic conditions, building on its vision of using cutting-edge science to improve global health.",
@@ -220,36 +147,6 @@
                 }
             ]
         },
-        "lastUpdated": "2024-Aug"
-    },
-    {
-        "manufacturerId": 7,
-        "name": "Merck Group",
-        "history": "The Merck Group, founded in 1668 in Darmstadt, Germany, is one of the oldest pharmaceutical and chemical companies in the world. Initially established as a small pharmacy by Friedrich Jacob Merck, the business evolved into a prominent manufacturer of medicinal chemicals. In the 19th century, under the leadership of Emanuel Merck, the company transitioned into an industrial enterprise, pioneering the production of alkaloids and other key compounds. Merck's innovations played a significant role in the development of modern pharmaceuticals. Over time, the company expanded its portfolio to include life sciences and performance materials, maintaining a strong focus on innovation and sustainability. Today, Merck operates globally, emphasizing cutting-edge research in healthcare, electronics, and scientific advancements, while remaining headquartered in Darmstadt.",
-        "description": "The Merck Group, branded and commonly known as Merck, is a German multinational science and technology company headquartered in Darmstadt, with about 60,000 employees and a presence in 66 countries. The group includes around 250 companies; the main company is Merck KGaA in Germany. The company is divided into three business lines: Healthcare, Life Sciences and Electronics. Merck was founded in 1668 and is the world's oldest operating chemical and pharmaceutical company, as well as one of the largest pharmaceutical companies globally.",
-        "details": {
-            "founded": "1668",
-            "headquarters": "Darmstadt, Germany",
-            "ceo": "Belén Garijo",
-            "revenue": "€20.99 Billion",
-            "operatingIncome": "€3.609 Billion",
-            "netIncome": "€2.834 Billion",
-            "totalAssets": "€48.49 Billion",
-            "totalEquity": "€26.68 Billion",
-            "numberOfEmployees": "62,908",
-            "sources": [
-                {
-                    "lastUpdated": "2023",
-                    "title": "Merck Group From Wikipedia, the free encyclopedia",
-                    "link": "https://en.wikipedia.org/wiki/Merck_Group"
-                }
-            ]
-        },
-        "vaccines": [
-            {
-                "vaccineId": 10
-            }
-        ],
         "lastUpdated": "2024-Aug"
     },
     {
