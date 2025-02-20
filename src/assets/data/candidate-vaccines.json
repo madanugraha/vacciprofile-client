@@ -585,19 +585,10 @@
         "clinicalPhase": "Phase III"
     },
     {
-        "vaccineId": 66,
-        "name": "Trivalent Conjugate Vaccine",
-        "pathogenId": 53,
-        "pathogenName": "GBS)",
-        "platform": "Subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase IIA"
-    },
-    {
         "vaccineId": 67,
         "name": "Trivalent Conjugate Vaccine",
         "pathogenId": 53,
-        "pathogenName": "Streptococcus agalactiae (Group B Streptococcus",
+        "pathogenName": "Streptococcus agalactiae (Group B Streptococcus GBS)",
         "platform": "Subunit",
         "manufacturer": "GSK",
         "clinicalPhase": "Phase IIA"
