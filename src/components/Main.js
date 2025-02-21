@@ -427,8 +427,7 @@ const Main = ({
     //     console.log(compareState, targetCompare1, targetCompare2)
     //     resetAllActiveSelected();
     // }, [compareState, targetCompare1, targetCompare2])
-
-
+    // console.log(sidebarList);
     return <div className={`bg-white col-6 col-sm-8 col-lg-9 p-0 pe-1 ${animationClass}`}>
         <div className='main-container border border-primary border-1 rounded-3 slide-left overflow-auto'>
             {

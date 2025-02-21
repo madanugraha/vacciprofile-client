@@ -454,7 +454,7 @@
         "name": "PfAMA1-FVO [25-545]/ISA 720",
         "pathogenId": 42,
         "pathogenName": "Plasmodium falciparum",
-        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "platform": "Recombinant subunit",
         "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
         "clinicalPhase": "Phase I"
     },
@@ -463,7 +463,7 @@
         "name": "PfAMA1-FVO [25-545]",
         "pathogenId": 42,
         "pathogenName": "Plasmodium falciparum",
-        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "platform": "Recombinant subunit",
         "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
         "clinicalPhase": "Phase I"
     },
@@ -472,7 +472,7 @@
         "name": "PfAMA1-FVO [25-545]/AS02A",
         "pathogenId": 42,
         "pathogenName": "Plasmodium falciparum",
-        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "platform": "Recombinant subunit",
         "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
         "clinicalPhase": "Phase I"
     },
@@ -481,7 +481,7 @@
         "name": "PfAMA1-FVO [25-545]/Alhydrogel",
         "pathogenId": 42,
         "pathogenName": "Plasmodium falciparum",
-        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "platform": "Recombinant subunit",
         "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
         "clinicalPhase": "Phase I"
     },

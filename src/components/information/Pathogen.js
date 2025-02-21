@@ -6,7 +6,7 @@ import Vaccine from './Vaccine';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-import { sortArrayAscending } from '../../utils/array';
+import { checkIfPathogenCandidate, getCandidateVaccinesByPathogenName, getVaccineCandidatePlatformsUniqueByPathogenName, sortArrayAscending } from '../../utils/array';
 import tableDragger from 'table-dragger'
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
@@ -503,7 +503,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
     //     // }
     //     // setVaccineFieldsState(f);
     // }, [vaccineSelectedOnly])
-    return (
+
+    return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>
             <div className="accordion" id="accordianPathogenInfo">
                 <div className="accordion-item mb-1">
@@ -795,29 +796,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     </div>
                 )
             }
-            <div className="accordion" id="accordianCandidateVaccineInfo">
-                <div className="accordion-item mb-1">
-                    <h2 className="accordion-header" id="accordianCandidateVaccine">
-                        <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianCandVac" aria-expanded="false" aria-controls="collapseTwo">
-                            Vaccine Candidates
-                        </button>
-                    </h2>
-                    <div id="accordianCandVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianCandidateVaccine" data-bs-parent="#accordianCandidateVaccineInfo">
-                        <div className="accordion-body pb-1 px-0 pt-0">
-                            <div>
-                                <div className='mt-4' style={{ paddingLeft: 10 }}>
-                                    <div className='mt-4'>
-                                        <div className='flex flex-row mb-2'>
-                                            &#8226;{" "}
-                                            <span className='mt-2'>No Data Found</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className='cursor-pointer' style={{ width: 150, height: 30, borderRadius: 8, flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: -10 }}>
                 <p className='mb-0 mt-4 bg-primary' style={{ padding: 4, borderRadius: 8, alignSelf: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center', marginTop: 4 }}><a className='read-more' style={{ textAlign: 'center', color: 'white', alignSelf: 'center', fontWeight: 'bold' }} target="_blank" rel="noopener noreferrer" href={selectedPathogen.link}>Find out more</a></p>
             </div>
@@ -835,57 +813,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                         </div>
                         <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
-                                {/* <Stack spacing={3} sx={{ width: 500 }}>
-                                    <Autocomplete
-                                        multiple
-                                        id="tags-standard"
-                                        options={sortArrayAscending(vaccineFieldsState.filter((x) => x.checked), "name").map((data) => {
-                                            return data
-                                        })}
-                                        value={selectedFilterVaccine}
-                                        getOptionLabel={(option) => option.title}
-                                        isOptionEqualToValue={(option, value) => false}
-                                        onChange={(event, newValue, reason, detail) => {
-                                            if (event.target?.textContent &&
-                                                selectedFilterVaccine.some((item) => item.title === (event.target)?.textContent)
-                                            ) {
-                                                setVaccineErrorMessage(`${(event.target)?.textContent} cannot be duplicated`);
-                                                setDuplicateVaccineError(true);
-                                                return;
-                                            }
-
-                                            setDuplicateVaccineError(false);
-                                            setSelectedFilterVaccine(newValue);
-                                            setLicenserFieldsVaccine(newValue);
-
-                                            if (reason === "selectOption") {
-                                                const added = detail.option;
-                                                if (added?.alt) {
-                                                    handleOnSelectVaccineAddedCheckBox(added.title);
-                                                }
-                                            }
-                                            if (reason === 'removeOption') {
-                                                const deleted = detail.option;
-                                                if (deleted?.alt) {
-                                                    handleOnSelectVaccineDeletedCheckBox(deleted.title);
-                                                }
-                                            };
-                                        }}
-                                        autoComplete
-                                        freeSolo
-                                        limitTags={3}
-                                        renderInput={(params) => (
-                                            <TextField
-                                                {...params}
-                                                variant="standard"
-                                                label={<span style={{ color: 'black' }}>Filter Vaccines</span>}
-                                                placeholder=""
-                                                error={duplicateVaccineError}
-                                                helperText={duplicateVaccineError ? vaccineErrorMessage : null}
-                                            />
-                                        )}
-                                    />
-                                </Stack> */}
                                 <div style={{ marginTop: 10 }}>
                                     <Stack spacing={3} sx={{ width: 500 }}>
                                         <Autocomplete
@@ -980,8 +907,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                     </div>
                                 )
                             }) : null}
-
-
                         </div>
                         <div className='view' style={{ overflow: 'scroll' }}>
                             <div style={{ overflowY: 'scroll' }} className="max-h-table-comparison d-inline-flex w-100 wrapper">
@@ -1091,6 +1016,51 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     </div>
                 </Box>
             </Modal >
+        </>
+    ) : (
+        <>
+            <div className='py-1 px-2'>
+                <h2>{selectedPathogen?.name} Pipeline Vaccine</h2>
+                <div className='py-4'>
+                    <table border={0}>
+                        <tbody>
+                            <tr>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Vaccine Name</td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Preclinical</td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase I</td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IIA</td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IIB</td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase III</td>
+                            </tr>
+                            {getCandidateVaccinesByPathogenName(selectedPathogen?.name).length > 0 ? getCandidateVaccinesByPathogenName(selectedPathogen?.name).map(x => {
+                                return (
+                                    <tr>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name}</td>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase I') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase IIA') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase IIB') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase III') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase IV') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                    </tr>
+                                )
+                            }
+                            ) : <tr>
+                                <td>- no data to display -</td></tr>}
+
+                        </tbody>
+                    </table>
+                </div>
+                <div className='py-4'>
+                    <h5>Antigen Platforms</h5>
+                    <ul>
+                        {getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).length > 0 ? getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).map((x) => {
+                            return (
+                                <li>{x.platform}</li>
+                            )
+                        }) : <li>no data to display</li>}
+                    </ul>
+                </div>
+            </div>
         </>
     )
 }

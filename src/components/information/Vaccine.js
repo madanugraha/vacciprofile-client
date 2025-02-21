@@ -187,7 +187,7 @@ const Vaccine = ({
                             {/* <td className='text-center'><a href="#" className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td> */}
                             <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
                             <td className='text-center'>{licensingDate.approvalDate}</td>
-                            <td className='text-center'>{licensingDate.approvalDate}</td>
+                            <td className='text-center'>{licensingDate.lastUpdated}</td>
                         </tr>
                     </React.Fragment>
                 )) : <tr>

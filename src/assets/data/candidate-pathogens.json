@@ -184,12 +184,8 @@
         "name": "Shigella"
     },
     {
-        "pathogenId": 47,
-        "name": "GBS)"
-    },
-    {
         "pathogenId": 48,
-        "name": "Streptococcus agalactiae (Group B Streptococcus"
+        "name": "Streptococcus agalactiae (Group B Streptococcus GBS)"
     },
     {
         "pathogenId": 49,

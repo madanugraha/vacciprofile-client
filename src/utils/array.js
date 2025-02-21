@@ -1,5 +1,6 @@
 import vaccines from '../assets/data/candidate-vaccines.json';
 import pathogens from '../assets/data/candidate-pathogens.json';
+import _ from 'lodash';
 
 export const removeDuplicatesFromArray = (arr, prop) => {
     if (arr && arr.length > 0) {
@@ -28,6 +29,30 @@ export const getCandidateVaccines = () => {
     return vaccines.sort((a, b) => a.name.localeCompare(b.name))
 }
 
+export const getCandidateVaccinesByPathogenName = (pathogen) => {
+    return vaccines.filter((x) => x.pathogenName === pathogen)
+}
+
+export const getVaccineCandidatePlatformsUniqueByPathogenName = (pathogen) => {
+    const f = vaccines.filter((x) => x.pathogenName === pathogen && !x.platform.includes('No data'));
+    if (f.length > 0) {
+        return _.uniqBy(f.sort((a, b) => a.platform.localeCompare(b.platform)), "platform")
+    } else {
+        return []
+    }
+}
+
+export const checkIfPathogenCandidate = (pathogen) => {
+    return pathogen?.link ? false : true
+}
+
+export const getVaccineCandidateIfPathogenCandidateSelected = (pathogen) => {
+    if (pathogen?.bulletpoints) {
+        // pathogen licensed
+    } else {
+        // pathogen candidate
+    }
+}
 const vaccineBackups = [
     {
         "name": "Abrysvo™",

@@ -153,7 +153,7 @@ const Licenser = ({
                 </div>
             </div>
         </div>
-        <div className="accordion" id="accordianCandidateVaccineInfo">
+        {/* <div className="accordion" id="accordianCandidateVaccineInfo">
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianCandidateVaccine">
                     <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianCandVac" aria-expanded="false" aria-controls="collapseTwo">
@@ -175,7 +175,7 @@ const Licenser = ({
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </div >
 }
 
