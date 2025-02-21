@@ -1026,11 +1026,11 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                         <tbody>
                             <tr>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Vaccine Name</td>
-                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Preclinical</td>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase I</td>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IIA</td>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IIB</td>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase III</td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IV</td>
                             </tr>
                             {getCandidateVaccinesByPathogenName(selectedPathogen?.name).length > 0 ? getCandidateVaccinesByPathogenName(selectedPathogen?.name).map(x => {
                                 return (
