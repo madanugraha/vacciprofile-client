@@ -250,7 +250,7 @@ const Sidebar = ({
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidates ? 'active' : 'imactive'}`}>
                                 Vaccine Candidates
                             </div>
-                            {showVaccineCandidates && sampleVaccineCandidatesVaccine.map((item, i) => (
+                            {showVaccineCandidates && removeDuplicatesFromArray(sampleVaccineCandidatesVaccine, "name").map((item, i) => (
                                 <div
                                     key={i}
                                     className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item

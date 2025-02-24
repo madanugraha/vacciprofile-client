@@ -295,14 +295,14 @@
                 "type": "#",
                 "approvalDate": "30/03/2023",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/bimervax",
-                "lastUpdated": ""
+                "lastUpdated": "05/09/2024"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/10/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bimervax",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -315,6 +315,9 @@
         "manufacturers": [
             {
                 "manufacturerId": 1
+            },
+            {
+                "manufacturerId": 5
             }
         ],
         "productProfiles": [
@@ -696,16 +699,16 @@
             {
                 "name": "EMA",
                 "type": "#",
-                "approvalDate": "Vaxchora",
+                "approvalDate": "08/04/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/vaxchora",
-                "lastUpdated": "Vaxchora"
+                "lastUpdated": "27/09/2022"
             },
             {
                 "name": "FDA",
                 "type": "#",
-                "approvalDate": "Vaxchora",
+                "approvalDate": "13/02/2020",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/vaxchora",
-                "lastUpdated": "Vaxchora"
+                "lastUpdated": "12/06/2024"
             }
         ]
     },
@@ -780,21 +783,14 @@
                 "type": "#",
                 "approvalDate": "04/05/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/dukoral",
-                "lastUpdated": "Dukoral | EMA"
+                "lastUpdated": "06/04/2022"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "25/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/dukoral",
-                "lastUpdated": ""
-            },
-            {
-                "name": "EMA",
-                "type": "#",
-                "approvalDate": "04/05/2009",
-                "source": "https://www.ema.europa.eu/en/documents/product-information/dukoral-epar-product-information_en.pdf",
-                "lastUpdated": "Dukoral | EMA"
+                "lastUpdated": "#"
             }
         ]
     },
@@ -866,23 +862,23 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "23/12/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvichol",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvicholr-s",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvichol-plus",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -955,7 +951,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "29/09/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/shanchol",
                 "lastUpdated": ""
             }
@@ -1030,14 +1026,14 @@
             {
                 "name": "EMA",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "06/06/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/qdenga",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/05/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/qdengar",
                 "lastUpdated": ""
             }
@@ -1111,22 +1107,23 @@
             {
                 "name": "EMA",
                 "type": "#",
-                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/dengvaxia"
+                "approvalDate": "18/12/2018",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/dengvaxia",
+                "lastUpdated": "04/01/2024"
             },
             {
                 "name": "FDA",
                 "type": "#",
+                "approvalDate": "01/05/2019",
+                "lastUpdated": "30/06/2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/dengvaxia"
             },
             {
                 "name": "WHO",
                 "type": "#",
+                "approvalDate": "25/03/2020",
+                "lastUpdated": "#",
                 "source": "https://extranet.who.int/prequal/vaccines/p/dengvaxia"
-            },
-            {
-                "name": "EMA",
-                "type": "#",
-                "source": "https://www.ema.europa.eu/en/documents/product-information/dengvaxia-epar-product-information_en.pdf"
             }
         ]
     },
@@ -2315,9 +2312,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/imovax-dt-adult",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -2390,9 +2387,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/imovax-dt-adult",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -8557,16 +8554,22 @@
             {
                 "name": "EMA",
                 "type": "#",
+                "approvalDate": "12/12/2019",
+                "lastUpdated": "20/02/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/ervebo"
             },
             {
                 "name": "FDA",
                 "type": "#",
+                "approvalDate": "18/12/2019",
+                "lastUpdated": "28/08/ 2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/ervebo"
             },
             {
                 "name": "WHO",
                 "type": "#",
+                "approvalDate": "12/11//2019",
+                "lastUpdated": "#",
                 "source": "https://extranet.who.int/prequal/vaccines/p/ervebo"
             }
         ]
@@ -8654,9 +8657,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/02/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/gardasil-9",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -8743,9 +8746,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "20/05/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/gardasiltm",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -8818,9 +8821,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "14/10/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/cecolinr",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -8907,9 +8910,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/07/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/cervarix",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -8982,7 +8985,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "02/08/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/walrinvaxr",
                 "lastUpdated": ""
             }
@@ -9132,16 +9135,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-and-haemophilus-influenzae-type-b-conjugate-vaccine",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
+                "approvalDate": "17/11/2008",
                 "source": "https://extranet.who.int/prequal/vaccines/p/haemophilus-influenzae-type-b-conjugate-vaccine",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -9153,7 +9149,7 @@
         ],
         "manufacturers": [
             {
-                "manufacturerId": 29
+                "manufacturerId": 30
             }
         ],
         "productProfiles": [
@@ -9214,7 +9210,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "26/04/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/quimi-hib",
                 "lastUpdated": ""
             }
@@ -9224,7 +9220,8 @@
         "vaccineId": 63,
         "name": "Ambirix®",
         "pathogenId": [
-            null
+            9,
+            10
         ],
         "manufacturers": [
             {
@@ -9531,7 +9528,8 @@
         "vaccineId": 67,
         "name": "Twinrix®",
         "pathogenId": [
-            null
+            9,
+            10
         ],
         "manufacturers": [
             {
@@ -9685,21 +9683,21 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/11/1996, 21/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvax-b",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/11/1996, 21/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvax-b-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/11/1996, 21/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvax-b-0",
                 "lastUpdated": ""
             }
@@ -9774,9 +9772,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/healive",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -9788,7 +9786,7 @@
         ],
         "manufacturers": [
             {
-                "manufacturerId": 29
+                "manufacturerId": 30
             }
         ],
         "productProfiles": [
@@ -9849,16 +9847,16 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "11/12/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/heberbiovac-hb",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "11/12/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/heberbiovac-hb-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -9931,9 +9929,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "12/11/2004",
                 "source": "https://extranet.who.int/prequal/vaccines/p/hepatitis-b-vaccine-rdna-paediatric",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -10249,167 +10247,6 @@
             }
         ],
         "licensingDates": [
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-csl-limited",
-                "lastUpdated": ""
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
-                "lastUpdated": ""
-            },
-            {
-                "name": "EMA",
-                "type": "#",
-                "approvalDate": "03/06/2024",
-                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/zoonotic-influenza-vaccine-seqirus",
-                "lastUpdated": "20/11/2024"
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-0",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-1",
-                "lastUpdated": ""
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-virus-vaccine-h5n1-national-stockpile",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/nasovac-s-influenza-vaccine-live-attenuated-human",
-                "lastUpdated": ""
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-medimmune-llc",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/influenza-h1n1-2009-monovalent-vaccine-1",
-                "lastUpdated": ""
-            },
-            {
-                "name": "EMA",
-                "type": "#",
-                "approvalDate": "03/06/2024",
-                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/pandemic-influenza-vaccine-h5n1-astrazeneca",
-                "lastUpdated": "20/11/2024"
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated-0",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-2",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-3",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-4",
-                "lastUpdated": ""
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-sanofi-pasteur-inc",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/influenza-h1n1-2009-monovalent-vaccine-0",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/influenza-trivalent-vaccine-split-virion-inactivated",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/nasovac-influenza-vaccine-live-attenuated-human-freeze-dried",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/nasovac-influenza-vaccine-live-attenuated-human-freeze-dried-0",
-                "lastUpdated": ""
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-id-biomedical-corporation-quebec",
-                "lastUpdated": ""
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-novartis-vaccines-and-diagnostics-limited",
-                "lastUpdated": ""
-            },
             {
                 "name": "EMA",
                 "type": "#",
@@ -10999,9 +10836,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "05/03/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/afluriar-quadrivalent",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -11071,20 +10908,6 @@
         ],
         "vaccineType": "single",
         "licensingDates": [
-            {
-                "name": "EMA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluad-tetra",
-                "lastUpdated": ""
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "24/11/2015",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/fluad-quadrivalent",
-                "lastUpdated": "01/07/2024"
-            },
             {
                 "name": "FDA",
                 "type": "#",
@@ -11163,14 +10986,7 @@
             {
                 "name": "FDA",
                 "type": "#",
-                "approvalDate": "/10/2006",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flulaval-quadrivalent",
-                "lastUpdated": "01/07/2024"
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "/10/2006",
+                "approvalDate": "05/10/2006",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flulaval",
                 "lastUpdated": "01/07/2024"
             }
@@ -11243,13 +11059,6 @@
         "vaccineType": "single",
         "licensingDates": [
             {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/afluriar-quadrivalent",
-                "lastUpdated": ""
-            },
-            {
                 "name": "FDA",
                 "type": "#",
                 "approvalDate": "30/07/2008",
@@ -11259,9 +11068,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "07/02/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/afluriar",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -11337,13 +11146,6 @@
                 "approvalDate": "31/08/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluarix",
                 "lastUpdated": "01/07/2024"
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "31/08/2005",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluarix-quadrivalent",
-                "lastUpdated": "01/07/2024"
             }
         ]
     },
@@ -11418,13 +11220,6 @@
                 "type": "#",
                 "approvalDate": "17/06/2003",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flumist",
-                "lastUpdated": "20/09/2024"
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "17/06/2003",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flumist-quadrivalent",
                 "lastUpdated": "20/09/2024"
             }
         ]
@@ -11573,9 +11368,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "17/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/celtura",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -11726,20 +11521,6 @@
                 "approvalDate": "20/11/2012",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flucelvax",
                 "lastUpdated": "01/07/2024"
-            },
-            {
-                "name": "EMA",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/flucelvax-tetra",
-                "lastUpdated": ""
-            },
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "20/11/2012",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flucelvax-quadrivalent",
-                "lastUpdated": "01/07/2024"
             }
         ]
     },
@@ -11887,9 +11668,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "21/12/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/gc-flu-quadrivalent-inj",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -11962,9 +11743,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "12/04/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/gc-flu-inj",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -12037,9 +11818,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "11/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/green-flu-s",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -12112,7 +11893,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/01/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/panenza",
                 "lastUpdated": ""
             }
@@ -12187,7 +11968,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "01/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/panvax",
                 "lastUpdated": ""
             }
@@ -12262,7 +12043,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "27/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-inj",
                 "lastUpdated": ""
             }
@@ -12337,14 +12118,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/vaxigriptetra",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
+                "approvalDate": "30/06/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxigrip",
                 "lastUpdated": ""
             }
@@ -12494,9 +12268,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "25/05/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/il-yang-flu-vaccine-inj",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -12515,7 +12289,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "25/05/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/serinflu",
                 "lastUpdated": ""
             }
@@ -12726,9 +12500,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "18/09/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/imojev-md",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -12736,7 +12510,7 @@
         "vaccineId": 138,
         "name": "CYVAC®",
         "pathogenId": [
-            null
+            42
         ],
         "manufacturers": [
             {
@@ -12801,9 +12575,16 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "19/12/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/cyvac",
-                "lastUpdated": ""
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "19/12/2023",
+                "source": "https://extranet.who.int/prequal/vaccines/p/r21-malaria",
+                "lastUpdated": "#"
             }
         ]
     },
@@ -12811,7 +12592,7 @@
         "vaccineId": 139,
         "name": "Mosquirix®",
         "pathogenId": [
-            null
+            42
         ],
         "manufacturers": [
             {
@@ -12876,7 +12657,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "15/07/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/mosquirix",
                 "lastUpdated": ""
             }
@@ -12951,30 +12732,30 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "15/02/1993",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-live-attenuated",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "15/02/1993",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-live-attenuated-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "15/02/1993",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-live-attenuated-1",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "15/02/1993",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-live-attenuated-2",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -13047,16 +12828,16 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/04/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/04/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -13396,30 +13177,30 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-1",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-2",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -13492,30 +13273,30 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-1",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-2",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -13588,28 +13369,28 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-2",
                 "lastUpdated": ""
             }
@@ -13684,28 +13465,28 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-2",
                 "lastUpdated": ""
             }
@@ -14478,14 +14259,14 @@
             {
                 "name": "FDA",
                 "type": "#",
-                "approvalDate": "Menactra | FDA",
+                "approvalDate": "14/01/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/menactra",
-                "lastUpdated": ""
+                "lastUpdated": "19/11/2019"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "/2014",
+                "approvalDate": "21/03/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menactra",
                 "lastUpdated": ""
             }
@@ -14560,21 +14341,21 @@
             {
                 "name": "EMA",
                 "type": "#",
-                "approvalDate": "Menveo | EMA",
+                "approvalDate": "04/05/2010",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/menveo",
-                "lastUpdated": ""
+                "lastUpdated": "06/07/2023"
             },
             {
                 "name": "FDA",
                 "type": "#",
-                "approvalDate": "Menveo | FDA",
+                "approvalDate": "19/02/2010",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/menveo",
-                "lastUpdated": ""
+                "lastUpdated": "14/10/2022"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "31/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menveo",
                 "lastUpdated": ""
             }
@@ -14649,23 +14430,23 @@
             {
                 "name": "EMA",
                 "type": "#",
-                "approvalDate": "MenQuadfi | EMA",
+                "approvalDate": "27/11/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/menquadfi",
-                "lastUpdated": ""
+                "lastUpdated": "23/07/2024"
             },
             {
                 "name": "FDA",
                 "type": "#",
-                "approvalDate": "MenQuadfi",
+                "approvalDate": "23/04/2020",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/menquadfi",
-                "lastUpdated": ""
+                "lastUpdated": "12/06/2023"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "MenQuadfi",
+                "approvalDate": "28/01/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menquadfi",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -14745,7 +14526,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "31/08/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/nimenrix",
                 "lastUpdated": ""
             }
@@ -15503,21 +15284,21 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr-1",
                 "lastUpdated": ""
             }
@@ -15667,9 +15448,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/12/2005",
                 "source": "https://extranet.who.int/prequal/vaccines/p/imovax-polio",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -15742,9 +15523,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "23/12/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/ipv-vaccine-ajv",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -15817,7 +15598,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "21/04/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/picovax",
                 "lastUpdated": ""
             }
@@ -15892,21 +15673,21 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-2",
                 "lastUpdated": ""
             }
@@ -15981,9 +15762,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "21/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/eupolio-inj",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -16056,16 +15837,16 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "20/03/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/biopolio-b13",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "20/03/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/biopolio-b13-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -16138,16 +15919,16 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "07/12/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-opv-type-1-and-3-poliomyelitis-vaccine-live-oral",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "07/12/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-opv-type-1-and-3-poliomyelitis-vaccine-live-oral-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -16220,16 +16001,16 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "26/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-oral-poliomyelitis-vaccine-type-13-bopv-13",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "26/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-oral-poliomyelitis-vaccine-type-13-bopv-13-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -16302,14 +16083,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-t1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-t1-0",
                 "lastUpdated": ""
             }
@@ -16384,14 +16165,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "05/10/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-three-oral",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "05/10/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-three-oral-0",
                 "lastUpdated": ""
             }
@@ -16445,7 +16226,7 @@
             },
             {
                 "type": "WHO",
-                "name": "WHO-Product Profile: Bivalent type 1&3 Oral Poliomyelitis vaccine, IP (bOPV1&3)",
+                "name": "WHO-Product Profile: Bivalent type 1&3 Oral Poliomyelitis vaccine, IP (bOPV1&3) (bOPV1&3)® (MAH: Haffkine Bio Pharmaceutical)",
                 "composition": "1 dose (2 drops or 0.1mL) contains live poliovirus types 1 and 3 (Sabin strains), 106 CCID50/105.8 CCID50; prepared in primary monkey kidney cell cultures.; storage: -20°C or lower/or 2-8°C; shelf life: 2 years at -20°C or lower/or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus types 1 and 3.",
                 "indication": "Active immunization against poliomyelitis caused by poliovirus types 1 and 3 as routine and supplementary immunization activities (SIAs) in children aged 0-5 years, to interrupt types 1 and 3 poliovirus transmission in remaining polio-endemic areas; to be used based on official recommendations.",
@@ -16466,9 +16247,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "19/03/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-type-13-oral-poliomyelitis-vaccine-ip-bopv13",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -16541,14 +16322,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-one-and-three",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-one-and-three-0",
                 "lastUpdated": ""
             }
@@ -16623,14 +16404,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "04/02/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-oral-bivalent-types-1-and-3",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "04/02/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-oral-bivalent-types-1-and-3-0",
                 "lastUpdated": ""
             }
@@ -16705,7 +16486,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "03/11/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-oral-poliomyelitis-vaccine-type-1-mopv1",
                 "lastUpdated": ""
             }
@@ -16780,7 +16561,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "21/06/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-oral-poliomyelitis-vaccine-type-2",
                 "lastUpdated": ""
             }
@@ -16855,7 +16636,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "03/11/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-type-1-oral-poliomyelitis-vaccine-ip-mopv1",
                 "lastUpdated": ""
             }
@@ -16910,19 +16691,19 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: ORAL MONOVALENT TYPE 2 POLIOMYELITIS VACCINE (mOPV2)® (MAH: Sanofi)Oral suspension; poliomyelitis vaccine; mOPV2 (Monovalent, live, attenuated)Pre-qualification approval date: 14/01/2016, ORAL MONOVALENT TYPE 2 POLIOMYELITIS VACCINE (mOPV2) | WHOComposition/Platform1 dose (2 drops or 0.1 mL) contains live poliovirus types 2 (p 712, Ch, 2ab strain) ≥ 5 log CCID50; produced in Vero cell; storage: -20°C or lower/ or 2-8°C; shelf life: 5 years at -20°C or lower/ or up to 6 months in 2-8°C.Strain coveragePoliovirus type 2.IndicationActive immunization in all age groups for primary vaccination and reinforcement of the immunity against poliomyelitis caused by type 2 polioviruses; to be used based on official recommendations.DosingOral; each dose is 2 drops or 0.1 mL.ContraindicationHypersensitivity; close contact with immunocompromised patients; fever or acute disease; vomiting (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma or generalized malignancy); should be given to pregnant women only if clearly needed (use risk/benefit strategy); breast-feeding is not a contraindication.ImmunogenicityNo data in the label.Efficacy (VEy)No data in the label.Duration of protectionNo data in the label.Co-AdministrationCan be co-administered with DTwP, DTaP, IPV, Hib, HAV, HBV, PCV, MMR, and yellow fever vaccines; concomitant administration of the OPV vaccine decreases the immune response to the rotavirus vaccine, however, there is currently no evidence that clinical protection against severe gastroenteritis is modified. ReactogenicityMyalgia; arthralgia; fever; rigors; asthenia.Safety Rarely, VAPP may occur (1/1.4-2.8 million).Vaccination GoalIndividual protection; outbreak control.OthersHIV-infected individuals should be immunized according to WHO official recommendations; fecal excretion of the vaccine viruses may persist in the week following immunization and may also be transmitted to the contacts of the vaccinees; in premature or low birth weight infants, vaccination must be performed at chronological age, without correction related to duration of pregnancy (gestational age) or birth weight.",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 2 (p 712, Ch, 2ab strain) ≥ 5 log CCID50; produced in Vero cell; storage: -20°C or lower/ or 2-8°C; shelf life: 5 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "strainCoverage": "Poliovirus type 2.",
+                "indication": "Active immunization in all age groups for primary vaccination and reinforcement of the immunity against poliomyelitis caused by type 2 polioviruses; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; close contact with immunocompromised patients; fever or acute disease; vomiting (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma or generalized malignancy); should be given to pregnant women only if clearly needed (use risk/benefit strategy); breast-feeding is not a contraindication.",
+                "dosing": "Oral; each dose is 2 drops or 0.1 mL.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "Can be co-administered with DTwP, DTaP, IPV, Hib, HAV, HBV, PCV, MMR, and yellow fever vaccines; concomitant administration of the OPV vaccine decreases the immune response to the rotavirus vaccine, however, there is currently no evidence that clinical protection against severe gastroenteritis is modified. ",
+                "reactogenicity": "Myalgia; arthralgia; fever; rigors; asthenia.",
+                "safety": "Rarely, VAPP may occur (1/1.4-2.8 million).",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "HIV-infected individuals should be immunized according to WHO official recommendations; fecal excretion of the vaccine viruses may persist in the week following immunization and may also be transmitted to the contacts of the vaccinees; in premature or low birth weight infants, vaccination must be performed at chronological age, without correction related to duration of pregnancy (gestational age) or birth weight."
             }
         ],
         "vaccineType": "single",
@@ -16930,7 +16711,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "14/01/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/oral-monovalent-type-2-poliomyelitis-vaccine-mopv2",
                 "lastUpdated": ""
             }
@@ -17005,14 +16786,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "11/05/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-two-oral-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "11/05/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-two-oral",
                 "lastUpdated": ""
             }
@@ -17087,7 +16868,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "21/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-live-oral-attenuated-human-diploid-cell-type-1-and-3",
                 "lastUpdated": ""
             }
@@ -17162,16 +16943,16 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "20/03/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/biopolio-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "20/03/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/biopolio",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -17319,7 +17100,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "02/02/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polioviral-vaccine",
                 "lastUpdated": ""
             }
@@ -17781,7 +17562,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/06/2005",
                 "source": "https://extranet.who.int/prequal/vaccines/p/verorab",
                 "lastUpdated": ""
             }
@@ -17856,7 +17637,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "06/02/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxirab-n",
                 "lastUpdated": ""
             }
@@ -17944,21 +17725,21 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix-1",
                 "lastUpdated": ""
             }
@@ -18033,7 +17814,7 @@
             {
                 "name": "EMA",
                 "type": "#",
-                "approvalDate": "2/06/2006",
+                "approvalDate": "02/06/2006",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/rotateq",
                 "lastUpdated": "02/05/2024"
             },
@@ -18047,7 +17828,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "07/10/2008",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotateq",
                 "lastUpdated": ""
             }
@@ -18122,21 +17903,21 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid",
                 "lastUpdated": ""
             }
@@ -18211,14 +17992,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "21/09/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "21/09/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-0",
                 "lastUpdated": ""
             },
@@ -18307,14 +18088,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "18/06/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-5dr",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "18/06/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-5dr-0",
                 "lastUpdated": ""
             }
@@ -18389,14 +18170,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "05/01/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "05/01/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-0",
                 "lastUpdated": ""
             }
@@ -18471,14 +18252,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetavax",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetavax-0",
                 "lastUpdated": ""
             }
@@ -18553,21 +18334,21 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine-1",
                 "lastUpdated": ""
             }
@@ -18642,21 +18423,21 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed-1",
                 "lastUpdated": ""
             }
@@ -18731,14 +18512,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetatox",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetatox-0",
                 "lastUpdated": ""
             }
@@ -18891,20 +18672,6 @@
                 "approvalDate": "???",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/bcg-vaccine",
                 "lastUpdated": "???"
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine-0",
-                "lastUpdated": ""
             }
         ]
     },
@@ -19052,9 +18819,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "27/09/1994",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine-ajv",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -19127,9 +18894,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "01/01/1987",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bcg-freeze-dried-glutamate-vaccine-0",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -19202,9 +18969,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "29/05/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine-1",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -19350,14 +19117,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "04/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typhibevr",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "04/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typhibevr-0",
                 "lastUpdated": ""
             }
@@ -19507,7 +19274,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "21/02/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skytyphoid-multi-inj",
                 "lastUpdated": ""
             }
@@ -19582,14 +19349,14 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typbar-tcv",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "22/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typbar-tcv-0",
                 "lastUpdated": ""
             }
@@ -19746,9 +19513,9 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "14/02/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/barycela-inj",
-                "lastUpdated": ""
+                "lastUpdated": "#"
             }
         ]
     },
@@ -19821,7 +19588,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skyvaricella-inj",
                 "lastUpdated": ""
             }
@@ -19896,7 +19663,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "03/11/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/varicella-vaccine-live",
                 "lastUpdated": ""
             }
@@ -19978,7 +19745,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "09/02/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/varivax",
                 "lastUpdated": ""
             }
@@ -20135,7 +19902,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "01/01/1987",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stamaril",
                 "lastUpdated": ""
             }
@@ -20210,7 +19977,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "14/10/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/sinsavactm",
                 "lastUpdated": ""
             }
@@ -20360,21 +20127,21 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "20/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "20/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "20/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine-0",
                 "lastUpdated": ""
             }
@@ -20389,6 +20156,9 @@
         "manufacturers": [
             {
                 "manufacturerId": 60
+            },
+            {
+                "manufacturerId": 61
             }
         ],
         "productProfiles": [
@@ -20449,23 +20219,1354 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever-0",
                 "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 243,
+        "name": "BCG Vaccine® (BB-NCIPD)",
+        "pathogenId": [
+            36
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 24
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: BCG Vaccine® (MAH: BB-NCIPD)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: BCG Vaccine® (MAH: BB-NCIPD)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: BCG Vaccine® (MAH: BB-NCIPD)",
+                "composition": "Each ampoule (0.1mL) contains 1.5-6 x 105 CFU of BCG (BCG-SL 222 Sofia); storage: 2-8°C (protected from direct sunlight); shelf life: 3 years.",
+                "strainCoverage": "Mycobacterium tuberculosis.",
+                "indication": "Active immunization to prevent tuberculosis in all infants at birth or reimmunization of children and adults who have negative tuberculin tests.",
+                "contraindication": "Cell-mediated immune deficiency; immunosuppressive therapy; HIV-infected individuals; avoid revaccination in children with history of keloid or lupoid reactions.",
+                "dosing": "I.D; each dose is 0.1ml; as soon as possible after birth. ",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "Can be co-administered with DTP, measles, OPV, IPV, HBV, Hib, and yellow fever vaccines and vitamin A supplementation.",
+                "reactogenicity": "Injection site papule, nodule, ulcer, abscess, scar; axillary lymphadenopathy; perforation and persistent suppuration; keloid and lupoid reactions.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "Skin testing with tuberculin is not generally carried out before giving BCG, but when performed, those who are found to be positive reactors do not need to be immunized; avoid using antiseptic in the vaccination area before vaccination."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "01/02/1991",
+                "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine",
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "01/02/1991",
+                "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine-0",
+                "lastUpdated": "#"
+            }
+        ]
+    },
+    {
+        "vaccineId": 244,
+        "name": "Euvichol Plus®",
+        "pathogenId": [
+            38
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 59
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Euvichol Plus® (MAH: EuBiologics)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Euvichol Plus® (MAH: EuBiologics)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Euvichol Plus® (MAH: EuBiologics)",
+                "composition": "1 dose (1.5 mL) contains inactivated V. cholerae; 300 LEU O1 Inaba Cairo 48 classical biotype +300 LEU O1 Ogawa Cairo 50 classical biotype (both formalin and heat-inactivated) + 600 LEU O1 Inaba Phil 6973 El Tor biotype + 600 LEU O139 4260B; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "Vibrio cholerae serogroup O1 and O139 (efficacy against serogroup O139 is not demonstrated).",
+                "indication": "Prevention of cholera caused by V. cholerae in individuals >1 yr.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute gastroenteritis; acute febrile illness",
+                "dosing": "Oral; 2 doses (1.5 mL each); 2 weeks interval.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most frequently reported: diarrhea; headache; nausea/vomiting; fever; myalgia.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/immune response data in HIV/AIDS patients; no safety/efficacy in infants."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "",
+                "source": "https://extranet.who.int/prequal/vaccines/p/euvicholr-s",
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "11/08/2017",
+                "source": "https://extranet.who.int/prequal/vaccines/p/euvichol-plus",
+                "lastUpdated": "#"
+            }
+        ]
+    },
+    {
+        "vaccineId": 245,
+        "name": "Euvichol S®",
+        "pathogenId": [
+            38
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 59
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Euvichol S® (MAH: EuBiologics)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Euvichol S® (MAH: EuBiologics)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Euvichol S® (MAH: EuBiologics)",
+                "composition": "1 dose (1.5 mL) contains inactivated V. cholerae; 600 LEU O1 Ogawa Cairo 50 classical biotype + 900 LEU O1 Inaba Phil 6973 El Tor biotype; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "Vibrio cholerae serogroup O1.",
+                "indication": "Prevention of cholera caused by V. cholerae in individuals >1 yr.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute gastroenteritis; acute febrile illness; breastfeeding; pregnancy (use risk/benefit strategy in case of expose or travel to high-risk areas).",
+                "dosing": "Oral; 2 doses (1.5 mL each); 2 weeks interval.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "> 1%: 1-5 yrs.: diarrhea, vomiting, pyrexia, cough, headache, nasopharyngitis; 6-17yrs.: diarrhea, vomiting, nausea, abdominal pain, pyrexia, decreased appetite, cough, nasopharyngitis, eczema; 18-40 yrs.: diarrhea, vomiting, pyrexia, headache.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/immune response data in HIV/AIDS patients."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "12/04/2024",
+                "source": "https://extranet.who.int/prequal/vaccines/p/euvicholr-s",
+                "lastUpdated": "#"
+            }
+        ]
+    },
+    {
+        "vaccineId": 246,
+        "name": "FLUAD Tetra®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: FLUAD Tetra® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Victoria/4897/2022 (H1N1)pdm09-like, A/Thailand/8/2022 (H3N2)-like, B/Austria/1359417/2021-like, and B/Phuket/3073/2013-like strains); propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 1 years.",
+                "strainCoverage": "Influenza virus.",
+                "indication": "Active immunization for the prophylaxis of influenza in ≥50 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; febrile illness until the fever is resolved; caution in bleeding disorders; pregnancy; breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "50-64 yrs.: Fluad Tetra elicited higher immune responses compared to a nonadjuvanted quadrivalent comparator influenza vaccine; seroconversion rate (HI antibody titers), ≥65 yrs.: 13.4-39.3% (Fluad Tetra® was non-inferior to comparators (two adjuvanted flu vaccines containing B-Victoria and B-Yamagata strains)).",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "Annual revaccination is recommended because immunity declines during the year after vaccination and circulating strains of influenza virus change yearly.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: injection site pain; fatigue; myalgia; arthralgia; headache; common: loss of appetite; nausea; diarrhea; injection site ecchymosis, erythema, induration; chills; influenza-like illness; fever (≥38 °C).",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "-"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: FLUAD Tetra® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: FLUAD Tetra® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "20/05/2020",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluad-tetra",
+                "lastUpdated": "20/08/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 247,
+        "name": "FLUAD Quadrivalent®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: FLUAD Quadrivalent® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: FLUAD Quadrivalent® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each A/Victoria/4897/2022 (H1N1)pdm09-like strain, A/Darwin/9/2021 (H3N2)-like strain, B/Austria/1359417/2021-like strain, and B/Phuket/3073/2013-like strain); propagated in the allantoic cavity of embryonated hens’ eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization against influenza disease caused by influenza virus subtypes A and types B contained in the vaccine in individuals ≥65 years; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination,",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "Seroconversion rate (HI antibody titers): ≥65 yrs.: 78.0% (95% CI: 75.7; 80.2) against A/H1N1, 84.6% (95% CI: 82.5%; 86.5) against A/H3N2, 60.8% (95% CI: 58.1; 63.4) against B/Yamagata, 65.5% (95% CI: 62.9; 68.1) against B/Victoria.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: injection site pain (16.3%); headache (10.8%); fatigue (10.5%).",
+                "safety": "GBS was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. of age and in children >72 mo. of age."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: FLUAD Quadrivalent® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "21/02/2020",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/fluad-quadrivalent",
+                "lastUpdated": "30/06/2023"
+            }
+        ]
+    },
+    {
+        "vaccineId": 248,
+        "name": "FLUARIX Quadrivalent®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: FLUARIX Quadrivalent® (MAH: GSK)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: FLUARIX Quadrivalent® (MAH: GSK)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Victoria/4897/2022 (H1N1) IVR-238, A/Darwin/6/2021 (H3N2) IVR-227 (an A/Darwin/9/2021 (H3N2)-like virus), B/Austria/1359417/2021 BVR-26 (B-Victoria lineage), and B/Phuket/3073/2013 (B-Yamagata lineage) strains); propagated in embryonated chicken eggs; 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg and chicken protein allergy; use risk/benefits strategy if Guillain-Barré Syndrome has occurred within 6 weeks of receipt of a prior influenza vaccine; caution in bleeding disorders; use risk/benefits strategy in breastfeeding.",
+                "dosing": "I.M; 6 mo. – 8 yrs.: not previously vaccinated: 2 doses (each 0.5 mL); at least 4 weeks interval; previously vaccinated individuals: 1 or 2 doses (each 0.5 mL); at least 4 weeks interval; ≥9 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "Seroconversion rate (HI antibody titers): 3-17 yrs.: 70-91.4% against vaccine strain; ≥18 yrs.: 61.7-77.5% against vaccine strain (FLUARIX QUADRIVALENT® was non-inferior to comparator TIV); 6-35 mo.: 69.3-81.2% against vaccine strain.",
+                "Efficacy": " VEy of FLUARIX®, 18-64 yrs.: 66.9% (95% CI: 51.9; 77.4) against vaccine strain, 61.6% (95% CI: 46; 72.8) against any influenza virus strain. \n VEy of FLUARIX QUADRIVALENT®, 6-35 mo.: 60.1% (95% CI: 49.1; 69) against vaccine strain; 49.8-51.2% against any influenza virus strain",
+                "durationOfProtection": " Annual revaccination is recommended.",
+                "coAdministration": "Can be co-administered with SHINGRIX®.",
+                "reactogenicity": "Most common: adults: injection site pain (36%); muscle aches (16%); headache (16%); fatigue (16%); 3-17 yrs.: injection site pain (44%), redness (23%), swelling (19%); 3-5 yrs.: drowsiness (17%); irritability (17%); loss of appetite (16%); 6-17 yrs.: fatigue (20%); muscle aches (18%); headache (16%); arthralgia (10%); gastrointestinal symptoms (10%); 6-35 mo.: injection site pain (17%), redness (13%), irritability (16%); loss of appetite (14%); drowsiness (13%).",
+                "safety": "An increased frequency of GBS was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: FLUARIX Quadrivalent® (MAH: GSK)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "14/12/2012",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluarix-quadrivalent",
+                "lastUpdated": "12/07/2023"
+            }
+        ]
+    },
+    {
+        "vaccineId": 249,
+        "name": "Flucelvax Tetra®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flucelvax Tetra® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flucelva Tetrax® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL)  contains 15µg influenza virus HA (each of A/Wisconsin/67/2022 (H1N1)pdm09-like, A/Massachusetts/18/2022 (H3N2)-like, B/Austria/1359417/2021-like, and B/Phuket/3073/2013-like strains); propagated in MDCK cells; storage: 2-8°C (protect from light); shelf life: 1 years.",
+                "strainCoverage": "Influenza virus.",
+                "indication": "Active immunization for the prophylaxis of influenza in individuals ≥2 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute febrile illness until the fever is resolved; caution in bleeding disorder; no contraindication in pregnancy and breastfeeding.",
+                "dosing": "I.M; each dose is 0.5 mL; single dose; children <9 yrs. with no previous flu vaccination should receive a 2nd dose >4 weeks apart.",
+                "immunogenicity": "Seroconversion rate (HI antibody titers); 4-17 yrs.: 47-73%; ≥18 yrs.: 36.6-49.2%; (Flucelvax Tetra® was non-inferior to comparators (two trivalent flu vaccines containing B strain from the alternate lineage)).",
+                "Efficacy": " The efficacy of Flucelvax Tetra® is relevant to TIVc because both vaccines are manufactured using the same process and have overlapping compositions; VEy of TIVc against all culture-confirmed influenza: 49.9-89.3%; VEy of Flucelvax Tetra® against RT-PCR or culture-confirmed influenza: individuals 2-18 yrs.: 54.63% (95% CI: 45.67; 62.12).",
+                "durationOfProtection": "Annual revaccination is recommended because immunity declines during the year after vaccination and circulating strains of influenza virus change yearly.",
+                "coAdministration": "No data on co-administration with other vaccines; based on clinical experience with TIVc, can be co-administered with other vaccines.",
+                "reactogenicity": "Very common: injection site pain; fatigue; erythema; induration; myalgia; headache; common: loss of appetite; nausea; vomiting; diarrhea; injection site ecchymosis; chills; arthralgia.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/efficacy data in <2 yrs."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flucelvax Tetra® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "12/12/2018",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/flucelvax-tetra",
+                "lastUpdated": "31/07/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 250,
+        "name": "Flucelvax Quadrivalent®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flucelvax Quadrivalent® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flucelva Quadrivalent® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Georgia/12/2022 CVR-167 (an A/Wisconsin/67/2022 (H1N1)pdm09-like virus), A/Darwin/11/2021 (an A/Darwin/6/2021 (H3N2)-like virus), B/Singapore/WUH4618/2021 (a B/Austria/1359417/2021-like virus), B/Singapore/INFTT-16-0610/2016 (a B/Phuket/3073/2013-like virus) strains); using cell-derived candidate vaccine viruses that are propagated in MDCK cells; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; each dose is 0.5 mL; 6 mo.- 8 yrs.: 1 or 2 doses with at least 4 weeks interval; ≥9 yrs.: 1 dose.",
+                "immunogenicity": "Seroconversion rate against vaccine strains (HI antibody titers): ≥ 18 yrs.: 36.6-49.2% (FLUCELVAX QUADRIVALENT® was non-inferior to TIVc); 6 mo. – 3 yrs.: 27.64-58.24% (FLUCELVAX QUADRIVALENT® was non-inferior to the comparator QIV); 4-17 yrs.: 47-73%.",
+                "Efficacy": "The efficacy experience with FLUCELVAX QUADRIVALENT® is relevant to FLUCELVAX® because both vaccines are manufactured using the same process and have overlapping compositions (VEy of FLUCELVAX®: 18-49 yrs.: 83.8% against vaccine strains, 69.5% against all strains). \n VEy of FLUCELVAX QUADRIVALENT® against all influenza subtypes: 2-17 yrs.: 54.6% (95% CI: 45.7; 62.1).",
+                "durationOfProtection": "Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 6mo. - 3 yrs.: injection site tenderness (28%), erythema (26%), induration (17%), ecchymosis (11%); irritability (28%); sleepiness (27%); diarrhea (18%); change of eating habits (17%); 2-8 yrs.: injection site tenderness (28.7%), pain (27.9%), erythema (21.3%), induration (14.9%), ecchymosis (10.0%); sleepiness (14.9%); headache (13.8%); fatigue (13.8%); irritability (13.8%); loss of appetite (10.6%); 9-17 yrs.: injection site pain (21.7%), erythema (17.2%), induration (10.5%); headache (18.1%); fatigue (17.0%); \n 18-64 yrs.: injection site pain (45.4%), erythema (13.4%), induration (11.6%); headache (18.7%); fatigue (17.8%); myalgia (15.4%); ≥ 65 yrs.: injection site erythema (10%); fatigue (11%); headache (10%); malaise (10%). ",
+                "safety": "An increased frequency of GBS was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo.; antibody responses is lower in geriatric subjects than in younger adults."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flucelvax Quadrivalent® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "23/05/2016",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/flucelvax-tetra",
+                "lastUpdated": "30/06/2023"
+            }
+        ]
+    },
+    {
+        "vaccineId": 251,
+        "name": "FLULAVAL Quadrivalent®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 40
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: FLULAVAL Quadrivalent® (MAH: ID Biomedical Corporation of Quebec)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: FLULAVAL Quadrivalent® (MAH: ID Biomedical Corporation of Quebec)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Victoria/4897/2022 (H1N1) IVR-238, A/Darwin/9/2021 (H3N2) IVR-228, B/Austria/1359417/2021 BVR-26 (B-Victoria lineage), and B/Phuket/3073/2013 (B-Yamagata lineage) strains); propagated in the allantoic cavity of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; caution in bleeding disorders; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; each dose is 0.5 mL; 6 mo. – 8 yrs.: not previously vaccinated: 2 doses; at least 4 weeks interval; previously vaccinated: 1 or 2 doses; ≥9 yrs.: 1 dose.",
+                "immunogenicity": "Seroconversion rate (HI antibody titers): 6-35 mo.: 64.9-85.5% (FluLaval Quadrivalent® was non-inferior to FLUZONE QUADRIVALENT®); 3-17 yrs.: 70.1-84.4% (FluLaval Quadrivalent® was non-inferior to comparator TIV); FluLaval Quadrivalent® was non-inferior to comparator TIV in individuals ≥18 yrs.",
+                "Efficacy": "VEy against all strains: 3-8 yrs.: 55.4-55.9%.",
+                "durationOfProtection": "Annual vaccination is recommended.",
+                "coAdministration": "Insufficient data on concomitant administration with other vaccines. ",
+                "reactogenicity": "Most common: adults: injection site pain (60%); muscle aches (26%); headache (22%); fatigue (22%); arthralgia (15%); 6-35 mo.: injection site pain (40%); irritability (49%); drowsiness (37%); loss of appetite (29%); 3-4 yrs.: injection site pain (65%); irritability (26%); drowsiness (21%); loss of appetite (17%); 5-17 yrs.: injection site pain (65%); muscle aches (29%); fatigue (22%); headache (22%); arthralgia (13%); gastrointestinal symptoms (10%). ",
+                "safety": " An increased frequency of GBS was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo.; lower antibody responses in geriatrics than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: FLULAVAL Quadrivalent® (MAH: ID Biomedical Corporation of Quebec)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "15/08/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flulaval-quadrivalent",
+                "lastUpdated": "13/07/2023"
+            }
+        ]
+    },
+    {
+        "vaccineId": 252,
+        "name": "FluMist Quadrivalent®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 43
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: FluMist Quadrivalent® (MAH: MedImmune)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: FluMist Quadrivalent® (MAH: MedImmune)",
+                "composition": "1 dose (0.2 mL) contains 106.5-7.5 FFU of each four influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Norway/16606/2021 (H3N2) (an A/Darwin/9/2021 (H3N2) - like virus), B/Phuket/3073/2013 (B/Yamagata lineage), and B/Austria/1359417/2021 (B/Victoria lineage) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization against influenza disease caused by influenza A subtypes and type B contained in the vaccine in individuals 2-49 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; concomitant aspirin therapy in children and adolescents unless clearly needed; caution in individuals with asthma or children <5 yrs. with recurrent wheezing; use risk/benefits strategy if Guillain-Barré Syndrome has occurred within 6 weeks after any prior influenza vaccination; FluMist Quadrivalent® is not absorbed systemically, so maternal use is not expected to result in fetal exposure to the drug also breastfeeding is not expected to result in the exposure of the child to FluMist Quadrivalent®.",
+                "dosing": "Nasal; single dose; each dose is 0.2 mL (0.1 mL per nostril); 2-8 yrs.: 1 or 2 doses; 1 mo. interval; 9-49 yrs.: 1 dose.",
+                "immunogenicity": "2-49 yrs.: Addition of the second B strain did not result in immune interference to other strains included in the vaccine.",
+                "Efficacy": "FluMist®: 6 mo.- 4 yrs.: 54.9% (95% CI: 45.4; 62.9) reduction in influenza rate (any strain); 12-35 mo.: 72.9% (95%CI: 62.8; 80.5) against vaccine strains; 84.3% (95% CI: 70.1; 92.4) against vaccine strains, 1 yr. f/u; 15-71 mo.: 93.4% (95% CI: 87.5; 96.5) against vaccine strains; 87.0% (95% CI: 77.0, 92.6) against any strains, 1 yr. f/u.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "Avoid co-administration with aspirin or aspirin-containing drugs; antiviral drugs that are active against influenza A and/or B may reduce the effectiveness of FluMist Quadrivalent® if administered within 48 hours before, or within 2 weeks after, receipt of the vaccine (if administered concomitantly, revaccination should be considered when appropriate); no data for co-administration with other intranasal preparations.",
+                "reactogenicity": "Most common: runny nose or nasal congestion in all ages; fever >100°F in children 2-6 yrs. of age;  sore throat in adults.",
+                "safety": "An increased frequency of GBS was reported; potential for increased risk of wheezing.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "Increased risk of hospitalization and wheezing in children <24 mo.; no safety data in individuals with underlying medical conditions that may predispose them to complications following wild-type influenza infection; potential for transmission to immunocompromised close contacts; no safety/effectiveness in <2 yrs.; has not been studied in immunocompromised persons."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: FluMist Quadrivalent® (MAH: MedImmune)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "19/07/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flumist-quadrivalent",
+                "lastUpdated": "30/06/2023"
+            }
+        ]
+    },
+    {
+        "vaccineId": 253,
+        "name": "ROTASIIL Thermo®",
+        "pathogenId": [
+            33
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ROTASIIL® (MAH: Serum Institute of India)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ROTASIIL® (MAH: Serum Institute of India)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ROTASIIL® (MAH: Serum Institute of India)",
+                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥105.6 FFU; grown on Vero cells; storage: 25°C; shelf life: 30 months.",
+                "strainCoverage": "Human rotavirus; G1, G2, G3, G4, and G9; no protection against gastroenteritis caused by other pathogens.",
+                "indication": "Active immunization to prevent any severe rotavirus infection in healthy infants from 6 weeks to 24 weeks; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; intussusception predisposing situation*; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; pregnancy; no data on breastfeeding.",
+                "dosing": "Oral; 3 doses (2.5 mL); 1st dose from the age of 6 weeks; 4-week intervals",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "Can be co-administered with DTP, HBV, Hib, OPV, and IPV vaccines.",
+                "reactogenicity": "Fever (68.2%), irritability (42.6%), decreased appetite (20.4%), decreased activity level (18.8%), vomiting (17.0%).",
+                "safety": "Based on data from other rotavirus vaccines, a small increased incidence of intussusception was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "If infant spits out/regurgitates most of the vaccine dose, a single replacement dose may be given at the same vaccination visit; no safety/immunogenicity/efficacy data for mixed regimens; no restrictions on the infant’s consumption of food or liquid, either before or after vaccination; no safety/ efficacy data in immunocompromised infants, HIV infected infants or infants with chronic gastroenteritis."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "28/01/2020",
+                "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "28/01/2020",
+                "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo-0",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 254,
+        "name": "Vaxigrip Tetra®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "No label available in WHO website",
+                "indication": "No label available in WHO website",
+                "contraindication": "No label available in WHO website",
+                "dosing": "No label available in WHO website",
+                "immunogenicity": "No label available in WHO website",
+                "Efficacy": "No label available in WHO website",
+                "durationOfProtection": " No label available in WHO website",
+                "coAdministration": "No label available in WHO website",
+                "reactogenicity": "No label available in WHO website",
+                "safety": "No label available in WHO website",
+                "vaccinationGoal": "No label available in WHO website",
+                "others": "No label available in WHO website"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "15/10/2020",
+                "source": "https://extranet.who.int/prequal/vaccines/p/vaxigriptetra",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 255,
+        "name": "Yellow Fever Vaccine N/A",
+        "pathogenId": [
+            15
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 62
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "1 dose (0.5 ml) contains ≥1600 PFU of yellow fever virus (17D strain); cultivated in chicken embryonated eggs free from pathogenic agents; storage: 2-8°C (protected from sunlight); shelf life: 2 years.",
+                "strainCoverage": "Yellow fever virus.",
+                "indication": "Active immunization to prevent yellow fever in individuals ≥9 mo. and adults visiting regions enzootic for yellow fever or persons dealing with the live causative agent of the disease; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; history of hypersensitivity to egg or egg products; individuals <6 mo.; infants 6-9 mo. unless during YF epidemics; primary immune deficiency; symptomatic HIV-infected individuals; secondary immune deficiency (avoid vaccination for at least 12 mo. after the patient’s recovery or finishing the treatment); acute infectious and non-infectious diseases or flare-up of chronic diseases (avoid vaccination for at least 1 mo. after remission); pregnancy.",
+                "dosing": "Single dose (0.5 mL); I.M (preferred) or S.C.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " Protection starts 10 days following the vaccination and will continue for the whole life of the vaccinee.",
+                "coAdministration": "Can be co-administered with measles, DT, Td, TT, BCG, OPV, IPV, HBV, and Hib vaccines and vitamin A supplementation; in individuals <15 yrs. It is recommended that the interval be no less than 2 mo. between the YF and other vaccines if possible but for individuals >15 yrs. co-administration is possible with the possibility of a reduction in immune response; avoid co-administration with cholera and/or paratyphoid type A and B vaccines (3 mo. apart).",
+                "reactogenicity": "Indisposition; giddiness; headache; chilly sensation; fever; injection site hyperemia, edema, induration of cellular tissue, and itchiness; enlargement of lymph nodes.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "Vaccination should be performed at least 10 days before departure to the endemic region; asymptomatic HIV-infected individuals can receive vaccine."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "26/03/2009",
+                "source": "https://extranet.who.int/prequal/vaccines/p/na",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "26/03/2009",
+                "source": "https://extranet.who.int/prequal/vaccines/p/na-0",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "26/03/2009",
+                "source": "https://extranet.who.int/prequal/vaccines/p/na-1",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 256,
+        "name": "BEtt®",
+        "pathogenId": [
+            41
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "11 dose (0.5mL) contains ≥40 I.U tetanus toxoid; storage: 2-8°C; shelf life: 3 years.",
+                "strainCoverage": "Clostridium tetani.",
+                "indication": "Active immunization for the prevention of tetanus in individuals ≥6 weeks, tetanus prophylaxis in wound management in individuals ≥7 yrs. and neonatal tetanus prevention through vaccination of pregnant women; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; febrile illness or acute infection; neurological disorder, Arthus-type hypersensitivity reaction or T>39°C following a previous dose of TT; polio outbreak; use risk/benefit strategy in coagulation disorder.",
+                "dosing": "Each dose is 0.5 mL; I.M; unimmunized individuals ≥7 yrs: 3 doses; 2 doses at least 4-8 weeks apart, 3rd dose 6-12 mo. later; neonatal tetanus prevention: antenatal immunization in unimmunized pregnant women who may deliver her child under non-hygienic circumstances and/or surrounding: 2 doses; 4-8 weeks apart before delivery and preferably in 2nd or 3rd trimester; incompletely immunized pregnant women should complete the 3-dose series; pregnant women previously immunized more than 10 yrs.: single booster dose. \n For more detailed information on tetanus prophylaxis in wound management and pregnant women immunization please see product profile.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data available in the label.",
+                "coAdministration": "Can be co-administered with BCG, OPV, IPV, HBV, measles, Hib, and yellow fever vaccines and vitamin A supplementation.",
+                "reactogenicity": "Injection site erythema, induration, tenderness and nodule; abscess formation; subcutaneous atrophy; fever; chill; malaise; headache; urticaria;, arthralgia; erythema multiform.",
+                "safety": "Convulsion, encephalopathy, mono or polyneuropathy including Guillain-Barré Syndrome.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "Avoid vaccination more frequently than every 10 yrs. even for tetanus prophylaxis as part of wound management; in individuals <7 yrs. monovalent adsorbed vaccine shouldn’t be used, DTwP or DT is recommended; tetanus infection does not induce immunity so after the recovery from infection immunization is necessary; HIV-infected Individuals should be immunized according to standard schedules. "
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "21/12/2009",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "21/12/2009",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-2",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "21/12/2009",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-3",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 256,
+        "name": "PreHevbri®",
+        "pathogenId": [
+            9
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 32
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "1 dose (1mL) contains 10µg HBsAg; produced in CHO cells by rDNA technology; storage: 2-8°C; shelf life: 4 years.",
+                "strainCoverage": "Hepatitis B virus; no protection against infection caused by other hepatitis agents (indirect prevention of hepatitis D).",
+                "indication": "Active immunization against infection caused by any HBV subtype in adults. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute severe febrile illness; acute infection; precaution in coagulation disorder; can be used in pregnancy and breast-feeding if advantages > risks; no limitation in chronic liver disease, HIV infection, or hepatitis C carriers.",
+                "dosing": "I.M.; 3 doses (1mL each); 0, 1, 6 month. \n Booster: in immunocompromised and renal insufficient individuals, if anti-HBs Ab level < 10 mIU/ml.",
+                "immunogenicity": "The immunogenicity was assessed in comparison with Engerix-B (licensed hepatitis B vaccine): seroprotection rate in ≥18 yrs. was non-inferior to the Engerix B at day 196 (91.4% vs. 76.5%); seroprotection rate in ≥45 yrs. was superior to the Engerix B at day 196 (89.4% vs. 73.1%); higher seroprotection rate and anti-HBs titers were noted for PreHevbri compared with Engerix-B at all time points.",
+                "Efficacy": "No VEy data; immunogenicity as above.",
+                "durationOfProtection": "Unknown.",
+                "coAdministration": "No data for co-administration with other vaccines; co-administration is not recommended. ",
+                "reactogenicity": "Very Common: injection site pain (72.2%), tenderness (71.2%), local pruritus/itching (12.2%), myalgia (41.7%), fatigue (37.5%), and headache (36.3%).",
+                "safety": "Syncope/fainting as a psychogenic response to injection accompanied by transient visual disturbance, paraesthesia, and tonic-clonic movements.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "No protection in patients in incubation period of HBV infection; no safety/efficacy data in children; protective antibody level should be measured in pre-hemodialysis, hemodialysis, and immunocompromised patients; no dose adjustments needed for ≥65 yrs.; limited safety data in immunocompromised adults, adults previously vaccinated for hepatitis B, and adults with chronic renal failure."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "No label available in WHO website",
+                "indication": "No label available in WHO website",
+                "contraindication": "No label available in WHO website",
+                "dosing": "No label available in WHO website",
+                "immunogenicity": "No label available in WHO website",
+                "Efficacy": "No label available in WHO website",
+                "durationOfProtection": " No label available in WHO website",
+                "coAdministration": "No label available in WHO website",
+                "reactogenicity": "No label available in WHO website",
+                "safety": "No label available in WHO website",
+                "vaccinationGoal": "No label available in WHO website",
+                "others": "No label available in WHO website"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "25/04/2022",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prehevbri",
+                "lastUpdated": "30/01/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 257,
+        "name": "PreHevbrio®",
+        "pathogenId": [
+            9
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 32
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "No label available",
+                "indication": "No label available ",
+                "contraindication": "No label available ",
+                "dosing": "No label available ",
+                "immunogenicity": "No label available ",
+                "Efficacy": "No label available ",
+                "durationOfProtection": " No label available",
+                "coAdministration": "No label available",
+                "reactogenicity": "No label available",
+                "safety": "No label available",
+                "vaccinationGoal": "No label available",
+                "others": "No label available"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "1 dose (1mL) contains 10µg HBsAg; produced in CHO cells by rDNA technology; storage: 2-8°C; shelf life: 4 years.",
+                "strainCoverage": "Hepatitis B virus.",
+                "indication": "Active immunization against infection caused by any HBV subtype in individuals ≥18 yrs. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; limited data in pregnancy; can be used in breast-feeding if advantages > risks.",
+                "dosing": "I.M.; 3 doses (1mL each); 0, 1, 6 month.",
+                "immunogenicity": "The immunogenicity was assessed in comparison with Engerix-B (licensed hepatitis B vaccine): seroprotection rate in ≥18 yrs. was non-inferior to the Engerix B at day 196 (91.4% vs. 76.5%); seroprotection rate in ≥45 yrs. was superior to the Engerix B at day 196 (89.4% vs. 73.1%); higher seroprotection rate and anti-HBs titers were noted for PreHevbri compared with Engerix-B at all time points.",
+                "Efficacy": "No VEy data; immunogenicity as above.",
+                "durationOfProtection": "Unknown.",
+                "coAdministration": "No data for co-administration with other vaccines and HBIg.",
+                "reactogenicity": "18-44 yrs.: injection site pain (52.0-58.3%) and tenderness (52.6-59.6%), headache (17.2-25.8%), fatigue (20.1-28.3%), and myalgia (22.2-29.9%); \n 45-64yrs.: injection site pain (42.2-48.8%) and tenderness (43.2-50.5%), headache (13.8-21.3%), fatigue (14.3-19.7%), and myalgia (16.7-24.1%); \n ≥65 yrs.: injection site pain (26.7-34.8%) and tenderness (30.2-32.8%), headache (7.3-12.2%), fatigue (11.5-14.5%), and myalgia (11.5-16.6%).",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "No safety/efficacy/effectiveness data for <18 yrs. and hemodialysis patients; no protection in patients in incubation period of HBV infection; lower immunogenicity in 65-86 yrs."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "No label available in WHO website",
+                "indication": "No label available in WHO website",
+                "contraindication": "No label available in WHO website",
+                "dosing": "No label available in WHO website",
+                "immunogenicity": "No label available in WHO website",
+                "Efficacy": "No label available in WHO website",
+                "durationOfProtection": " No label available in WHO website",
+                "coAdministration": "No label available in WHO website",
+                "reactogenicity": "No label available in WHO website",
+                "safety": "No label available in WHO website",
+                "vaccinationGoal": "No label available in WHO website",
+                "others": "No label available in WHO website"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "30/11/2021",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/prehevbrio",
+                "lastUpdated": "30/11/2021"
+            }
+        ]
+    },
+    {
+        "vaccineId": 258,
+        "name": "Poliomyelitis vaccine®; Poliomyelitis vaccine multidose®",
+        "pathogenId": [
+            31
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 54
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "1 dose (0.5mL) contains IPV type 1 (Mahoney), type 2 (MEF-1), and type 3 (Saukett), 40/8/32 DU; cultured on Vero cells; storage: 2-8°C (protect from light); shelf life: 3 years.",
+                "strainCoverage": "Poliovirus (types 1,2,3).",
+                "indication": "Prophylactic vaccination against poliomyelitis caused by poliovirus types 1, 2, and 3; to be used based on official recommendations.",
+                "dosing": "I.M or S.C; each dose is 0.5 mL; 3 doses; intervals of at least 4 weeks; infants should receive the primary series within the first 6 mo. after birth; booster: a single dose can be administered at least 6 mo. after 3rd dose; if local authorities recommend starting vaccination schedule before the age of 2 mo. and/or if the interval is <8 weeks, a booster dose should be administered, however not before the age of 9 mo.",
+                "contraindication": "Hypersensitivity; severe febrile illness; use in pregnancy only when there is a clear risk of infection; can be used during lactation.",
+                "immunogenicity": "Immunogenicity is based on the previous IPV studies in the Netherlands: seroprotection rate (plain poliomyelitis vaccine or a combination vaccine with a poliomyelitis vaccine component): 96.6% against poliovirus type 1, 93.4% against poliovirus type 2, 89.7% against poliovirus type 3. ",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "Can be co-administered with other vaccines.",
+                "reactogenicity": "Common: injection site pain, redness, swelling; fever; discomfort.",
+                "safety": "Potential risk of apnea in very premature infants (born ≤28 weeks of gestation); polyneuropathy.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "HIV-infected individuals should be immunized with IPV according to standard schedules; persons fully immunized against poliomyelitis and leaving to areas with a high incidence of poliomyelitis, are advised to revaccinate with a single dose of polio vaccine approx. 1 mo. before departure, particularly when their last immunization was >15 yrs. ago."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "06/12/2010",
+                "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine",
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "28/11/2014",
+                "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-multidose",
+                "lastUpdated": "#"
             }
         ]
     }

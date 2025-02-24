@@ -205,6 +205,34 @@ export const getProductProfileValueByVaccineNameAndType = (type, prop, vaccineNa
     }
 };
 
+export const getLicensingDateByVaccineNameAndType = (type, prop, vaccineName) => {
+    const data = vaccines;
+    const result = data.filter((vac) => vac.name === vaccineName);
+    if (type && result.length > 0) {
+        if (result[0]?.licensingDates && result[0]?.licensingDates.length > 0) {
+            const propValue = result[0]?.licensingDates.filter((x) => x.name === type)
+            if (propValue?.length > 0) {
+                return prop === "source" ? propValue.map((x) => {
+                    return prop === "source" ? <a href={x.source} className='selectable' target="_blank" rel="noopener noreferrer">
+                        {type}
+                        ,{" "}
+                    </a> : x[prop]
+                }) : propValue.map((x) => {
+                    return prop === "source" ? <a href={x.source} className='selectable' target="_blank" rel="noopener noreferrer">
+                        {type}
+                    </a> : x[prop]
+                }).join(', ')
+            } else {
+                return "-"
+            }
+        } else {
+            return "-"
+        }
+    } else {
+        return "-"
+    }
+};
+
 export const getProductProfileTypeByVaccineName = (vaccineName) => {
     const data = vaccines;
     const result = data.filter((vac) => vac.name === vaccineName);

@@ -417,7 +417,7 @@
         "vaccineId": 47,
         "name": "NTS CONJUGATES",
         "pathogenId": 39,
-        "pathogenName": "non-typhoidal Salmonella",
+        "pathogenName": "Non-typhoidal Salmonella",
         "platform": "No data",
         "manufacturer": "Bharat",
         "clinicalPhase": "Phase I"
@@ -426,7 +426,7 @@
         "vaccineId": 48,
         "name": "GSK4077164",
         "pathogenId": 40,
-        "pathogenName": "salmonella Typhi",
+        "pathogenName": "Salmonella Typhi",
         "platform": "Subunit",
         "manufacturer": "GSK",
         "clinicalPhase": "Phase II"
@@ -435,7 +435,7 @@
         "vaccineId": 49,
         "name": "GSK4077164",
         "pathogenId": 40,
-        "pathogenName": "non-typhoidal Salmonella",
+        "pathogenName": "Non-typhoidal Salmonella",
         "platform": "Subunit",
         "manufacturer": "GSK",
         "clinicalPhase": "Phase II"
@@ -552,7 +552,7 @@
         "vaccineId": 62,
         "name": "GSK3536867",
         "pathogenId": 49,
-        "pathogenName": "salmonella Typhi",
+        "pathogenName": "Salmonella Typhi",
         "platform": "Subunit",
         "manufacturer": "GSK",
         "clinicalPhase": "Phase I"

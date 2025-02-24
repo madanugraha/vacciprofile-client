@@ -29,6 +29,11 @@ export const getCandidateVaccines = () => {
     return vaccines.sort((a, b) => a.name.localeCompare(b.name))
 }
 
+export const getAllRelatedVaccineCandidateByName = (name) => {
+    return vaccines.filter((x) => x.name === name)
+}
+
+
 export const getCandidateVaccinesByPathogenName = (pathogen) => {
     return vaccines.filter((x) => x.pathogenName === pathogen)
 }

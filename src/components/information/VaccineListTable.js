@@ -88,11 +88,13 @@ const VaccineListTable = ({
                                     </td>
                                     <td className='pathogen-cell'>
                                         <div className='d-inline-flex align-items-center'>
-                                            {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen) => {
+                                            {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen, index) => {
                                                 return (
                                                     <span
                                                         className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenDetailById(pathogen).name ? `selected` : `selectable`}`}
-                                                        onClick={() => { handleSelectPathogen(getPathogenDetailById(pathogen)) }}>{getPathogenDetailById(pathogen)?.name ? italizeScientificNames(getPathogenDetailById(pathogen)?.name) : "-"}
+                                                        onClick={() => { handleSelectPathogen(getPathogenDetailById(pathogen)) }}>
+                                                        {getPathogenDetailById(pathogen)?.name ? italizeScientificNames(getPathogenDetailById(pathogen)?.name) : "-"}
+                                                        {index < vaccine?.pathogenId.length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
                                                     </span>
                                                 )
                                             })}

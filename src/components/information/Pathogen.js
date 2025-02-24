@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
+import { getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getLicensingDateByVaccineNameAndType, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Vaccine from './Vaccine';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-import { checkIfPathogenCandidate, getCandidateVaccinesByPathogenName, getVaccineCandidatePlatformsUniqueByPathogenName, sortArrayAscending } from '../../utils/array';
+import { checkIfPathogenCandidate, getCandidateVaccinesByPathogenName, getVaccineCandidatePlatformsUniqueByPathogenName, removeDuplicatesFromArray, sortArrayAscending } from '../../utils/array';
 import tableDragger from 'table-dragger'
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
@@ -76,7 +76,10 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Reactogenicity', alt: 'reactogenicity' },
         { title: 'Safety', alt: 'safety' },
         { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
-        { title: 'Others', alt: 'others' }
+        { title: 'Others', alt: 'others' },
+        { title: 'Approval Date', alt: 'approvalDate' },
+        { title: 'Last Updated', alt: 'lastUpdated' },
+        { title: 'Source', alt: 'source' },
     ];
     const licenserFields = [
         {
@@ -95,8 +98,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
 
     const [licenserFieldsVaccine, setLicenserFieldsVaccine] = useState([]);
     const [selectedFilterVaccine, setSelectedFilterVaccine] = useState([]);
-    const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1]]);
-    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1]]);
+    const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1], tableFields[14], tableFields[15], tableFields[16]]);
+    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]]);
     const [vaccineFieldsState, setVaccineFieldsState] = useState([]);
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
 
@@ -490,7 +493,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         if (allFactorShows) {
             setSelectedFilterTableFields(tableFields);
         } else {
-            setSelectedFilterTableFields([tableFields[0], tableFields[1]])
+            setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]])
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
 
@@ -718,7 +721,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 options={tableFields}
                                                                                 value={selectedFilterTableFields}
                                                                                 getOptionLabel={(option) => option.title}
-                                                                                defaultValue={[tableFields[0], tableFields[1]]}
+                                                                                defaultValue={[tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]]}
                                                                                 autoComplete
                                                                                 freeSolo
                                                                                 onChange={(event, newValue) => {
@@ -731,7 +734,9 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                     }
                                                                                     const checkForType = newValue.some((item) => item.title === "Type");
                                                                                     const checkForComposition = newValue.some((item) => item.title === "Composition/Platform");
-
+                                                                                    const checkForApprovalDate = newValue.some((item) => item.title === "Approval Date");
+                                                                                    const checkForLastUpdated = newValue.some((item) => item.title === "Last Updated");
+                                                                                    const checkForSource = newValue.some((item) => item.title === "Source");
                                                                                     if (!checkForType) {
                                                                                         setTableFieldsErrorMessage("Type cannot be removed")
                                                                                         setDuplicateTableFieldsError(true);
@@ -739,6 +744,21 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                     }
                                                                                     if (!checkForComposition) {
                                                                                         setTableFieldsErrorMessage("Composition/Platform cannot be removed")
+                                                                                        setDuplicateTableFieldsError(true);
+                                                                                        return;
+                                                                                    }
+                                                                                    if (!checkForApprovalDate) {
+                                                                                        setTableFieldsErrorMessage("Approval Date cannot be removed")
+                                                                                        setDuplicateTableFieldsError(true);
+                                                                                        return;
+                                                                                    }
+                                                                                    if (!checkForLastUpdated) {
+                                                                                        setTableFieldsErrorMessage("Last Updated cannot be removed")
+                                                                                        setDuplicateTableFieldsError(true);
+                                                                                        return;
+                                                                                    }
+                                                                                    if (!checkForSource) {
+                                                                                        setTableFieldsErrorMessage("Source cannot be removed")
                                                                                         setDuplicateTableFieldsError(true);
                                                                                         return;
                                                                                     }
@@ -834,7 +854,9 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                 }
                                                 const checkForType = newValue.some((item) => item.title === "Type");
                                                 const checkForComposition = newValue.some((item) => item.title === "Composition/Platform");
-
+                                                const checkForApprovalDate = newValue.some((item) => item.title === "Approval Date");
+                                                const checkForLastUpdated = newValue.some((item) => item.title === "Last Updated");
+                                                const checkForSource = newValue.some((item) => item.title === "Source");
                                                 if (!checkForType) {
                                                     setTableFieldsErrorMessage("Type cannot be removed")
                                                     setDuplicateTableFieldsError(true);
@@ -842,6 +864,21 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                 }
                                                 if (!checkForComposition) {
                                                     setTableFieldsErrorMessage("Composition/Platform cannot be removed")
+                                                    setDuplicateTableFieldsError(true);
+                                                    return;
+                                                }
+                                                if (!checkForApprovalDate) {
+                                                    setTableFieldsErrorMessage("Approval Date cannot be removed")
+                                                    setDuplicateTableFieldsError(true);
+                                                    return;
+                                                }
+                                                if (!checkForLastUpdated) {
+                                                    setTableFieldsErrorMessage("Last Updated cannot be removed")
+                                                    setDuplicateTableFieldsError(true);
+                                                    return;
+                                                }
+                                                if (!checkForSource) {
+                                                    setTableFieldsErrorMessage("Source cannot be removed")
                                                     setDuplicateTableFieldsError(true);
                                                     return;
                                                 }
@@ -940,9 +977,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>
 
                                                                                     <div className='d-inline-flex justify-content-between w-100'>
-                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
+                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
-
                                                                                     </div>
                                                                                 </td>
                                                                             )
@@ -1032,7 +1068,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase III</td>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IV</td>
                             </tr>
-                            {getCandidateVaccinesByPathogenName(selectedPathogen?.name).length > 0 ? getCandidateVaccinesByPathogenName(selectedPathogen?.name).map(x => {
+                            {removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").length > 0 ? removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").map(x => {
                                 return (
                                     <tr>
                                         <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name}</td>
@@ -1046,7 +1082,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                             }
                             ) : <tr>
                                 <td>- no data to display -</td></tr>}
-
                         </tbody>
                     </table>
                 </div>
