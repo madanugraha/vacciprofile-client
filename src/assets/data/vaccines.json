@@ -21569,5 +21569,1134 @@
                 "lastUpdated": "#"
             }
         ]
+    },
+    {
+        "vaccineId": 259,
+        "name": "Influvac Tetra®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 35
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (each of A/Victoria/4897/2022 (H1N1)pdm09-like (A/Victoria/4897/2022, IVR-238), A/Darwin/9/2021 (H3N2)-like (A/Darwin/9/2021, SAN-010), B/Austria/1359417/2021-like (B/Austria/1359417/2021, BVR-26) and B/Phuket/3073/2013-like (B/Phuket/3073/2013, wild type) strains); propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B; not effective against all possible strains of influenza virus.",
+                "indication": "Active immunization to prevent influenza disease in individuals ≥6 mo. especially those who are at increased risk of associated complications; to be used based on official recommendations.",
+                "dosing": "I.M or deep S.C; single dose (0.5 mL); unvaccinated people <9 yrs.: 2 doses; 4 weeks interval.",
+                "contraindication": "Hypersensitivity; egg protein allergy; febrile illness or acute infection; caution in coagulation disorder; can be used during pregnancy, especially in 2nd and 3rd trimesters; may be used in breastfeeding.",
+                "immunogenicity": "Seroconversion rate (HI antibody titers) against vaccine strains: 6-35 mo.: 26.5-92.5%; 3-17 yrs: 60.1-80.6%; 18-60 yrs.: 51.3-70.2%; >60 yrs.: 39.3-53.6%.",
+                "Efficacy": "VEy: 54% (95% CI: 37; 66).",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines; should not be given at the same time with other (childhood) vaccines.",
+                "reactogenicity": "Most common: adults and elderly: injection site pain; headache; fatigue; 6 mo.-17 yrs.: headache; drowsiness; sweating; appetite loss; nausea; abdominal pain; diarrhea; vomiting; irritability/fussiness; myalgia; fatigue; fever; malaise; injection site pain, redness, swelling, induration.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/efficacy data in <6 mo.; false positive ELISA serologic tests for HIV-1, Hepatitis C, and especially HTLV-1 may occur following vaccination."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "19/02/2024",
+                "source": "https://extranet.who.int/prequal/vaccines/p/influvacr-tetra",
+                "lastUpdated": "#"
+            }
+        ]
+    },
+    {
+        "vaccineId": 260,
+        "name": "Pandemic Influenza Vaccine H5N1 AstraZeneca®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 6
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "20/05/2016",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/pandemic-influenza-vaccine-h5n1-astrazeneca",
+                "lastUpdated": "24/04/2024"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "18/12/2020",
+                "source": "https://extranet.who.int/prequal/vaccines/p/pandemic-live-attenuated-vaccine",
+                "lastUpdated": "#"
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.2 mL) contains 107.0±0.5 FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
+                "strainCoverage": "Influenza virus H5N1.",
+                "indication": "Active immunization for prophylaxis of influenza in an officially declared pandemic situation in individuals 1-17 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; eggs or egg proteins allergy; breastfeeding; <1 yrs. (safety concerns regarding increased rates of hospitalization and wheezing); use risk/benefit strategy in individuals on salicylate therapy, individuals with significant clinical immunodeficiency or children with severe asthma and active wheezing; use risk/benefit strategy in pregnancy.",
+                "dosing": "Nasal; 2 doses; each dose is 0.2 mL (0.1 mL per nostril); at least 4 weeks interval.",
+                "immunogenicity": "The vaccine immunogenicity and efficacy is supported by AstraZeneca’s 2009 H1N1 pandemic LAIV and seasonal T/LAIV vaccines because all these vaccines are manufactured using the same process, administered through the same route, and studied primarily in naive individuals (seroresponse rate; H1N1 pandemic LAIV vaccine; 2-17 yrs.: 32%, 57 days f/u) \n Seroresponse rate; Pandemic Influenza Vaccine H5N1 AstraZeneca®; 18-49 yrs.: 52%.",
+                "Efficacy": "Clinical experience with Fluenz® is relevant to Fluenz Tetra® because both vaccines are manufactured using the same process and have overlapping compositions (Vey of Fluenz® during 7 flu seasons: against vaccine strains: 62.2-100%; against all influenza strains: 46.6-93.4%).",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "No data on co-administration with inactivated vaccines or the seasonal vaccine Fluenz Tetra®; avoid vaccination until 48 hours after the cessation of influenza antiviral therapy; administration of influenza antiviral agents within 2 weeks of vaccination may affect the response of the vaccine; co-administration with live vaccines (MMR, varicella, OPV) may be acceptable.",
+                "reactogenicity": "Very common: decreased appetite; nasal congestion/rhinorrhoea; malaise; common: pyrexia; myalgia; headache.",
+                "safety": "Very rare reports of Guillain-Barré Syndrome and exacerbation of symptoms of Leigh syndrome; in a study with the seasonal trivalent live attenuated influenza vaccine (T/LAIV), an increased incidence of medically significant wheezing was seen in children 1-2 yrs.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/efficacy data in <1 yrs.; no data in individuals with severe immunodeficiency; no data in individuals on salicylate therapy; vaccine has the potential for transmission to immunocompromised contacts (avoid close contact with severely immunocompromised individuals (e.g. bone marrow transplant recipients requiring isolation), whenever possible, for 1-2 weeks following vaccination and if contact is unavoidable, the potential risk of transmission of the influenza vaccine virus should be weighed against the risk of acquiring and transmitting wild-type influenza virus; no safety data in children with unrepaired craniofacial malformations; limited data in children with pulmonary diseases or chronic cardiovascular, metabolic or renal diseases."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.2 mL) contains 107.0±0.5 FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
+                "strainCoverage": "Influenza virus H5N1.",
+                "indication": "Active immunization for prophylaxis of influenza in an officially declared pandemic situation in individuals 1-17 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; eggs or egg proteins allergy (in a pandemic situation based on doctor’s recommendation); breastfeeding; individuals on salicylate therapy; immunodeficient individuals; severe asthma and active wheezing; use risk/benefit strategy in pregnancy; close contact with severe immunodeficient individuals.",
+                "dosing": "Nasal; 2 doses; each dose is 0.2 mL (0.1 mL per nostril); at least 4 weeks interval.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "Avoid using acetylsalicylic for 4 weeks after vaccination; avoid co-administration with influenza-specific antiviral medicines.",
+                "reactogenicity": "Very common: decreased appetite; runny or stuffy nose; weakness; common: fever; myalgia; headache.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No data in the label"
+            }
+        ],
+        "vaccineType": "single"
+    },
+    {
+        "vaccineId": 261,
+        "name": "MVA BN (Imvanex; JYNNEOS)®",
+        "pathogenId": [
+            26,
+            28
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 49
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "31/07/2013",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/imvanex",
+                "lastUpdated": "22/05/2024"
+            },
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "24/10/2019",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/jynneos",
+                "lastUpdated": "29/10/2023"
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "-",
+                "strainCoverage": "Smallpox, monkeypox, and vaccinia viruses.",
+                "indication": "Active immunization against smallpox, mpox, and disease caused by vaccinia virus in adults. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute severe febrile disease; acute infection; limited data in pregnancy and breast-feeding (use risk/benefits strategy).",
+                "dosing": "S.C. (preferably upper arm); adults previously not vaccinated against smallpox, monkeypox, or vaccinia viruses: 2 doses (0.5mL each), 0, >28days. \n Booster: limited data available, if necessary single dose in healthy adults and 2 doses in immunocompromised patients (0, >28 day).",
+                "immunogenicity": "Immunogenicity was assessed by ELISA and PNRT; percentage of seroresponders: 2 doses, 4 wks. Interval, in Vaccinia-naive individuals, 42 days f/u, 77.2-99.8%; 2 doses, 4 wks. Interval, in vaccinia-experienced individuals, 42 days f/u, 85.5-100%.",
+                "Efficacy": "Challenge study in NHP: protected NHP from severe disease, significant reduction in both mortality and morbidity (viral load, weight loss, number of pox lesions, etc.).",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": " No data on the concomitant use with other vaccines and Ig.; avoid co-administration with other vaccines.",
+                "reactogenicity": "Very common: headache, myalgia, nausea, fatigue, injection site pain, erythema, swelling, induration, and pruritus.",
+                "safety": "Higher frequency of injection site erythema and swelling, headache, myalgia, chills, nausea, and fatigue in atopic dermatitis patients; May cause flare-ups or worsening skin condition in atopic dermatitis patients.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/efficacy data in ˂18 yrs.; lower immune response in HIV-infected individuals; no data in other immunosuppressed individuals; dose intervals of less than 28 days should be avoided in immunosuppressed individuals.; authorization under exceptional circumstances; vial temperature should be 8-25°C before use."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.5mL) contains modified vaccinia Ankara-Bavarian Nordic live virus (0.5x108 to 3.95x108 Inf.U); produced in chick embryo cells; storage: freezer, -20°C /refrigerator; shelf life: up to 3 yrs. at -20°C, 4 weeks at 2-8°C.",
+                "strainCoverage": "Smallpox and monkeypox viruses.",
+                "indication": "Active immunization against smallpox and mpox in adults ≥ 18 years at high risk of infection. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity (administered if benefits > risk); limited data in pregnancy; no data in breastfeeding (administered if benefits > risk).",
+                "dosing": "2 doses (0.5mL each); 4-week interval; S.C.",
+                "immunogenicity": "Immunogenicity was assessed by PNRT; GMT in healthy smallpox-naive individuals, 18-42 yrs., after 2 doses, 2 wks. f/u was non-inferior to the single dose of ACAM2000.",
+                "Efficacy": "Challenge study in NHP: 80-100% reduction in mortality; VEy based on immunogenicity and animal challenge studies.",
+                "durationOfProtection": "No data on the concomitant use with other vaccines.",
+                "reactogenicity": "Vaccine-naive healthy adults: injection site pain (84.9%), redness (60.8%), swelling (51.6%), induration (45.4%), and itching (43.1%), muscle pain (42.8%), headache (34.8%), fatigue(30.4%), nausea (17.3%) and chills (10.4%); healthy adults previously vaccinated with smallpox vaccine: injection site redness (80.9%), pain (79.5%), induration (70.4%), swelling (67.2%), and itching (32.0%), fatigue (33.5%), headache (27.6%), and muscle pain (21.5%); similar reactogenicity in HIV-infected patients and adults with atopic dermatitis.",
+                "coAdministration": "No data on the concomitant use with other vaccines.",
+                "safety": "Among all studies, a causal relationship for 4 SAEs, all non-fatal could not be excluded (Crohn’s disease, sarcoidosis, extraocular muscle paresis, and throat tightness); tachycardia, palpitation, abnormal ECG, ST elevation, T abnormality, and T inversion in ECG",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/efficacy/effectiveness data in ˂18 yrs. and ≥ 65 yrs.; reach room temperature before use."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single"
+    },
+    {
+        "vaccineId": 262,
+        "name": "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains (Beijing Institute)®",
+        "pathogenId": [
+            31
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 65
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "15/02/2022",
+                "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-vero-cell-inactivated-sabin-strains",
+                "lastUpdated": "#"
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.5mL) contains IPV types 1/2/3; Sabin strains; 15/45/45 DU; each inoculated on Vero cells; storage: 2-8°C (protect from light); shelf life: 2 years.",
+                "strainCoverage": "Poliovirus (types 1,2,3).",
+                "indication": "Active immunization against poliomyelitis caused by poliovirus types 1, 2, and 3 in individuals ≥2 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; serious chronic disease; fever; acute phase of disease; immune deficiency states (postpone vaccination until the end of the treatment or to make sure the subject is well protected); caution in bleeding disorders, uncontrolled epilepsy, and other progressive neurological disorders.",
+                "dosing": "I.M; each dose is 0.5mL; 3 doses; 1st dose at 2 mo. of age; intervals of at least 4-6 weeks; booster: single dose at 18 mo. of age.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "The immune persistency study of this vaccine has not been conducted.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: fever; common: injection site pain, redness; agitation; vomiting; somnolence; eating disorder; diarrhea.",
+                "safety": "Convulsions (with or without fever).",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "-"
+            }
+        ],
+        "vaccineType": "single"
+    },
+    {
+        "vaccineId": 263,
+        "name": "TRIPVAC®",
+        "pathogenId": [
+            41,
+            35,
+            39
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "31/07/2014",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-6",
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "31/07/2014",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-6",
+                "lastUpdated": "#"
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.5mL) contains 25 Lf diphtheria toxoid, 5.5 Lf tetanus toxoid, and ≥ 4 IU inactivated Bordetella pertussis bacilli; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "Clostridium tetani, Corynebacterium diphtheriae, Bordetella pertussis.",
+                "indication": "Primary immunization of infants above 6 weeks against diphtheria, tetanus, and whooping cough diseases.",
+                "contraindication": "Hypersensitivity; any evolving neurological conditions; coagulation disorder; acute disease; avoid vaccination if encephalopathy occurs after a previous dose; use risk/benefits strategy if fever ≥40.5°C within 48 hours or HHE occurred within 48 hours or persistent inconsolable crying lasting ≥3 hours within 48 hours or seizure occurred within 3 days after a previous pertussis-containing vaccine.",
+                "dosing": "I.M.; 3 doses (0.5mL each); at least 4-week intervals; first dose should be administered at approximately 6 weeks of age.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "Can be co-administered with BCG, measles, OPV, IPV, HBV, Hib, and yellow fever vaccines, and vitamin A supplementation; caution in co-administration with anticoagulant medications.",
+                "reactogenicity": "Fever, induration, chills, irritability, persistent crying, injection site pain, swelling, tenderness and erythema.",
+                "safety": "Rare cases of fever >40°C, excessive screaming, polyradiculoneuropathies, acute encephalopathy (primary seizures), HHE and FC without any permanent consequences were reported.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "HIV patients should be immunized according to standard schedules; not recommended for ≥7 years."
+            }
+        ],
+        "vaccineType": "combination"
+    },
+    {
+        "vaccineId": 264,
+        "name": "JEEV (3µg)®",
+        "pathogenId": [
+            23
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "03/08/2016",
+                "source": "https://extranet.who.int/prequal/vaccines/p/jeevr-3mg",
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "03/08/2016",
+                "source": "https://extranet.who.int/prequal/vaccines/p/jeevr-3mg-0",
+                "lastUpdated": "#"
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.5mL) contains 3µg JEV strain SA14-14-2; produced in Vero cells; storage: 2-8°C; shelf life: 3 years for single dose presentation, 2 years for 5-dose presentation.",
+                "strainCoverage": "JEV strain SA14-14-2; no protection against encephalitis caused by other microorganisms. ",
+                "indication": "Active immunization against JE in children 1 - <3 years who are at risk of exposure*; to be used based on official recommendations. ",
+                "contraindication": "Hypersensitivity; acute severe febrile conditions; bleeding disorders; pregnancy; no data in breastfeeding. ",
+                "dosing": "Each dose is 0.5 mL; I.M; 2 doses; days 0 and 28.",
+                "immunogenicity": "The vaccine immunogenicity was non-inferior to another licensed inactivated JE vaccine.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "No data available in the label.",
+                "reactogenicity": "Fever, induration, chills, irritability, persistent crying, injection site pain, swelling, tenderness and erythema.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "Primary immunization should be completed at least 1 week before potential exposure to JEV; a mixed regimen is not recommended."
+            }
+        ],
+        "vaccineType": "single"
+    },
+    {
+        "vaccineId": 264,
+        "name": "JEEV (3µg)®",
+        "pathogenId": [
+            23
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "12/07/2013",
+                "source": "https://extranet.who.int/prequal/vaccines/p/jeevr-6mg",
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "12/07/2013",
+                "source": "https://extranet.who.int/prequal/vaccines/p/jeevr-6mg-0",
+                "lastUpdated": "#"
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose (0.5mL) contains 6 µg  JEV strain SA14-14-2; produced in Vero cells; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "JEV strain SA14-14-2; no protection against encephalitis caused by other microorganisms. ",
+                "indication": "Active immunization against JE in individuals 3-49 years who are at risk of exposure*; to be used based on official recommendations. ",
+                "contraindication": "Hypersensitivity; acute severe febrile conditions; bleeding disorders; pregnancy; no data in breastfeeding. ",
+                "dosing": "Each dose is 0.5 mL; I.M; 2 doses; days 0 and 28. Booster: in individuals ≥18 yrs.; single dose 12-14 mo. after primary immunization before potential re-exposure to JEV; persons at continuous risk for acquiring JE* should receive a booster dose at month 12 after primary immunization. ",
+                "immunogenicity": "Percentage of seroresponders (PRNT): 18-49 yrs.: 99.07% at day 56 (JEEV® (6µg) was non-inferior to Ixiaro®); 3- <18 yrs.: 95.33% at day 56.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "No data available in the label.",
+                "reactogenicity": "Injection site pain (8.5%), tenderness (4.6%), swelling (3.2%), and erythema (2.6%); decreased appetite (1.3%); somnolence (1.6%); rash (1.3%); pyrexia (11.1%).",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "Primary immunization should be completed at least 1 week before potential exposure to JEV; a mixed regimen is not recommended."
+            }
+        ],
+        "vaccineType": "single"
+    },
+    {
+        "vaccineId": 265,
+        "name": "Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2®",
+        "pathogenId": [
+            31
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ],
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "07/12/2018",
+                "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-novel-oral-nopv-type-2-0",
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "07/12/2018",
+                "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-novel-oral-nopv-type-2-1",
+                "lastUpdated": "#"
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
+                "composition": "1 dose contains poliovirus type 2; storage: -20°C ± 3 °C/2-8°C; shelf life: 2 years at -20°C ± 3 °C/up to 6 months in 2-8°C.",
+                "strainCoverage": "Poliovirus type 2.",
+                "indication": "No data in the label.",
+                "contraindication": "No data in the label.",
+                "dosing": "Oral",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "No data available in the label.",
+                "reactogenicity": "No data in the label.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "No data in the label.",
+                "others": "-"
+            }
+        ],
+        "vaccineType": "single"
+    },
+    {
+        "vaccineId": 266,
+        "name": "ComBE Five (Liquid)®",
+        "pathogenId": [
+            39,
+            35,
+            41,
+            9,
+            40
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 16
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "1 dose (0.5mL) contains 25 Lf diphtheria toxoid, 5.5 Lf tetanus toxoid, ≥4 IU Bordetella pertussis (whole cell), 12.5µg HBsAg (produced in yeast cells by rDNA technology), and 11µg Hib capsular polysaccharide; storage: 2-8°C; shelf life: 30 months.",
+                "strainCoverage": "Clostridium tetani, Corynebacterium diphtheriae, Bordetella pertussis, hepatitis B virus, and Haemophilus influenzae type b.",
+                "indication": "Active immunization against diphtheria, tetanus, pertussis, hepatitis B, and diseases caused by Hib in individuals ≥6 weeks. To be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute severe febrile illness; use risk/benefits strategy if fever ≥40.5°C within 48 hours or HHE occurred within 48 hours or persistent inconsolable crying lasting ≥3 hours within 48 hours or seizure occurred within 3 days after a previous pertussis-containing vaccine; fits or abnormal cerebral signs in the newborn period or other serious neurological abnormalities are contraindications to the pertussis component for the first dose (DT should be given instead of DTP and hepatitis B and Hib vaccines should be given separately); caution in bleeding disorders and patients on anticoagulant therapy; no data in pregnancy and breastfeeding.",
+                "dosing": "I.M.; 3 doses (0.5mL each) within the first 6 mo. of life (6-10-14 weeks of age; at least 4-week intervals).",
+                "immunogenicity": "Percentage of seroresponders: 6-8 weeks old healthy infants: 98.25% against diphtheria, 100% against tetanus, 96.49% against pertussis, 94.74% against hepatitis B, and 89.47% against Hib.",
+                "Efficacy": "No efficacy data available in the label; immunogenicity as above.",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "No data available in the label.",
+                "reactogenicity": "Injection site pain (13%), injection site swelling (4%), fever (28%), injection site tenderness, and redness, irritability, screaming.",
+                "safety": "HHE, febrile convulsion, and a small increased risk of acute encephalopathy (primarily seizures) with no scientific evidence of permanent consequences were reported.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "No indication for treatment of diphtheria, tetanus, pertussis, hepatitis B, and H. influenzae type b infection; the vaccine will not harm individuals currently or previously infected with the hepatitis B virus; history of convulsion in children or a family history of convulsion, SIDS, adverse event following DTwP-rHepB-Hib vaccination, or HIV infection are not contraindications."
+            }
+        ],
+        "vaccineType": "combination",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "18/05/2012",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-4",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "18/05/2012",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-10",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "18/05/2012",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-9",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "18/05/2012",
+                "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-5",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 267,
+        "name": "Influenza Vaccine (Split Virion), Inactivated®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 36
+            },
+            {
+                "manufacturerId": 39
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Victoria/2570/2019 (H1N1)pdm09-like virus, A/Darwin/9/2021 (H3N2)-like virus and B/Austria/1359417/2021 (B/Victoria lineage)-like virus strains); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A virus subtypes and type B contained in the vaccine in vulnerable people and high-risk populations for influenza complications, such as ≥9 yrs., weak people in influenza epidemic areas; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; acute disease; severe chronic disease; acute attack of a chronic disease; cold and fever; any nervous system reaction after prior immunization; individuals with uncontrolled epilepsy or other progressive neurologic disease; individuals with history of Guillain-Barre Syndrome; caution in individuals with history or family history of convulsion and chronic disease and allergic diathesis; no data in pregnancy (WHO recommended to use in pregnancy).",
+                "dosing": "I.M; each dose is 0.5 mL; ≥9 yrs.: single dose; before or during the flu epidemic season.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No efficacy data available in the label",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label; should be differed at least 1 mo. after immunoglobulin administration.",
+                "reactogenicity": "injection site pain, tenderness, redness, swelling, pruritus; transient fever.",
+                "safety": "Neuralgia; paresthesia; convulsion; transient thrombocytopenia; encephalomyelitis; neuritis; Guillain-Barre Syndrome.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "-"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "20/10/2023",
+                "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated-0",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 268,
+        "name": "Japanese Encephalitis Vaccine live (SA14-14-2)®",
+        "pathogenId": [
+            23
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 47
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "1 dose (0.5mL) contains 5.4 lg PFU JEV strain SA14-14-2; grown on monolayers of primary hamster kidney cell cultures; storage: 2-8°C; shelf life: 2 yreas.",
+                "strainCoverage": "JEV strain SA14-14-2.",
+                "indication": "Active immunization against JE in healthy children ≥8 months and children and adults who intended to enter an endemic area; to be used based on official recommendations. ",
+                "contraindication": "Hypersensitivity; acute disease; severe chronic disease; chronic disease at the stage of acute attack; fever; encephalopathy; progressive neurological disease; uncontrolled epilepsy; pregnancy (avoid pregnancy for at least 3 mo. after vaccination); immunocompromised individuals; breastfeeding; caution in individuals with history or family history of convulsion, history of chronic disease, or allergic diathesis. ",
+                "dosing": "Each dose is 0.5mL; S.C; 1 dose; in some countries for programmatic purposes a booster dose at 2 yrs. old is recommended.",
+                "immunogenicity": "No data available in the label",
+                "Efficacy": "No efficacy data available in the label",
+                "durationOfProtection": "At least 5 years.",
+                "coAdministration": "Avoid vaccination at least 3 mo. after Ig transfusion; at least 1-month interval with other live attenuated vaccines.",
+                "reactogenicity": "Injection site pain, and tenderness; fever; sporadic skin rashes. ",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection",
+                "others": "Not recommended in the epidemic seasons of JE."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "08/10/2013",
+                "source": "https://extranet.who.int/prequal/vaccines/p/japanese-encephalitis-vaccine-live-sa14-14-2",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 269,
+        "name": "Influenza A (H1N1) 2009 Monovalent Vaccine®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 37
+            },
+            {
+                "manufacturerId": 40
+            },
+            {
+                "manufacturerId": 8
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "15/09/2009",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-csl-limited",
+                "lastUpdated": "10/11/2009"
+            }
+        ]
+    },
+    {
+        "vaccineId": 270,
+        "name": "Mresvia®",
+        "pathogenId": [
+            1
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "31/05/2024",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/mresvia",
+                "lastUpdated": "14/06/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 271,
+        "name": "Mresvia®",
+        "pathogenId": [
+            1
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 9
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "31/05/2024",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/mresvia",
+                "lastUpdated": "14/06/2024"
+            }
+        ]
     }
 ]

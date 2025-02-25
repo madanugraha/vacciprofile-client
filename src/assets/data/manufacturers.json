@@ -55,46 +55,6 @@
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 2,
-        "name": "Johnson & Johnson",
-        "history": "Johnson & Johnson (J&J), founded in 1886 by Robert Wood Johnson and his brothers James Wood Johnson and Edward Mead Johnson, is one of the world's largest and most influential healthcare companies. Headquartered in New Brunswick, New Jersey, the company began as a manufacturer of sterile surgical supplies, inspired by the need to reduce infections in medical procedures. J&J introduced innovative products like ready-to-use surgical dressings and the first mass-produced antiseptic bandages, which revolutionized healthcare practices. Over time, the company expanded its product lines to include consumer health goods, pharmaceuticals, and medical devices. Iconic products such as Johnson’s Baby Powder and Band-Aid adhesive bandages cemented its reputation in consumer health. Today, J&J operates globally, employing over 150,000 people and remaining at the forefront of healthcare innovation, focusing on research, sustainability, and improving global health outcomes.",
-        "description": "Johnson & Johnson engages in research and development, manufacture and sale of a broad range of products in the health care field. They are organized into three business segments: Consumer Health, Pharmaceutical and Medical Devices. With products sold in over 175 countries, Johnson & Johnson’s key pharmaceutical products include REMICADE®, SIMPONI®, SIMPONI ARIA®, STELARA®, DARZALEX®, IMBRUVICA®, etc. Johnson & Johnson also produces a COVID-19 vaccine: Janssen COVID-19 Vaccine.",
-        "details": {
-            "founded": "January 1886",
-            "headquarters": "Johnson and Johnson Plaza, New Brunswick, New Jersey, U.S.",
-            "ceo": "Joaquin Duato",
-            "revenue": "US $85.16 Billion",
-            "operatingIncome": "US $21.21 Billion",
-            "netIncome": "US $35.15 Billion",
-            "totalAssets": "US $167.6 Billion",
-            "totalEquity": "US $68.78 Billion",
-            "numberOfEmployees": "134,400",
-            "sources": [
-                {
-                    "lastUpdated": "2023",
-                    "title": "Johnson & Johnson From Wikipedia, the free encyclopedia",
-                    "link": "https://en.wikipedia.org/wiki/Johnson_%26_Johnson"
-                },
-                {
-                    "lastUpdated": "2021",
-                    "title": "Johnson & Johnson Financial Statements 2005-2021",
-                    "link": "https://www.macrotrends.net/stocks/charts/JNJ/johnson-johnson/financial-statements"
-                },
-                {
-                    "lastUpdated": "2020",
-                    "title": "Johnson & Johnson Annual Report 2020",
-                    "link": "https://www.investor.jnj.com/annual-meeting-materials/2020-annual-report/"
-                }
-            ]
-        },
-        "vaccines": [
-            {
-                "vaccineId": 9
-            }
-        ],
-        "lastUpdated": "2024-Aug"
-    },
-    {
         "manufacturerId": 5,
         "name": "BioNTech",
         "history": "BioNTech SE, founded in 2008 by scientists Uğur Şahin, Özlem Türeci, and Christoph Huber, is a German biotechnology company headquartered in Mainz, Germany. The company specializes in the development of immunotherapies, particularly mRNA-based therapeutics, for the treatment of cancer and infectious diseases. BioNTech initially focused on personalized cancer vaccines, leveraging its expertise in messenger RNA (mRNA) technology. However, the company gained global recognition during the COVID-19 pandemic for its rapid development of the first approved mRNA vaccine, BNT162b2, in collaboration with Pfizer. This vaccine played a pivotal role in combating the pandemic, marking a major breakthrough in biotechnology and mRNA therapeutics. BioNTech continues to innovate in oncology, infectious diseases, and rare genetic conditions, building on its vision of using cutting-edge science to improve global health.",
@@ -1765,67 +1725,6 @@
             }
         ],
         "lastUpdated": "2025-Jan"
-    },
-    {
-        "manufacturerId": 42,
-        "name": "Instituto Butantan",
-        "description": "A century-old Brazilian institution focused on the research and development of biological medicines for public health. It is the largest immunobiologicals and biopharmaceuticals producer in Latin America and one of the largest in the world.",
-        "history": "Founded in 1901, Instituto Butantan has a long history of producing serums and vaccines in Brazil. It is affiliated with the São Paulo State Secretariat of Health and is known for its significant contributions to public health through the development of antivenoms and vaccines against diseases such as rabies, tetanus, and influenza.",
-        "details": {
-            "founded": "1901",
-            "headquarters": "São Paulo, Brazil",
-            "ceo": "Not specified",
-            "revenue": "Not publicly disclosed",
-            "operatingIncome": "Not publicly disclosed",
-            "netIncome": "Not publicly disclosed",
-            "totalAssets": "Not publicly disclosed",
-            "totalEquity": "Not publicly disclosed",
-            "numberOfEmployees": "Not specified",
-            "sources": [
-                {
-                    "lastUpdated": "2024",
-                    "title": "Instituto Butantan - Wikipedia",
-                    "link": "https://en.wikipedia.org/wiki/Instituto_Butantan"
-                },
-                {
-                    "lastUpdated": "2024",
-                    "title": "Instituto Butantan - DCVMN",
-                    "link": "https://dcvmn.org/member/butantan/"
-                },
-                {
-                    "lastUpdated": "2023",
-                    "title": "Butantan Institute | Uniting to Combat NTDs partner",
-                    "link": "https://unitingtocombatntds.org/en/about-us/partners/butantan-institute/"
-                }
-            ]
-        },
-        "vaccines": [
-            {
-                "name": "Influenza Vaccine",
-                "description": "Manufactures 100% of the influenza vaccine doses used by the Brazilian Ministry of Health."
-            },
-            {
-                "name": "Coronavac (COVID-19 Vaccine)",
-                "description": "Produced in partnership with Sinovac Life Science Pharmaceuticals."
-            },
-            {
-                "name": "Hepatitis A and B Vaccines",
-                "description": "Part of the vaccines supplied to the Ministry of Health."
-            },
-            {
-                "name": "Rabies Vaccine",
-                "description": "One of the vaccines produced by Instituto Butantan."
-            },
-            {
-                "name": "DTaP Vaccine",
-                "description": "Part of the vaccines supplied to the Ministry of Health."
-            },
-            {
-                "name": "HPV Vaccine",
-                "description": "Part of the vaccines supplied to the Ministry of Health."
-            }
-        ],
-        "lastUpdated": "2024-Nov"
     },
     {
         "manufacturerId": 43,
