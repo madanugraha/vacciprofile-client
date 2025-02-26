@@ -38,6 +38,10 @@ export const getCandidateVaccinesByPathogenName = (pathogen) => {
     return vaccines.filter((x) => x.pathogenName === pathogen)
 }
 
+export const getCandidateVaccineByManufactureName = (manufacture) => {
+    return vaccines.filter((x) => x.manufacturer.includes(manufacture))
+}
+
 export const getVaccineCandidatePlatformsUniqueByPathogenName = (pathogen) => {
     const f = vaccines.filter((x) => x.pathogenName === pathogen && !x.platform.includes('No data'));
     if (f.length > 0) {

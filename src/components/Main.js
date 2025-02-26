@@ -964,13 +964,14 @@ const Main = ({
                                     />
                                     : ``}
 
-                                {activeTab === "Manufacturer" && getPipelineVaccinesByManufacturer().length > 0
+                                {/* {activeTab === "Manufacturer" && getPipelineVaccinesByManufacturer().length > 0
                                     ?
                                     <PipelineVaccineListTable
                                         activeTab={activeTab}
                                         selectedPathogen={selectedPathogen}
                                         selectedVaccine={selectedVaccine}
                                         selectedLicenser={selectedLicenser}
+                                        selectedManufacturer={selectedManufacturer}
                                         handleSelectVaccine={handleSelectVaccine}
                                         handleSelectPathogen={handleSelectPathogen}
                                         handleSelectLicenser={handleSelectLicenser}
@@ -980,7 +981,7 @@ const Main = ({
                                         getLicenserById={getLicenserById}
                                         italizeScientificNames={italizeScientificNames}
                                     />
-                                    : ``}
+                                    : ``} */}
                             </div>
                             <Modal
                                 keepMounted

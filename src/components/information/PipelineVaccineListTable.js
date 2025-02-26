@@ -1,4 +1,5 @@
 import React from 'react';
+import { getCandidateVaccineByManufactureName } from '../../utils/array';
 
 /**
  * PipelineVaccineListTable Component
@@ -44,6 +45,7 @@ const PipelineVaccineListTable = ({
     getPipelineVaccinesByManufacturer,
     getPathogenById,
     getLicenserById,
+    selectedManufacturer,
     italizeScientificNames
 }) => {
     return <div className="accordion mt-1" id="accordianPipelineVaccineList">
@@ -59,15 +61,14 @@ const PipelineVaccineListTable = ({
                         <table className='table w-100 m-0'>
                             <thead>
                                 <tr>
-                                    <th>Vaccine Brand Name</th>
-                                    <th>Pathogen</th>
-                                    <th>Status</th>
-                                    <th>Licensing Authorities</th>
-                                    <th>Miletones</th>
+                                    <th className='text-center'>Vaccine Brand Name</th>
+                                    <th className='text-center'>Pathogen</th>
+                                    <th className='text-center'>Platform</th>
+                                    <th className='text-center'>Clinical Phase</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {getPipelineVaccinesByManufacturer().map((vaccine, key) => <tr key={key}>
+                                {getCandidateVaccineByManufactureName(selectedManufacturer.name).map((vaccine, key) => <tr key={key}>
                                     <td className='vaccine-cell'>
                                         <span
                                             className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `disabled`}`}
@@ -79,37 +80,13 @@ const PipelineVaccineListTable = ({
                                         </span>
                                     </td>
                                     <td className='pathogen-cell d-flex flex-row'>
-                                        {vaccine.pathogen.length > 0 ? vaccine.pathogen.map((pathogenId) => {
-                                            return (
-                                                <span
-                                                    className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenById(pathogenId).name ? `selected` : `disabled`}`}
-                                                    onClick={() => {
-                                                        // TODO Pipeline Vaccine
-                                                        // handleSelectPathogen(getPathogenById(pathogenId).name)
-                                                    }}>{getPathogenById(pathogenId)?.name ? italizeScientificNames(getPathogenById(pathogenId)?.name) : "-"},
-                                                </span>
-                                            )
-                                        }) : '-'}
+                                        <span>{vaccine.pathogenName}</span>
                                     </td>
                                     <td className='status-cell'>
-                                        <span>{vaccine.status}</span>
+                                        <span>{vaccine.platform}</span>
                                     </td>
                                     <td className='licenser-cell'>
-                                        {vaccine.licensing_authority.map((l, index) => {
-                                            const licenser = getLicenserById(l);
-                                            if (licenser === null) return ""
-                                            return (
-                                                <a href={licenser.website} className='selectable' target="_blank" rel="noopener noreferrer">
-                                                    {licenser.acronym}{index < vaccine.licensing_authority.length - 1 ? ', ' : ``}
-                                                </a>
-                                            );
-                                        })}
-                                    </td>
-                                    <td className='milestones-cell'>
-                                        <span>-</span>
-                                        {/* <div className='d-flex flex-col'>
-                                            <span><button>Open Detail</button></span>
-                                        </div> */}
+                                        {vaccine.clinicalPhase}
                                     </td>
                                 </tr>)}
                             </tbody>

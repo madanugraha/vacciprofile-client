@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getLicensingDateByVaccineNameAndType, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
+import { getAllVaccineByPathogenId, getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getLicensingDateByVaccineNameAndType, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Vaccine from './Vaccine';
@@ -77,6 +77,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Safety', alt: 'safety' },
         { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
         { title: 'Others', alt: 'others' },
+        { title: 'Vaccine Type', alt: 'vaccineType' },
         { title: 'Approval Date', alt: 'approvalDate' },
         { title: 'Last Updated', alt: 'lastUpdated' },
         { title: 'Source', alt: 'source' },
@@ -98,8 +99,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
 
     const [licenserFieldsVaccine, setLicenserFieldsVaccine] = useState([]);
     const [selectedFilterVaccine, setSelectedFilterVaccine] = useState([]);
-    const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1], tableFields[14], tableFields[15], tableFields[16]]);
-    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]]);
+    const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1], tableFields[14], tableFields[15], tableFields[16], tableFields[17]]);
+    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16], tableFields[17]]);
     const [vaccineFieldsState, setVaccineFieldsState] = useState([]);
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
 
@@ -112,7 +113,10 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
 
     const [vaccineErrorMessage, setVaccineErrorMessage] = useState("");
     const [tableFieldsErrorMessage, setTableFieldsErrorMessage] = useState("");
-    const [viewSinglePathogenVaccine, setViewSinglePathogenVaccine] = useState(true);
+    const [viewAllVaccines, setViewAllVaccines] = useState(true);
+    const [viewSinglePathogenVaccine, setViewSinglePathogenVaccine] = useState(false);
+    const [viewCombinationVaccine, setViewCombinationVaccine] = useState(false);
+
 
     // custom filters
     const [licensedOnly, setLicensedOnly] = useState(true);
@@ -201,7 +205,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         setCompareActive(false);
         setLicenserFieldsVaccine([]);
         setSelectedFilterVaccine([]);
-        const vaccineFields = getVaccinesByPathogenId(selectedPathogen.pathogenId) && getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((x) => {
+        const vaccineFields = getAllVaccineByPathogenId(selectedPathogen.pathogenId) && getAllVaccineByPathogenId(selectedPathogen.pathogenId).length > 0 ? getAllVaccineByPathogenId(selectedPathogen.pathogenId).map((x) => {
             return {
                 ...x,
                 title: x.name,
@@ -212,6 +216,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                 checked: false
             }
         }) : [];
+        console.log(vaccineFields);
         setVaccineFieldsState(vaccineFields);
     }, [selectedPathogen]);
 
@@ -220,25 +225,63 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         setCompareActive(false);
         setLicenserFieldsVaccine([]);
         setSelectedFilterVaccine([]);
-        const vaccineFields = (viewSinglePathogenVaccine ? getVaccinesByPathogenId(selectedPathogen.pathogenId) : getCombinationVaccineByPathogenId(selectedPathogen.pathogenId)) && (viewSinglePathogenVaccine ? getVaccinesByPathogenId(selectedPathogen.pathogenId) : getCombinationVaccineByPathogenId(selectedPathogen.pathogenId)).length > 0 ? (viewSinglePathogenVaccine ? getVaccinesByPathogenId(selectedPathogen.pathogenId) : getCombinationVaccineByPathogenId(selectedPathogen.pathogenId)).map((x) => {
-            return {
-                ...x,
-                title: x.name,
-                alt: x.name,
-                licenser: [...getAvailableLicensingByVaccineName(x.name, [])],
-                hasDuplicate: false,
-                errorMessage: "",
-                checked: false
+        if (viewAllVaccines) {
+            if (getAllVaccineByPathogenId(selectedPathogen.pathogenId) && getAllVaccineByPathogenId(selectedPathogen.pathogenId).length > 0) {
+                const f = getAllVaccineByPathogenId(selectedPathogen.pathogenId).map((x) => {
+                    return {
+                        ...x,
+                        title: x.name,
+                        alt: x.name,
+                        licenser: [...getAvailableLicensingByVaccineName(x.name, [])],
+                        hasDuplicate: false,
+                        errorMessage: "",
+                        checked: x.checked
+                    }
+                })
+                setVaccineFieldsState(f);
             }
-        }) : [];
-        setVaccineFieldsState(vaccineFields);
-    }, [viewSinglePathogenVaccine, selectedPathogen]);
+        };
+
+        if (viewSinglePathogenVaccine) {
+            if (getVaccinesByPathogenId(selectedPathogen.pathogenId) && getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0) {
+                const f = getVaccinesByPathogenId(selectedPathogen.pathogenId).map((x) => {
+                    return {
+                        ...x,
+                        title: x.name,
+                        alt: x.name,
+                        licenser: [...getAvailableLicensingByVaccineName(x.name, [])],
+                        hasDuplicate: false,
+                        errorMessage: "",
+                        checked: x.checked
+                    }
+                });
+                setVaccineFieldsState(f);
+            }
+        }
+
+        if (viewCombinationVaccine) {
+            if (getCombinationVaccineByPathogenId(selectedPathogen.pathogenId) && getCombinationVaccineByPathogenId(selectedPathogen.pathogenId).length > 0) {
+                const f = getCombinationVaccineByPathogenId(selectedPathogen.pathogenId).map((x) => {
+                    return {
+                        ...x,
+                        title: x.name,
+                        alt: x.name,
+                        licenser: [...getAvailableLicensingByVaccineName(x.name, [])],
+                        hasDuplicate: false,
+                        errorMessage: "",
+                        checked: x.checked
+                    }
+                })
+                setVaccineFieldsState(f);
+            }
+        }
+    }, [viewSinglePathogenVaccine, viewCombinationVaccine, viewAllVaccines, selectedPathogen]);
 
     useEffect(() => {
         if (!open) {
             setLicenserFieldsVaccine([]);
             setSelectedFilterVaccine([]);
-            const vaccineFields = getVaccinesByPathogenId(selectedPathogen.pathogenId) && getVaccinesByPathogenId(selectedPathogen.pathogenId).length > 0 ? getVaccinesByPathogenId(selectedPathogen.pathogenId).map((x) => {
+            const vaccineFields = getAllVaccineByPathogenId(selectedPathogen.pathogenId) && getAllVaccineByPathogenId(selectedPathogen.pathogenId).length > 0 ? getAllVaccineByPathogenId(selectedPathogen.pathogenId).map((x) => {
                 return {
                     ...x,
                     title: x.name,
@@ -493,7 +536,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         if (allFactorShows) {
             setSelectedFilterTableFields(tableFields);
         } else {
-            setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]])
+            setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16], tableFields[17]])
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
 
@@ -558,23 +601,91 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                 <div className="accordion-body pb-1 px-0 pt-0">
                                     <div>
                                         <div className='mt-4' style={{ paddingLeft: 10 }}>
+                                            <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                <Checkbox checked={viewAllVaccines} onChange={((e, checked) => {
+                                                    setViewAllVaccines(true);
+                                                    setViewSinglePathogenVaccine(false);
+                                                    setViewCombinationVaccine(false);
+                                                    // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                                })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Single & Combination Vaccine"}</span>` }}></div>
+                                            </div>
                                             <div className='d-inline-flex justify-content-between w-100' style={{ marginBottom: 50 }}>
                                                 <div className='d-inline-flex w-100'>
                                                     <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                        <Checkbox checked={viewSinglePathogenVaccine === true} onChange={((e, checked) => {
-                                                            setViewSinglePathogenVaccine(true)
+                                                        <Checkbox checked={viewSinglePathogenVaccine} onChange={((e, checked) => {
+                                                            setViewSinglePathogenVaccine(true);
+                                                            setViewAllVaccines(false);
+                                                            setViewCombinationVaccine(false);
                                                             // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Single Pathogen Vaccines"}</span>` }}></div>
                                                     </div>
                                                     <div className='d-inline-flex' style={{ alignItems: 'center', marginLeft: 20 }}>
-                                                        <Checkbox checked={!viewSinglePathogenVaccine} onChange={((e, checked) => {
-                                                            setViewSinglePathogenVaccine(false)
+                                                        <Checkbox checked={viewCombinationVaccine} onChange={((e, checked) => {
+                                                            setViewCombinationVaccine(true)
+                                                            setViewAllVaccines(false);
+                                                            setViewSinglePathogenVaccine(false);
                                                             // handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Combination Vaccines"}</span>` }}></div>
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div className='d-inline-flex justify-content-between w-100'>
+                                                {
+                                                    viewAllVaccines ? (
+                                                        <table>
+                                                            <tr>
+                                                                <td colSpan={4} style={{ fontWeight: 'bold' }}>Single Pathogen & Combination Vaccines</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
+                                                                <td style={{ fontWeight: 'bold' }}>Vaccine Type</td>
+                                                                <td style={{ fontWeight: 'bold' }} colSpan={3}>Licensed Authority</td>
+                                                            </tr>
+                                                            {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
+                                                                return (
+                                                                    <tr>
+                                                                        <td>
+                                                                            <li key={Math.random() * 999} onClick={() => {
+                                                                                // setSelectedVaccine(vaccine)
+                                                                                // setOpen(true)
+                                                                            }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
+                                                                                <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                        handleCheckBox(vaccine, false);
+                                                                                    })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </td>
+                                                                        <td style={{ fontWeight: 'bold' }}>{vaccine.vaccineType}</td>
+                                                                        <td colSpan={3}>
+                                                                            {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
+                                                                                return (
+
+                                                                                    <div className='d-inline-flex' style={{ alignItems: 'center' }}>
+                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                            handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
+                                                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
+                                                                                    </div>
+
+                                                                                )
+                                                                            })}
+                                                                        </td>
+                                                                    </tr>
+                                                                )
+                                                            }) : (
+                                                                <tr>
+                                                                    <td colSpan={4}>
+                                                                        <div className='flex flex-row mb-2'>
+                                                                            &#8226;{" "}
+                                                                            <span className='mt-2'>No Data Found</span>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            )}
+                                                        </table>
+                                                    ) : null
+                                                }
                                                 {
                                                     viewSinglePathogenVaccine ? (
                                                         <table>
@@ -627,7 +738,11 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 </tr>
                                                             )}
                                                         </table>
-                                                    ) : (
+                                                    ) : null
+                                                }
+
+                                                {
+                                                    viewCombinationVaccine ? (
                                                         <table>
                                                             <tr>
                                                                 <td colSpan={4} style={{ fontWeight: 'bold' }}>Combination Vaccines</td>
@@ -676,7 +791,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 </tr>
                                                             )}
                                                         </table>
-                                                    )
+                                                    ) : null
                                                 }
                                                 <div style={{ marginRight: 10 }}>
                                                     <Button style={{ marginLeft: 10 }} disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
@@ -737,6 +852,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                     const checkForApprovalDate = newValue.some((item) => item.title === "Approval Date");
                                                                                     const checkForLastUpdated = newValue.some((item) => item.title === "Last Updated");
                                                                                     const checkForSource = newValue.some((item) => item.title === "Source");
+                                                                                    const checkForVaccineType = newValue.some((item) => item.title === "Vaccine Type");
                                                                                     if (!checkForType) {
                                                                                         setTableFieldsErrorMessage("Type cannot be removed")
                                                                                         setDuplicateTableFieldsError(true);
@@ -762,6 +878,11 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                         setDuplicateTableFieldsError(true);
                                                                                         return;
                                                                                     }
+                                                                                    if (!checkForVaccineType) {
+                                                                                        setTableFieldsErrorMessage("Vaccine Type cannot be removed")
+                                                                                        setDuplicateTableFieldsError(true);
+                                                                                        return;
+                                                                                    };
                                                                                     setDuplicateTableFieldsError(false);
                                                                                     setSelectedFilterTableFields(newValue);
                                                                                 }}
@@ -857,6 +978,12 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                 const checkForApprovalDate = newValue.some((item) => item.title === "Approval Date");
                                                 const checkForLastUpdated = newValue.some((item) => item.title === "Last Updated");
                                                 const checkForSource = newValue.some((item) => item.title === "Source");
+                                                const checkForVaccineType = newValue.some((item) => item.title === "Vaccine Type");
+                                                if (!checkForVaccineType) {
+                                                    setTableFieldsErrorMessage("Vaccine Type cannot be removed")
+                                                    setDuplicateTableFieldsError(true);
+                                                    return;
+                                                }
                                                 if (!checkForType) {
                                                     setTableFieldsErrorMessage("Type cannot be removed")
                                                     setDuplicateTableFieldsError(true);
@@ -958,7 +1085,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                         <tbody>
                                             {selectedFilterTableFields.map((field, idx) => {
                                                 const key = field.alt;
-
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
@@ -968,16 +1094,15 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
                                                                     return data.filter((x) => x.checked).map((vaccine) => {
                                                                         return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser, licenserIdx) => {
-
                                                                             const conditionedFirstRow = idx === 0 ? {
                                                                                 background: "black",
                                                                                 color: "white"
-                                                                            } : {}
+                                                                            } : {};
                                                                             return (
                                                                                 <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>
 
                                                                                     <div className='d-inline-flex justify-content-between w-100'>
-                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
+                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : key === "vaccineType" ? vaccine.vaccineType : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
                                                                                     </div>
                                                                                 </td>
@@ -986,60 +1111,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                     })
                                                                 })
                                                             }
-
-                                                            {/** ONE */}
-                                                            {/* {
-                                                                vaccineOne && vaccineOne.licenser.length > 0 && vaccineOne.licenser.map((licenser, idx) => {
-                                                                    return (
-                                                                        <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccineOne.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineOne.name)}</td>
-                                                                    )
-                                                                })
-                                                            } */}
-
-                                                            {/** TWO */}
-                                                            {/* {
-                                                                vaccineTwo && vaccineTwo.licenser.length > 0 && vaccineTwo.licenser.map((licenser, idx) => {
-                                                                    return (
-                                                                        <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccineTwo.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineTwo.name)}</td>
-                                                                    )
-                                                                })
-                                                            } */}
-
-                                                            {/** THREE */}
-                                                            {/* {
-                                                                vaccineThree && vaccineThree.licenser.length > 0 && vaccineThree.licenser.map((licenser, idx) => {
-                                                                    return (
-                                                                        <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccineThree.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineThree.name)}</td>
-                                                                    )
-                                                                })
-                                                            } */}
-
-                                                            {/** FOUR */}
-                                                            {/* {
-                                                                vaccineFour && vaccineFour.licenser.length > 0 && vaccineFour.licenser.map((licenser, idx) => {
-                                                                    return (
-                                                                        <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccineFour.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineFour.name)}</td>
-                                                                    )
-                                                                })
-                                                            } */}
-
-                                                            {/** FIVE */}
-                                                            {/* {
-                                                                vaccineFive && vaccineFive.licenser.length > 0 && vaccineFive.licenser.map((licenser, idx) => {
-                                                                    return (
-                                                                        <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccineFive.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineFive.name)}</td>
-                                                                    )
-                                                                })
-                                                            } */}
-
-                                                            {/** SIX */}
-                                                            {/* {
-                                                                vaccineSix && vaccineSix.licenser.length > 0 && vaccineSix.licenser.map((licenser, idx) => {
-                                                                    return (
-                                                                        <td width={9999} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`main-col ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>{key === "type" ? `${licenser.title} - ${vaccineSix.name}` : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccineSix.name)}</td>
-                                                                    )
-                                                                })
-                                                            } */}
                                                         </tr>
                                                     </>
                                                 )

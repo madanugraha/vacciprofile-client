@@ -1,5 +1,5 @@
 import React from 'react';
-import { removeDuplicatesFromArray } from '../../utils/array';
+import { getCandidateVaccineByManufactureName, removeDuplicatesFromArray } from '../../utils/array';
 import { getLicensedVaccineByManufacturerId, getPathogenDetailById } from '../../utils/pathogens';
 
 /**
@@ -52,76 +52,129 @@ const VaccineListTable = ({
     getLicenserById,
     italizeScientificNames
 }) => {
-    return <div className="accordion" id="accordianVaccineList">
-        <div className="accordion-item">
-            <h2 className="accordion-header" id="accordianVaccines">
-                <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
-                    Licensed Vaccines
+    return <>
+
+        <div className="accordion" id="accordianVaccineList">
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="accordianVaccines">
+                    <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
+                        Licensed Vaccines
+                    </button>
+                </h2>
+                <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
+                    <div className="accordion-body pb-1 px-0 pt-0">
+                        <div className='main-header table-responsive m-0'>
+                            <table className='table w-100 m-0'>
+                                <thead>
+                                    <tr>
+                                        <th>Vaccine Brand Name</th>
+                                        <th>Vaccine Type</th>
+                                        <th>Pathogen</th>
+                                        <th>Licensing Authorities</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {getLicensedVaccineByManufacturerId(selectedManufacturer.manufacturerId).sort((a, b) => a.name.localeCompare(b.name)).map((vaccine, key) => <tr key={key}>
+                                        <td className='vaccine-cell'>
+                                            <span
+                                                className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
+                                                onClick={() => handleSelectVaccine(vaccine)}>
+                                                {vaccine.name}
+                                            </span>
+                                        </td>
+                                        <td className='vaccine-cell'>
+                                            <span
+                                                className={`selected`}>
+                                                {vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}
+                                            </span>
+                                        </td>
+                                        <td className='pathogen-cell'>
+                                            <div className='d-inline-flex align-items-center'>
+                                                {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen, index) => {
+                                                    return (
+                                                        <span
+                                                            className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenDetailById(pathogen).name ? `selected` : `selectable`}`}
+                                                            onClick={() => { handleSelectPathogen(getPathogenDetailById(pathogen)) }}>
+                                                            {getPathogenDetailById(pathogen)?.name ? italizeScientificNames(getPathogenDetailById(pathogen)?.name) : "-"}
+                                                            {index < vaccine?.pathogenId.length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
+                                                        </span>
+                                                    )
+                                                })}
+                                            </div>
+                                        </td>
+                                        <td className='licenser-cell'>
+                                            {vaccine.productProfiles ? vaccine.productProfiles.filter((x) => x.composition !== "- not licensed yet -").map((l, index) => {
+                                                const licenser = l.type;
+                                                if (!licenser) return null;
+                                                return (
+                                                    <span key={l.name}>
+                                                        <a href="#" className='selectable' target="_blank" rel="noopener noreferrer">
+                                                            {licenser}
+                                                        </a>
+                                                        {index < vaccine.productProfiles.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                                    </span>
+                                                );
+                                            }) : '- no data -'}
+                                        </td>
+                                    </tr>)}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="accordion-item" style={{ marginTop: 5 }}>
+            <h2 className="accordion-header" id="accordianPipelineVaccineLists">
+                <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPipelineVacList" aria-expanded="false" aria-controls="collapseTwo">
+                    Candidate Vaccines
                 </button>
             </h2>
-            <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
+            <div id="accordianPipelineVacList" className="accordion-collapse collapse" aria-labelledby="accordianPipelineVaccineLists" data-bs-parent="#accordianPipelineVaccineList">
                 <div className="accordion-body pb-1 px-0 pt-0">
                     <div className='main-header table-responsive m-0'>
                         <table className='table w-100 m-0'>
                             <thead>
                                 <tr>
-                                    <th>Vaccine Brand Name</th>
-                                    <th>Vaccine Type</th>
-                                    <th>Pathogen</th>
-                                    <th>Licensing Authorities</th>
+                                    <th className='text-center'>Vaccine Brand Name</th>
+                                    <th className='text-center'>Pathogen</th>
+                                    <th className='text-center'>Platform</th>
+                                    <th className='text-center'>Clinical Phase</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {getLicensedVaccineByManufacturerId(selectedManufacturer.manufacturerId).sort((a, b) => a.name.localeCompare(b.name)).map((vaccine, key) => <tr key={key}>
-                                    <td className='vaccine-cell'>
-                                        <span
-                                            className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
-                                            onClick={() => handleSelectVaccine(vaccine)}>
-                                            {vaccine.name}
-                                        </span>
-                                    </td>
-                                    <td className='vaccine-cell'>
-                                        <span
-                                            className={`selected`}>
-                                            {vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}
-                                        </span>
-                                    </td>
-                                    <td className='pathogen-cell'>
-                                        <div className='d-inline-flex align-items-center'>
-                                            {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen, index) => {
-                                                return (
-                                                    <span
-                                                        className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenDetailById(pathogen).name ? `selected` : `selectable`}`}
-                                                        onClick={() => { handleSelectPathogen(getPathogenDetailById(pathogen)) }}>
-                                                        {getPathogenDetailById(pathogen)?.name ? italizeScientificNames(getPathogenDetailById(pathogen)?.name) : "-"}
-                                                        {index < vaccine?.pathogenId.length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
-                                                    </span>
-                                                )
-                                            })}
-                                        </div>
-                                    </td>
-                                    <td className='licenser-cell'>
-                                        {vaccine.productProfiles ? vaccine.productProfiles.filter((x) => x.composition !== "- not licensed yet -").map((l, index) => {
-                                            const licenser = l.type;
-                                            if (!licenser) return null;
-                                            return (
-                                                <span key={l.name}>
-                                                    <a href="#" className='selectable' target="_blank" rel="noopener noreferrer">
-                                                        {licenser}
-                                                    </a>
-                                                    {index < vaccine.productProfiles.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                {getCandidateVaccineByManufactureName(selectedManufacturer.name).length > 0 ? getCandidateVaccineByManufactureName(selectedManufacturer.name).map((vaccine, key) => {
+                                    return (
+                                        <tr key={key}>
+                                            <td className='vaccine-cell'>
+                                                <span
+                                                    className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `disabled`}`}
+                                                    onClick={() => {
+                                                        // TODO Pipeline Vaccine
+                                                        // handleSelectVaccine(vaccine)
+                                                    }}>
+                                                    {vaccine.name}
                                                 </span>
-                                            );
-                                        }) : '- no data -'}
-                                    </td>
-                                </tr>)}
+                                            </td>
+                                            <td className='pathogen-cell d-flex flex-row'>
+                                                <span>{vaccine.pathogenName}</span>
+                                            </td>
+                                            <td className='status-cell'>
+                                                <span>{vaccine.platform}</span>
+                                            </td>
+                                            <td className='licenser-cell'>
+                                                {vaccine.clinicalPhase}
+                                            </td>
+                                        </tr>
+                                    )
+                                }) : <tr><td colSpan={4} align='center'>- no data available -</td></tr>}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </>
 }
 
 export default VaccineListTable;

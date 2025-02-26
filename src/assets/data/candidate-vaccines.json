@@ -41,7 +41,7 @@
         "pathogenId": 3,
         "pathogenName": "Borrelia burgdorferi",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase II"
     },
     {
@@ -59,7 +59,7 @@
         "pathogenId": 5,
         "pathogenName": "Chikungunya Virus",
         "platform": "No data",
-        "manufacturer": "Bharat",
+        "manufacturer": "Bharat Biotech",
         "clinicalPhase": "Phase II"
     },
     {
@@ -86,7 +86,7 @@
         "pathogenId": 8,
         "pathogenName": "Cytomegalovirus",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase III"
     },
     {
@@ -95,7 +95,7 @@
         "pathogenId": 9,
         "pathogenName": "Cytomegalovirus (CMV)",
         "platform": "Virus-Like Particle (VLP)",
-        "manufacturer": "VBI Vaccines",
+        "manufacturer": "VBI Vaccines Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -104,7 +104,7 @@
         "pathogenId": 10,
         "pathogenName": "Dengue Virus",
         "platform": "No data",
-        "manufacturer": "MSD",
+        "manufacturer": "MSD (Merck Sharp & Dohme)",
         "clinicalPhase": "Phase II"
     },
     {
@@ -122,7 +122,7 @@
         "pathogenId": 12,
         "pathogenName": "Epstein–Barr Virus",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -176,7 +176,7 @@
         "pathogenId": 18,
         "pathogenName": "HIV",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -185,7 +185,7 @@
         "pathogenId": 19,
         "pathogenName": "Herpes Simplex Virus (HSV)",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase II"
     },
     {
@@ -212,7 +212,7 @@
         "pathogenId": 21,
         "pathogenName": "Respiratory Syncytial Virus (RSV)",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -221,7 +221,7 @@
         "pathogenId": 21,
         "pathogenName": "Human metapneumovirus (hMPV)",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -266,7 +266,7 @@
         "pathogenId": 25,
         "pathogenName": "Influenza Virus (Pandemic)",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase II"
     },
     {
@@ -275,7 +275,7 @@
         "pathogenId": 26,
         "pathogenName": "Respiratory Syncytial Virus (RSV)",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -284,7 +284,7 @@
         "pathogenId": 26,
         "pathogenName": "Influenza Virus",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -293,7 +293,7 @@
         "pathogenId": 27,
         "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase III"
     },
     {
@@ -302,7 +302,7 @@
         "pathogenId": 27,
         "pathogenName": "Influenza Virus",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase III"
     },
     {
@@ -311,7 +311,7 @@
         "pathogenId": 28,
         "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -320,7 +320,7 @@
         "pathogenId": 28,
         "pathogenName": "Influenza Virus",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -365,7 +365,7 @@
         "pathogenId": 33,
         "pathogenName": "Mycobacterium tuberculosis",
         "platform": "No data",
-        "manufacturer": "Bharat",
+        "manufacturer": "Bharat Biotech",
         "clinicalPhase": "Phase I"
     },
     {
@@ -392,7 +392,7 @@
         "pathogenId": 36,
         "pathogenName": "Neisseria meningitidis A, C, W, X, Y",
         "platform": "CRM₁₉₇ protein conjugate",
-        "manufacturer": "EuBiologics",
+        "manufacturer": "EuBiologics Co., Ltd.",
         "clinicalPhase": "Phase II"
     },
     {
@@ -401,7 +401,7 @@
         "pathogenId": 37,
         "pathogenName": "Neisseria meningitidis A, C, W, Y",
         "platform": "CRM₁₉₇ protein conjugate",
-        "manufacturer": "EuBiologics",
+        "manufacturer": "EuBiologics Co., Ltd.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -410,7 +410,7 @@
         "pathogenId": 38,
         "pathogenName": "Nipah Virus",
         "platform": "RNA",
-        "manufacturer": "Moderna",
+        "manufacturer": "Moderna, Inc.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -419,7 +419,7 @@
         "pathogenId": 39,
         "pathogenName": "Non-typhoidal Salmonella",
         "platform": "No data",
-        "manufacturer": "Bharat",
+        "manufacturer": "Bharat Biotech Biotech",
         "clinicalPhase": "Phase I"
     },
     {
@@ -527,7 +527,7 @@
         "pathogenId": 47,
         "pathogenName": "Salmonella Paratyphi",
         "platform": "No data",
-        "manufacturer": "Bharat",
+        "manufacturer": "Bharat Biotech",
         "clinicalPhase": "Phase II"
     },
     {
@@ -536,7 +536,7 @@
         "pathogenId": 48,
         "pathogenName": "Salmonella Typhi",
         "platform": "Vi-CRM₁₉₇ Conjugate",
-        "manufacturer": "EuBiologics",
+        "manufacturer": "EuBiologics Co., Ltd.",
         "clinicalPhase": "Phase IV"
     },
     {
@@ -599,7 +599,7 @@
         "pathogenId": 54,
         "pathogenName": "Streptococcus pneumoniae",
         "platform": "CRM₁₉₇ protein conjugate",
-        "manufacturer": "EuBiologics",
+        "manufacturer": "EuBiologics Co., Ltd.",
         "clinicalPhase": "Phase I"
     },
     {
@@ -644,7 +644,7 @@
         "pathogenId": 59,
         "pathogenName": "Zika Virus",
         "platform": "No data",
-        "manufacturer": "Bharat",
+        "manufacturer": "Bharat Biotech",
         "clinicalPhase": "Phase I"
     }
 ]
