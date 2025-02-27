@@ -253,7 +253,7 @@ const Sidebar = ({
                             {showVaccineCandidates && removeDuplicatesFromArray(sampleVaccineCandidatesVaccine, "name").map((item, i) => (
                                 <div
                                     key={i}
-                                    className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item
+                                    className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${showVaccineCandidates && activeTab === 'Vaccine' && selectedVaccine === item
                                         ? 'active' : 'inactive'
                                         }`}
                                     onClick={() => {
