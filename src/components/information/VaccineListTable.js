@@ -74,49 +74,55 @@ const VaccineListTable = ({
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {getLicensedVaccineByManufacturerId(selectedManufacturer.manufacturerId).sort((a, b) => a.name.localeCompare(b.name)).map((vaccine, key) => <tr key={key}>
-                                        <td className='vaccine-cell'>
-                                            <span
-                                                className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
-                                                onClick={() => handleSelectVaccine(vaccine)}>
-                                                {vaccine.name}
-                                            </span>
-                                        </td>
-                                        <td className='vaccine-cell'>
-                                            <span
-                                                className={`selected`}>
-                                                {vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}
-                                            </span>
-                                        </td>
-                                        <td className='pathogen-cell'>
-                                            <div className='d-inline-flex align-items-center'>
-                                                {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen, index) => {
-                                                    return (
-                                                        <span
-                                                            className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenDetailById(pathogen).name ? `selected` : `selectable`}`}
-                                                            onClick={() => { handleSelectPathogen(getPathogenDetailById(pathogen)) }}>
-                                                            {getPathogenDetailById(pathogen)?.name ? italizeScientificNames(getPathogenDetailById(pathogen)?.name) : "-"}
-                                                            {index < vaccine?.pathogenId.length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
-                                                        </span>
-                                                    )
-                                                })}
-                                            </div>
-                                        </td>
-                                        <td className='licenser-cell'>
-                                            {vaccine.productProfiles ? vaccine.productProfiles.filter((x) => x.composition !== "- not licensed yet -").map((l, index) => {
-                                                const licenser = l.type;
-                                                if (!licenser) return null;
-                                                return (
-                                                    <span key={l.name}>
-                                                        <a href="#" className='selectable' target="_blank" rel="noopener noreferrer">
-                                                            {licenser}
-                                                        </a>
-                                                        {index < vaccine.productProfiles.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                    {getLicensedVaccineByManufacturerId(selectedManufacturer.manufacturerId).length > 0 ? getLicensedVaccineByManufacturerId(selectedManufacturer.manufacturerId).sort((a, b) => a.name.localeCompare(b.name)).map((vaccine, key) => {
+                                        return (
+                                            <tr key={key}>
+                                                <td className='vaccine-cell'>
+                                                    <span
+                                                        className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
+                                                        onClick={() => handleSelectVaccine(vaccine)}>
+                                                        {vaccine.name}
                                                     </span>
-                                                );
-                                            }) : '- no data -'}
-                                        </td>
-                                    </tr>)}
+                                                </td>
+                                                <td className='vaccine-cell'>
+                                                    <span
+                                                        className={`selected`}>
+                                                        {vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}
+                                                    </span>
+                                                </td>
+                                                <td className='pathogen-cell'>
+                                                    <div className='d-inline-flex align-items-center'>
+                                                        {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen, index) => {
+                                                            return (
+                                                                <span
+                                                                    className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenDetailById(pathogen).name ? `selected` : `selectable`}`}
+                                                                    onClick={() => { handleSelectPathogen(getPathogenDetailById(pathogen)) }}>
+                                                                    {getPathogenDetailById(pathogen)?.name ? italizeScientificNames(getPathogenDetailById(pathogen)?.name) : "-"}
+                                                                    {index < vaccine?.pathogenId.length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
+                                                                </span>
+                                                            )
+                                                        })}
+                                                    </div>
+                                                </td>
+                                                <td className='licenser-cell'>
+                                                    {vaccine.productProfiles ? vaccine.productProfiles.filter((x) => x.composition !== "- not licensed yet -").map((l, index) => {
+                                                        const licenser = l.type;
+                                                        if (!licenser) return null;
+                                                        return (
+                                                            <span key={l.name}>
+                                                                <a href="#" className='selectable' target="_blank" rel="noopener noreferrer">
+                                                                    {licenser}
+                                                                </a>
+                                                                {index < vaccine.productProfiles.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                                            </span>
+                                                        );
+                                                    }) : '- no data -'}
+                                                </td>
+                                            </tr>
+                                        )
+                                    }) : (
+                                        <tr><td colSpan={4} align='center'>- no data available -</td></tr>
+                                    )}
                                 </tbody>
                             </table>
                         </div>

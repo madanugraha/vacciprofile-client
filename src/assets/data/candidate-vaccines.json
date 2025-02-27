@@ -50,7 +50,7 @@
         "pathogenId": 4,
         "pathogenName": "Chikungunya Virus",
         "platform": "Subunit",
-        "manufacturer": "Bavarian Nordic",
+        "manufacturer": "Bavarian Nordic A/S",
         "clinicalPhase": "Phase III"
     },
     {
@@ -617,7 +617,7 @@
         "pathogenId": 56,
         "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
         "platform": "Live-attenuated",
-        "manufacturer": "Bavarian Nordic",
+        "manufacturer": "Bavarian Nordic A/S",
         "clinicalPhase": "Phase I"
     },
     {

@@ -946,7 +946,7 @@ const Main = ({
                                                     </>
                                                 )
                                                     : null}
-                                {activeTab === "Manufacturer" && getVaccinesByManufacturer().length > 0
+                                {activeTab === "Manufacturer"
                                     ?
                                     <VaccineListTable
                                         activeTab={activeTab}

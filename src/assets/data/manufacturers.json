@@ -2811,5 +2811,145 @@
             }
         ],
         "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 66,
+        "name": "Center for Vaccine Development and Global Health, University of Maryland",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 67,
+        "name": "Zydus Lifesciences",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 68,
+        "name": "Anhui Zhifei Longcom Biopharmaceutical",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 69,
+        "name": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 70,
+        "name": "Advaccine (Suzhou)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 71,
+        "name": "Access to Advanced Health Institute (AAHI)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 72,
+        "name": "Beijing Zhifei Lvzhu Biopharmaceutical",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
     }
 ]
