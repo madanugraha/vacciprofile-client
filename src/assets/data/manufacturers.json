@@ -92,6 +92,7 @@
         "description": "TBU",
         "history": "AstraZeneca is a global, science-led biopharmaceutical company formed in 1999 through the merger of two companies: Astra AB, a Swedish pharmaceutical firm established in 1913, and Zeneca Group, a British company created in 1993 after the demerger of Imperial Chemical Industries' healthcare business. Headquartered in Cambridge, United Kingdom, AstraZeneca specializes in the discovery, development, and commercialization of prescription medicines in oncology, cardiovascular, renal, metabolic, respiratory, and immunology. The company operates manufacturing facilities across the globe, producing medications to support its wide-ranging research and development efforts. Its innovative contributions include the development of life-saving drugs and, more recently, the co-development of the Oxford-AstraZeneca COVID-19 vaccine, underscoring its role as a leader in global healthcare.",
         "details": {
+            "website": "https://www.astrazeneca.com/",
             "founded": "6 April 1999",
             "headquarters": "Cambridge Biomedical Campus, Cambridge, England",
             "ceo": "Sir Pascal Soriot",
@@ -117,6 +118,7 @@
         "history": "Novartis, a global healthcare company, was established in 1996 through the merger of two Swiss pharmaceutical giants, Ciba-Geigy and Sandoz. Both companies had deep roots in the chemical and pharmaceutical industries, dating back to the 19th century. Ciba-Geigy, founded in 1859 as a dye manufacturer, evolved into a major player in agricultural and pharmaceutical chemicals. Sandoz, established in 1886, was known for innovations in chemicals and life sciences, including the development of early antibiotics and pioneering work in biotechnology. The merger aimed to leverage their combined expertise, creating a diversified pharmaceutical powerhouse. Headquartered in Basel, Switzerland, Novartis focuses on innovative medicines, generics, and biosimilars, driving advancements in areas like oncology, immunology, and neuroscience. Over the years, the company has continued to grow through strategic acquisitions and investments in research, solidifying its position as a leader in global healthcare.",
         "description": "A global healthcare company based in Switzerland that provides solutions to address the evolving needs of patients worldwide.",
         "details": {
+            "website": "https://www.novartis.com/about",
             "founded": "1996",
             "headquarters": "Basel, Switzerland",
             "ceo": "Vasant Narasimhan",
@@ -257,6 +259,7 @@
         "name": "Sinovac Biotech",
         "description": "A Chinese biopharmaceutical company that focuses on the research, development, manufacture, and commercialization of vaccines that protect against human infectious diseases.",
         "details": {
+            "website": "http://www.sinovac.com/?lang=en",
             "founded": "1999",
             "headquarters": "Beijing, China",
             "ceo": "Yin Weidong",
@@ -320,6 +323,7 @@
         "name": "Serum Institute of India",
         "description": "The world's largest vaccine manufacturer by number of doses produced and sold globally, providing vaccines for polio, diphtheria, tetanus, pertussis, Hib, BCG, r-Hepatitis B, measles, mumps, and rubella.",
         "details": {
+            "website": "https://www.seruminstitute.com/about_us.php",
             "founded": "1966",
             "headquarters": "Pune, India",
             "ceo": "Adar Poonawalla",
@@ -429,6 +433,7 @@
         "description": "A global specialty and generic drug manufacturer that was acquired by Teva Pharmaceutical Industries in 2008.",
         "history": "Barr Laboratories was founded in 1970 by Edwin A. Cohen in New York. It was one of the early pioneers in the generic pharmaceutical industry. The company faced challenges, including a scandal related to GMP regulations in the early 1990s. Despite these challenges, Barr achieved significant growth by targeting drugs with weak patents, notably gaining approval for generic versions of tamoxifen citrate and Prozac.",
         "details": {
+            "website": "https://en.wikipedia.org/wiki/Barr_Pharmaceuticals",
             "founded": "1970",
             "headquarters": "Pomona, New York, USA",
             "ceo": "Bruce L. Downey (1994-2008)",
@@ -478,6 +483,7 @@
         "description": "A biodefense manufacturing facility located in Lansing, Michigan, specializing in vaccines and biologics for infectious diseases and biodefense purposes.",
         "history": "Emergent BioDefense Operations Lansing LLC is part of Emergent BioSolutions, which was founded in 1998 as BioPort. The company acquired the Michigan Biological Products Institute facility in Lansing, Michigan, and has since expanded its operations to include a wide range of biodefense products.",
         "details": {
+            "website": "https://www.emergentbiosolutions.com",
             "founded": "1998 (as part of Emergent BioSolutions)",
             "headquarters": "Lansing, Michigan, USA",
             "parentCompany": "Emergent BioSolutions",
@@ -516,6 +522,7 @@
         "description": "A global life sciences company specializing in developing, manufacturing, and delivering protections against public health threats. Emergent offers vaccines, therapeutics, drug-device combination products, and contract development and manufacturing services.",
         "history": "Emergent BioSolutions was founded in 1998 and has since become a leading provider of solutions for complex public health challenges. The company has expanded its capabilities through various contracts and agreements, including a significant role in manufacturing COVID-19 treatments.",
         "details": {
+            "website": "https://www.emergentbiosolutions.com",
             "founded": "1998",
             "headquarters": "Gaithersburg, Maryland, USA",
             "ceo": "Robert G. Kramer Sr.",
@@ -561,6 +568,7 @@
         "description": "An Indian biotechnology and biopharmaceutical company specializing in low-cost vaccine production. It is a leading manufacturer of vaccines and biologics, supplying products to over 140 countries.",
         "history": "Biological E. Limited was founded in 1953 by Dr. D.V.K. Raju and Mr. G.A.N. Raju. It is the first private sector biological products company in India and has played a significant role in the country's National Immunization Program. Over the years, the company has expanded its product portfolio to include a range of pediatric and adult vaccines.",
         "details": {
+            "website": "https://www.biologicale.com/",
             "founded": "1953",
             "headquarters": "Hyderabad, Telangana, India",
             "ceo": "Mahima Datla",
@@ -671,6 +679,7 @@
         "description": "A South Korean chemical company and the largest in Korea, known for its diverse portfolio in petrochemicals, advanced materials, and life sciences.",
         "history": "LG Chem was founded in 1947 as Lucky Chemical Industrial Corporation and has since evolved into a global leader in various industries. It has expanded its operations through strategic mergers and acquisitions, including the merger with LG Petrochemicals Co., Ltd. in 2007. Today, LG Chem is recognized for its innovative products and commitment to sustainability.",
         "details": {
+            "website": "https://www.lgchem.com/",
             "founded": "1947",
             "headquarters": "Seoul, South Korea",
             "ceo": "Shin Hak-Cheol",
@@ -726,6 +735,7 @@
         "description": "A vaccine manufacturer based in the Netherlands, known for its pediatric hexavalent vaccine solutions. It is a partnership between MSD and Sanofi Pasteur Inc., focusing on vaccine development and antigen production.",
         "history": "MCM Vaccine B.V. has been involved in vaccine development for over 30 years, with a strong focus on pediatric vaccines. The company collaborates with major pharmaceutical companies to provide comprehensive vaccine solutions.",
         "details": {
+            "website": "https://www.mcmbv.eu",
             "founded": "2016",
             "headquarters": "Robert Boyleweg 4, 2333 CG Leiden, Netherlands",
             "ceo": "Not specified",
@@ -767,6 +777,7 @@
         "description": "An India-based pharmaceutical and biotechnology company engaged in research, development, manufacture, and marketing of branded vaccines, pharmaceutical formulations, nutraceuticals, and food and nutrition products.",
         "history": "Panacea Biotec was founded in 1984 and has since become a prominent player in the Indian pharmaceutical and biotechnology sector. The company specializes in developing fully liquid combination vaccines and has a diverse portfolio of products.",
         "details": {
+            "website": "https://dcvmn.org/panacea-biotec-limited/",
             "founded": "1984",
             "headquarters": "New Delhi, India",
             "ceo": "Dr. Rajesh Jain, Managing Director",
@@ -836,6 +847,7 @@
         "description": "An Indonesian state-owned enterprise specializing in the production of vaccines and sera to support immunization programs in Indonesia and globally.",
         "history": "Founded in 1890 as *Parc-vaccinogène* during the Dutch East Indies period, Bio Farma has evolved through various name changes and legal entities. It moved to Bandung in the early 1920s and has since become a key player in vaccine manufacturing, supporting national and international health initiatives.",
         "details": {
+            "website": "https://www.biofarma.co.id/en/pt-bio-farma-persero",
             "founded": "1890",
             "headquarters": "Bandung, West Java, Indonesia",
             "ceo": "Not specified",
@@ -1005,6 +1017,7 @@
         "description": "A Bulgarian pharmaceutical company specializing in the production of vaccines, serums, allergens, blood products, immunostimulants, and diagnostic preparations. It is 100% state-owned and belongs to the Ministry of Health of Bulgaria.",
         "history": "BB-NCIPD Ltd. was established at the end of 2000 as a separate entity from the production department of the National Center of Infectious and Parasitic Diseases, which has a history dating back over 130 years. The company has continued to develop and expand its operations, focusing on meeting international standards for vaccine production.",
         "details": {
+            "website": "https://www.bulbio.com/en/firmen-profil",
             "founded": "2000",
             "headquarters": "Sofia, Bulgaria",
             "ceo": "Dr. Roumen Kofinov",
@@ -1062,6 +1075,7 @@
         "description": "MassBiologics is a nonprofit, FDA-licensed manufacturer of vaccines and biologic products. It is a division of the University of Massachusetts Medical School and is known for developing and manufacturing vaccines, plasma derivatives, and monoclonal antibodies.",
         "history": "MassBiologics was established in 1894 by the Commonwealth of Massachusetts Board of Health to combat diphtheria. Over the years, it has developed and manufactured biologic products for diseases such as smallpox, typhoid, scarlet fever, tetanus, and pertussis. In 1997, MassBiologics was transferred from the state health department to the University of Massachusetts Medical School.",
         "details": {
+            "website": "https://pharmasource.global/directory/massbiologics/",
             "founded": "1894",
             "headquarters": "Boston, Massachusetts",
             "ceo": "Mark Klempner, MD (Executive Vice Chancellor)",
@@ -1123,6 +1137,7 @@
         "description": "A global, values-based, patient-focused, R&D-driven biopharmaceutical leader committed to bringing Better Health and a Brighter Future to people worldwide. Takeda focuses on oncology, rare diseases, neuroscience, gastroenterology, plasma-derived therapies, and vaccines.",
         "history": "Founded in 1781, Takeda has a rich history in Japan. It was incorporated in 1925 and has since grown into one of the largest pharmaceutical companies globally. Takeda expanded its global footprint through significant acquisitions, including Millennium Pharmaceuticals in 2008 and Shire in 2019.",
         "details": {
+            "website": "https://www.takeda.com/",
             "founded": "1781",
             "headquarters": "Tokyo, Japan (with a major office in Osaka)",
             "ceo": "Christophe Weber",
@@ -1232,6 +1247,7 @@
         "description": "A Cuban research institute focused on developing bio-products through genetic engineering and biotechnology techniques. It is known for creating innovative vaccines and therapeutic solutions.",
         "history": "CIGB was established in 1986, following Cuba's initiative to develop a biotechnology research institution despite not receiving UNIDO funding in 1982. The center has since become a significant player in Cuba's biotech industry, developing products like Heberprot-P for treating foot ulcers and COVID-19 vaccines.",
         "details": {
+            "website": "https://www.cigb.edu.cu/en/home/",
             "founded": "1986",
             "headquarters": "Havana, Cuba",
             "ceo": "Not specified",
@@ -1323,6 +1339,7 @@
         "description": "A Chinese biotechnology company specializing in the development, manufacturing, and marketing of vaccines. It is known for its innovative vaccines, including the Hepatitis E vaccine and HPV vaccines.",
         "history": "Xiamen Innovax Biotech was established in March 2005 in Xiamen, China. It is a subsidiary of Beijing Wantai Biological Pharmacy Enterprise Co., Ltd. and is part of the Yangshengtang Co., Ltd. group. The company has made significant contributions to vaccine development, particularly with its Hepatitis E vaccine, Hecolin, which was launched in 2012.",
         "details": {
+            "website": "https://en.wikipedia.org/wiki/Xiamen_Innovax_Biotech",
             "founded": "2005",
             "headquarters": "Xiamen, Fujian, China",
             "ceo": "Not specified",
@@ -1372,6 +1389,7 @@
         "description": "An innovation-driven biopharmaceutical company focusing on the industrialization, production, and operation of new recombinant vaccines for human use. It is a fully owned subsidiary of Shanghai Zerun Biotechnology under Walvax Biotechnology Co., Ltd.",
         "history": "Yuxi Zerun Biotechnology Co., Ltd. was established to promote the industrialization of a bivalent HPV vaccine. The company's facility in Yuxi City, Yunnan Province, was designed and constructed with support from the Bill & Melinda Gates Foundation to meet both Chinese and WHO prequalification requirements.",
         "details": {
+            "website": "http://www.zerunbio.com/en/site/introduce",
             "founded": "Established as a subsidiary in 2016",
             "headquarters": "Yuxi City, Yunnan Province, China",
             "parentCompany": "Shanghai Zerun Biotechnology under Walvax Biotechnology Co., Ltd.",
@@ -1410,6 +1428,7 @@
         "description": "Abbott Biologicals is part of Abbott Laboratories, a multinational healthcare company specializing in medical devices, diagnostics, branded generic medicines, and nutritional products. Abbott Biologicals focuses on biologics manufacturing, offering state-of-the-art capabilities for process design, analytical characterization, and cGMP manufacturing.",
         "history": "Abbott Laboratories was founded in 1888 by Wallace Calvin Abbott. Over the years, it has expanded its operations globally, including biologics manufacturing. Abbott Biologicals leverages this legacy to support the development and commercialization of biopharmaceutical products.",
         "details": {
+            "website": "https://www.abbott/about-us/abbott-in-malaysia.html",
             "founded": "Abbott Laboratories founded in 1888; specific founding date for Abbott Biologicals not specified",
             "headquarters": "Abbott Park, Illinois, USA (Abbott Laboratories)",
             "ceo": "Robert B. Ford (Abbott Laboratories)",
@@ -1451,6 +1470,7 @@
         "description": "A State-owned bio-tech corporation in China, specializing in the production, development, and sale of biological products, including vaccines and genetic engineering products.",
         "history": "Founded in 1946 in Changchun, Jilin Province, China. It is known for its contributions to China's disease prevention and control efforts, particularly as the first pilot trial base of interferon and the first industrial production base of hepatitis B vaccines.",
         "details": {
+            "website": "https://www.gojilin.gov.cn/2021/07/26/c_6909.htm",
             "founded": "1946",
             "headquarters": "Changchun, Jilin, China",
             "ceo": "Not specified",
@@ -1592,6 +1612,7 @@
         "description": "A Chinese biotechnology company specializing in the research, development, production, and sales of human vaccines, including influenza, meningococcal, and hepatitis B vaccines.",
         "history": "Hualan Biological Bacterin Inc. was founded in 2005 and is headquartered in Xinxiang City, Henan Province. It is a subsidiary of Hualan Biological Engineering Inc. and has become a significant player in China's vaccine manufacturing industry, achieving WHO prequalification for its influenza vaccines.",
         "details": {
+            "website": "https://www.emis.com/php/company-profile/CN/Hualan_Biological_Vaccine_Inc__%E5%8D%8E%E5%85%B0%E7%94%9F%E7%89%A9%E7%96%AB%E8%8B%97%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8__en_13347783.html",
             "founded": "2005",
             "headquarters": "Xinxiang City, Henan Province, China",
             "ceo": "Not publicly specified",
@@ -1649,6 +1670,7 @@
         "description": "A subsidiary of GlaxoSmithKline (GSK), specializing in the development and manufacturing of influenza vaccines for the global market.",
         "history": "ID Biomedical Corporation of Quebec is a key player in the production of seasonal flu vaccines. It operates under GSK and is located in Sainte-Foy, Quebec, Canada. The facility is subject to regular inspections by Health Canada to ensure compliance with Good Manufacturing Practices (GMPs).",
         "details": {
+            "website": "https://dhpp.hpfb-dgpsa.ca/dhpp/company/11915",
             "founded": "Not specified",
             "headquarters": "2323 Boul Parc Technologique Quebec, Quebec, G1P 4R8, Canada",
             "ceo": "Not specified",
@@ -1698,6 +1720,7 @@
         "description": "A Korea-based company that specializes in the manufacture and distribution of pharmaceutical products, including prostatitis agents, anti-inflammatory drugs, diabetic agents, gastritis agents, nourishing tonics, and health supplements.",
         "history": "IL-YANG PHARMACEUTICAL was established in 1946 and has been a key player in the growth of the Korean pharmaceutical industry. It has expanded its operations globally, exporting products to over 30 countries, including the US and Europe. The company is known for its innovative products such as Ilaprazole, a next-generation anti-ulcer drug, and its involvement in vaccine development.",
         "details": {
+            "website": "https://www.marketscreener.com/quote/stock/ILYANG-PHARMACEUTICAL-CO--20699440/company/",
             "founded": "1946",
             "headquarters": "Seoul, South Korea",
             "ceo": "Kim Dong-yeon",
@@ -1743,6 +1766,7 @@
         "description": "MedImmune was the global biologics research and development arm of AstraZeneca, focusing on innovative biologic prescription medicines across various therapeutic areas including Oncology, Respiratory, Cardiovascular & Metabolic Diseases, and Infection and Vaccines.",
         "history": "MedImmune was founded in 1988 as Molecular Vaccines, Inc. It was acquired by AstraZeneca in 2007 for approximately $15.2 billion. The company was known for its contributions to vaccine development, including FluMist and Synagis. In February 2019, the MedImmune name and branding were discontinued in favor of AstraZeneca.",
         "details": {
+            "website": "https://www.americanpharmaceuticalreview.com/105310-MedImmune-LLC/",
             "founded": "1988",
             "headquarters": "Gaithersburg, Maryland, USA",
             "ceo": "Bahija Jallal (as President of MedImmune before its rebranding)",
@@ -1788,6 +1812,7 @@
         "description": "A biotechnology company specializing in vaccine development and protein production. It is known for its proprietary BEVS protein expression technology and the development of innovative vaccines like Flublok.",
         "history": "Protein Sciences Corporation was established in 1983 and was headquartered in Meriden, Connecticut. It was acquired by Sanofi in 2017, expanding Sanofi's influenza vaccine portfolio with the addition of Flublok, a recombinant protein-based influenza vaccine.",
         "details": {
+            "website": "https://leadiq.com/c/protein-sciences-corporation/5a1d98c4230000520087636f",
             "founded": "1983",
             "headquarters": "Meriden, Connecticut, USA (pre-acquisition)",
             "ceo": "Manon M.J. Cox (pre-acquisition)",
@@ -1829,6 +1854,7 @@
         "description": "Seqirus is a leading global influenza vaccine manufacturer, known for its innovative technologies and differentiated products. It operates state-of-the-art facilities across three continents and supplies vaccines worldwide.",
         "history": "Seqirus was formed following CSL Limited's acquisition of Novartis' influenza vaccine business in 2016. It integrated with CSL's vaccines division, bioCSL, and has since become a major player in the global influenza vaccine market.",
         "details": {
+            "website": "https://www.cslseqirus.com.au/manufacturing",
             "founded": "2016 (as Seqirus, following acquisition)",
             "headquarters": "Australia (parent company CSL Limited)",
             "ceo": "Not specified",
@@ -1936,6 +1962,7 @@
         "description": "A leading Chinese biotechnology company specializing in the research and production of biological products, including vaccines and plasma-derived products.",
         "history": "Established in 1958, the Chengdu Institute of Biological Products is part of the China National Biotec Group, one of the largest vaccine manufacturers in China. It has played a significant role in developing and supplying vaccines for national immunization programs and has contributed to global health initiatives through collaborations with international organizations.",
         "details": {
+            "website": "https://www.cmocro.com/company/ChengDu+Institute+of+Biological+Products+Co.,+Ltd./index.html",
             "founded": "1958",
             "headquarters": "Chengdu, Sichuan, China",
             "ceo": "Not publicly disclosed",
@@ -1993,6 +2020,7 @@
         "description": "A joint venture between the Government Pharmaceutical Organization (GPO) and Sanofi Pasteur, specializing in vaccine production, particularly for children's vaccines in Thailand.",
         "history": "GPO-MBP was established as a collaboration between GPO and Sanofi Pasteur to meet local vaccine needs. The company has been involved in discussions with other vaccine manufacturers like Sinovac and has provided fill-finish capacity for COVID-19 vaccines.",
         "details": {
+            "website": "https://www.rmkcorp.com/projects/gpo-mbp/",
             "founded": "1997",
             "headquarters": "Thailand",
             "ownership": "GPO (40%), Sanofi (49%), CPB Equity Co., Ltd. (remainder)",
@@ -2093,6 +2121,7 @@
         "description": "AJ Vaccines is a global pharmaceutical company based in Copenhagen, Denmark. It specializes in developing and manufacturing vaccines, diagnostics, and therapeutic solutions for infectious diseases. The company contributes to public health globally, particularly through collaborations with WHO and UNICEF.",
         "history": "AJ Vaccines was established in 2017 following the divestment of the vaccine production arm from Statens Serum Institut (SSI), which has a history dating back to 1902. SSI played a crucial role in preventing and treating major epidemics in Denmark. AJ Vaccines continues this legacy by innovating and expanding access to vaccines worldwide.",
         "details": {
+            "website": "https://ajvaccines.com/",
             "founded": "2017",
             "headquarters": "Copenhagen, Denmark",
             "ceo": "Not specified in available data",
@@ -2146,6 +2175,7 @@
         "description": "A Japanese company specializing in the production of BCG vaccines and other medical products. It was founded in 1952 and is known for its freeze-dried glutamate BCG vaccine, which is used for the prevention of tuberculosis.",
         "history": "Japan BCG Laboratory was established in 1952 as a separate entity focused on producing BCG vaccines. Over the years, it has maintained a strong presence in the global vaccine market, particularly with its Tokyo 172-1 strain of the BCG vaccine. The company has also been involved in other medical product developments and has a history of adhering to strict quality control measures.",
         "details": {
+            "website": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5777639/",
             "founded": "1952",
             "headquarters": "Kiyose-shi, Tokyo, Japan",
             "ceo": "Not publicly disclosed",
@@ -2188,6 +2218,7 @@
         "description": "A company associated with the production of pharmaceutical ingredients, notably pancuronium bromide, a neuromuscular blocking agent.",
         "history": "Organon Teknika was part of the broader Organon group, which has a long history in pharmaceuticals. However, specific details about Organon Teknika's history are limited. It was located in Boxtel, Netherlands.",
         "details": {
+            "website": "https://www.organon.com/",
             "founded": "Not specified",
             "headquarters": "Boxtel, Netherlands",
             "ceo": "Not specified",
@@ -2224,6 +2255,7 @@
         "description": "A biopharmaceutical company specializing in the production of inactivated polio vaccines (IPV), tetanus vaccines, diphtheria-tetanus-polio vaccines (DT-PV), and bacillus Calmette-Guérin (BCG) for bladder cancer treatment.",
         "history": "Bilthoven Biologicals emerged after the privatization of NVI, formerly part of RIVM. It was acquired by the Cyrus Poonawalla Group in 2012 and later became a subsidiary of Serum Institute of India. The company has been instrumental in supporting global health initiatives, particularly in the eradication of polio.",
         "details": {
+            "website": "https://leadiq.com/c/bilthoven-biologicals/5a1d97272300005c0085bbfb",
             "founded": "Privatized in 2012",
             "headquarters": "Bilthoven, Netherlands",
             "ceo": "Not specified",
@@ -2277,6 +2309,7 @@
         "description": "A government of Maharashtra undertaking, Haffkine Bio-Pharmaceutical Corporation Ltd. is a pioneering company in the development and production of bacterial and viral vaccines, pharmaceutical products, disinfectants, ointments, injectables, syrups, and mixtures.",
         "history": "Established as part of the Haffkine Institute's legacy, the company has been involved in vaccine production since its inception. It plays a crucial role in supplying life-saving drugs and vaccines, contributing significantly to public health initiatives like the Pulse Polio Immunization Programme.",
         "details": {
+            "website": "https://www.vaccinehaffkine.com/about-us/company-profile.html",
             "founded": "1974",
             "headquarters": "Parel, Mumbai, India",
             "ceo": "Varies (Governor of Maharashtra appoints directors)",
@@ -2385,6 +2418,7 @@
         "description": "A division of Hipra, a biotech pharmaceutical company focused on prevention for animal and human health, specializing in vaccines and diagnostic services.",
         "history": "Hipra was founded in 1971 in Madrid, Spain. It began internationalization in 2000 and shifted its focus to prevention in 2009. The Human Health division was established in 2021.",
         "details": {
+            "website": "https://www.hipra.com/en",
             "founded": "1971",
             "headquarters": "Amer, Catalonia, Spain",
             "ceo": "Not specified",
@@ -2421,6 +2455,7 @@
         "description": "An American biotechnology company that discovers, develops, and commercializes vaccines for the prevention of infectious diseases.",
         "history": "Novavax was founded with a focus on developing innovative vaccines. Prior to 2020, the company worked on vaccines for influenza, respiratory syncytial virus (RSV), Ebola, and other emerging diseases. In 2020, Novavax shifted its focus to develop the NVX-CoV2373 vaccine for COVID-19. The company has since expanded its portfolio to include vaccines for various infectious diseases.",
         "details": {
+            "website": "https://global.novavax.com",
             "founded": "1987",
             "headquarters": "Gaithersburg, Maryland, USA",
             "ceo": "John C. Jacobs",
@@ -2531,6 +2566,7 @@
         "description": "A Brazilian unit of the Oswaldo Cruz Foundation (Fiocruz), responsible for the development and production of vaccines, reagents, and biopharmaceuticals to meet public health demands.",
         "history": "Founded in 1976, Bio-Manguinhos has played a crucial role in Brazil's public health programs by investing in innovation, technological development, and manufacturing. It is renowned for producing vaccines like the yellow fever vaccine and has partnerships with national and international institutions to enhance its capabilities.",
         "details": {
+            "website": "https://dcvmn.org/member/biomanguinhos/",
             "founded": "1976",
             "headquarters": "Rio de Janeiro, Brazil",
             "ceo": "Mauricio Zuma Medeiros (Director)",
@@ -2581,6 +2617,7 @@
         "description": "A leading Brazilian public health institution known for vaccine and drug manufacturing, particularly contributing to the Brazilian Unified Public Health System (SUS). Fiocruz operates through its institutes, such as Bio-Manguinhos and Farmanguinhos.",
         "history": "Founded in 1900 as the Oswaldo Cruz Institute, Fiocruz has a long history of developing and manufacturing vaccines and drugs. It has expanded its capabilities over the years, becoming a major player in Latin America's vaccine production. Fiocruz has collaborated with international partners like GSK to enhance its vaccine production and research capabilities.",
         "details": {
+            "website": "https://portal.fiocruz.br/en/",
             "founded": "1900",
             "headquarters": "Rio de Janeiro, Brazil",
             "ceo": "Mario Moreira (President of Fiocruz)",
