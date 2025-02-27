@@ -185,7 +185,7 @@ const Sidebar = ({
                                         handleClickSidebar(item)
                                     }}
                                 >
-                                    {item.name}
+                                    {italizeScientificNames(item.name)}
                                 </div>
                             ))}
                         </>

@@ -56,6 +56,18 @@ const ManufacturerProfile = ({
                                 <table className='table table-light table-striped w-100 m-0'>
                                     <tbody>
                                         {Object.entries(selectedManufacturer.details).map(([attributeKey, attributeValue], index) => {
+                                            if (attributeKey === 'website') {
+                                                return (
+                                                    <tr key={index}>
+                                                        <td className='' style={{ width: '50%' }}>
+                                                            Website
+                                                        </td>
+                                                        <td className=''>
+                                                            <a style={{ color: 'blue' }} target='_blank' rel='no-refferer' href={selectedManufacturer.details.website}>{selectedManufacturer.name}</a>
+                                                        </td>
+                                                    </tr>
+                                                );
+                                            }
                                             if (attributeKey === 'revenue') {
                                                 return (
                                                     <tr key={index}>

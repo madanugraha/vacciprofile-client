@@ -1133,21 +1133,21 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                         <tbody>
                             <tr>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Vaccine Name</td>
-                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase I</td>
-                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IIA</td>
-                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IIB</td>
-                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase III</td>
-                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Phase IV</td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#F1F1F3', position: 'relative' }}>Phase I <div className='triangle-1' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#E0DFE5', position: 'relative' }}>Phase IIA <div className='triangle-2' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#CCCAD5', position: 'relative' }}>Phase IIB <div className='triangle-3' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#B5B2C3', position: 'relative' }}>Phase III <div className='triangle-4' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#A3A1B6' }}>Phase IV</td>
                             </tr>
                             {removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").length > 0 ? removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").map(x => {
                                 return (
                                     <tr>
                                         <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name}</td>
-                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase I') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
-                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase IIA') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
-                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase IIB') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
-                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase III') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
-                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.clinicalPhase.includes('Phase IV') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#F1F1F3' }}>{x.clinicalPhase.includes('Phase I') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#E0DFE5' }}>{x.clinicalPhase.includes('Phase IIA') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#CCCAD5' }}>{x.clinicalPhase.includes('Phase IIB') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#B5B2C3' }}>{x.clinicalPhase.includes('Phase III') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#A3A1B6' }}>{x.clinicalPhase.includes('Phase IV') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
                                     </tr>
                                 )
                             }

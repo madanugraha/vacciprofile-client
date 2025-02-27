@@ -167,7 +167,7 @@
         "pathogenId": 17,
         "pathogenName": "Herpes Zoster Virus",
         "platform": "CpG 1018 adjuvanted",
-        "manufacturer": "Dynavax",
+        "manufacturer": "Dynavax Technologies Corporation",
         "clinicalPhase": "Phase I"
     },
     {
@@ -356,14 +356,14 @@
         "pathogenId": 32,
         "pathogenName": "Mycobacterium Tuberculosis",
         "platform": "Subunit",
-        "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical\n",
+        "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical",
         "clinicalPhase": "Phase IIa"
     },
     {
         "vaccineId": 41,
         "name": "MTBVAC",
         "pathogenId": 33,
-        "pathogenName": "Mycobacterium tuberculosis",
+        "pathogenName": "Mycobacterium Tuberculosis",
         "platform": "No data",
         "manufacturer": "Bharat Biotech",
         "clinicalPhase": "Phase I"
@@ -563,7 +563,7 @@
         "pathogenId": 50,
         "pathogenName": "Schistosoma",
         "platform": "Subunit",
-        "manufacturer": "FIOCRUZ\nAccess to Advanced Health Institute (AAHI)",
+        "manufacturer": "Fiocruz",
         "clinicalPhase": "Phase II"
     },
     {
@@ -635,7 +635,7 @@
         "pathogenId": 58,
         "pathogenName": "Yersinia pestis",
         "platform": "CpG 1018 adjuvanted",
-        "manufacturer": "Dynavax",
+        "manufacturer": "Dynavax Technologies Corporation",
         "clinicalPhase": "Phase II"
     },
     {
@@ -646,5 +646,14 @@
         "platform": "No data",
         "manufacturer": "Bharat Biotech",
         "clinicalPhase": "Phase I"
+    },
+    {
+        "vaccineId": 74,
+        "name": "Sm-14",
+        "pathogenId": 50,
+        "pathogenName": "Schistosoma",
+        "platform": "Subunit",
+        "manufacturer": "Access to Advanced Health Institute (AAHI)",
+        "clinicalPhase": "Phase II"
     }
 ]

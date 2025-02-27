@@ -4,7 +4,9 @@
         "name": "Pfizer",
         "history": "Pfizer, founded in 1849 by Charles Pfizer and Charles Erhart in Brooklyn, New York, began as a fine-chemicals company producing antiparasitic drugs. Its breakthrough came during World War II when it mass-produced penicillin using deep-tank fermentation, transforming the antibiotic into a widely available medicine. This innovation established Pfizer as a global pharmaceutical leader. Over the decades, the company expanded its portfolio with groundbreaking treatments, including cholesterol-lowering drugs, vaccines, and oncology therapies. Notably, Pfizer co-developed the first mRNA-based COVID-19 vaccine, BNT162b2, in partnership with BioNTech, which became a pivotal tool in combating the pandemic. Today, Pfizer remains a leading global biopharmaceutical company focused on research, innovation, and public health solutions.",
         "description": "",
+     
         "details": {
+            "website": "https://www.pfizer.com/",
             "founded": "1849",
             "headquarters": "New York City, U.S.",
             "ceo": "Dr. Albert Bourla",
@@ -59,7 +61,9 @@
         "name": "BioNTech",
         "history": "BioNTech SE, founded in 2008 by scientists Uğur Şahin, Özlem Türeci, and Christoph Huber, is a German biotechnology company headquartered in Mainz, Germany. The company specializes in the development of immunotherapies, particularly mRNA-based therapeutics, for the treatment of cancer and infectious diseases. BioNTech initially focused on personalized cancer vaccines, leveraging its expertise in messenger RNA (mRNA) technology. However, the company gained global recognition during the COVID-19 pandemic for its rapid development of the first approved mRNA vaccine, BNT162b2, in collaboration with Pfizer. This vaccine played a pivotal role in combating the pandemic, marking a major breakthrough in biotechnology and mRNA therapeutics. BioNTech continues to innovate in oncology, infectious diseases, and rare genetic conditions, building on its vision of using cutting-edge science to improve global health.",
         "description": "T.B.A.",
+     
         "details": {
+            "website":"https://www.biontech.com/int/en/home.html",
             "founded": "2008",
             "headquarters": "Mainz, Germany",
             "ceo": "Uğur Şahin",
@@ -178,7 +182,9 @@
         "name": "Moderna, Inc.",
         "history": "Moderna, Inc., founded in 2010 and headquartered in Cambridge, Massachusetts, is a biotechnology company specializing in messenger RNA (mRNA) technology for therapeutic and vaccine development. The company was initially focused on leveraging mRNA to produce proteins within cells to treat various diseases. Over the years, Moderna expanded its platform to include vaccines for infectious diseases, cancer treatments, and rare diseases. It gained worldwide recognition during the COVID-19 pandemic by rapidly developing and manufacturing one of the first mRNA-based vaccines, branded as Spikevax. Approved in 2020, this vaccine marked a breakthrough in biotechnology and positioned Moderna as a leader in innovative medicine. The company continues to invest in research and development to explore the vast potential of mRNA technology across various medical fields.",
         "description": "An American biotechnology company focused on developing messenger RNA (mRNA) therapeutics and vaccines.",
+       
         "details": {
+            "website": "https://www.modernatx.com/",
             "founded": "2010",
             "headquarters": "Cambridge, Massachusetts, USA",
             "ceo": "Stéphane Bancel",
@@ -371,7 +377,9 @@
         "name": "Bharat Biotech",
         "description": "An Indian biotechnology company that is known for developing innovative vaccines, biotherapeutics, and healthcare products.",
         "history": "Bharat Manufacture has its roots in the industrial development of India, reflecting the nation's rise as a global manufacturing hub. Emerging during the post-independence era, when India sought to establish self-reliance in key industries, Bharat Manufacture initially focused on producing essential goods to reduce dependence on imports. As the country embraced economic reforms in the 1990s, Bharat Manufacture diversified and modernized, adopting advanced technologies and global best practices. This transformation was fueled by the 'Make in India' initiative, launched in 2014, which encouraged domestic production and foreign investments. Today, Bharat Manufacture spans various sectors, from automotive and textiles to cutting-edge electronics and pharmaceuticals, symbolizing India's innovative spirit and industrial prowess on the world stage.",
+      
         "details": {
+            "website": "https://www.bharatbiotech.com/",
             "founded": "1996",
             "headquarters": "Hyderabad, India",
             "ceo": "Krishna Ella",
@@ -625,7 +633,9 @@
         "name": "GSK",
         "description": "A British multinational pharmaceutical and biotechnology company known for developing innovative medicines and vaccines.",
         "history": "GSK was formed in 2000 through the merger of Glaxo Wellcome and SmithKline Beecham. Its legacy companies have a long history dating back to the Plough Court Pharmacy in London in 1715. GSK has developed numerous essential medicines and vaccines, including the first malaria vaccine, RTS,S, and has played a significant role in global healthcare.",
+      
         "details": {
+            "website": "https://www.gsk.com/en-gb/",
             "founded": "2000 (through merger)",
             "headquarters": "London, UK",
             "ceo": "Emma Walmsley",
@@ -899,7 +909,9 @@
         "name": "Sanofi",
         "description": "A multinational pharmaceutical company known for its extensive portfolio of medicines and vaccines, including treatments for cancer, rare diseases, and multiple sclerosis.",
         "history": "Sanofi's history dates back to the 19th century through its predecessor companies. It was formally established in 1973 as a subsidiary of Elf Aquitaine. Over the years, Sanofi has grown through strategic mergers and acquisitions, becoming one of the world's leading healthcare companies. Sanofi's legacy includes pioneering work in rare diseases and vaccines, with a global presence in over 90 countries.",
+      
         "details": {
+            "website": "https://www.sanofi.com/en",
             "founded": "1973",
             "headquarters": "Paris, France",
             "ceo": "Paul Hudson",
@@ -940,7 +952,9 @@
         "name": "Valneva SE",
         "description": "A French biotechnology company specializing in the development, manufacture, and commercialization of vaccines for infectious diseases.",
         "history": "Valneva was founded in 2013 through the merger of Austrian company Intercell and French company Vivalis SA. It has been listed on the Euronext Paris since May 28, 2013.",
+   
         "details": {
+            "website": "https://valneva.com/",
             "founded": "2013",
             "headquarters": "Saint-Herblain, France",
             "ceo": "Thomas Lingelbach",
@@ -1164,7 +1178,9 @@
         "name": "MSD (Merck Sharp & Dohme)",
         "description": "A global health care company known for delivering innovative health solutions through prescription medicines, vaccines, biologic therapies, and animal health products.",
         "history": "MSD, known as Merck & Co., Inc. in the U.S. and Canada, was founded in 1891 as the American affiliate of Merck Group. It has a long history of developing important medicines and vaccines, advancing the prevention and treatment of diseases in people and animals.",
+       
         "details": {
+            "website": "https://www.msd.com/",
             "founded": "1891",
             "headquarters": "Rahway, New Jersey, USA",
             "ceo": "Robert M. Davis",
@@ -1268,7 +1284,9 @@
         "name": "VBI Vaccines Inc.",
         "description": "A biopharmaceutical company specializing in the development of innovative vaccines using virus-like particles (VLPs) and mRNA-launched eVLP technologies. VBI focuses on preventing and treating significant infectious diseases and cancers.",
         "history": "VBI Vaccines was originally incorporated in 1965 and later renamed in 2016. It has received financial support from various organizations and has been involved in developing vaccines for diseases like COVID-19 and hepatitis B.",
+      
         "details": {
+            "website": "https://www.vbivaccines.com/",
             "founded": "1965 (as Variation Biotechnologies Inc.)",
             "headquarters": "Cambridge, Massachusetts, USA",
             "ceo": "Jeff Baxter",
@@ -1490,7 +1508,9 @@
         "name": "CSL Limited",
         "description": "An Australian multinational specialty biotechnology company that researches, develops, manufactures, and markets products to treat and prevent serious human medical conditions. CSL's product areas include blood plasma derivatives, vaccines, antivenom, and cell culture reagents.",
         "history": "CSL was founded in 1916 as Commonwealth Serum Laboratories, an Australian government body focused on vaccine manufacture. It was privatized in 1994 and has since expanded through significant acquisitions, including ZLB Bioplasma AG, Aventis Behring, and Vifor Pharma AG.",
+       
         "details": {
+            "website":"https://www.csl.com/",
             "founded": "1916",
             "headquarters": "Parkville, Melbourne, Australia",
             "ceo": "Paul McKenzie",
@@ -1532,6 +1552,7 @@
         "description": "A leading South Korean biopharmaceutical company specializing in the development and manufacturing of plasma derivatives, vaccines, and therapies for rare diseases.",
         "history": "GC Biopharma was established as 'Sudo Microorganism Medical Supplies Co.' in 1967 and later renamed 'Green Cross' in 1971. Over the years, it has developed several groundbreaking products, including the world's third hepatitis B vaccine, the world's first vaccine against epidemic hemorrhagic fever, and the world's second treatment for Hunter syndrome. Today, GC Biopharma is a global leader in plasma protein therapeutics and vaccines.",
         "details": {
+            "website": "https://www.gcbiopharma.com/eng/index.do",
             "founded": "1967",
             "headquarters": "Yongin, South Korea",
             "ceo": "Eun-Chul Huh (Current CEO)",
@@ -1573,6 +1594,7 @@
                 "description": "The world's second varicella vaccine."
             }
         ],
+    
         "lastUpdated": "2024-Nov"
     },
     {
@@ -1866,7 +1888,9 @@
         "name": "SK Bioscience",
         "description": "A Korea-based company primarily engaged in the manufacture and sale of biological products, including vaccines such as SKYCellflu and Rotatech. SK Bioscience is a subsidiary of SK Group, one of Korea's largest enterprises.",
         "history": "SK Bioscience was spun off from SK Chemicals in 2018. It has a strong background in vaccine distribution and has developed its own R&D capabilities. The company launched cell culture-based influenza vaccines and has collaborated with global partners like Sanofi and the International Vaccine Institute.",
+       
         "details": {
+            "website":"https://www.skbioscience.com/en/main",
             "founded": "2018",
             "headquarters": "310, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Korea 13494",
             "ceo": "Jaeyong Ahn",
@@ -2016,7 +2040,9 @@
         "name": "Bavarian Nordic A/S",
         "description": "A Denmark-based biotechnology company specializing in the research, development, and manufacturing of vaccines, particularly those using viral vectors for infectious diseases.",
         "history": "Bavarian Nordic A/S was founded in 1992 and has since become a leading player in vaccine development, focusing on public health and preparedness. The company has expanded its operations globally, with significant contributions to vaccine solutions for diseases like smallpox, monkeypox, and tick-borne encephalitis.",
+       
         "details": {
+            "website": "https://www.bavarian-nordic.com/",
             "founded": "1992",
             "headquarters": "Hellerup, Denmark",
             "ceo": "Paul Chaplin",
@@ -2324,7 +2350,9 @@
         "name": "Zydus Lifesciences Ltd",
         "description": "A leading Indian pharmaceutical company that discovers, develops, manufactures, and markets a broad range of healthcare therapies. It operates globally, offering active pharmaceutical ingredients (APIs), human formulations, animal health products, and wellness solutions.",
         "history": "Zydus Lifesciences was founded in 1952 by Mr. Ramanbhai B. Patel. Initially known as Cadila Healthcare, it was restructured in 1995. The company has since grown significantly, becoming one of India's largest pharmaceutical companies with a global presence.",
+      
         "details": {
+            "website":"http://zyduslife.com/",
             "founded": "1952",
             "headquarters": "Ahmedabad, Gujarat, India",
             "ceo": "Pankaj R. Patel",
@@ -2463,7 +2491,9 @@
         "name": "EuBiologics Co., Ltd.",
         "description": "A biopharmaceutical company focused on improving global public health by supplying safe and effective vaccines, particularly known for its oral cholera vaccines.",
         "history": "EuBiologics was incorporated in March 2010 and has since become the largest supplier of oral cholera vaccines. It has supplied over 45 million doses of oral cholera vaccines since its prequalification in December 2015. The company has expanded its capabilities with a second manufacturing site inaugurated in April 2019.",
+        
         "details": {
+            "website":"http://eubiologics.com/eng/",
             "founded": "2010",
             "headquarters": "6F BomnalAChim BD, Mabangro8, Seochogu Seoul, South Korea",
             "ceo": "Dr. Baik Yeong-Ok",
@@ -2720,7 +2750,9 @@
         "name": "Dynavax Technologies Corporation",
         "description": "A commercial-stage biopharmaceutical company focused on developing and commercializing novel vaccines to protect against infectious diseases.",
         "history": "Dynavax Technologies Corporation has been involved in the development of innovative vaccines, with a notable achievement being the FDA approval of Heplisav-B for the prevention of hepatitis B in adults. The company has a strong commitment to utilizing proven adjuvant technology in its vaccine development.",
+      
         "details": {
+            "website":"https://www.dynavax.com/",
             "founded": "Not specified",
             "headquarters": "Emeryville, CA, USA",
             "ceo": "Not specified",
@@ -2817,7 +2849,9 @@
         "name": "Center for Vaccine Development and Global Health, University of Maryland",
         "description": "#",
         "history": "#",
+    
         "details": {
+            "website": "https://www.medschool.umaryland.edu/cvd/",
             "founded": "#",
             "headquarters": "#",
             "ceo": "#",
@@ -2874,7 +2908,7 @@
     },
     {
         "manufacturerId": 69,
-        "name": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
+        "name": "African Malaria Network Trust (African Malaria Network Trust (AMANET))",
         "description": "#",
         "history": "#",
         "details": {

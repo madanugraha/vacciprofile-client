@@ -185,3 +185,53 @@ code {
     max-height: 55vh;
   }
 }
+
+.triangle-1 {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  z-index: 999;
+  border-width: 0 20px 40px 20px;
+  border-color: transparent transparent #F1F1F3 transparent;
+  transform: rotate(90deg);
+}
+
+.triangle-2 {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  z-index: 999;
+  border-width: 0 20px 40px 20px;
+  border-color: transparent transparent #E0DFE5 transparent;
+  transform: rotate(90deg);
+}
+
+.triangle-3 {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  z-index: 999;
+  border-width: 0 20px 40px 20px;
+  border-color: transparent transparent #CCCAD5 transparent;
+  transform: rotate(90deg);
+}
+
+.triangle-4 {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  z-index: 999;
+  border-width: 0 20px 40px 20px;
+  border-color: transparent transparent #B5B2C3 transparent;
+  transform: rotate(90deg);
+}
+
+.triangle-5 {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  z-index: 999;
+  border-width: 0 20px 40px 20px;
+  border-color: transparent transparent #A3A1B6 transparent;
+  transform: rotate(90deg);
+}

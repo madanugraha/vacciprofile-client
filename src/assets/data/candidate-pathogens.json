@@ -112,10 +112,6 @@
         "name": "Mycobacterium Tuberculosis"
     },
     {
-        "pathogenId": 29,
-        "name": "Mycobacterium tuberculosis"
-    },
-    {
         "pathogenId": 30,
         "name": "Neisseria gonorrhoeae"
     },
@@ -166,10 +162,6 @@
     {
         "pathogenId": 42,
         "name": "Salmonella Paratyphi"
-    },
-    {
-        "pathogenId": 43,
-        "name": "Salmonella Typhi"
     },
     {
         "pathogenId": 44,
