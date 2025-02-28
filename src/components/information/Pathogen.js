@@ -1161,7 +1161,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     <ul>
                         {getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).length > 0 ? getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).map((x) => {
                             return (
-                                <li>{x.platform}</li>
+                                <li>{x}</li>
                             )
                         }) : <li>no data to display</li>}
                     </ul>

@@ -156,7 +156,13 @@ const Sidebar = ({
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showLicensedPathogens ? 'active' : 'inactive'}`}>
                                 Pathogen with Licensed Vaccines
                             </div>
-                            {showLicensedPathogens && filteredLicenserSidebarList.map((item, i) => (
+                            <div onClick={() => {
+                                setShowLicensedPathogens(false);
+                                setShowVaccineCandidatePathogens(!showVaccineCandidatePathogens)
+                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidatePathogens ? 'active' : 'imactive'}`}>
+                                Pathogen with Vaccine Candidates
+                            </div>
+                            {showVaccineCandidatePathogens && sampleVaccineCandidatePathogen.map((item, i) => (
                                 <div
                                     key={i}
                                     className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item
@@ -169,13 +175,7 @@ const Sidebar = ({
                                     {italizeScientificNames(item.name)}
                                 </div>
                             ))}
-                            <div onClick={() => {
-                                setShowLicensedPathogens(false);
-                                setShowVaccineCandidatePathogens(!showVaccineCandidatePathogens)
-                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidatePathogens ? 'active' : 'imactive'}`}>
-                                Pathogen with Vaccine Candidates
-                            </div>
-                            {showVaccineCandidatePathogens && sampleVaccineCandidatePathogen.map((item, i) => (
+                            {showLicensedPathogens && filteredLicenserSidebarList.map((item, i) => (
                                 <div
                                     key={i}
                                     className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item
@@ -210,25 +210,26 @@ const Sidebar = ({
                                         }} className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${showSinglePathogenVaccines ? 'active' : 'imactive'}`}>
                                             Single Pathogen Vaccines
                                         </div>
-                                        {showSinglePathogenVaccines && filteredLicenserSidebarList && filteredLicenserSidebarList.length > 0 && removeDuplicatesFromArray(getSinglePathogenVaccineArray(filteredLicenserSidebarList), "name").map((item, i) => (
-                                            <div
-                                                key={i}
-                                                className={`sidebar-item subgroup-colour text-dark rounded-3 ms-5 mb-1 ${showSinglePathogenVaccines && activeTab === 'Vaccine' && selectedVaccine === item
-                                                    ? 'active' : 'inactive'
-                                                    }`}
-                                                onClick={() => {
-                                                    handleClickSidebar(item)
-                                                }}
-                                            >
-                                                {item?.name}
-                                            </div>
-                                        ))}
+
                                         <div onClick={() => {
                                             setShowCombinationVaccines(!showCombinationVaccines);
                                             setShowSinglePathogenVaccines(false);
                                         }} className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${showCombinationVaccines ? 'active' : 'imactive'}`}>
                                             Combination Vaccines
                                         </div>
+
+                                    </>
+                                )}
+                            <div onClick={() => {
+                                setShowLicensedVaccines(false);
+                                setShowVaccineCandidates(!showVaccineCandidates)
+                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidates ? 'active' : 'imactive'}`}>
+                                Vaccine Candidates
+                            </div>
+
+                            {
+                                showLicensedVaccines && (
+                                    <div>
                                         {showCombinationVaccines && filteredLicenserSidebarList && filteredLicenserSidebarList.length > 0 && removeDuplicatesFromArray(getCombinationVaccineneArray(filteredLicenserSidebarList), "name").map((item, i) => (
                                             <div
                                                 key={i}
@@ -242,14 +243,24 @@ const Sidebar = ({
                                                 {item?.name}
                                             </div>
                                         ))}
-                                    </>
-                                )}
-                            <div onClick={() => {
-                                setShowLicensedVaccines(false);
-                                setShowVaccineCandidates(!showVaccineCandidates)
-                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidates ? 'active' : 'imactive'}`}>
-                                Vaccine Candidates
-                            </div>
+
+                                        {showSinglePathogenVaccines && filteredLicenserSidebarList && filteredLicenserSidebarList.length > 0 && removeDuplicatesFromArray(getSinglePathogenVaccineArray(filteredLicenserSidebarList), "name").map((item, i) => (
+                                            <div
+                                                key={i}
+                                                className={`sidebar-item subgroup-colour text-dark rounded-3 ms-5 mb-1 ${showSinglePathogenVaccines && activeTab === 'Vaccine' && selectedVaccine === item
+                                                    ? 'active' : 'inactive'
+                                                    }`}
+                                                onClick={() => {
+                                                    handleClickSidebar(item)
+                                                }}
+                                            >
+                                                {item?.name}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )
+                            }
+
                             {showVaccineCandidates && removeDuplicatesFromArray(sampleVaccineCandidatesVaccine, "name").map((item, i) => (
                                 <div
                                     key={i}

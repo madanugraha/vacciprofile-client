@@ -1,6 +1,7 @@
 import React from 'react';
-import { getCandidateVaccineByManufactureName, removeDuplicatesFromArray } from '../../utils/array';
+import { getAllPathogenNameByVaccineCandidateName, getAllPhasesByVaccineCandidateName, getAllPlatformByCandidateName, getCandidateVaccineByManufactureName, removeDuplicatesFromArray } from '../../utils/array';
 import { getLicensedVaccineByManufacturerId, getPathogenDetailById } from '../../utils/pathogens';
+import * as _ from 'lodash';
 
 /**
  * VaccineListTable Component
@@ -149,7 +150,7 @@ const VaccineListTable = ({
                                 </tr>
                             </thead>
                             <tbody>
-                                {getCandidateVaccineByManufactureName(selectedManufacturer.name).length > 0 ? getCandidateVaccineByManufactureName(selectedManufacturer.name).map((vaccine, key) => {
+                                {_.uniqBy(getCandidateVaccineByManufactureName(selectedManufacturer.name), "name").length > 0 ? _.uniqBy(getCandidateVaccineByManufactureName(selectedManufacturer.name), "name").map((vaccine, key) => {
                                     return (
                                         <tr key={key}>
                                             <td className='vaccine-cell'>
@@ -163,13 +164,13 @@ const VaccineListTable = ({
                                                 </span>
                                             </td>
                                             <td className='pathogen-cell d-flex flex-row'>
-                                                <span>{vaccine.pathogenName}</span>
+                                                <span>{getAllPathogenNameByVaccineCandidateName(vaccine.name)}</span>
                                             </td>
                                             <td className='status-cell'>
-                                                <span>{vaccine.platform}</span>
+                                                <span>{getAllPlatformByCandidateName(vaccine.name)}</span>
                                             </td>
                                             <td className='licenser-cell'>
-                                                {vaccine.clinicalPhase}
+                                                {getAllPhasesByVaccineCandidateName(vaccine.name)}
                                             </td>
                                         </tr>
                                     )

@@ -30,22 +30,108 @@ export const getCandidateVaccines = () => {
 }
 
 export const getAllRelatedVaccineCandidateByName = (name) => {
-    return vaccines.filter((x) => x.name === name)
+    return vaccines.filter((x) => x.name !== "" && x.name.toLowerCase().includes(name.toLowerCase()))
 }
 
+export const getAllPathogenNameByVaccineCandidateName = (name) => {
+    const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
+    if (f.length > 0) {
+        const ff = f.map((x) => x.pathogenName);
+        if (ff.length > 0) {
+            return _.uniq(ff).join(', ')
+        }
+    }
+};
+
+export const getAllPhasesByVaccineCandidateName = (name) => {
+    const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
+    if (f.length > 0) {
+        const ff = f.map((x) => x.clinicalPhase);
+        if (ff.length > 0) {
+            return _.uniq(ff).join(', ')
+        }
+    }
+};
+
+export const getAllPlatformByCandidateName = (name) => {
+    const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
+    if (f.length > 0) {
+        const ff = f.map((x) => x.platform);
+        if (ff.length > 0) {
+            const platforms = _.uniq(ff);
+            let platformFinal = [];
+            for (let i = 0; i < platforms.length; i++) {
+                if (platforms[i].includes(',')) {
+                    const s = _.uniq(platforms[i].split(','));
+                    if (s.length > 0) {
+                        for (let i = 0; i < s.length; i++) {
+                            platformFinal.push(s[i])
+                        }
+                    }
+                } else if (platforms[i].includes(';')) {
+                    const s = _.uniq(platforms[i].split(';'));
+                    if (s.length > 0) {
+                        for (let i = 0; i < s.length; i++) {
+                            platformFinal.push(s[i])
+                        }
+                    }
+                } else {
+                    platformFinal.push(platforms[i])
+                }
+            }
+
+            platformFinal = platformFinal.filter((x) => !x.includes(';')).sort((a, b) => a.localeCompare(b));
+            if (platformFinal.length > 0) {
+                return _.uniq(platformFinal).join(', ')
+                // return _.uniqBy(f.sort((a, b) => a.platform.localeCompare(b.platform)), "platform")
+            } else {
+                return ""
+            }
+        }
+    }
+};
 
 export const getCandidateVaccinesByPathogenName = (pathogen) => {
-    return vaccines.filter((x) => x.pathogenName === pathogen)
+    return vaccines.filter((x) => x.pathogenName.toLowerCase().includes(pathogen.toLowerCase()))
 }
 
 export const getCandidateVaccineByManufactureName = (manufacture) => {
-    return vaccines.filter((x) => x.manufacturer.includes(manufacture))
+    return vaccines.filter((x) => x.name !== "" && x.manufacturer.includes(manufacture))
 }
 
 export const getVaccineCandidatePlatformsUniqueByPathogenName = (pathogen) => {
-    const f = vaccines.filter((x) => x.pathogenName === pathogen && !x.platform.includes('No data'));
-    if (f.length > 0) {
-        return _.uniqBy(f.sort((a, b) => a.platform.localeCompare(b.platform)), "platform")
+    const d = vaccines.filter((x) => x.pathogenName.toLowerCase().includes(pathogen.toLowerCase()) && !x.platform.includes('No data'));
+    let platforms = [];
+    const f = d.map((x) => {
+        platforms.push(x.platform);
+        return x
+    });
+    platforms = _.uniq(platforms);
+    let platformFinal = [];
+    for (let i = 0; i < platforms.length; i++) {
+        if (platforms[i].includes(',')) {
+            const s = _.uniq(platforms[i].split(','));
+            if (s.length > 0) {
+                for (let i = 0; i < s.length; i++) {
+                    platformFinal.push(s[i])
+                }
+            }
+        } else if (platforms[i].includes(';')) {
+            const s = _.uniq(platforms[i].split(';'));
+            if (s.length > 0) {
+                for (let i = 0; i < s.length; i++) {
+                    platformFinal.push(s[i])
+                }
+            }
+        } else {
+            platformFinal.push(platforms[i])
+        }
+    }
+
+    platformFinal = platformFinal.filter((x) => !x.includes(';')).sort((a, b) => a.localeCompare(b));
+    if (platformFinal.length > 0) {
+        return _.uniq(platformFinal);
+        // return _.uniqBy(f.sort((a, b) => a.platform.localeCompare(b.platform)), "platform")
     } else {
         return []
     }

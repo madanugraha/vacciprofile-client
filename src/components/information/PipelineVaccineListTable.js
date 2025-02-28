@@ -1,6 +1,6 @@
 import React from 'react';
 import { getCandidateVaccineByManufactureName } from '../../utils/array';
-
+import * as _ from 'lodash';
 /**
  * PipelineVaccineListTable Component
  *
@@ -68,7 +68,7 @@ const PipelineVaccineListTable = ({
                                 </tr>
                             </thead>
                             <tbody>
-                                {getCandidateVaccineByManufactureName(selectedManufacturer.name).map((vaccine, key) => <tr key={key}>
+                                {_.uniqBy(getCandidateVaccineByManufactureName(selectedManufacturer.name), "name").map((vaccine, key) => <tr key={key}>
                                     <td className='vaccine-cell'>
                                         <span
                                             className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `disabled`}`}

@@ -1,659 +1,4952 @@
 [
     {
-        "vaccineId": 1,
-        "name": "GC1109",
-        "pathogenId": 1,
+        "": "",
         "pathogenName": "Bacillus anthracis",
-        "platform": "No data",
+        "name": "GC1109",
         "manufacturer": "GC Biopharma",
-        "clinicalPhase": "Phase IV"
+        "platform": "No data",
+        "clinicalPhase": "Phase IV",
+        "companyUrl": "https://www.gcbiopharma.com/eng/index.do"
     },
     {
-        "vaccineId": 2,
+        "": "",
+        "pathogenName": "Bordetella pertussis; Clostridium tetani; Corynebacterium diphtheriae",
         "name": "GC3111A",
-        "pathogenId": 2,
-        "pathogenName": "Clostridium tetani",
-        "platform": "No data",
         "manufacturer": "GC Biopharma",
-        "clinicalPhase": "Phase II"
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gcbiopharma.com/eng/index.do"
     },
     {
-        "vaccineId": 3,
-        "name": "GC3111A",
-        "pathogenId": 2,
-        "pathogenName": "Corynebacterium diphtheriae",
-        "platform": "No data",
-        "manufacturer": "GC Biopharma",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 4,
-        "name": "GC3111A",
-        "pathogenId": 2,
-        "pathogenName": "Bordetella pertussis",
-        "platform": "No data",
-        "manufacturer": "GC Biopharma",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 5,
-        "name": "mRNA-1975",
-        "pathogenId": 3,
+        "": "",
         "pathogenName": "Borrelia burgdorferi",
-        "platform": "RNA",
+        "name": "mRNA-1975",
         "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase II"
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
     },
     {
-        "vaccineId": 6,
-        "name": "CHIKV VLP",
-        "pathogenId": 4,
-        "pathogenName": "Chikungunya Virus",
-        "platform": "Subunit",
-        "manufacturer": "Bavarian Nordic A/S",
-        "clinicalPhase": "Phase III"
+        "": "",
+        "pathogenName": "Borrelia burgdorferi",
+        "name": "mRNA-1982",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
     },
     {
-        "vaccineId": 7,
-        "name": "CHIKUNGUNYA",
-        "pathogenId": 5,
-        "pathogenName": "Chikungunya Virus",
-        "platform": "No data",
-        "manufacturer": "Bharat Biotech",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 8,
-        "name": "PF-07831694",
-        "pathogenId": 6,
-        "pathogenName": "Clostridium difficile",
-        "platform": "No data",
+        "": "",
+        "pathogenName": "Borrelia burgdorferi",
+        "name": "PF-07307405",
         "manufacturer": "Pfizer",
-        "clinicalPhase": "Phase II"
+        "platform": "No data",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
     },
     {
-        "vaccineId": 9,
+        "": "",
+        "pathogenName": "Borrelia burgdorferi",
+        "name": "VLA15",
+        "manufacturer": "Valneva",
+        "platform": "Recombinant protein vaccine",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://valneva.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Chikungunya virus",
+        "name": "CHIKV VLP",
+        "manufacturer": "Bavarian Nordic",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.bavarian-nordic.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Chikungunya Virus",
+        "name": "CHIKUNGUNYA",
+        "manufacturer": "Bharat",
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.bharatbiotech.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Clostridium difficile",
+        "name": "PF-07831694\n",
+        "manufacturer": "Pfizer",
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Clostridium difficile",
+        "name": "PF-06425090",
+        "manufacturer": "Pfizer",
+        "platform": "No data",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "CMV",
         "name": "GSK3993129",
-        "pathogenId": 7,
-        "pathogenName": "Cytomegalovirus (CMV)",
-        "platform": "Subunit",
         "manufacturer": "GSK",
-        "clinicalPhase": "Phase II"
+        "platform": "Subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
     },
     {
-        "vaccineId": 10,
-        "name": "mRNA-1647",
-        "pathogenId": 8,
+        "": "",
         "pathogenName": "Cytomegalovirus",
-        "platform": "RNA",
+        "name": "mRNA-1647",
         "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase III"
+        "platform": "RNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
     },
     {
-        "vaccineId": 11,
-        "name": "VBI-1501",
-        "pathogenId": 9,
+        "": "",
         "pathogenName": "Cytomegalovirus (CMV)",
+        "name": "VBI-1501",
+        "manufacturer": "VBI Vaccines",
         "platform": "Virus-Like Particle (VLP)",
-        "manufacturer": "VBI Vaccines Inc.",
-        "clinicalPhase": "Phase I"
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.vbivaccines.com/"
     },
     {
-        "vaccineId": 12,
-        "name": "V181",
-        "pathogenId": 10,
+        "": "",
         "pathogenName": "Dengue Virus",
-        "platform": "No data",
+        "name": "V181",
         "manufacturer": "MSD (Merck Sharp & Dohme)",
-        "clinicalPhase": "Phase II"
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.msd.com/"
     },
     {
-        "vaccineId": 13,
-        "name": "CVD 1208S-122",
-        "pathogenId": 11,
+        "": "",
         "pathogenName": "Enterotoxigenic Escherichia coli (ETEC)",
-        "platform": "Live-attenuated",
+        "name": "CVD 1208S-122",
         "manufacturer": "Center for Vaccine Development and Global Health, University of Maryland",
-        "clinicalPhase": "Phase I"
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.medschool.umaryland.edu/cvd/"
     },
     {
-        "vaccineId": 14,
-        "name": "mRNA-1189",
-        "pathogenId": 12,
-        "pathogenName": "Epstein–Barr Virus",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
+        "": "",
+        "pathogenName": "Enterotoxigenic Escherichia coli (ETEC)",
+        "name": "ShigETEC",
+        "manufacturer": "Eveliqure Biotechnologies",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.eveliqure.com/"
     },
     {
-        "vaccineId": 15,
-        "name": "SP0282",
-        "pathogenId": 13,
-        "pathogenName": "Escherichia coli (E. coli)",
-        "platform": "Conjugate",
-        "manufacturer": "Sanofi",
-        "clinicalPhase": "Phase III"
+        "": "",
+        "pathogenName": "Enterotoxigenic Escherichia coli (ETEC)",
+        "name": "FTA",
+        "manufacturer": "Naval Medical Research Center",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIA",
+        "companyUrl": "https://www.med.navy.mil/Naval-Medical-Research-Command/About-NMRC/"
     },
     {
-        "vaccineId": 16,
-        "name": "Inactivated Hepatitis A Vaccine (Adsorbed)",
-        "pathogenId": 14,
-        "pathogenName": "Hepatitis A Virus",
+        "": "",
+        "pathogenName": "Enterotoxigenic Escherichia coli (ETEC)",
+        "name": "ETVAX",
+        "manufacturer": "Scandinavian Biopharma",
         "platform": "Inactivated",
-        "manufacturer": "Zydus Lifesciences",
-        "clinicalPhase": "Phase I"
+        "clinicalPhase": "Phase IIB",
+        "companyUrl": "https://scandinavianbiopharma.se/"
     },
     {
-        "vaccineId": 17,
-        "name": "Recombinant Hepatitis E Vaccine (Adsorbed)",
-        "pathogenId": 15,
+        "": "",
+        "pathogenName": "Epstein–Barr Virus",
+        "name": "mRNA-1189",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Epstein–Barr Virus",
+        "name": "mRNA-1195",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Escherichia coli (E. coli)",
+        "name": "SP0282",
+        "manufacturer": "Sanofi",
+        "platform": "Conjugate",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Hepatitis A Virus",
+        "name": "Inactivated Hepatitis A Vaccine (Adsorbed)",
+        "manufacturer": "Zydus Lifesciences",
+        "platform": "Inactivated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://zyduslife.com/"
+    },
+    {
+        "": "",
         "pathogenName": "Hepatitis E Virus",
-        "platform": "Recombinant",
+        "name": "Recombinant Hepatitis E Vaccine (Adsorbed)",
         "manufacturer": "Zydus Lifesciences",
-        "clinicalPhase": "Phase II"
+        "platform": "Recombinant",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "http://zyduslife.com/"
     },
     {
-        "vaccineId": 18,
+        "": "",
+        "pathogenName": "Herpes Simplex Virus (HSV)",
         "name": "BNT163",
-        "pathogenId": 16,
-        "pathogenName": "Herpes Simplex Virus (HSV)",
-        "platform": "RNA",
         "manufacturer": "BioNTech",
-        "clinicalPhase": "Phase I"
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.biontech.com/int/en/home.html"
     },
     {
-        "vaccineId": 19,
+        "": "",
+        "pathogenName": "Herpes zoster Virus",
         "name": "Z-1018",
-        "pathogenId": 17,
-        "pathogenName": "Herpes Zoster Virus",
+        "manufacturer": "Dynavax",
         "platform": "CpG 1018 adjuvanted",
-        "manufacturer": "Dynavax Technologies Corporation",
-        "clinicalPhase": "Phase I"
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.dynavax.com/"
     },
     {
-        "vaccineId": 20,
-        "name": "mRNA-1644",
-        "pathogenId": 18,
-        "pathogenName": "HIV",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 21,
-        "name": "mRNA-1608",
-        "pathogenId": 19,
-        "pathogenName": "Herpes Simplex Virus (HSV)",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 22,
-        "name": "IVX-A12",
-        "pathogenId": 20,
-        "pathogenName": "Respiratory Syncytial Virus (RSV)",
-        "platform": "Subunit",
-        "manufacturer": "AstraZeneca",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 23,
-        "name": "IVX-A12",
-        "pathogenId": 20,
-        "pathogenName": "Human metapneumovirus (hMPV)",
-        "platform": "Subunit",
-        "manufacturer": "AstraZeneca",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 24,
-        "name": "mRNA-1365",
-        "pathogenId": 21,
-        "pathogenName": "Respiratory Syncytial Virus (RSV)",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 25,
-        "name": "mRNA-1365",
-        "pathogenId": 21,
-        "pathogenName": "Human metapneumovirus (hMPV)",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 26,
-        "name": "SP0291",
-        "pathogenId": 22,
-        "pathogenName": "Respiratory Syncytial Virus (RSV)",
-        "platform": "RNA",
-        "manufacturer": "Sanofi",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 27,
-        "name": "SP0291",
-        "pathogenId": 22,
-        "pathogenName": "Human metapneumovirus (hMPV)",
-        "platform": "RNA",
-        "manufacturer": "Sanofi",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 28,
-        "name": "4-valent HPV vaccine",
-        "pathogenId": 23,
-        "pathogenName": "Human Papillomavirus (HPV)",
+        "": "",
+        "pathogenName": "Herpes zoster Virus",
+        "name": "EuHZV",
+        "manufacturer": "EuBiologics",
         "platform": "No data",
-        "manufacturer": "SK Bioscience",
-        "clinicalPhase": "Phase I"
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://eubiologics.com/eng/"
     },
     {
-        "vaccineId": 29,
-        "name": "CSL405 Cell-based Influenza (H2N3) vaccine",
-        "pathogenId": 24,
-        "pathogenName": "Influenza Virus",
-        "platform": "Cell-based",
-        "manufacturer": "CSL Limited",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 30,
-        "name": "mRNA-1018",
-        "pathogenId": 25,
-        "pathogenName": "Influenza Virus (Pandemic)",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 31,
-        "name": "mRNA-1045",
-        "pathogenId": 26,
-        "pathogenName": "Respiratory Syncytial Virus (RSV)",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 32,
-        "name": "mRNA-1045",
-        "pathogenId": 26,
-        "pathogenName": "Influenza Virus",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 33,
-        "name": "mRNA-1083",
-        "pathogenId": 27,
-        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase III"
-    },
-    {
-        "vaccineId": 34,
-        "name": "mRNA-1083",
-        "pathogenId": 27,
-        "pathogenName": "Influenza Virus",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase III"
-    },
-    {
-        "vaccineId": 35,
-        "name": "mRNA-1230",
-        "pathogenId": 28,
-        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 36,
-        "name": "mRNA-1230",
-        "pathogenId": 28,
-        "pathogenName": "Influenza Virus",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 37,
-        "name": "GSK4023393",
-        "pathogenId": 29,
-        "pathogenName": "Men ABCWY",
-        "platform": "Subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 38,
-        "name": "GSK4406371",
-        "pathogenId": 30,
-        "pathogenName": "MMRV",
-        "platform": "Live-attenuated",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 39,
-        "name": "BNT166",
-        "pathogenId": 31,
-        "pathogenName": "Monkeypox Virus (MPV, MPXV, or hMPXV)",
-        "platform": "RNA",
-        "manufacturer": "BioNTech",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 40,
-        "name": "AEC/BC02",
-        "pathogenId": 32,
-        "pathogenName": "Mycobacterium Tuberculosis",
-        "platform": "Subunit",
-        "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical",
-        "clinicalPhase": "Phase IIa"
-    },
-    {
-        "vaccineId": 41,
-        "name": "MTBVAC",
-        "pathogenId": 33,
-        "pathogenName": "Mycobacterium Tuberculosis",
-        "platform": "No data",
-        "manufacturer": "Bharat Biotech",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 42,
-        "name": "4CMenB",
-        "pathogenId": 34,
-        "pathogenName": "Neisseria gonorrhoeae",
-        "platform": "Subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase III"
-    },
-    {
-        "vaccineId": 43,
-        "name": "SP0230",
-        "pathogenId": 35,
-        "pathogenName": "Neisseria meningitidis A, B, C, W, Y",
-        "platform": "No data",
-        "manufacturer": "Sanofi",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 44,
-        "name": "EunNmCV-5",
-        "pathogenId": 36,
-        "pathogenName": "Neisseria meningitidis A, C, W, X, Y",
-        "platform": "CRM₁₉₇ protein conjugate",
-        "manufacturer": "EuBiologics Co., Ltd.",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 45,
-        "name": "EuMCV-4",
-        "pathogenId": 37,
-        "pathogenName": "Neisseria meningitidis A, C, W, Y",
-        "platform": "CRM₁₉₇ protein conjugate",
-        "manufacturer": "EuBiologics Co., Ltd.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 46,
-        "name": "mRNA-1215",
-        "pathogenId": 38,
-        "pathogenName": "Nipah Virus",
-        "platform": "RNA",
-        "manufacturer": "Moderna, Inc.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 47,
-        "name": "NTS CONJUGATES",
-        "pathogenId": 39,
-        "pathogenName": "Non-typhoidal Salmonella",
-        "platform": "No data",
-        "manufacturer": "Bharat Biotech Biotech",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 48,
-        "name": "GSK4077164",
-        "pathogenId": 40,
-        "pathogenName": "Salmonella Typhi",
-        "platform": "Subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 49,
-        "name": "GSK4077164",
-        "pathogenId": 40,
-        "pathogenName": "Non-typhoidal Salmonella",
-        "platform": "Subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 50,
-        "name": "Quadrivalent GI.1, GII.3, GII.4, GII.17",
-        "pathogenId": 41,
-        "pathogenName": "Norovirus",
-        "platform": "Subunit",
-        "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 51,
-        "name": "PfAMA1-FVO [25-545]/ISA 720",
-        "pathogenId": 42,
-        "pathogenName": "Plasmodium falciparum",
-        "platform": "Recombinant subunit",
-        "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 52,
-        "name": "PfAMA1-FVO [25-545]",
-        "pathogenId": 42,
-        "pathogenName": "Plasmodium falciparum",
-        "platform": "Recombinant subunit",
-        "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 53,
-        "name": "PfAMA1-FVO [25-545]/AS02A",
-        "pathogenId": 42,
-        "pathogenName": "Plasmodium falciparum",
-        "platform": "Recombinant subunit",
-        "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 54,
-        "name": "PfAMA1-FVO [25-545]/Alhydrogel",
-        "pathogenId": 42,
-        "pathogenName": "Plasmodium falciparum",
-        "platform": "Recombinant subunit",
-        "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 55,
-        "name": "VMP001/AS01B",
-        "pathogenId": 43,
-        "pathogenName": "Plasmodium vivax",
-        "platform": "Recombinant subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase I/II"
-    },
-    {
-        "vaccineId": 56,
-        "name": "SP0087",
-        "pathogenId": 44,
-        "pathogenName": "Rabies Virus",
-        "platform": "Vero cell",
-        "manufacturer": "Sanofi",
-        "clinicalPhase": "Phase III"
-    },
-    {
-        "vaccineId": 57,
-        "name": "BARS13 (rRSV-G protein)",
-        "pathogenId": 45,
-        "pathogenName": "Respiratory Syncytial Virus (RSV)",
-        "platform": "Recombinant subunit",
-        "manufacturer": "Advaccine (Suzhou)",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 58,
-        "name": "Rotavirus Vaccine",
-        "pathogenId": 46,
-        "pathogenName": "Rotavirus",
-        "platform": "No data",
-        "manufacturer": "SK Bioscience",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 59,
-        "name": "S. PARATYPHI",
-        "pathogenId": 47,
-        "pathogenName": "Salmonella Paratyphi",
-        "platform": "No data",
-        "manufacturer": "Bharat Biotech",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 60,
-        "name": "EuTYPH-C",
-        "pathogenId": 48,
-        "pathogenName": "Salmonella Typhi",
-        "platform": "Vi-CRM₁₉₇ Conjugate",
-        "manufacturer": "EuBiologics Co., Ltd.",
-        "clinicalPhase": "Phase IV"
-    },
-    {
-        "vaccineId": 61,
-        "name": "GSK3536867",
-        "pathogenId": 49,
-        "pathogenName": "Salmonella Paratyphi A",
-        "platform": "Subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 62,
-        "name": "GSK3536867",
-        "pathogenId": 49,
-        "pathogenName": "Salmonella Typhi",
-        "platform": "Subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 63,
-        "name": "Sm-14",
-        "pathogenId": 50,
-        "pathogenName": "Schistosoma",
-        "platform": "Subunit",
-        "manufacturer": "Fiocruz",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 64,
-        "name": "mRNA VLP vaccine",
-        "pathogenId": 51,
-        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-        "platform": "RNA",
-        "manufacturer": "AstraZeneca",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 65,
-        "name": "Shigella vaccine (bivalent) ZF0901",
-        "pathogenId": 52,
-        "pathogenName": "Shigella",
-        "platform": "Subunit",
-        "manufacturer": "Beijing Zhifei Lvzhu Biopharmaceutical",
-        "clinicalPhase": "Phase III"
-    },
-    {
-        "vaccineId": 67,
-        "name": "Trivalent Conjugate Vaccine",
-        "pathogenId": 53,
-        "pathogenName": "Streptococcus agalactiae (Group B Streptococcus GBS)",
-        "platform": "Subunit",
-        "manufacturer": "GSK",
-        "clinicalPhase": "Phase IIA"
-    },
-    {
-        "vaccineId": 68,
-        "name": "EuPCV ",
-        "pathogenId": 54,
-        "pathogenName": "Streptococcus pneumoniae",
-        "platform": "CRM₁₉₇ protein conjugate",
-        "manufacturer": "EuBiologics Co., Ltd.",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 69,
-        "name": "MG1111C",
-        "pathogenId": 55,
-        "pathogenName": "Varicella-Zoster Virus (VZV)",
-        "platform": "No data",
+        "": "",
+        "pathogenName": "Herpes zoster Virus",
+        "name": "MG1120A",
         "manufacturer": "GC Biopharma",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 70,
-        "name": "MVA-BN® WEV",
-        "pathogenId": 56,
-        "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
-        "platform": "Live-attenuated",
-        "manufacturer": "Bavarian Nordic A/S",
-        "clinicalPhase": "Phase I"
-    },
-    {
-        "vaccineId": 71,
-        "name": "SP0218",
-        "pathogenId": 57,
-        "pathogenName": "Yellow fever Virus",
-        "platform": "Vero cell",
-        "manufacturer": "Sanofi",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 72,
-        "name": "rF1V",
-        "pathogenId": 58,
-        "pathogenName": "Yersinia pestis",
-        "platform": "CpG 1018 adjuvanted",
-        "manufacturer": "Dynavax Technologies Corporation",
-        "clinicalPhase": "Phase II"
-    },
-    {
-        "vaccineId": 73,
-        "name": "ZIKA",
-        "pathogenId": 59,
-        "pathogenName": "Zika Virus",
         "platform": "No data",
-        "manufacturer": "Bharat Biotech",
-        "clinicalPhase": "Phase I"
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gcbiopharma.com/eng/index.do"
     },
     {
-        "vaccineId": 74,
-        "name": "Sm-14",
-        "pathogenId": 50,
-        "pathogenName": "Schistosoma",
+        "": "",
+        "pathogenName": "HIV",
+        "name": "mRNA-1644",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "HIV",
+        "name": "mRNA-1574",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "HSV",
+        "name": "mRNA-1608",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Human metapneumovirus (hMPV); Respiratory Syncytial Virus (RSV)",
+        "name": "IVX-A12",
+        "manufacturer": "AstraZeneca",
         "platform": "Subunit",
-        "manufacturer": "Access to Advanced Health Institute (AAHI)",
-        "clinicalPhase": "Phase II"
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Human metapneumovirus (hMPV);\nRespiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1365",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Human metapneumovirus (hMPV);\nRespiratory Syncytial Virus (RSV)",
+        "name": "SP0256",
+        "manufacturer": "Sanofi",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Human metapneumovirus (hMPV);\nRespiratory Syncytial Virus (RSV);\nHuman Parainfluenza Virus",
+        "name": "SP0291",
+        "manufacturer": "Sanofi",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Human Papillomavirus (HPV)",
+        "name": "4-valent HPV vaccine",
+        "manufacturer": "SK Bioscience",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.skbioscience.com/en/main"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "CSL405 Cell-based Influenza (H2N3) vaccine",
+        "manufacturer": "CSL Limited",
+        "platform": "Cell-based",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.csl.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "CSL406 sa-mRNA Influenza (H5N1) vaccine",
+        "manufacturer": "CSL Limited",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.csl.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "CSL400 (TIV) sa-mRNA Trivalent Influenza vaccine",
+        "manufacturer": "CSL Limited",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.csl.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "CSL403 (aTIVc) Adjuvanted Cell-based Trivalent Influenza Vaccine",
+        "manufacturer": "CSL Limited",
+        "platform": "Adjuvanted; Cell-based",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.csl.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "GSK4382276",
+        "manufacturer": "GSK",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "GSK5536522",
+        "manufacturer": "GSK",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "mRNA-1010",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "mRNA-1020",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "mRNA-1030",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "mRNA-1011",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "mRNA-1012",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "PF-07845104",
+        "manufacturer": "Pfizer",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "PF-07252220\n",
+        "manufacturer": "Pfizer",
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus",
+        "name": "SP0237",
+        "manufacturer": "Sanofi",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus (Pandemic)",
+        "name": "mRNA-1018",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus (Pandemic)",
+        "name": "PF-07985819\n",
+        "manufacturer": "Pfizer",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus (Pandemic)",
+        "name": "SP0289",
+        "manufacturer": "Sanofi",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus (Pandemic)",
+        "name": "SP0335",
+        "manufacturer": "Sanofi",
+        "platform": "Inactivated; adjuanted",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus;\nRespiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1045",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus;\nSevere Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "mRNA-1083",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus;\nSevere Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "PF-07926307",
+        "manufacturer": "Pfizer/BioNTech",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.pfizer.com/\nhttps://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus;\nSevere Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "SP0287",
+        "manufacturer": "Sanofi",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Influenza Virus;\nSevere Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2);\nRespiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1230",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Men ABCWY",
+        "name": "GSK4023393",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "MMRV",
+        "name": "GSK4406371",
+        "manufacturer": "GSK",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "MMRV",
+        "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
+        "manufacturer": "Zydus Lifesciences",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://zyduslife.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Monkeypox Virus (MPV, MPXV, or hMPXV)",
+        "name": "BNT166",
+        "manufacturer": "BioNTech",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Monkeypox Virus (MPV, MPXV, or hMPXV)",
+        "name": "mRNA-1769",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "AEC/BC02",
+        "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical\n",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIa",
+        "companyUrl": "https://en.zhifeishengwu.com"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium tuberculosis",
+        "name": "MTBVAC",
+        "manufacturer": "Bharat",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bharatbiotech.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "BNT164a1",
+        "manufacturer": "BioNTech",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "BNT164b1",
+        "manufacturer": "BioNTech",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "BNT164",
+        "manufacturer": "BioNTech",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "MIP Immuvac\n",
+        "manufacturer": "Cadila Pharmaceuticals",
+        "platform": "Whole cell",
+        "clinicalPhase": "Phase III",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "Ad5 Ag85A",
+        "manufacturer": "CanSino",
+        "platform": "Viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "DAR-901",
+        "manufacturer": "Dartmouth University",
+        "platform": "Whole cell",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://home.dartmouth.edu/dartmouth"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "GC3107A",
+        "manufacturer": "GC Biopharma",
+        "platform": "No data",
+        "clinicalPhase": "Phase IV",
+        "companyUrl": "https://www.gcbiopharma.com/eng/index.do"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "M72 + ASO1",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "BCG (Traveler vaccine)",
+        "manufacturer": "Henry M. Jackson Foundation for the Advancement of Military Medicine",
+        "platform": "live-attenuated",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.hjf.org/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "VPM1002",
+        "manufacturer": "Max Planck Institute for Infection Biology\nSerum Institute of India",
+        "platform": "live-attenuated",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.mpiib-berlin.mpg.de/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "ID93/GLA-SE (QTP101)",
+        "manufacturer": "Quratis",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIa",
+        "companyUrl": "http://www.quratis.com/m2/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "TB/Flu04L",
+        "manufacturer": "Research Institute for Biological Safety Problems",
+        "platform": "Viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://biosafety.kz/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "GamTBVac",
+        "manufacturer": "Russia Ministry of Health",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "http://government.ru/en/department/23/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "H107",
+        "manufacturer": "Statens Serum Institut",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://en.ssi.dk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "ChadOx1.85A MVA 85A",
+        "manufacturer": "University of Oxford",
+        "platform": "Viral vector",
+        "clinicalPhase": "Phase IIa",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Mycobacterium Tuberculosis",
+        "name": "MTBVAC",
+        "manufacturer": "University of Zaragoza\nInstitut Pasteur\nBiofabri",
+        "platform": "live-attenuated",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "http://www.unizar.es/"
+    },
+    {
+        "": "",
+        "pathogenName": "Neisseria gonorrhoeae",
+        "name": "4CMenB",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Neisseria meningitidis A, B, C, W, Y",
+        "name": "SP0230",
+        "manufacturer": "Sanofi",
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Neisseria meningitidis A, C, W, X, Y",
+        "name": "EunNmCV-5",
+        "manufacturer": "EuBiologics",
+        "platform": "CRM₁₉₇ protein conjugate",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "http://eubiologics.com/eng/"
+    },
+    {
+        "": "",
+        "pathogenName": "Neisseria meningitidis A, C, W, Y",
+        "name": "EuMCV-4",
+        "manufacturer": "EuBiologics",
+        "platform": "CRM₁₉₇ protein conjugate",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://eubiologics.com/eng/"
+    },
+    {
+        "": "",
+        "pathogenName": "Nipah Virus",
+        "name": "mRNA-1215",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "non-typhoidal Salmonella",
+        "name": "NTS CONJUGATES",
+        "manufacturer": "Bharat",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bharatbiotech.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "non-typhoidal Salmonella",
+        "name": "Trivalent Salmonella Conjugate Vaccine (TSCV; CVD 1000)",
+        "manufacturer": "Center for Vaccine Development and Global Health, University of Maryland\nBharat Biotech",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.medschool.umaryland.edu/cvd/\nhttps://www.bharatbiotech.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "non-typhoidal Salmonella; Salmonella Typhi",
+        "name": "GSK4077164",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Norovirus",
+        "name": "Quadrivalent GI.1, GII.3, GII.4, GII.17\n",
+        "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://en.zhifeishengwu.com"
+    },
+    {
+        "": "",
+        "pathogenName": "Norovirus",
+        "name": "Bivalent GI.1 and GII.4\n",
+        "manufacturer": "Hillevax",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.hillevax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Norovirus",
+        "name": "mRNA-1403",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Norovirus",
+        "name": "mRNA-1405",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Norovirus",
+        "name": "Bivalent GI.1 and GII.4\n",
+        "manufacturer": "National Vaccine and Serum Institute, China",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "http://cnvsi.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Norovirus",
+        "name": "Monovalent GI.1 or GII.4; or Bivalent GI.1 and GII.4",
+        "manufacturer": "Vaxart",
+        "platform": "Viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://vaxart.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfAMA1-FVO [25-545]/Alhydrogel;PfAMA1-FVO [25-545]/ISA 720;PfAMA1-FVO [25-545];PfAMA1-FVO [25-545]/AS02A",
+        "manufacturer": "African Malaria Network Trust (African Malaria Network Trust (AMANET)); Malaria Research and Training Center, Bamako",
+        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP3-LSP/Alhydrogel",
+        "manufacturer": "African Malaria Network Trust (AMANET); London School of Hygiene & Tropical Medicine (LSHTM)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "GMZ2",
+        "manufacturer": "African Malaria Network Trust (AMANET); Medical Research Unit, Albert Schweitzer Hospital, Gabon",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP3-LSP/Alhydrogel",
+        "manufacturer": "African Malaria Network Trust (AMANET); University of Bamako",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ACT-123+A2:A2089",
+        "manufacturer": "Alfred Research and Medical Education Precinct (AMREP); Burnet Institue",
+        "platform": "Synthetic peptide",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfGAP3-KO",
+        "manufacturer": "Australian National Health and Medical Research Council (NHMRC)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BNT165",
+        "manufacturer": "BioNTech",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BNT165b1",
+        "manufacturer": "BioNTech",
+        "platform": "RNA vaccine",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BNT165e",
+        "manufacturer": "BioNTech",
+        "platform": "RNA vaccine",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "GMZ2/CAF01",
+        "manufacturer": "Centre de Recherches Medicales Lambarene; German Centre for Infection Research; University of Tubingen; Statens Serum Institute",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "P27A/GLA-SE;P27A/Alhydrogel",
+        "manufacturer": "Centre Hospitalier Universitaire Vaudois (CHUV); University of Lausanne; European Vaccine Initiative (EVI); European and Developing Countries Clinical Trials Partnership (EDCTP)",
+        "platform": "Synthetic peptide;Synthetic peptide",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Ad35.CS.01 + Ad26.CS.01",
+        "manufacturer": "Crucell",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I/IIa",
+        "companyUrl": "https://www.janssen.com/infectious-diseases-and-vaccines/crucell"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs25-Pfs25 conjugate vaccine",
+        "manufacturer": "Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "GMZ2/Alhydrogel",
+        "manufacturer": "European Vaccine Initiative (EMVI); University of Tubingen",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.euvaccine.eu/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfAMA1-FVO [25-545]/Alhydrogel;PfAMA1-FVO [25-545]/ISA 720;PfAMA1-FVO [25-545]/AS02A",
+        "manufacturer": "European Vaccine Institute (EVI); Radboud University; Biomedical Primate Research Centre, Netherlands; GlaxoSmithKline (GSK)",
+        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I;Phase I;Phase I",
+        "companyUrl": "https://www.euvaccine.eu/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs25 VLP FhCMB",
+        "manufacturer": "Fraunhofer Center for Molecular Biotechnology; ExpreS2ion Technologies (Denmark); Burnet Institute; University of Oxford; ARTEST Biotechnology; Johns Hopkins University; PATH; Sabin Vaccine Institute",
+        "platform": "Virus-like particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Chemically attenuated Pf7G8",
+        "manufacturer": "Griffith University",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.griffith.edu.au/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP010/AS02A + RTS,S/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Ad35.CS.01 + RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle,Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP010/AS01B",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ia",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP010/AS01B",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP011/AS01B",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/IIa",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP011/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP2.1/AS01B;FMP2.1/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I/IIa;Phase I/Iia",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP010/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP010/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP2.1/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP2.1/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP2.1/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP010/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "GSK3437949",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01B",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01B;RTS,S/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01B;RTS,S/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II;Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase IV",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase IV",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E;RTS,S/AS02D",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS02D",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS02D",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS02D",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS02D;RTS,S/AS02A",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfAMA1-DiCo/GLA-SE;PfAMA1-DiCo/Alhydrogel",
+        "manufacturer": "Institut National de la Santé et de la Recherche Médicale (Inserm); European Vaccine Initiative (EVI); Biomedical Primate Research Center (BPRC); Centre National de Recherche et de Formation sur la Paludisme, Burkina Faso",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PRIMVAC/Alhydrogel;PRIMVAC/GLA-SE",
+        "manufacturer": "Institut National de la Santé Et de la Recherche Médicale, France; Recherche Clinique Paris Descartes Necker Cochin Sainte Anne; Centre national de recherche et de formation sur le paludisme; EUCLID Clinical Trial Platform",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfMSP1.19 + PfF2/ISA 720",
+        "manufacturer": "International Centre for Genetic Engineering and Biotechnology (ICGEB)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.icgeb.org/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfMSPFu24 + PfF2/Alhydrogel",
+        "manufacturer": "International Centre for Genetic Engineering and Biotechnology (ICGEB)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.icgeb.org/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "DNA-MVA ME-TRAP",
+        "manufacturer": "London School of Hygiene & Tropical Medicine (LSHTM)",
+        "platform": "DNA vaccine,Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.lshtm.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FP9-MVA CS",
+        "manufacturer": "London School of Hygiene & Tropical Medicine (LSHTM); Medical Research Council Gambia; University of Oxford",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.lshtm.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "London School of Hygiene & Tropical Medicine (LSHTM); University of Bamako; Institut de Recherche en Sciences de la Sante",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase IIIb",
+        "companyUrl": "https://www.lshtm.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP3-LSP/Alhydrogel",
+        "manufacturer": "London School of Hygiene & Tropical Medicine; Centre National de Recherche et de Formation sur le Paludisme, Burkina Faso",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.lshtm.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "London School of Hygiene and Tropical Medicine (LSHTM); University of Bamako; Institut de Recherche en Sciences de la Sante",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.lshtm.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PEV301/302",
+        "manufacturer": "Mymetics Corporation; Swiss Tropical and Public Health Institute; Pevion Biotech",
+        "platform": "Virosomal vaccine",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BK-SE36/CpG",
+        "manufacturer": "National Institutes of Biomedical Innovation, Health and Nutrition",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.nibiohn.go.jp/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BK-SE36/Alhydrogel",
+        "manufacturer": "Nobelpharma; Osaka University; European Vaccine Initiative (EVI)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.nobelpharma.co.jp/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BK-SE36/Alhydrogel",
+        "manufacturer": "Nobelpharma; Osaka University; European Vaccine Initiative (EVI); Centre National de Recherche et de Formation sur la Paludisme, Burkina Faso",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.nobelpharma.co.jp/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BK-SE36/CpG",
+        "manufacturer": "Nobelpharma; Osaka University; European Vaccine Initiative (EVI); Centre National de Recherche et de Formation sur la Paludisme, Burkina Faso",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.nobelpharma.co.jp/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BK-SE36",
+        "manufacturer": "Osaka University",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.osaka-u.ac.jp/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BK-SE36/CpG",
+        "manufacturer": "Osaka University",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.osaka-u.ac.jp/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BK-SE36/CpG",
+        "manufacturer": "Osaka University; Biken Techno Corp",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.osaka-u.ac.jp/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "PATH; Sanaria; Naval Medical Research Center",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP2-C1/ISA 720",
+        "manufacturer": "Queensland Institute of Medical Research; PATH",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.qimrberghofer.edu.au/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R0.6C/Alhydrogel;R0.6C/Alhydrogel/Matrix M1",
+        "manufacturer": "Radboud University",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I;Phase I",
+        "companyUrl": "https://www.ru.nl/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfLSA3/Alhydrogel;PfLSA3 ISA 720",
+        "manufacturer": "Radboud University; Institut Pasteur",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.ru.nl/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Centre de Recherches Médicales de Lambaréné (CERMEL); German Center for Infection Research",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ-CVac;PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Eijkman Oxford Clinical Research Unit, Indonesia; Indonesia University",
+        "platform": "Whole parasite;Whole parasite",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Fred Hutchinson Cancer Research Center",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Ifakara Health Institute; Swiss Tropical & Public Health Institute",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Ifakara Health Institute; Swiss Tropical and Public Health Institute (STPH); Government of Equatorial Guinea; Hospital Universitario La Paz; Marathon oil Corporation; Noble Oil Services",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ-CVac;PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Ifakara Health Institute; Swiss Tropical and Public Health Institute (STPH); Government of Equatorial Guinea; La Paz Medical Center, Malado, Equatorial Guinea; Marathon oil Corporation; Noble Oil Services",
+        "platform": "Whole parasite;Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Ifakara Health Institute; Swiss Tropical and Public Health Institute (STPH); Government of Equatorial Guinea; Noble Oil Services; Marathon Oil Corporation; Atlantic Methanol Production Company",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Ifakara Health Institute; Swiss Tropical and Public Health Institute (STPH); Medical Care Development; Tanzania Commission for Science and Technology; Government of Equatorial Guinea; Marathon Oil Corporation; Noble Oil Services",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Ifakara Health Institute; Swiss Tropical and Public Health Institute; Tansania Commission for Science and Technology",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Kenya Medical Research Institute; Centers for Disease Control and Prevention; US National Institutes of Health (NIH); University of Maryland",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Malaria Research and Training Center, Bamako, Mali; University of the Sciences, Techniques and Technologies of Bamako; US National Institutes of Health (NIH)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Naval Medical Research Center; Walter Reed Army Institute of Research (WRAIR); Miliary Infectious Diseases Research Program (MIDRP)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; Naval Medical Research Center; Walter Reed Army Institute of Research (WRAIR); University of Maryland; Joint Warfighter Medical Research Program",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ-GA1",
+        "manufacturer": "Sanaria; University of Leiden; Radboud University",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; University of Maryland",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; University of Tubingen; German Federal Ministry of Education and Research; German Center for Infection Research",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "Sanaria; US National Institute of Allergy and Infectious Diseases (NIAID); US Military Malaria Vaccine Program",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://sanaria.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfGAP3-KO",
+        "manufacturer": "Seattle Children's Research Institute (SCRI)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.seattlechildrens.org/research/research-institute/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfp52-p36- GAP",
+        "manufacturer": "Seattle Children's Research Institute (SCRI); Walter Reed Army Institute of Research (WRAIR)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.seattlechildrens.org/research/research-institute/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfCP2.9/ISA 720",
+        "manufacturer": "Shanghai Wanxing Bio-Pharmaceuticals; Xinhua Hospital, Shanghai Jiao Tong University School of Medicine; Second Military Medical University; PATH",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "GMZ2",
+        "manufacturer": "Staten Serum Institute; Makerere University; Albert Schweitzer Hospital, Medical Research Unit; Medical Research Council (MRC) The Gambia; Projet de Development de Vaccins Anti-Paludique - Centre",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://en.ssi.dk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfCS102/ISA 720",
+        "manufacturer": "Swiss Tropical & Public Health Institute",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.swisstph.ch/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP1/GLA-SE",
+        "manufacturer": "Swiss Tropical & Public Health Institute; Ifakara Health Institute",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.swisstph.ch/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PEV3A;FP9-MVA ME-TRAP",
+        "manufacturer": "Swiss Tropical & Public Health Institute; Pevion Biotech; University of Oxford; Walter Reed Army Institute of Research (WRAIR)",
+        "platform": "Virosomal vaccine;Recombinant viral vector",
+        "clinicalPhase": "Phase II;Phase II",
+        "companyUrl": "https://www.swisstph.ch/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP014/ALFQ",
+        "manufacturer": "U.S. Army Medical Research and Development Command; Walter Reed Army Institute of Research",
+        "platform": "Self-assembling nanoparticles",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://mrdc.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP012/GLA-SE",
+        "manufacturer": "U.S. Army Medical Research and Development Command; Walter Reed Army Institute of Research (WRAIR); United States Agency for International Development (USAID); Infectious Disease Research Institute (IDRI)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://mrdc.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP012/AS01B",
+        "manufacturer": "U.S. Army Medical Research and Development Command; Walter Reed Army Institute of Research (WRAIR); United States Agency for International Development (USAID); Military Infectious Disease Research Program (MIDRP); GlaxoSmithKline (GSK)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://mrdc.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS02A;RTS,S/AS01B",
+        "manufacturer": "U.S. Army Medical Research and Materiel Command",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://mrdc.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS02A;RTS,S/AS01B",
+        "manufacturer": "U.S. Army Medical Research and Materiel Command",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://mrdc.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "NMRC-M3V-Ad-PfCA",
+        "manufacturer": "United States Agency for International Development (USAID)",
+        "platform": "Recombinant viral vector,Recombinant viral vector",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://usaid.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA Rh5",
+        "manufacturer": "University  of Oxford; European Commission",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase Ia",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA Rh5",
+        "manufacturer": "University  of Oxford; Ifakara Health Institute; UK Medical Research Council",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP3-CRM-Vac4All/Alhydrogel",
+        "manufacturer": "University of Bamako; Vac4All",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ib/IIb",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63 ME-TRAP + MVA ME-TRAP;ChAd63 ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase II;Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63 ME-TRAP + MVA ME-TRAP;ChAd63 ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase II;Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63 ME-TRAP;MVA ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63 MSP1;ChAd63-MVA MSP1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase I/IIa;Phase I/IIa",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63 PfAMA1;ChAd63-MVA PfAMA1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63 PfAMA1;MVA PfAMA1;ChAd63 MSP1;MVA MSP1;ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector;Recombinant viral vector;Recombinant viral vector;Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase I/IIa",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA CS;ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP;ChAd63 ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase I;Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA Pfs25-IMX313 ",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAdOx1-MVA LS2",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP2.1/AS01B",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs25-IMX313/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs48,45/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ia",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/AS01B",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1;R21/Matrix M1 + ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant viral vector",
+        "clinicalPhase": "Phase I/IIa",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Rh5.1/AS01B",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase IIa",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Rh5.1/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Rh5.1/Matrix M1 + Rh5.2-VLP/Matrix M1;Rh5.1/Matrix M1;Rh5.2-VLP/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant subunit;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase I/IIa;Phase I/IIa;Phase I/IIa",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Rh5.2-VLP/Matrix M1 + R21/Matrix M1;Rh5.2-VLP/Matrix M1;R21/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Virus-like particle,Recombinant subunit;Virus-like particle;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase Ib;Phase Ib;Phase Ib",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01B + ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit,Virus-like particle,Recombinant viral vector",
+        "clinicalPhase": "Phase I/IIa",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01B + ChAd63-MVA ME-TRAP;RTS,S/AS01B",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit,Virus-like particle,Recombinant viral vector;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase IIa;Phase IIa",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01B + ChAd63-MVA ME-TRAP;RTS,S/AS01B",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit,Virus-like particle,Recombinant viral vector;Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase IIa;Phase IIa ",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfAMA1-C1/Alhydrogel/CPG 7909",
+        "manufacturer": "University of Oxford, US National Institute of Allergy and Infectious Diseases (NIAID)  ",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford; European & Developing Countries Clinical Trials Partnership (EDCTP); European Vaccine Initiative (EVI); Centre National de Recherche et de Formatation sur le Paludisme (CNRFP)",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA PfCSP",
+        "manufacturer": "University of Oxford; European Vaccine Initiative (EVI); Royal College of Surgeon Ireland",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP PfCSP PfAMA1;ChAd63-MVA ME-TRAP PfCSP",
+        "manufacturer": "University of Oxford; GenVec; GlaxoSmithKline (GSK); PATH; US Department of Defense (DOD)",
+        "platform": "Recombinant viral vector;Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs25-IMX313/Matrix M1",
+        "manufacturer": "University of Oxford; Ifakara Health Institute",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Rh5.1/Matrix M1",
+        "manufacturer": "University of Oxford; Ifakara Health Institute; European and Developing Countries Clinical Trials Partnership (EDCTP)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Rh5.1/Matrix M1;Rh5.2-VLP/Matrix M1",
+        "manufacturer": "University of Oxford; Institut de Recherche en Sciences de la Sante",
+        "platform": "Recombinant subunit;Virus-like particle",
+        "clinicalPhase": "Phase I/IIb;Phase I/IIb",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford; Institut de Recherche en Sciences de la Sante - Clinical Research Unit of Nanoro (IRSS-URCN); European and Developing Countries Clinical Trials Partnership (EDCTP)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ib/IIb",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford; Institut de Recherche en Sciences de la Sante Clinical Research Unit of Nanoro IRSS URCN; Institut de Recherche en Sciences de la Sante Direction Regionale de l'Ouest; University of Sciences Techniques and Technologies of Bamako; Kenya Medical Research Institute (KEMRI); Ifakara Health Institute; London School of Hygiene and Tropical Medicine (LSHTM)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Kenya Medical Research Institute (KEMRI)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FP9-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Kenya Medical Research Institute (KEMRI)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford; Kenya Medical Research Institute (KEMRI); European & Developing Countries Clinical Trials Partnership (EDCTP)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1;ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Kenya Medical Research Institute (KEMRI); European & Developing Countries Clinical Trials Partnership (EDCTP)",
+        "platform": "Recombinant subunit,Virus-like particle;Recombinant viral vector",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Kenya Medical Research Institute (KEMRI); European & Developing Countries Clinical Trials Partnership (EDCTP); European Vaccine Initiative (EVI)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford; Mahidol Oxford Tropical Medicine Research Unit",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "RTS,S/AS01E",
+        "manufacturer": "University of Oxford; Mahidol University",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford; Malaria Research and Training Center, Bamako, Mali",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Malaria Vectored Vaccines Consortium; Medical Research Council The Gambia",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Medical Research Council (MRC) The Gambia; European & Developing Countries Clinical Trials Partnership (EDCTP); European Vaccine Initiative (EVI)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Medical Research Council (MRC) The Gambia; European & Developing Countries Clinical Trials Partnership (EDCTP); European Vaccine Initiative (EVI)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R21/Matrix M1",
+        "manufacturer": "University of Oxford; Medical Research Council/Uganda Virus Research Institute (MRC UVRI)",
+        "platform": "Recombinant subunit,Virus-like particle",
+        "clinicalPhase": "Phase Ib",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Okairos; Centre National de Recherche et de Formation sur la Paludisme, Burkina Faso; European & Developing Countries Clinical Trials Partnership (EDCTP); European Vaccine Initaitive (EVI)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63-MVA ME-TRAP",
+        "manufacturer": "University of Oxford; Université Cheikh Anta Diop (UCAD); European Vaccine Initiative (EVI)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ChAd63 PfAMA1;MVA PfAMA1;PfAMA1-C1/Alhydrogel;PfAMA1-C1/Alhydrogel/CPG 7909",
+        "manufacturer": "University of Oxford; US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant viral vector;Recombinant viral vector;Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FP9-MVA PP",
+        "manufacturer": "University of Oxford; Wellcome Trust; Walter Reed Army Institute of Research (WRAIR)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PbVac",
+        "manufacturer": "University of Radboud; PATH; Erasmus Medical Center; Havenziekenhuis",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.ru.nl/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ-CVac",
+        "manufacturer": "University of Tubingen",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://uni-tuebingen.de/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ-CVac;PfSPZ Vaccine",
+        "manufacturer": "University of Tubingen; Centre de Recherches Médicale de Lambaréné",
+        "platform": "Whole parasite;Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://uni-tuebingen.de/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PAMVAC/Alhydrogel;PAMVAC/GLA-SE;PAMVAC/GLA-LSQ",
+        "manufacturer": "University of Tubingen; University of Copenhagen; European Vaccine Iniatitive (EVI); French Institut de Recherche pour le Developpement; ExpreS2ion Biotechnologies; University of Abomey-Calavi",
+        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://uni-tuebingen.de/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Ad35.CS.01",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Ad35.CS.01",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "BSAM2/Alhydrogel/CPG 7909",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "EBA175 RII-NG",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "EP1300",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "DNA vaccine",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "ICC-1132/Alhydrogel",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Virus-like particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP1 42-FVO/Alhydrogel;MSP1 42-3D7/Alhydrogel",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I;Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfAMA1-C1/ISA 720",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfGAP3-KO",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs25/",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I;Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ-CVac",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "rCSP/AP10-602",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfAMA1-C1/Alhydrogel",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)  ",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs25M-EPA/AS01B;Pfs230D1M-EPA/AS01B;Pfs25M-EPA/AS01B + Pfs230D1M-EPA/AS01B",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); Burnet Institute; PATH",
+        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs25M-EPA/Alhydrogel",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); John Hopkins University",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP1 42-C1/Alhydrogel;MSP1 42-C1/Alhydrogel/CPG 7909",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); Johns Hopkins University",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs25M-EPA/Alhydrogel",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); Malaria Research and Training Center, Bamako, Mali",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); Malaria Research and Training Center, Bamako, Mali; Sanaria",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); Malaria Research and Training Center, Bamako, Mali; University of Science Techniques and Technologies of Bamako; Sanaria",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); Sanaria; Malaria Research and Training Center, Bamako, Mali",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ Vaccine",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); Sanaria; Malaria Research Training Center, Mali",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs230D1M-EPA/Alhydrogel;Pfs25M-EPA/Alhydrogel",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); University of Bamako",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I;Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs230D1M-EPA/AS01B",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); University of Bamako",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfSPZ-CVac",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); University of Bamako",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "R0.6C/Alhydrogel/Matrix M1 + Pfs230D1M-EPA/Matrix M1;R0.6C/Alhydrogel/Matrix M1;Pfs230D1M-EPA/Matrix M1",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); University of Bamako",
+        "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I;Phase I;Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "Pfs230D1M-EPA/Matrix M1",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID); University of Bamako; Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "DNA-ChAd63 PfCSP PfAMA1;DNA-ChAd63 PfCSP PfAMA1 ME-TRAP",
+        "manufacturer": "US Naval Medical Research Center; Walter Reed Army Institute of Research (WRAIR); University of Oxford; U.S. Army Medical Research and Development Command; United States Agency for International Development (USAID)",
+        "platform": "DNA vaccine,Recombinant viral vector;DNA vaccine,Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "MSP3-LSP/Alhydrogel",
+        "manufacturer": "Vac4All; University of Bamako",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "PfPEBS/Alhydrogel",
+        "manufacturer": "Vac4Alll; Centre Hospitalier Universitaire Vaudois; Radboud University; European Commission",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase Ia/IIa",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "VLPM01",
+        "manufacturer": "VLP Therapeutics",
+        "platform": "Virus-like particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://vlptherapeutics.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "DNA-Ad5 PfCSP PfAMA1",
+        "manufacturer": "Walter Reed Army Institute of Research (WRAIR); U.S. Army Medical Research and Development Command; United States Agency for International Development (USAID)",
+        "platform": "DNA vaccine,Recombinant viral vector",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://wrair.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium falciparum",
+        "name": "FMP013/ALFQ",
+        "manufacturer": "Walter Reed Army Institute of Research; U.S. Army Medical Research and Development Command",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://wrair.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "VMP001/AS01B",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "PvDBPII/GLA-SE",
+        "manufacturer": "International Center for Genetic Engineering and Biotechnology (ICGEB), India",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.icgeb.org/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "PvCSP/ISA 51",
+        "manufacturer": "Malaria Vaccine and Drug Development Center (MVDC), Colombia",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://mesamalaria.org/institution/malaria-vaccine-and-drug-development-center-mvdc/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "PvCSP/ISA 51",
+        "manufacturer": "Malaria Vaccine and Drug Development Center (MVDC), Colombia",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://mesamalaria.org/institution/malaria-vaccine-and-drug-development-center-mvdc/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "PvCSP/ISA 720;PvCSP/ISA 51",
+        "manufacturer": "Malaria Vaccine and Drug Development Center (MVDC), Colombia",
+        "platform": "Recombinant subunit;Recombinant subunit",
+        "clinicalPhase": "Phase I;Phase I",
+        "companyUrl": "https://mesamalaria.org/institution/malaria-vaccine-and-drug-development-center-mvdc/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "PvSPZ",
+        "manufacturer": "Malaria Vaccine and Drug Development Center (MVDC), Colombia; National Health, Lung, and Blood Institute (NHLBI); Asoclinic Inmunologica Ltda",
+        "platform": "Whole parasite",
+        "clinicalPhase": "Phase I/IIa",
+        "companyUrl": "https://mesamalaria.org/institution/malaria-vaccine-and-drug-development-center-mvdc/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "ChAd63-MVA PvDBP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "ChAd63-MVA PvDBP",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "PvDBPII/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I/II",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "Pvs25-IMX313/Matrix M1",
+        "manufacturer": "University of Oxford",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ox.ac.uk/"
+    },
+    {
+        "": "",
+        "pathogenName": "Plasmodium vivax",
+        "name": "Pvs230D1M-EPA/Matrix M1",
+        "manufacturer": "US National Institute of Allergy and Infectious Diseases (NIAID)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Rabies Virus",
+        "name": "SP0087",
+        "manufacturer": "Sanofi",
+        "platform": "Vero cell",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "BARS13 (rRSV-G protein)",
+        "manufacturer": "Advaccine (Suzhou)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "http://advaccine.com/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "BARS13 (rRSV-G protein)",
+        "manufacturer": "Advaccine (Suzhou)",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://advaccine.com/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MVA-BN-RSV",
+        "manufacturer": "Bavarian Nordic",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.bavarian-nordic.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MVA-BN RSV (MVA-mBN294B)",
+        "manufacturer": "Bavarian Nordic",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.bavarian-nordic.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MVA-BN RSV (MVA-mBN294B)",
+        "manufacturer": "Bavarian Nordic",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.bavarian-nordic.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MVA-BN-RSV (MVA-mBN294B)",
+        "manufacturer": "Bavarian Nordic",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bavarian-nordic.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MVA-BN RSV (MVA-mBN294B)",
+        "manufacturer": "Bavarian Nordic",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.bavarian-nordic.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MVA-BN RSV (MVA-mBN294B)",
+        "manufacturer": "Bavarian Nordic",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bavarian-nordic.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "PIV5-vectored RSV Vaccine (BLB-201)",
+        "manufacturer": "Blue Lake Biotechnology",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bluelakebiotechnology.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "CPI-RSV-F Vaccine (BLB-201)",
+        "manufacturer": "Blue Lake Biotechnology",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bluelakebiotechnology.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "SCB-1019",
+        "manufacturer": "Clover Biopharmaceuticals",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.cloverbiopharma.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "CodaVax-RSV",
+        "manufacturer": "Codagenix",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://codagenix.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad35.RSV.FA2/Ad26.RSV.FA2",
+        "manufacturer": "Crucell",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.janssen.com/infectious-diseases-and-vaccines/crucell"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad35.RSV.FA2/Ad26.RSV.FA2",
+        "manufacturer": "Crucell",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.janssen.com/infectious-diseases-and-vaccines/crucell"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "VN-0200",
+        "manufacturer": "Daiichi Sankyo Co.",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.daiichisankyo.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "DPX-RSV(A)",
+        "manufacturer": "Dalhousie University",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.dal.ca/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "EuRSV",
+        "manufacturer": "EuBiologics",
+        "platform": "liposome nanoparticle-based",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://eubiologics.com/eng/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "EuRSV",
+        "manufacturer": "EuBiologics",
+        "platform": "Recombinant particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://eubiologics.com/eng/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV PreF3)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV MAT)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV MAT)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV PreF3)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV PreF3)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV PreF3)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV PreF3)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV PreF3)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3888550A (RSV PreF)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV mRNA",
+        "manufacturer": "GSK",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVpreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVpreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3844766A (RSV PreF3 OA)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3844766A (RSV PreF3 OA)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3844766A (RSV PreF3 OA)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3844766A (RSV PreF3 OA)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3844766A (RSV PreF3 OA)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3844766A (RSV PreF3)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3844766A (RSV PreF3)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3389245A (ChAd155-RSV)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3389245A (ChAd155-RSV)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3389245A (ChAd155-RSV)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F subunit vaccine",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3003891A (RSV F)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3003891A (RSV F)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3003891A (RSV F)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3003891A (RSV F)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "GSK3003891A (RSV F)",
+        "manufacturer": "GSK",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Hvivo",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://hvivo.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "IVX-A12 (RSV/hMPV)",
+        "manufacturer": "Icosavax",
+        "platform": "Recombinant particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "IVX-A12 (RSV/hMPV)",
+        "manufacturer": "Icosavax",
+        "platform": "Recombinant particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "IVX-A12 (RSV/hMPV)",
+        "manufacturer": "Icosavax",
+        "platform": "Recombinant particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "IVX-121  (RSV)",
+        "manufacturer": "Icosavax",
+        "platform": "Recombinant particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "JCXH-108",
+        "manufacturer": "Immorna Biotherapeutics",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.immorna.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "IN006",
+        "manufacturer": "Innorna",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.innorna.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Avacc 19  (RSV ΔG) ",
+        "manufacturer": "Intravacc",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.intravacc.nl/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF +/- RSV pre-F protein",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector\n+/- Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF +/- RSV pre-F protein",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector\n+/- Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "Ad26.RSV.preF",
+        "manufacturer": "Janssen",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MEDI7510 (RSV sF + Adj)",
+        "manufacturer": "MedImmune",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MEDI7510 (RSV sF + Adj)",
+        "manufacturer": "MedImmune",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MEDI7510 (RSV sF + Adj)",
+        "manufacturer": "MedImmune",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MEDI-559 (RSV live-attenuated)",
+        "manufacturer": "MedImmune",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MEDI-534 (PIV3/RSV F)",
+        "manufacturer": "MedImmune",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MEDI-534 (PIV3/RSV F)",
+        "manufacturer": "MedImmune",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MEDI-534 (PIV3/RSV F)",
+        "manufacturer": "MedImmune",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MV-012-968",
+        "manufacturer": "Meissa Vaccines",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.meissavaccines.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MV-012-968",
+        "manufacturer": "Meissa Vaccines",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.meissavaccines.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MV-012-968",
+        "manufacturer": "Meissa Vaccines",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.meissavaccines.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "MV-012-968",
+        "manufacturer": "Meissa Vaccines",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.meissavaccines.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1045",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "mRNA-1345",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV LID cp ΔM2-2",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV LID cp ΔM2-2 ",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV LID ΔM2-2",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV LID ΔM2-2 1030s",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV D46 cpΔM2-2",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV LID ΔM2-2",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV LID ΔM2-2",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV cps2",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV cps2",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV ΔNS2 Δ1313 I1314L ",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV MEDI ΔM2-2",
+        "manufacturer": "NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F DS-Cav1",
+        "manufacturer": "NIAID",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "SeVRSV",
+        "manufacturer": "NIAID",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.niaid.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant particle",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV F Nanoparticle",
+        "manufacturer": "Novavax",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "LYB005",
+        "manufacturer": "Patronus Biotech",
+        "platform": "Recombinant particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.luye.com/en/busines_vaccines.php"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVpreF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVpreF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV vaccine",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV vaccine",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV preF",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV vaccine",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV vaccine",
+        "manufacturer": "Pfizer",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "rBCG-N-hRSV",
+        "manufacturer": "Pontificia Universidad Catolica de Chile",
+        "platform": "Recombinant bacterial vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.uc.cl/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "SP0256",
+        "manufacturer": "Sanofi",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "SP0125",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVt  (RSV ΔNS2/Δ1313/I1314L)",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVt  (RSV ΔNS2/Δ1313/I1314L)",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVt  (RSV ΔNS2/Δ1313/I1314L)",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV ΔNS2/Δ1313/I1314L",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV LID ΔM2-2 1030s",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV ΔNS2/Δ1313/I1314L; RSV 6120/ΔNS2/1030s; RSV 276",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV 6120/ΔNS1; RSV 6120/F1/G2/ΔNS1",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV 6120/∆NS2/1030s",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV ΔNS2/Δ1313/I1314L; RSV 276 ",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV D46/NS2/N/ΔM2-2-HindIII ",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV D46/NS2/N/ΔM2-2-HindIII",
+        "manufacturer": "Sanofi",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV",
+        "manufacturer": "Sanofi",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase IIb",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV/hMPV",
+        "manufacturer": "Sanofi",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV/hMPV",
+        "manufacturer": "Sanofi",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSV/hMPV",
+        "manufacturer": "Sanofi",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "SP0256",
+        "manufacturer": "Sanofi",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "STR-V003",
+        "manufacturer": "Starna Therapeutics",
+        "platform": "mRNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.starnatx.com/en/homepage/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "RSVPreF3 OA",
+        "manufacturer": "University Health Network, Toronto",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.uhn.ca/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "VXA-RSV-f oral",
+        "manufacturer": "Vaxart",
+        "platform": "Recombinant viral vector",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://vaxart.com/welcome/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "VXB-241 (RSV/hMPV)",
+        "manufacturer": "Vicebio",
+        "platform": "Recombinant subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://vicebio.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Respiratory Syncytial Virus (RSV)",
+        "name": "V-306 SVLP",
+        "manufacturer": "Virometix",
+        "platform": "Recombinant particle",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://virometix.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Rotavirus",
+        "name": "Rotavirus Vaccine",
+        "manufacturer": "SK Bioscience",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.skbioscience.com/en/main"
+    },
+    {
+        "": "",
+        "pathogenName": "Salmonella Paratyphi",
+        "name": "S. PARATYPHI",
+        "manufacturer": "Bharat",
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.bharatbiotech.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Salmonella Paratyphi",
+        "name": "CVD 1902\n",
+        "manufacturer": "Center for Vaccine Development and Global Health, University of Maryland",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.medschool.umaryland.edu/cvd/"
+    },
+    {
+        "": "",
+        "pathogenName": "Salmonella Paratyphi",
+        "name": "O:2-Tetanus Toxoid\n",
+        "manufacturer": "Lanzhou Institute of Biological Products\nUS National Institutes of Health",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIA",
+        "companyUrl": "https://www.vacmic.com/\nhttps://www.nih.gov/"
+    },
+    {
+        "": "",
+        "pathogenName": "Salmonella Paratyphi",
+        "name": "Entervax (ZH9PA + ZH9)\n",
+        "manufacturer": "Prokarium",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.prokarium.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Salmonella Typhi",
+        "name": "EuTYPH-C",
+        "manufacturer": "EuBiologics",
+        "platform": "Vi-CRM₁₉₇ Conjugate",
+        "clinicalPhase": "Phase IV",
+        "companyUrl": "http://eubiologics.com/eng/"
+    },
+    {
+        "": "",
+        "pathogenName": "Salmonella Typhi; Salmonella Paratyphi A",
+        "name": "GSK3536867",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Salmonella Typhi; Salmonella Paratyphi A",
+        "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
+        "manufacturer": "Zydus Lifesciences",
+        "platform": "Conjugate",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://zyduslife.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Schistosoma",
+        "name": "Sm-14",
+        "manufacturer": "Fiocruz; Access to Advanced Health Institute (AAHI)",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://portal.fiocruz.br/en\nhttps://www.aahi.org/"
+    },
+    {
+        "": "",
+        "pathogenName": "Schistosoma",
+        "name": "Bilbvax (Sh28GST Vaccine)",
+        "manufacturer": "Lille University Hospital\nInstitut National de la Santé et de la Recherche Médicale",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.chu-lille.fr/welcome.en\nhttps://www.inserm.fr/"
+    },
+    {
+        "": "",
+        "pathogenName": "Schistosoma",
+        "name": "The Human Schistosomiasis Vaccine\n",
+        "manufacturer": "Texas Children's Hospital Center for Vaccine Development\nIDT Biologika\nVaccine and Treatment Evaluation Unit (VTEU), Baylor College of Medicine\nGeorge Washington University\nFiocruz\nJames Cook University\nAccess to Advanced Health Institute (AAHI)",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.bcm.edu/departments/pediatrics/divisions-and-centers/tropical-medicine/research/vaccine-development\nhttps://idt-biologika.com/\nhttps://www.gwu.edu/\nhttps://portal.fiocruz.br/en\nhttps://www.jcu.edu.au/\nhttps://www.aahi.org/"
+    },
+    {
+        "": "",
+        "pathogenName": "Schistosoma",
+        "name": "SchistoShield",
+        "manufacturer": "Texas Tech University\nAccess to Advanced Health Institute (AAHI)\nPAI Life Sciences",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.ttu.edu/\nhttps://www.aahi.org/\nhttps://pailifesciences.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "mRNA VLP vaccine",
+        "manufacturer": "AstraZeneca",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.astrazeneca.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "SARS-CoV2-RABIES VECTOR",
+        "manufacturer": "Bharat",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bharatbiotech.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "GSK4396687",
+        "manufacturer": "GSK",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "mRNA-1283",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "VBI-2902",
+        "manufacturer": "VBI Vaccines",
+        "platform": "Virus-Like Particle (VLP)",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.vbivaccines.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "name": "VBI-2905",
+        "manufacturer": "VBI Vaccines",
+        "platform": "Virus-Like Particle (VLP)",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.vbivaccines.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "Shigella vaccine (bivalent) ZF0901",
+        "manufacturer": "Beijing Zhifei Lvzhu Biopharmaceutical",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase III",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "CVD 1208S-122",
+        "manufacturer": "Center for Vaccine Development and Global Health, University of Maryland",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "ShigETEC",
+        "manufacturer": "Eveliqure Biotechnologies",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.eveliqure.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "Shigella4V",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIA",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "altSonflex1-2-3",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIA",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "ShigOraVax",
+        "manufacturer": "Hilleman Laboratories",
+        "platform": "Inactivated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://hilleman-labs.org/"
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "GlycoShig3",
+        "manufacturer": "Institut Pasteur",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIA",
+        "companyUrl": "https://www.pasteur.fr/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "S4V",
+        "manufacturer": "Valneva",
+        "platform": "Conjugate",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://valneva.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "Artificial Invaplex (Shigella Flexneri 2a InvaplexAR)",
+        "manufacturer": "WRAIR",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://wrair.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Shigella",
+        "name": "WRSs2",
+        "manufacturer": "WRAIR/NIAID",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://wrair.health.mil/"
+    },
+    {
+        "": "",
+        "pathogenName": "Streptococcus agalactiae (Group B Streptococcus; GBS)",
+        "name": "Trivalent Conjugate Vaccine",
+        "manufacturer": "GSK",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIA",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Streptococcus agalactiae (Group B Streptococcus; GBS)",
+        "name": "Alpha-like Protein Fusion",
+        "manufacturer": "Minervax",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIA",
+        "companyUrl": "https://minervax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Streptococcus agalactiae (Group B Streptococcus; GBS)",
+        "name": "Hexavalent Conjugate Vaccine (GBS6)",
+        "manufacturer": "Pfizer",
+        "platform": "Subunit",
+        "clinicalPhase": "Phase IIA",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Streptococcus agalactiae (Group B Streptococcus; GBS)",
+        "name": "PF-06760805\n",
+        "manufacturer": "Pfizer",
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Streptococcus pneumoniae",
+        "name": "EuPCV ",
+        "manufacturer": "EuBiologics",
+        "platform": "CRM₁₉₇ protein conjugate",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "http://eubiologics.com/eng/"
+    },
+    {
+        "": "",
+        "pathogenName": "Streptococcus pneumoniae",
+        "name": "PF-07872412\n",
+        "manufacturer": "Pfizer",
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.pfizer.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Streptococcus pneumoniae",
+        "name": "SP0202",
+        "manufacturer": "Sanofi",
+        "platform": "Conjugate",
+        "clinicalPhase": "Phase III",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Varicella-Zoster Virus (VZV)",
+        "name": "MG1111C",
+        "manufacturer": "GC Biopharma",
+        "platform": "No data",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gcbiopharma.com/eng/index.do"
+    },
+    {
+        "": "",
+        "pathogenName": "Varicella-Zoster Virus (VZV)",
+        "name": "GSK4178116",
+        "manufacturer": "GSK",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.gsk.com/en-gb/"
+    },
+    {
+        "": "",
+        "pathogenName": "Varicella-Zoster Virus (VZV)",
+        "name": "mRNA-1468",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Varicella-Zoster Virus (VZV)",
+        "name": "PF-07911145",
+        "manufacturer": "Pfizer/BioNTech",
+        "platform": "RNA",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.pfizer.com/\nhttps://www.biontech.com/int/en/home.html"
+    },
+    {
+        "": "",
+        "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
+        "name": "MVA-BN® WEV",
+        "manufacturer": "Bavarian Nordic",
+        "platform": "Live-attenuated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bavarian-nordic.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
+        "name": "WEVEE VLP",
+        "manufacturer": "Emergent BioDefense Operations Lansing",
+        "platform": "Virus-Like Particle (VLP)",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.emergentbiosolutions.com/\nhttps://emergentbio.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Yellow fever Virus\n",
+        "name": "SP0218",
+        "manufacturer": "Sanofi",
+        "platform": "Vero cell",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.sanofi.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "Yersinia pestis",
+        "name": "rF1V",
+        "manufacturer": "Dynavax",
+        "platform": "CpG 1018 adjuvanted",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.dynavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Zika Virus",
+        "name": "ZIKA",
+        "manufacturer": "Bharat",
+        "platform": "No data",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://www.bharatbiotech.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Zika Virus",
+        "name": "mRNA-1893",
+        "manufacturer": "Moderna, Inc.",
+        "platform": "RNA",
+        "clinicalPhase": "Phase II",
+        "companyUrl": "https://www.modernatx.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "Zika Virus",
+        "name": "VLA1601",
+        "manufacturer": "Valneva",
+        "platform": "Inactivated",
+        "clinicalPhase": "Phase I",
+        "companyUrl": "https://valneva.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Abbott Biologicals",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.abbott.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "AJ Vaccines",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://ajvaccines.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Barr Labs",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.barrlab.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "BB-NCIPD",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.bulbio.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Beijing Institute of Biological Products",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.bjbpi.com/En/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Bilthoven Biologicals",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.bbio.nl/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Biological E. Limited",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.biologicale.com/index.html"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Bio-Manguinhos/Fiocruz",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://portal.fiocruz.br/en\nhttps://www.bio.fiocruz.br/index.php/en-us/bio-eng"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Berna Biotech",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.berna-swiss.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Centro de Ingenieria Genetica y Biotecnologia",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": ""
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Changchun Institute of Biological Products",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.ccbio.net/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Chengdu Institute of Biological Products",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "http://english.cib.cas.cn/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Chumakov Federal Scientific Center",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://chumakovs.ru/en/home/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Haffkine Bio Pharmaceutical",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.vaccinehaffkine.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Hipra Human Health",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.hipra.com/en"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Hualan Biological Bacterin",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "http://hualanbacterin.com/eng/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "IL-YANG PHARMACEUTICAL",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://home.ilyang.co.kr/english/main.asp"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Institut Pasteur",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.pasteur.fr/en"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Janssen",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://innovativemedicine.jnj.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Japan BCG Laboratory",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.bcg.gr.jp/en/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "LG Chem Ltd",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.lgchem.com/main/index"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "MassBiologics",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.umassmed.edu/massbiologics/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Emergent Product Development Gaithersburg",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://emergentbio.com/gaithersburg"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "MCM Vaccine B.V",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.mcmbv.eu/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Novavax",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://global.novavax.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Organon Teknika",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.organon.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Panacea Biotec Ltd.",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.panaceabiotec.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "PT Bio Farma (Persero)",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.biofarma.co.id/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Serum Institute of India",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.seruminstitute.com/products.php"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Sinovac",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.sinovac.com/en-us"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Takeda",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://www.takeda.com/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "Instituto Butantan",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": "https://en.butantan.gov.br/"
+    },
+    {
+        "": "",
+        "pathogenName": "",
+        "name": "",
+        "manufacturer": "",
+        "platform": "",
+        "clinicalPhase": "",
+        "companyUrl": ""
     }
 ]
