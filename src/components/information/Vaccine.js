@@ -243,7 +243,6 @@ const Vaccine = ({
                         })}
                     </tbody>
                 </table>
-                )
             </div>
         )}
         <p className='mb-0 ms-1'><a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
