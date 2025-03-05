@@ -17056,5 +17056,87 @@
                 "lastUpdated": "#"
             }
         ]
+    },
+    {
+        "vaccineId": 272,
+        "name": "Prevenar 20®, Prevnar 20®",
+        "pathogenId": [
+            3
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 1
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "1 dose (0.5mL) contains 2.2μg of S. pneumoniae serotypes 1, 3, 4, 5, 6A, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F saccharides, and 4.4μg of 6B saccharide; conjugated to CRM197 carrier protein; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "S. pneumoniae serotypes 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, and 33F; no protection against disease caused by other serotypes or other microorganisms that cause IPD, pneumonia, or AOM.",
+                "indication": "Active immunization for prevention of IPD and pneumonia caused by S. pneumoniae in individuals ≥6 wks. and AOM caused by S. pneumoniae in individuals 6 wks. - 18 yrs.; to be use based on official recommendations.",
+                "contraindication": "Hypersensitivity; allergy to diphtheria toxoid-containing vaccine; acute severe febrile illness; caution in coagulation disorder; no data on pregnancy (use risk/benefit strategy); no data in breastfeeding.",
+                "dosing": "Each dose is 0.5mL; I.M (S.C in coagulation disorder if benefits>risk); 6 wks.-15 mo. and preterm infants <37 wks. of gestation: 3+1 doses; 1st dose at 2 mo.; at least 4 wks. interval; a booster dose at 11-14 mo.; ≥18 yrs.: 1 dose; unvaccinated infants 7-11 mo.: 2+1 doses; at least 4 wks. interval; a booster dose in the 2nd year of life; unvaccinated children 12-23 mo.: 2 doses; at least 8 wks. interval; unvaccinated children 2-17 yrs.: 1 dose; if Prevenar 13® administered, at least 8 wks. after the final dose; 15-59 mo. previously fully vaccinated with Prevenar 13®: 1 dose; at least 8 wks. after the final dose of Prevenar 13®; individuals with underlying conditions predisposing them to IPD* (including those previously vaccinated with ≥1 dose of PPV23): may receive at least 1 dose; individuals with HSCT: 3+1 doses; 3-6 mo. after HSCT; at least 4 wks. interval between doses; a booster dose 6 mo. after the 3rd dose.",
+                "immunogenicity": "Immunogenicity is based on the 13-valent PCV vaccine; the percentage of seroresponders (ELISA): against vaccine serotypes (3+1 doses): 60.8-99.9% (Prevenar20® was non-inferior to Prevenar13® and PPV23); adults ≥60 yrs.: Prevenar20® was non-inferior to Prevenar13® and PPV23 (except serotype 8).",
+                "Efficacy": "No data in the label; immunogenicity as above.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "6 wks. - 59 mo.: can be co-administered with monovalent or combination vaccines, DTaP, Hib, IPV, HBV, MMR, varicella, and rotavirus vaccines; ≥18 yrs.: can be co-administered with COVID-19 mRNA vaccine, QIV (high risk of developing life-threatening pneumococcal disease in individuals with underlying condition; at least 4-week interval).",
+                "reactogenicity": "6 wks. - 59 mo.: injection site pain, tenderness, erythema, induration, swelling; fever (pyrexia); restless sleep/decreased sleep; drowsiness/increased sleep; irritability; decreased appetite; 5-18 yrs.: injection site pain, tenderness, erythema, induration, swelling; restless sleep/decreased sleep; drowsiness/increased sleep; irritability; decreased appetite; headache; fatigue; muscle pain; adults: decreased appetite; headache; fatigue; muscle pain; joint pain; injection site pain, tenderness.",
+                "safety": "Potential risk of apnea in premature infants (born ≤28 weeks of gestation).",
+                "vaccinationGoal": "Individual protection and herd protection.",
+                "others": "After receiving the first dose, complete the vaccination course with the same vaccine (Prevenar20®); if the use of PPV23 is considered appropriate, Prevenar20® should be given first; no or limited data in <6 wks., preterm infants, older unvaccinated, or partially vaccinated infants and children; avoid injection in the gluteal area or areas with a major nerve trunk or blood vessel; no safety/immunogenicity data for immunocompromised groups."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "1 dose (0.5mL) contains 2.2μg of S. pneumoniae serotypes 1, 3, 4, 5, 6A, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F saccharides, and 4.4μg of 6B saccharide; conjugated to CRM197 carrier protein; grown in soy peptone broth; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "S. pneumoniae serotypes 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, and 33F.",
+                "indication": "Active immunization to prevent IPD in individuals ≥6 wks., pneumonia in individuals ≥18 yrs., and AOM in individuals 6 wks.- 5 yrs., all caused by S. pneumoniae (above serotypes); to be used based on official recommendations. ",
+                "contraindication": "Hypersensitivity; allergy to diphtheria toxoid-containing vaccine; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "Each dose is 0.5mL; I.M; 6 wks.-15 mo.: 4 doses; 2, 4, 6, 12-15 mo. of age; ≥18 yrs.: 1 dose; unvaccinated infants 7-11 mo.: 3 doses; at least 4 wks. interval; 3rd dose in the 2nd year of life; unvaccinated children 12-23 mo.: 2 doses; at least 2 mo. interval; unvaccinated children 2-17 yrs.: 1 dose; 15 mo. - 7 yrs. previously vaccinated with ≥1 dose of a lower valency PCV vaccine: 1 dose; at least 8 wks. after the last dose of PCV.",
+                "immunogenicity": "Immunogenicity is based on PCV13 and PPV23; percentage of seroresponders: against vaccine serotypes (3 doses; 2, 4, 6 mo. of age): 48-98.3% (Prevenar20® was non-inferior to Prevnar13® for 8 of the 13 matched serotypes and 6 of the 7 additional serotypes); adults ≥60 yrs.: Prevenar20® was non-inferior to Prevnar13® and PPV23 for some Prevnar13* serotypes, and for 6 of the 7 additional serotypes common to PPV23 (except serotype 8);",
+                "durationOfProtection": "No data in the label.",
+                "Efficacy": "VEy and VEs is based on Prevnar® and Prevnar13®; immunogenicity as above.",
+                "coAdministration": "6 wks. - 15 mo.: can be co-administered with M-M-R II®, VARIVAX®, Pediarix®, Hiberix®; ≥65 yrs.: QIV.",
+                "reactogenicity": "Children (4 doses): irritability (>60%); injection site pain (>30%), drowsiness (>30%); decreased appetite; injection site redness (>20%), injection site swelling (>10%); fever (>10%); 15 mo.- 17 yrs. (single dose): irritability (>60% in <2 yrs.); injection site pain (>50%), drowsiness (>40% in <2 yrs.); fatigue; muscle pain (>20% in ≥2yrs.); decreased appetite (>20% in <2 yrs.); injection site swelling/redness (>10%); headache (>10% in ≥5yrs.); fever (>10% in <2 yrs); 18-59 yrs.: injection site pain (>70%); muscle pain (>50%); fatigue (>40%); headache (>30%); arthralgia; injection site swelling (>10%);   ≥60yrs.: injection site pain (>50%); muscle pain and fatigue (>30%); headache (>20%); arthralgia (>10%). ",
+                "safety": "Potential risk of apnea in premature infants .",
+                "vaccinationGoal": "Individual protection and herd protection.",
+                "others": "No safety/immunogenicity data for immunocompromised groups."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "14/02/2022",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-20",
+                "lastUpdated": "26/04/2024"
+            },
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "10/06/2021",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-20",
+                "lastUpdated": "27/04/2023"
+            }
+        ]
     }
 ]
