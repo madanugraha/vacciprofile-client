@@ -518,7 +518,7 @@
     },
     {
         "manufacturerId": 15,
-        "name": "Emergent BioDefense Operations Gaithersburg",
+        "name": "Emergent BioDefense Operations Gaithers    g",
         "description": "A global life sciences company specializing in developing, manufacturing, and delivering protections against public health threats. Emergent offers vaccines, therapeutics, drug-device combination products, and contract development and manufacturing services.",
         "history": "Emergent BioSolutions was founded in 1998 and has since become a leading provider of solutions for complex public health challenges. The company has expanded its capabilities through various contracts and agreements, including a significant role in manufacturing COVID-19 treatments.",
         "details": {
@@ -2989,6 +2989,1026 @@
     {
         "manufacturerId": 72,
         "name": "Beijing Zhifei Lvzhu Biopharmaceutical",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 73,
+        "name": "Eveliqure Biotechnologies",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 74,
+        "name": "Naval Medical Research Center",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 75,
+        "name": "Scandinavian Biopharma",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 76,
+        "name": "Anhui Zhifei Longcom Biopharmaceutical",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 77,
+        "name": "Cadila Pharmaceuticals",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 78,
+        "name": "CanSino",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 79,
+        "name": "Dartmouth University",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 80,
+        "name": "Henry M. Jackson Foundation for the Advancement of Military Medicine",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 81,
+        "name": "Max Planck Institute for Infection Biology",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 82,
+        "name": "Quratis",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 83,
+        "name": "Research Institute for Biological Safety Problems",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 84,
+        "name": "Russia Ministry of Health",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 85,
+        "name": "Statens Serum Institut",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 86,
+        "name": "University of Oxford",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 87,
+        "name": "University of Zaragoza",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 88,
+        "name": "Biofabri",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 89,
+        "name": "Anhui Zhifei Longcom Biopharmaceutical",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 90,
+        "name": "Hillevax",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 91,
+        "name": "National Vaccine and Serum Institute, China",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 92,
+        "name": "Malaria Research and Training Center, Bamako",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 93,
+        "name": "London School of Hygiene & Tropical Medicine (LSHTM)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 94,
+        "name": "Medical Research Unit, Albert Schweitzer Hospital, Gabon",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 95,
+        "name": "University of Bamako",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 96,
+        "name": "Alfred Research and Medical Education Precinct (AMREP)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 97,
+        "name": "Burnet Institue",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 98,
+        "name": "Australian National Health and Medical Research Council (NHMRC)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 99,
+        "name": "Centre de Recherches Medicales Lambarene",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 100,
+        "name": "University of Tubingen",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 101,
+        "name": "German Centre for Infection Research",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 102,
+        "name": "Centre Hospitalier Universitaire Vaudois (CHUV)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 103,
+        "name": "University of Lausanne",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 104,
+        "name": "European Vaccine Initiative (EVI)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 105,
+        "name": "European and Developing Countries Clinical Trials Partnership (EDCTP)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 106,
+        "name": "Crucell",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 107,
+        "name": "Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 108,
+        "name": "European Vaccine Initiative (EMVI)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 109,
+        "name": "University of Tubingen",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 110,
+        "name": "European Vaccine Institute (EVI)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 111,
+        "name": "Radboud University",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 112,
+        "name": "Fraunhofer Center for Molecular Biotechnology",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 113,
+        "name": "Biomedical Primate Research Centre, Netherlands",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 114,
+        "name": "ExpreS2ion Technologies (Denmark)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 115,
+        "name": "Burnet Institute",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 116,
+        "name": "ARTEST Biotechnology",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 117,
+        "name": "Johns Hopkins University",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 118,
+        "name": "PATH",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 119,
+        "name": "Sabin Vaccine Institute",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 120,
+        "name": "Griffith University",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 121,
+        "name": "Institut National de la Santé et de la Recherche Médicale (Inserm)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 122,
+        "name": "Biomedical Primate Research Center (BPRC)",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 123,
+        "name": "Centre National de Recherche et de Formation sur la Paludisme, Burkina Faso",
         "description": "#",
         "history": "#",
         "details": {

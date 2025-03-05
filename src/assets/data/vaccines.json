@@ -16960,5 +16960,101 @@
                 "lastUpdated": "14/06/2024"
             }
         ]
+    },
+    {
+        "vaccineId": 272,
+        "name": "Prevenar 13®, Prevnar 13®",
+        "pathogenId": [
+            3
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 1
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": " 1 dose (0.5mL) contains 2.2μg of S. pneumoniae serotypes 1, 3, 4, 5, 6A, 7F, 9V, 14, 18C, 19A, 19F, 23F saccharides, and 4.4μg of 6B saccharide; conjugated to CRM197 carrier protein; storage: 2-8°C; shelf life: 3 years.",
+                "strainCoverage": "S. pneumoniae serotypes 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F and 23F; no protection against disease caused by other serotypes; no protection against other microorganisms that cause IPD, pneumonia, or otitis media.",
+                "indication": "Active immunization for prevention of IPD and pneumonia in individuals ≥6 wks. and AOM caused by S. pneumoniae in individuals 6 wks. - 17 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; allergy to diphtheria toxoid-containing vaccine; acute severe febrile illness; I.M injection in coagulation disorder; no data on pregnancy and breastfeeding is available in the label.",
+                "dosing": "Each dose is 0.5mL; I.M (S.C in coagulation disorders if benefits>risk); 6 wks. - 6 mo.:  3+1 doses; 1st dose at 2 mo.; at least 1 mo. interval; a booster dose from 11-15 mo.; or 2+1 doses; 1st dose at 2 mo.; 2 mo. interval, a booster dose); a booster dose from 11-15 mo. of age; preterm infants <37 wks. of gestation: 3+1 schedule as above; unvaccinated infants 7-11 mo.: 2+1 doses; at least 1 mo. interval; booster dose in the 2nd year of life; unvaccinated children 12-23 mo.: 2 doses; at least 2 mo. interval, unvaccinated children 2-17 yrs.: single dose; previously vaccinated individuals with Prevenar®: infants and children who have begun immunization with Prevenar® may switch to Prevenar 13® at any point in the schedule (12-59 mo.: 1 dose of at least 8 wks. after the final dose of Prevenar®; 5-17 yrs.: 1 dose at least 8 wks. after the final dose of Prevenar®; ≥18 yrs.: 1 dose); individuals with underlying conditions predisposing them to IPD* (including previously vaccinated with ≥1 dose of 23-valent PPV vaccine): may receive at least 1 dose of Prevenar 13®; individuals with HSCT: 3+1 doses; 3-6 mo. after HSCT; at least 1 mo. interval; booster dose 6 mo. after the 3rd dose.",
+                "immunogenicity": "Immunogenicity is based on the immunogenicity of Prevenar®; percentage of seroresponders (ELISA): against vaccine serotypes (3/2 doses): 77.5-99.3%/79.6-98.5%.",
+                "Efficacy": "VEy and VEs is based on efficacy and effectiveness of  Prevenar®; IPD reduction (Prevenar® serotypes/); 2+1 doses: 76% in children <2 yrs.; 91% in children 5-18 yrs.; IPD reduction (5 additional serotypes) 2+1 doses: 68-100% in children <5 yrs.; AOM reduction (Prevenar® serotypes+6A/4 additional serotypes); 2+1 doses: 95%/89% in children <2 yrs.; pneumonia reduction: 68% in outpatient visits and 32% in hospitalizations for alveolar CAP in children <5 yrs.; VEy against a first episode of vaccine serotype pneumococcal CAP/nonbacteremic or noninvasive pneumococcal CAP/IPD  in adults ≥65 yrs. (1 dose): 45.6%/45%/75%. ",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "Children: can be co-administered with monovalent or combination vaccines, DTaP, DTwP, Hib, IPV, HepB, MenC, MenACWY (12-23 mo), MMR, varicella and rotavirus vaccines; no data in 6-50 yrs.; ≥50 yrs.: can be co-administered with TIV or QIV; no data for co-administration with PPV23.",
+                "reactogenicity": "6 wks.- 5 yrs.: injection site erythema, induration, swelling, pain, and tenderness; fever; irritability; decreased appetite; increased/decreased sleep; higher rates of fever ≥38°C if Prevenar 13® co-administered with Infanrix Hexa® (28.3-42.3%); 6-17 yrs.: irritability; injection site erythema, induration, swelling, pain, and tenderness; somnolence; poor quality sleep; injection site impaired movement; decreased appetite; ≥ 18 yrs.: lower frequency of adverse reactions was associated with greater age; decreased appetite; headaches; diarrhea; vomiting (18-49 yrs.); rash; chills; fatigue; injection site erythema, induration, swelling,  pain, and tenderness (severe injection site pain and tenderness is very common in 18-39 yrs.); limitation of arm movements (severe limitation of arm movements very common in 18-39 yrs.); arthralgia; myalgia.",
+                "safety": "Potential risk of apnea in premature infants (born ≤28 weeks of gestation); increased reports of convulsions and HHE when co-administered with Infanrix Hexa®.",
+                "vaccinationGoal": "Individual protection and herd protection.",
+                "others": "It is recommended that infants who’ve received a first dose of Prevenar 13® complete the vaccination course with Prevenar 13®; regardless of prior pneumococcal vaccination status, if the use of PPV23 is considered appropriate, Prevenar 13® should be given first; limited safety/immunogenicity data in individuals with sickle cell disease, HIV infection, or with HSCT, and no data for other specific immunocompromised groups; children at risk* aged ≥2 yrs. and already primed with Prevenar 13® should receive PPV23 with ≥8 wks. interval."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "1 dose (0.5mL) contains 2.2μg of S. pneumoniae serotypes 1, 3, 4, 5, 6A, 7F, 9V, 14, 18C, 19A, 19F, 23F saccharides, and 4.4μg of 6B saccharide; each serotype is grown in soy peptone broth; conjugated to CRM197 carrier protein; storage: 2-8°C; shelf life: 3 years.",
+                "strainCoverage": "S. pneumoniae serotypes 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F and 23F; no protection against disease caused by other serotypes.",
+                "indication": "Active immunization for prevention of IPD in individuals ≥6 wks. and AOM caused by S. pneumoniae in individuals 6 wks.- 5 yrs. and pneumonia in individuals ≥18 yrs.; to be use based on official recommendations.",
+                "contraindication": "Hypersensitivity; allergy to diphtheria toxoid-containing vaccine; limited data in pregnancy; use risk/benefit strategy in breast-feeding.",
+                "dosing": "Each dose is 0.5mL; I.M; 6 wks.- 5 yrs.: 4 doses; 2, 4,6, and 12-15 mo. of age; ≥6 yrs.: single dose; unvaccinated 7-11 mo.: 3 doses; the first 2 doses at least 4 wks. interval; 3rd dose after 1-year birthday, at least 2 mo. after 2nd dose; unvaccinated 12-23 mo.: 2 doses; at least 2 mo. interval, unvaccinated 24 mo. - 5 yrs.: 1 dose.",
+                "immunogenicity": "Immunogenicity is based on the immunogenicity of Prevenar®; percentage of seroresponders (ELISA): against vaccine serotypes (3/4 doses): 63.5-98.4%/0.94-11.53%",
+                "Efficacy": "VEy and VEs is based on efficacy and effectiveness of  Prevnar®; VEy against a first episode of vaccine serotype pneumococcal CAP/nonbacteremic or noninvasive pneumococcal CAP/IPD  in adults ≥65 yrs. (1 dose): 45.6%/45%/75%. ",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "Infants and toddlers: can be co-administered with Pediarix®, ActHIB®, PedvaxHIB®, M-M-R II®, Varivax®, ProQuad®, or VAQTA®; children and adolescents: insufficient data for co-administration with HPV, meningococcal conjugate vaccine, TT and Tdap; adults: can be co-administered with TIV and QIV; no data for co-administration with diphtheria toxoid-containing vaccines and other vaccines licensed for use in ≥50 yrs; prior receipt of PPV23 within 1 yr., prophylactically acetaminophen usage with primary series or immunosuppressive therapy may result in diminished immune responses.",
+                "reactogenicity": "Infants and toddlers: irritability (>70%); injection site tenderness (>50%); decreased appetite (>40%); decreased/increased sleep (>40%); fever (>20%); injection site redness (>20%), swelling (>20%); 5-17 yrs.: injection site tenderness (>80%), redness (>30%), swelling (>30%); irritability (>20%); decreased appetite (>20%), increased/decreased sleep (>20%/>5%); fever (>5%); ≥ 18 yrs.: injection site pain (>50%); fatigue (>30%); headache (>20%); muscle pain (>20%); joint pain (>10%); decreased appetite (>10%); injection site redness (>10%), swelling (>10%); limitation of arm movements (>10%); vomiting (>5%); fever (>5%); chills (>5%); rash (>5%). ",
+                "safety": "potential risk of apnea in premature infants; seizures (including febrile seizures); erythema.",
+                "vaccinationGoal": "Individual protection and herd protection.",
+                "others": "No safety/effectiveness data in <6 wks.; vaccine should not be injected in the gluteal area or areas with a major nerve trunk or blood vessel; limited immunogenicity/safety data in people who are at increased risk of pneumococcal diseases. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "1 dose (0.5mL) contains 2.2μg of S. pneumoniae serotypes 1, 3, 4, 5, 6A, 7F, 9V, 14, 18C, 19A, 19F, 23F saccharides, and 4.4μg of 6B saccharide; each serotype is grown in soy peptone broth; conjugated to CRM197 carrier protein; storage: 2-8°C; shelf life: 3 years.",
+                "strainCoverage": "S. pneumoniae serotypes 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F and 23F; no protection against disease caused by other serotypes.",
+                "indication": "Active immunization for prevention of IPD and pneumonia in individuals ≥6 wks. and AOM caused by S. pneumoniae in individuals 6 wks. - 17 yrs.; to be used based on official recommendations.",
+                "dosing": "Each dose is 0.5mL; I.M; infants: 3+1 doses; 1st dose at 6 wks. age; at least 4 wks. interval between doses; a booster dose after the first birthday; or 2+1 doses; 2, 4, 11-15 mo. of age; preterm infants (<37 wks. of gestation): 3+1 doses; 1st dose at 2 mo. age; at least 1 mo. interval between doses; a booster dose at 11-15 mo. of age; unvaccinated 7-11mo.: 2+1 doses; 2 doses at least 4 wks. apart; 3rd dose after the 1st birthday, at least 2 mo. after the 2nd dose; unvaccinated 12-23 mo.: 2 doses; at least 2 mo. apart or a single dose; unvaccinated 2-17 yrs.: 1 dose; previously vaccinated individuals with Prevenar®: infants and children who have begun immunization with Prevenar® may switch to Prevenar 13® at any point in the schedule (12-59 mo.: 1 dose of at least 8 wks. after the final dose of Prevenar®; 5-17 yrs.: 1 dose at least 8 wks. after the final dose of Prevenar®; ≥18 yrs.: 1 dose; individuals with HSCT: 3+1 doses; 3-6 mo. after HSCT; at least 1 mo. interval; booster dose 6 mo. after the 3rd dose; individuals with underlying conditions predisposing them to IPD* (including previously vaccinated with ≥1 dose of 23-valent PPV vaccine): may receive at least 1 dose of Prevenar 13®.",
+                "contraindication": "Hypersensitivity; allergy to diphtheria toxoid-containing vaccine.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "6 wks.- 5 yrs.: can be co-administered with monovalent or combination vaccines, DTaP, DTwP, Hib, IPV, HepB, MenC, MenACWY (12-23 mo; children who were primed with PREVENAR 13 in their 1st yr of life), MMR, and varicella vaccines; in co-administration with rotavirus or HepA, the safety profiles is similar, but immunogenicity is not measured; 6-17 yrs.: no data available on the label; ≥50 yrs: can be co-administered with TIV and QIV.",
+                "reactogenicity": "6 wks. - 5 yrs.: injection site reaction; fever; irritability; drowsiness; restless sleep; decreased appetite; vomiting; diarrhea; rash; 6-17 yrs.: headache; decreased appetite; vomiting; diarrhea; rash; urticaria; urticaria like rash; irritability; injection site erythema, induration, swelling, pain, and tenderness; drowsiness; poor quality sleep; fever; ≥ 18 years: injection site pain, tenderness, redness and swelling; fatigue; headache; muscle pain; joint pain; decreased appetite; diarrhea; vomiting; fever; limitation of arm movement; chills; rash.",
+                "safety": "No safety signals to date.",
+                "vaccinationGoal": "Individual protection and herd protection.",
+                "others": "Vaccine should not be injected in the gluteal area or areas with a major nerve trunk or blood vessel."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "09/12/2009",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-13",
+                "lastUpdated": "04/04/2024"
+            },
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "24/02/2010",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-13",
+                "lastUpdated": "22/08/2017"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "20/08/2010",
+                "source": "https://extranet.who.int/prequal/vaccines/p/prevenar-13",
+                "lastUpdated": "#"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "20/08/2010",
+                "source": "https://extranet.who.int/prequal/vaccines/p/prevenar-13-multidose-vial",
+                "lastUpdated": "#"
+            }
+        ]
     }
 ]
