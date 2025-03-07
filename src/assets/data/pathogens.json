@@ -264,15 +264,6 @@
         "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=JEV"
     },
     {
-        "pathogenId": 24,
-        "name": "Norovirus",
-        "description": "Norovirus is a highly contagious virus that causes gastroenteritis, leading to inflammation of the stomach and intestines. It is often associated with outbreaks of vomiting and diarrhea, especially in enclosed environments like cruise ships, hospitals, and schools. The virus is transmitted through contaminated food, water, surfaces, or from person to person. While typically mild, norovirus infections can cause severe dehydration, particularly in vulnerable populations such as young children, the elderly, and immunocompromised individuals.",
-        "vaccines": [
-            {}
-        ],
-        "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=norovirus"
-    },
-    {
         "pathogenId": 25,
         "name": "Adenovirus",
         "description": "Adenoviruses are medium-sized, nonenveloped viruses that primarily cause respiratory illnesses, but can also lead to gastroenteritis, conjunctivitis, and neurological diseases. They contain a double-stranded DNA genome and are known for their resilience in the environment.",
@@ -350,17 +341,6 @@
         "link": "https://vaccitutor.com/course/search.php?areaids=core_course-course&q=Poliovirus",
         "image": "https://vaccitutor.com/pluginfile.php/545/course/overviewfiles/33%20-%20Poliomyelitis%20small.png",
         "bulletpoints": "Wild poliovirus (WPV) comprises 3 serotypes (1, 2, 3) which may infect and destroy spinal cord lower motor neurons. |PV is shed via salivary droplets and feces, and it is transmitted person-to-person.|One case of polio occurs following ~200 (WPV type 1) to ~1000 (type 2 or 3) WPV infections. Thus, one case is the tiny “tip of the iceberg” of widespread infection. |Infection induces long-lasting type-specific immunity, protecting from risk of disease when re-infected, but not from re-infection per se. |In low-income countries, polio occurs early in life and immunity plateaus at 5 years of age with almost 100%; in richer countries the age of polio has shifted towards older ages since the 1940s. |While the majority of WPV-infected persons remain asymptomatic a small proportion has short fever with upper respiratory or gastrointestinal symptoms. |In a few subjects, this first phase may be followed by an acute onset of paralysis of skeletal muscles, due to loss of lower motor neurons from PV infection (=poliomyelitis) with a case-fatality rate of 5%–20%; bulbar involvement increases risk of death, cortical functions (other than emotional, due to physical deformity/disability) are unaffected. |Recurrence of pain and worsening of residual motor power may occur 3–4 decades later ('post-polio syndrome'). |With no specific treatment available, prevention with one of 2 basic vaccine types (live = oral polio vaccines (OPV); and inactivated (IPV) whole virus vaccine) is of highest importance. |With IPV,3 primary doses and one booster protect nearly 100%, whereas 2 priming and 1 booster doses are sufficient, provided the first dose is given at or after 8 weeks of age and second dose again at or after 8 weeks and one booster at least 6 months after the previous dose. |OPV is given orally to induce systemic and gut mucosal immunity, following intestinal infection by vaccination. |In the USA and in most temperate regions one dose induces protective immunity in ~75% of subjects against the 3 virus types and the immunity gap is closed by 2 additional doses. |In tropical/developing countries vaccine efficacy is as low as ~10% for types 1 or 3 and it may take 10-15 doses to induce immunity in >90%. |While there are no safety concerns with IPV, with OPV attenuating mutations may revert, rarely resulting in “vaccine-associated paralytic poliomyelitis” (VAPP), clinically indistinguishable from WPV-caused polio. |VPV can spread and cause VAPP in susceptible contacts. In under-vaccinated communities VPV may circulate, mutate, become WPV-like highly transmissible, and even cause outbreaks of polio. Such virus variants are called circulating Vaccine-derived polioviruses (cVDPVs). |In the 2020s, only 2 countries continue to have indigenous transmission of WPV 1. |Transmission of WPV type 2 had been globally interrupted in 1999 and WPV type 3 in 2012. |Nearly all rich countries have abandoned OPV in favor of IPV in order to avoid VAPP. |cVDPV type 2 and cVDPV type 1, in their order of frequency, are now the major causes of polio outbreaks in African and Asian countries"
-    },
-    {
-        "pathogenId": 32,
-        "name": "Enterovirus",
-        "description": "Enteroviruses are a genus of positive-sense single-stranded RNA viruses associated with a wide range of human diseases, including mild respiratory illnesses, hand-foot-and-mouth disease, aseptic meningitis, myocarditis, and acute flaccid paralysis. They are primarily transmitted through the fecal-oral and respiratory routes and can lead to severe conditions, particularly in infants and young children.",
-        "vaccines": [
-            {}
-        ],
-        "image": "https://vaccitutor.com/pluginfile.php/509/course/overviewfiles/48%20-%20Enterovirus%20diseases%20small.png",
-        "bulletpoints": "Enterovirus A71 (EV A71) (genus enterovirus, family pircornaviridae) causes benign vesicular lesions on skin (hand, foot and mouth disease, HFMD) and mucous membranes of the mouth (herpangina), and also severe to life-threatening infections of the brain, the heart, and other internal organs. |Disease outbreaks in the Asia-Pacific region regularly involve thousands of children <5 years resulting in many deaths. Such outbreaks are caused by specific EV genotypes that vary by time and place. |While there are various promising and innovative options for treatment in development, none are licensed to date. Immunoglobulins may be beneficial through virus neutralization and modulation of the inflammatory response by the host. |In China,3 different highly efficacious and safe vaccines are commercially available; however, none are licensed outside the country. Roughly half a dozen vaccines are in the development pipeline, with some using innovative approaches and trying to broaden strain coverage.",
-        "link": "https://www.msdmanuals.com/professional/infectious-diseases/enteroviruses/overview-of-enterovirus-infections"
     },
     {
         "pathogenId": 33,

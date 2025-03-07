@@ -2887,46 +2887,6 @@
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 67,
-        "name": "Zydus Lifesciences",
-        "description": "#",
-        "history": "#",
-        "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
-        },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
-    },
-    {
-        "manufacturerId": 68,
-        "name": "Anhui Zhifei Longcom Biopharmaceutical",
-        "description": "#",
-        "history": "#",
-        "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
-        },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
-    },
-    {
         "manufacturerId": 69,
         "name": "African Malaria Network Trust (African Malaria Network Trust (AMANET))",
         "description": "#",
@@ -3049,26 +3009,6 @@
     {
         "manufacturerId": 75,
         "name": "Scandinavian Biopharma",
-        "description": "#",
-        "history": "#",
-        "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
-        },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
-    },
-    {
-        "manufacturerId": 76,
-        "name": "Anhui Zhifei Longcom Biopharmaceutical",
         "description": "#",
         "history": "#",
         "details": {
@@ -3487,26 +3427,6 @@
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 97,
-        "name": "Burnet Institue",
-        "description": "#",
-        "history": "#",
-        "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
-        },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
-    },
-    {
         "manufacturerId": 98,
         "name": "Australian National Health and Medical Research Council (NHMRC)",
         "description": "#",
@@ -3529,26 +3449,6 @@
     {
         "manufacturerId": 99,
         "name": "Centre de Recherches Medicales Lambarene",
-        "description": "#",
-        "history": "#",
-        "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
-        },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
-    },
-    {
-        "manufacturerId": 100,
-        "name": "University of Tubingen",
         "description": "#",
         "history": "#",
         "details": {
@@ -3707,26 +3607,6 @@
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 108,
-        "name": "European Vaccine Initiative (EMVI)",
-        "description": "#",
-        "history": "#",
-        "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
-        },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
-    },
-    {
         "manufacturerId": 109,
         "name": "University of Tubingen",
         "description": "#",
@@ -3789,26 +3669,6 @@
     {
         "manufacturerId": 112,
         "name": "Fraunhofer Center for Molecular Biotechnology",
-        "description": "#",
-        "history": "#",
-        "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
-        },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
-    },
-    {
-        "manufacturerId": 113,
-        "name": "Biomedical Primate Research Centre, Netherlands",
         "description": "#",
         "history": "#",
         "details": {

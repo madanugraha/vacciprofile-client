@@ -77,7 +77,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Safety', alt: 'safety' },
         { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
         { title: 'Others', alt: 'others' },
-        { title: 'Vaccine Type', alt: 'vaccineType' },
         { title: 'Approval Date', alt: 'approvalDate' },
         { title: 'Last Updated', alt: 'lastUpdated' },
         { title: 'Source', alt: 'source' },
@@ -99,8 +98,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
 
     const [licenserFieldsVaccine, setLicenserFieldsVaccine] = useState([]);
     const [selectedFilterVaccine, setSelectedFilterVaccine] = useState([]);
-    const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1], tableFields[14], tableFields[15], tableFields[16], tableFields[17]]);
-    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16], tableFields[17]]);
+    const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1], tableFields[14], tableFields[15], tableFields[16]]);
+    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]]);
     const [vaccineFieldsState, setVaccineFieldsState] = useState([]);
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
 
@@ -239,6 +238,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     }
                 })
                 setVaccineFieldsState(f);
+            } else {
+                setVaccineFieldsState([])
             }
         };
 
@@ -256,6 +257,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     }
                 });
                 setVaccineFieldsState(f);
+            } else {
+                setVaccineFieldsState([])
             }
         }
 
@@ -273,6 +276,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     }
                 })
                 setVaccineFieldsState(f);
+            } else {
+                setVaccineFieldsState([])
             }
         }
     }, [viewSinglePathogenVaccine, viewCombinationVaccine, viewAllVaccines, selectedPathogen]);
@@ -536,7 +541,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         if (allFactorShows) {
             setSelectedFilterTableFields(tableFields);
         } else {
-            setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16], tableFields[17]])
+            setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]])
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
 
@@ -852,7 +857,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                     const checkForApprovalDate = newValue.some((item) => item.title === "Approval Date");
                                                                                     const checkForLastUpdated = newValue.some((item) => item.title === "Last Updated");
                                                                                     const checkForSource = newValue.some((item) => item.title === "Source");
-                                                                                    const checkForVaccineType = newValue.some((item) => item.title === "Vaccine Type");
                                                                                     if (!checkForType) {
                                                                                         setTableFieldsErrorMessage("Type cannot be removed")
                                                                                         setDuplicateTableFieldsError(true);
@@ -878,11 +882,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                         setDuplicateTableFieldsError(true);
                                                                                         return;
                                                                                     }
-                                                                                    if (!checkForVaccineType) {
-                                                                                        setTableFieldsErrorMessage("Vaccine Type cannot be removed")
-                                                                                        setDuplicateTableFieldsError(true);
-                                                                                        return;
-                                                                                    };
                                                                                     setDuplicateTableFieldsError(false);
                                                                                     setSelectedFilterTableFields(newValue);
                                                                                 }}
@@ -978,12 +977,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                 const checkForApprovalDate = newValue.some((item) => item.title === "Approval Date");
                                                 const checkForLastUpdated = newValue.some((item) => item.title === "Last Updated");
                                                 const checkForSource = newValue.some((item) => item.title === "Source");
-                                                const checkForVaccineType = newValue.some((item) => item.title === "Vaccine Type");
-                                                if (!checkForVaccineType) {
-                                                    setTableFieldsErrorMessage("Vaccine Type cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
                                                 if (!checkForType) {
                                                     setTableFieldsErrorMessage("Type cannot be removed")
                                                     setDuplicateTableFieldsError(true);
@@ -1101,7 +1094,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                             return (
                                                                                 <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>
                                                                                     <div className='d-inline-flex justify-content-between w-100'>
-                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : key === "vaccineType" ? vaccine.vaccineType : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
+                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
                                                                                     </div>
                                                                                 </td>

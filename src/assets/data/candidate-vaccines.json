@@ -192,7 +192,7 @@
         "": "",
         "pathogenName": "Hepatitis A Virus",
         "name": "Inactivated Hepatitis A Vaccine (Adsorbed)",
-        "manufacturer": "Zydus Lifesciences",
+        "manufacturer": "Zydus Lifesciences Ltd",
         "platform": "Inactivated",
         "clinicalPhase": "Phase I",
         "companyUrl": "http://zyduslife.com/"
@@ -201,7 +201,7 @@
         "": "",
         "pathogenName": "Hepatitis E Virus",
         "name": "Recombinant Hepatitis E Vaccine (Adsorbed)",
-        "manufacturer": "Zydus Lifesciences",
+        "manufacturer": "Zydus Lifesciences Ltd",
         "platform": "Recombinant",
         "clinicalPhase": "Phase II",
         "companyUrl": "http://zyduslife.com/"
@@ -543,7 +543,7 @@
         "": "",
         "pathogenName": "MMRV",
         "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-        "manufacturer": "Zydus Lifesciences",
+        "manufacturer": "Zydus Lifesciences Ltd",
         "platform": "Live-attenuated",
         "clinicalPhase": "Phase I",
         "companyUrl": "http://zyduslife.com/"
@@ -894,7 +894,7 @@
         "": "",
         "pathogenName": "Plasmodium falciparum",
         "name": "ACT-123+A2:A2089",
-        "manufacturer": "Alfred Research and Medical Education Precinct (AMREP); Burnet Institue",
+        "manufacturer": "Alfred Research and Medical Education Precinct (AMREP); Burnet Institute",
         "platform": "Synthetic peptide",
         "clinicalPhase": "Phase I",
         "companyUrl": ""
@@ -975,7 +975,7 @@
         "": "",
         "pathogenName": "Plasmodium falciparum",
         "name": "GMZ2/Alhydrogel",
-        "manufacturer": "European Vaccine Initiative (EMVI); University of Tubingen",
+        "manufacturer": "European Vaccine Initiative (EVI); University of Tubingen",
         "platform": "Recombinant subunit",
         "clinicalPhase": "Phase I",
         "companyUrl": "https://www.euvaccine.eu/"
@@ -984,7 +984,7 @@
         "": "",
         "pathogenName": "Plasmodium falciparum",
         "name": "PfAMA1-FVO [25-545]/Alhydrogel;PfAMA1-FVO [25-545]/ISA 720;PfAMA1-FVO [25-545]/AS02A",
-        "manufacturer": "European Vaccine Institute (EVI); Radboud University; Biomedical Primate Research Centre, Netherlands; GlaxoSmithKline (GSK)",
+        "manufacturer": "European Vaccine Institute (EVI); Radboud University; Biomedical Primate Research Center (BPRC); GlaxoSmithKline (GSK)",
         "platform": "Recombinant subunit;Recombinant subunit;Recombinant subunit",
         "clinicalPhase": "Phase I;Phase I;Phase I",
         "companyUrl": "https://www.euvaccine.eu/"
@@ -4305,7 +4305,7 @@
         "": "",
         "pathogenName": "Salmonella Typhi; Salmonella Paratyphi A",
         "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
-        "manufacturer": "Zydus Lifesciences",
+        "manufacturer": "Zydus Lifesciences Ltd",
         "platform": "Conjugate",
         "clinicalPhase": "Phase I",
         "companyUrl": "http://zyduslife.com/"
