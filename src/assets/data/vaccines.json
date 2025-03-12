@@ -19127,7 +19127,7 @@
         "vaccineId": 303,
         "name": "Rubella Vaccine, Live, Attenuated®",
         "pathogenId": [
-            1
+            14
         ],
         "manufacturers": [
             {
@@ -19357,9 +19357,6 @@
         "manufacturers": [
             {
                 "manufacturerId": 40
-            },
-            {
-                "manufacturerId": 8
             }
         ],
         "productProfiles": [
