@@ -69,7 +69,7 @@ const VaccineListTable = ({
                                 <thead>
                                     <tr>
                                         <th>Vaccine Brand Name</th>
-                                        <th>Vaccine Type</th>
+                                        <th>Single or Combination Vaccine</th>
                                         <th>Pathogen</th>
                                         <th>Licensing Authorities</th>
                                     </tr>

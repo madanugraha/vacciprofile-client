@@ -644,7 +644,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
-                                                                <td style={{ fontWeight: 'bold' }}>Vaccine Type</td>
+                                                                <td style={{ fontWeight: 'bold' }}>Single or Combination Vaccine</td>
                                                                 <td style={{ fontWeight: 'bold' }} colSpan={3}>Licensed Authority</td>
                                                             </tr>
                                                             {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
@@ -662,7 +662,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 </div>
                                                                             </li>
                                                                         </td>
-                                                                        <td style={{ fontWeight: 'bold' }}>{vaccine.vaccineType}</td>
+                                                                        <td style={{ fontWeight: 'bold' }}>{vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}</td>
                                                                         <td colSpan={3}>
                                                                             {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
                                                                                 return (
