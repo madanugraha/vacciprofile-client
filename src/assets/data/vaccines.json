@@ -9109,81 +9109,6 @@
         ]
     },
     {
-        "vaccineId": 158,
-        "name": "ACAM2000®",
-        "pathogenId": [
-            26
-        ],
-        "manufacturers": [
-            {
-                "manufacturerId": 15
-            }
-        ],
-        "productProfiles": [
-            {
-                "type": "EMA",
-                "name": "EMA-Product Profile: ACAM2000® (MAH: Emergent Product Development Gaithersburg)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
-            },
-            {
-                "type": "FDA",
-                "name": "FDA-Product Profile: ACAM2000® (MAH: Emergent Product Development Gaithersburg)",
-                "composition": "1 vial (100 doses; 0.0025mL each droplet) contains viable vaccinia virus (2.5-12.5 x 105 PFU); storage: freezer (-15°C to -25°C) or in refrigerator (2-8°C); shelf life: 18 months before reconstitution and up to 30 days after reconstitution at 2-8°C.",
-                "strainCoverage": "Smallpox virus.",
-                "indication": "Active immunization against smallpox disease for persons determined to be at high risk for smallpox infection. To be used based on official recommendations.",
-                "contraindication": "Severe immune deficiency* who are not expected to benefit from the vaccine; caution in cardiac disease, eye disease treated with topical steroids, immune deficiency disorders, history or presence of eczema and other skin conditions, pregnancy, breastfeeding, and <1mo.; the risk for experiencing serious vaccination complications must be weighed against the risks for experiencing a potentially fatal smallpox infection.",
-                "dosing": "Percutaneous scarification; upper arm over the insertion of the deltoid muscle; 1 dose (1 droplet, 0.0025mL).Booster: Every 3 yrs.; if in continued high risk of exposure (e.g., research laboratory workers handling variola virus).",
-                "immunogenicity": "Percentage of cutaneous response (vaccination success): 84-96%; GMT in both vaccinia-naïve subjects and previously vaccinated subjects was non-inferior to Dryvax®, a first-generation smallpox vaccine.",
-                "Efficacy": " (VEy)No efficacy data is available; immunogenicity as above.",
-                "durationOfProtection": "Unknown.",
-                "coAdministration": "No data on co-administration with other vaccines; avoid blood/organ donation at least 30 days after vaccination; may induce false-positive tests for syphilis; may induce temporary false-negative results for the tuberculin skin test (preferably should be delayed for 1 month)",
-                "reactogenicity": "Inadvertent inoculation at face, nose, mouth, lips, genitalia, or anus, inoculation site signs or symptoms, lymphadenitis, malaise, fatigue, fever, myalgia, headache; less frequent in revaccinated persons; Self-limited skin rashes not associated with vaccinia replication in skin (urticaria, folliculitis).",
-                "safety": " Myocarditis and/or pericarditis (5.7 (95% CI: 1.9-13.3) per 1000 vaccinees), ischemic heart disease and non-ischemic dilated cardiomyopathy, ocular vaccinia and blindness, encephalitis, encephalomyelitis, encephalopathy, progressive vaccinia (vaccinia necrosum), generalized vaccinia, severe vaccinial skin infections, erythema multiforme major (including Stevens-Johnson syndrome), eczema vaccinatum, fetal vaccinia and fetal death in pregnant women, death (0.001 per 1000 vaccinees)",
-                "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "No safety/efficacy/effectiveness data in <16 yrs. and >65 yrs."
-            },
-            {
-                "type": "WHO",
-                "name": "WHO-Product Profile: ACAM2000® (MAH: Emergent Product Development Gaithersburg) ",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
-            }
-        ],
-        "vaccineType": "single",
-        "licensingDates": [
-            {
-                "name": "FDA",
-                "type": "#",
-                "approvalDate": "31/08/2007",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/acam2000",
-                "lastUpdated": "24/08/2015"
-            }
-        ]
-    },
-    {
         "vaccineId": 161,
         "name": "Synflorix®",
         "pathogenId": [
@@ -15602,7 +15527,7 @@
     },
     {
         "vaccineId": 256,
-        "name": "PreHevbri®",
+        "name": "PreHevbri;PreHevbrio®",
         "pathogenId": [
             9
         ],
@@ -15672,81 +15597,6 @@
                 "approvalDate": "25/04/2022",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prehevbri",
                 "lastUpdated": "30/01/2024"
-            }
-        ]
-    },
-    {
-        "vaccineId": 257,
-        "name": "PreHevbrio®",
-        "pathogenId": [
-            9
-        ],
-        "manufacturers": [
-            {
-                "manufacturerId": 32
-            }
-        ],
-        "productProfiles": [
-            {
-                "type": "EMA",
-                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
-                "composition": "storage: 2-8°C (protect from light); shelf life: 12 months.",
-                "strainCoverage": "No label available",
-                "indication": "No label available ",
-                "contraindication": "No label available ",
-                "dosing": "No label available ",
-                "immunogenicity": "No label available ",
-                "Efficacy": "No label available ",
-                "durationOfProtection": " No label available",
-                "coAdministration": "No label available",
-                "reactogenicity": "No label available",
-                "safety": "No label available",
-                "vaccinationGoal": "No label available",
-                "others": "No label available"
-            },
-            {
-                "type": "FDA",
-                "name": "FDA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
-                "composition": "1 dose (1mL) contains 10µg HBsAg; produced in CHO cells by rDNA technology; storage: 2-8°C; shelf life: 4 years.",
-                "strainCoverage": "Hepatitis B virus.",
-                "indication": "Active immunization against infection caused by any HBV subtype in individuals ≥18 yrs. To be used based on official recommendations.",
-                "contraindication": "Hypersensitivity; limited data in pregnancy; can be used in breast-feeding if advantages > risks.",
-                "dosing": "I.M.; 3 doses (1mL each); 0, 1, 6 month.",
-                "immunogenicity": "The immunogenicity was assessed in comparison with Engerix-B (licensed hepatitis B vaccine): seroprotection rate in ≥18 yrs. was non-inferior to the Engerix B at day 196 (91.4% vs. 76.5%); seroprotection rate in ≥45 yrs. was superior to the Engerix B at day 196 (89.4% vs. 73.1%); higher seroprotection rate and anti-HBs titers were noted for PreHevbri compared with Engerix-B at all time points.",
-                "Efficacy": "No VEy data; immunogenicity as above.",
-                "durationOfProtection": "Unknown.",
-                "coAdministration": "No data for co-administration with other vaccines and HBIg.",
-                "reactogenicity": "18-44 yrs.: injection site pain (52.0-58.3%) and tenderness (52.6-59.6%), headache (17.2-25.8%), fatigue (20.1-28.3%), and myalgia (22.2-29.9%); \n 45-64yrs.: injection site pain (42.2-48.8%) and tenderness (43.2-50.5%), headache (13.8-21.3%), fatigue (14.3-19.7%), and myalgia (16.7-24.1%); \n ≥65 yrs.: injection site pain (26.7-34.8%) and tenderness (30.2-32.8%), headache (7.3-12.2%), fatigue (11.5-14.5%), and myalgia (11.5-16.6%).",
-                "safety": "No safety signals to date.",
-                "vaccinationGoal": "Individual protection.",
-                "others": "No safety/efficacy/effectiveness data for <18 yrs. and hemodialysis patients; no protection in patients in incubation period of HBV infection; lower immunogenicity in 65-86 yrs."
-            },
-            {
-                "type": "WHO",
-                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
-                "composition": "storage: 2-8°C (protect from light); shelf life: 12 months.",
-                "strainCoverage": "No label available in WHO website",
-                "indication": "No label available in WHO website",
-                "contraindication": "No label available in WHO website",
-                "dosing": "No label available in WHO website",
-                "immunogenicity": "No label available in WHO website",
-                "Efficacy": "No label available in WHO website",
-                "durationOfProtection": " No label available in WHO website",
-                "coAdministration": "No label available in WHO website",
-                "reactogenicity": "No label available in WHO website",
-                "safety": "No label available in WHO website",
-                "vaccinationGoal": "No label available in WHO website",
-                "others": "No label available in WHO website"
-            }
-        ],
-        "vaccineType": "single",
-        "licensingDates": [
-            {
-                "name": "EMA",
-                "type": "#",
-                "approvalDate": "30/11/2021",
-                "source": "https://www.fda.gov/vaccines-blood-biologics/prehevbrio",
-                "lastUpdated": "30/11/2021"
             }
         ]
     },
@@ -16314,8 +16164,8 @@
         "vaccineType": "single"
     },
     {
-        "vaccineId": 264,
-        "name": "JEEV (3µg)®",
+        "vaccineId": 273,
+        "name": "JEEV (6µg)®",
         "pathogenId": [
             23
         ],
@@ -16732,19 +16582,13 @@
     },
     {
         "vaccineId": 269,
-        "name": "Influenza A (H1N1) 2009 Monovalent Vaccine®",
+        "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (CSL Limited)",
         "pathogenId": [
             8
         ],
         "manufacturers": [
             {
                 "manufacturerId": 37
-            },
-            {
-                "manufacturerId": 40
-            },
-            {
-                "manufacturerId": 8
             }
         ],
         "productProfiles": [
@@ -17063,6 +16907,2747 @@
                 "approvalDate": "10/06/2021",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-20",
                 "lastUpdated": "27/04/2023"
+            }
+        ]
+    },
+    {
+        "vaccineId": 274,
+        "name": "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains (Sinovac)®",
+        "isDoubleName": false,
+        "pathogenId": [
+            31
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 10
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "Prevenar20®",
+                "composition": "1 dose (0.5mL) contains 2.2μg of S. pneumoniae serotypes 1, 3, 4, 5, 6A, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F saccharides, and 4.4μg of 6B saccharide; conjugated to CRM197 carrier protein; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "S. pneumoniae serotypes 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, and 33F; no protection against disease caused by other serotypes or other microorganisms that cause IPD, pneumonia, or AOM.",
+                "indication": "Active immunization for prevention of IPD and pneumonia caused by S. pneumoniae in individuals ≥6 wks. and AOM caused by S. pneumoniae in individuals 6 wks. - 18 yrs.; to be use based on official recommendations.",
+                "contraindication": "Hypersensitivity; allergy to diphtheria toxoid-containing vaccine; acute severe febrile illness; caution in coagulation disorder; no data on pregnancy (use risk/benefit strategy); no data in breastfeeding.",
+                "dosing": "Each dose is 0.5mL; I.M (S.C in coagulation disorder if benefits>risk); 6 wks.-15 mo. and preterm infants <37 wks. of gestation: 3+1 doses; 1st dose at 2 mo.; at least 4 wks. interval; a booster dose at 11-14 mo.; ≥18 yrs.: 1 dose; unvaccinated infants 7-11 mo.: 2+1 doses; at least 4 wks. interval; a booster dose in the 2nd year of life; unvaccinated children 12-23 mo.: 2 doses; at least 8 wks. interval; unvaccinated children 2-17 yrs.: 1 dose; if Prevenar 13® administered, at least 8 wks. after the final dose; 15-59 mo. previously fully vaccinated with Prevenar 13®: 1 dose; at least 8 wks. after the final dose of Prevenar 13®; individuals with underlying conditions predisposing them to IPD* (including those previously vaccinated with ≥1 dose of PPV23): may receive at least 1 dose; individuals with HSCT: 3+1 doses; 3-6 mo. after HSCT; at least 4 wks. interval between doses; a booster dose 6 mo. after the 3rd dose.",
+                "immunogenicity": "Immunogenicity is based on the 13-valent PCV vaccine; the percentage of seroresponders (ELISA): against vaccine serotypes (3+1 doses): 60.8-99.9% (Prevenar20® was non-inferior to Prevenar13® and PPV23); adults ≥60 yrs.: Prevenar20® was non-inferior to Prevenar13® and PPV23 (except serotype 8).",
+                "Efficacy": "No data in the label; immunogenicity as above.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "6 wks. - 59 mo.: can be co-administered with monovalent or combination vaccines, DTaP, Hib, IPV, HBV, MMR, varicella, and rotavirus vaccines; ≥18 yrs.: can be co-administered with COVID-19 mRNA vaccine, QIV (high risk of developing life-threatening pneumococcal disease in individuals with underlying condition; at least 4-week interval).",
+                "reactogenicity": "6 wks. - 59 mo.: injection site pain, tenderness, erythema, induration, swelling; fever (pyrexia); restless sleep/decreased sleep; drowsiness/increased sleep; irritability; decreased appetite; 5-18 yrs.: injection site pain, tenderness, erythema, induration, swelling; restless sleep/decreased sleep; drowsiness/increased sleep; irritability; decreased appetite; headache; fatigue; muscle pain; adults: decreased appetite; headache; fatigue; muscle pain; joint pain; injection site pain, tenderness.",
+                "safety": "Potential risk of apnea in premature infants (born ≤28 weeks of gestation).",
+                "vaccinationGoal": "Individual protection and herd protection.",
+                "others": "After receiving the first dose, complete the vaccination course with the same vaccine (Prevenar20®); if the use of PPV23 is considered appropriate, Prevenar20® should be given first; no or limited data in <6 wks., preterm infants, older unvaccinated, or partially vaccinated infants and children; avoid injection in the gluteal area or areas with a major nerve trunk or blood vessel; no safety/immunogenicity data for immunocompromised groups."
+            },
+            {
+                "type": "FDA",
+                "name": "Prevnar20®",
+                "composition": "1 dose (0.5mL) contains 2.2μg of S. pneumoniae serotypes 1, 3, 4, 5, 6A, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F saccharides, and 4.4μg of 6B saccharide; conjugated to CRM197 carrier protein; grown in soy peptone broth; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "S. pneumoniae serotypes 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, and 33F.",
+                "indication": "Active immunization to prevent IPD in individuals ≥6 wks., pneumonia in individuals ≥18 yrs., and AOM in individuals 6 wks.- 5 yrs., all caused by S. pneumoniae (above serotypes); to be used based on official recommendations. ",
+                "contraindication": "Hypersensitivity; allergy to diphtheria toxoid-containing vaccine; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "Each dose is 0.5mL; I.M; 6 wks.-15 mo.: 4 doses; 2, 4, 6, 12-15 mo. of age; ≥18 yrs.: 1 dose; unvaccinated infants 7-11 mo.: 3 doses; at least 4 wks. interval; 3rd dose in the 2nd year of life; unvaccinated children 12-23 mo.: 2 doses; at least 2 mo. interval; unvaccinated children 2-17 yrs.: 1 dose; 15 mo. - 7 yrs. previously vaccinated with ≥1 dose of a lower valency PCV vaccine: 1 dose; at least 8 wks. after the last dose of PCV.",
+                "immunogenicity": "Immunogenicity is based on PCV13 and PPV23; percentage of seroresponders: against vaccine serotypes (3 doses; 2, 4, 6 mo. of age): 48-98.3% (Prevenar20® was non-inferior to Prevnar13® for 8 of the 13 matched serotypes and 6 of the 7 additional serotypes); adults ≥60 yrs.: Prevenar20® was non-inferior to Prevnar13® and PPV23 for some Prevnar13* serotypes, and for 6 of the 7 additional serotypes common to PPV23 (except serotype 8);",
+                "durationOfProtection": "No data in the label.",
+                "Efficacy": "VEy and VEs is based on Prevnar® and Prevnar13®; immunogenicity as above.",
+                "coAdministration": "6 wks. - 15 mo.: can be co-administered with M-M-R II®, VARIVAX®, Pediarix®, Hiberix®; ≥65 yrs.: QIV.",
+                "reactogenicity": "Children (4 doses): irritability (>60%); injection site pain (>30%), drowsiness (>30%); decreased appetite; injection site redness (>20%), injection site swelling (>10%); fever (>10%); 15 mo.- 17 yrs. (single dose): irritability (>60% in <2 yrs.); injection site pain (>50%), drowsiness (>40% in <2 yrs.); fatigue; muscle pain (>20% in ≥2yrs.); decreased appetite (>20% in <2 yrs.); injection site swelling/redness (>10%); headache (>10% in ≥5yrs.); fever (>10% in <2 yrs); 18-59 yrs.: injection site pain (>70%); muscle pain (>50%); fatigue (>40%); headache (>30%); arthralgia; injection site swelling (>10%);   ≥60yrs.: injection site pain (>50%); muscle pain and fatigue (>30%); headache (>20%); arthralgia (>10%). ",
+                "safety": "Potential risk of apnea in premature infants .",
+                "vaccinationGoal": "Individual protection and herd protection.",
+                "others": "No safety/immunogenicity data for immunocompromised groups."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "14/02/2022",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-20",
+                "lastUpdated": "26/04/2024"
+            },
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "10/06/2021",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-20",
+                "lastUpdated": "27/04/2023"
+            }
+        ]
+    },
+    {
+        "vaccineId": 275,
+        "name": "SKYCellflu inj.®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 46
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Michigan/45/2015 NYMC X-275 (H1N1), A/Hong Kong/4801/2014 NYMC X-263(H3N2), B/Brisbane/60/2008 NYMC BX-35, B/pucket/3073/2013 strains); propagated in MDCK Sky3851 cells; storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; history of Guillain-Barré Syndrome within 6 weeks of previous influenza vaccination; febrile disease; acute infection; cardiovascular diseases, kidney disease, or liver disease in active or acute phase; acute respiratory diseases or other active infectious diseases; individuals in inappropriate condition to be vaccinated; caution in chronic cardiovascular disorders, chronic respiratory disorders or diabetes; use risk/benefit strategy in bleeding disorders; should be given to pregnant women only if clearly needed; caution in lactation.",
+                "dosing": "I.M; single dose (0.5 mL); unvaccinated <9 yrs.: 2 doses; 4 weeks interval.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: 6-35 mo.: irritation; somnolence; injection site pain, tenderness, redness, induration; 3-18 yrs.: injection site pain, tenderness, redness, induration; myalgia; 19-59 yrs.: injection site pain, tenderness; myalgia; fatigue; ≥60 yrs.: myalgia.",
+                "safety": " Encephalomyelitis; acute diffuse encephalomyelitis; convulsions; dyskinesia and consciousness disorder; palsy, neuralgia, cerebral hemorrhage, or inflammation of the nervous system (ex. Guillain-Barre syndrome); bleeding.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "False positive ELISA serologic tests for HIV-1, Hepatitis C, and especially HTLV-1 may occur following vaccination."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "27/12/2019",
+                "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-inj",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 276,
+        "name": "Zabdeno+Mvabea®",
+        "pathogenId": [
+            29
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 124
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Michigan/45/2015 NYMC X-275 (H1N1), A/Hong Kong/4801/2014 NYMC X-263(H3N2), B/Brisbane/60/2008 NYMC BX-35, B/pucket/3073/2013 strains); propagated in MDCK Sky3851 cells; storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; history of Guillain-Barré Syndrome within 6 weeks of previous influenza vaccination; febrile disease; acute infection; cardiovascular diseases, kidney disease, or liver disease in active or acute phase; acute respiratory diseases or other active infectious diseases; individuals in inappropriate condition to be vaccinated; caution in chronic cardiovascular disorders, chronic respiratory disorders or diabetes; use risk/benefit strategy in bleeding disorders; should be given to pregnant women only if clearly needed; caution in lactation.",
+                "dosing": "I.M; single dose (0.5 mL); unvaccinated <9 yrs.: 2 doses; 4 weeks interval.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: 6-35 mo.: irritation; somnolence; injection site pain, tenderness, redness, induration; 3-18 yrs.: injection site pain, tenderness, redness, induration; myalgia; 19-59 yrs.: injection site pain, tenderness; myalgia; fatigue; ≥60 yrs.: myalgia.",
+                "safety": " Encephalomyelitis; acute diffuse encephalomyelitis; convulsions; dyskinesia and consciousness disorder; palsy, neuralgia, cerebral hemorrhage, or inflammation of the nervous system (ex. Guillain-Barre syndrome); bleeding.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "False positive ELISA serologic tests for HIV-1, Hepatitis C, and especially HTLV-1 may occur following vaccination."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "27/12/2019",
+                "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-inj",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 277,
+        "name": "Influenza Trivalent Vaccine (split virion, inactivated)®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 125
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: SKYCellflu Quadrivalent inj.® (MAH: SK Bioscience)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Michigan/45/2015 NYMC X-275 (H1N1), A/Hong Kong/4801/2014 NYMC X-263(H3N2), B/Brisbane/60/2008 NYMC BX-35, B/pucket/3073/2013 strains); propagated in MDCK Sky3851 cells; storage: 2-8°C (protect from light); shelf life: 12 months.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; history of Guillain-Barré Syndrome within 6 weeks of previous influenza vaccination; febrile disease; acute infection; cardiovascular diseases, kidney disease, or liver disease in active or acute phase; acute respiratory diseases or other active infectious diseases; individuals in inappropriate condition to be vaccinated; caution in chronic cardiovascular disorders, chronic respiratory disorders or diabetes; use risk/benefit strategy in bleeding disorders; should be given to pregnant women only if clearly needed; caution in lactation.",
+                "dosing": "I.M; single dose (0.5 mL); unvaccinated <9 yrs.: 2 doses; 4 weeks interval.",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: 6-35 mo.: irritation; somnolence; injection site pain, tenderness, redness, induration; 3-18 yrs.: injection site pain, tenderness, redness, induration; myalgia; 19-59 yrs.: injection site pain, tenderness; myalgia; fatigue; ≥60 yrs.: myalgia.",
+                "safety": " Encephalomyelitis; acute diffuse encephalomyelitis; convulsions; dyskinesia and consciousness disorder; palsy, neuralgia, cerebral hemorrhage, or inflammation of the nervous system (ex. Guillain-Barre syndrome); bleeding.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "False positive ELISA serologic tests for HIV-1, Hepatitis C, and especially HTLV-1 may occur following vaccination."
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "27/12/2019",
+                "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-inj",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 278,
+        "name": "Influenza A (H5N1) Virus Monovalent Vaccine, Adjuvanted®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 40
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "09/09/2016",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
+                "lastUpdated": "09/09/2016"
+            }
+        ]
+    },
+    {
+        "vaccineId": 279,
+        "name": "Havrix; Havrix 720 Junior; Havrix 1440 Adult®",
+        "pathogenId": [
+            10
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 17
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "09/09/2016",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
+                "lastUpdated": "09/09/2016"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "09/09/2016",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
+                "lastUpdated": "09/09/2016"
+            }
+        ]
+    },
+    {
+        "vaccineId": 280,
+        "name": "Engerix-B®",
+        "pathogenId": [
+            9
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "09/09/2016",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
+                "lastUpdated": "09/09/2016"
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "09/09/2016",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
+                "lastUpdated": "09/09/2016"
+            }
+        ]
+    },
+    {
+        "vaccineId": 281,
+        "name": "DTwPHepatitisBHib®",
+        "pathogenId": [
+            9,39,41,35,40
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "combination",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "09/09/2016",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
+                "lastUpdated": "09/09/2016"
+            }
+        ]
+    },
+    {
+        "vaccineId": 282,
+        "name": "DTwPHepatitisBHibadsorbed®",
+        "pathogenId": [
+            9,39,41,35,40
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "combination",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "09/09/2016",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
+                "lastUpdated": "09/09/2016"
+            }
+        ]
+    },
+    {
+        "vaccineId": 283,
+        "name": "M M Rvaxpro; M M R II; rHA M M R II®",
+        "pathogenId": [
+            12,
+            13,
+            14
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Priorix® (MAH: GSK)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Priorix® (MAH: GSK)",
+                "composition": "1 dose (0.5mL) contains ≥3.4 log10 CCID50 measles virus (Schwarz strain) produced in chick embryo fibroblasts, 4.2 log10 CCID50 mumps virus (RIT 4385 strain, derived from the Jeryl Lynn strain) produced in chick embryo fibroblasts, and Rubella virus (Wistar RA 27/3 strain) 3.3 log10 CCID50 propagated in MRC-5 human diploid cells; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "Measles, mumps, and rubella viruses.",
+                "indication": "Vaccination against measles, mumps, and rubella in individuals ≥1 year; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; pregnancy (avoid pregnancy for at least 1 mo. after vaccination); severe humoral or cellular immunodeficiency; use risk/benefit strategy in breastfeeding.",
+                "dosing": "S.C; 2 doses (0.5mL each); 12-15mo., and 4-6 yrs. of age; at least 4-week interval between doses. ",
+                "immunogenicity": "Immunogenicity is based on a comparison of antibody responses relative to M-M-R II®; percentage of seroresponders (ELIZA): 12-15 mo. (1 doses): 98% against measles, 98% against mumps, and 97% against rubella (PRIORIX® was non-inferior to M-M-R II®); 12-15 mo. (2 doses, 6 wks. interval): seroresponse rate was similar to M-M-R II®; 4-6 yrs. (second dose): 100% against each measles, mumps, and rubella virus (PRIORIX® was non-inferior to M-M-R II®); ≥7 yrs. (second dose): 99% against measles, 98% against mumps, and 100% against rubella (PRIORIX® was non-inferior to M-M-R II®).",
+                "Efficacy": " (VEy)No efficacy data available on the label; immunogenicity as above.",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "Can be co-administered with other live vaccines (or should be given 1 mo. apart), Prevnar13®, Varivax®, Havrix®, and Kinrix®; avoid co-administration with Ig and other blood products. ",
+                "reactogenicity": "Most common: 12-15mo.: injection site pain (26%), redness (25%); irritability (63%); appetite loss (45%); drowsiness (45%); fever (35%); 4-6 yrs.:injection site pain (41%), redness (22%), swelling (11%); appetite loss (21%); drowsiness (27%); fever (24%); ≥7 yrs.: injection site pain (12%), redness (12%).",
+                "safety": " Febrile seizure, thrombocytopenia and thrombocytopenic purpura were reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No evidence about transmission of rubella, measles, or mumps to close contacts after immunization; no safety/effectiveness data in <1 yrs.; no data in ≥65 yrs.; induce temporary depression of tuberculin skin sensitivity (should be administered before, simultaneously with, or at least 4 wks. after immunization); may be use as a second dose of other MMR vaccines."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Priorix® (MAH: GSK)",
+                "composition": "1 dose (0.5mL) contains ≥1×103 CCID50 measles virus (Schwarz strain) produced in chick embryo cells, ≥103.7 CCID50  mumps virus (RIT 4385 strain, derived from the Jeryl Lynn strain) produced in chick embryo cells, ≥103 CCID50 rubella virus (Wistar RA 27/3 strain) produced in MRC-5 human diploid cells; storage: 2-8°C; shelf life: 2 years.",
+                "strainCoverage": "Measles, mumps, and rubella viruses.",
+                "indication": "Active immunization against measles, mumps, and rubella; in countries with high measles incidence/mortality rates in <1 yrs. recommended age for immunization is 9 mo. or soon after and revaccination is needed in ≥1 yrs.; in countries where measles occurs later in life recommended age for immunization is 12-15 mo.; to be used based on official recommendations; the 2nd dose can be given through routine or supplemental activities.",
+                "contraindication": "Hypersensitivity; acute severe febrile illness; severe humoral or cellular immunodeficiency*; pregnancy (avoid pregnancy at least 1 mo. following vaccination); use risk/benefits strategy in breastfeeding; caution in individuals with history or family history of convulsion or CNS disorder; extreme caution in individuals who demonstrate allergic reactions after egg ingestion also who experienced thrombocytopenia after the previous dose.",
+                "dosing": "Each dose is 0.5mL; S.C or I.M (S.C in coagulation disorder).",
+                "immunogenicity": "No data available in the label.",
+                "Efficacy": " (VEy)No data available In the label.",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "Can be co-administered with DTaP, Tdap, IPV, OPV, Hib, Hib-HBV, HAV, MenB, MenC, MenACWY, PCV10, and VZV vaccines and other live vaccines (if not given concomitantly with other live vaccines should be given 1 mo. apart); avoid co-administration with Ig (vaccination should be deferred at least 3 mo and up to 11 mo. based on Ig doses); if possible, consider separate vaccination with Bexsero® (increased risk of fever, injection site tenderness, irritability, and change in eating habit in concomitant immunization).",
+                "reactogenicity": "Very common: fever, injection site erythema; common: URTI, rash, injection site pain/swelling; injection site pain in 2nd dose is very common.",
+                "safety": " Encephalitis (<1/million) and thrombocytopenia were reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No evidence about transmission of rubella, measles, or mumps to close contacts after immunization; transmission through breast milk has been documented without any evidence of clinical disease; vaccination may be considered in patients with elected immune deficiencies where the benefits outweigh the risks (asymptomatic HIV patients, IgG subclass deficiencies, congenital neutropenia, chronic granulomatous disease, and complement deficiency diseases); induce temporary depression of tuberculin skin sensitivity (should be administered before, simultaneously with, or 6 wks. after immunization); no safety/efficacy data in <9 mo.; Limited protection within 72 hours after exposure to wild-type measles."
+            }
+        ],
+        "vaccineType": "combination",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "03/06/2022",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/priorix",
+                "lastUpdated": "03/06/2022"
+            },
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "09/03/2001",
+                "source": "https://extranet.who.int/prequal/vaccines/p/priorix",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "09/03/2001",
+                "source": "https://extranet.who.int/prequal/vaccines/p/priorix-0",
+                "lastUpdated": ""
+            }
+        ]
+    },
+    {
+        "vaccineId": 284,
+        "name": "Rabies Vaccine Inactivated (Freeze Dried)(RABIVAX-S)®",
+        "pathogenId": [
+            20
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: RabAvert® (MAH: Bavarian Nordic)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: RabAvert® (MAH: Bavarian Nordic)",
+                "composition": "1 dose (1mL) contains ≥2.5 IU rabies antigen (inactivated rabies virus Flury Low Egg Passage (LEP) strain) grown in primary chicken fibroblast cultures; inactivated by beta-propiolactone; storage: dark place at 2-8°C; shelf life: unknown.",
+                "strainCoverage": "Rabies virus.",
+                "indication": "Active immunization against rabies in any age group; can be used for primary series and booster dose of pre-exposure prophylaxis in high-risk groups* and post-exposure prophylaxis; to be used based on official recommendations.",
+                "contraindication": "Pre-exposure prophylaxis: hypersensitivity (should receive an alternative rabies vaccine); sick and convalescent persons; incubation stage of an infectious disease; pregnancy (only if clearly needed); breastfeeding (not a contraindication if the risk of exposure to rabies is substantial); post-exposure prophylaxis: no absolute contraindication including pregnancy and breastfeeding.",
+                "dosing": "Each dose is 1mL; I.M; pre-exposure prophylaxis: 3 doses; day 0, 7, 21 or 28; periodic boosters only for people whose occupation puts them at continual or frequent risk of exposure; for people who are at risk of laboratory exposure to high concentrations of live rabies virus, antibody testing should be done every 6 mo. and other professionals, who are at continual risk of exposure through their activities, should have serological monitoring every year; a booster should be administered to maintain rabies virus neutralizing antibody titres ≥0.5 lU/mI; post-exposure prophylaxis: previously unimmunized individuals: 5 doses; day 0, 3, 7, 14, 28; with an initial dose of HRIG in day 0 or through the 7th day after administration of the first dose of vaccine; previously immunized individuals or history of protective Ab titer: 2 doses; day 0, 3; without rabies Ig; post-exposure prophylaxis should be done as early as possible after exposure.",
+                "immunogenicity": "Percentage of seroresponders: preexposure vaccination: 100%; postexposure vaccination: 98.55-99.53% on days 28-30",
+                "Efficacy": " (VEy) / Effectiveness (VEs)Postexposure VEy in individuals aged 1-20 yrs.: 100%.",
+                "durationOfProtection": "No data available in the label.",
+                "coAdministration": "Radiation therapy, antimalaria, corticosteroids, other immunosuppressive agents, and immunosuppressive illnesses may diminish the protective efficacy of the vaccine (be aware that the immune response may be inadequate to preexposure vaccination); avoid co-administration of immunosuppressive agents during postexposure therapy (unless essential for the treatment of other conditions and a serum sample on day 14 be tested for rabies antibody to evaluate antibody response); no data available on co-administration with other vaccines.",
+                "reactogenicity": "Injection site pain (34%), erythema, and induration; flu-like symptoms (asthenia, fatigue, fever, headache (10-52%), myalgia(53%), malaise (15-20%)); arthralgia; dizziness (15%); lymphadenopathy (15%); nausea; rash; uncommon: fever >38°C; swollen lymph nodes; limbs pain; gastrointestinal complaints; rare: severe headache; fatigue; circulatory reactions; sweating; chills; monoarthritis; allergic reactions; transient paresthesia and 1 case of suspected urticaria pigmentosa.",
+                "safety": " Anaphylaxis; meningitis; neuroparalytic events (encephalitis, transient paralysis); Guillain-Barré Syndrome; myelitis; retrobulbar neuritis; multiple sclerosis; risk of severe reactions including shock in I.V administration; extensive limb swelling; extremely remote risk of transmission of viral diseases, or CJD due to albumin component of the vaccine.",
+                "vaccinationGoal": "Individual protection.",
+                "others": "Immunization series is initiated and completed with one vaccine product; avoid injection in gluteal area (lower neutralizing antibody titers); caution in allergy to egg ingestion; limited safety/efficacy data in the pediatric age group; avoid injection into or near blood vessels and nerves; serologic testing is indicated in unusual circumstances, as when the patient is known to be immunosuppressed; for management of rabies pre- and post-exposure please see product profile.  "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: RabAvert® (MAH: Bavarian Nordic)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "20/10/1997",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/rabavert",
+                "lastUpdated": "09/05/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 285,
+        "name": "Flublok Quadrivalent®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 44
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 286,
+        "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (MAH: MedImmune)",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 43
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 287,
+        "name": "Liquid PedvaxHIB®",
+        "pathogenId": [
+            40
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 29
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 288,
+        "name": "Polio Vaccine - Novel Oral (nOPV) Type 2®",
+        "pathogenId": [
+            31
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 21
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 289,
+        "name": "ADSORBED Td VACCINE®",
+        "pathogenId": [
+            35,41
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 21
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "combination",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 290,
+        "name": "Hexacima; Hexaxim®",
+        "pathogenId": [
+            35,41,39,40,31
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "combination",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 291,
+        "name": "ActHIB; Act-HIB®",
+        "pathogenId": [
+            40  
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 292,
+        "name": "Fluzone Quadrivalent; Fluzone High-Dose Quadrivalent; Fluzone Intradermal Quadrivalent®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 293,
+        "name": "Fluzone; Fluzone High-Dose-®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 294,
+        "name": "Influenza A (H1N1) 2009 Monovalent Vaccine (Sanofi)®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 295,
+        "name": "Influenza Virus Vaccine, H5N1®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 296,
+        "name": "ORAL BIVALENT TYPES 1 and 3 POLIOMIELYTIS VACCINE®",
+        "pathogenId": [
+            31
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 297,
+        "name": "ShanIPV®",
+        "pathogenId": [
+            31
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 22
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 298,
+        "name": "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze Dried®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 299,
+        "name": "Nasovac-S Influenza Vaccine, Live, Attenuated (Human)®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 300,
+        "name": "MenFive®",
+        "pathogenId": [
+            5
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 301,
+        "name": "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg®",
+        "pathogenId": [
+            5
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 302,
+        "name": "Meningococcal A Conjugate MenAfriVac®",
+        "pathogenId": [
+            5
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 303,
+        "name": "Rubella Vaccine, Live, Attenuated®",
+        "pathogenId": [
+            1
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 304,
+        "name": "DTwPHib®",
+        "pathogenId": [
+            35,41,39,40
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "combination",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 305,
+        "name": "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed®",
+        "pathogenId": [
+            35,41,39
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 11
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "No data in the label.",
+                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
+                "durationOfProtection": " Annual vaccination is recommended.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
+                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "combination",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "16/01/2013",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
+                "lastUpdated": "15/10/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 306,
+        "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (ID Biomedical)",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 40
+            },
+            {
+                "manufacturerId": 8
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "15/09/2009",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-csl-limited",
+                "lastUpdated": "10/11/2009"
+            }
+        ]
+    },
+    {
+        "vaccineId": 307,
+        "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (Novartis)",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 8
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
+                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
+                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
+                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": "No data in the label.",
+                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
+                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
+                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "15/09/2009",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-csl-limited",
+                "lastUpdated": "10/11/2009"
+            }
+        ]
+    },
+    {
+        "vaccineId": 308,
+        "name": "Focetria®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Foclivia® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 7.5µg influenza virus HA (A/Vietnam/1194/2004 (H5N1) strain); propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 1 year.",
+                "strainCoverage": "Influenza virus H5N1.",
+                "indication": "Active immunization for the prophylaxis of influenza in an officially declared pandemic in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; caution in egg/chicken protein allergy (except in pandemic situation); if the pandemic allows, immunization should be postponed in patients with febrile illness until the fever is resolved; use risk/benefits strategy in bleeding disorder; use risk/benefit strategy in pregnancy and breastfeeding.",
+                "dosing": "I.M; 2 doses (each 0.5 mL); 3 weeks interval; limited data for 3rd dose (booster) 6 mo. after the 1st dose.",
+                "immunogenicity": "Seroprotection rate: 6 mo.- 17 yrs.: 100% against vaccine strain; 18-60 yrs.: 85-91% against vaccine strain, 59-90% against heterologous H5N1 strain; ≥65 yrs.: 80-82% against vaccine strain, 20-57% against heterologous H5N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "Can be co-administered with non-adjuvanted seasonal influenza vaccines.",
+                "reactogenicity": "Very common: vomiting; sweating; unusual sweating; myalgia; injection site swelling, pain, tenderness, induration, redness, ecchymosis; change in eating habits; headache; nausea; diarrhea; fatigue; chills/shivering; malaise; sleepiness; irritability; unusual crying; fever;  common: loss of appetite; arthralgia; injection site hemorrhage.",
+                "safety": " While no data are available from the use of Foclivia®, cases of convulsion with or without fever have been reported in subjects vaccinated with Focetria®, an MF59.1 adjuvanted H1N1 pandemic vaccine similar to Foclivia® with the majority of febrile convulsions occurred in pediatric subjects (some cases were observed in subjects with a history of epilepsy).",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No data in <6 mo.; no data for S.C route of administration; no efficacy/safety/immunogenicity data for interchangeability with other H5N1 monovalent vaccines."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Foclivia® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Foclivia® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "18/10/2009",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/foclivia",
+                "lastUpdated": "03/10/2023"
+            }
+        ]
+    },
+    {
+        "vaccineId": 309,
+        "name": "Zoonotic Influenza Vaccine Seqirus®",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 45
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: Foclivia® (MAH: Seqirus)",
+                "composition": "1 dose (0.5 mL) contains 7.5µg influenza virus HA (A/Vietnam/1194/2004 (H5N1) strain); propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 1 year.",
+                "strainCoverage": "Influenza virus H5N1.",
+                "indication": "Active immunization for the prophylaxis of influenza in an officially declared pandemic in individuals ≥6 mo.; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; caution in egg/chicken protein allergy (except in pandemic situation); if the pandemic allows, immunization should be postponed in patients with febrile illness until the fever is resolved; use risk/benefits strategy in bleeding disorder; use risk/benefit strategy in pregnancy and breastfeeding.",
+                "dosing": "I.M; 2 doses (each 0.5 mL); 3 weeks interval; limited data for 3rd dose (booster) 6 mo. after the 1st dose.",
+                "immunogenicity": "Seroprotection rate: 6 mo.- 17 yrs.: 100% against vaccine strain; 18-60 yrs.: 85-91% against vaccine strain, 59-90% against heterologous H5N1 strain; ≥65 yrs.: 80-82% against vaccine strain, 20-57% against heterologous H5N1 strain.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "Can be co-administered with non-adjuvanted seasonal influenza vaccines.",
+                "reactogenicity": "Very common: vomiting; sweating; unusual sweating; myalgia; injection site swelling, pain, tenderness, induration, redness, ecchymosis; change in eating habits; headache; nausea; diarrhea; fatigue; chills/shivering; malaise; sleepiness; irritability; unusual crying; fever;  common: loss of appetite; arthralgia; injection site hemorrhage.",
+                "safety": " While no data are available from the use of Foclivia®, cases of convulsion with or without fever have been reported in subjects vaccinated with Focetria®, an MF59.1 adjuvanted H1N1 pandemic vaccine similar to Foclivia® with the majority of febrile convulsions occurred in pediatric subjects (some cases were observed in subjects with a history of epilepsy).",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No data in <6 mo.; no data for S.C route of administration; no efficacy/safety/immunogenicity data for interchangeability with other H5N1 monovalent vaccines."
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: Foclivia® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Foclivia® (MAH: Seqirus)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "EMA",
+                "type": "#",
+                "approvalDate": "18/10/2009",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/foclivia",
+                "lastUpdated": "03/10/2023"
             }
         ]
     }

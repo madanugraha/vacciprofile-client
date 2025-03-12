@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { removeDuplicatesFromArray, sortArrayAscending } from '../../utils/array';
-import { getVaccineByLicenserName } from '../../utils/pathogens';
+import { getManufactureDetailById, getPathogenDetailById, getVaccineByLicenserName } from '../../utils/pathogens';
 import Checkbox from '@mui/material/Checkbox';
 
 /**
@@ -61,7 +61,66 @@ const Licenser = ({
                 </h2>
                 <div id="accordianVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
                     <div className="accordion-body pb-1 px-0 pt-0">
-                        <div className='d-inline-flex justify-content-between w-100' style={{ marginBottom: 20 }}>
+                        <div className='main-header table-responsive m-0'>
+                            <table className='table w-100 m-0'>
+                                <thead>
+                                    <tr>
+                                        <th className='text-center'>Vaccine Brand Name</th>
+                                        <th className='text-center'>Vaccine Type</th>
+                                        <th className='text-center'>Pathogen</th>
+                                        <th className='text-center'>Manufacturer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {sortArrayAscending(removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym), "name"), "name").length > 0 ? sortArrayAscending(removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym), "name"), "name").map((vaccine, key) => {
+                                        return (
+                                            <tr key={key}>
+                                                <td className='vaccine-cell'>
+                                                    <span
+                                                        // className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `disabled`}`}
+                                                        onClick={() => {
+                                                            // TODO Pipeline Vaccine
+                                                            // handleSelectVaccine(vaccine)
+                                                        }}>
+                                                        {vaccine.name}
+                                                    </span>
+                                                </td>
+                                                <td className='pathogen-cell d-flex flex-row'>
+                                                    <span>{vaccine.vaccineType}</span>
+                                                </td>
+                                                <td className='status-cell'>
+                                                    <div className='d-inline-flex align-items-center'>
+                                                        {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen, index) => {
+                                                            return (
+                                                                <span
+                                                                    className={`selectable`}
+                                                                >
+                                                                    {getPathogenDetailById(pathogen)?.name ? (getPathogenDetailById(pathogen)?.name) : "-"}
+                                                                    {index < vaccine?.pathogenId.length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
+                                                                </span>
+                                                            )
+                                                        })}
+                                                    </div>
+                                                </td>
+                                                <td className='licenser-cell'>
+                                                    {getManufactureDetailById(vaccine?.manufacturers[0]?.manufacturerId)?.name || "-"}
+                                                </td>
+                                            </tr>
+                                        )
+                                    }) : (
+                                        <tr>
+                                            <td colSpan={4}>
+                                                <div className='flex flex-row mb-2'>
+                                                    &#8226;{" "}
+                                                    <span className='mt-2'>No Data Found</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+                        {/* <div className='d-inline-flex justify-content-between w-100' style={{ marginBottom: 20 }}>
                             <div className='d-inline-flex w-100'>
                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
                                     <Checkbox checked={viewSinglePathogenVaccine === true} onChange={((e, checked) => {
@@ -148,7 +207,7 @@ const Licenser = ({
                                     </table>
                                 )
                             }
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

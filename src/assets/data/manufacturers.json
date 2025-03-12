@@ -518,7 +518,7 @@
     },
     {
         "manufacturerId": 15,
-        "name": "Emergent BioDefense Operations Gaithers    g",
+        "name": "Emergent Product Development Gaithersburg",
         "description": "A global life sciences company specializing in developing, manufacturing, and delivering protections against public health threats. Emergent offers vaccines, therapeutics, drug-device combination products, and contract development and manufacturing services.",
         "history": "Emergent BioSolutions was founded in 1998 and has since become a leading provider of solutions for complex public health challenges. The company has expanded its capabilities through various contracts and agreements, including a significant role in manufacturing COVID-19 treatments.",
         "details": {
@@ -2724,7 +2724,7 @@
     },
     {
         "manufacturerId": 63,
-        "name": "Institut Pasteur de Dakar",
+        "name": "Institut Pasteur",
         "description": "A Senegalese non-profit public interest foundation dedicated to advancing public health and well-being in Senegal and Africa through research, training, scientific knowledge sharing, and vaccine production.",
         "history": "Founded in 1896, Institut Pasteur de Dakar has been a leading force against infectious diseases in West Africa. It is one of the four WHO prequalified manufacturers for yellow fever vaccines and has recently expanded its capacity to produce COVID-19 and other vaccines.",
         "details": {
@@ -3869,6 +3869,66 @@
     {
         "manufacturerId": 123,
         "name": "Centre National de Recherche et de Formation sur la Paludisme, Burkina Faso",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 124,
+        "name": "Janssen",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 125,
+        "name": "Instituto Butantan",
+        "description": "#",
+        "history": "#",
+        "details": {
+            "founded": "#",
+            "headquarters": "#",
+            "ceo": "#",
+            "revenue": "#",
+            "operatingIncome": "#",
+            "netIncome": "#",
+            "totalAssets": "#",
+            "totalEquity": "#",
+            "numberOfEmployees": "#",
+            "sources": []
+        },
+        "vaccines": [],
+        "lastUpdated": "2024-Aug"
+    },
+    {
+        "manufacturerId": 126,
+        "name": "Berna Biotec",
         "description": "#",
         "history": "#",
         "details": {

@@ -9,7 +9,7 @@ export const removeDuplicatesFromArray = (arr, prop) => {
                 accumulator.push(current);
             }
             return accumulator;
-        }, []);
+        }, [])
     };
     return [];
 };

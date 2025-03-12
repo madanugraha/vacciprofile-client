@@ -170,6 +170,15 @@ export const getPathogenDetailById = (id) => {
     return null;
 };
 
+export const getManufactureDetailById = (id) => {
+    const data = manufacturers;
+    const result = data.filter((vac) => vac.manufacturerId === id);
+    if (result.length > 0) {
+        return result[0];
+    };
+    return null;
+};
+
 
 export const getSinglePathogenVaccineArray = (data) => {
     if (data && data.length > 0) {
@@ -296,6 +305,9 @@ export const getVaccineByLicenserName = (licenserName, type) => {
     });
     const result2 = result.filter((x) => x.productProfiles.length > 0);
 
+    if (!type) {
+        return result2;
+    }
     if (type === "single") {
         return result2.filter((x) => x.vaccineType === "single")
     } else {
