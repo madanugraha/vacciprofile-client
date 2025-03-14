@@ -45,11 +45,11 @@ const ManufacturerProfile = ({
         <div className="accordion" id="accordianManufacturerInfo">
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianManufacturer">
-                    <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianManu" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed show bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianManu" aria-expanded="false" aria-controls="collapseTwo">
                         Manufacturer Profile
                     </button>
                 </h2>
-                <div id="accordianManu" className="accordion-collapse collapse mb-1" aria-labelledby="accordianManufacturer" data-bs-parent="#accordianManufacturerInfo">
+                <div id="accordianManu" className="accordion-collapse collapse show mb-1" aria-labelledby="accordianManufacturer" data-bs-parent="#accordianManufacturerInfo">
                     <div className="accordion-body pb-1 px-0 pt-0">
                         <div className=''>
                             {selectedManufacturer.details ? <><div className='table-responsive'>

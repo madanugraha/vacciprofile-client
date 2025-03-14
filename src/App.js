@@ -47,7 +47,7 @@ const App = () => {
     const [pipelineVaccineList, setPipelineVaccinesList] = useState();
     const [manufacturersList, setManufacturersList] = useState();
     const [licensersList, setLicensersList] = useState();
-    const [compareList, setCompareList] = useState();
+    // const [compareList, setCompareList] = useState();
     const [sidebarList, setSidebarList] = useState();
     const [selectedPathogen, setSelectedPathogen] = useState({});
     const [selectedVaccine, setSelectedVaccine] = useState({});
@@ -528,7 +528,6 @@ const App = () => {
 
         if (activeFilters.searchKeyword && activeFilters.searchKeyword !== "") {
             const keywordLower = activeFilters.searchKeyword.toLowerCase()
-
             if (activeTab === 'Manufacturer') {
                 filteredSidebarList = filterManufacturersByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
@@ -555,7 +554,7 @@ const App = () => {
             } else if (activeTab === 'Licenser') {
                 setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
             } else if (activeTab === 'Compare') {
-                setSidebarList(compareMenu.sort((a, b) => a.name))
+                setSidebarList([])
             }
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
@@ -627,7 +626,12 @@ const App = () => {
         setVaccinesList(vaccines);
         setPipelineVaccinesList(pipelineVaccines);
         setLicensersList(licensers);
-        setCompareList(compareMenu)
+        // setCompareList(pathogens);
+        setSelectedPathogen(pathogens[0])
+        setSelectedLicenser(licensers[0]);
+        setSelectedVaccine(vaccines[142]);
+        setSelectedCompare(pathogens[0])
+        setSelectedManufacturer(manufacturers[0])
     }, [])
 
     useEffect(() => {

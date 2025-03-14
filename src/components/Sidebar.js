@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from '../utils/array';
-import { getCombinationVaccineneArray, getPathogenDetailById, getSinglePathogenVaccineArray } from '../utils/pathogens';
+import { getAllSinglePathogenArray, getCombinationVaccineneArray, getPathogenDetailById, getSinglePathogenVaccineArray } from '../utils/pathogens';
+import { vaccineDeases } from '../assets/data/dieases';
 
 /**
  * Sidebar Component
@@ -68,13 +69,15 @@ const Sidebar = ({
     const [animationClass, setAnimationClass] = useState('slide-right');
     const [showCountries, setShowCountries] = useState(false);
 
-    const [showLicensedPathogens, setShowLicensedPathogens] = useState(false);
+    const [showLicensedPathogens, setShowLicensedPathogens] = useState(true);
     const [showVaccineCandidatePathogens, setShowVaccineCandidatePathogens] = useState(false);
 
-    const [showLicensedVaccines, setShowLicensedVaccines] = useState(false);
+    const [showVaccineDeases, setShowVaccineDeases] = useState(false);
+
+    const [showLicensedVaccines, setShowLicensedVaccines] = useState(true);
     const [showVaccineCandidates, setShowVaccineCandidates] = useState(false);
 
-    const [showSinglePathogenVaccines, setShowSinglePathogenVaccines] = useState(false);
+    const [showSinglePathogenVaccines, setShowSinglePathogenVaccines] = useState(true);
     const [showCombinationVaccines, setShowCombinationVaccines] = useState(false);
 
     const licenserFilter = ["FDA", "EMA", "WHO"];
@@ -179,6 +182,69 @@ const Sidebar = ({
                                 <div
                                     key={i}
                                     className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item
+                                        ? 'active' : 'inactive'
+                                        }`}
+                                    onClick={() => {
+                                        handleClickSidebar(item)
+                                    }}
+                                >
+                                    {italizeScientificNames(item.name)}
+                                </div>
+                            ))}
+                        </>
+                    )
+                }
+
+                {
+                    activeTab === "Compare" && (
+                        <>
+                            <div onClick={() => {
+                                setShowVaccineCandidatePathogens(false);
+                                setShowLicensedPathogens(!showLicensedPathogens)
+                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showLicensedPathogens ? 'active' : 'inactive'}`}>
+                                Pathogens
+                            </div>
+                            <div onClick={() => {
+                                setShowVaccineDeases(true);
+                                setShowLicensedPathogens(false);
+                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineDeases ? 'active' : 'inactive'}`}>
+                                Dieases
+                            </div>
+                            {/* <div onClick={() => {
+                                setShowLicensedPathogens(false);
+                                setShowVaccineCandidatePathogens(!showVaccineCandidatePathogens)
+                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidatePathogens ? 'active' : 'imactive'}`}>
+                                Pathogen with Vaccine Candidates
+                            </div> */}
+                            {/* <div onClick={() => {
+                                setShowVaccineCandidatePathogens(false);
+                                setShowLicensedPathogens(!showLicensedPathogens)
+                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${false ? 'active' : 'inactive'}`}>
+                                Diseases with Single Pathogen Vaccine
+                            </div>
+                            <div onClick={() => {
+                                setShowVaccineCandidatePathogens(false);
+                                setShowLicensedPathogens(!showLicensedPathogens)
+                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${false ? 'active' : 'inactive'}`}>
+                                Diseases with Combination Vaccine
+                            </div> */}
+                            {showVaccineDeases && vaccineDeases.map((item, i) => (
+                                <div
+                                    key={i}
+                                    className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Compare' && selectedCompare === item
+                                        ? 'active' : 'inactive'
+                                        }`}
+                                    onClick={() => {
+                                        handleClickSidebar(item)
+                                    }}
+                                >
+                                    {italizeScientificNames(item.name)}
+                                </div>
+                            ))}
+                            {showLicensedPathogens && getAllSinglePathogenArray().map((item, i) => (
+                                <div
+                                    key={i}
+                                    className={`sidebar-item subgroup-colour text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Compare' && selectedCompare === item
                                         ? 'active' : 'inactive'
                                         }`}
                                     onClick={() => {

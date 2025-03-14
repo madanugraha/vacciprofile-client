@@ -55,11 +55,11 @@ const Licenser = ({
         <div className="accordion" id="accordianVaccineInfo">
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianVaccine">
-                    <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed show bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="false" aria-controls="collapseTwo">
                         Licensed Vaccines
                     </button>
                 </h2>
-                <div id="accordianVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
+                <div id="accordianVac" className="accordion-collapse collapse show mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
                     <div className="accordion-body pb-1 px-0 pt-0">
                         <div className='main-header table-responsive m-0'>
                             <table className='table w-100 m-0'>

@@ -557,52 +557,16 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
 
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>
-            <div className="accordion" id="accordianPathogenInfo">
-                <div className="accordion-item mb-1">
-                    <h2 className="accordion-header" id="accordianPathogen">
-                        <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
-                            Pathogen Profile
-                        </button>
-                    </h2>
-                    <div id="accordianPatho" className="accordion-collapse collapse mb-1" aria-labelledby="accordianPathogen" data-bs-parent="#accordianPathogenInfo">
-                        <div className="accordion-body pb-1 px-0 pt-0">
-                            <div style={{ paddingLeft: 10 }}>
-                                <h1 className='heading text-primary pt-2'>{italizeScientificNames(selectedPathogen.name)}</h1>
-                                <p className='mb-2'>{italizeScientificNames(selectedPathogen.description)}</p>
-                                <div className='mt-4 d-inline-flex'>
-                                    {selectedPathogen?.image && (
-                                        // eslint-disable-next-line jsx-a11y/alt-text
-                                        <img src={selectedPathogen?.image} width={200} height={200} />
-                                    )}
-                                    <ul>
-                                        {selectedPathogen?.bulletpoints ? selectedPathogen?.bulletpoints.split('|').map((bullet) => {
-                                            return (
-                                                <li key={bullet} className='flex flex-row mb-2'>
-                                                    <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(selectedPathogen.name, `<span classname="text-primary" style={{ color: "blue" }}>${selectedPathogen.name}</span>`) }}></div>
-                                                </li>
-                                            )
-                                        }) : (
-                                            <li className='flex flex-row mb-2'>
-                                                <span className='mt-2'>No Data Found</span>
-                                            </li>
-                                        )}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             {
                 selectedPathogen === "Pathogen A" || selectedPathogen === "Pathogen B" ? null : (
                     <div className="accordion" id="accordianVaccineInfo">
                         <div className="accordion-item mb-1">
                             <h2 className="accordion-header" id="accordianVaccine">
-                                <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="false" aria-controls="collapseTwo">
+                                <button className="accordion-button bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
                                     Licensed Vaccines
                                 </button>
                             </h2>
-                            <div id="accordianVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
+                            <div id="accordianVac" className="accordion-collapse collapse show mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
                                 <div className="accordion-body pb-1 px-0 pt-0">
                                     <div>
                                         <div className='mt-4' style={{ paddingLeft: 10 }}>
@@ -936,6 +900,42 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                     </div>
                 )
             }
+            <div className="accordion" id="accordianPathogenInfo">
+                <div className="accordion-item mb-1">
+                    <h2 className="accordion-header" id="accordianPathogen">
+                        <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
+                            Pathogen Profile
+                        </button>
+                    </h2>
+                    <div id="accordianPatho" className="accordion-collapse collapse mb-1" aria-labelledby="accordianPathogen" data-bs-parent="#accordianPathogenInfo">
+                        <div className="accordion-body pb-1 px-0 pt-0">
+                            <div style={{ paddingLeft: 10 }}>
+                                <h1 className='heading text-primary pt-2'>{italizeScientificNames(selectedPathogen.name)}</h1>
+                                <p className='mb-2'>{italizeScientificNames(selectedPathogen.description)}</p>
+                                <div className='mt-4 d-inline-flex'>
+                                    {selectedPathogen?.image && (
+                                        // eslint-disable-next-line jsx-a11y/alt-text
+                                        <img src={selectedPathogen?.image} width={200} height={200} />
+                                    )}
+                                    <ul>
+                                        {selectedPathogen?.bulletpoints ? selectedPathogen?.bulletpoints.split('|').map((bullet) => {
+                                            return (
+                                                <li key={bullet} className='flex flex-row mb-2'>
+                                                    <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(selectedPathogen.name, `<span classname="text-primary" style={{ color: "blue" }}>${selectedPathogen.name}</span>`) }}></div>
+                                                </li>
+                                            )
+                                        }) : (
+                                            <li className='flex flex-row mb-2'>
+                                                <span className='mt-2'>No Data Found</span>
+                                            </li>
+                                        )}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='cursor-pointer' style={{ width: 150, height: 30, borderRadius: 8, flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: -10 }}>
                 <p className='mb-0 mt-4 bg-primary' style={{ padding: 4, borderRadius: 8, alignSelf: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center', marginTop: 4 }}><a className='read-more' style={{ textAlign: 'center', color: 'white', alignSelf: 'center', fontWeight: 'bold' }} target="_blank" rel="noopener noreferrer" href={selectedPathogen.link}>Find out more</a></p>
             </div>

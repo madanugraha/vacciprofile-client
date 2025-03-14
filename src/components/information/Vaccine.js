@@ -163,7 +163,6 @@ const Vaccine = ({
         "vaccinationGoal",
         "others"
     ];
-    console.log('?? ', selectedVaccine);
     return <div className='position-relative slide-left'>
         <h1 className='heading text-primary text-center'>{selectedVaccine.name}
             {/* {selectedVaccine.packageInsertLink && <i className="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}

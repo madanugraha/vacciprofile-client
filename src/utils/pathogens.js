@@ -188,6 +188,9 @@ export const getSinglePathogenVaccineArray = (data) => {
         return []
     }
 };
+export const getAllSinglePathogenArray = () => {
+    return pathogens;
+};
 
 export const getCombinationVaccineneArray = (data) => {
     if (data && data.length > 0) {
