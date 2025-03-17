@@ -449,6 +449,7 @@ const Main = ({
                                 {activeTab === "Pathogen"
                                     ? <Pathogen
                                         selectedPathogen={selectedPathogen}
+                                        isHide={true}
                                         italizeScientificNames={italizeScientificNames}
                                     /> : activeTab === "Vaccine"
                                         ? <Vaccine

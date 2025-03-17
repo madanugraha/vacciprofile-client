@@ -8,7 +8,6 @@ export const vaccineDeases = [
   { id: 7, name: "Dengue fever" },
   { id: 8, name: "Ebola" },
   { id: 9, name: "Haemophilus influenzae type b diseases" },
-  { id: 10, name: "Hepatitis A; Hepatitis B" },
   { id: 11, name: "Hepatitis B" },
   { id: 12, name: "Hepatitis A" },
   { id: 13, name: "Cervical intraepithelial neoplasia (CIN); Genital warts" },

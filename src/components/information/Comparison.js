@@ -609,7 +609,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             <tr>
                                                                 <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
                                                                 <td style={{ fontWeight: 'bold' }}>Single or Combination Vaccine</td>
-                                                                <td style={{ fontWeight: 'bold' }} colSpan={3}>Licensed Authority</td>
+                                                                <td style={{ fontWeight: 'bold' }} colSpan={3}>Licensing Authority</td>
                                                             </tr>
                                                             {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
                                                                 return (
