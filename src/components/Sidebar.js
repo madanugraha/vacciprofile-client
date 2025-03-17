@@ -199,13 +199,13 @@ const Sidebar = ({
                     activeTab === "Compare" && (
                         <>
                             <div onClick={() => {
-                                setShowVaccineCandidatePathogens(false);
+                                setShowVaccineDeases(false);
                                 setShowLicensedPathogens(!showLicensedPathogens)
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showLicensedPathogens ? 'active' : 'inactive'}`}>
                                 Pathogens
                             </div>
                             <div onClick={() => {
-                                setShowVaccineDeases(true);
+                                setShowVaccineDeases(!showVaccineDeases);
                                 setShowLicensedPathogens(false);
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineDeases ? 'active' : 'inactive'}`}>
                                 Dieases

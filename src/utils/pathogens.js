@@ -192,6 +192,13 @@ export const getAllSinglePathogenArray = () => {
     return pathogens;
 };
 
+export const getPathogenVaccineByDieasesName = (name) => {
+    const d = getAllVaccineByPathogenId(pathogens.filter((x) => x.dieases.includes(name))[0]?.pathogenId);
+
+    console.log('a >>> ', d);
+    return d;
+};
+
 export const getCombinationVaccineneArray = (data) => {
     if (data && data.length > 0) {
         return data.filter((x) => x.vaccineType === "combination")

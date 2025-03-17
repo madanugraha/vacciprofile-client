@@ -2,6 +2,7 @@
     {
         "pathogenId": 1,
         "name": "Respiratory Syncytial Virus (RSV)",
+        "dieases": "Respiratory Syncytial Virus (RSV) diseases",
         "description": "Respiratory Syncytial Virus (RSV) is a common respiratory virus that causes infections in the lungs and respiratory tract. It is known for causing cold-like symptoms, but it can lead to more severe respiratory illnesses, such as bronchiolitis and pneumonia, particularly in young children and older adults. RSV is highly contagious and spreads through respiratory droplets, making it a significant concern during the winter months.",
         "vaccines": [
             {
@@ -15,6 +16,7 @@
     {
         "pathogenId": 2,
         "name": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+        "dieases": "COVID-19",
         "description": "COVID-19 is a respiratory illness caused by the SARS-CoV-2 virus. It was first identified in Wuhan, China, in late 2019 and has since become a global pandemic. Symptoms can range from mild, such as fever and cough, to severe, including difficulty breathing and pneumonia. The virus primarily spreads through respiratory droplets and can lead to significant health complications, particularly in older adults and those with underlying health conditions.",
         "vaccines": [
             {
@@ -34,6 +36,7 @@
     {
         "pathogenId": 3,
         "name": "Streptococcus pneumoniae",
+        "dieases": "Streptococcus pneumoniae diseases",
         "description": "Pneumococcal disease is caused by the bacterium Streptococcus pneumoniae. It can lead to various serious infections, including pneumonia, meningitis, and sepsis. The disease predominantly affects children and older adults, but can also impact other age groups. Symptoms can range from mild respiratory issues to severe illness requiring hospitalization.",
         "vaccines": [
             {
@@ -53,6 +56,7 @@
     {
         "pathogenId": 4,
         "name": "Tick-Borne Encephalitis (TBE)",
+        "dieases": "Tick-borne Encephalitis",
         "description": "Tick-borne encephalitis (TBE) is a viral infection transmitted by ticks that affects the central nervous system. It can cause severe symptoms including encephalitis, meningitis, and can lead to long-term neurological problems. The vaccine is recommended for individuals living in or traveling to areas where TBE is prevalent.",
         "vaccines": [
             {
@@ -72,6 +76,7 @@
     {
         "pathogenId": 5,
         "name": "Neisseria meningitidis",
+        "dieases": "Meningococcal disease",
         "description": "Neisseria meningitidis, often referred to as the meningococcus, is a Gram-negative bacterium that can cause meningitis and other forms of meningococcal disease such as meningococcemia, a life-threatening sepsis. ",
         "vaccines": [
             {
@@ -85,6 +90,7 @@
     {
         "pathogenId": 6,
         "name": "Human Papilloma Virus (HPV)",
+        "dieases": "Cervical intraepithelial neoplasia (CIN); Genital warts",
         "description": "Human papillomavirus (HPV) is a viral infection that commonly causes skin or mucous membrane growths (warts).",
         "vaccines": [
             {
@@ -110,6 +116,7 @@
     {
         "pathogenId": 7,
         "name": "Chikungunya Virus",
+        "dieases": "Chikungunya",
         "vaccines": [
             {
                 "vaccineId": 31
@@ -122,6 +129,7 @@
     {
         "pathogenId": 8,
         "name": "Influenza Virus",
+        "dieases": "Seasonal Influenza; Pandemic Influenza",
         "description": "Influenza, commonly known as the flu, is a contagious respiratory illness caused by influenza viruses. It can cause mild to severe illness, and at times can lead to hospitalization or death. It is spread mainly through respiratory droplets.",
         "vaccines": [
             {
@@ -146,6 +154,7 @@
     {
         "pathogenId": 9,
         "name": "Hepatitis B Virus",
+        "dieases": "Hepatitis B",
         "description": "Hepatitis B is a viral infection that attacks the liver and can cause both acute and chronic diseases. It is spread through contact with infectious body fluids.",
         "vaccines": [
             {
@@ -159,6 +168,7 @@
     {
         "pathogenId": 10,
         "name": "Hepatitis A Virus",
+        "dieases": "Hepatitis A",
         "description": "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. It is transmitted through consumption of contaminated food and water.",
         "vaccines": [
             {
@@ -172,6 +182,7 @@
     {
         "pathogenId": 11,
         "name": "Varicella-Zoster Virus (VZV)",
+        "dieases": "Chickenpox (Varicella);Shingles (Herpes zoster)",
         "description": "Varicella-zoster virus (VZV) causes chickenpox and shingles. Chickenpox is a highly contagious disease characterized by an itchy rash and flu-like symptoms. Shingles is a painful rash that occurs later in life due to the reactivation of VZV.",
         "vaccines": [
             {
@@ -185,6 +196,7 @@
     {
         "pathogenId": 12,
         "name": "Measles Virus",
+        "dieases": "Measles",
         "description": "Measles is a highly contagious viral disease characterized by a rash, fever, and cough. It can lead to severe complications, including pneumonia and encephalitis.",
         "vaccines": [
             {
@@ -198,6 +210,7 @@
     {
         "pathogenId": 13,
         "name": "Mumps Virus",
+        "dieases": "Mumps",
         "description": "Mumps is a contagious disease caused by the mumps virus, leading to swollen salivary glands, fever, and headache. It can lead to complications such as meningitis and orchitis.",
         "vaccines": [
             {
@@ -211,6 +224,7 @@
     {
         "pathogenId": 14,
         "name": "Rubella Virus",
+        "dieases": "Rubella",
         "description": "Rubella, also known as German measles, is a viral infection characterized by a rash and fever. It can cause severe birth defects if contracted by pregnant women.",
         "vaccines": [
             {
@@ -224,6 +238,7 @@
     {
         "pathogenId": 15,
         "name": "Yellow Fever Virus",
+        "dieases": "Yellow Fever",
         "description": "Yellow fever is a viral disease transmitted by mosquitoes, characterized by fever, chills, and muscle pain. In severe cases, it can lead to liver damage and bleeding.",
         "vaccines": [
             {
@@ -237,6 +252,7 @@
     {
         "pathogenId": 20,
         "name": "Rabies virus (RabV)",
+        "dieases": "Rabies",
         "description": "Rabies virus is a neurotropic virus that causes rabies, a fatal disease that affects the central nervous system. It is transmitted primarily through the bite of an infected animal. The RabAvert vaccine uses an inactivated form of the virus to provide immunity.",
         "vaccines": [
             {
@@ -253,6 +269,7 @@
     {
         "pathogenId": 23,
         "name": "Japanese Encephalitis Virus (JEV)",
+        "dieases": "Japanese Encephalitis",
         "description": "Japanese Encephalitis Virus (JEV) is a mosquito-borne virus that causes Japanese encephalitis, a severe neurological disease. JEV primarily affects children and can cause inflammation of the brain, leading to symptoms like high fever, headache, neck stiffness, seizures, and, in severe cases, permanent neurological damage or death.",
         "vaccines": [
             {
@@ -266,6 +283,7 @@
     {
         "pathogenId": 25,
         "name": "Adenovirus",
+        "dieases": "Adenovirus infection",
         "description": "Adenoviruses are medium-sized, nonenveloped viruses that primarily cause respiratory illnesses, but can also lead to gastroenteritis, conjunctivitis, and neurological diseases. They contain a double-stranded DNA genome and are known for their resilience in the environment.",
         "vaccines": [
             {
@@ -282,6 +300,7 @@
     {
         "pathogenId": 26,
         "name": "Variola Virus",
+        "dieases": "Smallpox",
         "description": "Variola virus is the causative agent of smallpox, a highly contagious and deadly disease that has been eradicated through vaccination efforts. It belongs to the genus Orthopoxvirus and is characterized by its ability to cause severe illness in humans.",
         "vaccines": [
             {}
@@ -293,6 +312,7 @@
     {
         "pathogenId": 28,
         "name": "Monkeypox (MPV,MPXV, or hMPXV)",
+        "dieases": "Mpox",
         "description": "Monkeypox, also known as MPV, MPXV, or hMPXV, is a viral disease caused by the monkeypox virus, a species of double-stranded DNA virus belonging to the Orthopoxvirus genus. It primarily spreads through close contact with infected individuals or animals and can lead to symptoms such as fever, rash, and swollen lymph nodes.",
         "vaccines": [
             {}
@@ -302,6 +322,7 @@
     {
         "pathogenId": 29,
         "name": "Ebolavirus",
+        "dieases": "Ebola",
         "description": "Ebolavirus is a group of viruses that cause Ebola virus disease (EVD), a severe and often fatal illness in humans and nonhuman primates, characterized by symptoms such as fever, fatigue, muscle pain, and bleeding. The virus is transmitted through direct contact with infected bodily fluids or contaminated surfaces.",
         "vaccines": [
             {
@@ -318,6 +339,7 @@
     {
         "pathogenId": 30,
         "name": "Dengue Virus",
+        "dieases": "Dengue fever",
         "description": "Denguevirus is a mosquito-borne viral infection caused by any of the four closely related viruses: DEN-1, DEN-2, DEN-3, and DEN-4. Symptoms typically begin 3 to 14 days after infection and may include high fever, severe headache, pain behind the eyes, joint and muscle aches, nausea, vomiting, and rash. While many infections are asymptomatic or mild, severe cases can lead to serious complications such as bleeding and shock.",
         "vaccines": [
             {
@@ -334,6 +356,7 @@
     {
         "pathogenId": 31,
         "name": "Poliovirus",
+        "dieases": "Polio",
         "description": "Poliovirus is a highly infectious viral disease that primarily affects children under 5 years of age, transmitted mainly through the faecal-oral route. It can invade the nervous system and lead to paralysis in a small percentage of cases.",
         "vaccines": [
             {}
@@ -345,6 +368,7 @@
     {
         "pathogenId": 33,
         "name": "Rotavirus",
+        "dieases": "Rotavirus disease",
         "description": "Rotavirus is a highly contagious virus that causes severe gastroenteritis, particularly in infants and young children. Symptoms include watery diarrhea, vomiting, fever, and abdominal pain, which can lead to dehydration.",
         "vaccines": [
             {}
@@ -356,6 +380,7 @@
     {
         "pathogenId": 34,
         "name": "Bacillus anthracis",
+        "dieases": "Anthrax",
         "description": "Bacillus anthracis is a gram-positive, rod-shaped bacterium that causes anthrax, a serious zoonotic disease primarily affecting livestock and occasionally humans. It forms resilient spores that can survive in the environment for decades, and its pathogenicity is linked to two plasmids responsible for producing toxins and a protective capsule that evades the immune response.",
         "vaccines": [
             {
@@ -370,6 +395,7 @@
     {
         "pathogenId": 35,
         "name": "Corynebacterium diphtheriae",
+        "dieases": "Diphtheria",
         "description": "Corynebacterium diphtheriae is a Gram-positive bacterium responsible for causing diphtheria, characterized by the production of a potent exotoxin that can lead to severe respiratory issues and systemic infections. The bacterium typically infects the nasopharynx or skin, causing symptoms such as pharyngitis, fever, and the formation of a pseudomembrane in the throat.",
         "vaccines": [
             {
@@ -482,6 +508,7 @@
     {
         "pathogenId": 36,
         "name": "Mycobacterium tuberculosis",
+        "dieases": "Tuberculosis (TB)",
         "description": "Mycobacterium tuberculosis, also known as Koch's bacillus, is the bacterium responsible for tuberculosis (TB). It primarily affects the lungs but can infect other parts of the body, including the kidneys, spine, and brain. This pathogen is notable for its ability to adapt and survive within the host, often entering a latent phase where it causes no symptoms. TB is spread through airborne transmission when an infected person coughs or sneezes.",
         "vaccines": [
             {}
@@ -493,6 +520,7 @@
     {
         "pathogenId": 37,
         "name": "Salmonella Typhi",
+        "dieases": "Typhoid fever (Enteric fever)",
         "description": "Salmonella Typhi is a bacterium that causes typhoid fever, a serious infection characterized by prolonged high fever, fatigue, headache, abdominal pain, and gastrointestinal disturbances. It is transmitted through contaminated food or water and primarily affects humans, with no known animal reservoirs.",
         "vaccines": [
             {}
@@ -504,6 +532,7 @@
     {
         "pathogenId": 38,
         "name": "Vibrio cholerae",
+        "dieases": "Cholera",
         "description": "Vibrio cholerae is a species of Gram-negative, facultative anaerobe and comma-shaped bacteria that causes cholera, a highly contagious diarrheal disease characterized by profuse watery diarrhea. It primarily resides in brackish or saltwater and can be transmitted through contaminated water or undercooked seafood. The bacterium produces cholera toxin, which leads to severe dehydration and electrolyte imbalance.",
         "vaccines": [
             {}
@@ -515,6 +544,7 @@
     {
         "pathogenId": 39,
         "name": "Bordetella pertussis",
+        "dieases": "Pertussis (Whooping cough)",
         "description": "Bordetella pertussis is a Gram-negative, aerobic bacterium that causes pertussis, commonly known as whooping cough. It is highly contagious and primarily spreads through respiratory droplets. The disease is characterized by severe coughing fits that can lead to a 'whooping' sound during inhalation, especially in infants and young children.",
         "vaccines": [
             {
@@ -597,6 +627,7 @@
     {
         "pathogenId": 40,
         "name": "Haemophilus influenzae",
+        "dieases": "Haemophilus influenzae type b diseases",
         "description": "Haemophilus influenzae is a Gram-negative bacterium that can cause a variety of infections, ranging from mild conditions like ear infections to severe diseases such as pneumonia, meningitis, and bloodstream infections. It is often spread through respiratory droplets from coughing or sneezing.",
         "vaccines": [
             {
@@ -667,6 +698,7 @@
     {
         "pathogenId": 41,
         "name": "Clostridium tetani",
+        "dieases": "Tetanus",
         "description": "Clostridium tetani is a common soil bacterium and the causative agent of tetanus. It is an anaerobic, spore-forming bacillus that produces a potent toxin, tetanospasmin, which disrupts neurotransmitter release, leading to muscle spasms and rigidity.",
         "vaccines": [
             {
@@ -791,6 +823,7 @@
     {
         "pathogenId": 42,
         "name": "Plasmodium falciparum",
+        "dieases": "Malaria",
         "description": "Plasmodium falciparum is a unicellular protozoan parasite and the deadliest species of Plasmodium that causes malaria in humans. It is transmitted through the bite of a female Anopheles mosquito and is responsible for the majority of malaria-related deaths worldwide, particularly in Sub-Saharan Africa.",
         "vaccines": [
             {}
