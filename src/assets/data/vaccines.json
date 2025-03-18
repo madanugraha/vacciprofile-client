@@ -7705,7 +7705,9 @@
         "vaccineId": 144,
         "name": "Measles, Mumps and Rubella Vaccine, Live, Attenuated®",
         "pathogenId": [
-            12,13,14
+            12,
+            13,
+            14
         ],
         "manufacturers": [
             {
@@ -7976,103 +7978,7 @@
         "vaccineId": 147,
         "name": "Measles and Rubella Vaccine, Live, Attenuated®",
         "pathogenId": [
-            12
-        ],
-        "manufacturers": [
-            {
-                "manufacturerId": 11
-            }
-        ],
-        "productProfiles": [
-            {
-                "type": "EMA",
-                "name": "EMA-Product Profile: Measles and Rubella Vaccine, Live, Attenuated® (MAH: Serum Institute of India)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
-            },
-            {
-                "type": "FDA",
-                "name": "FDA-Product Profile: Measles and Rubella Vaccine, Live, Attenuated® (MAH: Serum Institute of India)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
-            },
-            {
-                "type": "WHO",
-                "name": "WHO-Product Profile: Measles and Rubella Vaccine, Live, Attenuated® (MAH: Serum Institute of India)",
-                "composition": "1 dose (0.5mL) contains ≥1×103 CCID50 measles virus (Edmonston-Zagreb strain) produced in human diploid cells, ≥1×103 CCID50 rubella virus (Wistar RA 27/3 strain) produced in human diploid cells; storage: 2-8°C; shelf life: 30 months.",
-                "strainCoverage": "Measles and rubella viruses.",
-                "indication": "Active immunization against measles and rubella in individuals ≥9 mo. and children, adolescents, and adults at risk; to be used based on official recommendations.",
-                "contraindication": "Hypersensitivity; allergy to cow milk; febrile states; acute infectious diseases; pregnancy (avoid pregnancy at least 1 mo. following vaccination); leukemia, severe anemia, or other severe diseases of the blood system; severe impairment of the renal function; decompensated heart diseases; following administration of gamma globulin or blood transfusions; severely immunocompromised persons as a result of congenital disease, HIV infection, advanced leukemia/lymphoma, serious malignant disease, treatment with high-dose steroids, alkylating agents, antimetabolites, or receiving immunosuppressive therapeutic radiation.",
-                "dosing": "S.C; each dose is 0.5mL; ≥9 mo: single dose; 2nd dose can be given at any time before 6 yrs. of age, 4 weeks after the 1st dose.",
-                "immunogenicity": "No data available in the label.",
-                "Efficacy": " (VEy) / Effectiveness (VEs)No data available in the label.",
-                "durationOfProtection": "No data available in the label.",
-                "coAdministration": "Can be co-administered with DTP, DT, TT, Td, BCG, OPV, IPV, Hib, HBV, and yellow fever vaccines and vitamin A supplementation; avoid co-administration with Ig (avoid vaccination at least 2 wks. before and 6 wks. (preferably 3 mo.) after Ig transfusion.",
-                "reactogenicity": "Injection site pain, tenderness; pyrexia (5-15%); rash (2%); urticaria; lymphadenopathy; myalgia; paraesthesia; joint symptoms (rare in children and men (0% -3%), and common in adolescents and adult females; including arthralgias (25%), and arthritis (10%)).",
-                "safety": " Encephalitis (1/million); thrombocytopenia (1/30,000).",
-                "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "Particularly important to immunize children with malnutrition; induces temporary depression of tuberculin skin sensitivity; may be used in children with known or suspected HIV infection; inadvertent receipt of MR vaccine during pregnancy is not an indication for an abortion; no cases of CRS after administration of rubella-containing vaccine in early pregnancy have been reported."
-            }
-        ],
-        "vaccineType": "combination",
-        "licensingDates": [
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-0",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-1",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-2",
-                "lastUpdated": ""
-            }
-        ]
-    },
-    {
-        "vaccineId": 147,
-        "name": "Measles and Rubella Vaccine, Live, Attenuated®",
-        "pathogenId": [
-            14
+            12,14
         ],
         "manufacturers": [
             {
@@ -8749,7 +8655,8 @@
         "vaccineId": 158,
         "name": "ACAM2000®",
         "pathogenId": [
-            28
+            28,
+            26
         ],
         "manufacturers": [
             {
@@ -10904,19 +10811,19 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Oral Poliomyelitis Vaccines (Oral Drops)® (MAH: PT Bio Farma (Persero))Oral suspension; poliomyelitis vaccine; OPV (Trivalent, live, attenuated)Pre-qualification approval date: 31/08/2020, Oral Poliomyelitis Vaccines (Oral Drops) | WHOComposition/Platform1 dose (2 drops or 0.1 mL) contains live poliovirus types 1, 2, and 3 (Sabin strains), ≥ 106/≥ 105/≥ 105.8 IU; prepared in primary monkey kidney cell; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.Strain coveragePoliovirus types 1, 2, and 3.IndicationActive immunization in all age groups against poliomyelitis caused by poliovirus types 1, 2, and 3; to be used based on official recommendations.DosingOral; each dose is 2 drops or 0.1 mL.ContraindicationDiarrhea (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma, or generalized malignancy).ImmunogenicityNo data in the label.Efficacy (VEy)No data in the label.Duration of protectionNo data in the label.Co-AdministrationCan be co-administered with DTP, HBV, Hib, MMR, DT, TT, Td, BCG, and yellow fever vaccines and vitamin A supplementation.ReactogenicityIn the vast majority of cases there are no side effects.Safety Very rarely, there may be the risk of VAPP in vaccinee (1/million); risk of VAPP in close contacts of a recently vaccinated.Vaccination GoalIndividual protection; outbreak control.OthersHIV-infected individuals should be immunized with OPV according to standard schedules; for older children, it may be preferred to avoid the possible bitter taste by placing the drops on a sugar lump or syrup.",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1, 2, and 3 (Sabin strains), ≥ 106/≥ 105/≥ 105.8 IU; prepared in primary monkey kidney cell; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C",
+                "strainCoverage": "Poliovirus types 1, 2, and 3",
+                "indication": "Active immunization in all age groups against poliomyelitis caused by poliovirus types 1, 2, and 3; to be used based on official recommendations",
+                "contraindication": "Diarrhea (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma, or generalized malignancy)",
+                "dosing": "Oral; each dose is 2 drops or 0.1 mL",
+                "immunogenicity": "No data in the label",
+                "Efficacy": "No data in the label",
+                "durationOfProtection": "No data in the label",
+                "coAdministration": "Can be co-administered with DTP, HBV, Hib, MMR, DT, TT, Td, BCG, and yellow fever vaccines and vitamin A supplementation",
+                "reactogenicity": "In the vast majority of cases there are no side effects",
+                "safety": "Very rarely, there may be the risk of VAPP in vaccinee (1/million); risk of VAPP in close contacts of a recently vaccinated",
+                "vaccinationGoal": "Individual protection; outbreak control",
+                "others": "HIV-infected individuals should be immunized with OPV according to standard schedules; for older children, it may be preferred to avoid the possible bitter taste by placing the drops on a sugar lump or syrup"
             }
         ],
         "vaccineType": "single",
@@ -10924,7 +10831,7 @@
             {
                 "name": "WHO",
                 "type": "#",
-                "approvalDate": "",
+                "approvalDate": "31/08/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/oral-poliomyelitis-vaccines-oral-drops",
                 "lastUpdated": ""
             }
@@ -14381,7 +14288,7 @@
     },
     {
         "vaccineId": 246,
-        "name": "FLUAD Tetra®",
+        "name": "FLUAD Tetra®; FLUAD Quadrivalent®",
         "pathogenId": [
             8
         ],
@@ -14411,19 +14318,19 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: FLUAD Tetra® (MAH: Seqirus)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each A/Victoria/4897/2022 (H1N1)pdm09-like strain, A/Darwin/9/2021 (H3N2)-like strain, B/Austria/1359417/2021-like strain, and B/Phuket/3073/2013-like strain); propagated in the allantoic cavity of embryonated hens’ eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
+                "indication": "Active immunization against influenza disease caused by influenza virus subtypes A and types B contained in the vaccine in individuals ≥65 years; to be used based on official recommendations.",
+                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination,",
+                "dosing": "I.M; single dose (0.5 mL).",
+                "immunogenicity": "Seroconversion rate (HI antibody titers): ≥65 yrs.: 78.0% (95% CI: 75.7; 80.2) against A/H1N1, 84.6% (95% CI: 82.5%; 86.5) against A/H3N2, 60.8% (95% CI: 58.1; 63.4) against B/Yamagata, 65.5% (95% CI: 62.9; 68.1) against B/Victoria.",
+                "Efficacy": "No data in the label.",
+                "durationOfProtection": " No data in the label.",
+                "coAdministration": "No data in the label.",
+                "reactogenicity": "Very common: injection site pain (16.3%); headache (10.8%); fatigue (10.5%).",
+                "safety": "GBS was reported.",
+                "vaccinationGoal": "Individual protection; outbreak control.",
+                "others": "No safety/effectiveness data in <6 mo. of age and in children >72 mo. of age."
             },
             {
                 "type": "WHO",
@@ -14451,75 +14358,7 @@
                 "approvalDate": "20/05/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluad-tetra",
                 "lastUpdated": "20/08/2024"
-            }
-        ]
-    },
-    {
-        "vaccineId": 247,
-        "name": "FLUAD Quadrivalent®",
-        "pathogenId": [
-            8
-        ],
-        "manufacturers": [
-            {
-                "manufacturerId": 45
-            }
-        ],
-        "productProfiles": [
-            {
-                "type": "EMA",
-                "name": "EMA-Product Profile: FLUAD Quadrivalent® (MAH: Seqirus)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
             },
-            {
-                "type": "FDA",
-                "name": "FDA-Product Profile: FLUAD Quadrivalent® (MAH: Seqirus)",
-                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each A/Victoria/4897/2022 (H1N1)pdm09-like strain, A/Darwin/9/2021 (H3N2)-like strain, B/Austria/1359417/2021-like strain, and B/Phuket/3073/2013-like strain); propagated in the allantoic cavity of embryonated hens’ eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
-                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
-                "indication": "Active immunization against influenza disease caused by influenza virus subtypes A and types B contained in the vaccine in individuals ≥65 years; to be used based on official recommendations.",
-                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination,",
-                "dosing": "I.M; single dose (0.5 mL).",
-                "immunogenicity": "Seroconversion rate (HI antibody titers): ≥65 yrs.: 78.0% (95% CI: 75.7; 80.2) against A/H1N1, 84.6% (95% CI: 82.5%; 86.5) against A/H3N2, 60.8% (95% CI: 58.1; 63.4) against B/Yamagata, 65.5% (95% CI: 62.9; 68.1) against B/Victoria.",
-                "Efficacy": "No data in the label.",
-                "durationOfProtection": " No data in the label.",
-                "coAdministration": "No data in the label.",
-                "reactogenicity": "Very common: injection site pain (16.3%); headache (10.8%); fatigue (10.5%).",
-                "safety": "GBS was reported.",
-                "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "No safety/effectiveness data in <6 mo. of age and in children >72 mo. of age."
-            },
-            {
-                "type": "WHO",
-                "name": "WHO-Product Profile: FLUAD Quadrivalent® (MAH: Seqirus)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
-            }
-        ],
-        "vaccineType": "single",
-        "licensingDates": [
             {
                 "name": "FDA",
                 "type": "#",
@@ -14606,7 +14445,7 @@
     },
     {
         "vaccineId": 249,
-        "name": "Flucelvax Tetra®",
+        "name": "Flucelvax Tetra®; Flucelvax Quadrivalent®",
         "pathogenId": [
             8
         ],
@@ -14619,19 +14458,19 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Flucelvax Tetra® (MAH: Seqirus)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Wisconsin/67/2022 (H1N1)pdm09-like, A/Massachusetts/18/2022 (H3N2)-like, B/Austria/1359417/2021-like, and B/Phuket/3073/2013-like strains); propagated in MDCK cells; storage: 2-8°C (protect from light); shelf life: 1 years",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B (Victoria/Yamagata lineages)",
+                "indication": "Active immunization for the prophylaxis of influenza in individuals ≥2 yrs.; to be used based on official recommendations",
+                "contraindication": "Hypersensitivity; acute febrile illness until the fever is resolved; caution in bleeding disorder; no contraindication in pregnancy and breastfeeding",
+                "dosing": "I.M; each dose is 0.5 mL; single dose; children <9 yrs. with no previous flu vaccination should receive a 2nd dose >4 weeks apart",
+                "immunogenicity": "Seroconversion rate (HI antibody titers); 4-17 yrs.: 47-73%; ≥18 yrs.: 36.6-49.2%; (Flucelvax Tetra® was non-inferior to comparators (two trivalent flu vaccines containing B strain from the alternate lineage))",
+                "Efficacy": "The efficacy of Flucelvax Tetra® is relevant to TIVc because both vaccines are manufactured using the same process and have overlapping compositions; VEy of TIVc against all culture-confirmed influenza: 49.9-89.3%; VEy of Flucelvax Tetra® against RT-PCR or culture-confirmed influenza: individuals 2-18 yrs.: 54.63% (95% CI: 45.67; 62.12)",
+                "durationOfProtection": "Annual revaccination is recommended because immunity declines during the year after vaccination and circulating strains of influenza virus change yearly",
+                "coAdministration": "No data on co-administration with other vaccines; based on clinical experience with TIVc, can be co-administered with other vaccines",
+                "reactogenicity": "Very common: injection site pain; fatigue; erythema; induration; myalgia; headache; common: loss of appetite; nausea; vomiting; diarrhea; injection site ecchymosis; chills; arthralgia",
+                "safety": "No safety signals to date",
+                "vaccinationGoal": "Individual protection; outbreak control",
+                "others": "No safety/efficacy data in <2 yrs.; cell-based production avoids egg-adapted antigenic changes; compatible with latex-free equipment"
             },
             {
                 "type": "FDA",
@@ -14676,75 +14515,7 @@
                 "approvalDate": "12/12/2018",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/flucelvax-tetra",
                 "lastUpdated": "31/07/2024"
-            }
-        ]
-    },
-    {
-        "vaccineId": 250,
-        "name": "Flucelvax Quadrivalent®",
-        "pathogenId": [
-            8
-        ],
-        "manufacturers": [
-            {
-                "manufacturerId": 45
-            }
-        ],
-        "productProfiles": [
-            {
-                "type": "EMA",
-                "name": "EMA-Product Profile: Flucelvax Quadrivalent® (MAH: Seqirus)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
             },
-            {
-                "type": "FDA",
-                "name": "FDA-Product Profile: Flucelva Quadrivalent® (MAH: Seqirus)",
-                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Georgia/12/2022 CVR-167 (an A/Wisconsin/67/2022 (H1N1)pdm09-like virus), A/Darwin/11/2021 (an A/Darwin/6/2021 (H3N2)-like virus), B/Singapore/WUH4618/2021 (a B/Austria/1359417/2021-like virus), B/Singapore/INFTT-16-0610/2016 (a B/Phuket/3073/2013-like virus) strains); using cell-derived candidate vaccine viruses that are propagated in MDCK cells; storage: 2-8°C (protect from light); shelf life: unknown.",
-                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
-                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥6 mo.; to be used based on official recommendations.",
-                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
-                "dosing": "I.M; each dose is 0.5 mL; 6 mo.- 8 yrs.: 1 or 2 doses with at least 4 weeks interval; ≥9 yrs.: 1 dose.",
-                "immunogenicity": "Seroconversion rate against vaccine strains (HI antibody titers): ≥ 18 yrs.: 36.6-49.2% (FLUCELVAX QUADRIVALENT® was non-inferior to TIVc); 6 mo. – 3 yrs.: 27.64-58.24% (FLUCELVAX QUADRIVALENT® was non-inferior to the comparator QIV); 4-17 yrs.: 47-73%.",
-                "Efficacy": "The efficacy experience with FLUCELVAX QUADRIVALENT® is relevant to FLUCELVAX® because both vaccines are manufactured using the same process and have overlapping compositions (VEy of FLUCELVAX®: 18-49 yrs.: 83.8% against vaccine strains, 69.5% against all strains). \n VEy of FLUCELVAX QUADRIVALENT® against all influenza subtypes: 2-17 yrs.: 54.6% (95% CI: 45.7; 62.1).",
-                "durationOfProtection": "Annual vaccination is recommended.",
-                "coAdministration": "No data in the label.",
-                "reactogenicity": "Most common: 6mo. - 3 yrs.: injection site tenderness (28%), erythema (26%), induration (17%), ecchymosis (11%); irritability (28%); sleepiness (27%); diarrhea (18%); change of eating habits (17%); 2-8 yrs.: injection site tenderness (28.7%), pain (27.9%), erythema (21.3%), induration (14.9%), ecchymosis (10.0%); sleepiness (14.9%); headache (13.8%); fatigue (13.8%); irritability (13.8%); loss of appetite (10.6%); 9-17 yrs.: injection site pain (21.7%), erythema (17.2%), induration (10.5%); headache (18.1%); fatigue (17.0%); \n 18-64 yrs.: injection site pain (45.4%), erythema (13.4%), induration (11.6%); headache (18.7%); fatigue (17.8%); myalgia (15.4%); ≥ 65 yrs.: injection site erythema (10%); fatigue (11%); headache (10%); malaise (10%). ",
-                "safety": "An increased frequency of GBS was reported.",
-                "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "No safety/effectiveness data in <6 mo.; antibody responses is lower in geriatric subjects than in younger adults."
-            },
-            {
-                "type": "WHO",
-                "name": "WHO-Product Profile: Flucelvax Quadrivalent® (MAH: Seqirus)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
-            }
-        ],
-        "vaccineType": "single",
-        "licensingDates": [
             {
                 "name": "FDA",
                 "type": "#",
@@ -15271,6 +15042,23 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
+                "composition": "1 dose (1mL) contains 10µg HBsAg; produced in CHO cells by rDNA technology; storage: 2-8°C; shelf life: 4 years",
+                "strainCoverage": "Hepatitis B virus",
+                "indication": "Active immunization against infection caused by any HBV subtype in individuals ≥18 yrs. To be used based on official recommendations",
+                "contraindication": "Hypersensitivity; limited data in pregnancy; can be used in breast-feeding if advantages > risks",
+                "dosing": "I.M.; 3 doses (1mL each); 0, 1, 6 month",
+                "immunogenicity": "The immunogenicity was assessed in comparison with Engerix-B (licensed hepatitis B vaccine): seroprotection rate in ≥18 yrs. was non-inferior to the Engerix B at day 196 (91.4% vs. 76.5%); seroprotection rate in ≥45 yrs. was superior to the Engerix B at day 196 (89.4% vs. 73.1%); higher seroprotection rate and anti-HBs titers were noted for PreHevbri compared with Engerix-B at all time points",
+                "Efficacy": "No VEy data; immunogenicity as above",
+                "durationOfProtection": "Unknown",
+                "coAdministration": "No data for co-administration with other vaccines and HBIg",
+                "reactogenicity": "18-44 yrs.: injection site pain (52.0-58.3%) and tenderness (52.6-59.6%), headache (17.2-25.8%), fatigue (20.1-28.3%), and myalgia (22.2-29.9%); 45-64yrs.: injection site pain (42.2-48.8%) and tenderness (43.2-50.5%), headache (13.8-21.3%), fatigue (14.3-19.7%), and myalgia (16.7-24.1%); ≥65 yrs.: injection site pain (26.7-34.8%) and tenderness (30.2-32.8%), headache (7.3-12.2%), fatigue (11.5-14.5%), and myalgia (11.5-16.6%)",
+                "safety": "No safety signals to date",
+                "vaccinationGoal": "Individual protection",
+                "others": "No safety/efficacy/effectiveness data for <18 yrs. and hemodialysis patients; no protection in patients in incubation period of HBV infection; lower immunogenicity in 65-86 yrs"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
                 "composition": "- not licensed yet -",
                 "strainCoverage": "- not licensed yet -",
                 "indication": "- not licensed yet -",
@@ -15284,23 +15072,6 @@
                 "safety": "- not licensed yet -",
                 "vaccinationGoal": "- not licensed yet -",
                 "others": "- not licensed yet -"
-            },
-            {
-                "type": "WHO",
-                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
-                "composition": "storage: 2-8°C (protect from light); shelf life: 12 months.",
-                "strainCoverage": "No label available in WHO website",
-                "indication": "No label available in WHO website",
-                "contraindication": "No label available in WHO website",
-                "dosing": "No label available in WHO website",
-                "immunogenicity": "No label available in WHO website",
-                "Efficacy": "No label available in WHO website",
-                "durationOfProtection": " No label available in WHO website",
-                "coAdministration": "No label available in WHO website",
-                "reactogenicity": "No label available in WHO website",
-                "safety": "No label available in WHO website",
-                "vaccinationGoal": "No label available in WHO website",
-                "others": "No label available in WHO website"
             }
         ],
         "vaccineType": "single",
@@ -15311,6 +15082,13 @@
                 "approvalDate": "25/04/2022",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prehevbri",
                 "lastUpdated": "30/01/2024"
+            },
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "30/11/2021",
+                "source": "https://www.fda.gov/vaccines-blood-biologics/prehevbrio",
+                "lastUpdated": "30/11/2021"
             }
         ]
     },
@@ -16143,7 +15921,7 @@
     },
     {
         "vaccineId": 267,
-        "name": "Influenza Vaccine (Split Virion), Inactivated®",
+        "name": "Influenza Vaccine (Split Virion), Inactivated® (Changchun Institute of Biological Products)",
         "pathogenId": [
             8
         ],
@@ -17129,7 +16907,7 @@
         ],
         "manufacturers": [
             {
-                "manufacturerId": 11
+                "manufacturerId": 17
             }
         ],
         "productProfiles": [
@@ -17887,19 +17665,19 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
-                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
-                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
-                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
-                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
-                "dosing": "I.M; single dose (0.5 mL).",
-                "immunogenicity": "No data in the label.",
-                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
-                "durationOfProtection": " Annual vaccination is recommended.",
-                "coAdministration": "No data in the label.",
-                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
-                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
-                "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
             },
             {
                 "type": "WHO",
@@ -18703,19 +18481,19 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
-                "composition": "1 dose (0.5 mL) contains 45µg influenza virus recombinant HA (each of A/West Virginia/30/2022 (A/Wisconsin/67/2022 pdm09-like virus) (H1N1), A/Massachusetts/18/2022 (H3N2) and B/Austria/1359417/2021 strains); produced in a continuous insect cell line (expresSF+®) derived from Sf9 cells of the fall armyworm; storage: 2-8°C (protect from light); shelf life: unknown.",
-                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
-                "indication": "Active immunization to prevent disease caused by influenza A subtypes and type B virus contained in the vaccine in individuals ≥18 yrs.; to be used based on official recommendations.",
-                "contraindication": "Hypersensitivity; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; limited data in pregnancy; use risk/benefit strategy in breastfeeding.",
-                "dosing": "I.M; single dose (0.5 mL).",
-                "immunogenicity": "No data in the label.",
-                "Efficacy": " (VEy)18-49 yrs: 67.2% (95% CI: -83.2; 96.8) against vaccine strains, 44.8% (95% CI: 24.4, 60.0) against any strain.VEy of Flublok Quadrivalent®: ≥50 yrs.: 43% (95% CI: 21, 59) against all culture-confirmed protocol-defined ILI, 30% (95% CI: 10, 47) against all RT PCR-positive influenza.",
-                "durationOfProtection": " Annual vaccination is recommended.",
-                "coAdministration": "No data in the label.",
-                "reactogenicity": "Most common: 18-49 yrs.: injection site pain (37%); headache (15%); fatigue (15%); muscle pain (11%); 50-64 yrs.: injection site pain (32%); headache (17%); fatigue (13%); muscle pain (11%); ≥ 65 yrs.: injection site pain (19%); fatigue (13%); headache (10%).",
-                "safety": " An increased frequency of GBS was reported; pleuropericarditis was reported.",
-                "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "No safety/effectiveness data in 3-17 yrs.; data strongly suggesting that Flublok® would not be effective in <3 yrs. "
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
             },
             {
                 "type": "WHO",
@@ -19533,6 +19311,81 @@
                 "approvalDate": "09/10/2023",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/zoonotic-influenza-vaccine-seqirus",
                 "lastUpdated": "25/09/2024"
+            }
+        ]
+    },
+    {
+        "vaccineId": 310,
+        "name": "Influenza Vaccine (Split Virion), Inactivated® (Hualan Biological Bacterin)",
+        "pathogenId": [
+            8
+        ],
+        "manufacturers": [
+            {
+                "manufacturerId": 39
+            }
+        ],
+        "productProfiles": [
+            {
+                "type": "EMA",
+                "name": "EMA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "FDA",
+                "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
+                "composition": "- not licensed yet -",
+                "strainCoverage": "- not licensed yet -",
+                "indication": "- not licensed yet -",
+                "contraindication": "- not licensed yet -",
+                "dosing": "- not licensed yet -",
+                "immunogenicity": "- not licensed yet -",
+                "Efficacy": "- not licensed yet -",
+                "durationOfProtection": "- not licensed yet -",
+                "coAdministration": "- not licensed yet -",
+                "reactogenicity": "- not licensed yet -",
+                "safety": "- not licensed yet -",
+                "vaccinationGoal": "- not licensed yet -",
+                "others": "- not licensed yet -"
+            },
+            {
+                "type": "WHO",
+                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "composition": "1 dose (0.5 mL) contains 15µg influenza virus HA (each of A/Victoria/4897/2022 (H1N1)pdm09-like virus, A/Thailand/8/2022 (H3N2)-like virus and B/Austria/1359417/2021 (B/Victoria lineage)-like virus strains); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C; shelf life: 12 months",
+                "strainCoverage": "Influenza virus A (H1N1, H3N2) and B",
+                "indication": "Active immunization to prevent disease caused by influenza A virus subtypes and type B contained in the vaccine in vulnerable people and high-risk populations for influenza complications, such as ≥9 yrs., weak people in influenza epidemic areas; to be used based on official recommendations",
+                "contraindication": "Hypersensitivity; egg or chicken protein allergy; acute illness; severe chronic diseases; acute exacerbation of chronic disease; fever; uncontrolled epilepsy or other nervous system progressive disease, and history of Guillain-Barre Syndrome; caution in individuals with a history of convulsions, chronic disease, epilepsy or allergies; caution in pregnancy and lactation",
+                "dosing": "I.M; each dose is 0.5 mL; ≥ 9 yrs.: single dose; before or during the flu epidemic season",
+                "immunogenicity": "Seroconversion rate (HI antibody titers): ≥6 mo: 78-92.4%; ≥3 yrs.: 67.6-82.8%",
+                "Efficacy": "No data in the label",
+                "durationOfProtection": "No data in the label",
+                "coAdministration": "Immunosuppressive therapies may reduce the immune response to influenza",
+                "reactogenicity": "injection site pain, tenderness, redness, swelling, pruritus; transient fever",
+                "safety": "Neuralgia; paresthesia; convulsion; transient thrombocytopenia; encephalomyelitis; neuritis; Guillain-Barre Syndrome",
+                "vaccinationGoal": "Individual protection; outbreak control",
+                "others": "-"
+            }
+        ],
+        "vaccineType": "single",
+        "licensingDates": [
+            {
+                "name": "WHO",
+                "type": "#",
+                "approvalDate": "09/06/2015",
+                "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated",
+                "lastUpdated": ""
             }
         ]
     }
