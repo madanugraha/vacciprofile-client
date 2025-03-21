@@ -208,7 +208,7 @@ const Sidebar = ({
                                 setShowVaccineDeases(!showVaccineDeases);
                                 setShowLicensedPathogens(false);
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineDeases ? 'active' : 'inactive'}`}>
-                                Dieases
+                                Diseases
                             </div>
                             {/* <div onClick={() => {
                                 setShowLicensedPathogens(false);
