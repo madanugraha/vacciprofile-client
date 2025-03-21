@@ -66,7 +66,7 @@ const Licenser = ({
                                 <thead>
                                     <tr>
                                         <th className='text-center'>Vaccine Brand Name</th>
-                                        <th className='text-center'>Vaccine Type</th>
+                                        <th className='text-center'>Single or Combination Vaccine</th>
                                         <th className='text-center'>Pathogen</th>
                                         <th className='text-center'>Manufacturer</th>
                                     </tr>
@@ -85,8 +85,11 @@ const Licenser = ({
                                                         {vaccine.name}
                                                     </span>
                                                 </td>
-                                                <td className='pathogen-cell d-flex flex-row'>
-                                                    <span>{vaccine.vaccineType}</span>
+                                                <td className='vaccine-cell'>
+                                                    <span
+                                                        className={`selected`}>
+                                                        {vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}
+                                                    </span>
                                                 </td>
                                                 <td className='status-cell'>
                                                     <div className='d-inline-flex align-items-center'>

@@ -347,7 +347,7 @@ const Sidebar = ({
                 {activeTab !== "Pathogen" && activeTab !== "Vaccine" && filteredLicenserSidebarList.map((item, i) => (
                     <div
                         key={i}
-                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${activeTab === 'Manufacturer' && selectedManufacturer === item
+                        className={`sidebar-item subgroup-colour text-dark rounded-3 ms-2 mb-1 ${activeTab === 'Manufacturer' && selectedManufacturer === item
                             ? 'active' : activeTab === 'Vaccine' && selectedVaccine === item
                                 ? 'active' : activeTab === 'Pathogen' && selectedPathogen === item
                                     ? 'active' : activeTab === 'Licenser' && selectedLicenser === item
@@ -363,7 +363,7 @@ const Sidebar = ({
                 {activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (
                     <div
                         key='Countries'
-                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${showCountries ? 'active-country' : 'inactive'
+                        className={`sidebar-item subgroup-colour text-dark rounded-3 py-1 ms-2 mb-1 ${showCountries ? 'active-country' : 'inactive'
                             }`}
                         onClick={() => handleClickSidebar({ name: 'Countries' })}
                     >Licensing authorities in other countries
@@ -372,7 +372,7 @@ const Sidebar = ({
                 {showCountries && sortArrayAscending(sidebarList.filter(item => !licenserFilter.includes(item.acronym)), "country").map((item, i) => (
                     <div
                         key={`country-${i}`}
-                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${selectedLicenser === item ? 'active' : 'inactive'}`}
+                        className={`sidebar-item subgroup-colour text-dark rounded-3 ms-2 mb-1 ${selectedLicenser === item ? 'active' : 'inactive'}`}
                         onClick={() => handleClickSidebar(item)}
                     >{item.country && `${item.country}, ${item.fullName}`}
                     </div>

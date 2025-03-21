@@ -16,8 +16,6 @@ export const getVaccinesByPathogenId = (id) => {
     });
 
     result = result.filter((x) => x.pathogenId === id && x.vaccineType === "single")
-
-    // const result = data.filter((x) => x.pathogenId.filter((y) => y === id[0]));
     if (result.length > 0) {
         return result;
     }
@@ -26,9 +24,6 @@ export const getVaccinesByPathogenId = (id) => {
 
 export const getAllVaccineByPathogenId = (id) => {
     const data = vaccines;
-
-    // const result = data.filter((vac) => vac.pathogenId === id);
-
     let result = data.map((x) => {
         return {
             ...x,
@@ -194,8 +189,6 @@ export const getAllSinglePathogenArray = () => {
 
 export const getPathogenVaccineByDieasesName = (name) => {
     const d = getAllVaccineByPathogenId(pathogens.filter((x) => x.dieases.includes(name))[0]?.pathogenId);
-
-    console.log('a >>> ', d);
     return d;
 };
 
@@ -291,7 +284,6 @@ export const getProductProfileTypeByVaccineName = (vaccineName) => {
 export const getLicensedVaccineByManufacturerId = (manufacturerId) => {
     const data = vaccines;
     let arr = [];
-
     for (let i = 0; i < data.length; i++) {
         for (let x = 0; x < data[i].manufacturers.length; x++) {
             if (data[i]?.manufacturers[x]?.manufacturerId && data[i]?.manufacturers[x]?.manufacturerId === manufacturerId) {
@@ -299,10 +291,12 @@ export const getLicensedVaccineByManufacturerId = (manufacturerId) => {
             }
         }
     };
+
+    const f = vaccines.filter((x) => x.vaccineType === "combination").map((x) => x.pathogenId.length).reduce((a, b) => a + b, 0);
+
+    console.log('zzzzz >>> ', f);
     return arr;
 }
-
-
 
 
 export const getVaccineByLicenserName = (licenserName, type) => {
