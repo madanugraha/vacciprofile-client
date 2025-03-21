@@ -307,7 +307,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
             if (viewSinglePathogenVaccine) {
                 if (vaccineByDeases && vaccineByDeases.length > 0) {
-                    const f = vaccineByDeases.map((x) => {
+                    const f = vaccineByDeases.filter((x) => x.vaccineType === "single").map((x) => {
                         return {
                             ...x,
                             title: x.name,
@@ -326,7 +326,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
             if (viewCombinationVaccine) {
                 if (vaccineByDeases && vaccineByDeases.length > 0) {
-                    const f = vaccineByDeases.map((x) => {
+                    const f = vaccineByDeases.filter((x) => x.vaccineType === "combination").map((x) => {
                         return {
                             ...x,
                             title: x.name,
@@ -744,7 +744,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
-                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensed Authority</td>
+                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensing Authority</td>
                                                             </tr>
                                                             {/* <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span> */}
                                                             {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
@@ -799,7 +799,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
-                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensed Authority</td>
+                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensing Authority</td>
                                                             </tr>
                                                             {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
                                                                 return (
@@ -1305,7 +1305,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
-                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensed Authority</td>
+                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensing Authority</td>
                                                             </tr>
                                                             {/* <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span> */}
                                                             {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
@@ -1360,7 +1360,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
-                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensed Authority</td>
+                                                                <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensing Authority</td>
                                                             </tr>
                                                             {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
                                                                 return (

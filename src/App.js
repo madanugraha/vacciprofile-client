@@ -629,7 +629,8 @@ const App = () => {
         // setCompareList(pathogens);
         setSelectedPathogen(pathogens[0])
         setSelectedLicenser(licensers[0]);
-        setSelectedVaccine(vaccines[142]);
+        const vaccineSorted = vaccines.sort((a,b) => a.name.localeCompare(b.name))[0]
+        setSelectedVaccine(vaccineSorted);
         setSelectedCompare(pathogens[0])
         setSelectedManufacturer(manufacturers[0])
     }, [])

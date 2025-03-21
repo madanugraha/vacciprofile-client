@@ -563,11 +563,11 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
                         <div className="accordion mb-1" id="accordianVaccineList">
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="accordianVaccines">
-                                    <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button className="accordion-button collapsed show bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
                                         Licensed Vaccines
                                     </button>
                                 </h2>
-                                <div id="accordianVacList" className="accordion-collapse collapse" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
+                                <div id="accordianVacList" className="accordion-collapse collapse show" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
                                     <div className="accordion-body pb-1 px-0 pt-0">
                                         <div className='main-header table-responsive m-0'>
                                             <table className='table w-100 m-0'>
@@ -722,7 +722,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
                                                                 </tr>
                                                                 <tr>
                                                                     <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
-                                                                    <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensed Authority</td>
+                                                                    <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensing Authority</td>
                                                                 </tr>
                                                                 {/* <span className='mt-2 fw-bold text-primary'>&#8226;{" "}Single Pathogen Vaccine</span> */}
                                                                 {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
@@ -777,7 +777,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
                                                                 </tr>
                                                                 <tr>
                                                                     <td style={{ fontWeight: 'bold' }}>Vaccine Name</td>
-                                                                    <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensed Authority</td>
+                                                                    <td style={{ fontWeight: 'bold' }} colSpan={4}>Licensing Authority</td>
                                                                 </tr>
                                                                 {(vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState).length > 0 ? sortArrayAscending((vaccineSelectedOnly ? vaccineFieldsState.filter((x) => x.checked) : vaccineFieldsState), "name").map((vaccine) => {
                                                                     return (

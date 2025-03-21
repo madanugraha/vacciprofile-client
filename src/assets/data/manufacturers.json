@@ -433,7 +433,7 @@
         "description": "A global specialty and generic drug manufacturer that was acquired by Teva Pharmaceutical Industries in 2008.",
         "history": "Barr Laboratories was founded in 1970 by Edwin A. Cohen in New York. It was one of the early pioneers in the generic pharmaceutical industry. The company faced challenges, including a scandal related to GMP regulations in the early 1990s. Despite these challenges, Barr achieved significant growth by targeting drugs with weak patents, notably gaining approval for generic versions of tamoxifen citrate and Prozac.",
         "details": {
-            "website": "https://en.wikipedia.org/wiki/Barr_Pharmaceuticals",
+            "website": "https://www.barrlab.com/",
             "founded": "1970",
             "headquarters": "Pomona, New York, USA",
             "ceo": "Bruce L. Downey (1994-2008)",
@@ -483,7 +483,7 @@
         "description": "A biodefense manufacturing facility located in Lansing, Michigan, specializing in vaccines and biologics for infectious diseases and biodefense purposes.",
         "history": "Emergent BioDefense Operations Lansing LLC is part of Emergent BioSolutions, which was founded in 1998 as BioPort. The company acquired the Michigan Biological Products Institute facility in Lansing, Michigan, and has since expanded its operations to include a wide range of biodefense products.",
         "details": {
-            "website": "https://www.emergentbiosolutions.com",
+            "website": "https://www.emergentbiosolutions.com/",
             "founded": "1998 (as part of Emergent BioSolutions)",
             "headquarters": "Lansing, Michigan, USA",
             "parentCompany": "Emergent BioSolutions",
@@ -522,7 +522,7 @@
         "description": "A global life sciences company specializing in developing, manufacturing, and delivering protections against public health threats. Emergent offers vaccines, therapeutics, drug-device combination products, and contract development and manufacturing services.",
         "history": "Emergent BioSolutions was founded in 1998 and has since become a leading provider of solutions for complex public health challenges. The company has expanded its capabilities through various contracts and agreements, including a significant role in manufacturing COVID-19 treatments.",
         "details": {
-            "website": "https://www.emergentbiosolutions.com",
+            "website": "https://emergentbio.com/gaithersburg",
             "founded": "1998",
             "headquarters": "Gaithersburg, Maryland, USA",
             "ceo": "Robert G. Kramer Sr.",
@@ -777,7 +777,7 @@
         "description": "An India-based pharmaceutical and biotechnology company engaged in research, development, manufacture, and marketing of branded vaccines, pharmaceutical formulations, nutraceuticals, and food and nutrition products.",
         "history": "Panacea Biotec was founded in 1984 and has since become a prominent player in the Indian pharmaceutical and biotechnology sector. The company specializes in developing fully liquid combination vaccines and has a diverse portfolio of products.",
         "details": {
-            "website": "https://dcvmn.org/panacea-biotec-limited/",
+            "website": "https://www.panaceabiotec.com/en",
             "founded": "1984",
             "headquarters": "New Delhi, India",
             "ceo": "Dr. Rajesh Jain, Managing Director",
@@ -1339,7 +1339,7 @@
         "description": "A Chinese biotechnology company specializing in the development, manufacturing, and marketing of vaccines. It is known for its innovative vaccines, including the Hepatitis E vaccine and HPV vaccines.",
         "history": "Xiamen Innovax Biotech was established in March 2005 in Xiamen, China. It is a subsidiary of Beijing Wantai Biological Pharmacy Enterprise Co., Ltd. and is part of the Yangshengtang Co., Ltd. group. The company has made significant contributions to vaccine development, particularly with its Hepatitis E vaccine, Hecolin, which was launched in 2012.",
         "details": {
-            "website": "https://en.wikipedia.org/wiki/Xiamen_Innovax_Biotech",
+            "website": "https://dcvmn.org/xiamen-innovax-biotech-co-ltd/",
             "founded": "2005",
             "headquarters": "Xiamen, Fujian, China",
             "ceo": "Not specified",
@@ -1470,7 +1470,7 @@
         "description": "A State-owned bio-tech corporation in China, specializing in the production, development, and sale of biological products, including vaccines and genetic engineering products.",
         "history": "Founded in 1946 in Changchun, Jilin Province, China. It is known for its contributions to China's disease prevention and control efforts, particularly as the first pilot trial base of interferon and the first industrial production base of hepatitis B vaccines.",
         "details": {
-            "website": "https://www.gojilin.gov.cn/2021/07/26/c_6909.htm",
+            "website": "https://www.keygenbio.com/en/",
             "founded": "1946",
             "headquarters": "Changchun, Jilin, China",
             "ceo": "Not specified",
@@ -2023,8 +2023,10 @@
             "website": "https://www.rmkcorp.com/projects/gpo-mbp/",
             "founded": "1997",
             "headquarters": "Thailand",
-            "ownership": "GPO (40%), Sanofi (49%), CPB Equity Co., Ltd. (remainder)",
-            "products": "Children's vaccines, COVID-19 vaccine fill-finish services",
+            "ceo": "Boonrak Thawornrungroaj (Director of Industrial Affairs, not CEO)",
+            "revenue": "Approximately 800 million THB (equivalent to a different currency, not DKK)",
+            "netIncome": "Not specified",
+            "numberOfEmployees": "124",
             "sources": [
                 {
                     "lastUpdated": "2022",
@@ -2570,12 +2572,12 @@
             "founded": "1976",
             "headquarters": "Rio de Janeiro, Brazil",
             "ceo": "Mauricio Zuma Medeiros (Director)",
-            "revenue": "Not publicly disclosed",
+            "revenue": "Not publicly disclosed (Fiocruz's revenue is $340 million in 2025)",
             "operatingIncome": "Not publicly disclosed",
             "netIncome": "Not publicly disclosed",
             "totalAssets": "Not publicly disclosed",
             "totalEquity": "Not publicly disclosed",
-            "numberOfEmployees": "Not publicly disclosed",
+            "numberOfEmployees": "Approximately 2,300",
             "sources": [
                 {
                     "lastUpdated": "2024",

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactModal from "react-modal";
-import { getProductProfileValueByVaccineNameAndType } from '../../utils/pathogens';
+import { getManufactureDetailById, getProductProfileValueByVaccineNameAndType } from '../../utils/pathogens';
 import { getAllRelatedVaccineCandidateByName } from '../../utils/array';
 
 /**
@@ -163,8 +163,11 @@ const Vaccine = ({
         "vaccinationGoal",
         "others"
     ];
+
+    const manufactureName = getManufactureDetailById((selectedVaccine?.manufacturers && selectedVaccine?.manufacturers[0]?.manufacturerId)) || "-";
+    const manufactureName2 = getAllRelatedVaccineCandidateByName(selectedVaccine?.name)
     return <div className='position-relative slide-left'>
-        <h1 className='heading text-primary text-center'>{selectedVaccine.name}
+        <h1 className='heading text-primary text-center'>{selectedVaccine.name} (MAH: {manufactureName?.name || (manufactureName2 && manufactureName2.length > 0 && manufactureName2[0]?.manufacturer) || "-"})
             {/* {selectedVaccine.packageInsertLink && <i className="fa-regular fa-file-pdf text-warning hover-cursor hover-underline ms-2" onClick={()=>window.open(selectedVaccine.packageInsertLink, '_blank')}></i>} */}
             {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
         </h1>

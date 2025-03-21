@@ -30,7 +30,12 @@ export const getCandidateVaccines = () => {
 };
 
 export const getAllRelatedVaccineCandidateByName = (name) => {
-    return vaccines.filter((x) => x.name !== "" && x.name.toLowerCase().includes(name.toLowerCase()))
+    if (name) {
+        return vaccines.filter((x) => x.name !== "" && x.name.toLowerCase().includes(name.toLowerCase()))
+    } else {
+        return null
+    }
+
 }
 
 export const getAllPathogenNameByVaccineCandidateName = (name) => {
