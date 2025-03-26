@@ -23,7 +23,7 @@ const HomePage = () => {
             </div>
 
             <div class="container-home text-center" style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'column' }}>
-                <div class="card" onClick={() => window.location.href = "/home"}>
+                <div class="card" onClick={() => window.location.href = "/home?menu=pathogen"}>
                     <div class="image-container">
                         <img src="/images/VACCIE PROFILE OUTLINE-03.png" alt="Pathogens" />
                     </div>
@@ -32,7 +32,7 @@ const HomePage = () => {
                     </p>
                     <button class="btn">View more</button>
                 </div>
-                <div class="card" onClick={() => window.location.href = "/home"}>
+                <div class="card" onClick={() => window.location.href = "/home?menu=vaccines"}>
                     <div class="image-container">
                         <img src="/images/VACCIE PROFILE OUTLINE-04.png" alt="Vaccines" />
                     </div>
@@ -40,7 +40,7 @@ const HomePage = () => {
                     <p>Compare brandnames, licenses. single and combination vaccines</p>
                     <button class="btn">View more</button>
                 </div>
-                <div class="card" onClick={() => window.location.href = "/home"}>
+                <div class="card" onClick={() => window.location.href = "/home?menu=manufacturer"}>
                     <div class="image-container">
                         <img src="/images/VACCIE PROFILE OUTLINE-05.png" alt="Manufacturers" />
                     </div>
@@ -48,7 +48,7 @@ const HomePage = () => {
                     <p>Basic company information, vaccines. licenses and labels</p>
                     <button class="btn">View more</button>
                 </div>
-                <div class="card" onClick={() => window.location.href = "/home"}>
+                <div class="card" onClick={() => window.location.href = "/home?menu=licenser"}>
                     <div class="image-container">
                         <img src="/images/VACCIE PROFILE OUTLINE-06.png" alt="Licensing Authorities" />
                     </div>

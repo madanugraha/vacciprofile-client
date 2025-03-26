@@ -1,4 +1,5 @@
 import React from "react";
+import { useSearchParams } from "react-router";
 
 /**
  * TopBar Component
@@ -17,24 +18,68 @@ const TopBar = ({
     handleTabChange,
     handleSearch
 }) => {
+    const [searchParams, setSearchParams] = useSearchParams();
+    const activeMenu = searchParams.get("menu");
+
     return <div className="topbar row pt-1 slide-down">
         <div className="position-relative">
             <ul className="nav nav-pills">
-                <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
-                    Pathogens
-                </li>
-                <li className={`nav-item nav-link ${activeTab === 'Vaccine' ? 'active' : ''}`} onClick={() => handleTabChange('Vaccine')}>
-                    Vaccines
-                </li>
-                <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
-                    Manufacturers
-                </li>
-                <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => handleTabChange('Licenser')}>
-                    Licensing Authorities
-                </li>
-                <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
-                    Comparison
-                </li>
+                {
+                    !activeMenu && (
+                        <>
+                            <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
+                                Pathogens
+                            </li>
+                            <li className={`nav-item nav-link ${activeTab === 'Vaccine' ? 'active' : ''}`} onClick={() => handleTabChange('Vaccine')}>
+                                Vaccines
+                            </li>
+                            <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
+                                Manufacturers
+                            </li>
+                            <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => handleTabChange('Licenser')}>
+                                Licensing Authorities
+                            </li>
+                            <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
+                                Comparison
+                            </li>
+                        </>
+                    )
+                }
+                {
+                    activeMenu === "pathogen" && (
+                        <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
+                            Pathogens
+                        </li>
+                    )
+                }
+                {
+                    activeMenu === "vaccines" && (
+                        <li className={`nav-item nav-link ${activeTab === 'Vaccine' ? 'active' : ''}`} onClick={() => handleTabChange('Vaccine')}>
+                            Vaccines
+                        </li>
+                    )
+                }
+                {
+                    activeMenu === "manufacturer" && (
+                        <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
+                            Manufacturers
+                        </li>
+                    )
+                }
+                {
+                    activeMenu === "licenser" && (
+                        <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => handleTabChange('Licenser')}>
+                            Licensing Authorities
+                        </li>
+                    )
+                }
+                {
+                    activeMenu === "comparison" && (
+                        <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
+                            Comparison
+                        </li>
+                    )
+                }
             </ul>
             <div className='search-container mb-3'>
                 <span className="position-relative">

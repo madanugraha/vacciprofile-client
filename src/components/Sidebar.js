@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from '../utils/array';
 import { getAllSinglePathogenArray, getCombinationVaccineneArray, getPathogenDetailById, getSinglePathogenVaccineArray } from '../utils/pathogens';
 import { vaccineDeases } from '../assets/data/dieases';
+import { useSearchParams } from 'react-router';
 
 /**
  * Sidebar Component
@@ -147,6 +148,26 @@ const Sidebar = ({
     const sampleVaccineCandidatePathogen = getCandidatePathogens();
     const sampleVaccineCandidatesVaccine = getCandidateVaccines();
 
+
+    const [searchParams, setSearchParams] = useSearchParams();
+    const activeMenu = searchParams.get("menu");
+
+    useEffect(() => {
+
+        if (activeMenu === "pathogen") {
+            setActiveTab("Pathogen")
+        };
+        if (activeMenu === "manufacturer") {
+            setActiveTab("Manufacturer");
+        }
+        if (activeMenu === "licenser") {
+            setActiveTab("Licenser");
+        }
+        if (activeMenu === "vaccines") {
+            setActiveTab("Vaccine");
+        }
+    }, [activeMenu]);
+
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
             <div className='sidebar-items overflow-auto'>
@@ -194,7 +215,6 @@ const Sidebar = ({
                         </>
                     )
                 }
-
                 {
                     activeTab === "Compare" && (
                         <>
@@ -257,7 +277,6 @@ const Sidebar = ({
                         </>
                     )
                 }
-
                 {
                     activeTab === "Vaccine" && (
                         <>
