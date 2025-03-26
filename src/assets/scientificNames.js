@@ -12,7 +12,8 @@ const scientificNames = [
     "Bacillus anthracis",
     "Clostridium difficile",
     "Escherichia coli",
-    "Borrelia burgdorferi"
+    "Borrelia burgdorferi",
+    "H. influenzae",
 ];
 
 export default scientificNames;

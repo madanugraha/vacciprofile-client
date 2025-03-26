@@ -6,12 +6,18 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router";
+import HomePage from './Homepage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    {/* <App /> */}
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/home" element={<App />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

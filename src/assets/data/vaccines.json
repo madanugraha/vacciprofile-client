@@ -5082,6 +5082,7 @@
     {
         "vaccineId": 83,
         "name": "AUDENZ®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -5232,6 +5233,7 @@
     {
         "vaccineId": 85,
         "name": "Aflunov®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -5307,6 +5309,7 @@
     {
         "vaccineId": 86,
         "name": "Celldemic®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -5382,6 +5385,7 @@
     {
         "vaccineId": 87,
         "name": "Foclivia®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -5457,6 +5461,7 @@
     {
         "vaccineId": 88,
         "name": "Incellipan®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -6071,6 +6076,7 @@
     {
         "vaccineId": 101,
         "name": "Celtura®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -6596,6 +6602,7 @@
     {
         "vaccineId": 115,
         "name": "Panenza®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -6671,6 +6678,7 @@
     {
         "vaccineId": 116,
         "name": "Panvax®",
+        "dieases":"Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -7978,7 +7986,8 @@
         "vaccineId": 147,
         "name": "Measles and Rubella Vaccine, Live, Attenuated®",
         "pathogenId": [
-            12,14
+            12,
+            14
         ],
         "manufacturers": [
             {
@@ -18049,6 +18058,7 @@
     {
         "vaccineId": 294,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine (Sanofi)®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -18138,6 +18148,7 @@
     {
         "vaccineId": 295,
         "name": "Influenza Virus Vaccine, H5N1®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -18370,6 +18381,7 @@
     {
         "vaccineId": 298,
         "name": "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze Dried®",
+        "dieases":"Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -19167,6 +19179,7 @@
     {
         "vaccineId": 308,
         "name": "Focetria®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -19242,6 +19255,7 @@
     {
         "vaccineId": 309,
         "name": "Zoonotic Influenza Vaccine Seqirus®",
+        "dieases":"Pandemic Influenza",
         "pathogenId": [
             8
         ],

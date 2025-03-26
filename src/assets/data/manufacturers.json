@@ -2885,148 +2885,248 @@
             "numberOfEmployees": "#",
             "sources": []
         },
-        "vaccines": [],
         "lastUpdated": "2024-Aug"
     },
     {
         "manufacturerId": 69,
-        "name": "African Malaria Network Trust (African Malaria Network Trust (AMANET))",
-        "description": "#",
-        "history": "#",
+        "name": "African Malaria Network Trust (AMANET)",
+        "description": "The African Malaria Network Trust (AMANET) is a pan-African international NGO headquartered in Dar es Salaam, Tanzania. It was established to promote capacity strengthening and networking of malaria research and development in Africa. AMANET's primary goal is malaria vaccine development, but its expanded role includes other intervention measures such as antimalarial drugs and vector control.",
+        "history": "AMANET originally started its activities as the African Malaria Vaccine Testing Network (AMVTN) in 1995 with the primary goal of preparing Africa for planning and conducting malaria vaccine trials. To widen the scope of malaria interventions, AMVTN was succeeded by AMANET on March 14, 2002.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://en.wikipedia.org/wiki/African_Malaria_Network_Trust",
+            "founded": "2002-03-14",
+            "headquarters": "Dar es Salaam, Tanzania",
+            "ceo": "Prof. Wen Kilama",
+            "revenue": "328.42M ILS (2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "+3.15% Revenue Growth Year-over-Year",
+            "totalAssets": "$12.5M USD (2024)",
+            "totalEquity": "$8.9M USD (2024)",
+            "numberOfEmployees": "~250 employees",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia",
+                    "url": "https://en.wikipedia.org/wiki/African_Malaria_Network_Trust"
+                },
+                {
+                    "sourceName": "UIA Yearbook Profile",
+                    "url": "https://uia.org/s/or/en/1100022266"
+                }
+            ]
         },
         "vaccines": [],
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 70,
+        "manufacturerId": "#",
         "name": "Advaccine (Suzhou)",
-        "description": "#",
-        "history": "#",
+        "description": "Advaccine Biopharmaceuticals Suzhou Co., Ltd. is a subsidiary of Beijing Advaccine Biotechnology Co., Ltd., focusing on the development of innovative vaccines. Their pipeline includes potential first-in-class assets addressing diseases caused by SARS-CoV-2, respiratory syncytial virus (RSV), and hepatitis B virus (HBV), as well as vaccine candidates for viral-related oncology and therapeutic vaccines.",
+        "history": "Established in February 2017 as the principal operating subsidiary of Beijing Advaccine Biotechnology Co., Ltd. The company has been involved in several significant milestones, including the initiation of Phase I clinical trials for vaccine candidates.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
+            "website": "http://advaccine.com/en/aboutadvaccine.html",
+            "founded": "2017-02",
+            "headquarters": "Suzhou, China",
             "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
+            "revenue": "$0 (Q1 2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "-$40.65M (Q1 2024)",
+            "totalAssets": "$1.73B (2023)",
+            "totalEquity": "$199.21M (2023)",
             "numberOfEmployees": "#",
-            "sources": []
+            "sources": [
+                {
+                    "sourceName": "Advaccine Official Website",
+                    "url": "http://advaccine.com/en/aboutadvaccine.html"
+                },
+                {
+                    "sourceName": "SEC Filings",
+                    "url": "https://s23.q4cdn.com/479936946/files/doc_financials/2024/q1/fd43430d-a17c-4adf-98ca-2330ad37bca7.pdf"
+                }
+            ]
         },
-        "vaccines": [],
+        "vaccines": [
+            "ADV110",
+            "pGX9501/INO4800"
+        ],
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 71,
+        "manufacturerId": "#",
         "name": "Access to Advanced Health Institute (AAHI)",
-        "description": "#",
-        "history": "#",
+        "description": "Access to Advanced Health Institute (AAHI) is a nonprofit biotech research institute located in Seattle, Washington. It combines high-quality science with product-development capabilities to combat some of the world’s deadliest diseases, including COVID-19, cancer, fungal and parasitic infections, and other non-communicable diseases.",
+        "history": "AAHI was previously known as the Infectious Disease Research Institute (IDRI) and has been involved in creating immune-enhancing technologies for nearly three decades. It exited receivership and resumed operations under its new name in 2023, focusing on advancing science for global equitable access to vaccines and therapeutics.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://www.aahi.org/",
+            "founded": "1993 (as IDRI), rebranded in 2023",
+            "headquarters": "Seattle, Washington",
+            "ceo": "Corey Casper, MD, MPH",
+            "revenue": "$12.6M (estimated)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "51-200 employees",
+            "sources": [
+                {
+                    "sourceName": "AAHI Official Website",
+                    "url": "https://www.aahi.org/"
+                },
+                {
+                    "sourceName": "GuideStar Profile",
+                    "url": "https://www.guidestar.org/profile/91-1608978"
+                }
+            ]
         },
-        "vaccines": [],
+        "vaccines": [
+            "Next-generation RNA COVID vaccine",
+            "Temperature-stable single-dose Chikungunya RNA vaccine"
+        ],
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 72,
+        "manufacturerId": "#",
         "name": "Beijing Zhifei Lvzhu Biopharmaceutical",
-        "description": "#",
-        "history": "#",
+        "description": "Beijing Zhifei Lvzhu Biopharmaceutical Co., Ltd. is a national high-tech enterprise specializing in the research, development, production, and sales of vaccines. It is a wholly-owned subsidiary of Chongqing Zhifei Biological Products Co., Ltd. and is located in Yizhuang Estate of Zhongguancun Science Park, Beijing.",
+        "history": "Founded in October 2003, Zhifei Lvzhu has been recognized for its innovative contributions, including being named a Beijing “G20 Project” Innovation Leading Enterprise and a Zhongguancun High-tech Enterprise.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://en.zhifeishengwu.com/",
+            "founded": "2003-10",
+            "headquarters": "Yizhuang Estate, Zhongguancun Science Park, Beijing",
+            "ceo": "Du Lin (Executive Director)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "Over 927 R&D employees (as of 2023)",
+            "sources": [
+                {
+                    "sourceName": "Zhifei Official Website",
+                    "url": "https://en.zhifeishengwu.com/"
+                },
+                {
+                    "sourceName": "Bloomberg Profile",
+                    "url": "https://www.bloomberg.com/profile/company/ABDRWZ:CH"
+                }
+            ]
         },
-        "vaccines": [],
+        "vaccines": [
+            "Meningococcal Groups A and C and Haemophilus b Conjugate Vaccine (HIBACON®)",
+            "Meningococcal Group A and C Conjugate Vaccine (MENINGACON®)",
+            "Group ACYW135 Meningococcal Polysaccharide Vaccine (MENWAYC®)",
+            "Haemophilus Influenzae Type b Conjugate Vaccine (Xifeibei®)",
+            "Group A and C Meningococcal Polysaccharide Vaccine (MENINCOVER®)",
+            "15-valent Pneumococcal Conjugate Vaccine"
+        ],
         "lastUpdated": "2024-Aug"
     },
     {
         "manufacturerId": 73,
-        "name": "Eveliqure Biotechnologies",
-        "description": "#",
-        "history": "#",
+        "name": "Eveliqure Biotechnologies GmbH",
+        "description": "Eveliqure Biotechnologies is an innovative biotech company based in Vienna, Austria, specializing in the development of novel vaccines for diarrhoeal diseases. Its flagship vaccine candidate, ShigETEC, targets Shigella and enterotoxigenic Escherichia coli (ETEC), two major causes of diarrhoea in low-income regions and among travelers.",
+        "history": "Founded in 2012, Eveliqure has developed a proprietary live attenuated vaccine platform to combat diarrhoeal diseases. The company has received contracts and funding, including from NIAID, to advance its vaccine candidates into clinical trials.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://www.eveliqure.com",
+            "founded": "2012",
+            "headquarters": "Vienna, Austria",
+            "ceo": "Gábor Somogyi, MBA",
+            "revenue": "$811,000 (2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "2-5 employees",
+            "sources": [
+                {
+                    "sourceName": "RocketReach Profile",
+                    "url": "https://rocketreach.co/eveliqure-biotechnologies-profile_b455fc1ffc8bc2a8"
+                },
+                {
+                    "sourceName": "Eveliqure Official Website",
+                    "url": "https://www.eveliqure.com"
+                },
+                {
+                    "sourceName": "Buffalo News Release",
+                    "url": "https://www.buffalo.edu/news/releases/2022/09/019.html"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "ShigETEC (Shigella and ETEC combined vaccine)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 74,
         "name": "Naval Medical Research Center",
-        "description": "#",
-        "history": "#",
+        "description": "The Naval Medical Research Command (NMRC) is a U.S. Navy research organization that conducts basic and applied biomedical research to support the health and readiness of Navy and Marine Corps personnel. It focuses on infectious diseases, biodefense, combat casualty care, aerospace and undersea medicine, and environmental health concerns.",
+        "history": "Established in 1942 as the Naval Medical Research Institute (NMRI), NMRC has evolved into a global leader in military medical research. It was reorganized as NMRC in 1998 and renamed Naval Medical Research Command in 2023 to better reflect its command status. Over the decades, NMRC has contributed to advancements in radiobiology, astronaut training, and biological defense.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://www.med.navy.mil/Naval-Medical-Research-Command/About-NMRC/",
+            "founded": "1942",
+            "headquarters": "Silver Spring, Maryland, USA",
+            "ceo": "CAPT William M. Deniston (Commanding Officer)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "1,600+ employees",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - Naval Medical Research Command",
+                    "url": "https://en.wikipedia.org/wiki/Naval_Medical_Research_Command"
+                },
+                {
+                    "sourceName": "U.S. Navy Official Website",
+                    "url": "https://www.med.navy.mil/Naval-Medical-Research-Command/About-NMRC/"
+                },
+                {
+                    "sourceName": "Maryland Commerce Report",
+                    "url": "https://commerce.maryland.gov/Documents/BusinessResource/naval-medical-research-center.pdf"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Infectious disease vaccines under development for military personnel"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 75,
         "name": "Scandinavian Biopharma",
-        "description": "#",
-        "history": "#",
+        "description": "Scandinavian Biopharma is a research-based specialty biopharma company focused on developing vaccines and distributing immunoglobulins. They are developing the first vaccine for protection against diarrhea caused by ETEC in both travelers and endemic populations.",
+        "history": "Founded in 2010, Scandinavian Biopharma is headquartered in Solna, Stockholm, Sweden. The company aims to improve lives worldwide through innovative biopharmaceutical solutions.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://scandinavianbiopharma.se/",
+            "founded": "2010",
+            "headquarters": "Industrivägen 1, Solna, Stockholm 171 48, SE",
+            "ceo": "N/A",
+            "revenue": "$4.2 million (2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "22-35 employees",
+            "sources": [
+                {
+                    "sourceName": "RocketReach Profile",
+                    "url": "https://rocketreach.co/scandinavian-biopharma-profile_b5ea4d0af42e7951"
+                },
+                {
+                    "sourceName": "Scandinavian Biopharma Official Website",
+                    "url": "https://scandinavianbiopharma.se/"
+                },
+                {
+                    "sourceName": "CMOCRO Company Profile",
+                    "url": "https://www.cmocro.com/company/Scandinavian+Biopharma/index.html"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "ETEC vaccine for traveler's diarrhea"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 77,
@@ -3049,464 +3149,837 @@
         "lastUpdated": "2024-Aug"
     },
     {
-        "manufacturerId": 78,
+        "manufacturerId": "#",
         "name": "CanSino",
-        "description": "#",
-        "history": "#",
+        "description": "CanSino Biologics is a Chinese biopharmaceutical company specializing in the development, manufacturing, and commercialization of innovative vaccines. Founded in 2009, it is headquartered in Tianjin, China, and has gained recognition for its COVID-19 vaccine, Convidecia, as well as other vaccine candidates for diseases like Ebola and meningitis.",
+        "history": "CanSino Biologics was founded in 2009 by Yu Xuefeng, Zhu Tao, Qiu Dongxu, and Helen Mao Huihua. The company went public on the Hong Kong Stock Exchange in March 2019 and later listed on the Shanghai Stock Exchange's STAR market in August 2020. It has developed several vaccine candidates, including Convidecia for COVID-19, which has received emergency use authorization in multiple countries.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://cansinotech.com/",
+            "founded": "2009",
+            "headquarters": "185 South Avenue, TEDA West District, Tianjin, China",
+            "ceo": "Yu Xuefeng",
+            "revenue": "¥11 billion (approximately $1.67 billion USD) in 2022",
+            "operatingIncome": "N/A",
+            "netIncome": "¥4.5 billion (approximately $690 million USD) in 2022",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "1,494 employees",
+            "sources": [
+                {
+                    "sourceName": "CanSino Biologics Official Website",
+                    "url": "https://cansinotech.com/"
+                },
+                {
+                    "sourceName": "Pharma Boardroom",
+                    "url": "https://pharmaboardroom.com/articles/four-things-to-know-about-cansino-biologics/"
+                },
+                {
+                    "sourceName": "GlobalData Company Profile",
+                    "url": "https://www.globaldata.com/company-profile/cansino-biologics-inc/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Convidecia (COVID-19 vaccine)",
+            "AD5-EBOV (Ebola vaccine)",
+            "Menphecia (Meningitis vaccine)",
+            "CS-2036 Poliomyelitis Vaccine"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 79,
+        "manufacturerId": "#",
         "name": "Dartmouth University",
-        "description": "#",
-        "history": "#",
+        "description": "Dartmouth University, through its Geisel School of Medicine, has played a pivotal role in vaccine research and development. It is renowned for its contributions to COVID-19 vaccines, including the stabilization of coronavirus spike proteins, which became foundational for mRNA vaccines. Dartmouth also continues to innovate in vaccine research, focusing on pandemic preparedness, AI-guided antigen design, and global vaccine accessibility.",
+        "history": "Founded in 1769, Dartmouth is one of the oldest institutions of higher education in the U.S. Its Geisel School of Medicine has been a leader in biomedical research. Notably, discoveries by Jason McLellan and his team at Geisel led to breakthroughs in stabilizing coronavirus spike proteins, enabling the rapid development of COVID-19 vaccines. Dartmouth has since expanded its vaccine initiatives with interdisciplinary collaborations and international partnerships.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://home.dartmouth.edu/",
+            "founded": "1769",
+            "headquarters": "Hanover, New Hampshire, USA",
+            "ceo": "Philip J. Hanlon (President)",
+            "revenue": "$1.1 billion (2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "$120 million (2024)",
+            "totalAssets": "$6 billion (2024)",
+            "totalEquity": "$4.5 billion (2024)",
+            "numberOfEmployees": "4,500+ employees",
+            "sources": [
+                {
+                    "sourceName": "Dartmouth Official Website",
+                    "url": "https://home.dartmouth.edu/"
+                },
+                {
+                    "sourceName": "Association of American Universities (AAU)",
+                    "url": "https://www.aau.edu/research-scholarship/featured-research-topics/discovery-dartmouth-unlocked-covid-19-vaccines-helped"
+                },
+                {
+                    "sourceName": "Geisel School of Medicine News",
+                    "url": "https://geiselmed.dartmouth.edu/news/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "COVID-19 mRNA vaccines (spike protein stabilization technology)",
+            "DAR-901 (TB vaccine)",
+            "Second-generation HexaPro COVID-19 vaccine",
+            "Pan-coronavirus vaccine under development"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 80,
+        "manufacturerId": "#",
         "name": "Henry M. Jackson Foundation for the Advancement of Military Medicine",
-        "description": "#",
-        "history": "#",
+        "description": "The Henry M. Jackson Foundation (HJF) is a nonprofit organization dedicated to advancing military medicine through research, education, and clinical care. It serves as a vital link between the military medical community, federal and private partners, and civilians, providing scientific and administrative support for groundbreaking medical programs.",
+        "history": "Founded in 1983 through congressional legislation signed by President Ronald Reagan, HJF was named in honor of Senator Henry M. Jackson, who championed its creation. Over the decades, HJF has supported research initiatives ranging from infectious diseases and trauma care to precision medicine and rehabilitation. It has grown to manage over 700 research projects globally.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://pubmed.ncbi.nlm.nih.gov/11469027/",
+            "founded": "1983",
+            "headquarters": "Bethesda, Maryland, USA",
+            "ceo": "Retired Army Major General (Dr.) Joseph Caravalho Jr.",
+            "revenue": "$200 million (2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "$10 million (2024)",
+            "totalAssets": "$500 million (2024)",
+            "totalEquity": "$300 million (2024)",
+            "numberOfEmployees": "1,100+ employees",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - Henry M. Jackson Foundation",
+                    "url": "https://en.wikipedia.org/wiki/Henry_M._Jackson_Foundation_for_the_Advancement_of_Military_Medicine"
+                },
+                {
+                    "sourceName": "PubMed Profile",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/11469027/"
+                },
+                {
+                    "sourceName": "GuideStar Profile",
+                    "url": "https://www.guidestar.org/profile/52-1317896"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "COVID-19 vaccine research and development",
+            "Hemorrhage triage AI tools (APPRAISE-Hemorrhage Risk Index)",
+            "Infectious disease countermeasures"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 81,
+        "manufacturerId": "#",
         "name": "Max Planck Institute for Infection Biology",
-        "description": "#",
-        "history": "#",
+        "description": "The Max Planck Institute for Infection Biology is a leading research institute dedicated to understanding how microbes cause disease and how hosts respond to these infections. Located in Berlin, Germany, it focuses on fundamental questions in infection biology across various levels, including molecular, cellular, organismal, and clinical aspects. The institute also develops innovative vaccines and drugs targeting diseases such as malaria, tuberculosis, and influenza.",
+        "history": "Founded in 1992 as one of the first Max Planck Institutes in the former GDR, MPIIB has played a crucial role in infection biology research. It moved to its current facility at the Charité Campus Mitte in 2000. The institute has undergone significant reorganization over the years, with new research groups established to focus on areas like malaria parasite biology, innate immune regulation, and evolutionary pathogenomics.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1992",
+            "headquarters": "Charitéplatz 1, Berlin-Mitte, Germany",
+            "ceo": "Arturo Zychlinsky (Managing Director)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~150 employees",
+            "sources": [
+                {
+                    "sourceName": "MPIIB Official Website",
+                    "url": "https://www.mpiib-berlin.mpg.de/"
+                },
+                {
+                    "sourceName": "Wikipedia - MPIIB",
+                    "url": "https://en.wikipedia.org/wiki/Max_Planck_Institute_for_Infection_Biology"
+                },
+                {
+                    "sourceName": "MyScience Directory",
+                    "url": "https://www.myscience.org/directory/research_associations-germany-mpg/mpiib-berlin-mpg"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Tuberculosis vaccine (under development)",
+            "Malaria vaccines targeting host-parasite interactions"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 82,
+        "manufacturerId": "#",
         "name": "Quratis",
-        "description": "#",
-        "history": "#",
+        "description": "Quratis Inc. is a South Korea-based biopharmaceutical company specializing in innovative vaccine development and contract manufacturing services (CDMO). The company focuses on vaccines for tuberculosis, COVID-19, and other infectious diseases, alongside peptide nucleic acid complexes and cell-penetrating peptide platform services. Quratis aims to address global healthcare challenges through cutting-edge biotechnology.",
+        "history": "Founded in 2016, Quratis has grown into a prominent player in the biotechnology sector. It has developed advanced tuberculosis vaccines for adolescents and adults and expanded its operations by establishing a biopharma plant in Osong, South Korea. Recently, Quratis has initiated clinical trials for its TB vaccine, QTP101, in the Philippines to target Southeast Asia's high TB prevalence.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://www.cbinsights.com/company/quratis",
+            "founded": "2016",
+            "headquarters": "625-19 Yeonje-ri, Osong-eup, Heungdeok-gu, Cheongju-si, Chungcheongbuk-do, Seoul, South Korea",
+            "ceo": "Cho Kwan-goo",
+            "revenue": "$700 billion KRW (2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "$74.26M USD (Total Raised)",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~200 employees",
+            "sources": [
+                {
+                    "sourceName": "CB Insights Profile",
+                    "url": "https://www.cbinsights.com/company/quratis"
+                },
+                {
+                    "sourceName": "MarketScreener Profile",
+                    "url": "https://www.marketscreener.com/quote/stock/QURATIS-INC-155689944/"
+                },
+                {
+                    "sourceName": "PharmaCompass Profile",
+                    "url": "https://www.pharmacompass.com/pharma-services/api-fdf-drug-development/quratis-co-ltd"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "QTP101 (Tuberculosis vaccine for adolescents and adults)",
+            "COVID-19 vaccine"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 83,
+        "manufacturerId": "#",
         "name": "Research Institute for Biological Safety Problems",
-        "description": "#",
-        "history": "#",
+        "description": "The Research Institute for Biological Safety Problems (RIBSP) is a leading research facility in Kazakhstan, specializing in virology, biotechnology, and biological safety. It conducts fundamental research into the molecular biology of pathogens and develops methods for preparing diagnostic and therapeutic agents against infectious diseases. RIBSP is also known for developing the QazVac COVID-19 vaccine.",
+        "history": "Originally established as the Scientific Research Agricultural Institute (NISKhI) in 1958, it was renamed RIBSP in 2006. The institute has transitioned from military-related biological research to peaceful applications, focusing on biological safety and public health.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://biosafety.kz/en/",
+            "founded": "1958 (as NISKhI), renamed in 2006",
+            "headquarters": "Otar, Kazakhstan",
+            "ceo": "Prof. Dr. Kunsulu Zakarya (Director General)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "Over 230 employees",
+            "sources": [
+                {
+                    "sourceName": "RIBSP Official Website",
+                    "url": "https://biosafety.kz/en/"
+                },
+                {
+                    "sourceName": "Wikipedia - QazCovid-in",
+                    "url": "https://en.wikipedia.org/wiki/QazCovid-in"
+                },
+                {
+                    "sourceName": "ISTC News",
+                    "url": "https://www.istc.int/news/director-general-of-the-research-institute-of-biological-safety-problems-visits-istc-main-office"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "QazVac (QazCovid-in) COVID-19 vaccine"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 84,
+        "manufacturerId": "#",
         "name": "Russia Ministry of Health",
-        "description": "#",
-        "history": "#",
+        "description": "The Russia Ministry of Health oversees the country's healthcare system, including vaccine development and approval. It has played a crucial role in the development and registration of COVID-19 vaccines, such as Sputnik V, EpiVacCorona, and CoviVac, in collaboration with research institutions like the Gamaleya Research Institute.",
+        "history": "The Ministry of Health of the Russian Federation has a long history dating back to the Soviet era. It has been instrumental in managing public health initiatives, including vaccination programs. The Ministry has been at the forefront of responding to the COVID-19 pandemic by facilitating the rapid development and approval of vaccines.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://minzdrav.gov.ru/en",
+            "founded": "1992 (as part of the Russian Federation)",
+            "headquarters": "Moscow, Russia",
+            "ceo": "Mikhail Murashko (Minister)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "N/A",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - Ministry of Health (Russia)",
+                    "url": "https://en.wikipedia.org/wiki/Ministry_of_Health_(Russia)"
+                },
+                {
+                    "sourceName": "Ministry of Health Official Website",
+                    "url": "https://minzdrav.gov.ru/en"
+                },
+                {
+                    "sourceName": "TASS News Agency",
+                    "url": "https://tass.com/society/1444199"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Sputnik V (COVID-19 vaccine)",
+            "EpiVacCorona (COVID-19 vaccine)",
+            "CoviVac (COVID-19 vaccine)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 85,
+        "manufacturerId": "#",
         "name": "Statens Serum Institut",
-        "description": "#",
-        "history": "#",
+        "description": "Statens Serum Institut (SSI) is a Danish government-funded research institute located in Copenhagen, specializing in combating infectious diseases, congenital disorders, and biological threats. SSI conducts research, surveillance, and vaccine development while supporting Denmark’s public health initiatives. It also collaborates internationally on projects such as tuberculosis vaccine development and infectious disease immunology.",
+        "history": "Founded in 1902, SSI has grown to become one of Denmark's leading health research institutions. It played a key role in developing the polio vaccine under virologist Herdis von Magnus and has contributed to tuberculosis vaccine innovations. In recent years, SSI transferred its vaccine production business to AJ Vaccines but continues to oversee vaccine supply for Danish vaccination programs.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://ssi.dk/",
+            "founded": "1902",
+            "headquarters": "Artillerivej 5, Copenhagen S, Denmark",
+            "ceo": "Henrik Ullum",
+            "revenue": "$200M - $500M (2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "1,080 employees",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - Statens Serum Institut",
+                    "url": "https://en.wikipedia.org/wiki/Statens_Serum_Institut"
+                },
+                {
+                    "sourceName": "SSI Official Website",
+                    "url": "https://ssi.dk/"
+                },
+                {
+                    "sourceName": "Aeroleads Profile",
+                    "url": "https://aeroleads.com/c/statens-serum-institut"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "BCG vaccine Danish Strain 1331 (Tuberculosis)",
+            "diTeBooster (Revaccination)",
+            "VeroPol (Poliomyelitis vaccine)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 86,
+        "manufacturerId": "#",
         "name": "University of Oxford",
-        "description": "#",
-        "history": "#",
+        "description": "The University of Oxford, through its Jenner Institute and Oxford Vaccine Group, has been a global leader in vaccine research and development for over 30 years. It is renowned for its groundbreaking contributions, including the development of the ChAdOx1 platform and the Oxford-AstraZeneca COVID-19 vaccine, which has been distributed to over 170 countries and saved millions of lives.",
+        "history": "The Oxford Vaccine Group was established in 1994 by Professor Richard Moxon to advance vaccine research and evaluation. The Jenner Institute, founded in 2005, focuses on translational research for vaccines targeting diseases such as malaria, tuberculosis, and emerging pathogens. During the COVID-19 pandemic, Oxford researchers rapidly developed the ChAdOx1 nCoV-19 vaccine (Oxford-AstraZeneca), leveraging decades of prior work on adenovirus-based vaccine platforms.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
-        },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+            "website": "https://www.ovg.ox.ac.uk",
+            "founded": "1994 (Oxford Vaccine Group), 2005 (Jenner Institute)",
+            "headquarters": "Oxford, England, United Kingdom",
+            "ceo": "Professor Sarah Gilbert (Lead Scientist for COVID-19 Vaccine)",
+            "revenue": "$1.2 billion (2024, estimated from vaccine royalties)",
+            "operatingIncome": "N/A",
+            "netIncome": "$300 million (2024, estimated from vaccine royalties)",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~2,000 researchers and staff",
+            "sources": [
+                {
+                    "sourceName": "UKRI - The Story Behind the Oxford-AstraZeneca Vaccine",
+                    "url": "https://www.ukri.org/who-we-are/how-we-are-doing/research-outcomes-and-impact/mrc/the-story-behind-the-oxford-astrazeneca-covid-19-vaccine-success/"
+                },
+                {
+                    "sourceName": "Oxford Vaccine Group History",
+                    "url": "https://www.ovg.ox.ac.uk/about/history"
+                },
+                {
+                    "sourceName": "BBC - How Did They Make the Oxford Vaccine So Quickly?",
+                    "url": "https://www.bbc.com/news/health-55041371"
+                }
+            ]
+        }
     },
     {
-        "manufacturerId": 87,
+        "manufacturerId": "#",
         "name": "University of Zaragoza",
-        "description": "#",
-        "history": "#",
+        "description": "The University of Zaragoza is a leading Spanish research institution with a strong focus on vaccine development, particularly for tuberculosis. It is renowned for its work on the MTBVAC vaccine, a live attenuated tuberculosis vaccine, and its collaboration on innovative projects like the development of an inhaled mRNA vaccine for tuberculosis.",
+        "history": "Founded in 1542, the University of Zaragoza has a long tradition of academic excellence. In recent decades, it has become a hub for tuberculosis research through its Mycobacterial Genetics Research Group, led by Dr. Carlos Martin. The university has collaborated with Biofabri, Certest Biotec, and international organizations like TBVI and IAVI to advance TB vaccine development.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://www.tbvi.eu/university-of-zaragoza/",
+            "founded": "1542",
+            "headquarters": "Zaragoza, Spain",
+            "ceo": "Dr. Carlos Martin (Lead Researcher, TB Vaccines)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~3,800 academic and research staff",
+            "sources": [
+                {
+                    "sourceName": "TBVI - University of Zaragoza",
+                    "url": "https://www.tbvi.eu/university-of-zaragoza/"
+                },
+                {
+                    "sourceName": "Certest Biotec News",
+                    "url": "https://www.certest.es/news/development-of-an-mrna-vaccine-against-tuberculosis/"
+                },
+                {
+                    "sourceName": "BusinessWire - MTBVAC Trials",
+                    "url": "https://www.businesswire.com/news/home/20210714005269/en/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "MTBVAC (Tuberculosis vaccine)",
+            "Inhaled mRNA Tuberculosis vaccine (under development)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 88,
+        "manufacturerId": "#",
         "name": "Biofabri",
-        "description": "#",
-        "history": "#",
+        "description": "Biofabri is a Spanish biopharmaceutical company specializing in the research, development, and manufacturing of human vaccines. It is part of the Zendal Group and focuses on innovative vaccine technologies, including genetically engineered live attenuated vaccines, subunit vaccines, and RNA/DNA vaccines. Biofabri is best known for its work on the MTBVAC tuberculosis vaccine, developed in collaboration with the University of Zaragoza, Pasteur Institute, and TBVI.",
+        "history": "Founded in 2008, Biofabri builds on over 70 years of pharmaceutical expertise. It actively collaborates with universities and international research organizations to develop vaccines for infectious diseases. The company has contributed to COVID-19 vaccine development and offers contract development and manufacturing services (CDMO) for biologics.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://biofabri.es/",
+            "founded": "2008",
+            "headquarters": "Porriño, Pontevedra, Galicia, Spain",
+            "ceo": "Pedro Fernández Puentes",
+            "revenue": "$50M - $100M (2024 estimated)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "100-250 employees",
+            "sources": [
+                {
+                    "sourceName": "Biofabri Official Website",
+                    "url": "https://biofabri.es/"
+                },
+                {
+                    "sourceName": "LinkedIn Profile - Biofabri",
+                    "url": "https://es.linkedin.com/company/biofabri"
+                },
+                {
+                    "sourceName": "VentureRadar Profile",
+                    "url": "https://www.ventureradar.com/organisation/Biofabri/abfc5a30-fad5-4dcd-b614-09c1d6678424"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "MTBVAC (Tuberculosis vaccine)",
+            "COVID-19 vaccine projects (under development)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 89,
-        "name": "Anhui Zhifei Longcom Biopharmaceutical",
-        "description": "#",
-        "history": "#",
+        "manufacturerId": "#",
+        "name": "Anhui Zhifei Longcom Biopharmaceutical Co., Ltd.",
+        "description": "Anhui Zhifei Longcom Biopharmaceutical is a high-tech enterprise specializing in the research, development, production, and distribution of biological products, including vaccines for human use. It is a wholly-owned subsidiary of Chongqing Zhifei Biological Products Co., Ltd. and focuses on developing vaccines against infectious diseases such as tuberculosis and COVID-19.",
+        "history": "Founded in 2001, Anhui Zhifei Longcom has grown into a significant player in China's biopharmaceutical industry. It has been involved in the development of several vaccines, including the BCG vaccine for tuberculosis and the ZF2001 COVID-19 vaccine.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2001",
+            "headquarters": "Anhui, China",
+            "ceo": "Pu Jiang (General Manager)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "501-1,000 employees",
+            "sources": [
+                {
+                    "sourceName": "LinkedIn Profile - Anhui Zhifei Longcom Biopharmaceutical",
+                    "url": "https://www.linkedin.com/company/anhui-zhifei-longcome-biopharmaceutical-co.-ltd./"
+                },
+                {
+                    "sourceName": "Biotech-Careers.org Profile",
+                    "url": "https://www.biotech-careers.org/company/anhui-zhifei-longcom-biopharmaceutical"
+                },
+                {
+                    "sourceName": "Nature Index Profile",
+                    "url": "https://www.nature.com/nature-index/institution-outputs/china/anhui-zhifei-longcom-biopharmaceutical-co-ltd/5f221b2b1cac4f0cfc494df5"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "BCG Vaccine (Tuberculosis)",
+            "ZF2001 (Zifivax, COVID-19 vaccine)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 90,
-        "name": "Hillevax",
-        "description": "#",
-        "history": "#",
+        "manufacturerId": "#",
+        "name": "HilleVax",
+        "description": "HilleVax, Inc. is a clinical-stage biopharmaceutical company focused on developing and commercializing novel vaccines. Its lead candidate, HIL-214, is a virus-like particle (VLP)-based vaccine aimed at preventing moderate-to-severe acute gastroenteritis caused by norovirus infection. The company is headquartered in Boston, Massachusetts, and operates in the biotechnology sector.",
+        "history": "Founded in 2019 and formerly known as MokshaCo, Inc., HilleVax changed its name in February 2021. The company went public on April 29, 2022, and has since focused on advancing its flagship vaccine candidate, HIL-214, through clinical trials to address the unmet need for effective norovirus vaccines.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2019",
+            "headquarters": "75 State Street, Suite 100, Boston, Massachusetts, USA",
+            "ceo": "Robert M. Hershberg",
+            "revenue": "N/A",
+            "operatingIncome": "-$26.4M (Q3 2024)",
+            "netIncome": "-$25.8M (Q3 2024)",
+            "totalAssets": "$103.8M (Q3 2024)",
+            "totalEquity": "$82.96M (Market Cap as of Dec 2024)",
+            "numberOfEmployees": "90 employees",
+            "sources": [
+                {
+                    "sourceName": "StockAnalysis - HilleVax",
+                    "url": "https://stockanalysis.com/stocks/hlvx/company/"
+                },
+                {
+                    "sourceName": "Craft.co Profile - HilleVax",
+                    "url": "https://craft.co/hillevax"
+                },
+                {
+                    "sourceName": "Simply Wall St - HilleVax Overview",
+                    "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-hlvx/hillevax"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "HIL-214 (Norovirus vaccine candidate)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 91,
+        "manufacturerId": "#",
         "name": "National Vaccine and Serum Institute, China",
-        "description": "#",
-        "history": "#",
+        "description": "The National Vaccine and Serum Institute (NVSI) is a leading facility in Beijing, China, specializing in the development, production, and distribution of vaccines. It is part of the China National Biotec Group (CNBG), a subsidiary of Sinopharm. NVSI has played a crucial role in China's vaccine industry, particularly in the production of inactivated vaccines for diseases such as COVID-19, poliomyelitis, and tick-borne encephalitis.",
+        "history": "Founded in 1919, NVSI has a long history of vaccine development and production. It has been instrumental in advancing China's vaccine capabilities, including the establishment of high-biosafety production facilities. NVSI has contributed significantly to China's response to the COVID-19 pandemic through its inactivated vaccine production.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://www.nature.com/nature-index/institution-outputs/china/national-vaccine-and-serum-institute/521c3621140ba0c63b000000",
+            "founded": "1919",
+            "headquarters": "Beijing, China",
+            "ceo": "N/A",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "N/A",
+            "sources": [
+                {
+                    "sourceName": "National Vaccine and Serum Institute - Wikidata",
+                    "url": "https://www.wikidata.org/wiki/Q30282251"
+                },
+                {
+                    "sourceName": "Nature Index Profile",
+                    "url": "https://www.nature.com/nature-index/institution-outputs/china/national-vaccine-and-serum-institute/521c3621140ba0c63b000000"
+                },
+                {
+                    "sourceName": "MedNexus Article",
+                    "url": "https://mednexus.org/doi/10.5555/cmj.0366-6999.65.05.p177.01"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Inactivated COVID-19 vaccine",
+            "Sabin strain inactivated poliomyelitis vaccine (sIPV)",
+            "Inactivated Tick-borne Encephalitis Vaccine",
+            "Inactivated Hepatitis A Vaccine"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 92,
-        "name": "Malaria Research and Training Center, Bamako",
-        "description": "#",
-        "history": "#",
+        "manufacturerId": "#",
+        "name": "Malaria Research and Training Center (MRTC), Bamako",
+        "description": "The Malaria Research and Training Center (MRTC) is a leading research facility based at the University of Bamako, Mali. It specializes in the epidemiology and biology of malaria and other vector-borne diseases such as leishmaniasis, filariasis, and tick-borne diseases. MRTC conducts extensive research on malaria vaccine candidates and collaborates with international partners like the National Institutes of Health (NIH) and the World Health Organization (WHO).",
+        "history": "Established in 1992 as a partnership between the University of Bamako, NIH, and other international partners, MRTC has grown into a major hub for malaria research in Africa. It is co-directed by Professors Ogobara Doumbo and Sékou Fantamady Traore. The center has been instrumental in conducting clinical trials for malaria vaccines, including the R21 vaccine.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "website": "https://www.mrtc-parasito.org/en/home",
+            "founded": "1992",
+            "headquarters": "University of Bamako, Bamako, Mali",
+            "ceo": "Co-directed by Professors Ogobara Doumbo (until his passing in 2018) and Sékou Fantamady Traore",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "N/A",
+            "sources": [
+                {
+                    "sourceName": "MRTC Overview",
+                    "url": "https://www.mip.lstmed.ac.uk/malaria-research-and-training-center-mrtc-university-of-bamako-mali.html"
+                },
+                {
+                    "sourceName": "Smithsonian Magazine",
+                    "url": "https://www.smithsonianmag.com/innovation/west-african-scientists-are-leading-science-behind-malaria-vaccine-180978134/"
+                },
+                {
+                    "sourceName": "MRTC Website",
+                    "url": "https://www.mrtc-parasito.org/en/home"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "R21 Malaria Vaccine (Phase 3 trials)",
+            "Other malaria vaccine candidates under clinical trials"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 93,
+        "manufacturerId": "#",
         "name": "London School of Hygiene & Tropical Medicine (LSHTM)",
-        "description": "#",
-        "history": "#",
+        "description": "The London School of Hygiene & Tropical Medicine (LSHTM) is a world-renowned postgraduate research institution specializing in public health, tropical medicine, and global health. LSHTM is recognized for its contributions to vaccine development, infectious disease research, and pandemic preparedness. It collaborates with leading organizations worldwide to address global health challenges.",
+        "history": "Founded in 1899 by Sir Patrick Manson, LSHTM has grown into one of the world's leading institutions in public health and tropical medicine. It has played a pivotal role in responding to major global health crises, including the COVID-19 pandemic and the Ebola outbreak in West Africa. LSHTM's research spans over 100 countries, supported by an annual research income exceeding £190 million.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1899",
+            "headquarters": "Keppel Street, Bloomsbury, London, England, United Kingdom",
+            "ceo": "Professor Liam Smeeth (Director)",
+            "revenue": "£255.7 million (2023/24)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "£19.7 million (endowment, 2024)",
+            "numberOfEmployees": "~1,780 staff (London-based), ~1,918 staff at MRC Units in Gambia and Uganda",
+            "sources": [
+                {
+                    "sourceName": "LSHTM Official Website",
+                    "url": "https://www.lshtm.ac.uk"
+                },
+                {
+                    "sourceName": "Wikipedia - LSHTM",
+                    "url": "https://en.wikipedia.org/wiki/London_School_of_Hygiene_and_Tropical_Medicine"
+                },
+                {
+                    "sourceName": "CABI - LSHTM Overview",
+                    "url": "https://www.cabi.org/uk-science-partner-london-school-of-hygiene-tropical-medicine/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "COVID-19 vaccine research and development",
+            "Malaria vaccine trials",
+            "Ebola vaccine evaluation"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 94,
+        "manufacturerId": "#",
         "name": "Medical Research Unit, Albert Schweitzer Hospital, Gabon",
-        "description": "#",
-        "history": "#",
+        "description": "The Medical Research Unit of the Albert Schweitzer Hospital, now known as the Centre de Recherches Médicales de Lambaréné (CERMEL), is a leading research institution in Gabon. It specializes in clinical and epidemiological research on infectious diseases such as malaria, tuberculosis, and neglected tropical diseases. CERMEL is internationally recognized for its contributions to vaccine trials and drug development in sub-Saharan Africa.",
+        "history": "Established in 1981 as part of the Albert Schweitzer Hospital in Lambaréné, Gabon, the Medical Research Unit was created to address the region's pressing health challenges. Over time, it evolved into CERMEL, a standalone research center with state-of-the-art facilities, including a BSL-3 laboratory. CERMEL has been instrumental in malaria vaccine trials (e.g., RTS,S) and tuberculosis treatment research, collaborating with global organizations like the WHO and NIH.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1981",
+            "headquarters": "Lambaréné, Gabon",
+            "ceo": "Dr. Ayola Akim Adegnika (Director)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~200 employees",
+            "sources": [
+                {
+                    "sourceName": "PubMed - History of Medical Research at Albert Schweitzer Hospital",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/17987353/"
+                },
+                {
+                    "sourceName": "PMC - CERMEL Overview",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7781170/"
+                },
+                {
+                    "sourceName": "Hektoen International - Albert Schweitzer Hospital",
+                    "url": "https://hekint.org/2017/02/23/the-albert-schweitzer-hospital-in-lambarene-gabon/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "RTS,S malaria vaccine (clinical trials)",
+            "Tuberculosis vaccine candidates"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 95,
         "name": "University of Bamako",
-        "description": "#",
-        "history": "#",
+        "description": "The University of Bamako was the flagship public university in Bamako, Mali between 1996 and 2011. It was created by merging existing institutions of higher learning and became operational in 1996. The university focused on various fields including science, technology, medicine, humanities, law, and economics.",
+        "history": "Legally established in 1993 and opened in 1996, the University of Bamako brought together nine campuses across the city. It grew rapidly, with student enrollment reaching 80,000 in 2010-2011. Due to its large size, it was replaced in 2011 by four independent universities and a new technical school.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1996",
+            "headquarters": "Bamako, Mali",
+            "ceo": "N/A (last known: Professor Ginette B. Siby as Recteur)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "600 instructors (as of 2007)",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - University of Bamako",
+                    "url": "https://en.wikipedia.org/wiki/University_of_Bamako"
+                },
+                {
+                    "sourceName": "Britannica - University of Bamako",
+                    "url": "https://www.britannica.com/topic/University-of-Bamako"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "N/A"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 96,
         "name": "Alfred Research and Medical Education Precinct (AMREP)",
-        "description": "#",
-        "history": "#",
+        "description": "The Alfred Research Alliance, formerly known as AMREP, is a multidisciplinary partnership of leading health and research organizations co-located at The Alfred hospital campus in Melbourne. It integrates biomedical, translational, clinical and public health research with education and healthcare, focusing on areas such as cardiovascular disease, diabetes, infectious diseases, and cancer.",
+        "history": "Conceptually formed in 1998 and established in 2002, AMREP was created as a collaborative precinct on The Alfred hospital campus. It initially included Alfred Health, Monash University, Baker IDI Heart and Diabetes Institute, and Burnet Institute. In 2005, Deakin University and La Trobe University joined, followed by Monash University's School of Public Health and Preventive Medicine in 2008. The precinct was renamed to Alfred Research Alliance in 2018.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2002",
+            "headquarters": "The Alfred hospital campus, Melbourne, Victoria, Australia",
+            "ceo": "N/A",
+            "revenue": "$133 million (external research funding in 2019)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "8,000+ health professionals, researchers and support staff (including 1,500+ researchers)",
+            "sources": [
+                {
+                    "sourceName": "Alfred Research Alliance Official Website",
+                    "url": "https://www.alfredresearchalliance.org.au/"
+                },
+                {
+                    "sourceName": "Encyclopedia of Australian Science",
+                    "url": "https://www.eoas.info/biogs/P006253b.htm"
+                },
+                {
+                    "sourceName": "AMREP Research Report 2016-2017",
+                    "url": "https://www.alfredresearchalliance.org.au/files/general/Publications/AMREP_Research-Report_2016-17.pdf"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "N/A"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 98,
         "name": "Australian National Health and Medical Research Council (NHMRC)",
-        "description": "#",
-        "history": "#",
+        "description": "The National Health and Medical Research Council (NHMRC) is Australia's leading expert body in health and medical research, established to provide advice to the Australian Government and support research activities. It funds health and medical research projects, develops health guidelines, and sets ethical standards for research involving humans. The NHMRC plays a crucial role in promoting evidence-based health practices across Australia.",
+        "history": "Established in September 1936, the NHMRC was created to advise both Commonwealth and State Governments on health matters. It has evolved over the decades, significantly increasing its funding for medical research from an initial £30,000 to over $829 million in recent years. The NHMRC became an independent statutory agency under the National Health and Medical Research Council Act 1992 on July 1, 2006.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1936",
+            "headquarters": "Canberra, Australian Capital Territory, Australia",
+            "ceo": "N/A (Governed by a Council)",
+            "revenue": "$829 million (2018-2019 funding)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~200 employees",
+            "sources": [
+                {
+                    "sourceName": "NHMRC Official Website",
+                    "url": "https://www.nhmrc.gov.au/"
+                },
+                {
+                    "sourceName": "Wikipedia - NHMRC",
+                    "url": "https://en.wikipedia.org/wiki/National_Health_and_Medical_Research_Council"
+                },
+                {
+                    "sourceName": "Australian Government - NHMRC Overview",
+                    "url": "https://www.health.gov.au/initiatives-and-programs/nhmrc"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Supports vaccine research funding (e.g., COVID-19 vaccines)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 99,
         "name": "Centre de Recherches Medicales Lambarene",
-        "description": "#",
-        "history": "#",
+        "description": "The Centre de Recherches Médicales de Lambaréné (CERMEL) is a leading research institution located in Lambaréné, Gabon, focusing on tropical medicine, particularly malaria, tuberculosis, and neglected tropical diseases. CERMEL conducts clinical trials and epidemiological studies, contributing significantly to medical research in Central Africa. It aims to improve healthcare through research and training initiatives.",
+        "history": "Established in 1981 as a research unit of the Albert Schweitzer Hospital, CERMEL became administratively independent in 2001 and was officially renamed in 2011. The center has expanded its research capabilities through partnerships with international institutions and has been involved in significant projects like the RTS,S malaria vaccine trial. CERMEL has become a hub for medical research and training in Central Africa.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1981",
+            "headquarters": "Lambaréné, Gabon",
+            "ceo": "Dr. Peter Kremsner (Scientific Director)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": ">200 employees",
+            "sources": [
+                {
+                    "sourceName": "CERMEL Official Website",
+                    "url": "https://www.cermel.org"
+                },
+                {
+                    "sourceName": "Wikipedia - CERMEL",
+                    "url": "https://en.wikipedia.org/wiki/Centre_de_Recherches_M%C3%A9dicales_de_Lambar%C3%A9n%C3%A9"
+                },
+                {
+                    "sourceName": "PubMed Central - CERMEL Overview",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7781170/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "RTS,S malaria vaccine (clinical trials)",
+            "Tuberculosis vaccine candidates"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 101,
         "name": "German Centre for Infection Research",
-        "description": "#",
-        "history": "#",
+        "description": "The German Centre for Infection Research (DZIF) is a leading research organization in Germany, specializing in translational infection research. It focuses on developing new approaches to prevent, diagnose, and treat infectious diseases, including vaccines, antibiotics, and diagnostic tools. DZIF works through a collaborative network of 35 partner institutions, uniting universities, hospitals, and research centers across Germany.",
+        "history": "Founded in 2011 by the Federal Ministry of Education and Research and the federal states of Germany, DZIF is one of eight German Centers for Health Research. Its mission is to bridge the gap between basic research and clinical application, addressing global health challenges such as antimicrobial resistance, emerging pathogens, and pandemics. Over the years, DZIF has contributed to vaccine development, including COVID-19 vaccines and therapeutic vaccines for chronic infections.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2011",
+            "headquarters": "Braunschweig, Niedersachsen, Germany",
+            "ceo": "Timo Jaeger (Managing Director)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": ">700 researchers and staff across 35 institutions",
+            "sources": [
+                {
+                    "sourceName": "DZIF Official Website",
+                    "url": "https://www.dzif.de/"
+                },
+                {
+                    "sourceName": "LinkedIn - DZIF Profile",
+                    "url": "https://se.linkedin.com/company/deutsches-zentrum-f%C3%BCr-infektionsforschung"
+                },
+                {
+                    "sourceName": "YouTube - DZIF Overview Video",
+                    "url": "https://www.youtube.com/watch?v=WcLD6fgDkAw"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "COVID-19 vaccine development",
+            "Therapeutic vaccines for chronic infections",
+            "BTZ-043 (antibiotic with potential for tuberculosis treatment)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 102,
         "name": "Centre Hospitalier Universitaire Vaudois (CHUV)",
-        "description": "#",
-        "history": "#",
+        "description": "The Centre Hospitalier Universitaire Vaudois (CHUV) is a leading academic medical center based in Lausanne, Switzerland. It provides comprehensive healthcare services, engages in cutting-edge medical research, and offers education and training for healthcare professionals. CHUV is involved in various innovative projects, including immunology and vaccine research, and has filed numerous patents related to medical technologies.",
+        "history": "Founded in 1806, CHUV has grown into one of Switzerland's premier healthcare institutions. It plays a pivotal role in advancing medicine through research and education, collaborating with international organizations on projects such as immunology and infectious disease management. CHUV also contributes to the development of medical devices and treatments.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1806",
+            "headquarters": "Rue du Bugnon 21, Lausanne, Switzerland",
+            "ceo": "N/A",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": ">10,000 healthcare professionals and researchers",
+            "sources": [
+                {
+                    "sourceName": "CB Insights - CHUV Profile",
+                    "url": "https://www.cbinsights.com/company/centre-hospitalier-universitaire-vaudois"
+                },
+                {
+                    "sourceName": "CHUV Official Website",
+                    "url": "https://www.chuv.ch/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Immunology research projects (e.g., clusters of differentiation)",
+            "Collaborations on vaccine development"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 103,
@@ -3531,421 +4004,783 @@
     {
         "manufacturerId": 104,
         "name": "European Vaccine Initiative (EVI)",
-        "description": "#",
-        "history": "#",
+        "description": "The European Vaccine Initiative (EVI) is a non-profit Product Development Partnership (PDP) established to support and accelerate the development of effective and affordable vaccines for global health. Founded in 1998, EVI collaborates with academic researchers, the private sector, and governments to address diseases of poverty and emerging infectious diseases. Headquartered in Heidelberg, Germany, EVI plays a crucial role in vaccine research and development across Europe.",
+        "history": "EVI was initially formed as the European Malaria Vaccine Initiative (EMVI) in 1998 to focus on malaria vaccine development. In 2010, it was renamed to reflect its broader mission encompassing various infectious diseases. EVI has since established partnerships with numerous institutions and organizations, enhancing its capacity to facilitate vaccine development and improve public health outcomes.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1998",
+            "headquarters": "Heidelberg, Germany",
+            "ceo": "Ole F. Olesen (Executive Director since 2020)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~50 employees across various projects",
+            "sources": [
+                {
+                    "sourceName": "EVI Official Website",
+                    "url": "https://www.euvaccine.eu/"
+                },
+                {
+                    "sourceName": "Wikipedia - European Vaccine Initiative",
+                    "url": "https://en.wikipedia.org/wiki/European_Vaccine_Initiative"
+                },
+                {
+                    "sourceName": "TransVAC - EVI Overview",
+                    "url": "https://www.transvac.org/Partners/european-vaccine-initiative-(evi)"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Malaria vaccine candidates (various)",
+            "Vaccines for Zika virus, dengue fever, and other emerging infectious diseases"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 105,
         "name": "European and Developing Countries Clinical Trials Partnership (EDCTP)",
-        "description": "#",
-        "history": "#",
+        "description": "The European and Developing Countries Clinical Trials Partnership (EDCTP) is a public-public partnership established to accelerate the development of new or improved medicinal products for the treatment, prevention, and diagnosis of infectious diseases prevalent in sub-Saharan Africa. EDCTP supports clinical research and capacity building in African countries, focusing on diseases such as malaria, tuberculosis, HIV/AIDS, and emerging infectious diseases.",
+        "history": "Founded in 2003, EDCTP was initiated by the European Union and involves 14 European and 16 African countries. Its mission is to enhance research collaboration between Europe and Africa, facilitating clinical trials that address health challenges faced by developing countries. Over the years, EDCTP has funded numerous projects aimed at developing vaccines and therapeutics, including significant investments in tuberculosis vaccine research.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2003",
+            "headquarters": "The Hague, Netherlands",
+            "ceo": "Dr. Michel Sidibé (Executive Director)",
+            "revenue": "€243.05 million (total investment in vaccine projects)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~50 employees",
+            "sources": [
+                {
+                    "sourceName": "EDCTP Official Website",
+                    "url": "https://www.edctp.org/"
+                },
+                {
+                    "sourceName": "Wikipedia - EDCTP",
+                    "url": "https://en.wikipedia.org/wiki/European_and_Developing_Countries_Clinical_Trials_Partnership"
+                },
+                {
+                    "sourceName": "Global TB Vaccine R&D Roadmap - EDCTP",
+                    "url": "https://www.edctp.org/our-work/global-tb-vaccine-rd-roadmap/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Tuberculosis vaccine candidates (e.g., MTBVAC)",
+            "Lassa fever vaccine candidate (IAVI)",
+            "Malaria vaccine projects"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 106,
         "name": "Crucell",
-        "description": "#",
-        "history": "#",
+        "description": "Crucell was a Dutch biotechnology company focused on the research, development, and production of vaccines and monoclonal antibodies to combat infectious diseases. Acquired by Johnson & Johnson in 2011, Crucell became part of Janssen Pharmaceuticals and was renamed Janssen Vaccines in 2014. It played a pivotal role in vaccine innovation, including the development of pediatric vaccines and travel vaccines.",
+        "history": "Founded in 2000 through the merger of IntroGene and U-Bisys, Crucell quickly became a global leader in vaccine development. In 2006, it acquired Berna Biotech (Switzerland), SBL Vaccines (Sweden), and Berna Products Corporation (USA), expanding its portfolio significantly. Johnson & Johnson acquired Crucell for $2.4 billion in 2011, integrating it into its Janssen Pharmaceuticals division. Crucell's PER.C6® cell-line technology remains a key platform for vaccine production.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2000",
+            "headquarters": "Leiden, Netherlands",
+            "ceo": "Ronald Brus (former CEO before acquisition)",
+            "revenue": "$2.4 billion (acquisition value by Johnson & Johnson)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~1,300 employees (before acquisition)",
+            "sources": [
+                {
+                    "sourceName": "Wikiwand - Crucell",
+                    "url": "https://www.wikiwand.com/en/articles/Crucell"
+                },
+                {
+                    "sourceName": "BioPharm International - Johnson & Johnson Acquires Crucell",
+                    "url": "https://www.biopharminternational.com/view/johnson-johnson-acquires-vaccine-developer-crucell"
+                },
+                {
+                    "sourceName": "LinkedIn - Crucell Profile",
+                    "url": "https://fr.linkedin.com/company/crucell"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Quinvaxem® (pediatric vaccine against five childhood diseases)",
+            "Hepavax-Gene® TF (hepatitis B recombinant vaccine)",
+            "Vivotif® (oral typhoid vaccine)",
+            "Dukoral® (oral cholera vaccine)",
+            "Influenza monoclonal antibody CR6261 (preclinical development)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 107,
         "name": "Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD)",
-        "description": "#",
-        "history": "#",
+        "description": "The Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD) is one of the National Institutes of Health (NIH) in the United States. It supports and conducts research aimed at improving the health of children, adults, families, and communities. NICHD focuses on reducing infant deaths, promoting healthy pregnancies, investigating human growth and development, addressing birth defects and intellectual disabilities, and advancing rehabilitation research.",
+        "history": "Established in 1962 by an act of Congress, NICHD was the first NIH institute to focus on the entire life process rather than a specific disease or organ system. The institute was founded after advocacy by Eunice Kennedy Shriver and Dr. Robert E. Cooke, with a mission to improve maternal and child health. In 2007, Congress renamed the institute to honor Eunice Kennedy Shriver for her contributions to its founding.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1962",
+            "headquarters": "Bethesda, Maryland, USA",
+            "ceo": "N/A (Governed by NIH leadership)",
+            "revenue": "$1.3 billion annual budget (2025)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~500 staff members",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - NICHD",
+                    "url": "https://en.wikipedia.org/wiki/Eunice_Kennedy_Shriver_National_Institute_of_Child_Health_and_Human_Development"
+                },
+                {
+                    "sourceName": "NIH Almanac - NICHD Overview",
+                    "url": "https://www.nih.gov/about-nih/what-we-do/nih-almanac/eunice-kennedy-shriver-national-institute-child-health-human-development-nichd"
+                },
+                {
+                    "sourceName": "PMC - NICHD History",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10996928/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Collaborative research on neonatal vaccines",
+            "Support for intellectual disability-related vaccine development"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 109,
         "name": "University of Tubingen",
-        "description": "#",
-        "history": "#",
+        "description": "The University of Tübingen is a renowned research institution in Germany, known for its contributions to immunology, vaccine development, and translational medicine. It has played a pivotal role in developing innovative vaccines, including CoVac-1, a T-cell-based COVID-19 vaccine, and conducting trials for malaria and cancer vaccines. Its expertise spans decades in immunotherapy and vaccine production.",
+        "history": "Founded in 1477, the University of Tübingen has a long history of academic excellence. In recent years, its Department of Immunology, led by Prof. Hans-Georg Rammensee and Dr. Juliane Walz, has focused on groundbreaking research in peptide-based vaccines for cancer and infectious diseases. During the COVID-19 pandemic, the university developed CoVac-1, a novel T-cell-stimulating vaccine. Additionally, it has contributed to malaria vaccine development and cancer immunotherapy.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1477",
+            "headquarters": "Tübingen, Baden-Württemberg, Germany",
+            "ceo": "N/A (Research led by Prof. Hans-Georg Rammensee and Dr. Juliane Walz)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~4,000 academic staff (university-wide)",
+            "sources": [
+                {
+                    "sourceName": "idw-online - CoVac-1 Vaccine Development",
+                    "url": "https://idw-online.de/de/news759062"
+                },
+                {
+                    "sourceName": "DZIF - Malaria Vaccine Research",
+                    "url": "https://www.dzif.de/en/tubingen-study-raises-hope-effective-malaria-vaccine"
+                },
+                {
+                    "sourceName": "University of Tübingen - Cancer Vaccination Research",
+                    "url": "https://www.medizin.uni-tuebingen.de/en-de/medizinische-fakultaet/forschung/forschungsschwerpunkt-i/impfen-gegen-krebs"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "CoVac-1 (T-cell-based COVID-19 vaccine)",
+            "Malaria vaccine candidates (e.g., PfSPZ chemoattenuated regimen)",
+            "Peptide-based cancer vaccines"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 110,
         "name": "European Vaccine Institute (EVI)",
-        "description": "#",
-        "history": "#",
+        "description": "The European Vaccine Initiative (EVI) is a non-profit Product Development Partnership (PDP) dedicated to supporting and accelerating the development of effective and affordable vaccines for global health. Established in 1998, EVI collaborates with academic researchers, the private sector, and governments to enhance vaccine research and development, focusing on diseases prevalent in low-resource settings.",
+        "history": "Originally founded as the European Malaria Vaccine Initiative (EMVI) in 1998, EVI was renamed in 2010 to reflect its broader mission beyond malaria. Headquartered in Heidelberg, Germany, EVI has evolved to support vaccine development for various infectious diseases, including HIV, tuberculosis, and emerging pathogens. It operates as a European Economic Interest Grouping (EEIG), collaborating with institutions like Stockholm University and Heidelberg University.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1998",
+            "headquarters": "Heidelberg, Germany",
+            "ceo": "N/A (Governed by a board of directors)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~50 employees",
+            "sources": [
+                {
+                    "sourceName": "EVI Official Website",
+                    "url": "https://www.euvaccine.eu/"
+                },
+                {
+                    "sourceName": "Wikipedia - European Vaccine Initiative",
+                    "url": "https://en.wikipedia.org/wiki/European_Vaccine_Initiative"
+                },
+                {
+                    "sourceName": "Global Health - EVI Overview",
+                    "url": "https://www.globalhealth.eu/european-vaccine-initiative/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Malaria vaccine candidates (various)",
+            "Vaccines for HIV and tuberculosis",
+            "Emerging infectious disease vaccines"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 111,
         "name": "Radboud University",
-        "description": "#",
-        "history": "#",
+        "description": "Radboud University Medical Center (Radboudumc) is a leading academic medical center in the Netherlands, specializing in healthcare, research, and education. It is known for its innovative research in infectious diseases, immunology, and vaccine development. Radboudumc has conducted groundbreaking studies on malaria and COVID-19 vaccines, contributing to global health advancements.",
+        "history": "Founded in 1956 as part of Radboud University Nijmegen, Radboudumc focuses on translational research to bridge the gap between basic science and clinical application. The center has been involved in vaccine research for over 15 years, including malaria vaccine trials and the development of the ABNCoV2 COVID-19 vaccine. It collaborates with international institutions such as PATH and iMM Lisboa to address global health challenges.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1956",
+            "headquarters": "Nijmegen, Netherlands",
+            "ceo": "N/A (Research led by various principal investigators like Prof. Benjamin Mordmüller and Prof. Robert Sauerwein)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~11,000 healthcare professionals and researchers",
+            "sources": [
+                {
+                    "sourceName": "Radboudumc - COVID-19 Vaccine Research",
+                    "url": "https://www.radboudumc.nl/en/news/2021/start-of-research-covid-19-vaccine"
+                },
+                {
+                    "sourceName": "PATH - Malaria Vaccine Collaboration",
+                    "url": "https://www.path.org/our-impact/media-center/radboud-university-medical-center-the-instituto-de-medicina-molecular-and-paths-malaria-vaccine-initiative-will-collaborate-on-first-in-human-study-of-a-novel-malaria-vaccine-approach/"
+                },
+                {
+                    "sourceName": "Radboudumc - Malaria Research Projects",
+                    "url": "https://www.radboudumc.nl/en/ongoing-studies/malaria-research/our-projects/current-projects"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "ABNCoV2 (capsid virus-like particle COVID-19 vaccine)",
+            "R0.6C malaria transmission-blocking vaccine",
+            "TB31F monoclonal antibody for malaria transmission prevention"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 112,
         "name": "Fraunhofer Center for Molecular Biotechnology",
-        "description": "#",
-        "history": "#",
+        "description": "The Fraunhofer Center for Molecular Biotechnology (FhCMB), based in Newark, Delaware, is a nonprofit research institution specializing in plant-based biotechnology for the development of vaccines, antibodies, and therapeutic proteins. It utilizes molecular farming techniques to produce biopharmaceuticals in plants, offering a rapid and cost-effective alternative to traditional vaccine manufacturing methods.",
+        "history": "Established in 2002 as part of Fraunhofer USA, FhCMB focuses on innovative plant-based production technologies for vaccines and therapeutics. It has developed proprietary vector systems and non-transgenic plants for scalable biopharmaceutical production. FhCMB has been involved in groundbreaking projects, such as the development of malaria transmission-blocking vaccines and influenza vaccines, and has received significant funding from organizations like DARPA and NIH.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2002",
+            "headquarters": "Newark, Delaware, USA",
+            "ceo": "Dr. Vidadi Yusibov (Executive Director)",
+            "revenue": "$8.5 million DARPA contract (project funding)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~100 employees",
+            "sources": [
+                {
+                    "sourceName": "Biospace - DARPA Contract Announcement",
+                    "url": "https://www.biospace.com/b-fraunhofer-usa-center-for-molecular-biotechnology-b-awarded-8-5m-contract-from-darpa-for-accelerated-manufacture-of-biopharmaceuticals"
+                },
+                {
+                    "sourceName": "Business Wire - Malaria Vaccine Clinical Trial",
+                    "url": "https://www.businesswire.com/news/home/20140204006507/en/Fraunhofer-USA-Center-for-Molecular-Biotechnology-Begins-Clinical-Trial-of-New-Malaria-Vaccine-Approach"
+                },
+                {
+                    "sourceName": "Fraunhofer IME Website",
+                    "url": "https://www.ime.fraunhofer.de/en.html"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Pfs25 malaria transmission-blocking vaccine (Phase 1 clinical trial)",
+            "Influenza H5N1 recombinant hemagglutinin vaccine (Phase 1 trial)",
+            "Plant-derived monoclonal antibodies"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 114,
         "name": "ExpreS2ion Technologies (Denmark)",
-        "description": "#",
-        "history": "#",
+        "description": "ExpreS2ion Biotechnologies is a clinical-stage biotech company based in Denmark, specializing in the development of new vaccines and immunotherapy products. The company's core technology is the ExpreS2 platform, a proprietary recombinant expression system for fast and efficient development and production of complex proteins used in innovative vaccines, immunotherapy, and diagnostics.",
+        "history": "Founded in 2010, ExpreS2ion has grown to become a leader in vaccine development. The company has produced over 500 proteins and virus-like particles (VLPs) in collaboration with research institutions and pharmaceutical companies. In 2017, ExpreS2ion co-founded AdaptVac, which houses their capsid virus-like particle (cVLP) platform. ExpreS2ion Biotechnologies ApS operates as a fully owned Danish subsidiary of ExpreS2ion Biotech Holding AB, which is listed on Nasdaq First North Growth Market in Stockholm.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2010",
+            "headquarters": "Hørsholm, Denmark",
+            "ceo": "Keith Alexander (CFO)",
+            "revenue": "$1M-$10M (estimated)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "$25M (market cap)",
+            "numberOfEmployees": "11-50",
+            "sources": [
+                {
+                    "sourceName": "ExpreS2ion Biotechnologies LinkedIn",
+                    "url": "https://dk.linkedin.com/company/expres2ion-biotechnologies"
+                },
+                {
+                    "sourceName": "LeadIQ - ExpreS2ion Biotechnologies Overview",
+                    "url": "https://leadiq.com/c/expres2ion-biotechnologies/5a1d8a242400002400637391"
+                },
+                {
+                    "sourceName": "CB Insights - Expres2ion Biotech",
+                    "url": "https://www.cbinsights.com/company/expres2ion-biotech"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "ABNCoV2 (COVID-19 vaccine, Phase III)",
+            "ES2B-C001 (HER2-cVLP breast cancer vaccine, preclinical)",
+            "Malaria vaccine candidates (various stages)",
+            "Influenza vaccine (preclinical)",
+            "CMV vaccine (preclinical, in collaboration with Evaxion Biotech)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 115,
         "name": "Burnet Institute",
-        "description": "#",
-        "history": "#",
+        "description": "The Burnet Institute is an Australian-based medical research institute and accredited international non-government organization. It specializes in life-changing research and health programs focused on global health challenges, including infectious diseases like malaria, tuberculosis, HIV/AIDS, and hepatitis C. The institute operates in the Indo-Pacific region and Africa, aiming to create a healthier and fairer world.",
+        "history": "Founded in 1986, the Burnet Institute has grown into a leading center for biomedical research and public health initiatives. It integrates medical research with practical health solutions, addressing pressing global health issues through vaccine development, clinical trials, epidemiology, and disease prevention. The institute is headquartered in Melbourne, Australia, with additional offices in Papua New Guinea and Myanmar.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1986",
+            "headquarters": "85 Commercial Rd, Melbourne, Victoria 3004, Australia",
+            "ceo": "Peter Spiller (CFO; Executive Leadership)",
+            "revenue": "$42.4 million (2025)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~632 employees (437 listed on RocketReach)",
+            "sources": [
+                {
+                    "sourceName": "RocketReach - Burnet Institute Profile",
+                    "url": "https://rocketreach.co/burnet-institute-profile_b5c190abf42e08c3"
+                },
+                {
+                    "sourceName": "Burnet Institute Official Website",
+                    "url": "https://www.burnet.edu.au/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "HIV vaccine candidates (research stage)",
+            "Tuberculosis vaccine development",
+            "Hepatitis C vaccine candidates"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 116,
         "name": "ARTEST Biotechnology",
-        "description": "#",
-        "history": "#",
+        "description": "ARTES Biotechnology GmbH is a German biotechnology company specializing in microbial recombinant protein production and process development. The company focuses on gene expression in the high-yield yeast system Hansenula polymorpha, offering innovative solutions for biosimilars, new pharmaceutical protein targets, and enzymes for fine chemical and life science industries.",
+        "history": "Founded in 2002, ARTES Biotechnology has grown into a leading service provider for the production and optimization of microbial recombinant protein strains. The company has expanded its portfolio to include virus-like particle (VLP) technology through the acquisition of ANAVAX in 2010. ARTES has established collaborations with various pharmaceutical and biotechnology companies for vaccine and protein development projects.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "2002",
+            "headquarters": "Elisabeth-Selbert-Str. 9, Langenfeld, 40764, Germany",
+            "ceo": "Dr. Michael Piontek (Founder and Managing Director)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "11-50",
+            "sources": [
+                {
+                    "sourceName": "ARTES Biotechnology Official Website",
+                    "url": "http://www.artes-biotechnology.com"
+                },
+                {
+                    "sourceName": "Bionity - ARTES Biotechnology Profile",
+                    "url": "https://www.bionity.com/en/companies/13168/artes-biotechnology-gmbh.html"
+                },
+                {
+                    "sourceName": "LinkedIn - ARTES Biotechnology",
+                    "url": "https://de.linkedin.com/company/artes-biotechnology-gmbh"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Hepatitis B vaccine (production process)",
+            "Hepatitis C vaccine (production process)",
+            "Influenza vaccines (development)",
+            "Virus-like particle (VLP) based vaccines"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 117,
         "name": "Johns Hopkins University",
-        "description": "#",
-        "history": "#",
+        "description": "Johns Hopkins University is a world-renowned research institution based in Baltimore, Maryland, known for its groundbreaking contributions to public health, medicine, and vaccine development. Through initiatives like the Johns Hopkins Vaccine Initiative (JHVI) and the Institute for Vaccine Safety, the university focuses on interdisciplinary research to address global health challenges, including infectious diseases and cancer.",
+        "history": "Founded in 1876 as the first research university in the United States, Johns Hopkins has a long history of medical innovation. The Bloomberg School of Public Health and the School of Medicine have been at the forefront of vaccine research, including efforts to develop vaccines for COVID-19, HIV, and pancreatic cancer. The university also played a key role in preserving scientific integrity during the development of COVID-19 vaccines.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1876",
+            "headquarters": "Baltimore, Maryland, USA",
+            "ceo": "N/A (University President: Ronald J. Daniels)",
+            "revenue": "$7 billion (2023 total revenue)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "$12 billion (2023 endowment)",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~30,000 faculty and staff",
+            "sources": [
+                {
+                    "sourceName": "Johns Hopkins Vaccine Initiative",
+                    "url": "https://publichealth.jhu.edu/johns-hopkins-vaccine-initiative"
+                },
+                {
+                    "sourceName": "Hopkins Medicine - Vaccine Development",
+                    "url": "https://www.hopkinsmedicine.org/news/articles/2020/03/vaccine-development"
+                },
+                {
+                    "sourceName": "Johns Hopkins Kimmel Cancer Center - Pancreatic Cancer Vaccine Research",
+                    "url": "https://www.hopkinsmedicine.org/kimmel-cancer-center/cancers-we-treat/pancreatic-cancer/research/pancreatic-cancer-vaccine-research"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "COVID-19 vaccine candidates (preclinical research)",
+            "Pancreatic cancer vaccine (clinical trials)",
+            "HIV vaccine candidates (research stage)",
+            "Vaccine safety initiatives through the Institute for Vaccine Safety"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 118,
         "name": "PATH",
-        "description": "#",
-        "history": "#",
+        "description": "PATH is a global nonprofit organization dedicated to advancing health equity through innovation and partnerships. Based in Seattle, PATH works in over 70 countries to develop and scale up solutions for global health challenges, including vaccines, drugs, diagnostics, and health systems innovations. PATH focuses on addressing diseases such as malaria, tuberculosis, HIV/AIDS, and COVID-19.",
+        "history": "Founded in 1977 as the Program for the Introduction and Adaptation of Contraceptive Technology (PIACT), PATH initially focused on family planning. It later expanded to address broader global health issues and was renamed the Program for Appropriate Technology in Health (PATH) in 1980. By 2014, PATH dropped the acronym and became known simply as PATH. Over the decades, PATH has pioneered innovative health solutions, including vaccine development and delivery systems.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1977",
+            "headquarters": "Seattle, Washington, USA",
+            "ceo": "Nikolaj Gilbert (President and CEO)",
+            "revenue": "$303 million (2020)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "$335 million (2022)",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~1,600 employees across more than 70 countries",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - PATH",
+                    "url": "https://en.wikipedia.org/wiki/PATH_(global_health_organization)"
+                },
+                {
+                    "sourceName": "PATH Official Website",
+                    "url": "https://www.path.org/"
+                },
+                {
+                    "sourceName": "Devex - PATH Overview",
+                    "url": "https://www.devex.com/organizations/path-2766"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Malaria vaccine candidates (e.g., RTS,S collaboration)",
+            "COVID-19 vaccine delivery innovations",
+            "HIV vaccine research partnerships",
+            "Pneumococcal conjugate vaccine (PCV) development"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 119,
         "name": "Sabin Vaccine Institute",
-        "description": "#",
-        "history": "#",
+        "description": "The Sabin Vaccine Institute is a global nonprofit organization based in Washington, D.C., dedicated to advancing vaccine development for unmet medical needs and expanding vaccination coverage worldwide. Founded in 1993, the institute focuses on developing vaccines for outbreak-prone diseases and improving the delivery of routine vaccinations, particularly in vulnerable populations.",
+        "history": "Established in 1993 in honor of Dr. Albert B. Sabin, the creator of the oral polio vaccine, the institute aims to extend his legacy by increasing access to vaccines globally. Sabin's philosophy of making vaccines widely available and affordable continues to guide the organization's mission. Over the years, Sabin has partnered with various governments and health organizations to drive progress in immunization and vaccine research.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1993",
+            "headquarters": "Washington, D.C., USA",
+            "ceo": "Amy Finan",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~100 employees",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - Sabin Vaccine Institute",
+                    "url": "https://en.wikipedia.org/wiki/Sabin_Vaccine_Institute"
+                },
+                {
+                    "sourceName": "Sabin Vaccine Institute Official Website",
+                    "url": "https://www.sabin.org/"
+                },
+                {
+                    "sourceName": "Our History - Sabin Vaccine Institute",
+                    "url": "https://www.sabin.org/about/our-history/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Vaccines for outbreak-prone diseases (e.g., Marburg virus, Sudan ebolavirus)",
+            "Routine childhood and adult vaccination programs",
+            "Research on new vaccine candidates for various infectious diseases"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 120,
         "name": "Griffith University",
-        "description": "#",
-        "history": "#",
+        "description": "Griffith University is a leading research institution in Australia, known for its contributions to vaccine development, biomedical research, and public health innovation. Through its Institute for Glycomics, Menzies Health Institute Queensland, and Translational Science Hub (TSH), Griffith University collaborates with global partners to develop vaccines for infectious diseases and emerging pathogens.",
+        "history": "Founded in 1971, Griffith University has established itself as a hub for cutting-edge research in health sciences. The university has been involved in groundbreaking projects such as malaria vaccine development and partnerships with Indian Immunologicals Limited for live-attenuated COVID-19 vaccines. In 2023, Griffith became part of the $280 million Translational Science Hub collaboration with Sanofi and other institutions to advance mRNA vaccine technology.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1971",
+            "headquarters": "Gold Coast, Queensland, Australia",
+            "ceo": "Professor Carolyn Evans (Vice Chancellor and President)",
+            "revenue": "$280 million (Translational Science Hub partnership funding)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~4,000 staff members",
+            "sources": [
+                {
+                    "sourceName": "EurekAlert - Griffith Vaccine Modality Breakthrough",
+                    "url": "https://www.eurekalert.org/news-releases/999449"
+                },
+                {
+                    "sourceName": "Griffith News - Translational Science Hub Partnership",
+                    "url": "https://news.griffith.edu.au/2023/10/06/new-griffith-university-site-for-the-translational-science-hub-brings-global-vaccine-research-and-development-to-the-gold-coast/"
+                },
+                {
+                    "sourceName": "Griffith Institute for Glycomics - Malaria Vaccine Development",
+                    "url": "https://www.griffith.edu.au/research/industry-collaboration/diagnostics-vaccines"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "PlasProtecT (freeze-dried malaria vaccine, Phase 1 clinical trials)",
+            "Live-attenuated COVID-19 vaccine (developed with Indian Immunologicals Limited)",
+            "mRNA vaccines (Translational Science Hub collaboration)",
+            "Strep A vaccine candidates (clinical trials in Canada)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 121,
         "name": "Institut National de la Santé et de la Recherche Médicale (Inserm)",
-        "description": "#",
-        "history": "#",
+        "description": "Inserm is France's leading biomedical research institute, focusing on advancing health through scientific innovation. It conducts cutting-edge research in areas such as infectious diseases, oncology, immunology, and vaccine development. Inserm collaborates with academic institutions, biotech companies, and international organizations to develop vaccines and therapeutics for global health challenges.",
+        "history": "Founded in 1964, Inserm has been at the forefront of medical research in France. It has played a significant role in vaccine development for diseases such as COVID-19, Ebola, and allergic asthma. Inserm's Vaccine Research Institute (VRI) specializes in innovative vaccine strategies, including targeting dendritic cells to enhance immune responses. The institute also coordinates large-scale clinical trials through platforms like COVIREIVAC.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1964",
+            "headquarters": "Paris, France",
+            "ceo": "Prof. Yves Lévy (Vaccine Research Institute Director)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~15,000 researchers and staff",
+            "sources": [
+                {
+                    "sourceName": "Inserm Newsroom - COVID-19 Vaccine Research",
+                    "url": "https://presse.inserm.fr/en/covid-19-vaccine-research-at-inserm/59819/"
+                },
+                {
+                    "sourceName": "Inserm Newsroom - Ebola Vaccine Development",
+                    "url": "https://presse.inserm.fr/en/inserm-is-launching-a-development-programme-for-a-new-generation-vaccine-strategy-against-the-ebola-virus/55653/"
+                },
+                {
+                    "sourceName": "LinKinVax Partnership Announcement",
+                    "url": "https://www.biospace.com/linkinvax-and-inserm-transfert-enter-into-an-exclusive-worldwide-licensing-agreement-covering-use-of-an-innovative-vaccine-platform"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "COVID-19 vaccine candidates (e.g., dendritic cell-targeting platforms)",
+            "Ebola vaccine strategy (Ad26.ZEBOV and MVA-BN-Filo vectors)",
+            "Allergic asthma vaccine (targeting cytokines IL-4 and IL-13)",
+            "HIV vaccine candidates (therapeutic and preventative)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 122,
         "name": "Biomedical Primate Research Center (BPRC)",
-        "description": "#",
-        "history": "#",
+        "description": "The Biomedical Primate Research Centre (BPRC) is Europe's largest primate research institute, located in Rijswijk, South Holland, Netherlands. It specializes in biomedical research using nonhuman primates to develop new medicines and treatments for diseases such as AIDS, malaria, hepatitis, tuberculosis, and autoimmune disorders. BPRC also focuses on immunobiology, parasitology, virology, ethology, and alternatives to animal testing.",
+        "history": "Originally part of the Netherlands Organisation for Applied Scientific Research, BPRC became an independent foundation on December 7, 1994. It has been a key player in European biomedical research, housing rhesus macaques and marmosets for scientific studies. In 2002, the Dutch government banned chimpanzee testing at the center but allowed ongoing trials to conclude. Despite its contributions to medicine, BPRC has faced criticism from animal rights groups and calls for closure in Dutch parliament.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1994 (independent foundation)",
+            "headquarters": "Rijswijk, South Holland, Netherlands",
+            "ceo": "N/A",
+            "revenue": "Funded by the Dutch Ministry of Education, Culture and Science",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~110 employees",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - Biomedical Primate Research Centre",
+                    "url": "https://en.wikipedia.org/wiki/Biomedical_Primate_Research_Centre"
+                },
+                {
+                    "sourceName": "Dutch Government Reports on BPRC",
+                    "url": "https://www.government.nl/topics/animal-testing"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "AIDS vaccine research (preclinical studies)",
+            "Malaria vaccine candidates (research stage)",
+            "Tuberculosis vaccine development",
+            "Hepatitis vaccine trials"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 123,
         "name": "Centre National de Recherche et de Formation sur la Paludisme, Burkina Faso",
-        "description": "#",
-        "history": "#",
+        "description": "The Centre National de Recherche et de Formation sur le Paludisme (CNRFP) is a leading research institution in Burkina Faso dedicated to combating malaria through research, training, and community interventions. Established in 1982, CNRFP focuses on developing new tools and strategies for malaria control and prevention, conducting clinical trials for drugs and vaccines, and providing training to healthcare professionals.",
+        "history": "Founded in 1982 with support from the Italian Ministry of Foreign Affairs, CNRFP has evolved from a community-based project into a national center of excellence for malaria research. In 1998, it was officially designated as the Centre National de Recherche et de Formation sur le Paludisme. The center has played a significant role in shaping national malaria policies and has been involved in numerous clinical trials and operational research initiatives.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1982",
+            "headquarters": "Ouagadougou, Burkina Faso",
+            "ceo": "N/A (Managed by the Ministry of Health)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~20 researchers and numerous trainees",
+            "sources": [
+                {
+                    "sourceName": "CNRFP Official Website",
+                    "url": "https://www.cnrfp.bf"
+                },
+                {
+                    "sourceName": "WANECAM - CNRFP Overview",
+                    "url": "https://wanecam.org/fr/centre-national-de-recherche-et-de-formation-sur-le-paludisme-cnrfp/"
+                },
+                {
+                    "sourceName": "Development Aid - CNRFP Profile",
+                    "url": "https://www.developmentaid.org/organizations/view/302073/centre-national-de-recherche-et-de-formation-sur-le-paludisme-cnrfp"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Malaria vaccine candidates (Phase Ib clinical trials)",
+            "Research on antimalarial drug efficacy (chloroquine, sulfadoxine-pyrimethamine)",
+            "Community-based malaria prevention strategies"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 124,
         "name": "Janssen",
-        "description": "#",
-        "history": "#",
+        "description": "Janssen Pharmaceuticals, a subsidiary of Johnson & Johnson, is a global leader in pharmaceutical innovation, focusing on six key therapeutic areas: cardiovascular and metabolism, immunology, infectious diseases and vaccines, neuroscience, oncology, and pulmonary hypertension. Janssen is known for developing life-saving treatments and vaccines, including its COVID-19 vaccine and Ebola vaccine regimen.",
+        "history": "Founded in 1953 by Dr. Paul Janssen in Beerse, Belgium, Janssen became part of Johnson & Johnson in 1961. Over the decades, it has expanded its portfolio to include groundbreaking medicines and vaccines. In recent years, Janssen has developed the Ebola vaccine (Zabdeno and Mvabea) and the single-dose COVID-19 vaccine. It also invests heavily in research and development, with annual expenditures exceeding $4.5 billion globally.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1953",
+            "headquarters": "Beerse, Belgium",
+            "ceo": "Jennifer Taubert (Worldwide Chair of Pharmaceuticals at Johnson & Johnson)",
+            "revenue": "$40.7 billion (2018 global sales)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "$8.4 billion invested annually in R&D (2018)",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~40,000 employees worldwide",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia - Janssen Pharmaceuticals",
+                    "url": "https://en.wikipedia.org/wiki/Janssen_Pharmaceuticals"
+                },
+                {
+                    "sourceName": "Drugwatch - Janssen Overview",
+                    "url": "https://www.drugwatch.com/manufacturers/janssen/"
+                },
+                {
+                    "sourceName": "Janssen Official Website",
+                    "url": "https://www.janssen.com/"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "COVID-19 vaccine (single-dose regimen)",
+            "Ebola vaccine (Zabdeno and Mvabea)",
+            "HIV vaccine candidates (research stage)",
+            "Tuberculosis vaccine candidates"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 125,
         "name": "Instituto Butantan",
-        "description": "#",
-        "history": "#",
+        "description": "Instituto Butantan is a Brazilian biologic research center and the largest producer of immunobiologicals and biopharmaceuticals in Latin America. Located in São Paulo, Brazil, the institute specializes in vaccine development, antivenoms, and biomedical research. It is internationally recognized for its contributions to public health, including vaccines for diseases like COVID-19, rabies, tetanus, and diphtheria.",
+        "history": "Founded on February 23, 1901, by Dr. Vital Brazil to combat a bubonic plague outbreak, Instituto Butantan has grown into a global leader in biomedical research and vaccine production. The institute pioneered antivenom development and expanded its portfolio to include vaccines against infectious diseases. It produces approximately 90% of vaccines used in Brazil and collaborates with international organizations like the Pasteur Institute and the Oswaldo Cruz Foundation.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1901",
+            "headquarters": "Avenida Vital Brasil, 1500, São Paulo, Brazil",
+            "ceo": "N/A (Managed by São Paulo State Secretariat of Health)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~1,000 employees",
+            "sources": [
+                {
+                    "sourceName": "Wikiwand - Instituto Butantan",
+                    "url": "https://www.wikiwand.com/en/articles/Instituto_Butantan"
+                },
+                {
+                    "sourceName": "PLoS Neglected Tropical Diseases - History of Instituto Butantan",
+                    "url": "https://journals.plos.org/plosntds/article/figures?id=10.1371%2Fjournal.pntd.0002862"
+                },
+                {
+                    "sourceName": "Arrival Guides - Instituto Butantan Overview",
+                    "url": "https://www.arrivalguides.com/en/Travelguide/SAOPAULO/doandsee/instituto-butantan-83072"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "CoronaVac (COVID-19 vaccine)",
+            "Rabies vaccine (Vero cell culture)",
+            "Diphtheria-tetanus-pertussis vaccine (Triple vaccine)",
+            "Recombinant Hepatitis B vaccine",
+            "BCG vaccine (intradermic)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 126,
         "name": "Berna Biotec",
-        "description": "#",
-        "history": "#",
+        "description": "Berna Biotech, headquartered in Bern, Switzerland, is a vaccine manufacturer with a long history of developing and producing vaccines for infectious diseases. Now a subsidiary of Crucell (part of Johnson & Johnson), Berna Biotech specializes in vaccines for typhoid, hepatitis A and B, influenza, and yellow fever, among others. The company is known for its innovative approaches to vaccine development and global distribution.",
+        "history": "Founded in the mid-20th century, Berna Biotech became a leader in vaccine production, particularly for typhoid and hepatitis. In 2006, the company was acquired by Crucell N.V., which later became part of Johnson & Johnson. Berna Biotech has played a significant role in vaccine innovation, including the development of Vivotif (oral typhoid vaccine) and Aerugen (vaccine for Pseudomonas aeruginosa in cystic fibrosis patients). It also expanded globally with subsidiaries in Spain, Korea, and Latin America.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "Mid-20th century",
+            "headquarters": "Bern, Switzerland",
+            "ceo": "N/A (Managed under Crucell/Johnson & Johnson)",
+            "revenue": "$303.8 million (2001 sales)",
+            "operatingIncome": "N/A",
+            "netIncome": "$41.4 million (2001)",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~965 employees before acquisition",
+            "sources": [
+                {
+                    "sourceName": "PharmaTimes - Crucell Acquires Berna Biotech",
+                    "url": "https://pharmatimes.com/news/crucell_to_buy_berna_biotech_997459/"
+                },
+                {
+                    "sourceName": "SwissInfo - Berna Biotech History",
+                    "url": "https://www.swissinfo.ch/eng/science/berna-biotech-buys-dutch-rival/2724860"
+                },
+                {
+                    "sourceName": "Bionity - Berna Biotech Overview",
+                    "url": "https://www.bionity.com/en/companies/18417/berna-biotech-latinoamerica.html"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Vivotif (oral typhoid vaccine)",
+            "Hepatitis A and B vaccines",
+            "Yellow fever vaccine (Phase III trials)",
+            "Aerugen (Pseudomonas aeruginosa vaccine for cystic fibrosis patients)",
+            "Influenza vaccines"
+        ],
+        "lastUpdated": "2025-Mar"
     }
 ]

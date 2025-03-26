@@ -106,15 +106,15 @@ const VaccineListTable = ({
                                                     </div>
                                                 </td>
                                                 <td className='licenser-cell'>
-                                                    {vaccine.productProfiles ? vaccine.productProfiles.filter((x) => x.composition !== "- not licensed yet -").map((l, index) => {
+                                                    {vaccine.licensingDates ? vaccine.licensingDates.map((l, index) => {
                                                         const licenser = l.type;
                                                         if (!licenser) return null;
                                                         return (
-                                                            <span key={l.name}>
-                                                                <a href="#" className='selectable' target="_blank" rel="noopener noreferrer">
-                                                                    {licenser}
+                                                            <span key={l.approvalDate}>
+                                                                <a href={l.source} className='selectable' target="_blank" rel="noopener noreferrer">
+                                                                    {l.name}
                                                                 </a>
-                                                                {index < vaccine.productProfiles.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                                                {index < vaccine.licensingDates.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
                                                             </span>
                                                         );
                                                     }) : '- no data -'}

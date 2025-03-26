@@ -32,7 +32,8 @@ import { getAllRelatedVaccineCandidateByName } from '../../utils/array';
 
 const Vaccine = ({
     selectedVaccine,
-    convertCamelCaseToReadable
+    convertCamelCaseToReadable,
+    italizeScientificNames
 }) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -167,7 +168,7 @@ const Vaccine = ({
     const manufactureName = getManufactureDetailById((selectedVaccine?.manufacturers && selectedVaccine?.manufacturers[0]?.manufacturerId)) || "-";
     const manufactureName2 = getAllRelatedVaccineCandidateByName(selectedVaccine?.name)
     return <div className='position-relative slide-left'>
-        <h1 className='heading text-primary text-center'>{selectedVaccine.name} (MAH: {manufactureName?.name || (manufactureName2 && manufactureName2.length > 0 && manufactureName2[0]?.manufacturer) || "-"})
+        <h1 className='heading text-primary text-center'>{selectedVaccine.name} (MAH: {manufactureName?.name || (manufactureName2 && manufactureName2.length > 0 && manufactureName2[0]?.manufacturer) || "-"}{selectedVaccine?.name === "Comirnaty®" ? "/BioNTech" : null})
             {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
         </h1>
         {selectedVaccine?.clinicalPhase ? <table className='table table-light table-striped w-100 m-0'>
@@ -224,16 +225,16 @@ const Vaccine = ({
         {/* // )} */}
         {selectedVaccine.productProfiles && (
             <div className="d-inline-flex w-100 inner">
-                <table style={{ overflow: 'hidden' }} key={selectedVaccine.description} border={1}>
+                <table style={{ overflow: 'hidden', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }} key={selectedVaccine.description} border={1}>
                     <tbody>
                         {platforms.map((key) => {
                             return key === "name" ? null : (
                                 <>
                                     <tr>
-                                        <td colSpan={1} style={{ color: key === 'type' ? 'white' : 'black', fontWeight: 'bold' }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `EMA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("EMA", "name", selectedVaccine.name) : selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, selectedVaccine.name)}</td>
-                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `FDA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("FDA", "name", selectedVaccine.name) : selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, selectedVaccine.name)}</td>
-                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "type" ? `WHO - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("WHO", "name", selectedVaccine.name) : selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, selectedVaccine.name)}</td>
+                                        <td colSpan={1} style={{ color: key === 'type' ? 'white' : 'black', fontWeight: 'bold' }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "Efficacy" ? "Efficacy (VEy)/ Effectiveness (VEs)" : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("EMA", "strainCoverage", selectedVaccine.name)) : key === "type" ? `EMA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("EMA", "name", selectedVaccine.name) : selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("EMA", key, selectedVaccine.name).replaceAll('; ', '\n\n')}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("FDA", "strainCoverage", selectedVaccine.name)) : key === "type" ? `FDA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("FDA", "name", selectedVaccine.name) : selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("FDA", key, selectedVaccine.name).replaceAll('; ', '\n\n')}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", "strainCoverage", selectedVaccine.name)) : key === "type" ? `WHO - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("WHO", "name", selectedVaccine.name) : selectedVaccine.name}` : getProductProfileValueByVaccineNameAndType("WHO", key, selectedVaccine.name).replaceAll('; ', '\n\n')}</td>
                                     </tr>
                                 </>
                             )
@@ -253,7 +254,7 @@ const Vaccine = ({
                         if (key === "name") return null;
                         return (
                             <tr key={index}>
-                                <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "Efficacy" ? "Efficacy (VEy)" : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                 <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{formatContent(value)}</td>
                             </tr>
                         );
