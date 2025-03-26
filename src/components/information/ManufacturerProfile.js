@@ -111,8 +111,8 @@ const ManufacturerProfile = ({
                                 </div>
                                 <br />
                                 <span className='sources-list ms-1'>Source(s): {selectedManufacturer.details.sources.map((source, index) => <span key={index}>
-                                    <a className='manufacturer-table-source' href={`${source.link}`} target="_blank" rel="noopener noreferrer">{source.title}</a>
-                                    <span> ({source.lastUpdated}){selectedManufacturer.details.sources.length > 1 && index < selectedManufacturer.details.sources.length - 1 ? ', ' : ''}</span></span>)}
+                                    <a className='manufacturer-table-source' href={`${source?.link || source?.url}`} target="_blank" rel="noopener noreferrer">{source?.title || source?.sourceName}</a>
+                                    <span>{selectedManufacturer.details.sources.length > 1 && index < selectedManufacturer.details.sources.length - 1 ? ', ' : ''}</span></span>)}
                                 </span></> : null}
                         </div>
                     </div>
