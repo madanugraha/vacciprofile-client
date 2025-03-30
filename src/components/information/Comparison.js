@@ -643,7 +643,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                     <div className="accordion" id="accordianVaccineInfo">
                         <div className="accordion-item mb-1">
                             <h2 className="accordion-header" id="accordianVaccine">
-                                <button className="accordion-button bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
+                                <button className="accordion-button subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
                                     Licensed Vaccines
                                 </button>
                             </h2>
@@ -984,7 +984,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             <div className="accordion" id="accordianPathogenInfo">
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianPathogen">
-                        <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
+                        <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
                             Pathogen Profile
                         </button>
                     </h2>
@@ -1204,7 +1204,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                     <div className="accordion" id="accordianVaccineInfo">
                         <div className="accordion-item mb-1">
                             <h2 className="accordion-header" id="accordianVaccine">
-                                <button className="accordion-button bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
+                                <button className="accordion-button subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
                                     Licensed Vaccines
                                 </button>
                             </h2>
@@ -1545,7 +1545,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             <div className="accordion" id="accordianPathogenInfo">
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianPathogen">
-                        <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
+                        <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
                             Pathogen Profile
                         </button>
                     </h2>
@@ -1736,7 +1736,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                             return (
                                                                                 <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>
                                                                                     <div className='d-inline-flex justify-content-between w-100'>
-                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name).replaceAll('; ', '\n\n')}</span>
+                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
                                                                                     </div>
                                                                                 </td>

@@ -10946,7 +10946,8 @@
                 "durationOfProtection": "At least 5 months.",
                 "coAdministration": "can be co-administered with childhood vaccines.",
                 "reactogenicity": "Uncommon: Rash, pyrexia, injection site reactions.",
-                "safety": "No safety signal to date.Immunization GoalIndividual protection.OthersLimited data in extremely preterm infants (GA <29 weeks) <8 wks of age; no safety/efficacy data on repeat dosing and 2-18 yrs.",
+                "safety": "No safety signal to date",
+                "vaccinationGoal": "Individual protection",
                 "others": "Limited data in extremely preterm infants (GA <29 weeks) <8 wks of age; no safety/efficacy data on repeat dosing and 2-18 yrs."
             },
             {
@@ -10962,7 +10963,8 @@
                 "durationOfProtection": "At least 5 months.",
                 "coAdministration": "Can be co-administered with childhood vaccines.",
                 "reactogenicity": "Rash (0.9%) and injection site reactions (0.3%).",
-                "safety": "No safety signal to date.Immunization GoalIndividual protection.OthersNo safety/effectiveness data in >24 mo.; palivizumab should not be administered to infants who have already received BEYFORTUS® in the same season;",
+                "safety": "No safety signal to date",
+                "vaccinationGoal": "Individual protection",
                 "others": "No safety/effectiveness data in >24 mo.; palivizumab should not be administered to infants who have already received BEYFORTUS® in the same season;"
             },
             {
@@ -10991,6 +10993,13 @@
                 "approvalDate": "15/11/2022",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/beyfortus",
                 "lastUpdated": "16/07/2024"
+            },
+            {
+                "name": "FDA",
+                "type": "#",
+                "approvalDate": "17/07/2023",
+                "source": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process",
+                "lastUpdated": "22/08/2024"
             }
         ]
     },

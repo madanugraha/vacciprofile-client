@@ -563,7 +563,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
                         <div className="accordion mb-1" id="accordianVaccineList">
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="accordianVaccines">
-                                    <button className="accordion-button collapsed show bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button className="accordion-button collapsed show subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVacList" aria-expanded="false" aria-controls="collapseTwo">
                                         Licensed Vaccines
                                     </button>
                                 </h2>
@@ -621,7 +621,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
                         <div className="accordion" id="accordianVaccineInfo">
                             <div className="accordion-item mb-1">
                                 <h2 className="accordion-header" id="accordianVaccine">
-                                    <button className="accordion-button bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
+                                    <button className="accordion-button subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
                                         Licensed Vaccines
                                     </button>
                                 </h2>
@@ -963,7 +963,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
             <div className="accordion" id="accordianPathogenInfo">
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianPathogen">
-                        <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
+                        <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
                             Pathogen Profile
                         </button>
                     </h2>
