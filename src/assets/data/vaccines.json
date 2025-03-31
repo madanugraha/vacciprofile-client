@@ -6678,7 +6678,7 @@
     {
         "vaccineId": 116,
         "name": "Panvax®",
-        "dieases":"Pandemic Influenza",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -13191,6 +13191,7 @@
     {
         "vaccineId": 231,
         "name": "Shingrix®",
+        "dieases": "Shingles (Herpes zoster)",
         "pathogenId": [
             11
         ],
@@ -13580,6 +13581,7 @@
     {
         "vaccineId": 236,
         "name": "Zostavax®",
+        "dieases": "Shingles (Herpes zoster)",
         "pathogenId": [
             11
         ],
@@ -18390,7 +18392,7 @@
     {
         "vaccineId": 298,
         "name": "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze Dried®",
-        "dieases":"Pandemic Influenza",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -19264,7 +19266,7 @@
     {
         "vaccineId": 309,
         "name": "Zoonotic Influenza Vaccine Seqirus®",
-        "dieases":"Pandemic Influenza",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],

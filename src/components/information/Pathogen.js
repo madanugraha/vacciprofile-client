@@ -215,7 +215,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
                 checked: false
             }
         }) : [];
-        console.log(vaccineFields);
         setVaccineFieldsState(vaccineFields);
     }, [selectedPathogen]);
 
@@ -544,16 +543,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
             setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]])
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
-
-    // useEffect(() => {
-    //     // let f = []
-    //     // if (vaccineSelectedOnly) {
-    //     //     f = vaccineFieldsState.filter((x) => x.checked);
-    //     // } else {
-
-    //     // }
-    //     // setVaccineFieldsState(f);
-    // }, [vaccineSelectedOnly])
 
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>

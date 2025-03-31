@@ -127,7 +127,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [showWho, setShowWho] = useState(false);
     const [vaccineSelectedOnly, setVaccineSelectedOnly] = useState(false);
 
-
     const handleSelectLicenserFieldsVaccine = (name, value) => {
         if (name) {
             const n = licenserFieldsVaccine;
@@ -149,7 +148,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             } else {
                 setLicenserFieldsVaccine([...value]);
             }
-        }
+        };
     };
 
     const checkForCheckedVaccines = () => {
@@ -217,10 +216,8 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                 checked: false
             }
         }) : [];
-        console.log(vaccineFields);
         setVaccineFieldsState(vaccineFields);
     }, [selectedPathogen]);
-
 
     const vaccineByDeases = getPathogenVaccineByDieasesName(selectedPathogen?.name);
 
@@ -623,18 +620,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]])
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
-
-    // useEffect(() => {
-    //     // let f = []
-    //     // if (vaccineSelectedOnly) {
-    //     //     f = vaccineFieldsState.filter((x) => x.checked);
-    //     // } else {
-
-    //     // }
-    //     // setVaccineFieldsState(f);
-    // }, [vaccineSelectedOnly])
-
-
 
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>

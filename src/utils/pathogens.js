@@ -40,11 +40,52 @@ export const getAllVaccineByPathogenId = (id) => {
     return [];
 };
 
+export const getAllVaccineByPathogenDetail = (id, diseasesName) => {
+    const data = vaccines;
+    let result = data.map((x) => {
+        if (x.dieases) {
+            if (x.dieases === diseasesName) {
+                return {
+                    ...x,
+                    pathogenId: x.pathogenId.filter((y) => y === id)[0]
+                }
+            } else {
+                return {
+                    ...x,
+                    pathogenId: x.pathogenId.filter((y) => y === id)[0]
+                }
+            }
+        } else {
+            return {
+                ...x,
+                pathogenId: x.pathogenId.filter((y) => y === id)[0],
+            }
+        };
+    });
+
+    // if (diseasesName) {
+    //     result = result.filter((x) => x?.dieases && (x?.dieases === diseasesName))
+    // } else {
+    result = result.filter((x) => x.pathogenId === id)
+
+    result = result.map((x) => {
+        if (x.dieases) {
+            return {
+                ...x
+            }
+        }
+    });
+    // }
+
+    if (result.length > 0) {
+        return result;
+    }
+    return [];
+};
+
 export const getCombinationVaccineByPathogenId = (id) => {
     const data = vaccines;
-
     // const result = data.filter((vac) => vac.pathogenId === id);
-
     let result = data.map((x) => {
         return {
             ...x,
@@ -188,8 +229,17 @@ export const getAllSinglePathogenArray = () => {
 };
 
 export const getPathogenVaccineByDieasesName = (name) => {
-    const d = getAllVaccineByPathogenId(pathogens.filter((x) => x.dieases.includes(name))[0]?.pathogenId);
-    return d;
+    const pathogenId = pathogens.filter((x) => x.dieases.includes(name))[0]?.pathogenId;
+
+    const vac = vaccines.filter((x) => x.dieases && x.dieases === name);
+
+    if (vac.length > 0) {
+        return vac
+    } else {
+        const d = getAllVaccineByPathogenId(pathogenId);
+
+        return d;
+    }
 };
 
 export const getCombinationVaccineneArray = (data) => {
@@ -293,11 +343,13 @@ export const getLicensedVaccineByManufacturerId = (manufacturerId) => {
     };
 
     const f = vaccines.filter((x) => x.vaccineType === "combination").map((x) => x.pathogenId.length).reduce((a, b) => a + b, 0);
-
-    console.log('zzzzz >>> ', f);
     return arr;
 }
 
+
+export const getLicensingLinkByVaccineNameAndLicenser = (vaccineName, licenser) => {
+
+};
 
 export const getVaccineByLicenserName = (licenserName, type) => {
     const data = vaccines;
