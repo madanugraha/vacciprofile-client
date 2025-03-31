@@ -231,7 +231,7 @@ export const getAllSinglePathogenArray = () => {
 export const getPathogenVaccineByDieasesName = (name) => {
     const pathogenId = pathogens.filter((x) => x.dieases.includes(name))[0]?.pathogenId;
 
-    const vac = vaccines.filter((x) => x.dieases && x.dieases === name);
+    const vac = vaccines.filter((x) => x?.dieases && (x?.dieases.includes(name)));
 
     if (vac.length > 0) {
         return vac

@@ -4857,6 +4857,7 @@
     {
         "vaccineId": 79,
         "name": "Supemtek®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -4932,6 +4933,7 @@
     {
         "vaccineId": 80,
         "name": "Fluenz Tetra®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -5007,6 +5009,7 @@
     {
         "vaccineId": 81,
         "name": "Fluenz®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -5158,6 +5161,7 @@
     {
         "vaccineId": 84,
         "name": "Adjupanrix®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -5537,6 +5541,7 @@
     {
         "vaccineId": 90,
         "name": "Afluria Quadrivalent®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -5619,6 +5624,7 @@
     {
         "vaccineId": 91,
         "name": "FLUAD®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -5694,6 +5700,7 @@
     {
         "vaccineId": 92,
         "name": "FLULAVAL®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -5769,6 +5776,7 @@
     {
         "vaccineId": 94,
         "name": "Afluria®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -5851,6 +5859,7 @@
     {
         "vaccineId": 95,
         "name": "FLUARIX®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -5926,6 +5935,7 @@
     {
         "vaccineId": 97,
         "name": "FluMist®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6001,6 +6011,7 @@
     {
         "vaccineId": 100,
         "name": "Agriflu®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6152,6 +6163,7 @@
     {
         "vaccineId": 104,
         "name": "Flublok®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6227,6 +6239,7 @@
     {
         "vaccineId": 105,
         "name": "Flucelvax®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6302,6 +6315,7 @@
     {
         "vaccineId": 106,
         "name": "Fluvirin®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6377,6 +6391,7 @@
     {
         "vaccineId": 108,
         "name": "GC FLU Quadrivalent inj.®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6452,6 +6467,7 @@
     {
         "vaccineId": 109,
         "name": "GC FLU inj.®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6527,6 +6543,7 @@
     {
         "vaccineId": 110,
         "name": "Green Flu S®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6754,6 +6771,7 @@
     {
         "vaccineId": 117,
         "name": "SKYCellflu Quadrivalent inj.®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6829,6 +6847,7 @@
     {
         "vaccineId": 119,
         "name": "Vaxigrip®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6904,6 +6923,7 @@
     {
         "vaccineId": 121,
         "name": "Arepanrix®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -6979,6 +6999,7 @@
     {
         "vaccineId": 122,
         "name": "IL YANG FLU Vaccine INJ.®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -7054,6 +7075,7 @@
     {
         "vaccineId": 132,
         "name": "Serinflu®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -13274,6 +13296,7 @@
     {
         "vaccineId": 232,
         "name": "BARYCELA inj®",
+        "dieases": "Chickenpox (Varicella)",
         "pathogenId": [
             11
         ],
@@ -13349,6 +13372,7 @@
     {
         "vaccineId": 233,
         "name": "SKYVaricella Inj®",
+        "dieases":"Chickenpox (Varicella)",
         "pathogenId": [
             11
         ],
@@ -13424,6 +13448,7 @@
     {
         "vaccineId": 234,
         "name": "Varicella Vaccine Live®",
+        "dieases":"Chickenpox (Varicella)",
         "pathogenId": [
             11
         ],
@@ -13499,6 +13524,7 @@
     {
         "vaccineId": 235,
         "name": "Varivax®",
+        "dieases":"Chickenpox (Varicella)",
         "pathogenId": [
             11
         ],
@@ -14309,6 +14335,7 @@
     {
         "vaccineId": 246,
         "name": "FLUAD Tetra®; FLUAD Quadrivalent®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -14391,6 +14418,7 @@
     {
         "vaccineId": 248,
         "name": "FLUARIX Quadrivalent®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -14466,6 +14494,7 @@
     {
         "vaccineId": 249,
         "name": "Flucelvax Tetra®; Flucelvax Quadrivalent®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -14548,6 +14577,7 @@
     {
         "vaccineId": 251,
         "name": "FLULAVAL Quadrivalent®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -14623,6 +14653,7 @@
     {
         "vaccineId": 252,
         "name": "FluMist Quadrivalent®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -14780,6 +14811,7 @@
     {
         "vaccineId": 254,
         "name": "Vaxigrip Tetra®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -15197,6 +15229,7 @@
     {
         "vaccineId": 259,
         "name": "Influvac Tetra®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -15272,6 +15305,7 @@
     {
         "vaccineId": 260,
         "name": "Pandemic Influenza Vaccine H5N1 AstraZeneca®",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -15942,6 +15976,7 @@
     {
         "vaccineId": 267,
         "name": "Influenza Vaccine (Split Virion), Inactivated® (Changchun Institute of Biological Products)",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -16092,6 +16127,7 @@
     {
         "vaccineId": 269,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (CSL Limited)",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -16505,6 +16541,7 @@
     {
         "vaccineId": 275,
         "name": "SKYCellflu inj.®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -16683,6 +16720,7 @@
     {
         "vaccineId": 277,
         "name": "Influenza Trivalent Vaccine (split virion, inactivated)®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -16758,6 +16796,7 @@
     {
         "vaccineId": 278,
         "name": "Influenza A (H5N1) Virus Monovalent Vaccine, Adjuvanted®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -17348,6 +17387,7 @@
     {
         "vaccineId": 285,
         "name": "Flublok Quadrivalent®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -17423,6 +17463,7 @@
     {
         "vaccineId": 286,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (MAH: MedImmune)",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -17899,6 +17940,7 @@
     {
         "vaccineId": 292,
         "name": "Fluzone Quadrivalent; Fluzone High-Dose Quadrivalent; Fluzone Intradermal Quadrivalent®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -17988,6 +18030,7 @@
     {
         "vaccineId": 293,
         "name": "Fluzone; Fluzone High-Dose-®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -18475,6 +18518,7 @@
     {
         "vaccineId": 299,
         "name": "Nasovac-S Influenza Vaccine, Live, Attenuated (Human)®",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -19040,6 +19084,7 @@
     {
         "vaccineId": 306,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (ID Biomedical)",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -19115,6 +19160,7 @@
     {
         "vaccineId": 307,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (Novartis)",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
@@ -19342,6 +19388,7 @@
     {
         "vaccineId": 310,
         "name": "Influenza Vaccine (Split Virion), Inactivated® (Hualan Biological Bacterin)",
+        "dieases": "Seasonal Influenza",
         "pathogenId": [
             8
         ],
