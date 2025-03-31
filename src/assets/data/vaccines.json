@@ -16127,7 +16127,7 @@
     {
         "vaccineId": 269,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (CSL Limited)",
-        "dieases": "Seasonal Influenza",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -16796,7 +16796,7 @@
     {
         "vaccineId": 278,
         "name": "Influenza A (H5N1) Virus Monovalent Vaccine, Adjuvanted®",
-        "dieases": "Seasonal Influenza",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -17463,7 +17463,7 @@
     {
         "vaccineId": 286,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (MAH: MedImmune)",
-        "dieases": "Seasonal Influenza",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -19084,7 +19084,7 @@
     {
         "vaccineId": 306,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (ID Biomedical)",
-        "dieases": "Seasonal Influenza",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
@@ -19160,7 +19160,7 @@
     {
         "vaccineId": 307,
         "name": "Influenza A (H1N1) 2009 Monovalent Vaccine® (Novartis)",
-        "dieases": "Seasonal Influenza",
+        "dieases": "Pandemic Influenza",
         "pathogenId": [
             8
         ],
