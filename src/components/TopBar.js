@@ -27,7 +27,22 @@ const TopBar = ({
                 <li className={`nav-item nav-link`} onClick={() => window.location.href = "/"}>
                     Home
                 </li>
-                {
+                <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
+                    Pathogens
+                </li>
+                <li className={`nav-item nav-link ${activeTab === 'Vaccine' ? 'active' : ''}`} onClick={() => handleTabChange('Vaccine')}>
+                    Vaccines
+                </li>
+                <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
+                    Manufacturers
+                </li>
+                <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => handleTabChange('Licenser')}>
+                    Licensing Authorities
+                </li>
+                <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
+                    Comparison
+                </li>
+                {/* {
                     !activeMenu && (
                         <>
                             <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
@@ -82,7 +97,7 @@ const TopBar = ({
                             Comparison
                         </li>
                     )
-                }
+                } */}
             </ul>
             <div className='search-container mb-3'>
                 <span className="position-relative">
