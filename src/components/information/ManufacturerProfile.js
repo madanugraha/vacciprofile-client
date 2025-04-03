@@ -45,7 +45,7 @@ const ManufacturerProfile = ({
         <div className="accordion" id="accordianManufacturerInfo">
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianManufacturer">
-                    <button className="accordion-button collapsed show subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianManu" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed show bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianManu" aria-expanded="false" aria-controls="collapseTwo">
                         Manufacturer Profile
                     </button>
                 </h2>

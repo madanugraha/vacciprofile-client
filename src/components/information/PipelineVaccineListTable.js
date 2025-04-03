@@ -51,7 +51,7 @@ const PipelineVaccineListTable = ({
     return <div className="accordion mt-1" id="accordianPipelineVaccineList">
         <div className="accordion-item">
             <h2 className="accordion-header" id="accordianPipelineVaccineLists">
-                <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPipelineVacList" aria-expanded="false" aria-controls="collapseTwo">
+                <button className="accordion-button collapsed bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPipelineVacList" aria-expanded="false" aria-controls="collapseTwo">
                     Candidate Vaccines
                 </button>
             </h2>

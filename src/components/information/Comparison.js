@@ -628,7 +628,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                     <div className="accordion" id="accordianVaccineInfo">
                         <div className="accordion-item mb-1">
                             <h2 className="accordion-header" id="accordianVaccine">
-                                <button className="accordion-button subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
+                                <button className="accordion-button bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
                                     Licensed Vaccines
                                 </button>
                             </h2>
@@ -969,7 +969,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             <div className="accordion" id="accordianPathogenInfo">
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianPathogen">
-                        <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
+                        <button className="accordion-button collapsed bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
                             Pathogen Profile
                         </button>
                     </h2>
@@ -1189,7 +1189,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                     <div className="accordion" id="accordianVaccineInfo">
                         <div className="accordion-item mb-1">
                             <h2 className="accordion-header" id="accordianVaccine">
-                                <button className="accordion-button subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
+                                <button className="accordion-button bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="true" aria-controls="collapseTwo">
                                     Licensed Vaccines
                                 </button>
                             </h2>
@@ -1530,7 +1530,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             <div className="accordion" id="accordianPathogenInfo">
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianPathogen">
-                        <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
+                        <button className="accordion-button collapsed bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
                             Pathogen Profile
                         </button>
                     </h2>

@@ -38,7 +38,7 @@ const Licenser = ({
         <div className="accordion" id="accordianLicenserInfo">
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianLicenser">
-                    <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianLicense" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianLicense" aria-expanded="false" aria-controls="collapseTwo">
                         {selectedLicenser.fullName} Profile
                     </button>
                 </h2>
@@ -55,7 +55,7 @@ const Licenser = ({
         <div className="accordion" id="accordianVaccineInfo">
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianVaccine">
-                    <button className="accordion-button collapsed show subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed show bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="false" aria-controls="collapseTwo">
                         Licensed Vaccines
                     </button>
                 </h2>

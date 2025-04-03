@@ -508,7 +508,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
             <div className="accordion" id="accordianPathogenInfo">
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianPathogen">
-                        <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
+                        <button className="accordion-button collapsed bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPatho" aria-expanded="false" aria-controls="collapseTwo">
                             Pathogen Profile
                         </button>
                     </h2>
@@ -544,7 +544,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
             <div className="accordion" id="accordianCandidateVaccineInfo">
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianCandidateVaccine">
-                        <button className="accordion-button collapsed subgroup-colour text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianCandVac" aria-expanded="false" aria-controls="collapseTwo">
+                        <button className="accordion-button collapsed bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianCandVac" aria-expanded="false" aria-controls="collapseTwo">
                             Vaccine Candidates
                         </button>
                     </h2>
