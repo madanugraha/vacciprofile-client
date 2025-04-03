@@ -2870,22 +2870,41 @@
     {
         "manufacturerId": 66,
         "name": "Center for Vaccine Development and Global Health, University of Maryland",
-        "description": "#",
-        "history": "#",
+        "description": "The Center for Vaccine Development and Global Health (CVD) at the University of Maryland School of Medicine is a world-renowned institution dedicated to developing vaccines and conducting research to address infectious diseases globally. Established in 1974, CVD focuses on combating diseases such as malaria, influenza, typhoid, cholera, Ebola, and COVID-19, with a mission to improve health equity through innovation and collaboration.",
+        "history": "Founded in 1974, CVD has been at the forefront of vaccine research and development for over five decades. It pioneered clinical trials for vaccines targeting enteric diseases, respiratory infections, and emerging pathogens. The center has conducted groundbreaking Phase 3 trials for COVID-19 vaccines developed by Pfizer, Moderna, and Novavax. CVD also collaborates internationally to test vaccines in underserved populations and leads initiatives to prevent sepsis in newborns.",
         "details": {
-            "website": "https://www.medschool.umaryland.edu/cvd/",
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1974",
+            "headquarters": "Baltimore, Maryland, USA",
+            "ceo": "Dr. Kathleen Neuzil (Director)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "~100 researchers and staff",
+            "sources": [
+                {
+                    "sourceName": "Center for Vaccine Development Official Website",
+                    "url": "https://www.medschool.umaryland.edu/cvd/"
+                },
+                {
+                    "sourceName": "The Elm - Champions of Excellence: CVD",
+                    "url": "https://elm.umaryland.edu/elm-stories/Elm-Stories-Content/On-the-Front-Lines-UMB-Champions-of-Excellence-Center-for-Vaccine-Development-and-Global-Health.php"
+                },
+                {
+                    "sourceName": "University of Maryland Newsroom - Vaccine Development Program",
+                    "url": "https://www.medschool.umaryland.edu/news/2024/university-of-maryland-school-of-medicine-launches-vaccine-development-program-to-prevent-sepsis-in-newborns-.html"
+                }
+            ]
         },
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "COVID-19 vaccines (Pfizer, Moderna, Novavax Phase 3 trials)",
+            "Malaria vaccine candidates (clinical trials)",
+            "Typhoid conjugate vaccine (global deployment studies)",
+            "Cholera vaccine development",
+            "Ebola vaccine candidates (multi-site trials)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": 69,
@@ -2926,13 +2945,13 @@
             "website": "http://advaccine.com/en/aboutadvaccine.html",
             "founded": "2017-02",
             "headquarters": "Suzhou, China",
-            "ceo": "#",
+            "ceo": "Bing Wang",
             "revenue": "$0 (Q1 2024)",
             "operatingIncome": "N/A",
             "netIncome": "-$40.65M (Q1 2024)",
             "totalAssets": "$1.73B (2023)",
             "totalEquity": "$199.21M (2023)",
-            "numberOfEmployees": "#",
+            "numberOfEmployees": "N/A",
             "sources": [
                 {
                     "sourceName": "Advaccine Official Website",
@@ -3131,22 +3150,38 @@
     {
         "manufacturerId": 77,
         "name": "Cadila Pharmaceuticals",
-        "description": "#",
-        "history": "#",
+        "description": "Cadila Pharmaceuticals is one of the largest privately held pharmaceutical companies in India, founded by Indravadan A. Modi in 1951. It specializes in developing and manufacturing affordable medicines across various therapeutic areas, including cardiovascular, gastrointestinal, analgesics, and anti-infectives. The company is known for its innovative products and commitment to research and development.",
+        "history": "Established in 1951 by Indravadan A. Modi, Cadila began operations in a rented bungalow with a modest capital. Over the decades, it has grown into a global brand with manufacturing facilities in India and Ethiopia. Cadila has been instrumental in shaping India's pharmaceutical industry, contributing to the country's self-reliance in drug production. The company has introduced several 'firsts in the world' formulations, such as Rabeprazole in IV form and Polycap for cardiovascular diseases.",
         "details": {
-            "founded": "#",
-            "headquarters": "#",
-            "ceo": "#",
-            "revenue": "#",
-            "operatingIncome": "#",
-            "netIncome": "#",
-            "totalAssets": "#",
-            "totalEquity": "#",
-            "numberOfEmployees": "#",
-            "sources": []
+            "founded": "1951",
+            "headquarters": "Ahmedabad, Gujarat, India",
+            "ceo": "N/A (Founded by Indravadan A. Modi)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "5,001-10,000 employees",
+            "sources": [
+                {
+                    "sourceName": "Cadila Pharmaceuticals Official Website",
+                    "url": "https://www.cadilapharma.com/"
+                },
+                {
+                    "sourceName": "Wikipedia - Cadila Pharmaceuticals",
+                    "url": "https://en.wikipedia.org/wiki/Cadila_Pharmaceuticals"
+                },
+                {
+                    "sourceName": "LinkedIn - Cadila Pharmaceuticals",
+                    "url": "https://in.linkedin.com/company/cadila-pharmaceuticals"
+                }
+            ]
         },
-        "vaccines": [],
-        "lastUpdated": "2024-Aug"
+        "vaccines": [
+            "Vaccine manufacturing capabilities using Virus-Like Particles (VLP) technology",
+            "Research collaborations for vaccine development (though specific vaccine products not detailed)"
+        ],
+        "lastUpdated": "2025-Mar"
     },
     {
         "manufacturerId": "#",
