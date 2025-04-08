@@ -76,6 +76,10 @@ code {
   background: rgba(88, 26, 233, 1);
 }
 
+.bg-main {
+  background-color: #C7EAE4 !important;
+  color: black !important;
+}
 
 .horizontal-scroll-except-first-column {
   width: 100%;
@@ -91,7 +95,8 @@ code {
   /* position: absolute;
   width: 200px;
   margin-left: -350px; */
-  background: rgba(88, 26, 233, 1);
+  background: #d17728;
+  color: white;
   height: '40%';
 }
 
@@ -121,7 +126,8 @@ code {
 .sticky-col {
   position: -webkit-sticky;
   position: sticky;
-  background: rgba(88, 26, 233, 1);
+  background: #d17728;
+  color: white;
   height: '100%';
   border-bottom: 1px;
 }

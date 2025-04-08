@@ -12515,9 +12515,9 @@
             {
                 "name": "FDA",
                 "type": "#",
-                "approvalDate": "???",
+                "approvalDate": "21/06/1989",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/bcg-vaccine",
-                "lastUpdated": "???"
+                "lastUpdated": "21/02/2018"
             }
         ]
     },
@@ -13372,7 +13372,7 @@
     {
         "vaccineId": 233,
         "name": "SKYVaricella Inj®",
-        "dieases":"Chickenpox (Varicella)",
+        "dieases": "Chickenpox (Varicella)",
         "pathogenId": [
             11
         ],
@@ -13448,7 +13448,7 @@
     {
         "vaccineId": 234,
         "name": "Varicella Vaccine Live®",
-        "dieases":"Chickenpox (Varicella)",
+        "dieases": "Chickenpox (Varicella)",
         "pathogenId": [
             11
         ],
@@ -13524,7 +13524,7 @@
     {
         "vaccineId": 235,
         "name": "Varivax®",
-        "dieases":"Chickenpox (Varicella)",
+        "dieases": "Chickenpox (Varicella)",
         "pathogenId": [
             11
         ],

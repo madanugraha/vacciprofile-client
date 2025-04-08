@@ -637,7 +637,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                     <div>
                                         <div className='mt-4' style={{ paddingLeft: 10 }}>
                                             <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                <Checkbox checked={viewAllVaccines} onChange={((e, checked) => {
+                                                <Checkbox style={{ color: '#d17728' }} checked={viewAllVaccines} onChange={((e, checked) => {
                                                     setViewAllVaccines(true);
                                                     setViewSinglePathogenVaccine(false);
                                                     setViewCombinationVaccine(false);
@@ -647,7 +647,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                             <div className='d-inline-flex justify-content-between w-100' style={{ marginBottom: 50 }}>
                                                 <div className='d-inline-flex w-100'>
                                                     <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                        <Checkbox checked={viewSinglePathogenVaccine} onChange={((e, checked) => {
+                                                        <Checkbox style={{ color: '#d17728' }} checked={viewSinglePathogenVaccine} onChange={((e, checked) => {
                                                             setViewSinglePathogenVaccine(true);
                                                             setViewAllVaccines(false);
                                                             setViewCombinationVaccine(false);
@@ -655,7 +655,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Single Pathogen Vaccines"}</span>` }}></div>
                                                     </div>
                                                     <div className='d-inline-flex' style={{ alignItems: 'center', marginLeft: 20 }}>
-                                                        <Checkbox checked={viewCombinationVaccine} onChange={((e, checked) => {
+                                                        <Checkbox style={{ color: '#d17728' }} checked={viewCombinationVaccine} onChange={((e, checked) => {
                                                             setViewCombinationVaccine(true)
                                                             setViewAllVaccines(false);
                                                             setViewSinglePathogenVaccine(false);
@@ -686,7 +686,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 // setOpen(true)
                                                                             }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
                                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                    <Checkbox style={{ color: '#d17728' }} checked={vaccine.checked} onChange={((e, checked) => {
                                                                                         handleCheckBox(vaccine, false);
                                                                                     })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
                                                                                 </div>
@@ -698,7 +698,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 return (
 
                                                                                     <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                        <Checkbox style={{ color: '#d17728' }} checked={licenser.checked} onChange={((e, checked) => {
                                                                                             handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                                     </div>
@@ -741,7 +741,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 // setOpen(true)
                                                                             }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
                                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                    <Checkbox style={{ color: '#d17728' }} checked={vaccine.checked} onChange={((e, checked) => {
                                                                                         handleCheckBox(vaccine, false);
                                                                                     })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
                                                                                 </div>
@@ -752,7 +752,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 return (
 
                                                                                     <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                        <Checkbox style={{ color: '#d17728' }} checked={licenser.checked} onChange={((e, checked) => {
                                                                                             handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                                     </div>
@@ -795,7 +795,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 // setOpen(true)
                                                                             }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
                                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                    <Checkbox style={{ color: '#d17728' }} checked={vaccine.checked} onChange={((e, checked) => {
                                                                                         handleCheckBox(vaccine, false);
                                                                                     })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
                                                                                 </div>
@@ -806,7 +806,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 return (
 
                                                                                     <div className='d-inline-flex' style={{ alignItems: 'center', marginRight: 5 }}>
-                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                        <Checkbox style={{ color: '#d17728' }} checked={licenser.checked} onChange={((e, checked) => {
                                                                                             handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                                     </div>
@@ -829,7 +829,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                     ) : null
                                                 }
                                                 <div style={{ marginRight: 10 }}>
-                                                    <Button style={{ marginLeft: 10 }} disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
+                                                    <Button style={{ marginLeft: 10, background: '#d17728', fontSize: 'bold', color: 'white' }} disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
                                                         const check = vaccineFieldsState.filter((x) => x.checked).map((x) => {
                                                             return {
                                                                 ...x,
@@ -853,7 +853,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                     }}>Compare Vaccines {vaccineFieldsState.filter((x) => x.checked).length >= 1 ? `(${vaccineFieldsState.filter((x) => x.checked).length})` : null}</Button>
                                                     <div style={{ marginRight: 0 }}>
                                                         <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                            <Checkbox checked={vaccineSelectedOnly} onChange={((e, checked) => {
+                                                            <Checkbox style={{ color: '#d17728' }} checked={vaccineSelectedOnly} onChange={((e, checked) => {
                                                                 setVaccineSelectedOnly(checked);
                                                             })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Show Selected Vaccines only</span>` }}></div>
                                                         </div>
@@ -943,7 +943,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 <div>
                                                                     <div>
                                                                         <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                            <Checkbox checked={allFactorShows} onChange={((e, checked) => {
+                                                                            <Checkbox style={{ color: '#d17728' }} checked={allFactorShows} onChange={((e, checked) => {
                                                                                 setAllFactorShows(checked);
                                                                             })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Set All Items to be shown</span>` }}></div>
                                                                         </div>
@@ -952,7 +952,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 <p onClick={() => {
                                                                     setOpen(true);
                                                                     handleProceedComparison();
-                                                                }} className='fw-bold cursor-pointer compare-color-text' style={{ marginTop: 20 }}>&#8226;{" "}Proceed Comparison</p>
+                                                                }} className='fw-bold cursor-pointer compare-color-text' style={{ marginTop: 20, color: '#d17728' }}>&#8226;{" "}Proceed Comparison</p>
                                                             </>
                                                         )
                                                     }
@@ -1014,8 +1014,8 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             >
                 <Box sx={style}>
                     <div style={{ height: '100%', width: '100%', position: 'relative' }}>
-                        <div style={{ position: 'absolute', right: -10, top: -20 }}>
-                            <button type='button' onClick={() => printTable()} className='btn btn-primary'>Print Document</button>
+                        <div style={{ position: 'absolute', right: -150, top: -20, width: 300 }}>
+                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Close</button>
                         </div>
                         <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
@@ -1107,7 +1107,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             <li key={Math.random() * 999} onClick={() => {
                                                             }} className='' style={{ maxWidth: 200, minWidth: 200, alignItems: 'center', display: 'flex' }}>
                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                    <Checkbox style={{ color: '#d17728' }} checked={vaccine.checked} onChange={((e, checked) => {
                                                                         handleSecondaryCheckBox(vaccine);
                                                                     })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${cutStringMoreThan32(vaccine.name)}</span>` }}></div>
                                                                 </div>
@@ -1115,7 +1115,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
                                                                 return (
                                                                     <div className='d-inline-flex' style={{ alignItems: 'center', marginRight: 5 }}>
-                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                        <Checkbox style={{ color: '#d17728' }} checked={licenser.checked} onChange={((e, checked) => {
                                                                             handleSecondaryCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, secondaryIdx);
                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                     </div>
@@ -1147,18 +1147,18 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
-                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-black bg-sidebar-unselected` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                             {/** TEST */}
                                                             {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
                                                                     return data.filter((x) => x.checked).map((vaccine) => {
                                                                         return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser, licenserIdx) => {
                                                                             const conditionedFirstRow = idx === 0 ? {
-                                                                                background: "black",
-                                                                                color: "white"
+                                                                                background: "#C7EAE4",
+                                                                                color: "black"
                                                                             } : {};
                                                                             return (
-                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>
+                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-black bg-sidebar-unselected` : `text-black bg-sidebar-unselected`} comparison-table-handler`}>
                                                                                     <div className='d-inline-flex justify-content-between w-100'>
                                                                                         <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
@@ -1198,7 +1198,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                     <div>
                                         <div className='mt-4' style={{ paddingLeft: 10 }}>
                                             <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                <Checkbox checked={viewAllVaccines} onChange={((e, checked) => {
+                                                <Checkbox style={{ color: '#d17728' }} checked={viewAllVaccines} onChange={((e, checked) => {
                                                     setViewAllVaccines(true);
                                                     setViewSinglePathogenVaccine(false);
                                                     setViewCombinationVaccine(false);
@@ -1208,7 +1208,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                             <div className='d-inline-flex justify-content-between w-100' style={{ marginBottom: 50 }}>
                                                 <div className='d-inline-flex w-100'>
                                                     <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                        <Checkbox checked={viewSinglePathogenVaccine} onChange={((e, checked) => {
+                                                        <Checkbox style={{ color: '#d17728' }} checked={viewSinglePathogenVaccine} onChange={((e, checked) => {
                                                             setViewSinglePathogenVaccine(true);
                                                             setViewAllVaccines(false);
                                                             setViewCombinationVaccine(false);
@@ -1216,7 +1216,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${"View Single Pathogen Vaccines"}</span>` }}></div>
                                                     </div>
                                                     <div className='d-inline-flex' style={{ alignItems: 'center', marginLeft: 20 }}>
-                                                        <Checkbox checked={viewCombinationVaccine} onChange={((e, checked) => {
+                                                        <Checkbox style={{ color: '#d17728' }} checked={viewCombinationVaccine} onChange={((e, checked) => {
                                                             setViewCombinationVaccine(true)
                                                             setViewAllVaccines(false);
                                                             setViewSinglePathogenVaccine(false);
@@ -1247,7 +1247,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 // setOpen(true)
                                                                             }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
                                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                    <Checkbox style={{ color: '#d17728' }} checked={vaccine.checked} onChange={((e, checked) => {
                                                                                         handleCheckBox(vaccine, false);
                                                                                     })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
                                                                                 </div>
@@ -1259,7 +1259,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 return (
 
                                                                                     <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                        <Checkbox style={{ color: '#d17728' }} checked={licenser.checked} onChange={((e, checked) => {
                                                                                             handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                                     </div>
@@ -1302,7 +1302,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 // setOpen(true)
                                                                             }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
                                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                    <Checkbox style={{ color: '#d17728' }} checked={vaccine.checked} onChange={((e, checked) => {
                                                                                         handleCheckBox(vaccine, false);
                                                                                     })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
                                                                                 </div>
@@ -1313,7 +1313,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 return (
 
                                                                                     <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                        <Checkbox style={{ color: '#d17728' }} checked={licenser.checked} onChange={((e, checked) => {
                                                                                             handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                                     </div>
@@ -1356,7 +1356,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 // setOpen(true)
                                                                             }} className='' style={{ marginTop: 15, maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
                                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                                    <Checkbox style={{ color: '#d17728' }} checked={vaccine.checked} onChange={((e, checked) => {
                                                                                         handleCheckBox(vaccine, false);
                                                                                     })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
                                                                                 </div>
@@ -1367,7 +1367,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 return (
 
                                                                                     <div className='d-inline-flex' style={{ alignItems: 'center', marginRight: 5 }}>
-                                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                                        <Checkbox style={{ color: '#d17728' }} checked={licenser.checked} onChange={((e, checked) => {
                                                                                             handleCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, false);
                                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                                     </div>
@@ -1414,7 +1414,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                     }}>Compare Vaccines {vaccineFieldsState.filter((x) => x.checked).length >= 1 ? `(${vaccineFieldsState.filter((x) => x.checked).length})` : null}</Button>
                                                     <div style={{ marginRight: 0 }}>
                                                         <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                            <Checkbox checked={vaccineSelectedOnly} onChange={((e, checked) => {
+                                                            <Checkbox style={{ color: '#d17728' }} checked={vaccineSelectedOnly} onChange={((e, checked) => {
                                                                 setVaccineSelectedOnly(checked);
                                                             })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Show Selected Vaccines only</span>` }}></div>
                                                         </div>
@@ -1504,7 +1504,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 <div>
                                                                     <div>
                                                                         <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                            <Checkbox checked={allFactorShows} onChange={((e, checked) => {
+                                                                            <Checkbox style={{ color: '#d17728' }} checked={allFactorShows} onChange={((e, checked) => {
                                                                                 setAllFactorShows(checked);
                                                                             })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>Set All Items to be shown</span>` }}></div>
                                                                         </div>
@@ -1575,8 +1575,8 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             >
                 <Box sx={style}>
                     <div style={{ height: '100%', width: '100%', position: 'relative' }}>
-                        <div style={{ position: 'absolute', right: -10, top: -20 }}>
-                            <button type='button' onClick={() => printTable()} className='btn btn-primary'>Print Document</button>
+                        <div style={{ position: 'absolute', right: -150, top: -20, width: 300 }}>
+                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Close</button>
                         </div>
                         <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
@@ -1668,7 +1668,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             <li key={Math.random() * 999} onClick={() => {
                                                             }} className='' style={{ maxWidth: 200, minWidth: 200, alignItems: 'center', display: 'flex' }}>
                                                                 <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
+                                                                    <Checkbox style={{ color: '#d17728' }} checked={vaccine.checked} onChange={((e, checked) => {
                                                                         handleSecondaryCheckBox(vaccine);
                                                                     })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${cutStringMoreThan32(vaccine.name)}</span>` }}></div>
                                                                 </div>
@@ -1676,7 +1676,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                             {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
                                                                 return (
                                                                     <div className='d-inline-flex' style={{ alignItems: 'center', marginRight: 5 }}>
-                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
+                                                                        <Checkbox style={{ color: '#d17728' }} checked={licenser.checked} onChange={((e, checked) => {
                                                                             handleSecondaryCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, secondaryIdx);
                                                                         })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
                                                                     </div>
@@ -1708,7 +1708,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
-                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "Efficacy" ? "Efficacy (VEy)/ Effectiveness (VEs)" : key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-black bg-sidebar-unselected` : ``}`}>{key === "Efficacy" ? "Efficacy (VEy)/ Effectiveness (VEs)" : key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                             {/** TEST */}
                                                             {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
@@ -1719,9 +1719,9 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                                 color: "white"
                                                                             } : {};
                                                                             return (
-                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>
+                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-black bg-sidebar-unselected` : ``} comparison-table-handler`}>
                                                                                     <div className='d-inline-flex justify-content-between w-100'>
-                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
+                                                                                        <span style={{ color: 'black' }}> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
                                                                                     </div>
                                                                                 </td>
