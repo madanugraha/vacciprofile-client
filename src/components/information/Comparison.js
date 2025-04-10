@@ -14,7 +14,25 @@ import { toast } from 'react-toastify';
 import { cutStringMoreThan32 } from '../../utils/string';
 import * as _ from 'lodash';
 import DraggableIcon from '../../assets/icons/draggable';
-import { vaccineDeases } from '../../assets/data/dieases';
+import ExcelJS from 'exceljs';
+
+
+const workbook = new ExcelJS.Workbook();
+workbook.creator = 'Me';
+workbook.lastModifiedBy = 'Her';
+workbook.created = new Date(1985, 8, 30);
+workbook.modified = new Date();
+workbook.lastPrinted = new Date(2016, 9, 27);
+// Set workbook dates to 1904 date system
+workbook.properties.date1904 = true;
+
+
+// Create worksheets with headers and footers
+const sheet = workbook.addWorksheet('My SheetXXXX');
+
+sheet.addRow({ id: 1, name: 'John Doe', dob: new Date(1970, 1, 1) });
+sheet.addRow({ id: 2, name: 'Jane Doe MAD', dob: new Date(1965, 1, 7) });
+
 
 const style = {
     position: 'absolute',
@@ -830,25 +848,35 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                 }
                                                 <div style={{ marginRight: 10 }}>
                                                     <Button style={{ marginLeft: 10, background: '#d17728', fontSize: 'bold', color: 'white' }} disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
-                                                        const check = vaccineFieldsState.filter((x) => x.checked).map((x) => {
-                                                            return {
-                                                                ...x,
-                                                                hasLicenserChecked: x.licenser.some((y) => y.checked)
-                                                            }
+                                                        sheet.xlsx.writeBuffer().then(function (data) {
+                                                            const blob = new Blob([data],
+                                                                { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+                                                            const url = window.URL.createObjectURL(blob);
+                                                            const anchor = document.createElement('a');
+                                                            anchor.href = url;
+                                                            anchor.download = 'download.xlsx';
+                                                            anchor.click();
+                                                            window.URL.revokeObjectURL(url);
                                                         });
-                                                        if (check.length > 0) {
-                                                            let ctx = 0;
-                                                            check.map((x) => {
-                                                                if (!x.hasLicenserChecked) {
-                                                                    ctx += 1;
-                                                                    const msg = `Vaccine: ${x.name} should have atleast one Licenser selected`
-                                                                    return toast.error(msg);
-                                                                }
-                                                            })
-                                                            if (ctx === 0) {
-                                                                setCompareActive(!compareActive)
-                                                            }
-                                                        }
+                                                        // const check = vaccineFieldsState.filter((x) => x.checked).map((x) => {
+                                                        //     return {
+                                                        //         ...x,
+                                                        //         hasLicenserChecked: x.licenser.some((y) => y.checked)
+                                                        //     }
+                                                        // });
+                                                        // if (check.length > 0) {
+                                                        //     let ctx = 0;
+                                                        //     check.map((x) => {
+                                                        //         if (!x.hasLicenserChecked) {
+                                                        //             ctx += 1;
+                                                        //             const msg = `Vaccine: ${x.name} should have atleast one Licenser selected`
+                                                        //             return toast.error(msg);
+                                                        //         }
+                                                        //     })
+                                                        //     if (ctx === 0) {
+                                                        //         setCompareActive(!compareActive)
+                                                        //     }
+                                                        // }
 
                                                     }}>Compare Vaccines {vaccineFieldsState.filter((x) => x.checked).length >= 1 ? `(${vaccineFieldsState.filter((x) => x.checked).length})` : null}</Button>
                                                     <div style={{ marginRight: 0 }}>
