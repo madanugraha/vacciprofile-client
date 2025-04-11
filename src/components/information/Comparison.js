@@ -146,7 +146,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
 
 
-    const newA = selectedFilterTableFields?.map((x) => {
+    const newA = selectedFilterTableFields && selectedFilterTableFields.length > 0 && selectedFilterTableFields?.map((x) => {
         const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.alt}`);
         const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
         const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
@@ -169,7 +169,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         return [x.title, (checkIfExceptionFields(x.title) ? result2 : result1)];
     });
 
-    const arrayToGenerate = newA;
+    const arrayToGenerate = newA || [];
 
     const handleProceedComparison = () => {
         setCompareSubmitted(true);
