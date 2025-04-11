@@ -146,7 +146,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
 
 
-    const newA = selectedFilterTableFields && selectedFilterTableFields.length > 0 && selectedFilterTableFields?.map((x) => {
+    const newA = selectedFilterTableFields && selectedFilterTableFields.length > 0 ? selectedFilterTableFields?.map((x) => {
         const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.alt}`);
         const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
         const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
@@ -156,18 +156,18 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[x.alt]))}`
         });
 
-        if (x.alt === "approvalDate") {
+        if (result3 && result3.length > 0 && x.alt === "approvalDate") {
             return [x.title, ...result3]
         };
-        if (x.alt === "lastUpdated") {
+        if (result4 && result4.length > 0 && x.alt === "lastUpdated") {
             return [x.title, ...result4]
         };
-        if (x.alt === "source") {
+        if (result5 && result5.length > 0 && x.alt === "source") {
             return [x.title, ...result5]
         };
 
         return [x.title, (checkIfExceptionFields(x.title) ? result2 : result1)];
-    });
+    }) : [];
 
     const arrayToGenerate = newA || [];
 
