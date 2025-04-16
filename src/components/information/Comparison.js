@@ -28,10 +28,8 @@ workbook.properties.date1904 = true;
 
 
 // Create worksheets with headers and footers
-const sheet = workbook.addWorksheet('My SheetXXXX');
+const sheet = workbook.addWorksheet('Comparison Result');
 
-sheet.addRow({ id: 1, name: 'John Doe', dob: new Date(1970, 1, 1) });
-sheet.addRow({ id: 2, name: 'Jane Doe MAD', dob: new Date(1965, 1, 7) });
 
 
 const style = {
@@ -71,7 +69,6 @@ const style = {
  * />
  */
 const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
-    console.log(selectedPathogen);
     const [open, setOpen] = useState(false);
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const convertCamelCaseToReadable = string => {
@@ -116,12 +113,63 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         }
     ];
 
+    const exceptionalFields = [
+        { title: 'Composition/Platform', alt: 'composition' },
+        { title: 'Strain Coverage', alt: 'strainCoverage' },
+        { title: 'Indication', alt: 'indication' },
+        { title: 'Dosing', alt: 'dosing' },
+        { title: 'Contraindication', alt: 'contraindication' },
+        { title: 'Immunogenicity', alt: 'immunogenicity' },
+        { title: 'Efficacy', alt: 'Efficacy' },
+        { title: 'Duration of Protection', alt: 'durationOfProtection' },
+        { title: 'Co-Administration', alt: 'coAdministration' },
+        { title: 'Reactogenicity', alt: 'reactogenicity' },
+        { title: 'Safety', alt: 'safety' },
+        { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
+        { title: 'Others', alt: 'others' },
+    ];
+
+    const checkIfExceptionFields = (name) => {
+        const f = exceptionalFields.some((xx) => xx.title.includes(name));
+        if (f) {
+            return true;
+        } else {
+            return false;
+        };
+    };
+
     const [licenserFieldsVaccine, setLicenserFieldsVaccine] = useState([]);
     const [selectedFilterVaccine, setSelectedFilterVaccine] = useState([]);
     const [selectedFilterLicenser, setSelectedFilterLicenser] = useState([licenserFields[0], licenserFields[1], tableFields[14], tableFields[15], tableFields[16]]);
     const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]]);
     const [vaccineFieldsState, setVaccineFieldsState] = useState([]);
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
+
+
+    const newA = selectedFilterTableFields && selectedFilterTableFields.length > 0 ? selectedFilterTableFields?.map((x) => {
+        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.alt}`);
+        const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
+        const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
+        const result5 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.source))}`);
+
+        const result2 = secondaryVaccineFields[0]?.map((y) => {
+            return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[x.alt]))}`
+        });
+
+        if (result3 && result3.length > 0 && x.alt === "approvalDate") {
+            return [x.title, ...result3]
+        };
+        if (result4 && result4.length > 0 && x.alt === "lastUpdated") {
+            return [x.title, ...result4]
+        };
+        if (result5 && result5.length > 0 && x.alt === "source") {
+            return [x.title, ...result5]
+        };
+
+        return [x.title, (checkIfExceptionFields(x.title) ? result2 : result1)];
+    }) : [];
+
+    const arrayToGenerate = newA || [];
 
     const handleProceedComparison = () => {
         setCompareSubmitted(true);
@@ -144,6 +192,55 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [showFda, setShowFda] = useState(false);
     const [showWho, setShowWho] = useState(false);
     const [vaccineSelectedOnly, setVaccineSelectedOnly] = useState(false);
+
+
+    const autoWidth = (worksheet, minimalWidth = 10) => {
+        worksheet.columns.forEach((column) => {
+            let maxColumnLength = 0;
+            column.eachCell({ includeEmpty: true }, (cell) => {
+                maxColumnLength = Math.max(
+                    maxColumnLength,
+                    minimalWidth,
+                    cell.value ? cell.value.toString().length : 0
+                );
+            });
+            column.width = maxColumnLength + 2;
+        });
+    };
+
+    const handleDownloadComparison = () => {
+
+        sheet.columns = [arrayToGenerate[0][0], ...arrayToGenerate[0][1]].map((x) => {
+            return {
+                header: x, key: x, width: 10
+            }
+        });
+
+        const p = arrayToGenerate.slice(1).map((x) => {
+            if (typeof x[1] === "string") {
+                return x
+            } else {
+                return [x[0], ...x.slice(1)[0]]
+            }
+        });
+
+        p.map((x) => {
+            return sheet.addRow(x);
+        });
+
+        autoWidth(sheet);
+
+        workbook.xlsx.writeBuffer().then(function (data) {
+            const blob = new Blob([data],
+                { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+            const url = window.URL.createObjectURL(blob);
+            const anchor = document.createElement('a');
+            anchor.href = url;
+            anchor.download = 'vacciprofile-comparison-result.xlsx';
+            anchor.click();
+            window.URL.revokeObjectURL(url);
+        });
+    };
 
     const handleSelectLicenserFieldsVaccine = (name, value) => {
         if (name) {
@@ -848,36 +945,25 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                 }
                                                 <div style={{ marginRight: 10 }}>
                                                     <Button style={{ marginLeft: 10, background: '#d17728', fontSize: 'bold', color: 'white' }} disabled={!vaccineFieldsState.some((z) => z.checked)} variant="contained" onClick={() => {
-                                                        sheet.xlsx.writeBuffer().then(function (data) {
-                                                            const blob = new Blob([data],
-                                                                { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-                                                            const url = window.URL.createObjectURL(blob);
-                                                            const anchor = document.createElement('a');
-                                                            anchor.href = url;
-                                                            anchor.download = 'download.xlsx';
-                                                            anchor.click();
-                                                            window.URL.revokeObjectURL(url);
+                                                        const check = vaccineFieldsState.filter((x) => x.checked).map((x) => {
+                                                            return {
+                                                                ...x,
+                                                                hasLicenserChecked: x.licenser.some((y) => y.checked)
+                                                            }
                                                         });
-                                                        // const check = vaccineFieldsState.filter((x) => x.checked).map((x) => {
-                                                        //     return {
-                                                        //         ...x,
-                                                        //         hasLicenserChecked: x.licenser.some((y) => y.checked)
-                                                        //     }
-                                                        // });
-                                                        // if (check.length > 0) {
-                                                        //     let ctx = 0;
-                                                        //     check.map((x) => {
-                                                        //         if (!x.hasLicenserChecked) {
-                                                        //             ctx += 1;
-                                                        //             const msg = `Vaccine: ${x.name} should have atleast one Licenser selected`
-                                                        //             return toast.error(msg);
-                                                        //         }
-                                                        //     })
-                                                        //     if (ctx === 0) {
-                                                        //         setCompareActive(!compareActive)
-                                                        //     }
-                                                        // }
-
+                                                        if (check.length > 0) {
+                                                            let ctx = 0;
+                                                            check.map((x) => {
+                                                                if (!x.hasLicenserChecked) {
+                                                                    ctx += 1;
+                                                                    const msg = `Vaccine: ${x.name} should have atleast one Licenser selected`
+                                                                    return toast.error(msg);
+                                                                }
+                                                            })
+                                                            if (ctx === 0) {
+                                                                setCompareActive(!compareActive)
+                                                            }
+                                                        }
                                                     }}>Compare Vaccines {vaccineFieldsState.filter((x) => x.checked).length >= 1 ? `(${vaccineFieldsState.filter((x) => x.checked).length})` : null}</Button>
                                                     <div style={{ marginRight: 0 }}>
                                                         <div className='d-inline-flex' style={{ alignItems: 'center' }}>
@@ -1042,8 +1128,11 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             >
                 <Box sx={style}>
                     <div style={{ height: '100%', width: '100%', position: 'relative' }}>
+                        <div style={{ position: 'absolute', right: 10, top: -20, width: 300 }}>
+                            <button type='button' onClick={() => handleDownloadComparison()} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
+                        </div>
                         <div style={{ position: 'absolute', right: -150, top: -20, width: 300 }}>
-                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Close</button>
+                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: '#c1121f', color: 'white', fontSize: 'bold' }}>Close</button>
                         </div>
                         <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
@@ -1603,8 +1692,11 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             >
                 <Box sx={style}>
                     <div style={{ height: '100%', width: '100%', position: 'relative' }}>
+                        <div style={{ position: 'absolute', right: 10, top: -20, width: 300 }}>
+                            <button type='button' onClick={() => handleDownloadComparison()} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
+                        </div>
                         <div style={{ position: 'absolute', right: -150, top: -20, width: 300 }}>
-                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Close</button>
+                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: '#c1121f', color: 'white', fontSize: 'bold' }}>Close</button>
                         </div>
                         <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
