@@ -19,6 +19,7 @@ import pipelineVaccines from './assets/data/pipeline-vaccines.json';
 import licensers from './assets/data/licensers.json';
 import scientificNames from './assets/scientificNames';
 import { compareMenu } from './assets/data/compare-vaccine.js';
+
 /**
  * Main application component for the vaccine profile page.
  *
@@ -629,7 +630,7 @@ const App = () => {
         // setCompareList(pathogens);
         setSelectedPathogen(pathogens[0])
         setSelectedLicenser(licensers[0]);
-        const vaccineSorted = vaccines.sort((a,b) => a.name.localeCompare(b.name))[0]
+        const vaccineSorted = vaccines.sort((a, b) => a.name.localeCompare(b.name))[0]
         setSelectedVaccine(vaccineSorted);
         setSelectedCompare(pathogens[0])
         setSelectedManufacturer(manufacturers[0])
@@ -700,8 +701,27 @@ const App = () => {
                         getLicenserById={getLicenserById}
                     />
                 </div>
-                {/* <Footer/>  */}
             </div>
+            <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;' }}>
+                    <div style={{ marginBottom: '10px' }}>
+                        <div>
+                            <img src="/images/logo PNG.png" alt="Global Health Press Logo" style={{ height: '80px' }} />
+                        </div>
+                    </div>
+                    <div style={{ marginBlock: '10px' }}>
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Terms & Conditions</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Privacy Policy</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Disclaimer</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Imprint</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Contacts</a>
+                    </div>
+                    <div style={{ marginBottom: '10px' }}>
+                        Copyright © 2009-2025 Global Health Press Pte Ltd. Reg. No. 200921795N All Rights Reserved.
+                    </div>
+                    <div>
+                        Subject to <a href="#" style={{ color: '#4da6ff', textDecoration: 'none' }}>Creative Commons Licence (cc)</a>.
+                    </div>
+                </footer>
             <ToastContainer />
         </div>
     );
