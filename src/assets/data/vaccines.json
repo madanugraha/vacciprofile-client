@@ -67,7 +67,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "16/03/2011",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/adenovirus-type-4-and-type-7-vaccine-live-oral",
                 "lastUpdated": "15/10/2019"
@@ -142,7 +142,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/04/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/biothrax",
                 "lastUpdated": "23/11/2015"
@@ -217,7 +217,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/07/2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/cyfendus",
                 "lastUpdated": "20/07/2023"
@@ -292,17 +292,17 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/03/2023",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/bimervax",
                 "lastUpdated": "05/09/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/10/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bimervax",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -377,14 +377,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/12/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/comirnaty",
                 "lastUpdated": "28/11/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/08/2021",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/comirnaty",
                 "lastUpdated": "10/10/2024"
@@ -459,7 +459,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/12/2021",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/nuvaxovid",
                 "lastUpdated": "16/10/2024"
@@ -534,14 +534,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/01/2021",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/spikevax",
                 "lastUpdated": "18/09/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/01/2022",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/spikevax",
                 "lastUpdated": "06/09/2024"
@@ -616,14 +616,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/06/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/ixchiq",
                 "lastUpdated": "18/07/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/11/2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/ixchiq",
                 "lastUpdated": "09/11/2023"
@@ -698,14 +698,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "08/04/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/vaxchora",
                 "lastUpdated": "27/09/2022"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "13/02/2020",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/vaxchora",
                 "lastUpdated": "12/06/2024"
@@ -780,17 +780,17 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/05/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/dukoral",
                 "lastUpdated": "06/04/2022"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "25/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/dukoral",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -848,7 +848,7 @@
                 "indication": "Prevention of cholera caused by V. cholerae in individuals <1 yr.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; acute gastroenteritis; acute febrile illness; breastfeeding; pregnancy (use risk/benefit strategy in case of expose or travel to high-risk areas).",
                 "dosing": "Oral; 2 doses (1.5 mL each); 2 weeks interval.",
-                "Efficacy": "efficacy against serogroup O139 is not demonstrated).IndicationPrevention of cholera caused by V. cholerae in individuals <1 yr.; to be used based on official recommendations.DosingOral; 2 doses (1.5 mL each); 2 weeks interval.ContraindicationHypersensitivity; acute gastroenteritis; acute febrile illness; breastfeeding; pregnancy (use risk/benefit strategy in case of expose or travel to high-risk areas).ImmunogenicityNo data in the label.No data in the label.",
+                "Efficacy": "No data in the label.",
                 "durationOfProtection": "No data in the label.",
                 "coAdministration": "No data in the label.",
                 "reactogenicity": "Most frequently reported: headache; nausea/vomiting; fever; myalgia.",
@@ -861,24 +861,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/12/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvichol",
-                "lastUpdated": "#"
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/euvicholr-s",
-                "lastUpdated": "#"
-            },
-            {
-                "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/euvichol-plus",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -950,7 +936,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/09/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/shanchol",
                 "lastUpdated": ""
@@ -1025,14 +1011,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/06/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/qdenga",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/05/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/qdengar",
                 "lastUpdated": ""
@@ -1107,23 +1093,23 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/12/2018",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/dengvaxia",
                 "lastUpdated": "04/01/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/05/2019",
                 "lastUpdated": "30/06/2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/dengvaxia"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "25/03/2020",
-                "lastUpdated": "#",
+                "lastUpdated": "N/A",
                 "source": "https://extranet.who.int/prequal/vaccines/p/dengvaxia"
             }
         ]
@@ -1197,7 +1183,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/03/2014",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/tdvax",
                 "lastUpdated": "15/11/2018"
@@ -1273,7 +1259,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/06/2008",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/tenivac",
                 "lastUpdated": "16/12/2022"
@@ -1349,7 +1335,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/adsorbed-dt-vaccine",
                 "lastUpdated": ""
@@ -1425,14 +1411,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diftet",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diftet-0",
                 "lastUpdated": ""
@@ -1508,21 +1494,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/09/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-be",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/09/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-8",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/09/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-11",
                 "lastUpdated": ""
@@ -1597,21 +1583,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-paediatric",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-pediatric",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-pediatric-0",
                 "lastUpdated": ""
@@ -1686,21 +1672,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-adults-and-adolescents",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-adults-and-adolescents-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-adults-and-adolescents-1",
                 "lastUpdated": ""
@@ -1776,10 +1762,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/imovax-dt-adult",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -1852,14 +1838,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetadif",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetadif-0",
                 "lastUpdated": ""
@@ -1936,7 +1922,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/01/1997",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/infanrix",
                 "lastUpdated": "27/10/2023"
@@ -2012,14 +1998,14 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "10/06/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/adacel",
                 "lastUpdated": "11/05/2023"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "08/05/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/adacel",
                 "lastUpdated": ""
@@ -2096,7 +2082,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/05/2002",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/daptacel",
                 "lastUpdated": "21/07/2022"
@@ -2173,14 +2159,14 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/05/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/boostrix",
                 "lastUpdated": "27/10/2023"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/boostrix",
                 "lastUpdated": ""
@@ -2257,7 +2243,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/04/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/dtp-vaccine",
                 "lastUpdated": ""
@@ -2336,14 +2322,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "02/10/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/easyfive-tt-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "02/10/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/easyfive-tt",
                 "lastUpdated": ""
@@ -2422,14 +2408,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "10/02/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/eupenta",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "10/02/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/eupenta-0",
                 "lastUpdated": ""
@@ -2508,14 +2494,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/09/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/09/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-10",
                 "lastUpdated": ""
@@ -2594,14 +2580,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/12/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pentabio",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/12/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pentabio-0",
                 "lastUpdated": ""
@@ -2679,7 +2665,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "25/06/2008",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/kinrix",
                 "lastUpdated": "27/10/2023"
@@ -2757,7 +2743,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "24/03/2015",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/quadracel",
                 "lastUpdated": "21/07/2022"
@@ -2836,7 +2822,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "13/12/2002",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/pediarix",
                 "lastUpdated": "26/04/2023"
@@ -2886,7 +2872,7 @@
                 "contraindication": "Hypersensitivity; avoid pertussis vaccination if encephalopathy occurred within 7 days of a previous pertussis-containing vaccine with no other identifiable cause; progressive and unstable neurologic disorder*; use risk/benefits strategy if fever ≥40.5°C within 48 hours or HHE occurred within 48 hours or persistent inconsolable crying lasting ≥3 hours within 48 hours or seizure occurred within 3 days after a previous pertussis-containing vaccine; use risk/benefits strategy in premature infants; no data in pregnancy and breastfeeding.",
                 "dosing": "I.M.; 3 doses (0.5mL each); 2, 4, and 6 mo. of age; an additional dose of pertussis-containing vaccine (Pentacel®, Quadracel® or DAPTACEL®) is needed to complete the primary immunization series against pertussis.",
                 "immunogenicity": "Percentage of seroresponders: VAXELIS® + Prevnar 13® + RotaTeq® (3 doses) + 4th dose of Pentacel at 15 mo. age: 82.4% against diphtheria, 99.9% against tetanus, 79.3-98.1% against pertussis, 100% against poliovirus types 1/2/3, 97.3% against hepatitis B, 99.4% against Hib (Vaxelis® was non-inferior to Pentacel® + RECOMBIVAX HB®).",
-                "Efficacy": "/ Effectiveness (VEs)No efficacy data available in the label; immunogenicity as above; VEs is based on the immunogenicity of the individual antigens compared to US-licensed vaccines.",
+                "Efficacy": "No efficacy data available in the label; immunogenicity as above; VEs is based on the immunogenicity of the individual antigens compared to US-licensed vaccines.",
                 "durationOfProtection": "Unknown.",
                 "coAdministration": "Can be co-administered with Prevnar 13®.",
                 "reactogenicity": "Very common: irritability (≥55%), crying (≥45%), injection site pain (≥44%), somnolence (≥40%), injection site erythema (≥25%), decreased appetite (≥23%), fever ≥38.0°C (≥19%), injection site swelling (≥18%).",
@@ -2916,14 +2902,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/02/2016",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/vaxelis",
                 "lastUpdated": "23/07/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/12/2018",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaxelis",
                 "lastUpdated": "12/04/2023"
@@ -3003,14 +2989,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/03/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/hexasiil",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/03/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/hexasiil-0",
                 "lastUpdated": ""
@@ -3043,7 +3029,7 @@
                 "contraindication": "Hypersensitivity; acute severe febrile illness; new onset or progressive neurologic disorder; caution in bleeding disorders; avoid pertussis vaccination if encephalopathy occurred within 7 days of a previous pertussis-containing vaccine with no other identifiable cause; use risk/benefits strategy if fever ≥40.5°C within 48 hours or HHE occurred within 48 hours or persistent inconsolable crying lasting ≥3 hours within 48 hours or seizure occurred within 3 days after a previous pertussis-containing vaccine.",
                 "dosing": "I.M.; 2-dose schedule (0.5mL each); at least 2-month intervals; booster: 11 and 13 mo. of age3-dose schedule (0.5mL each); at least 1-month intervals; booster: before 18 mo. of age.Preterm infants born ≥24 weeks of gestation: 3-dose scheduleBooster doses should be given based on the official recommendations, but, as a minimum, a dose of Hib conjugate vaccine must be administered.",
                 "immunogenicity": "Percentage of seroresponders in primary vaccination: 2 doses; 2-4 mo./3-5 mo.: 99.6/98% against diphtheria, 100/100% against tetanus, 99.6-100%/99-99.7% against pertussis, 85.6-92.8%/96.3-99.4% against poliovirus types 1/2/3, 99.5/96.8% against hepatitis B, 84.3-91.7% against Hib; 3 doses; 2-3-4 mo./2-4-6 mo./ 3-4-5 mo./6-10-14 wks.: 100/99.8/99.7/99.2% against diphtheria, 100/100/100/99.6% against tetanus, 100/100/99.7-100/98.9-100% against pertussis, 97.8-100/99.3-99.9/98.9-99.7/95.7-99.6% against poliovirus types 1/2/3, 99.5/98.9/98/98.5% against hepatitis B, 96.4/96.6/96.8/97.4% against Hib.Percentage of seroresponders in booster vaccination: booster at 12/11 mo. following primary at 2-4 mo./3-5 mo: 100/100% against diphtheria, 100/100% against tetanus, 99.5-100%/99.2-100% against pertussis, 97.9-98.4%/99.2-99.8% against poliovirus types 1/2/3, 99.8/98.9% against hepatitis B, 100/99.6% against Hib; booster during the 2nd yr. of life, after 3-dose primary: 99.9% against diphtheria, 99.9% against tetanus, 96.5-99.9% against pertussis, 99.9% against poliovirus types 1/2/3, 98.4% against hepatitis B, 99.7% against Hib.",
-                "Efficacy": "/ Effectiveness (VEs)VEy against pertussis: 3 doses; 3,4,5 mo.: 88.7%; 3 doses; 2,4,6 mo.: 84%;VEs of the Hib component: 89.6% (full primary series), 100% (full primary series + booster), 7 yrs. f/u.",
+                "Efficacy": "VEy against pertussis: 3 doses; 3,4,5 mo.: 88.7%; 3 doses; 2,4,6 mo.: 84%;VEs of the Hib component: 89.6% (full primary series), 100% (full primary series + booster), 7 yrs. f/u.",
                 "durationOfProtection": "Unknown.",
                 "coAdministration": "Can be co-administered with PCV7, PCV10, PCV13, MenC, MenACWY, MenB, oral rotavirus vaccine and MMRV vaccines; increased febrile reactions in co-administration with MMR or PCVs; increased rate of convulsions and HHE in co-administration with Prevenar 13®; increased risk of fever, pain at the injection site, appetite loss and irritability in co-administration with MenB vaccine and PCV7 (separate vaccinations is preferred).",
                 "reactogenicity": "Very common: appetite loss, abnormal crying, irritability, restlessness, somnolence, fever ≥38°C, pain, redness, local swelling at the injection site ≤ 50 mm.",
@@ -3090,7 +3076,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/10/2000",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/infanrix-hexa",
                 "lastUpdated": "04/09/2024"
@@ -3169,7 +3155,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/06/2008",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/pentacel",
                 "lastUpdated": "21/10/2022"
@@ -3248,9 +3234,9 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/04/2013",
-                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/hexyon#authorisation-details",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/hexyonN/Aauthorisation-details",
                 "lastUpdated": "11/06/2024"
             }
         ]
@@ -3323,23 +3309,23 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/12/2019",
                 "lastUpdated": "20/02/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/ervebo"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/12/2019",
                 "lastUpdated": "28/08/ 2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/ervebo"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/11//2019",
-                "lastUpdated": "#",
+                "lastUpdated": "N/A",
                 "source": "https://extranet.who.int/prequal/vaccines/p/ervebo"
             }
         ]
@@ -3412,24 +3398,24 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/07/2015",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/gardasil-9",
                 "lastUpdated": "11/04/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/02/2018",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/gardasil-9",
                 "lastUpdated": "14/03/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/02/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/gardasil-9",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -3501,24 +3487,24 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "25/09/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/gardasil",
                 "lastUpdated": "27/03/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/06/2008",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/gardasil",
                 "lastUpdated": "24/04/2015"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/05/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/gardasiltm",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -3590,10 +3576,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/10/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/cecolinr",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -3665,24 +3651,24 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/10/2007",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/cervarix",
                 "lastUpdated": "12/06/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "16/10/2009",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/cervarix",
                 "lastUpdated": "26/04/2016"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "08/07/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/cervarix",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -3754,7 +3740,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "02/08/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/walrinvaxr",
                 "lastUpdated": ""
@@ -3829,7 +3815,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/04/2018",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/hiberix",
                 "lastUpdated": "20/12/2023"
@@ -3904,10 +3890,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/11/2008",
                 "source": "https://extranet.who.int/prequal/vaccines/p/haemophilus-influenzae-type-b-conjugate-vaccine",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -3979,7 +3965,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/04/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/quimi-hib",
                 "lastUpdated": ""
@@ -4055,7 +4041,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/08/2002",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/ambirix",
                 "lastUpdated": "08/02/2024"
@@ -4130,7 +4116,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "02/02/2005",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fendrix",
                 "lastUpdated": "24/05/2023"
@@ -4205,7 +4191,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/04/2001",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/hbvaxpro",
                 "lastUpdated": "17/07/2024"
@@ -4280,14 +4266,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/02/2021",
-                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/heplisav-b#authorisation-details",
+                "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/heplisav-bN/Aauthorisation-details",
                 "lastUpdated": "27/07/2023"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/11/2017",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/heplisav-b",
                 "lastUpdated": "08/05/2023"
@@ -4363,21 +4349,21 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "10/02/1997",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/twinrix-paediatric",
                 "lastUpdated": "07/02/2024"
             },
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "10/02/1997",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/twinrix-adult",
                 "lastUpdated": "07/02/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/12/2018",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/twinrix",
                 "lastUpdated": "28/04/2023"
@@ -4452,21 +4438,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/11/1996, 21/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvax-b",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/11/1996, 21/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvax-b-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/11/1996, 21/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvax-b-0",
                 "lastUpdated": ""
@@ -4541,10 +4527,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/healive",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -4616,17 +4602,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/12/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/heberbiovac-hb",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/12/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/heberbiovac-hb-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -4698,10 +4684,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/11/2004",
                 "source": "https://extranet.who.int/prequal/vaccines/p/hepatitis-b-vaccine-rdna-paediatric",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -4773,7 +4759,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/12/2018",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/vaqta",
                 "lastUpdated": "23/10/2020"
@@ -4848,7 +4834,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/08/1999",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/recombivax-hb",
                 "lastUpdated": "21/12/2018"
@@ -4924,7 +4910,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "16/11/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/supemtek",
                 "lastUpdated": "26/06/2024"
@@ -4946,7 +4932,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/12/2013",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluenz-tetra",
                 "lastUpdated": "07/08/2023"
@@ -5022,7 +5008,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/06/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluenz",
                 "lastUpdated": "20/11/2024"
@@ -5152,7 +5138,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/01/2020",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/audenz",
                 "lastUpdated": "24/04/2024"
@@ -5228,7 +5214,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "10/10/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/adjupanrix",
                 "lastUpdated": "08/06/2022"
@@ -5304,7 +5290,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/11/2010",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/aflunov",
                 "lastUpdated": "04/11/2024"
@@ -5380,7 +5366,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/04/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/celldemic",
                 "lastUpdated": "02/05/2024"
@@ -5456,7 +5442,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/10/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/foclivia",
                 "lastUpdated": "03/10/2023"
@@ -5532,7 +5518,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/04/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/incellipan",
                 "lastUpdated": "02/05/2024"
@@ -5608,17 +5594,17 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/08/2016",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/afluria-quadrivalent-afluria-quadrivalent-southern-hemisphere",
                 "lastUpdated": "26/01/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/03/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/afluriar-quadrivalent",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -5691,7 +5677,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "24/11/2015",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluad",
                 "lastUpdated": "01/07/2024"
@@ -5767,7 +5753,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/10/2006",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flulaval",
                 "lastUpdated": "01/07/2024"
@@ -5843,17 +5829,17 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/07/2008",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/afluria-afluria-southern-hemisphere",
                 "lastUpdated": "01/07/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "07/02/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/afluriar",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -5926,7 +5912,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/08/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluarix",
                 "lastUpdated": "01/07/2024"
@@ -6002,7 +5988,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/06/2003",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flumist",
                 "lastUpdated": "20/09/2024"
@@ -6078,7 +6064,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/11/2009",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/agriflu",
                 "lastUpdated": "28/01/2020"
@@ -6154,10 +6140,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/celtura",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -6230,7 +6216,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "16/01/2013",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flublok",
                 "lastUpdated": "15/10/2024"
@@ -6306,7 +6292,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/11/2012",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flucelvax",
                 "lastUpdated": "01/07/2024"
@@ -6382,7 +6368,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/10/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluvirin",
                 "lastUpdated": "07/07/2017"
@@ -6458,10 +6444,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/12/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/gc-flu-quadrivalent-inj",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -6534,10 +6520,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/04/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/gc-flu-inj",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -6610,10 +6596,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/green-flu-s",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -6686,7 +6672,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/01/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/panenza",
                 "lastUpdated": ""
@@ -6762,7 +6748,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/panvax",
                 "lastUpdated": ""
@@ -6838,7 +6824,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-inj",
                 "lastUpdated": ""
@@ -6914,7 +6900,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/06/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxigrip",
                 "lastUpdated": ""
@@ -6990,7 +6976,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/10/2024",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/arepanrix",
                 "lastUpdated": "18/10/2024"
@@ -7066,10 +7052,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "25/05/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/il-yang-flu-vaccine-inj",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7088,7 +7074,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "25/05/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/serinflu",
                 "lastUpdated": ""
@@ -7217,14 +7203,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "13/03/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/ixiaro",
                 "lastUpdated": "25/05/2023"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/03/2009",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/ixiaro",
                 "lastUpdated": "04/10/2018"
@@ -7299,10 +7285,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/09/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/imojev-md",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7374,17 +7360,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/12/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/cyvac",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/12/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/r21-malaria",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7456,7 +7442,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/07/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/mosquirix",
                 "lastUpdated": ""
@@ -7531,31 +7517,31 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/02/1993",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-live-attenuated",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/02/1993",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-live-attenuated-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/02/1993",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-live-attenuated-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/02/1993",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-live-attenuated-2",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7627,17 +7613,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/04/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/04/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-vaccine-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7711,21 +7697,21 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/06/2022",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/priorix",
                 "lastUpdated": "03/06/2022"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/priorix",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/priorix-0",
                 "lastUpdated": ""
@@ -7802,31 +7788,31 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "08/08/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-mumps-and-rubella-vaccine-live-attenuated-2",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7901,14 +7887,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/04/2006",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/proquad",
                 "lastUpdated": "25/07/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/10/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/proquad",
                 "lastUpdated": "21/08/2023"
@@ -7984,21 +7970,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-freeze-dried",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-freeze-dried-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-freeze-dried-1",
                 "lastUpdated": ""
@@ -8074,28 +8060,28 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-2",
                 "lastUpdated": ""
@@ -8170,14 +8156,14 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/01/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/menactra",
                 "lastUpdated": "19/11/2019"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/03/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menactra",
                 "lastUpdated": ""
@@ -8252,21 +8238,21 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/05/2010",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/menveo",
                 "lastUpdated": "06/07/2023"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/02/2010",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/menveo",
                 "lastUpdated": "14/10/2022"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menveo",
                 "lastUpdated": ""
@@ -8341,24 +8327,24 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/11/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/menquadfi",
                 "lastUpdated": "23/07/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/04/2020",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/menquadfi",
                 "lastUpdated": "12/06/2023"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/01/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menquadfi",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -8430,14 +8416,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "24/05/2012",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/nimenrix",
                 "lastUpdated": "29/05/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/08/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/nimenrix",
                 "lastUpdated": ""
@@ -8512,7 +8498,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/11/2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/penbraya",
                 "lastUpdated": "17/11/2023"
@@ -8587,14 +8573,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/06/2017",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/trumenba",
                 "lastUpdated": "20/10/2023"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/10/2014",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/trumenba",
                 "lastUpdated": "18/06/2024"
@@ -8622,7 +8608,7 @@
                 "contraindication": "Hypersensitivity; acute severe febrile illness; precaution in individuals with thrombocytopenia or any coagulation disorders; limited data on pregnancy, and no data on breastfeeding; can be considered during pregnancy and breastfeeding (if benefits outweigh the risk).",
                 "dosing": "Each dose is (0.5mL), I.M; 2-5 mo.: 3 doses, at least 1-month interval/2 doses, at least 2-month interval; 6-23 mo.: 2 doses, at least 2-month interval; > 2yrs.: 2 doses, at least 1-month interval.Booster: 2-5 mo.: one dose between 12 and 15 mo. age; 6-11 mo.: one dose, 2nd year of life, at least 2 mo. after primary; 12-23 mo.: one dose, 12-23 mo. after primary; > 2yrs.: if at risk.",
                 "immunogenicity": "Percentage of seroresponders: 2 mo.-5 mo. (3 doses): 37-100%; 6-23 mo. (2 doses): 63-100 %; 2-10 yrs.(2 doses): 91-100%; ≥ 11 yrs.: 99-100%.",
-                "Efficacy": "/ Effectiveness (VEs)No efficacy data available, only seroresponses as above; the human serum bactericidal assay (hSBA) is an accepted correlate of protection against meningococcal disease; VEs: 2-dose at 2 and 4 mo. + a booster dose at 12 mo., 75% reduction [IRR 0.25 (95% CI: 0.19; 0.36)] in MenB IMD in vaccinees after 3 yrs. f/u; VEs: 2-dose, 1-3 mo. Interval, 71% reduction (95% CI: 15; 90) in MenB IMD in vaccinees after 2 yrs. f/u.",
+                "Efficacy": "No efficacy data available, only seroresponses as above; the human serum bactericidal assay (hSBA) is an accepted correlate of protection against meningococcal disease; VEs: 2-dose at 2 and 4 mo. + a booster dose at 12 mo., 75% reduction [IRR 0.25 (95% CI: 0.19; 0.36)] in MenB IMD in vaccinees after 3 yrs. f/u; VEs: 2-dose, 1-3 mo. Interval, 71% reduction (95% CI: 15; 90) in MenB IMD in vaccinees after 2 yrs. f/u.",
                 "durationOfProtection": " Unknown.",
                 "coAdministration": "Can be co-administered with DTaP-HBV-IPV/Hib, PCV7, MMR+V, MenACWY.",
                 "reactogenicity": "Very common (≥10%): 2mo.-10 yrs.: fever, injection site ARs (tenderness, erythema, swelling, induration), irritability, eating disorders, sleepiness, unusual crying, headache, diarrhea, vomiting, rash, arthralgia; ≥ 11 yrs.: headache, nausea, myalgia, arthralgia, injection site ARs.",
@@ -8669,14 +8655,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/01/2012",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/bexsero",
                 "lastUpdated": "13/05/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/10/2017",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/bexsero",
                 "lastUpdated": "26/04/2023"
@@ -8752,7 +8738,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/08/2007",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/acam2000",
                 "lastUpdated": "24/08/2015"
@@ -8827,7 +8813,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/03/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/synflorix",
                 "lastUpdated": "24/05/2023"
@@ -8902,14 +8888,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "13/12/2021",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/vaxneuvance",
                 "lastUpdated": "23/02/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "16/07/2021",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/vaxneuvance",
                 "lastUpdated": "25/05/2023"
@@ -8971,7 +8957,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/08/2008",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/pneumovax-23-pneumococcal-vaccine-polyvalent",
                 "lastUpdated": "27/10/2021"
@@ -9046,7 +9032,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/06/2024",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/capvaxive",
                 "lastUpdated": "17/06/2024"
@@ -9121,21 +9107,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr-1",
                 "lastUpdated": ""
@@ -9210,7 +9196,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/10/2012",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/ipol-poliovirus-vaccine-inactivated-monkey-kidney-cell",
                 "lastUpdated": "02/06/2022"
@@ -9285,10 +9271,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/12/2005",
                 "source": "https://extranet.who.int/prequal/vaccines/p/imovax-polio",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9360,10 +9346,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/12/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/ipv-vaccine-ajv",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9435,7 +9421,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/04/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/picovax",
                 "lastUpdated": ""
@@ -9510,21 +9496,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-2",
                 "lastUpdated": ""
@@ -9599,10 +9585,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/eupolio-inj",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9674,17 +9660,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/03/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/biopolio-b13",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/03/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/biopolio-b13-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9756,17 +9742,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "07/12/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-opv-type-1-and-3-poliomyelitis-vaccine-live-oral",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "07/12/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-opv-type-1-and-3-poliomyelitis-vaccine-live-oral-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9838,17 +9824,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-oral-poliomyelitis-vaccine-type-13-bopv-13",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-oral-poliomyelitis-vaccine-type-13-bopv-13-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9920,14 +9906,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-t1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-t1-0",
                 "lastUpdated": ""
@@ -10002,14 +9988,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/10/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-three-oral",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/10/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-three-oral-0",
                 "lastUpdated": ""
@@ -10084,10 +10070,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/03/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bivalent-type-13-oral-poliomyelitis-vaccine-ip-bopv13",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10159,14 +10145,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-one-and-three",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-one-and-three-0",
                 "lastUpdated": ""
@@ -10241,14 +10227,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/02/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-oral-bivalent-types-1-and-3",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/02/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-oral-bivalent-types-1-and-3-0",
                 "lastUpdated": ""
@@ -10323,7 +10309,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/11/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-oral-poliomyelitis-vaccine-type-1-mopv1",
                 "lastUpdated": ""
@@ -10398,7 +10384,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/06/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-oral-poliomyelitis-vaccine-type-2",
                 "lastUpdated": ""
@@ -10473,7 +10459,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/11/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-type-1-oral-poliomyelitis-vaccine-ip-mopv1",
                 "lastUpdated": ""
@@ -10548,7 +10534,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/01/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/oral-monovalent-type-2-poliomyelitis-vaccine-mopv2",
                 "lastUpdated": ""
@@ -10623,14 +10609,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/05/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-two-oral-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/05/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-two-oral",
                 "lastUpdated": ""
@@ -10705,7 +10691,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-live-oral-attenuated-human-diploid-cell-type-1-and-3",
                 "lastUpdated": ""
@@ -10780,17 +10766,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/03/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/biopolio-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/03/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/biopolio",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10862,7 +10848,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/08/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/oral-poliomyelitis-vaccines-oral-drops",
                 "lastUpdated": ""
@@ -10937,7 +10923,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "02/02/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polioviral-vaccine",
                 "lastUpdated": ""
@@ -10965,7 +10951,7 @@
                 "contraindication": "Hypersensitivity; caution in infants with thrombocytopenia or any coagulation disorder; no data in infants <1 kg (use risk/benefit strategy); no data in pregnancy and breastfeeding.",
                 "dosing": "I.M.; before commencement of the RSV season, or from birth for infants born during the RSV season; infants with body weight <5 kg: single dose (50 mg); infants with body weight ≥5 kg: single dose (100 mg); infants undergoing cardiac surgery with cardiopulmonary bypass: additional dose may be administered as soon as the infant is stable after surgery.",
                 "immunogenicity": "No immunogenicity data in the label but there is potential for immunogenicity as with all therapeutic proteins.",
-                "Efficacy": " VEy against MA RSV LRTI in preterm infants (GA ≥29 to <35 weeks): 70.1%(95%CI: 52.3; 81.2), 150 days f/u; against MA RSV LRTI in term infants (GA ≥35 weeks): 74.5%(95%CI: 49.6; 87.1), 150 days f/u; against MA RSV LRTI hospitalization in preterm infants: 78.4%(95%CI: 51.9; 90.3), 150 days f/u; against MA RSV LRTI hospitalization in term infants: 62.1%(95%CI: -8.6; 86.8), 150 days f/u; against very severe MA RSV LRTI in preterm infants: 87.5%(95%CI: 62.9; 95.8), 150 days f/u; against very severe MA RSV LRTI in term infants: 64.2%(95%CI: -12.1; 88.6), 150 days f/u.",
+                "Efficacy": "VEy against MA RSV LRTI in preterm infants (GA ≥29 to <35 weeks): 70.1%(95%CI: 52.3; 81.2), 150 days f/u; against MA RSV LRTI in term infants (GA ≥35 weeks): 74.5%(95%CI: 49.6; 87.1), 150 days f/u; against MA RSV LRTI hospitalization in preterm infants: 78.4%(95%CI: 51.9; 90.3), 150 days f/u; against MA RSV LRTI hospitalization in term infants: 62.1%(95%CI: -8.6; 86.8), 150 days f/u; against very severe MA RSV LRTI in preterm infants: 87.5%(95%CI: 62.9; 95.8), 150 days f/u; against very severe MA RSV LRTI in term infants: 64.2%(95%CI: -12.1; 88.6), 150 days f/u.",
                 "durationOfProtection": "At least 5 months.",
                 "coAdministration": "can be co-administered with childhood vaccines.",
                 "reactogenicity": "Uncommon: Rash, pyrexia, injection site reactions.",
@@ -10982,7 +10968,7 @@
                 "contraindication": "Hypersensitivity; pregnancy; breastfeeding; caution in infants with bleeding disorders.",
                 "dosing": "I.M.; before commencement of the RSV season, or from birth for infants born during the RSV season; neonates and infants born during or entering their first RSV season with body weight <5 kg: single dose (50 mg); body weight ≥5 kg: single dose (100 mg); children who remain vulnerable through their second RSV season: 200 mg (2x100 mg injections); infants undergoing cardiac surgery with cardiopulmonary bypass: additional dose may be administered as soon as the infant is stable after surgery.",
                 "immunogenicity": "Anti-drug antibodies against YTE: 77-100%; neutralizing antibodies against nirsevimab-alip: 6-21%.",
-                "Efficacy": " VEy against MA RSV LRTI in preterm infants (GA ≥29 to <35 weeks): 70.1% (95%CI: 52.3; 81.2), 150 days f/u; against MA RSV LRTI in term infants (GA ≥35 weeks): 74.5% (95%CI: 49.6; 87.1), 150 days f/u; against MA RSV LRTI hospitalization in preterm infants: 78.4% (95%CI: 51.9; 90.3), 150 days f/u; against MA RSV LRTI hospitalization in term infants: 60.2% (95% CI: -14.6; 86.2), 150 days f/u.",
+                "Efficacy": "VEy against MA RSV LRTI in preterm infants (GA ≥29 to <35 weeks): 70.1% (95%CI: 52.3; 81.2), 150 days f/u; against MA RSV LRTI in term infants (GA ≥35 weeks): 74.5% (95%CI: 49.6; 87.1), 150 days f/u; against MA RSV LRTI hospitalization in preterm infants: 78.4% (95%CI: 51.9; 90.3), 150 days f/u; against MA RSV LRTI hospitalization in term infants: 60.2% (95% CI: -14.6; 86.2), 150 days f/u.",
                 "durationOfProtection": "At least 5 months.",
                 "coAdministration": "Can be co-administered with childhood vaccines.",
                 "reactogenicity": "Rash (0.9%) and injection site reactions (0.3%).",
@@ -11012,14 +10998,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/11/2022",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/beyfortus",
                 "lastUpdated": "16/07/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/07/2023",
                 "source": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process",
                 "lastUpdated": "22/08/2024"
@@ -11064,7 +11050,7 @@
                 "contraindication": "Hypersensitivity; no data in pregnant women < 24 weeks of gestation.",
                 "dosing": "Single 0.5 mL dose; I.M.",
                 "immunogenicity": "No immunogenicity data available in the label.",
-                "Efficacy": " VEy in infants born to pregnant individuals: against severe MA RSV LRTI: 81.8%(95%CI: 40.6; 96.3), 90 days after birth; 73.9%(95%CI: 45.6; 88.8), 120 days after birth; 70.9%(95%CI: 44.5; 85.9), 150 days after birth; 69.4%(95%CI: 44.3; 84.1), 180 days after birth; against MA RSV LRTI: 57.1%(95%CI: 14.7; 79.8), 90 days after birth; 56.8%(95%CI: 31.2; 73.5), 120 days after birth; 52.5%(95%CI: 28.7; 68.9), 150 days after birth; 51.3%(95%CI: 29.4; 66.8), 180 days after birth; against RSV-hospitalization: 67.7%(95%CI: 15.9; 89.5), 90 days after birth; 59.5%(95%CI: 8.3; 83.7), 120 days after birth; 56.4%(95%CI: 5.2; 81.5), 150 days after birth; 56.8%(95%CI: 10.1; 80.7), 180 days after birthVEy in individuals ≥ 60: against LRTD with ≥2 symptoms*: 66.7%(95%CI: 28.8; 85.8), 7 mo. f/u; against LRTD with ≥3 symptoms*: 85.7%(95%CI: 32.0; 98.7), 7 mo. f/u.",
+                "Efficacy": "VEy in infants born to pregnant individuals: against severe MA RSV LRTI: 81.8%(95%CI: 40.6; 96.3), 90 days after birth; 73.9%(95%CI: 45.6; 88.8), 120 days after birth; 70.9%(95%CI: 44.5; 85.9), 150 days after birth; 69.4%(95%CI: 44.3; 84.1), 180 days after birth; against MA RSV LRTI: 57.1%(95%CI: 14.7; 79.8), 90 days after birth; 56.8%(95%CI: 31.2; 73.5), 120 days after birth; 52.5%(95%CI: 28.7; 68.9), 150 days after birth; 51.3%(95%CI: 29.4; 66.8), 180 days after birth; against RSV-hospitalization: 67.7%(95%CI: 15.9; 89.5), 90 days after birth; 59.5%(95%CI: 8.3; 83.7), 120 days after birth; 56.4%(95%CI: 5.2; 81.5), 150 days after birth; 56.8%(95%CI: 10.1; 80.7), 180 days after birthVEy in individuals ≥ 60: against LRTD with ≥2 symptoms*: 66.7%(95%CI: 28.8; 85.8), 7 mo. f/u; against LRTD with ≥3 symptoms*: 85.7%(95%CI: 32.0; 98.7), 7 mo. f/u.",
                 "durationOfProtection": "Unknown.",
                 "coAdministration": "Can be co-administered with Tdap in non-pregnant women (lower GMC to the acellular pertussis antigens was reported; no data in pregnant women)",
                 "reactogenicity": "Pregnant women: injection site pain (40.6%), headache (31.0%), muscle pain (26.5%), nausea (20.0%). ≥ 60 yrs.: fatigue (15.5%), headache (12.8%), injection site pain (10.5%), muscle pain (10.1%). ",
@@ -11094,14 +11080,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/09/2023",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/abrysvo",
                 "lastUpdated": "29/08/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/05/2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/abrysvo",
                 "lastUpdated": "29/07/2024"
@@ -11176,14 +11162,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "16/06/2023",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/arexvy",
                 "lastUpdated": "23/07/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/05/2023",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/arexvy",
                 "lastUpdated": "21/08/2024"
@@ -11258,7 +11244,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/09/2011",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/imovax-rabies",
                 "lastUpdated": "26/04/2024"
@@ -11333,7 +11319,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/10/1997",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/rabavert",
                 "lastUpdated": "09/05/2024"
@@ -11408,7 +11394,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/06/2005",
                 "source": "https://extranet.who.int/prequal/vaccines/p/verorab",
                 "lastUpdated": ""
@@ -11483,7 +11469,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/02/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxirab-n",
                 "lastUpdated": ""
@@ -11557,35 +11543,35 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/02/2006",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/rotarix",
                 "lastUpdated": "27/05/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/04/2008",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/rotarix",
                 "lastUpdated": "04/11/2022"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix-1",
                 "lastUpdated": ""
@@ -11660,21 +11646,21 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "02/06/2006",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/rotateq",
                 "lastUpdated": "02/05/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/02/2006",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/rotateq",
                 "lastUpdated": "14/08/2020"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "07/10/2008",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotateq",
                 "lastUpdated": ""
@@ -11749,21 +11735,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid",
                 "lastUpdated": ""
@@ -11838,28 +11824,28 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/09/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/09/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo-0",
                 "lastUpdated": ""
@@ -11934,14 +11920,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/06/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-5dr",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/06/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-5dr-0",
                 "lastUpdated": ""
@@ -12016,14 +12002,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/01/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/01/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-0",
                 "lastUpdated": ""
@@ -12098,14 +12084,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetavax",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetavax-0",
                 "lastUpdated": ""
@@ -12180,21 +12166,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine-1",
                 "lastUpdated": ""
@@ -12269,21 +12255,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed-1",
                 "lastUpdated": ""
@@ -12358,14 +12344,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetatox",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetatox-0",
                 "lastUpdated": ""
@@ -12440,7 +12426,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "13/08/2021",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/ticovac",
                 "lastUpdated": "13/08/2021"
@@ -12515,7 +12501,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/06/1989",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/bcg-vaccine",
                 "lastUpdated": "21/02/2018"
@@ -12590,7 +12576,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/08/1998",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/tice-bcg",
                 "lastUpdated": "16/12/2010"
@@ -12665,10 +12651,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/09/1994",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine-ajv",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12740,10 +12726,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/01/1987",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bcg-freeze-dried-glutamate-vaccine-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
+            },
+            {
+                "name": "WHO",
+                "type": "N/A",
+                "approvalDate": "01/01/1987",
+                "source": "https://extranet.who.int/prequal/vaccines/p/bcg-freeze-dried-glutamate-vaccine-0",
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12815,10 +12808,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "29/05/2003",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12890,7 +12883,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "1989",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/vivotif",
                 "lastUpdated": "03/01/2018"
@@ -12965,14 +12958,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typhibevr",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typhibevr-0",
                 "lastUpdated": ""
@@ -13047,7 +13040,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/03/2014",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/typhim-vi",
                 "lastUpdated": "20/03/2020"
@@ -13122,7 +13115,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/02/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skytyphoid-multi-inj",
                 "lastUpdated": ""
@@ -13197,14 +13190,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typbar-tcv",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typbar-tcv-0",
                 "lastUpdated": ""
@@ -13280,14 +13273,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/03/2018",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/shingrix",
                 "lastUpdated": "05/12/2023"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/10/2017",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/shingrix",
                 "lastUpdated": "22/05/2023"
@@ -13363,10 +13356,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/02/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/barycela-inj",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13439,7 +13432,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skyvaricella-inj",
                 "lastUpdated": ""
@@ -13515,7 +13508,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/11/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/varicella-vaccine-live",
                 "lastUpdated": ""
@@ -13591,14 +13584,14 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/03/1995",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/varivax-refrigerated-and-frozen-formulations",
                 "lastUpdated": "21/08/2023"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/02/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/varivax",
                 "lastUpdated": ""
@@ -13674,14 +13667,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/05/2006",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/zostavax",
                 "lastUpdated": "01/07/2022"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/03/2017",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/zostavax",
                 "lastUpdated": "21/02/2019"
@@ -13756,7 +13749,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/01/1987",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stamaril",
                 "lastUpdated": ""
@@ -13831,7 +13824,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/10/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/sinsavactm",
                 "lastUpdated": ""
@@ -13906,7 +13899,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/08/2019",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/yf-vax",
                 "lastUpdated": "12/02/2008"
@@ -13981,21 +13974,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine-0",
                 "lastUpdated": ""
@@ -14073,21 +14066,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever-1",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever-0",
                 "lastUpdated": ""
@@ -14162,17 +14155,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/02/1991",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/02/1991",
                 "source": "https://extranet.who.int/prequal/vaccines/p/bcg-vaccine-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -14244,17 +14237,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/euvicholr-s",
-                "lastUpdated": "#"
-            },
-            {
-                "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "11/08/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvichol-plus",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -14326,10 +14312,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/04/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvicholr-s",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -14402,14 +14388,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/05/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/fluad-tetra",
                 "lastUpdated": "20/08/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/02/2020",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/fluad-quadrivalent",
                 "lastUpdated": "30/06/2023"
@@ -14455,7 +14441,7 @@
                 "contraindication": "Hypersensitivity; egg and chicken protein allergy; use risk/benefits strategy if Guillain-Barré Syndrome has occurred within 6 weeks of receipt of a prior influenza vaccine; caution in bleeding disorders; use risk/benefits strategy in breastfeeding.",
                 "dosing": "I.M; 6 mo. – 8 yrs.: not previously vaccinated: 2 doses (each 0.5 mL); at least 4 weeks interval; previously vaccinated individuals: 1 or 2 doses (each 0.5 mL); at least 4 weeks interval; ≥9 yrs.: 1 dose (0.5 mL).",
                 "immunogenicity": "Seroconversion rate (HI antibody titers): 3-17 yrs.: 70-91.4% against vaccine strain; ≥18 yrs.: 61.7-77.5% against vaccine strain (FLUARIX QUADRIVALENT® was non-inferior to comparator TIV); 6-35 mo.: 69.3-81.2% against vaccine strain.",
-                "Efficacy": " VEy of FLUARIX®, 18-64 yrs.: 66.9% (95% CI: 51.9; 77.4) against vaccine strain, 61.6% (95% CI: 46; 72.8) against any influenza virus strain. \n VEy of FLUARIX QUADRIVALENT®, 6-35 mo.: 60.1% (95% CI: 49.1; 69) against vaccine strain; 49.8-51.2% against any influenza virus strain",
+                "Efficacy": "VEy of FLUARIX®, 18-64 yrs.: 66.9% (95% CI: 51.9; 77.4) against vaccine strain, 61.6% (95% CI: 46; 72.8) against any influenza virus strain. \n VEy of FLUARIX QUADRIVALENT®, 6-35 mo.: 60.1% (95% CI: 49.1; 69) against vaccine strain; 49.8-51.2% against any influenza virus strain",
                 "durationOfProtection": " Annual revaccination is recommended.",
                 "coAdministration": "Can be co-administered with SHINGRIX®.",
                 "reactogenicity": "Most common: adults: injection site pain (36%); muscle aches (16%); headache (16%); fatigue (16%); 3-17 yrs.: injection site pain (44%), redness (23%), swelling (19%); 3-5 yrs.: drowsiness (17%); irritability (17%); loss of appetite (16%); 6-17 yrs.: fatigue (20%); muscle aches (18%); headache (16%); arthralgia (10%); gastrointestinal symptoms (10%); 6-35 mo.: injection site pain (17%), redness (13%), irritability (16%); loss of appetite (14%); drowsiness (13%).",
@@ -14485,7 +14471,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/12/2012",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluarix-quadrivalent",
                 "lastUpdated": "12/07/2023"
@@ -14561,14 +14547,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/12/2018",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/flucelvax-tetra",
                 "lastUpdated": "31/07/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/05/2016",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flucelvax-quadrivalent",
                 "lastUpdated": "30/06/2023"
@@ -14644,7 +14630,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/08/2013",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flulaval-quadrivalent",
                 "lastUpdated": "13/07/2023"
@@ -14720,7 +14706,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/07/2013",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/flumist-quadrivalent",
                 "lastUpdated": "30/06/2023"
@@ -14795,14 +14781,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo-0",
                 "lastUpdated": ""
@@ -14878,7 +14864,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/10/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxigriptetra",
                 "lastUpdated": ""
@@ -14953,21 +14939,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/na",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/na-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/na-1",
                 "lastUpdated": ""
@@ -15042,21 +15028,21 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-2",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "21/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-3",
                 "lastUpdated": ""
@@ -15131,14 +15117,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "25/04/2022",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prehevbri",
                 "lastUpdated": "30/01/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/11/2021",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/prehevbrio",
                 "lastUpdated": "30/11/2021"
@@ -15213,17 +15199,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/12/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/11/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-multidose",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -15296,10 +15282,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/02/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influvacr-tetra",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -15318,17 +15304,17 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/05/2016",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/pandemic-influenza-vaccine-h5n1-astrazeneca",
                 "lastUpdated": "24/04/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pandemic-live-attenuated-vaccine",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ],
         "productProfiles": [
@@ -15401,14 +15387,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/07/2013",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/imvanex",
                 "lastUpdated": "22/05/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "24/10/2019",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/jynneos",
                 "lastUpdated": "29/10/2023"
@@ -15483,10 +15469,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/02/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-vero-cell-inactivated-sabin-strains",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ],
         "productProfiles": [
@@ -15560,17 +15546,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/07/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-6",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/07/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-6",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ],
         "productProfiles": [
@@ -15642,17 +15628,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/08/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/jeevr-3mg",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "03/08/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/jeevr-3mg-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ],
         "productProfiles": [
@@ -15724,17 +15710,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/jeevr-6mg",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "12/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/jeevr-6mg-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ],
         "productProfiles": [
@@ -15806,17 +15792,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "07/12/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-novel-oral-nopv-type-2-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "07/12/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-novel-oral-nopv-type-2-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ],
         "productProfiles": [
@@ -15946,28 +15932,28 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/05/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-4",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/05/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-10",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/05/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-9",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "18/05/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-5",
                 "lastUpdated": ""
@@ -16043,7 +16029,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/10/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated-0",
                 "lastUpdated": ""
@@ -16118,7 +16104,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "08/10/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/japanese-encephalitis-vaccine-live-sa14-14-2",
                 "lastUpdated": ""
@@ -16194,7 +16180,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/09/2009",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-csl-limited",
                 "lastUpdated": "10/11/2009"
@@ -16269,7 +16255,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "31/05/2024",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/mresvia",
                 "lastUpdated": "14/06/2024"
@@ -16345,31 +16331,31 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/12/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-13",
                 "lastUpdated": "04/04/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "24/02/2010",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-13",
                 "lastUpdated": "22/08/2017"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/08/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/prevenar-13",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/08/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/prevenar-13-multidose-vial",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -16442,14 +16428,14 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "14/02/2022",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/prevenar-20",
                 "lastUpdated": "26/04/2024"
             },
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "10/06/2021",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/prevnar-20",
                 "lastUpdated": "27/04/2023"
@@ -16525,14 +16511,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/06/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-vero-cell-inactivated-sabin-strains-0",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/06/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-vero-cell-inactivated-sabin-strains-1",
                 "lastUpdated": ""
@@ -16608,14 +16594,14 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/05/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflur-inj",
                 "lastUpdated": ""
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/05/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflur-multi-inj",
                 "lastUpdated": ""
@@ -16690,31 +16676,31 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/07/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/zabdeno",
                 "lastUpdated": "28/06/2024"
             },
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/07/2020",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/mvabea",
                 "lastUpdated": "14/08/2023"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/04/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/zabdeno",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/04/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/mvabea",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -16787,7 +16773,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/04/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-trivalent-vaccine-split-virion-inactivated",
                 "lastUpdated": ""
@@ -16863,7 +16849,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/09/2016",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h5n1-virus-monovalent-vaccine-adjuvanted",
                 "lastUpdated": "09/09/2016"
@@ -16938,24 +16924,24 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/10/2005",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/havrix",
                 "lastUpdated": "27/10/2023"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/havrix-720-junior",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/havrix-1440-adult",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17027,7 +17013,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "07/07/1998",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/engerix-b",
                 "lastUpdated": "27/11/2023"
@@ -17106,24 +17092,24 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/05/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17199,24 +17185,24 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/09/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-2",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/09/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-3",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "22/09/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-hepatitis-b-and-haemophilus-influenzae-type-b-conjugate-4",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17289,21 +17275,21 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "16/05/2008",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/measles-mumps-and-rubella-virus-vaccine-live",
                 "lastUpdated": "21/08/2023"
             },
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "05/05/2006",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/m-m-rvaxpro",
                 "lastUpdated": "25/07/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/01/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rha-m-m-r-ii",
                 "lastUpdated": ""
@@ -17378,10 +17364,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "20/12/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rabies-vaccine-inactivated-freeze-driedrabivax-s",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17454,9 +17440,9 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "TBD",
-                "source": "#",
+                "source": "N/A",
                 "lastUpdated": "TBD"
             }
         ]
@@ -17530,17 +17516,17 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/09/2009",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-medimmune-llc",
                 "lastUpdated": "03/02/2010"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "25/02/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-h1n1-2009-monovalent-vaccine-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17612,7 +17598,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/04/2011",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/haemophilus-b-conjugate-vaccine-meningococcal-protein-conjugate",
                 "lastUpdated": "27/04/2011"
@@ -17687,10 +17673,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/12/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-novel-oral-nopv-type-2-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17763,10 +17749,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/07/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17842,17 +17828,17 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/04/2013",
                 "source": "https://www.ema.europa.eu/en/search?f%5B0%5D=ema_search_topics%3A76&search_api_fulltext=Hexacima",
                 "lastUpdated": "11/06/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "19/12/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/hexaxim",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17924,17 +17910,17 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "27/09/1996",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/acthib",
                 "lastUpdated": "13/10/2022"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/04/1998",
                 "source": "https://extranet.who.int/prequal/vaccines/p/act-hib",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18007,24 +17993,24 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "07/06/2013",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluzone-quadrivalent-fluzone-high-dose-quadrivalent-fluzone-intradermal-quadrivalent-fluzone",
                 "lastUpdated": "26/09/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/11/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/fluzone-quadrivalent-labelled-fluquadri-other-markets-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/11/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/fluzone-quadrivalent-labelled-fluquadri-other-markets-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18096,17 +18082,17 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/09/2002",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/fluzone-fluzone-high-dose-and-fluzone-intradermal",
                 "lastUpdated": "01/07/2024"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/07/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/fluzoner-trivalent",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18179,24 +18165,24 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/10/2009",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-sanofi-pasteur-inc",
                 "lastUpdated": "15/10/2009"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/01/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-h1n1-2009-monovalent-vaccine-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "28/01/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-h1n1-2009-monovalent-vaccine-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18269,7 +18255,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "17/04/2007",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-virus-vaccine-h5n1-national-stockpile",
                 "lastUpdated": "17/04/2007"
@@ -18344,10 +18330,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "02/08/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18419,17 +18405,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/10/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/shanipvtm",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/10/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/shanipvtm-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18502,17 +18488,17 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/11/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/nasovac-influenza-vaccine-live-attenuated-human-freeze-dried",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "26/11/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/nasovac-influenza-vaccine-live-attenuated-human-freeze-dried-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18585,10 +18571,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/09/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/nasovac-s-influenza-vaccine-live-attenuated-human",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18660,10 +18646,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "06/07/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menfivetm",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18735,10 +18721,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "30/12/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/meningococcal-conjugate-5-micrograms-menafrivac-5mg",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18810,10 +18796,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/06/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/meningococcal-conjugate-menafrivac",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18885,31 +18871,31 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/09/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rubella-vaccine-live-attenuated",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/09/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rubella-vaccine-live-attenuated-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/09/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rubella-vaccine-live-attenuated-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "01/09/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rubella-vaccine-live-attenuated-2",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -18984,10 +18970,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "23/06/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-and-haemophilus-influenzae-type-b-conjugate-vaccine",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -19061,24 +19047,24 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-vaccine-adsorbed",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-vaccine-adsorbed-1",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-tetanus-pertussis-vaccine-adsorbed-0",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -19151,7 +19137,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "10/11/2009",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-id-biomedical-corporation-quebec",
                 "lastUpdated": "10/11/2009"
@@ -19227,7 +19213,7 @@
         "licensingDates": [
             {
                 "name": "FDA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "15/10/2009",
                 "source": "https://www.fda.gov/vaccines-blood-biologics/vaccines/influenza-h1n1-2009-monovalent-vaccine-novartis-vaccines-and-diagnostics-limited",
                 "lastUpdated": "15/10/2009"
@@ -19303,10 +19289,10 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "16/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/focetria",
-                "lastUpdated": "#"
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -19379,7 +19365,7 @@
         "licensingDates": [
             {
                 "name": "EMA",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/10/2023",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/zoonotic-influenza-vaccine-seqirus",
                 "lastUpdated": "25/09/2024"
@@ -19455,7 +19441,7 @@
         "licensingDates": [
             {
                 "name": "WHO",
-                "type": "#",
+                "type": "N/A",
                 "approvalDate": "09/06/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated",
                 "lastUpdated": ""

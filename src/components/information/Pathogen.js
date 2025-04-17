@@ -51,7 +51,7 @@ const style = {
  *    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} 
  * />
  */
-const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
+const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSelectVaccine, activeTab }) => {
     const [open, setOpen] = useState(false);
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const convertCamelCaseToReadable = string => {
@@ -576,8 +576,11 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
                                                                         // setSelectedVaccine(vaccine)
                                                                         // setOpen(true)
                                                                     }} className='' style={{ maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
-                                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${vaccine.name}</span>` }}></div>
-                                                                        </div>
+                                                                        <span
+                                                                            className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
+                                                                            onClick={() => handleSelectVaccine(vaccine)}>
+                                                                            {vaccine.name}
+                                                                        </span>
                                                                     </li>
                                                                 </td>
                                                                 <td style={{ fontWeight: 'bold' }}> <span
@@ -585,14 +588,18 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide }) => {
                                                                     {vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}
                                                                 </span></td>
                                                                 <td colSpan={3}>
-                                                                    {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
+                                                                    {vaccine.licensingDates ? vaccine.licensingDates.map((l, index) => {
+                                                                        const licenser = l.type;
+                                                                        if (!licenser) return null;
                                                                         return (
-
-                                                                            <div className='d-inline-flex' style={{ alignItems: 'center' }}><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}, </span>` }}></div>
-                                                                            </div>
-
-                                                                        )
-                                                                    })}
+                                                                            <span key={l.approvalDate}>
+                                                                                <a href={l.source} className='selectable' target="_blank" rel="noopener noreferrer">
+                                                                                    {l.name}
+                                                                                </a>
+                                                                                {index < vaccine.licensingDates.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
+                                                                            </span>
+                                                                        );
+                                                                    }) : '- no data -'}
                                                                 </td>
                                                             </tr>
                                                         )

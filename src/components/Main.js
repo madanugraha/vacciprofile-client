@@ -451,6 +451,8 @@ const Main = ({
                                         selectedPathogen={selectedPathogen}
                                         isHide={true}
                                         italizeScientificNames={italizeScientificNames}
+                                        activeTab={activeTab}
+                                        handleSelectVaccine={handleSelectVaccine}
                                     /> : activeTab === "Vaccine"
                                         ? <Vaccine
                                             selectedVaccine={selectedVaccine}
@@ -463,9 +465,14 @@ const Main = ({
                                                 convertCamelCaseToReadable={convertCamelCaseToReadable}
                                             /> : activeTab === "Licenser"
                                                 ? <Licenser
+                                                    activeTab={activeTab}
                                                     getVaccinesByLicenser={getVaccinesByLicenser}
                                                     handleSelectVaccine={handleSelectVaccine}
                                                     selectedLicenser={selectedLicenser}
+                                                    selectedPathogen={selectedPathogen}
+                                                    selectedVaccine={selectedVaccine}
+                                                    handleSelectPathogen={handleSelectPathogen}
+                                                    italizeScientificNames={italizeScientificNames}
                                                 /> : activeTab === "Compare" ? (
                                                     <Comparison selectedPathogen={selectedCompare}
                                                         italizeScientificNames={italizeScientificNames} />

@@ -29,7 +29,12 @@ import Checkbox from '@mui/material/Checkbox';
 const Licenser = ({
     handleSelectVaccine,
     selectedLicenser,
-    getVaccinesByLicenser
+    getVaccinesByLicenser,
+    activeTab,
+    handleSelectPathogen,
+    selectedPathogen,
+    selectedVaccine,
+    italizeScientificNames
 }) => {
 
     const [viewSinglePathogenVaccine, setViewSinglePathogenVaccine] = useState(true);
@@ -77,11 +82,8 @@ const Licenser = ({
                                             <tr key={key}>
                                                 <td className='vaccine-cell'>
                                                     <span
-                                                        // className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `disabled`}`}
-                                                        onClick={() => {
-                                                            // TODO Pipeline Vaccine
-                                                            // handleSelectVaccine(vaccine)
-                                                        }}>
+                                                        className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
+                                                        onClick={() => handleSelectVaccine(vaccine)}>
                                                         {vaccine.name}
                                                     </span>
                                                 </td>
@@ -96,9 +98,9 @@ const Licenser = ({
                                                         {vaccine?.pathogenId && vaccine?.pathogenId.length > 0 && vaccine?.pathogenId.map((pathogen, index) => {
                                                             return (
                                                                 <span
-                                                                    className={`selectable`}
-                                                                >
-                                                                    {getPathogenDetailById(pathogen)?.name ? (getPathogenDetailById(pathogen)?.name) : "-"}
+                                                                    className={`${activeTab === "Pathogen" && selectedPathogen.name === getPathogenDetailById(pathogen).name ? `selected` : `selectable`}`}
+                                                                    onClick={() => { handleSelectPathogen(getPathogenDetailById(pathogen)) }}>
+                                                                    {getPathogenDetailById(pathogen)?.name ? italizeScientificNames(getPathogenDetailById(pathogen)?.name) : "-"}
                                                                     {index < vaccine?.pathogenId.length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
                                                                 </span>
                                                             )
@@ -106,7 +108,7 @@ const Licenser = ({
                                                     </div>
                                                 </td>
                                                 <td className='licenser-cell'>
-                                                    {getManufactureDetailById(vaccine?.manufacturers[0]?.manufacturerId)?.name || "-"}
+                                                    <a href={getManufactureDetailById(vaccine?.manufacturers[0]?.manufacturerId)?.details?.website} target='_blank' className='selectable'>{getManufactureDetailById(vaccine?.manufacturers[0]?.manufacturerId)?.name || "-"}</a>
                                                 </td>
                                             </tr>
                                         )

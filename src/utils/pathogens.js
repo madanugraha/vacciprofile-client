@@ -299,11 +299,11 @@ export const getLicensingDateByVaccineNameAndType = (type, prop, vaccineName) =>
                     return prop === "source" ? <a href={x.source} className='selectable' target="_blank" rel="noopener noreferrer">
                         {type}
                         ,{" "}
-                    </a> : (x[prop]) || "#"
+                    </a> : (x[prop]) || "N/A"
                 }) : propValue.map((x) => {
                     return prop === "source" ? <a href={x.source} className='selectable' target="_blank" rel="noopener noreferrer">
                         {type}
-                    </a> : (x[prop]) || "#"
+                    </a> : (x[prop]) || "N/A"
                 }).join(', ')
             } else {
                 return "-"

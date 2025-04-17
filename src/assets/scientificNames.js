@@ -14,6 +14,13 @@ const scientificNames = [
     "Escherichia coli",
     "Borrelia burgdorferi",
     "H. influenzae",
+    "N. meningitidis",
+    "M. tuberculosis",
+    "S. pneumoniae",
+    "B. anthracis",
+    "P. Falciparum",
+    "V. cholerae",
+    "Zaire ebolavirus"
 ];
 
 export default scientificNames;

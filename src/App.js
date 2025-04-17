@@ -583,42 +583,51 @@ const App = () => {
      */
 
     const italizeScientificNames = text => {
-        // check if texts are array because Pipeline vaccines can be more than one Pathogens included
-        if (Array.isArray(text)) {
-            if (text.length > 0) {
-                return text.map((txt) => {
-                    const parts = txt.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
-                    return (
-                        <span>
-                            {parts.map((part, index) => {
-                                const isScientificName = part && scientificNames.some(name => name.toLowerCase() === part.toLowerCase());
-                                return isScientificName ? (
-                                    <i key={index}>{part}</i>
-                                ) : (
-                                    part
-                                );
-                            })}
-                        </span>
-                    );
-                })
-            } else return <span>{text.join(',')}</span>
-        } else {
-            if (text) {
-                const parts = text.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
-                return (
-                    <span>
-                        {parts.map((part, index) => {
-                            const isScientificName = part && scientificNames.some(name => name.toLowerCase() === part.toLowerCase());
-                            return isScientificName ? (
-                                <i key={index}>{part}</i>
-                            ) : (
-                                part
+        if (text) {
+            // check if texts are array because Pipeline vaccines can be more than one Pathogens included
+            if (Array.isArray(text)) {
+                if (text.length > 0) {
+                    return text.map((txt) => {
+                        if (!(typeof txt === "object")) {
+                            const parts = txt.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
+                            return (
+                                <span>
+                                    {parts.map((part, index) => {
+                                        const isScientificName = part && scientificNames.some(name => name.toLowerCase() === part.toLowerCase());
+                                        return isScientificName ? (
+                                            <i key={index}>{part}</i>
+                                        ) : (
+                                            part
+                                        );
+                                    })}
+                                </span>
                             );
-                        })}
-                    </span>
-                );
-            } else return <span>{text}</span>
+                        }
+
+                    })
+                } else return <span>{text.join(',')}</span>
+            } else {
+                if (text) {
+                    if (!(typeof text === "object")) {
+                        const parts = text.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
+                        return (
+                            <span>
+                                {parts.map((part, index) => {
+                                    const isScientificName = part && scientificNames.some(name => name.toLowerCase() === part.toLowerCase());
+                                    return isScientificName ? (
+                                        <i key={index}>{part}</i>
+                                    ) : (
+                                        part
+                                    );
+                                })}
+                            </span>
+                        );
+                    }
+
+                } else return <span>{text}</span>
+            }
         }
+
     };
 
     useEffect(() => {
@@ -703,25 +712,25 @@ const App = () => {
                 </div>
             </div>
             <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;' }}>
-                    <div style={{ marginBottom: '10px' }}>
-                        <div>
-                            <img src="/images/logo PNG.png" alt="Global Health Press Logo" style={{ height: '80px' }} />
-                        </div>
-                    </div>
-                    <div style={{ marginBlock: '10px' }}>
-                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Terms & Conditions</a> |
-                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Privacy Policy</a> |
-                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Disclaimer</a> |
-                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Imprint</a> |
-                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Contacts</a>
-                    </div>
-                    <div style={{ marginBottom: '10px' }}>
-                        Copyright © 2009-2025 Global Health Press Pte Ltd. Reg. No. 200921795N All Rights Reserved.
-                    </div>
+                <div style={{ marginBottom: '10px' }}>
                     <div>
-                        Subject to <a href="#" style={{ color: '#4da6ff', textDecoration: 'none' }}>Creative Commons Licence (cc)</a>.
+                        <img src="/images/logo PNG.png" alt="Global Health Press Logo" style={{ height: '80px' }} />
                     </div>
-                </footer>
+                </div>
+                <div style={{ marginBlock: '10px' }}>
+                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Terms & Conditions</a> |
+                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Privacy Policy</a> |
+                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Disclaimer</a> |
+                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Imprint</a> |
+                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Contacts</a>
+                </div>
+                <div style={{ marginBottom: '10px' }}>
+                    Copyright © 2009-2025 Global Health Press Pte Ltd. Reg. No. 200921795N All Rights Reserved.
+                </div>
+                <div>
+                    Subject to <a href="#" style={{ color: '#4da6ff', textDecoration: 'none' }}>Creative Commons Licence (cc)</a>.
+                </div>
+            </footer>
             <ToastContainer />
         </div>
     );
