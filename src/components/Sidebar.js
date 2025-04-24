@@ -184,7 +184,7 @@ const Sidebar = ({
                                 setShowLicensedPathogens(false);
                                 setShowVaccineCandidatePathogens(!showVaccineCandidatePathogens)
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidatePathogens ? 'active' : 'imactive'}`}>
-                                Pathogen with Vaccine Candidates
+                                Pathogen with Vaccines Candidate
                             </div>
                             {showVaccineCandidatePathogens && sampleVaccineCandidatePathogen.map((item, i) => (
                                 <div
@@ -230,12 +230,6 @@ const Sidebar = ({
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineDeases ? 'active' : 'inactive'}`}>
                                 Diseases
                             </div>
-                            {/* <div onClick={() => {
-                                setShowLicensedPathogens(false);
-                                setShowVaccineCandidatePathogens(!showVaccineCandidatePathogens)
-                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidatePathogens ? 'active' : 'imactive'}`}>
-                                Pathogen with Vaccine Candidates
-                            </div> */}
                             {/* <div onClick={() => {
                                 setShowVaccineCandidatePathogens(false);
                                 setShowLicensedPathogens(!showLicensedPathogens)
@@ -309,7 +303,7 @@ const Sidebar = ({
                                 setShowLicensedVaccines(false);
                                 setShowVaccineCandidates(!showVaccineCandidates)
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidates ? 'active' : 'imactive'}`}>
-                                Vaccine Candidates
+                                Vaccines Candidate
                             </div>
 
                             {

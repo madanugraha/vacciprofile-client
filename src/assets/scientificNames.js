@@ -20,7 +20,9 @@ const scientificNames = [
     "B. anthracis",
     "P. Falciparum",
     "V. cholerae",
-    "Zaire ebolavirus"
+    "Zaire ebolavirus",
+    "N meningitidis",
+    "Spodoptera frugiperda"
 ];
 
 export default scientificNames;

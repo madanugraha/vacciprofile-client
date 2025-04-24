@@ -217,29 +217,6 @@ const Licenser = ({
                 </div>
             </div>
         </div>
-        {/* <div className="accordion" id="accordianCandidateVaccineInfo">
-            <div className="accordion-item mb-1">
-                <h2 className="accordion-header" id="accordianCandidateVaccine">
-                    <button className="accordion-button collapsed bg-accordian text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianCandVac" aria-expanded="false" aria-controls="collapseTwo">
-                        Vaccine Candidates
-                    </button>
-                </h2>
-                <div id="accordianCandVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianCandidateVaccine" data-bs-parent="#accordianCandidateVaccineInfo">
-                    <div className="accordion-body pb-1 px-0 pt-0">
-                        <div>
-                            <div className='mt-4' style={{ paddingLeft: 10 }}>
-                                <div className='mt-4'>
-                                    <div className='flex flex-row mb-2'>
-                                        &#8226;{" "}
-                                        <span className='mt-2'>No Data Found</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> */}
     </div >
 }
 

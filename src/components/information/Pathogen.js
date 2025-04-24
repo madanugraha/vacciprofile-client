@@ -1175,7 +1175,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
     ) : (
         <>
             <div className='py-1 px-2'>
-                <h2>{selectedPathogen?.name} Pipeline Vaccine</h2>
+                <h2>{selectedPathogen?.name} Vaccines Candidate</h2>
                 <div className='py-4'>
                     <table border={0}>
                         <tbody>
@@ -1205,7 +1205,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
                     </table>
                 </div>
                 <div className='py-4'>
-                    <h5>Antigen Platforms</h5>
+                    <h5>Antigen Platform</h5>
                     <ul>
                         {getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).length > 0 ? getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).map((x) => {
                             return (

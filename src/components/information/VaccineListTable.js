@@ -134,7 +134,7 @@ const VaccineListTable = ({
         <div className="accordion-item" style={{ marginTop: 5 }}>
             <h2 className="accordion-header" id="accordianPipelineVaccineLists">
                 <button className="accordion-button collapsed bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianPipelineVacList" aria-expanded="false" aria-controls="collapseTwo">
-                    Candidate Vaccines
+                    Vaccines Candidate
                 </button>
             </h2>
             <div id="accordianPipelineVacList" className="accordion-collapse collapse" aria-labelledby="accordianPipelineVaccineLists" data-bs-parent="#accordianPipelineVaccineList">

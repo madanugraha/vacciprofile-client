@@ -603,7 +603,6 @@ const App = () => {
                                 </span>
                             );
                         }
-
                     })
                 } else return <span>{text.join(',')}</span>
             } else {
