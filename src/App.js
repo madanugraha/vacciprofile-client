@@ -591,7 +591,7 @@ const App = () => {
                         if (!(typeof txt === "object")) {
                             const parts = txt.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
                             return (
-                                <span>
+                                <>
                                     {parts.map((part, index) => {
                                         const isScientificName = part && scientificNames.some(name => name.toLowerCase() === part.toLowerCase());
                                         return isScientificName ? (
@@ -600,17 +600,17 @@ const App = () => {
                                             part
                                         );
                                     })}
-                                </span>
+                                </>
                             );
                         }
                     })
-                } else return <span>{text.join(',')}</span>
+                } else return text.join(',')
             } else {
                 if (text) {
                     if (!(typeof text === "object")) {
                         const parts = text.split(new RegExp(`(${scientificNames.join('|')})`, 'gi'));
                         return (
-                            <span>
+                            <>
                                 {parts.map((part, index) => {
                                     const isScientificName = part && scientificNames.some(name => name.toLowerCase() === part.toLowerCase());
                                     return isScientificName ? (
@@ -619,11 +619,10 @@ const App = () => {
                                         part
                                     );
                                 })}
-                            </span>
+                            </>
                         );
                     }
-
-                } else return <span>{text}</span>
+                } else return text
             }
         }
 

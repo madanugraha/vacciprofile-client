@@ -960,17 +960,17 @@
                 "name": "EMA-Product Profile: Qdenga® (MAH: Takeda)",
                 "composition": "Dengue Virus serotypes 1,2,3,4 (live, attenuated); produced in Vero cells, recombinant DNA technology (GMO); storage: 2-8°C; shelf life: 18 months",
                 "strainCoverage": "Dengue tetravalent (all 4 virus serotypes) vaccine",
-                "indication": "Dengue prevention (against all 4 serotypes) in individuals > 4 years of age. To be used based on official recommendations.",
+                "indication": "Dengue prevention (against all 4 serotypes) in individuals ≥ 4 years of age. To be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; acute febrile illness; immunosuppressed individuals*; pregnancy; breastfeeding.",
                 "dosing": "Two S.C. doses (0.5 mL each) e.g. in the deltoid region; 3-month intervals.",
                 "immunogenicity": "In the absence of correlates of protection for dengue, the clinical relevance of immunogenicity data remains to be fully understood.",
-                "Efficacy": " (VEy vs virologically confirmed dengue (VCD)) VEy in preventing VCD fever in children 4-16 years: 80.2% (CI 95% = 73.3, 85.3); VEy in preventing hospitalizations due to VCD fever: 90.4 (CI 95% =  82.6, 94.7)",
+                "Efficacy": "VEy in preventing VCD fever in children 4-16 years: 80.2% (CI 95% = 73.3, 85.3); VEy in preventing hospitalizations due to VCD fever: 90.4 (CI 95% =  82.6, 94.7)",
                 "durationOfProtection": "VEy in preventing VCD fever and hospitalizations in children 4-16 years 4.5 years after vaccination: 84.1% (CI 95% = 77.8, 88.6).",
                 "coAdministration": "Before use of IgG: 6 wk. - 3 mo. waiting period; can be administered with HepA vaccine (adults) or yellow fever vaccine.",
                 "reactogenicity": "Injection site pain (50%), headache (35%), myalgia (31%), injection site erythema (27%), malaise (24%), weakness (20%) and fever (11%).",
                 "safety": " Transient vaccine viremia was observed after 1st dose in 49% of study participants never infected and in 16% of study participants who had been previously infected. Vaccine viraemia was rarely detected after the second dose. ",
                 "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "Safety and efficacy of Qdenga in <4 years not yet established; no data on the use >60 years; limited data in patients with chronic medical conditions; no clinical efficacy study available in subjects >17 years of age, clinical efficacy for >17 years has been inferred from the clinical efficacy in 4-16 years."
+                "others": "Safety and efficacy of Qdenga in <4 years not yet established; no data on the use >60 years; limited data in patients with chronic medical conditions; no clinical efficacy study available in subjects ≥17 years of age, clinical efficacy for >17 years has been inferred from the clinical efficacy in 4-16 years."
             },
             {
                 "type": "FDA",
@@ -994,11 +994,11 @@
                 "name": "WHO-Product Profile: Qdenga® (MAH:Takeda)",
                 "composition": "Dengue Virus serotypes 1,2,3,4 (live, attenuated); produced in Vero cells, recombinant DNA technology (GMO); storage: 2-8°C; shelf life: 18 months",
                 "strainCoverage": "Dengue tetravalent (all 4 virus serotypes) vaccine",
-                "indication": "Dengue prevention (against all 4 serotypes) in individuals > 6 years of age. To be used based on official recommendations.",
+                "indication": "Dengue prevention (against all 4 serotypes) in individuals ≥ 6 years of age. To be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; acute febrile illness; immunosuppressed individuals*; pregnancy; breastfeeding.",
                 "dosing": "Two S.C. doses (0.5 mL each) e.g. in the deltoid region; 3-month intervals.",
                 "immunogenicity": "*In the absence of correlates of protection for dengue, the clinical relevance of immunogenicity data remains to be fully understood.",
-                "Efficacy": " (VEy vs virologically confirmed dengue (VCD))*VEy in preventing VCD fever in children 4-16 years: 80.2% (CI 95% = 73.3, 85.3); VEy in preventing hospitalizations due to VCD fever: 90.4 (CI 95% =  82.6, 94.7)",
+                "Efficacy": "VEy in preventing VCD fever in children 4-16 years: 80.2% (CI 95% = 73.3, 85.3); VEy in preventing hospitalizations due to VCD fever: 90.4 (CI 95% =  82.6, 94.7)",
                 "durationOfProtection": "*VEy in preventing VCD fever and hospitalizations in children 4-16 years 4.5 years after vaccination: 84.1% (CI 95% = 77.8, 88.6).",
                 "coAdministration": "Before use of IgG: 6 wk. - 3 mo. waiting period; can be administered with HepA vaccine (adults) or yellow fever vaccine.",
                 "reactogenicity": "Very common (>10%): injection site pain or redness, headache, muscle pain, generally feeling unwell, weakness, infections of the nose or throat, fever.",
@@ -4942,7 +4942,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.2 mL) contains 107.0±0.5 FFU of each four influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Darwin/9/2021 (H3N2)-like, B/Phuket/3073/2013-like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 18 weeks.",
+                "composition": "1 dose (0.2 mL) contains 10⁷.⁰±⁰.⁵ FFU of each four influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Darwin/9/2021 (H3N2)-like, B/Phuket/3073/2013-like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 18 weeks.",
                 "strainCoverage": "Influenza virus.",
                 "indication": "Active immunization for prophylaxis of influenza in individuals 2-17 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg protein allergy; immunodeficiency (acute/ chronic leukemias, lymphoma, symptomatic HIV infection, cellular immune deficiencies, high-dose corticosteroids); individuals on salicylate therapy (risk of Reye’s syndrome; avoid using salicylates for 4 weeks after vaccination unless medically indicated); severe asthma or active wheezing (inadequate data); pregnancy; breastfeeding.",
@@ -5018,7 +5018,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Fluenz® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.2 mL) contains 107.0±0.5 FFU of each three influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Thailand/8/2022 (H3N2) –like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 15 weeks.",
+                "composition": "1 dose (0.2 mL) contains 10⁷.⁰±⁰.⁵ FFU of each three influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Thailand/8/2022 (H3N2) –like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 15 weeks.",
                 "strainCoverage": "Influenza virus.",
                 "indication": "Active immunization for prophylaxis of influenza in individuals 2-17 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg protein allergy; immunodeficiency (acute/ chronic leukemias, lymphoma, symptomatic HIV infection, cellular immune deficiencies, high-dose corticosteroids); individuals on salicylate therapy (risk of Reye’s syndrome; avoid using salicylates for 4 weeks after vaccination unless medically indicated); severe asthma or active wheezing (inadequate data); pregnancy; breastfeeding.",
@@ -5952,7 +5952,7 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: FluMist® (MAH: MedImmune)",
-                "composition": "1 dose (0.2 mL) contains 106.5-7.5 FFU of each three influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Thailand/8/2022 (H3N2) (an A/Thailand/8/2022 (H3N2) - like virus), and B/Austria/1359417/2021 (B/Victoria lineage) (a B/Austria/1359417/2021 (B/Victoria lineage)- like virus) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "composition": "1 dose (0.2 mL) contains 10⁶.⁵-⁷.⁵ FFU of each three influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Thailand/8/2022 (H3N2) (an A/Thailand/8/2022 (H3N2) - like virus), and B/Austria/1359417/2021 (B/Victoria lineage) (a B/Austria/1359417/2021 (B/Victoria lineage)- like virus) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
                 "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
                 "indication": "Active immunization against influenza disease caused by influenza A subtypes and type B contained in the vaccine in individuals 2-49 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg protein allergy; concomitant aspirin therapy in children and adolescents; caution in individuals with asthma or children <5 yrs. with recurrent wheezing; use risk/benefits strategy if Guillain-Barré Syndrome has occurred within 6 weeks after any prior influenza vaccination; FluMist® is not absorbed systemically, so maternal use is not expected to result in fetal exposure to the drug also breastfeeding is not expected to result in the exposure of the child to FluMist®.",
@@ -7498,7 +7498,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Measles Vaccine, Live, Attenuated® (MAH: Serum Institute of India)",
-                "composition": "1 dose (0.5mL) contains ≥1×103 CCID50 measles (Edmonston-Zagreb strain) produced on human diploid cells; storage: in dark place and 2-8°C (-20°C for long term storage); shelf life: 30 months.",
+                "composition": "1 dose (0.5mL) contains ≥1×10³ CCID₅₀ measles (Edmonston-Zagreb strain) produced on human diploid cells; storage: in dark place and 2-8°C (-20°C for long term storage); shelf life: 30 months.",
                 "strainCoverage": "Measles virus.",
                 "indication": "Active immunization against measles; also recommended for use in children and adolescents with no evidence of vaccination or measles infection; also, in children and adolescents who have been vaccinated before or have had measles infection earlier; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; pregnancy; allergy to cow milk; acute infectious diseases; leukemia, severe anaemia, or other severe diseases of the blood system; severe impairment of the renal function; decompensated heart disease; following administration of gamma globulin or blood transfusions; severe immunocompromised persons due to congenital disease, HIV infection, advanced leukemia/lymphoma, serious malignant disease, treatment with high-dose steroids, alkylating agents, antimetabolites, or receiving immunosuppressive therapeutic radiation.",
@@ -7594,7 +7594,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Measles vaccine® (MAH: PT Bio Farma (Persero)",
-                "composition": "1 dose (0.5mL) contains ≥1×103 CCID50 measles virus (CAM 70 strain) produced in SPF chicken embryo; storage: in dark place and 2-8°C; shelf life: 3 years.",
+                "composition": "1 dose (0.5mL) contains ≥1×10³ CCID₅₀ measles virus (CAM 70 strain) produced in SPF chicken embryo; storage: in dark place and 2-8°C; shelf life: 3 years.",
                 "strainCoverage": "Measles virus.",
                 "indication": "No data available on the label.",
                 "contraindication": "Hypersensitivity; severely immunocompromised persons due to congenital disease, HIV infection, advanced leukemia/lymphoma, serious malignant disease, treatment with high-dose steroids, alkylating agents, antimetabolites, or receiving immunosuppressive therapeutic radiation; pregnancy.",
@@ -8928,7 +8928,7 @@
                 "dosing": "Single dose (0.5mL); I.M or S.C.",
                 "immunogenicity": "Immunogenicity is based on lower-valency PCV vaccines.",
                 "Efficacy": "VEy is based on lower-valency PCV vaccines; VEs against vaccine serotype IPD in individuals ≥6 yrs.: 57% (95%CI: 45%; 66%); VEs against vaccine serotype IPD in specific patient groups (persons with DM, CVD, CHF, chronic pulmonary disease, or anatomic asplenia): 65 - 84%; VEs against vaccine serotype IPD in immunocompetent persons ≥65 yrs.: 75% (95%CI: 57%; 85%).",
-                "durationOfProtection": "No data in the label; population based data indicate moderate effectiveness for 2-5 years in subjects >65 years.",
+                "durationOfProtection": "No data in the label; population based data indicate moderate effectiveness for 2-5 years in subjects ≥65 years.",
                 "coAdministration": " ZOSTAVAX® (should be administered separately; at least 4-week interval); limited safety/immunogenicity data from clinical trials for other vaccines.",
                 "reactogenicity": "Injection site pain/soreness/tenderness (60%), swelling/induration (20.3%), erythema (16.4%); headache (17.6%); asthenia and fatigue (13.2%); myalgia.",
                 "safety": "No safety signals to date.",
@@ -10126,7 +10126,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Polio Sabin One and Three® (MAH: GSK)",
-                "composition": "1 dose (2 drops or 0.1mL) contains live poliovirus (Sabin strains) type 1 (LSc, 2ab) and type 3 (Leon 12a, 1b) ≥106 CCID50/≥105.8 CCID50, propagated in MRC-5 cells; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "composition": "1 dose (2 drops or 0.1mL) contains live poliovirus (Sabin strains) type 1 (LSc, 2ab) and type 3 (Leon 12a, 1b) ≥10⁶ CCID₅₀/≥10⁵.⁸ CCID₅₀, propagated in MRC-5 cells; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus types 1 and 3.",
                 "indication": "Active immunization against poliomyelitis caused by poliovirus type 1 and 3 in all age groups; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; immunodeficiency (alternatively should use IPV); persistent diarrhea or vomiting (repeat the dose after recovery); acute severe febrile illness; avoid vaccination in pregnancy unless they are exposed to a definite risk of infection with wild polioviruses (use risk/benefits strategy); avoid pregnancy 3 months after vaccination; may be administered during lactation.",
@@ -10208,7 +10208,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Poliomyelitis Vaccine (Oral)",
-                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 and 3 (Sabin strains), ≥106 CCID50 /≥105.8 CCID50; grown on primary monkey kidney cell cultures; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 and 3 (Sabin strains), ≥10⁶ CCID₅₀ /≥10⁵.⁸ CCID₅₀; grown on primary monkey kidney cell cultures; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus types 1 and 3.",
                 "indication": "Active immunization against types 1 and 3 poliovirus as routine or supplementary immunization activities (SIAs) in all age groups; to be used based on official recommendations.",
                 "contraindication": "Diarrhea or vomiting (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukaemia, lymphoma, or generalized malignancy)",
@@ -10290,7 +10290,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1)",
-                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 (Sabin strains) ≥106 IU; prepared in primary monkey kidney cells; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 (Sabin strains) ≥10⁶ IU; prepared in primary monkey kidney cells; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus type 1.",
                 "indication": "Active immunization for poliomyelitis supplementary immunization activities (SIAs) in individuals 0-5 years to interrupt type 1 poliovirus transmission in remaining polio-endemic areas; to be used based on official recommendations.",
                 "contraindication": "Diarrhea (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma, or generalized malignancy).",
@@ -10365,7 +10365,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Monovalent Oral Poliomyelitis Vaccine Type 2® (MAH: PT Bio Farma (Persero)",
-                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 2 (Sabin strains) ≥ 105 IU; prepared in primary monkey kidney cell; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 2 (Sabin strains) ≥ 10⁵ IU; prepared in primary monkey kidney cell; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus type 2.",
                 "indication": "Active immunization in all age groups only in case of an outbreak caused by type 2 poliovirus when/where it is required by the GPEI or WHO; may also be given in addition to other poliomyelitis vaccine(s), according to recommendations that may be made by the GPEI or WHO;  to be used based on official recommendations.",
                 "contraindication": "Diarrhea or vomiting (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma, or generalized malignancy).",
@@ -10440,7 +10440,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Monovalent type 1 Oral Poliomyelitis vaccine, IP (mOPV1)",
-                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 (Sabin strains) ≥106 CCID50; propagated in primary monkey kidney cell cultures; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 (Sabin strains) ≥10⁶ CCID₅₀; propagated in primary monkey kidney cell cultures; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus type 1.",
                 "indication": "Active immunization for poliomyelitis supplementary immunization activities (SIAs) in individuals 0-5 years to interrupt type 1 poliovirus transmission in remaining polio-endemic areas; to be used based on official recommendations.",
                 "contraindication": "Diarrhea or vomiting (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma, or generalized malignancy).",
@@ -10590,7 +10590,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Polio Sabin Mono Two (oral)",
-                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus type 2 (Sabin strains, P 712, Ch, 2ab) ≥ 105 CCID50; propagated in MRC-5 cells; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus type 2 (Sabin strains, P 712, Ch, 2ab) ≥ 10⁵ CCID₅₀; propagated in MRC-5 cells; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus type 2.",
                 "indication": "Active immunization in all age groups only in case of outbreaks caused by type 2 poliovirus when and where it is required by the GPEI or WHO; not intended for routine immunization; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; persistent diarrhea or vomiting (repeat the dose after recovery); acute severe febrile illness; use risk/benefits strategy in immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma, or generalized malignancy); use risk/benefit strategy during pregnancy in epidemic context; avoid pregnancy 3 months following vaccination; may be used in lactation.",
@@ -10672,7 +10672,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Poliomyelitis Vaccine (live, oral attenuated, human Diploid Cell)",
-                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 and 3 (Sabin strains), ≥106 CCID50 /≥105.8 CCID50; harvested in human diploid cell; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 and 3 (Sabin strains), ≥10⁶ CCID₅₀ /≥10⁵.⁸ CCID₅₀; harvested in human diploid cell; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus types 1 and 3.",
                 "indication": "Active immunization against poliomyelitis caused by poliovirus type 1 and 3 as routine and supplementary immunization activities (SIAs); to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; diarrhea or vomiting (repeat the dose after recovery); acute diseases; serious chronic diseases; acute attack of the chronic diseases; fever; uncontrolled epilepsy or other ongoing nervous system diseases; immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma or generalized malignancy); avoid vaccination in pregnancy unless they are exposed to a definite risk of infection with wild polioviruses (use risk/benefit strategy).",
@@ -10904,7 +10904,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Polioviral vaccine® (MAH: Haffkine Bio Pharmaceutical)",
-                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 and 3 (Sabin strains), ≥ 106/≥ 105/≥ 105.8 CCID50; propagated in primary monkey kidney cell cultures; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
+                "composition": "1 dose (2 drops or 0.1 mL) contains live poliovirus types 1 and 3 (Sabin strains), ≥ 10⁶/≥ 10⁵/≥ 10⁵.⁸ CCID⁵⁰; propagated in primary monkey kidney cell cultures; storage: -20°C or lower/ or 2-8°C; shelf life: 2 years at -20°C or lower/ or up to 6 months in 2-8°C.",
                 "strainCoverage": "Poliovirus types 1, 2, and 3.",
                 "indication": "Active immunization of infants, susceptible children and adults against poliomyelitis caused by polioviruses of types 1, 2 and 3; to be used based on official recommendations.",
                 "contraindication": "Diarrhea or vomiting (repeat the dose after recovery); immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma, or generalized malignancy); vaccine should not be given to pregnant women unless they are exposed to definite risk of infection with wild polioviruses.",
@@ -11491,7 +11491,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Rotarix® (MAH: GSK)",
-                "composition": "1 dose (1.5 mL) contains human rotavirus (RIX4414 strain) ≥106 CCID50; produced on Vero cells; storage: 2-8°C; shelf life: 3 years (pre-filled oral applicator and squeezable tube forms), 2 years (multi-monodose squeezable tube form).",
+                "composition": "1 dose (1.5 mL) contains human rotavirus (RIX4414 strain) ≥10⁶ CCID₅₀; produced on Vero cells; storage: 2-8°C; shelf life: 3 years (pre-filled oral applicator and squeezable tube forms), 2 years (multi-monodose squeezable tube form).",
                 "strainCoverage": "Human rotavirus; genotypes G1P, G2P, G3P, G4P, G9P, G8P, G12P; the extent of protection that Rotarix might provide against other rotavirus strains that have not been circulating in clinical trials is currently unknown; no protection against gastroenteritis due to other pathogens.",
                 "indication": "Active immunization to prevent gastroenteritis in individuals 6- 24 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception or intussusception predisposing situation*; SCID; acute severe febrile illness; diarrhea; vomiting; known or suspected immunodeficiency (use risk/benefit strategy); caution in individuals with immunodeficient close contacts; patients with fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency; PKU patients (vaccine contains phenylalanine); no data on pregnancy and breastfeeding (breastfeeding may be continued during the vaccination schedule).",
@@ -11508,10 +11508,11 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: Rotarix® (MAH: GSK)",
-                "composition": "1 dose (1mL or 1.5mL) contains ≥106 CCID50 human rotavirus (89-12 strain belongs to G1P type); propagated on Vero cells; storage: 2-8°C; shelf life: unknown.",
+                "composition": "1 dose (1mL or 1.5mL) contains ≥10⁶ CCID₅₀ human rotavirus (89-12 strain belongs to G1P type); propagated on Vero cells; storage: 2-8°C; shelf life: unknown.",
                 "strainCoverage": "Human rotavirus; genotypes G1 and non-G1 types (G3, G4, and G9).",
+                "indication": "Prevention of rotavirus gastroenteritis in infants 6 -24 weeks of age; ; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception; intussusception predisposing situation*; SCID; acute diarrhea or vomiting; caution in individuals with immunodeficient close contacts; no limitation in breastfeeding.",
-                "dosing": "dosing applicator, and oral dosing applicator only; rotavirus vaccine (Live, attenuated)Approval Date: 03/04/2008, Date last updated: 04/11/2022, Rotarix | FDAComposition/Platform1 dose (1mL or 1.5mL) contains ≥106 CCID50 human rotavirus (89-12 strain belongs to G1P type); propagated on Vero cells; storage: 2-8°C; shelf life: unknown.Strain coverageHuman rotavirus; genotypes G1 and non-G1 types (G3, G4, and G9).IndicationPrevention of rotavirus gastroenteritis in infants 6 -24 weeks of age; ; to be used based on official recommendations.Oral; two doses; 1st dose beginning at 6 weeks; interval of at least 4 weeks; 2nd dose up to 24 weeks (vial and oral dosing applicator presentation: 1 mL; oral dosing applicator only presentation AND oral suspension: 1.5 mL).",
+                "dosing": "Oral; two doses; 1st dose beginning at 6 weeks; interval of at least 4 weeks; 2nd dose up to 24 weeks (vial and oral dosing applicator presentation: 1 mL; oral dosing applicator only presentation AND oral suspension: 1.5 mL).",
                 "immunogenicity": "Percentage of seroresponders: 76.3-86.5%.",
                 "Efficacy": "Europe: VEy against any severity rotavirus GE: 87.1% (95% CI: 79.6%; 92.1%) during the 1st year of life, 71.9% (95% CI: 61.2; 79.8) during the 2nd year of life; VEy against severe rotavirus GE: 95.8% (95% CI: 89.6; 98.7) during the 1st year of life, 85.6% (95% CI: 75.8; 91.9) during the 2nd year of life; VEy against hospitalization due to rotavirus GE: 100% (95% CI: 81.8; 100) during the 1st year of life.Latin America: VEy against severe rotavirus GE: 84.7% (95% CI: 71.7; 92.4) during the 1st year of life, 79% (95% CI: 66.4; 87.4) during the 2nd year of life; VEy against hospitalization due to rotavirus GE: 85.0% (95% CI: 69.6; 93.5) ) during the 1st year of life.",
                 "durationOfProtection": "No data in the label.",
@@ -11524,7 +11525,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Rotarix® (MAH: GSK)",
-                "composition": "1 dose (1.5 mL) contains human rotavirus (RIX4414 strain) ≥106 CCID50; produced on Vero cells; storage: 2-8°C; shelf life: 2 years. ",
+                "composition": "1 dose (1.5 mL) contains human rotavirus (RIX4414 strain) ≥10⁶ CCID₅₀; produced on Vero cells; storage: 2-8°C; shelf life: 2 years. ",
                 "strainCoverage": "Human rotavirus; genotypes G1P, G2P, G3P, G4P, G9P, G8P, G12P; the extent of protection that Rotarix might provide against other rotavirus strains that have not been circulating in clinical trials is currently unknown; no protection against gastroenteritis due to other pathogens.",
                 "indication": "Active immunization to prevent gastroenteritis in individuals 6- 24 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception or intussusception predisposing situation*; SCID; acute severe febrile illness; diarrhea; vomiting; known or suspected immunodeficiency (use risk/benefit strategy); caution in individuals with immunodeficient close contacts; patients with fructose intolerance, glucose-galactose malabsorption or sucrase-isomaltase insufficiency; PKU patients (vaccine contains phenylalanine); no data on pregnancy and breastfeeding (breastfeeding may be continued during the vaccination schedule).",
@@ -14670,7 +14671,7 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: FluMist Quadrivalent® (MAH: MedImmune)",
-                "composition": "1 dose (0.2 mL) contains 106.5-7.5 FFU of each four influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Norway/16606/2021 (H3N2) (an A/Darwin/9/2021 (H3N2) - like virus), B/Phuket/3073/2013 (B/Yamagata lineage), and B/Austria/1359417/2021 (B/Victoria lineage) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "composition": "1 dose (0.2 mL) contains 10⁶.⁵-⁷.⁵ FFU of each four influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Norway/16606/2021 (H3N2) (an A/Darwin/9/2021 (H3N2) - like virus), B/Phuket/3073/2013 (B/Yamagata lineage), and B/Austria/1359417/2021 (B/Victoria lineage) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
                 "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
                 "indication": "Active immunization against influenza disease caused by influenza A subtypes and type B contained in the vaccine in individuals 2-49 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg protein allergy; concomitant aspirin therapy in children and adolescents unless clearly needed; caution in individuals with asthma or children <5 yrs. with recurrent wheezing; use risk/benefits strategy if Guillain-Barré Syndrome has occurred within 6 weeks after any prior influenza vaccination; FluMist Quadrivalent® is not absorbed systemically, so maternal use is not expected to result in fetal exposure to the drug also breastfeeding is not expected to result in the exposure of the child to FluMist Quadrivalent®.",
@@ -15321,7 +15322,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.2 mL) contains 10<sup>7.0±0.5</sup> FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
+                "composition": "1 dose (0.2 mL) contains 10⁷.⁰±⁰.⁵ FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
                 "strainCoverage": "Influenza virus H5N1.",
                 "indication": "Active immunization for prophylaxis of influenza in an officially declared pandemic situation in individuals 1-17 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; eggs or egg proteins allergy; breastfeeding; <1 yrs. (safety concerns regarding increased rates of hospitalization and wheezing); use risk/benefit strategy in individuals on salicylate therapy, individuals with significant clinical immunodeficiency or children with severe asthma and active wheezing; use risk/benefit strategy in pregnancy.",
@@ -15355,7 +15356,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.2 mL) contains 107.0±0.5 FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
+                "composition": "1 dose (0.2 mL) contains 10⁷.⁰±⁰.⁵ FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
                 "strainCoverage": "Influenza virus H5N1.",
                 "indication": "Active immunization for prophylaxis of influenza in an officially declared pandemic situation in individuals 1-17 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; eggs or egg proteins allergy (in a pandemic situation based on doctor’s recommendation); breastfeeding; individuals on salicylate therapy; immunodeficient individuals; severe asthma and active wheezing; use risk/benefit strategy in pregnancy; close contact with severe immunodeficient individuals.",
@@ -15411,7 +15412,7 @@
                 "dosing": "S.C. (preferably upper arm); adults previously not vaccinated against smallpox, monkeypox, or vaccinia viruses: 2 doses (0.5mL each), 0, >28days. \n Booster: limited data available, if necessary single dose in healthy adults and 2 doses in immunocompromised patients (0, >28 day).",
                 "immunogenicity": "Immunogenicity was assessed by ELISA and PNRT; percentage of seroresponders: 2 doses, 4 wks. Interval, in Vaccinia-naive individuals, 42 days f/u, 77.2-99.8%; 2 doses, 4 wks. Interval, in vaccinia-experienced individuals, 42 days f/u, 85.5-100%.",
                 "Efficacy": "Challenge study in NHP: protected NHP from severe disease, significant reduction in both mortality and morbidity (viral load, weight loss, number of pox lesions, etc.).",
-                "durationOfProtection": "No data in the label.",
+                "durationOfProtection": "Unknown.",
                 "coAdministration": " No data on the concomitant use with other vaccines and Ig.; avoid co-administration with other vaccines.",
                 "reactogenicity": "Very common: headache, myalgia, nausea, fatigue, injection site pain, erythema, swelling, induration, and pruritus.",
                 "safety": "Higher frequency of injection site erythema and swelling, headache, myalgia, chills, nausea, and fatigue in atopic dermatitis patients; May cause flare-ups or worsening skin condition in atopic dermatitis patients.",
@@ -15421,14 +15422,14 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.5mL) contains modified vaccinia Ankara-Bavarian Nordic live virus (0.5x108 to 3.95x108 Inf.U); produced in chick embryo cells; storage: freezer, -20°C /refrigerator; shelf life: up to 3 yrs. at -20°C, 4 weeks at 2-8°C.",
+                "composition": "1 dose (0.5mL) contains modified vaccinia Ankara-Bavarian Nordic live virus (0.5x10⁸ to 3.95x10⁸ Inf.U); produced in chick embryo cells; storage: freezer, -20°C /refrigerator; shelf life: up to 3 yrs. at -20°C, 4 weeks at 2-8°C.",
                 "strainCoverage": "Smallpox and monkeypox viruses.",
                 "indication": "Active immunization against smallpox and mpox in adults ≥ 18 years at high risk of infection. To be used based on official recommendations.",
                 "contraindication": "Hypersensitivity (administered if benefits > risk); limited data in pregnancy; no data in breastfeeding (administered if benefits > risk).",
                 "dosing": "2 doses (0.5mL each); 4-week interval; S.C.",
                 "immunogenicity": "Immunogenicity was assessed by PNRT; GMT in healthy smallpox-naive individuals, 18-42 yrs., after 2 doses, 2 wks. f/u was non-inferior to the single dose of ACAM2000.",
                 "Efficacy": "Challenge study in NHP: 80-100% reduction in mortality; VEy based on immunogenicity and animal challenge studies.",
-                "durationOfProtection": "No data on the concomitant use with other vaccines.",
+                "durationOfProtection": "Unknown",
                 "reactogenicity": "Vaccine-naive healthy adults: injection site pain (84.9%), redness (60.8%), swelling (51.6%), induration (45.4%), and itching (43.1%), muscle pain (42.8%), headache (34.8%), fatigue(30.4%), nausea (17.3%) and chills (10.4%); healthy adults previously vaccinated with smallpox vaccine: injection site redness (80.9%), pain (79.5%), induration (70.4%), swelling (67.2%), and itching (32.0%), fatigue (33.5%), headache (27.6%), and muscle pain (21.5%); similar reactogenicity in HIV-infected patients and adults with atopic dermatitis.",
                 "coAdministration": "No data on the concomitant use with other vaccines.",
                 "safety": "Among all studies, a causal relationship for 4 SAEs, all non-fatal could not be excluded (Crohn’s disease, sarcoidosis, extraocular muscle paresis, and throat tightness); tachycardia, palpitation, abnormal ECG, ST elevation, T abnormality, and T inversion in ECG",
@@ -16219,19 +16220,19 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: ComBE Five (Reconstituted)® (MAH: Biological E. Limited)",
-                "composition": "0.5 mL contains 15µg influenza virus HA (A/California/7/2009 (H1N1)v-like virus strain); propagated in the allantoic fluid of embryonated chicken eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
-                "strainCoverage": "Influenza A/California/7/2009 (H1N1)v-like virus strain.",
-                "indication": "Active immunization against influenza disease caused by pandemic (H1N1) 2009 virus in individuals ≥6 mo.; to be used based on official recommendations.",
-                "contraindication": "Hypersensitivity; egg protein allergy; use risk/benefit strategy if Guillain-Barré Syndrome has occurred within 6 weeks of previous influenza vaccination; should be given to a pregnant woman only if clearly needed (pregnancy category: C); caution in breastfeeding.",
-                "dosing": "I.M; 6-35 mo.: 2 doses (0.25 mL); at least 4 weeks interval; 3-9 yrs.: 2 doses (0.5 mL); at least 4 weeks interval; ≥10 yrs.: 1 dose (0.5 mL).",
-                "immunogenicity": "CSL’s Influenza A (H1N1) 2009 Monovalent Vaccine and seasonal trivalent influenza virus vaccine (AFLURIA®) are manufactured by the same process; AFLURIA® seroconversion rate (HI antibody titers): 6 mo.-2 yrs.: 95% against H1N1 strain; 3-8 yrs.: 93.9% against H1N1 strain; 18-64 yrs.: 48.7% (95% CI: 45.6; 51.7) against H1N1 strain; ≥65 yrs.: 34.0% (95% CI: 27.5; 40.9) against H1N1 strain.",
-                "Efficacy": "No data in the label.",
-                "durationOfProtection": "No data in the label.",
-                "coAdministration": "No data on concomitant administration with other vaccines in the label. ",
-                "reactogenicity": "Most common: adults: injection site tenderness, pain, redness, swelling; headache; malaise; muscle aches; children: injection site pain, redness, swelling; irritability; rhinitis; fever; cough; loss of appetite; vomiting/diarrhea; headache; muscle aches; sore throat.",
-                "safety": "An increased frequency of GBS; encephalopathy, optic neuritis/neuropathy, partial facial paralysis, and brachial plexus neuropath; vasculitis.",
+                "composition": "1 dose (0.5mL): 50µg of modified mRNA encoding RSV preF glycoprotein; storage: -40 to -15°C; shelf life: unknown (after thawing at 2-8°C for up to 30 days or at 8-25°C for 24 hours)",
+                "strainCoverage": "RSV",
+                "indication": "Active immunization for prevention of RSV-LRTI in individuals ≥ 60 yrs, based on official recommendations.",
+                "contraindication": "Hypersensitivity; no data in pregnancy; no data in breastfeeding (use risk/benefit strategy).",
+                "dosing": "Single dose; 0.5 mL; Intramuscular (I.M.)",
+                "immunogenicity": "No immunogenicity data available in the label.",
+                "Efficacy": "VEy against RSV-LRTD with 2 or more signs/symptoms: 78.7% (95% CI: 62.8; 87.9) at 3.7 months median follow-up; 62.5% (95% CI: 47.7; 73.1) at 8.6 months median follow-up. VEy against RSV-LRTD with 3 or more signs/symptoms: 80.9% (95% CI: 50.1; 92.7) at 3.7 months; 61.1% (95% CI: 34.7; 76.8) at 8.6 months.",
+                "durationOfProtection": "Unknown",
+                "coAdministration": "No data available in the label.",
+                "reactogenicity": "Very common: injection site pain (55.9%), fatigue (30.8%), headache (26.7%), myalgia (25.6%), arthralgia (21.7%), axillary swelling/tenderness (15.2%), chills (11.6%); incidence of urticaria higher than control group.",
+                "safety": "Facial paralysis reported.",
                 "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "No safety/effectiveness data in <6 mo. and in pregnant women or nursing mothers; antibody responses is lower in geriatric subjects than in younger subjects."
+                "others": "No safety/effectiveness data in individuals <18 years."
             },
             {
                 "type": "WHO",
@@ -16360,7 +16361,7 @@
         ]
     },
     {
-        "vaccineId": 272,
+        "vaccineId": 311,
         "name": "Prevenar 20®, Prevnar 20®",
         "isDoubleName": true,
         "pathogenId": [
@@ -16408,7 +16409,7 @@
             },
             {
                 "type": "WHO",
-                "name": "WHO-Product Profile: ComBE Five (Reconstituted)",
+                "name": "(Not Licensed Yet)",
                 "composition": "- not licensed yet -",
                 "strainCoverage": "- not licensed yet -",
                 "indication": "- not licensed yet -",
@@ -16445,7 +16446,6 @@
     {
         "vaccineId": 274,
         "name": "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains (Sinovac)®",
-        "isDoubleName": false,
         "pathogenId": [
             31
         ],
@@ -17654,7 +17654,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
-                "composition": "1 dose (2 drops or 0.1 mL) contains live novel poliovirus type 2 (genetic modification of Sabin OPV type 2 strain) ≥ 105 IU; prepared in Vero cells.; storage: -20°C or lower/ or 2-8°C; shelf life: 3 years at -20°C or lower/ or up to 6 months in 2-8°C",
+                "composition": "1 dose (2 drops or 0.1 mL) contains live novel poliovirus type 2 (genetic modification of Sabin OPV type 2 strain) ≥ 10⁵ IU; prepared in Vero cells.; storage: -20°C or lower/ or 2-8°C; shelf life: 3 years at -20°C or lower/ or up to 6 months in 2-8°C",
                 "strainCoverage": "Poliovirus type 2",
                 "indication": "Active immunization in all age groups for emergency use in response to outbreaks caused by type 2 poliomyelitis virus when and where it is required by the GPEI or WHO;  to be used based on official recommendations",
                 "contraindication": "Diarrhea or vomiting (repeat the dose after recovery); pregnancy; acute febrile illness; immunocompromised individuals (primary immune deficiency disease or suppressed immune response from medication, leukemia, lymphoma, or generalized malignancy); use with caution in close contact of persons with immune deficiency disorder",
