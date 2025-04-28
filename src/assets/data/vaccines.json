@@ -15405,7 +15405,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "-",
+                "composition": "1 dose (0.5mL) contains modified vaccinia Ankara-Bavarian Nordic live virus (no less than 5xInf.U); produced in chick embryo cells; storage: freezer (-20±5°C or -50±10°C or -80±10°C)/refrigerator; shelf life: 3 yrs. at -20±5°C, 5 yrs. at -50 ±10°C, 9 years at -80±10°C, 2mo. at 2–8°C.",
                 "strainCoverage": "Smallpox, monkeypox, and vaccinia viruses.",
                 "indication": "Active immunization against smallpox, mpox, and disease caused by vaccinia virus in adults. To be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; acute severe febrile disease; acute infection; limited data in pregnancy and breast-feeding (use risk/benefits strategy).",
