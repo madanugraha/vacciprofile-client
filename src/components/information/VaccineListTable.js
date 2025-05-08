@@ -1,7 +1,10 @@
 import React from 'react';
 import { getAllPathogenNameByVaccineCandidateName, getAllPhasesByVaccineCandidateName, getAllPlatformByCandidateName, getCandidateVaccineByManufactureName, removeDuplicatesFromArray } from '../../utils/array';
-import { getLicensedVaccineByManufacturerId, getPathogenDetailById } from '../../utils/pathogens';
+import { getLicensedVaccineByManufacturerId, getLicensingDateByVaccineNameAndTypeV2, getPathogenDetailById } from '../../utils/pathogens';
 import * as _ from 'lodash';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
 
 /**
  * VaccineListTable Component
@@ -53,6 +56,19 @@ const VaccineListTable = ({
     getLicenserById,
     italizeScientificNames
 }) => {
+
+    const HtmlTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} classes={{ popper: className }} />
+    ))(({ theme }) => ({
+        [`& .${tooltipClasses.tooltip}`]: {
+            backgroundColor: '#f5f5f9',
+            color: 'rgba(0, 0, 0, 0.87)',
+            maxWidth: 220,
+            fontSize: theme.typography.pxToRem(12),
+            border: '1px solid #dadde9',
+        },
+    }));
+
     return <>
 
         <div className="accordion" id="accordianVaccineList">
@@ -106,7 +122,65 @@ const VaccineListTable = ({
                                                     </div>
                                                 </td>
                                                 <td className='licenser-cell'>
-                                                    {vaccine.licensingDates ? vaccine.licensingDates.map((l, index) => {
+                                                    <div style={{ display: 'flex' }}>
+                                                        <div style={{ display: 'flex' }}>
+                                                            {
+                                                                getLicensingDateByVaccineNameAndTypeV2("EMA", "source", vaccine.name) === "-" ? null : (
+                                                                    <>
+                                                                        <HtmlTooltip
+                                                                            title={
+                                                                                <>
+                                                                                    <Typography color="inherit">{"EMA"} Hyperlinks</Typography>
+                                                                                    {getLicensingDateByVaccineNameAndTypeV2("EMA", "source", vaccine.name)}
+                                                                                </>
+                                                                            }
+                                                                        >
+                                                                            <div style={{ flex: 1, flexDirection: 'row' }}>
+                                                                                <span className='selectable'>EMA</span><span className='text-decoration-none'>, {" "}</span>
+                                                                            </div>
+                                                                        </HtmlTooltip>
+                                                                    </>
+                                                                )
+                                                            }
+                                                            {
+                                                                getLicensingDateByVaccineNameAndTypeV2("FDA", "source", vaccine.name) === "-" ? null : (
+                                                                    <>
+                                                                        <HtmlTooltip
+                                                                            title={
+                                                                                <>
+                                                                                    <Typography color="inherit">{"FDA"} Hyperlinks</Typography>
+                                                                                    {getLicensingDateByVaccineNameAndTypeV2("FDA", "source", vaccine.name)}
+                                                                                </>
+                                                                            }
+                                                                        >
+                                                                            <div>
+                                                                                <span className='selectable'>{"FDA"}</span><span className='text-decoration-none'>, {" "}</span>
+                                                                            </div>
+                                                                        </HtmlTooltip>
+                                                                    </>
+                                                                )
+                                                            }
+                                                            {
+                                                                getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name) === "-" ? null : (
+                                                                    <>
+                                                                        <HtmlTooltip
+                                                                            title={
+                                                                                <>
+                                                                                    <Typography color="inherit">{"WHO"} Hyperlinks</Typography>
+                                                                                    {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)}
+                                                                                </>
+                                                                            }
+                                                                        >
+                                                                            <div>
+                                                                                <span className='selectable'>{"WHO"}</span>
+                                                                            </div>
+                                                                        </HtmlTooltip>
+                                                                    </>
+                                                                )
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                    {/* {vaccine.licensingDates ? vaccine.licensingDates.map((l, index) => {
                                                         const licenser = l.type;
                                                         if (!licenser) return null;
                                                         return (
@@ -117,7 +191,7 @@ const VaccineListTable = ({
                                                                 {index < vaccine.licensingDates.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
                                                             </span>
                                                         );
-                                                    }) : '- no data -'}
+                                                    }) : '- no data -'} */}
                                                 </td>
                                             </tr>
                                         )

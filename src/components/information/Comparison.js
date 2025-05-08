@@ -15,6 +15,7 @@ import { cutStringMoreThan32 } from '../../utils/string';
 import * as _ from 'lodash';
 import DraggableIcon from '../../assets/icons/draggable';
 import ExcelJS from 'exceljs';
+import { FormControl, InputLabel, ListItemText, MenuItem, OutlinedInput, Select } from '@mui/material';
 
 
 const workbook = new ExcelJS.Workbook();
@@ -127,31 +128,35 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
     const [licenserFieldsVaccine, setLicenserFieldsVaccine] = useState([]);
     const [selectedFilterVaccine, setSelectedFilterVaccine] = useState([]);
-    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]]);
+    // const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]]); 
+    const [selectedFilterTableFields, setSelectedFilterTableFields] = useState([tableFields]);
     const [vaccineFieldsState, setVaccineFieldsState] = useState([]);
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
+    const [selectedModalFilter, setSelectedModalFilter] = useState(tableFields.map((x) => x.title));
 
-    const newA = selectedFilterTableFields && selectedFilterTableFields.length > 0 ? selectedFilterTableFields?.map((x) => {
-        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.alt}`);
+    const newA = selectedFilterTableFields && selectedModalFilter.length > 0 ? selectedModalFilter?.map((x) => {
+        let altName = tableFields.filter((z) => z.title === x)[0].alt
+        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${altName}`);
         const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
         const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
         const result5 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.source))}`);
 
+
         const result2 = secondaryVaccineFields[0]?.map((y) => {
-            return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[x.alt]))}`
+            return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[altName]))}`
         });
 
-        if (result3 && result3.length > 0 && x.alt === "approvalDate") {
-            return [x.title, ...result3]
+        if (result3 && result3.length > 0) {
+            return [x, ...result3]
         };
-        if (result4 && result4.length > 0 && x.alt === "lastUpdated") {
-            return [x.title, ...result4]
+        if (result4 && result4.length > 0) {
+            return [x, ...result4]
         };
-        if (result5 && result5.length > 0 && x.alt === "source") {
-            return [x.title, ...result5]
+        if (result5 && result5.length > 0) {
+            return [x, ...result5]
         };
 
-        return [x.title, (checkIfExceptionFields(x.title) ? result2 : result1)];
+        return [x, (checkIfExceptionFields(x) ? result2 : result1)];
     }) : [];
 
     const arrayToGenerate = newA || [];
@@ -441,10 +446,31 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
     }, [viewSinglePathogenVaccine, viewCombinationVaccine, viewAllVaccines, selectedPathogen]);
 
+
+
+    const handleChangeSelectedModalFilter = (event) => {
+        const {
+            target: { value },
+        } = event;
+        if (!value.includes("Type")) {
+            return
+        } else {
+            setSelectedModalFilter(
+                // On autofill we get a stringified value.
+                typeof value === 'string' ? value.split(',') : value,
+            );
+        }
+    };
+
+    const getAltNameByTitleName = (name) => {
+        return tableFields.filter((x) => x.title === name).length > 0 ? tableFields.filter((x) => x.title === name)[0]?.alt : ""
+    };
+
     useEffect(() => {
         if (!open) {
             setLicenserFieldsVaccine([]);
             setSelectedFilterVaccine([]);
+            // setSelectedModalFilter([]);
 
             if (!checkIfPathogenCandidate(selectedPathogen)) {
                 const vaccineFields = getAllVaccineByPathogenId(selectedPathogen.pathogenId) && getAllVaccineByPathogenId(selectedPathogen.pathogenId).length > 0 ? getAllVaccineByPathogenId(selectedPathogen.pathogenId).map((x) => {
@@ -502,16 +528,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         }
     }, [selectedFilterTableFields]);
 
-
-    const printTable = () => {
-        var divToPrint = document.getElementById("comparison-table");
-        let newWin = window.open("");
-        if (divToPrint?.outerHTML) {
-            newWin.document.write(divToPrint.outerHTML);
-            newWin.print();
-            newWin.close();
-        }
-    };
 
     const handleCheckboxLicenserByVaccine = (vacineName, licenser, checked, vaccineChecked, isSecondary) => {
         let f = [];
@@ -678,7 +694,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             const nf = _.chunk(f, 5);
             setSecondaryVaccineFields(nf);
         }
-
     };
 
 
@@ -791,9 +806,10 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
     useEffect(() => {
         if (allFactorShows) {
-            setSelectedFilterTableFields(tableFields);
+            setSelectedModalFilter(tableFields.map((x) => x.title));
         } else {
-            setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]])
+            setSelectedModalFilter(tableFields.map((x) => x.title));
+            // setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]])
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
 
@@ -1191,94 +1207,47 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             >
                 <Box sx={style}>
                     <div style={{ height: '100%', width: '100%', position: 'relative' }}>
-                        <div style={{ position: 'absolute', right: 10, top: -20, width: 300 }}>
+                        {/* <div style={{ position: 'absolute', right: 10, top: -20, width: 300 }}>
                             <button type='button' onClick={() => handleDownloadComparison()} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
-                        </div>
-                        <div style={{ position: 'absolute', right: -150, top: -20, width: 300 }}>
-                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: '#c1121f', color: 'white', fontSize: 'bold' }}>Close</button>
+                        </div> */}
+                        <div style={{ position: 'absolute', right: -35, top: -20, width: 75 }}>
+                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: '#c1121f', color: 'white', fontSize: 'bold', textAlign: 'center' }}>X</button>
                         </div>
                         <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
-                                <div style={{ marginTop: 10 }}>
-                                    <Stack spacing={3} sx={{ width: 500 }}>
-                                        <Autocomplete
+                                <div style={{ marginTop: 0 }}>
+                                    <FormControl sx={{ m: 1, width: 250 }}>
+                                        <InputLabel id="demo-multiple-checkbox-label">Filter</InputLabel>
+                                        <Select
+                                            labelId="demo-multiple-checkbox-label"
+                                            id="demo-multiple-checkbox"
                                             multiple
-                                            id="tags-standard"
-                                            options={tableFields}
-                                            value={selectedFilterTableFields}
-                                            getOptionLabel={(option) => option.title}
-                                            defaultValue={[tableFields[0], tableFields[1]]}
-                                            autoComplete
-                                            freeSolo
-                                            onChange={(event, newValue) => {
-                                                if (event.target?.textContent &&
-                                                    selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
-                                                ) {
-                                                    setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                const checkForType = newValue.some((item) => item.title === "Type");
-                                                const checkForComposition = newValue.some((item) => item.title === "Composition/Platform");
-                                                const checkForApprovalDate = newValue.some((item) => item.title === "Approval Date");
-                                                const checkForLastUpdated = newValue.some((item) => item.title === "Last Updated");
-                                                const checkForSource = newValue.some((item) => item.alt === "source");
-                                                if (!checkForType) {
-                                                    setTableFieldsErrorMessage("Type cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                if (!checkForComposition) {
-                                                    setTableFieldsErrorMessage("Composition/Platform cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                if (!checkForApprovalDate) {
-                                                    setTableFieldsErrorMessage("Approval Date cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                if (!checkForLastUpdated) {
-                                                    setTableFieldsErrorMessage("Last Updated cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                if (!checkForSource) {
-                                                    setTableFieldsErrorMessage("Licensing Authorities cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                setDuplicateTableFieldsError(false);
-                                                setSelectedFilterTableFields(newValue);
+                                            value={selectedModalFilter}
+                                            onChange={handleChangeSelectedModalFilter}
+                                            input={<OutlinedInput label="Filter" />}
+                                            renderValue={(selected) => selected.join(', ')}
+                                            MenuProps={{
+                                                PaperProps: {
+                                                    style: {
+                                                        maxHeight: 48 * 4.5 + 8,
+                                                        width: 250,
+                                                    },
+                                                },
                                             }}
-                                            onKeyUp={(event) => {
-                                                if (event.target?.textContent &&
-                                                    selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
-                                                ) {
-                                                    setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                } else {
-                                                    setDuplicateTableFieldsError(false);
-                                                }
-                                            }}
-                                            renderInput={(params) => (
-                                                <TextField
-                                                    {...params}
-                                                    variant="standard"
-                                                    label={<span style={{ color: 'black' }}>Filter items</span>}
-                                                    placeholder=""
-                                                    error={duplicateTableFieldsError}
-                                                    helperText={duplicateTableFieldsError ? tableFieldsErrorMessage : null}
-                                                />
-                                            )}
-                                        />
-                                    </Stack>
+                                        >
+                                            {tableFields.map((x) => x.title).map((name) => (
+                                                <MenuItem key={name} value={name}>
+                                                    {name === "Type" ? null : <Checkbox checked={selectedModalFilter.includes(name)} />}
+                                                    <ListItemText primary={name} />
+                                                </MenuItem>
+                                            ))}
+                                        </Select>
+                                    </FormControl>
                                 </div>
                             </div>
                             {secondaryVaccineFields.length > 0 ? secondaryVaccineFields.map((data, secondaryIdx) => {
                                 return (
-                                    <div style={{ marginLeft: 10, marginRight: 40, alignItems: 'center' }}>
+                                    <div style={{ marginLeft: 10, marginRight: 40, alignItems: 'center', marginTop: 10 }}>
                                         {
                                             data.length >= 1 ? data.map((vaccine) => {
                                                 return (
@@ -1322,8 +1291,8 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                         data-pagination="true"
                                         data-reorderable-columns="true">
                                         <tbody>
-                                            {selectedFilterTableFields.map((field, idx) => {
-                                                const key = field.alt;
+                                            {selectedModalFilter.map((field, idx) => {
+                                                const key = getAltNameByTitleName(field);
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
@@ -1357,6 +1326,9 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                     </table>
                                 ) : null}
                             </div>
+                        </div>
+                        <div style={{ width: 300, marginTop: 20, justifySelf: 'center', marginLeft: 150, paddingTop: 20 }}>
+                            <button type='button' onClick={() => handleDownloadComparison()} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
                         </div>
                     </div>
                 </Box>

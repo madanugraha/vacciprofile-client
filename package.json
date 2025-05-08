@@ -21,6 +21,7 @@
     "react-router": "^7.4.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.6",
+    "react-tooltip": "^5.28.1",
     "sass": "^1.77.8",
     "table-dragger": "^2.0.5",
     "web-vitals": "^2.1.4"

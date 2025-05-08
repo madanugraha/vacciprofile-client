@@ -709,24 +709,27 @@ const App = () => {
                     />
                 </div>
             </div>
-            <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;' }}>
+            <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;', display: 'flex', flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ marginBottom: '10px' }}>
                     <div>
                         <img src="/images/logo PNG.png" alt="Global Health Press Logo" style={{ height: '80px' }} />
                     </div>
                 </div>
-                <div style={{ marginBlock: '10px' }}>
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Terms & Conditions</a> |
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Privacy Policy</a> |
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Disclaimer</a> |
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Imprint</a> |
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Contacts</a>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    Copyright © 2009-2025 Global Health Press Pte Ltd. Reg. No. 200921795N All Rights Reserved.
-                </div>
-                <div>
-                    Subject to <a href="#" style={{ color: '#4da6ff', textDecoration: 'none' }}>Creative Commons Licence (cc)</a>.
+                <div style={{ marginLeft: 30 }}>
+                    <div style={{ marginBlock: '10px' }}>
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Terms & Conditions</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Privacy Policy</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Disclaimer</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Imprint</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Contacts</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>LinkedIn</a>
+                    </div>
+                    <div style={{ marginBottom: '10px' }}>
+                        Copyright © 2009-2025 Global Health Press Pte Ltd. Reg. No. 200921795N All Rights Reserved.
+                    </div>
+                    <div>
+                        Subject to <a href="#" style={{ color: '#4da6ff', textDecoration: 'none' }}>Creative Commons Licence (cc)</a>.
+                    </div>
                 </div>
             </footer>
             <ToastContainer />

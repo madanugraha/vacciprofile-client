@@ -22,76 +22,90 @@ const HomePage = () => {
                 </table>
             </div>
 
-            <div class="container-home text-center" style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'column' }}>
-                <div class="card" onClick={() => window.location.href = "/home?menu=pathogen"}>
-                    <div class="image-container">
-                        <img src="/images/VACCIE PROFILE OUTLINE-03.png" alt="Pathogens" />
+            <div className='container-home text-center' style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'row' }}>
+                <div class="container-home text-center" style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'column' }}>
+                    <div class="card" onClick={() => window.location.href = "/home?menu=pathogen"}>
+                        <div class="image-container">
+                            <img src="/images/VACCIE PROFILE OUTLINE-03.png" alt="Pathogens" />
+                        </div>
+                        <div class="title">Pathogens</div>
+                        <p>Essential characteristics, vaccines, and vaccine candidates
+                        </p>
+                        <button class="btn">View more</button>
                     </div>
-                    <div class="title">Pathogens</div>
-                    <p>Essential characteristics, vaccines, and vaccine candidates
-                    </p>
-                    <button class="btn">View more</button>
-                </div>
-                <div class="card" onClick={() => window.location.href = "/home?menu=vaccines"}>
-                    <div class="image-container">
-                        <img src="/images/VACCIE PROFILE OUTLINE-04.png" alt="Vaccines" />
+                    <div class="card" onClick={() => window.location.href = "/home?menu=vaccines"}>
+                        <div class="image-container">
+                            <img src="/images/VACCIE PROFILE OUTLINE-04.png" alt="Vaccines" />
+                        </div>
+                        <div class="title">Vaccines</div>
+                        <p>Compare brandnames, licenses. single and combination vaccines</p>
+                        <button class="btn">View more</button>
                     </div>
-                    <div class="title">Vaccines</div>
-                    <p>Compare brandnames, licenses. single and combination vaccines</p>
-                    <button class="btn">View more</button>
-                </div>
-                <div class="card" onClick={() => window.location.href = "/home?menu=manufacturer"}>
-                    <div class="image-container">
-                        <img src="/images/VACCIE PROFILE OUTLINE-05.png" alt="Manufacturers" />
+                    <div class="card" onClick={() => window.location.href = "/home?menu=manufacturer"}>
+                        <div class="image-container">
+                            <img src="/images/VACCIE PROFILE OUTLINE-05.png" alt="Manufacturers" />
+                        </div>
+                        <div class="title">Manufacturers</div>
+                        <p>Basic company information, vaccines. licenses and labels</p>
+                        <button class="btn">View more</button>
                     </div>
-                    <div class="title">Manufacturers</div>
-                    <p>Basic company information, vaccines. licenses and labels</p>
-                    <button class="btn">View more</button>
-                </div>
-                <div class="card" onClick={() => window.location.href = "/home?menu=licenser"}>
-                    <div class="image-container">
-                        <img src="/images/VACCIE PROFILE OUTLINE-06.png" alt="Licensing Authorities" />
+                    <div class="card" onClick={() => window.location.href = "/home?menu=licenser"}>
+                        <div class="image-container">
+                            <img src="/images/VACCIE PROFILE OUTLINE-06.png" alt="Licensing Authorities" />
+                        </div>
+                        <div class="title">Licensing Authorities</div>
+                        <p>Essential information and licensed products</p>
+                        <button class="btn">View more</button>
                     </div>
-                    <div class="title">Licensing Authorities</div>
-                    <p>Essential information and licensed products</p>
-                    <button class="btn">View more</button>
+                    <div class="card" onClick={() => window.location.href = "/home"}>
+                        <div class="image-container">
+                            <img src="/images/VACCIE PROFILE OUTLINE-07.png" alt="Pipeline Vaccine" />
+                        </div>
+                        <div class="title">Vaccine Candidates</div>
+                        <p>Vaccine candidates from phase 1 to 4 by pathogen and manufacturer</p>
+                        <button class="btn">View more</button>
+                    </div>
+                    <div class="card" onClick={() => window.location.href = "/home"}>
+                        <div class="image-container">
+                            <img src="/images/VACCIE-PROFILE-OUTLINE-08.png" alt="Licensing Authorities" />
+                        </div>
+                        <div class="title">(NITAGs)</div>
+                        <p>Current recommendations and procedures</p>
+                        <button class="btn">View more</button>
+                    </div>
                 </div>
                 <div class="card" onClick={() => window.location.href = "/home"}>
                     <div class="image-container">
-                        <img src="/images/VACCIE PROFILE OUTLINE-07.png" alt="Pipeline Vaccine" />
+                        <img src="/images/vacciprofile-compare.png" alt="Comparison" />
                     </div>
-                    <div class="title">Pipeline Vaccine</div>
-                    <p>Vaccine candidates from phase 1 to 4 by pathogen and manufacturer</p>
-                    <button class="btn">View more</button>
-                </div>
-                <div class="card" onClick={() => window.location.href = "/home"}>
-                    <div class="image-container">
-                        <img src="/images/VACCIE-PROFILE-OUTLINE-08.png" alt="Licensing Authorities" />
-                    </div>
-                    <div class="title">(NITAGs)</div>
-                    <p>Current recommendations and procedures</p>
+                    <div class="title">Comparison</div>
+                    <p>Vaccines data comparisons</p>
                     <button class="btn">View more</button>
                 </div>
             </div>
 
-            <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;' }}>
+
+            <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;', display: 'flex', flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ marginBottom: '10px' }}>
                     <div>
                         <img src="/images/logo PNG.png" alt="Global Health Press Logo" style={{ height: '80px' }} />
                     </div>
                 </div>
-                <div style={{ marginBlock: '10px' }}>
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Terms & Conditions</a> |
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Privacy Policy</a> |
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Disclaimer</a> |
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Imprint</a> |
-                    <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Contacts</a>
-                </div>
-                <div style={{ marginBottom: '10px' }}>
-                    Copyright © 2009-2025 Global Health Press Pte Ltd. Reg. No. 200921795N All Rights Reserved.
-                </div>
-                <div>
-                    Subject to <a href="#" style={{ color: '#4da6ff', textDecoration: 'none' }}>Creative Commons Licence (cc)</a>.
+                <div style={{ marginLeft: 30 }}>
+                    <div style={{ marginBlock: '10px' }}>
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Terms & Conditions</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Privacy Policy</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Disclaimer</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Imprint</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>Contacts</a> |
+                        <a href="#" style={{ color: '#ddd', textDecoration: 'none', margin: '0 10px' }}>LinkedIn</a>
+                    </div>
+                    <div style={{ marginBottom: '10px' }}>
+                        Copyright © 2009-2025 Global Health Press Pte Ltd. Reg. No. 200921795N All Rights Reserved.
+                    </div>
+                    <div>
+                        Subject to <a href="#" style={{ color: '#4da6ff', textDecoration: 'none' }}>Creative Commons Licence (cc)</a>.
+                    </div>
                 </div>
             </footer>
         </>

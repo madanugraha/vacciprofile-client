@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { getAllVaccineByPathogenId, getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getLicensingDateByVaccineNameAndType, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
+import { getAllVaccineByPathogenId, getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getLicensingDateByVaccineNameAndType, getLicensingDateByVaccineNameAndTypeV2, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
-import Vaccine from './Vaccine';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import { checkIfPathogenCandidate, getCandidateVaccinesByPathogenName, getVaccineCandidatePlatformsUniqueByPathogenName, removeDuplicatesFromArray, sortArrayAscending } from '../../utils/array';
-import tableDragger from 'table-dragger'
+import tableDragger from 'table-dragger';
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 import { toast } from 'react-toastify';
 import { cutStringMoreThan32 } from '../../utils/string';
 import * as _ from 'lodash';
 import DraggableIcon from '../../assets/icons/draggable';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
 
 const style = {
     position: 'absolute',
@@ -27,7 +29,6 @@ const style = {
     p: 6,
     borderRadius: 4
 };
-
 
 /**
  * Pathogen Component
@@ -544,6 +545,21 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
 
+
+    const HtmlTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} classes={{ popper: className }} />
+    ))(({ theme }) => ({
+        [`& .${tooltipClasses.tooltip}`]: {
+            backgroundColor: '#f5f5f9',
+            color: 'rgba(0, 0, 0, 0.87)',
+            maxWidth: 220,
+            fontSize: theme.typography.pxToRem(12),
+            border: '1px solid #dadde9',
+        },
+    }));
+
+    const licenserArrays = [{ name: 'FDA', name: 'EMA', name: 'WHO' }];
+
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>
             {
@@ -558,8 +574,8 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
                                 </h2>
                                 <div id="accordianVacList" className="accordion-collapse collapse show" aria-labelledby="accordianVaccines" data-bs-parent="#accordianVaccineList">
                                     <div className="accordion-body pb-1 px-0 pt-0">
-                                        <div className='main-header table-responsive m-0'>
-                                            <table className='table w-100 m-0'>
+                                        <div className='main-header m-0'>
+                                            <table style={{ overflow: 'hidden' }} className='table w-100 m-0'>
                                                 <thead>
                                                     <tr>
                                                         <th>Vaccine Brand Name</th>
@@ -588,18 +604,65 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
                                                                     {vaccine.vaccineType === "single" ? "Single Pathogen Vaccine" : "Combination Vaccine"}
                                                                 </span></td>
                                                                 <td colSpan={3}>
-                                                                    {vaccine.licensingDates ? vaccine.licensingDates.map((l, index) => {
-                                                                        const licenser = l.type;
-                                                                        if (!licenser) return null;
-                                                                        return (
-                                                                            <span key={l.approvalDate}>
-                                                                                <a href={l.source} className='selectable' target="_blank" rel="noopener noreferrer">
-                                                                                    {l.name}
-                                                                                </a>
-                                                                                {index < vaccine.licensingDates.length - 1 ? <span className='text-decoration-none'>, </span> : ``}
-                                                                            </span>
-                                                                        );
-                                                                    }) : '- no data -'}
+                                                                    <div style={{ display: 'flex' }}>
+                                                                        <div style={{ display: 'flex', }}>
+                                                                            {
+                                                                                getLicensingDateByVaccineNameAndTypeV2("EMA", "source", vaccine.name) === "-" ? null : (
+                                                                                    <>
+                                                                                        <HtmlTooltip
+                                                                                            title={
+                                                                                                <>
+                                                                                                    <Typography color="inherit">{"EMA"} Hyperlinks</Typography>
+                                                                                                    {getLicensingDateByVaccineNameAndTypeV2("EMA", "source", vaccine.name)}
+                                                                                                </>
+                                                                                            }
+                                                                                        >
+                                                                                            <div style={{ flex: 1, flexDirection: 'row' }}>
+                                                                                                <span className='selectable'>EMA</span><span className='text-decoration-none'>, {" "}</span>
+                                                                                            </div>
+                                                                                        </HtmlTooltip>
+                                                                                    </>
+                                                                                )
+                                                                            }
+                                                                            {
+                                                                                getLicensingDateByVaccineNameAndTypeV2("FDA", "source", vaccine.name) === "-" ? null : (
+                                                                                    <>
+                                                                                        <HtmlTooltip
+                                                                                            title={
+                                                                                                <>
+                                                                                                    <Typography color="inherit">{"FDA"} Hyperlinks</Typography>
+                                                                                                    {getLicensingDateByVaccineNameAndTypeV2("FDA", "source", vaccine.name)}
+                                                                                                </>
+                                                                                            }
+                                                                                        >
+                                                                                            <div>
+                                                                                                <span className='selectable'>{"FDA"}</span><span className='text-decoration-none'>, {" "}</span>
+                                                                                            </div>
+                                                                                        </HtmlTooltip>
+                                                                                    </>
+                                                                                )
+                                                                            }
+                                                                            {
+                                                                                getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name) === "-" ? null : (
+                                                                                    <>
+                                                                                        <HtmlTooltip
+                                                                                            title={
+                                                                                                <>
+                                                                                                    <Typography color="inherit">{"WHO"} Hyperlinks</Typography>
+                                                                                                    {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)}
+                                                                                                </>
+                                                                                            }
+                                                                                        >
+                                                                                            <div>
+                                                                                                <span className='selectable'>{"WHO"}</span>
+                                                                                            </div>
+                                                                                        </HtmlTooltip>
+                                                                                    </>
+                                                                                )
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+
                                                                 </td>
                                                             </tr>
                                                         )

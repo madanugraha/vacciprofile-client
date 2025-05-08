@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import ReactModal from "react-modal";
-import { getManufactureDetailById, getProductProfileValueByVaccineNameAndType } from '../../utils/pathogens';
+import { getLicensingDateByVaccineNameAndType, getLicensingDateByVaccineNameAndTypeV2, getManufactureDetailById, getProductProfileValueByVaccineNameAndType } from '../../utils/pathogens';
 import { getAllRelatedVaccineCandidateByName } from '../../utils/array';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
 
 /**
  * Vaccine Component
@@ -35,6 +38,20 @@ const Vaccine = ({
     convertCamelCaseToReadable,
     italizeScientificNames
 }) => {
+
+
+    const HtmlTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} classes={{ popper: className }} />
+    ))(({ theme }) => ({
+        [`& .${tooltipClasses.tooltip}`]: {
+            backgroundColor: '#f5f5f9',
+            color: 'rgba(0, 0, 0, 0.87)',
+            maxWidth: 220,
+            fontSize: theme.typography.pxToRem(12),
+            border: '1px solid #dadde9',
+        },
+    }));
+
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedVacciProfile, setSelectedVacciProfile] = useState({});
@@ -162,7 +179,10 @@ const Vaccine = ({
         "reactogenicity",
         "safety",
         "vaccinationGoal",
-        "others"
+        "others",
+        "approvalDate",
+        "lastUpdated",
+        "source"
     ];
 
     const manufactureName = getManufactureDetailById((selectedVaccine?.manufacturers && selectedVaccine?.manufacturers[0]?.manufacturerId)) || "-";
@@ -195,31 +215,31 @@ const Vaccine = ({
                     <td>- No Data Available -</td>
                 </tr>}
             </tbody>
-        </table> : (
-            <table className='table table-light table-striped w-100 m-0'>
-                <thead>
-                    <tr>
-                        <th className='text-center'>Licensing/ SmPC</th>
-                        <th className='text-center'>Date of Approval</th>
-                        <th className='text-center'>Last Updated</th>
+        </table> : (<div />
+            // <table className='table table-light table-striped w-100 m-0'>
+            //     <thead>
+            //         <tr>
+            //             <th className='text-center'>Licensing/ SmPC</th>
+            //             <th className='text-center'>Date of Approval</th>
+            //             <th className='text-center'>Last Updated</th>
 
-                    </tr>
-                </thead>
-                <tbody>
-                    {selectedVaccine.licensingDates && selectedVaccine.licensingDates.length > 0 ? selectedVaccine.licensingDates.map((licensingDate, index) => (
-                        <React.Fragment key={index}>
-                            <tr>
-                                {/* <td className='text-center'><a href="#" className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td> */}
-                                <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
-                                <td className='text-center'>{licensingDate.approvalDate || "#"}</td>
-                                <td className='text-center'>{licensingDate.lastUpdated || "#"}</td>
-                            </tr>
-                        </React.Fragment>
-                    )) : <tr>
-                        <td>- No Data Available -</td>
-                    </tr>}
-                </tbody>
-            </table>
+            //         </tr>
+            //     </thead>
+            //     <tbody>
+            //         {selectedVaccine.licensingDates && selectedVaccine.licensingDates.length > 0 ? selectedVaccine.licensingDates.map((licensingDate, index) => (
+            //             <React.Fragment key={index}>
+            //                 <tr>
+            //                     {/* <td className='text-center'><a href="#" className='selectable' target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines text-dark hover-cursor"></i></a></td> */}
+            //                     <td className='text-center'><a href={licensingDate.source} className='selectable' target="_blank" rel="noopener noreferrer">{licensingDate.name}</a></td>
+            //                     <td className='text-center'>{licensingDate.approvalDate || "#"}</td>
+            //                     <td className='text-center'>{licensingDate.lastUpdated || "#"}</td>
+            //                 </tr>
+            //             </React.Fragment>
+            //         )) : <tr>
+            //             <td>- No Data Available -</td>
+            //         </tr>}
+            //     </tbody>
+            // </table>
         )}
 
         {/* // )} */}
@@ -228,14 +248,52 @@ const Vaccine = ({
                 <table style={{ overflow: 'hidden', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }} key={selectedVaccine.description} border={1}>
                     <tbody>
                         {platforms.map((key) => {
-                            console.log('name >>> ?? ', getProductProfileValueByVaccineNameAndType("EMA", "name", selectedVaccine.name))
                             return key === "name" ? null : (
                                 <>
                                     <tr>
-                                        <td colSpan={1} style={{ color: key === 'type' ? 'white' : 'black', fontWeight: 'bold' }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "Efficacy" ? "Efficacy (VEy)/ Effectiveness (VEs)" : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("EMA", "strainCoverage", selectedVaccine.name)) : key === "type" ? `EMA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("EMA", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("EMA", key, selectedVaccine.name))}</td>
-                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("FDA", "strainCoverage", selectedVaccine.name)) : key === "type" ? `FDA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("FDA", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("FDA", key, selectedVaccine.name))}</td>
-                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", "strainCoverage", selectedVaccine.name)) : key === "type" ? `WHO - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("WHO", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", key, selectedVaccine.name))}</td>
+                                        <td colSpan={1} style={{ color: key === 'type' ? 'white' : 'black', fontWeight: 'bold' }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "Efficacy" ? "Efficacy (VEy)/ Effectiveness (VEs)" : key === "coAdministration" ? `Co-Administration` : key === "lastUpdated" ? "Last Updated" : key === "approvalDate" ? "Approval Date" : key === "source" ? "Licensing Authorities" : convertCamelCaseToReadable(key)}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "approvalDate" ? getLicensingDateByVaccineNameAndType("EMA", key, selectedVaccine.name) : key === "lastUpdated" ? getLicensingDateByVaccineNameAndType("EMA", key, selectedVaccine.name) : key === "source" ? <>
+                                            {getLicensingDateByVaccineNameAndType("EMA", key, selectedVaccine.name) === "-" ? "-" : (
+                                                <HtmlTooltip
+                                                    title={
+                                                        <>
+                                                            <Typography color="inherit">EMA Hyperlinks</Typography>
+                                                            {getLicensingDateByVaccineNameAndTypeV2("EMA", key, selectedVaccine.name)}
+                                                        </>
+                                                    }
+                                                >
+                                                    <span className='selectable'>EMA</span>
+                                                </HtmlTooltip>
+                                            )}
+                                        </> : key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("EMA", "strainCoverage", selectedVaccine.name)) : key === "type" ? `EMA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("EMA", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("EMA", key, selectedVaccine.name))}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "approvalDate" ? getLicensingDateByVaccineNameAndType("FDA", key, selectedVaccine.name) : key === "lastUpdated" ? getLicensingDateByVaccineNameAndType("FDA", key, selectedVaccine.name) : key === "source" ? <>
+                                            {getLicensingDateByVaccineNameAndType("FDA", key, selectedVaccine.name) === "-" ? "-" : (
+                                                <HtmlTooltip
+                                                    title={
+                                                        <>
+                                                            <Typography color="inherit">FDA Hyperlinks</Typography>
+                                                            {getLicensingDateByVaccineNameAndTypeV2("FDA", key, selectedVaccine.name)}
+                                                        </>
+                                                    }
+                                                >
+                                                    <span className='selectable'>FDA</span>
+                                                </HtmlTooltip>
+                                            )}
+                                        </> : key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("FDA", "strainCoverage", selectedVaccine.name)) : key === "type" ? `FDA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("FDA", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("FDA", key, selectedVaccine.name))}</td>
+                                        <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "approvalDate" ? getLicensingDateByVaccineNameAndType("WHO", key, selectedVaccine.name) : key === "lastUpdated" ? getLicensingDateByVaccineNameAndType("WHO", key, selectedVaccine.name) : key === "source" ? <>
+                                            {getLicensingDateByVaccineNameAndType("WHO", key, selectedVaccine.name) === "-" ? "-" : (
+                                                <HtmlTooltip
+                                                    title={
+                                                        <>
+                                                            <Typography color="inherit">WHO Hyperlinks</Typography>
+                                                            {getLicensingDateByVaccineNameAndTypeV2("WHO", key, selectedVaccine.name)}
+                                                        </>
+                                                    }
+                                                >
+                                                    <span className='selectable'>WHO</span>
+                                                </HtmlTooltip>
+                                            )}
+                                        </> : key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", "strainCoverage", selectedVaccine.name)) : key === "type" ? `WHO - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("WHO", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", key, selectedVaccine.name))}</td>
                                     </tr>
                                 </>
                             )
