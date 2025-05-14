@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { getAllVaccineByPathogenId, getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getLicensingDateByVaccineNameAndType, getPathogenVaccineByDieasesName, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
-import Vaccine from './Vaccine';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-import { checkIfPathogenCandidate, getCandidateVaccinesByPathogenName, getVaccineCandidatePlatformsUniqueByPathogenName, removeDuplicatesFromArray, sortArrayAscending } from '../../utils/array';
+import { checkIfPathogenCandidate, sortArrayAscending } from '../../utils/array';
 import tableDragger from 'table-dragger'
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';

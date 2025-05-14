@@ -17,6 +17,7 @@ import pathogens from './assets/data/pathogens.json';
 import vaccines from './assets/data/vaccines.json';
 import pipelineVaccines from './assets/data/pipeline-vaccines.json';
 import licensers from './assets/data/licensers.json';
+import nitags from './assets/data/nitag.json';
 import scientificNames from './assets/scientificNames';
 import { compareMenu } from './assets/data/compare-vaccine.js';
 
@@ -55,6 +56,7 @@ const App = () => {
     const [selectedManufacturer, setSelectedManufacturer] = useState({});
     const [selectedLicenser, setSelectedLicenser] = useState({})
     const [selectedCompare, setSelectedCompare] = useState({});
+    const [selectedNitag, setSelectedNitag] = useState({});
     const [changedFrom, setChangedFrom] = useState('');
 
     /**
@@ -104,6 +106,9 @@ const App = () => {
                     setSelectedLicenser({});
                     break;
                 case 'Compare':
+                    setSelectedCompare({});
+                    break;
+                case 'Nitag':
                     setSelectedCompare({});
                     break;
                 default:
@@ -172,6 +177,11 @@ const App = () => {
     const handleSelectLicenser = licenser => {
         setSelectedLicenser(licenser);
         setActiveTab("Licenser");
+    };
+
+    const handleSelectNitag = nitag => {
+        setSelectedNitag(nitag);
+        setActiveTab("Nitag");
     }
 
     /**
@@ -252,12 +262,6 @@ const App = () => {
                 return []
             }
         });
-        // return vaccinesList.filter(vaccine =>
-        //     vaccine.manufacturers.some(m => {
-        //         console.log("manufacturer", manufacturer, "m", m)
-        //         return m.manufacturerId === manufacturer.manufacturerId
-        //     })
-        // );
     }, [selectedManufacturer, vaccinesList]);
 
     /**
@@ -556,6 +560,8 @@ const App = () => {
                 setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
             } else if (activeTab === 'Compare') {
                 setSidebarList([])
+            } else if (activeTab === 'Nitag') {
+                setSidebarList(nitags.map((x) => x.country));
             }
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
@@ -573,7 +579,6 @@ const App = () => {
             : string.replace(/([A-Z])/g, ' $1');
         return formattedString.charAt(0).toUpperCase() + formattedString.slice(1);
     };
-
 
     /**
      * Italizes scientific names in a given text.
@@ -634,14 +639,14 @@ const App = () => {
         setVaccinesList(vaccines);
         setPipelineVaccinesList(pipelineVaccines);
         setLicensersList(licensers);
-        // setCompareList(pathogens);
         setSelectedPathogen(pathogens[0])
         setSelectedLicenser(licensers[0]);
         const vaccineSorted = vaccines.sort((a, b) => a.name.localeCompare(b.name))[0]
         setSelectedVaccine(vaccineSorted);
-        setSelectedCompare(pathogens[0])
-        setSelectedManufacturer(manufacturers[0])
-    }, [])
+        setSelectedCompare(pathogens[0]);
+        setSelectedManufacturer(manufacturers[0]);
+        setSelectedNitag(nitags);
+    }, []);
 
     useEffect(() => {
         filterListsByAlphabetAndSearch();
@@ -671,6 +676,8 @@ const App = () => {
                         selectedManufacturer={selectedManufacturer}
                         selectedLicenser={selectedLicenser}
                         selectedCompare={selectedCompare}
+                        selectedNitag={selectedNitag}
+                        setSelectedNitag={setSelectedNitag}
                         setSelectedVaccine={setSelectedVaccine}
                         setSelectedPathogen={setSelectedPathogen}
                         setSelectedManufacturer={setSelectedManufacturer}
@@ -689,7 +696,9 @@ const App = () => {
                         selectedManufacturer={selectedManufacturer}
                         selectedLicenser={selectedLicenser}
                         selectedCompare={selectedCompare}
+                        selectedNitag={selectedNitag}
                         handleSelectPathogen={handleSelectPathogen}
+                        handleSelectNitag={handleSelectNitag}
                         handleSelectVaccine={handleSelectVaccine}
                         handleSelectManufacturer={handleSelectManufacturer}
                         handleSelectLicenser={handleSelectLicenser}

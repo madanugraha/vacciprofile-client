@@ -558,8 +558,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
         },
     }));
 
-    const licenserArrays = [{ name: 'FDA', name: 'EMA', name: 'WHO' }];
-
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>
             {

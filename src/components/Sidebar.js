@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from '../utils/array';
 import { getAllSinglePathogenArray, getCombinationVaccineneArray, getPathogenDetailById, getSinglePathogenVaccineArray } from '../utils/pathogens';
 import { vaccineDeases } from '../assets/data/dieases';
+import nitag from '../assets/data/nitag.json';
 import { useSearchParams } from 'react-router';
 
 /**
@@ -55,6 +56,7 @@ const Sidebar = ({
     selectedVaccine,
     selectedPathogen,
     selectedCompare,
+    selectedNitag,
     selectedManufacturer,
     selectedLicenser,
     setSelectedVaccine,
@@ -62,6 +64,7 @@ const Sidebar = ({
     setSelectedManufacturer,
     setSelectedLicenser,
     setSelectedCompare,
+    setSelectedNitag,
     setChangedFrom,
     changedFrom,
     italizeScientificNames
@@ -88,7 +91,6 @@ const Sidebar = ({
 
     const handleClickSidebar = item => {
         setChangedFrom('Sidebar');
-
         setTimeout(() => {
             if (activeTab === 'Manufacturer') {
                 if (item !== selectedManufacturer) {
@@ -130,6 +132,13 @@ const Sidebar = ({
                 } else {
                     setSelectedCompare({});
                 }
+            } else if (activeTab === 'Nitag') {
+                if (item !== selectedNitag) {
+                    setSelectedNitag(item);
+                    setActiveTab('Nitag');
+                } else {
+                    setSelectedNitag({});
+                }
             }
             setChangedFrom('');
         }, 5);
@@ -142,10 +151,10 @@ const Sidebar = ({
                 setAnimationClass('slide-right');
             }, 20);
             return () => clearTimeout(timeout);
-        }
+        };
     }, [changedFrom]);
 
-    const sampleVaccineCandidatePathogen = getCandidatePathogens();
+    const sampleVaccineCandidatePathogen = sortArrayAscending(removeDuplicatesFromArray(getCandidatePathogens(), "name"), "name")
     const sampleVaccineCandidatesVaccine = getCandidateVaccines();
 
 
@@ -166,13 +175,31 @@ const Sidebar = ({
         if (activeMenu === "vaccines") {
             setActiveTab("Vaccine");
         }
+        if (activeMenu === "nitag") {
+            setActiveTab("Nitag");
+        }
     }, [activeMenu]);
 
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
             <div className='sidebar-items overflow-auto'>
+
                 {
-                    activeTab === "Pathogen" && (
+                    activeTab === "Nitag" && activeMenu !== "Vaccine" && activeTab !== "Vaccine" && filteredLicenserSidebarList.map((item) => {
+                        return typeof item === "object" ? null : (
+                            <>
+                                <div onClick={() => {
+                                    handleClickSidebar(item);
+                                }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${activeTab === 'Nitag' && selectedNitag === item}`}>
+                                    {item}
+                                </div>
+                            </>
+                        )
+                    })
+                }
+
+                {
+                    activeTab === "Pathogen" && activeTab !== "Nitag" && (
                         <>
                             <div onClick={() => {
                                 setShowVaccineCandidatePathogens(false);
@@ -186,32 +213,36 @@ const Sidebar = ({
                             }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidatePathogens ? 'active' : 'imactive'}`}>
                                 Pathogen with Vaccines Candidate
                             </div>
-                            {showVaccineCandidatePathogens && sampleVaccineCandidatePathogen.map((item, i) => (
-                                <div
-                                    key={i}
-                                    className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item
-                                        ? 'active' : 'inactive'
-                                        }`}
-                                    onClick={() => {
-                                        handleClickSidebar(item)
-                                    }}
-                                >
-                                    {italizeScientificNames(item.name)}
-                                </div>
-                            ))}
-                            {showLicensedPathogens && filteredLicenserSidebarList.map((item, i) => (
-                                <div
-                                    key={i}
-                                    className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Pathogen' && selectedPathogen === item
-                                        ? 'active' : 'inactive'
-                                        }`}
-                                    onClick={() => {
-                                        handleClickSidebar(item)
-                                    }}
-                                >
-                                    {italizeScientificNames(item.name)}
-                                </div>
-                            ))}
+                            {showVaccineCandidatePathogens && sampleVaccineCandidatePathogen.map((item, i) => {
+                                return (
+                                    <div
+                                        key={i + "zxcasdqweqwe"}
+                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${showVaccineCandidatePathogens && activeTab === 'Pathogen' && selectedPathogen === item
+                                            ? 'active' : 'inactive'
+                                            }`}
+                                        onClick={() => {
+                                            handleClickSidebar(item)
+                                        }}
+                                    >
+                                        {italizeScientificNames(item.name)}
+                                    </div>
+                                )
+                            })}
+                            {showLicensedPathogens && filteredLicenserSidebarList.map((item, i) => {
+                                return (
+                                    <div
+                                        key={i}
+                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${showLicensedPathogens && activeTab === 'Pathogen' && selectedPathogen === item
+                                            ? 'active' : 'inactive'
+                                            }`}
+                                        onClick={() => {
+                                            handleClickSidebar(item)
+                                        }}
+                                    >
+                                        {italizeScientificNames(item.name)}
+                                    </div>
+                                )
+                            })}
                         </>
                     )
                 }
@@ -272,7 +303,7 @@ const Sidebar = ({
                     )
                 }
                 {
-                    activeTab === "Vaccine" && (
+                    activeTab === "Vaccine" && activeTab !== "Nitag" && (
                         <>
                             <div onClick={() => {
                                 setShowLicensedVaccines(!showLicensedVaccines);
@@ -356,6 +387,8 @@ const Sidebar = ({
                         </>
                     )
                 }
+
+
 
                 {activeTab !== "Pathogen" && activeTab !== "Vaccine" && filteredLicenserSidebarList.map((item, i) => (
                     <div

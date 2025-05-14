@@ -39,11 +39,14 @@ const TopBar = ({
                 <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => handleTabChange('Licenser')}>
                     Licensing Authorities
                 </li>
+                <li className={`nav-item nav-link ${activeTab === 'Nitag' ? 'active' : ''}`} onClick={() => handleTabChange('Nitag')}>
+                    NITAGs
+                </li>
                 <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
                     Compare
                 </li>
             </ul>
-            <div className='search-container mb-3'>
+            <div className='search-container mb-3' style={{ width: 'auto' }}>
                 <span className="position-relative">
                     <input type="text" className="text-center bg-light rounded-2 border-dark border-0 w-100" id="search" name="search" placeholder="Search" onChange={e => handleSearch(e.target.value)} />
                     <i className="fa fa-search position-absolute top-50 translate-middle-y end-0 me-2 text-muted" aria-hidden="true"></i>

@@ -1,4 +1,5 @@
-import vaccines from '../assets/data/candidate-vaccines.json';
+import vaccines from '../assets/data/candidate-vaccine-v2.json';
+import nitags from '../assets/data/nitag.json';
 import pathogens from '../assets/data/candidate-pathogens.json';
 import _ from 'lodash';
 
@@ -22,7 +23,17 @@ export const sortArrayAscending = (arr, prop) => {
 };
 
 export const getCandidatePathogens = () => {
-    return pathogens
+    const p = vaccines.map((x) => {
+        return {
+            pathogenId: x.pathogenId,
+            name: x.pathogenName
+        }
+    });
+    return p
+};
+
+export const getNitagDetailByCountry = (country) => {
+    return nitags.filter((x) => x.country)[0]
 };
 
 export const getCandidateVaccines = () => {
