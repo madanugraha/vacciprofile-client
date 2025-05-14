@@ -1443,7 +1443,7 @@
         "vaccineId": 145,
         "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
         "pathogenId": 145,
-        "pathogenName": "salmonella Typhi",
+        "pathogenName": "Salmonella Typhi",
         "platform": "Subunit",
         "manufacturer": "Zydus Lifesciences",
         "clinicalPhase": "Phase I",
