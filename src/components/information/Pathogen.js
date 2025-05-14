@@ -1236,7 +1236,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
     ) : (
         <>
             <div className='py-1 px-2'>
-                <h2>{selectedPathogen?.name} Vaccines Candidate</h2>
+                <h2>{selectedPathogen?.name} Vaccine Candidates</h2>
                 <div className='py-4'>
                     <table border={0}>
                         <tbody>

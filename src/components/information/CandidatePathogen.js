@@ -545,7 +545,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
                 <div className="accordion-item mb-1">
                     <h2 className="accordion-header" id="accordianCandidateVaccine">
                         <button className="accordion-button collapsed bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianCandVac" aria-expanded="false" aria-controls="collapseTwo">
-                            Vaccines Candidate
+                            Vaccine Candidates
                         </button>
                     </h2>
                     <div id="accordianCandVac" className="accordion-collapse collapse mb-1" aria-labelledby="accordianCandidateVaccine" data-bs-parent="#accordianCandidateVaccineInfo">
