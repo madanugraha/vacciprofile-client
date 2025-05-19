@@ -1,6 +1,5 @@
 import vaccines from '../assets/data/candidate-vaccine-v2.json';
 import nitags from '../assets/data/nitag.json';
-import pathogens from '../assets/data/candidate-pathogens.json';
 import _ from 'lodash';
 
 export const removeDuplicatesFromArray = (arr, prop) => {

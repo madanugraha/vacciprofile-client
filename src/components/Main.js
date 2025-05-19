@@ -104,7 +104,8 @@ const Main = ({
     handleSelectCompare,
     selectedCompare,
     getComparisonByName,
-    selectedNitag
+    selectedNitag,
+    selectedVaccineCandidate
 }) => {
 
     const [animationClass, setAnimationClass] = useState('slide-left');
@@ -363,7 +364,9 @@ const Main = ({
                 (activeTab === 'Pathogen' && isSelectedObjectNotEmpty(selectedPathogen)) ||
                 (activeTab === 'Licenser' && isSelectedObjectNotEmpty(selectedLicenser)) ||
                 (activeTab === 'Compare' && isSelectedObjectNotEmpty(selectedCompare)) ||
-                (activeTab === 'Nitag' && isSelectedObjectNotEmpty(selectedNitag))
+                (activeTab === 'Nitag' && isSelectedObjectNotEmpty(selectedNitag)) ||
+                (activeTab === 'Licensed Vaccines' && isSelectedObjectNotEmpty(selectedVaccine)) ||
+                (activeTab === 'Vaccine Candidates' && isSelectedObjectNotEmpty(selectedVaccineCandidate))
             ) {
                 setAnimationClass('');
                 const timeout = setTimeout(() => {
@@ -440,7 +443,9 @@ const Main = ({
                     </span>
                 </div> :
                     (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
-                        (activeTab === 'Vaccine' && Object.keys(selectedVaccine).length === 0) ||
+                        // (activeTab === 'Vaccine' && Object.keys(selectedVaccine).length === 0) ||
+                        (activeTab === 'Licensed Vaccines' && Object.keys(selectedVaccine).length === 0) ||
+                        (activeTab === 'Vaccine Candidates' && Object.keys(selectedVaccine).length === 0) ||
                         (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0) ||
                         (activeTab === 'Licenser' && Object.keys(selectedLicenser).length === 0) ||
                         (activeTab === 'Compare' && Object.keys(selectedCompare).length === 0)
@@ -456,35 +461,40 @@ const Main = ({
                                         italizeScientificNames={italizeScientificNames}
                                         activeTab={activeTab}
                                         handleSelectVaccine={handleSelectVaccine}
-                                    /> : activeTab === "Vaccine"
+                                    /> : activeTab === "Licensed Vaccines"
                                         ? <Vaccine
                                             selectedVaccine={selectedVaccine}
                                             italizeScientificNames={italizeScientificNames}
                                             convertCamelCaseToReadable={convertCamelCaseToReadable}
-                                        /> : activeTab === "Manufacturer"
-                                            ? <ManufacturerProfile
-                                                selectedManufacturer={selectedManufacturer}
-                                                getVaccinesByManufacturer={getVaccinesByManufacturer}
+                                        /> : activeTab === "Vaccine Candidates"
+                                            ? <Vaccine
+                                                selectedVaccine={selectedVaccineCandidate}
+                                                italizeScientificNames={italizeScientificNames}
                                                 convertCamelCaseToReadable={convertCamelCaseToReadable}
-                                            /> : activeTab === "Licenser"
-                                                ? <Licenser
-                                                    activeTab={activeTab}
-                                                    getVaccinesByLicenser={getVaccinesByLicenser}
-                                                    handleSelectVaccine={handleSelectVaccine}
-                                                    selectedLicenser={selectedLicenser}
-                                                    selectedPathogen={selectedPathogen}
-                                                    selectedVaccine={selectedVaccine}
-                                                    handleSelectPathogen={handleSelectPathogen}
-                                                    italizeScientificNames={italizeScientificNames}
-                                                /> : activeTab === "Compare" ? (
-                                                    <Comparison selectedPathogen={selectedCompare}
-                                                        italizeScientificNames={italizeScientificNames} />
-                                                ) : activeTab === "Nitag"
-                                                    ? <NitagTable
+                                            /> : activeTab === "Manufacturer"
+                                                ? <ManufacturerProfile
+                                                    selectedManufacturer={selectedManufacturer}
+                                                    getVaccinesByManufacturer={getVaccinesByManufacturer}
+                                                    convertCamelCaseToReadable={convertCamelCaseToReadable}
+                                                /> : activeTab === "Licenser"
+                                                    ? <Licenser
                                                         activeTab={activeTab}
-                                                        selectedNitag={selectedNitag}
-                                                    />
-                                                    : null}
+                                                        getVaccinesByLicenser={getVaccinesByLicenser}
+                                                        handleSelectVaccine={handleSelectVaccine}
+                                                        selectedLicenser={selectedLicenser}
+                                                        selectedPathogen={selectedPathogen}
+                                                        selectedVaccine={selectedVaccine}
+                                                        handleSelectPathogen={handleSelectPathogen}
+                                                        italizeScientificNames={italizeScientificNames}
+                                                    /> : activeTab === "Compare" ? (
+                                                        <Comparison selectedPathogen={selectedCompare}
+                                                            italizeScientificNames={italizeScientificNames} />
+                                                    ) : activeTab === "Nitag"
+                                                        ? <NitagTable
+                                                            activeTab={activeTab}
+                                                            selectedNitag={selectedNitag}
+                                                        />
+                                                        : null}
                                 {activeTab === "Manufacturer"
                                     ?
                                     <VaccineListTable

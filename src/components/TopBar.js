@@ -30,8 +30,11 @@ const TopBar = ({
                 <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
                     Pathogens
                 </li>
-                <li className={`nav-item nav-link ${activeTab === 'Vaccine' ? 'active' : ''}`} onClick={() => handleTabChange('Vaccine')}>
-                    Vaccines
+                <li className={`nav-item nav-link ${activeTab === 'Licensed Vaccines' ? 'active' : ''}`} onClick={() => handleTabChange('Licensed Vaccines')}>
+                    Licensed Vaccines
+                </li>
+                <li className={`nav-item nav-link ${activeTab === 'Vaccine Candidates' ? 'active' : ''}`} onClick={() => handleTabChange('Vaccine Candidates')}>
+                    Vaccine Candidates
                 </li>
                 <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
                     Manufacturers

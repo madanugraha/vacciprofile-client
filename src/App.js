@@ -20,6 +20,7 @@ import licensers from './assets/data/licensers.json';
 import nitags from './assets/data/nitag.json';
 import scientificNames from './assets/scientificNames';
 import { compareMenu } from './assets/data/compare-vaccine.js';
+import { getCandidateVaccines } from './utils/array.js';
 
 /**
  * Main application component for the vaccine profile page.
@@ -53,6 +54,7 @@ const App = () => {
     const [sidebarList, setSidebarList] = useState();
     const [selectedPathogen, setSelectedPathogen] = useState({});
     const [selectedVaccine, setSelectedVaccine] = useState({});
+    const [selectedVaccineCandidate, setSelectedVaccineCandidate] = useState({});
     const [selectedManufacturer, setSelectedManufacturer] = useState({});
     const [selectedLicenser, setSelectedLicenser] = useState({})
     const [selectedCompare, setSelectedCompare] = useState({});
@@ -99,6 +101,12 @@ const App = () => {
                 case 'Pathogen':
                     setSelectedPathogen({});
                     break;
+                case 'Licensed Vaccines':
+                    setSelectedVaccine({});
+                    break;
+                case 'Vaccine Candidates':
+                    setSelectedVaccineCandidate({});
+                    break;
                 case 'Vaccine':
                     setSelectedVaccine({});
                     break;
@@ -131,6 +139,9 @@ const App = () => {
         })
     };
 
+
+    const sampleVaccineCandidatesVaccine = getCandidateVaccines();
+
     /**
      * Handles selecting a pathogen.
      *
@@ -154,7 +165,13 @@ const App = () => {
     const handleSelectVaccine = v => {
         const vaccine = vaccines.find(vaccine => vaccine.vaccineId === v.vaccineId);
         setSelectedVaccine(vaccine);
-        setActiveTab("Vaccine");
+        setActiveTab("Licensed Vaccines");
+    };
+
+    const handleSelectVaccineCandidate = v => {
+        const vaccine = sampleVaccineCandidatesVaccine.find(vaccine => vaccine.vaccineId === v.vaccineId);
+        setSelectedVaccineCandidate(vaccine);
+        setActiveTab("Vaccine Candidates");
     };
 
     /**
@@ -528,6 +545,7 @@ const App = () => {
      * @returns {void} This function does not return a value. It updates the `sidebarList` state directly.
      */
 
+
     const filterListsByAlphabetAndSearch = useCallback(() => {
         let filteredSidebarList = [];
 
@@ -550,8 +568,11 @@ const App = () => {
             if (activeTab === 'Manufacturer') {
                 setSidebarList(filterListByStartingAlphabet(manufacturersList).slice()
                     .sort((a, b) => a.name.localeCompare(b.name)));
-            } else if (activeTab === 'Vaccine') {
+            } else if (activeTab === 'Licensed Vaccines') {
                 setSidebarList(filterListByStartingAlphabet(vaccinesList).slice()
+                    .sort((a, b) => a.name.localeCompare(b.name)));
+            } else if (activeTab === 'Vaccine Candidates') {
+                setSidebarList(filterListByStartingAlphabet(sampleVaccineCandidatesVaccine).slice()
                     .sort((a, b) => a.name.localeCompare(b.name)));
             } else if (activeTab === 'Pathogen') {
                 setSidebarList(filterListByStartingAlphabet(pathogensList).slice()
@@ -586,7 +607,6 @@ const App = () => {
      * @param {string} text - The text containing scientific names.
      * @returns {JSX.Element} The text with scientific names italicized.
      */
-
     const italizeScientificNames = text => {
         if (text) {
             // check if texts are array because Pipeline vaccines can be more than one Pathogens included
@@ -630,7 +650,6 @@ const App = () => {
                 } else return text
             }
         }
-
     };
 
     useEffect(() => {
@@ -641,8 +660,10 @@ const App = () => {
         setLicensersList(licensers);
         setSelectedPathogen(pathogens[0])
         setSelectedLicenser(licensers[0]);
-        const vaccineSorted = vaccines.sort((a, b) => a.name.localeCompare(b.name))[0]
+        const vaccineSorted = vaccines.sort((a, b) => a.name.localeCompare(b.name))[0];
+        const candidateVaccineSorted = sampleVaccineCandidatesVaccine.sort((a, b) => a.name.localeCompare(b.name))[0];
         setSelectedVaccine(vaccineSorted);
+        setSelectedVaccineCandidate(candidateVaccineSorted);
         setSelectedCompare(pathogens[0]);
         setSelectedManufacturer(manufacturers[0]);
         setSelectedNitag(nitags);
@@ -677,6 +698,8 @@ const App = () => {
                         selectedLicenser={selectedLicenser}
                         selectedCompare={selectedCompare}
                         selectedNitag={selectedNitag}
+                        selectedVaccineCandidate={selectedVaccineCandidate}
+                        setSelectedVaccineCandidate={setSelectedVaccineCandidate}
                         setSelectedNitag={setSelectedNitag}
                         setSelectedVaccine={setSelectedVaccine}
                         setSelectedPathogen={setSelectedPathogen}
@@ -693,11 +716,13 @@ const App = () => {
                         sidebarList={sidebarList}
                         selectedPathogen={selectedPathogen}
                         selectedVaccine={selectedVaccine}
+                        selectedVaccineCandidate={selectedVaccineCandidate}
                         selectedManufacturer={selectedManufacturer}
                         selectedLicenser={selectedLicenser}
                         selectedCompare={selectedCompare}
                         selectedNitag={selectedNitag}
                         handleSelectPathogen={handleSelectPathogen}
+                        handleSelectVaccineCandidate={handleSelectVaccineCandidate}
                         handleSelectNitag={handleSelectNitag}
                         handleSelectVaccine={handleSelectVaccine}
                         handleSelectManufacturer={handleSelectManufacturer}
