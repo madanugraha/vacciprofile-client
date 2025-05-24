@@ -76,7 +76,7 @@ const Sidebar = ({
     const [showCountries, setShowCountries] = useState(false);
 
     const [showLicensedPathogens, setShowLicensedPathogens] = useState(true);
-    const [showVaccineCandidatePathogens, setShowVaccineCandidatePathogens] = useState(false);
+    const [showVaccineCandidatePathogens, setShowVaccineCandidatePathogens] = useState(true);
 
     const [showVaccineDeases, setShowVaccineDeases] = useState(false);
 
@@ -102,11 +102,11 @@ const Sidebar = ({
                     setSelectedManufacturer({});
                 }
             } else if (activeTab === 'Licensed Vaccines') {
-                if (item !== selectedVaccine) {
-                    setSelectedVaccine(item);
+                if (item !== selectedPathogen) {
+                    setSelectedPathogen(item);
                     setActiveTab('Licensed Vaccines');
                 } else {
-                    setSelectedVaccine({});
+                    setSelectedPathogen({});
                 }
             } else if (activeTab === 'Vaccine Candidates') {
                 if (item !== selectedVaccineCandidate) {
@@ -166,7 +166,6 @@ const Sidebar = ({
     const sampleVaccineCandidatePathogen = sortArrayAscending(removeDuplicatesFromArray(getCandidatePathogens(), "name"), "name")
     const sampleVaccineCandidatesVaccine = getCandidateVaccines();
 
-
     const [searchParams, setSearchParams] = useSearchParams();
     const activeMenu = searchParams.get("menu");
 
@@ -174,19 +173,29 @@ const Sidebar = ({
         if (activeMenu === "pathogen") {
             setActiveTab("Pathogen")
         };
+
         if (activeMenu === "manufacturer") {
             setActiveTab("Manufacturer");
-        }
+        };
         if (activeMenu === "licenser") {
             setActiveTab("Licenser");
+        };
+        if (activeMenu === "licensed-vaccines") {
+            setActiveTab("Licensed Vaccines");
         }
-        if (activeMenu === "vaccines") {
-            setActiveTab("Vaccine");
+        if (activeMenu === "vaccine-candidates") {
+            setActiveTab("Vaccine Candidates");
         }
         if (activeMenu === "nitag") {
             setActiveTab("Nitag");
         }
+        if (activeMenu === "compare") {
+            setActiveTab("Compare");
+        }
     }, [activeMenu]);
+
+
+    const [currentIdxCandidatePathogen, setCurrentIdxCandidatePathogen] = useState(0);
 
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
@@ -205,7 +214,7 @@ const Sidebar = ({
                     })
                 }
 
-                {
+                {/* {
                     activeTab === "Pathogen" && activeTab !== "Nitag" && (
                         <>
                             <div onClick={() => {
@@ -252,7 +261,7 @@ const Sidebar = ({
                             })}
                         </>
                     )
-                }
+                } */}
 
                 {
                     activeTab === "Compare" && (
@@ -315,24 +324,25 @@ const Sidebar = ({
                     activeTab === "Vaccine Candidates" && (
                         <>
                             {/* <div onClick={() => {
-                                setShowLicensedVaccines(false);
-                                setShowVaccineCandidates(!showVaccineCandidates)
-                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidates ? 'active' : 'imactive'}`}>
-                                Vaccine Candidates
-                            </div> */}
-                            {showVaccineCandidates && filteredLicenserSidebarList && filteredLicenserSidebarList.length > 0 && removeDuplicatesFromArray(filteredLicenserSidebarList, "name").map((item, i) => {
-                                // console.log(item);
+                                    setShowLicensedPathogens(false);
+                                    setShowVaccineCandidatePathogens(!showVaccineCandidatePathogens)
+                                }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showVaccineCandidatePathogens ? 'active' : 'imactive'}`}>
+                                    Pathogen with Vaccines Candidate
+                                </div> */}
+                            {showVaccineCandidatePathogens && filteredLicenserSidebarList.map((item, i) => {
+                                // console.log(item, i)
                                 return (
                                     <div
-                                        key={i}
-                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 mb-1 ${showVaccineCandidates && activeTab === 'Vaccine Candidates' && selectedVaccineCandidate === item
-                                            ? 'active' : 'inactive'
+                                        key={i + Math.round() * 999}
+                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${((showVaccineCandidatePathogens && activeTab === 'Vaccine Candidates' && selectedVaccineCandidate === item))
+                                            ? 'active' : (currentIdxCandidatePathogen - i) === 0 ? 'active' : 'inactive'
                                             }`}
                                         onClick={() => {
+                                            setCurrentIdxCandidatePathogen(i);
                                             handleClickSidebar(item)
                                         }}
                                     >
-                                        {item.name}
+                                        {italizeScientificNames(item.name)}
                                     </div>
                                 )
                             })}
@@ -344,53 +354,26 @@ const Sidebar = ({
                     activeTab === "Licensed Vaccines" && (
                         <>
                             {/* <div onClick={() => {
-                                setShowLicensedVaccines(!showLicensedVaccines);
-                                setShowVaccineCandidates(false);
-                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showLicensedVaccines ? 'active' : 'inactive'}`}>
-                                Licensed Vaccines
+                                setShowVaccineCandidatePathogens(false);
+                                setShowLicensedPathogens(!showLicensedPathogens)
+                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showLicensedPathogens ? 'active' : 'inactive'}`}>
+                                Pathogen with Licensed Vaccines
                             </div> */}
-                            <div onClick={() => {
-                                setShowSinglePathogenVaccines(!showSinglePathogenVaccines);
-                                setShowCombinationVaccines(false);
-                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 mb-1 ${showSinglePathogenVaccines ? 'active' : 'imactive'}`}>
-                                Single Pathogen Vaccines
-                            </div>
-
-                            <div onClick={() => {
-                                setShowCombinationVaccines(!showCombinationVaccines);
-                                setShowSinglePathogenVaccines(false);
-                            }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 mb-1 ${showCombinationVaccines ? 'active' : 'imactive'}`}>
-                                Combination Vaccines
-                            </div>
-                            <div>
-                                {showCombinationVaccines && filteredLicenserSidebarList && filteredLicenserSidebarList.length > 0 && removeDuplicatesFromArray(getCombinationVaccineneArray(filteredLicenserSidebarList), "name").map((item, i) => (
+                            {showLicensedPathogens && filteredLicenserSidebarList.map((item, i) => {
+                                return (
                                     <div
                                         key={i}
-                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showCombinationVaccines && activeTab === 'Licensed Vaccines' && selectedVaccine === item
+                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${showLicensedPathogens && activeTab === 'Licensed Vaccines' && selectedPathogen === item
                                             ? 'active' : 'inactive'
                                             }`}
                                         onClick={() => {
                                             handleClickSidebar(item)
                                         }}
                                     >
-                                        {item?.name}
+                                        {italizeScientificNames(item.name)}
                                     </div>
-                                ))}
-
-                                {showSinglePathogenVaccines && filteredLicenserSidebarList && filteredLicenserSidebarList.length > 0 && removeDuplicatesFromArray(getSinglePathogenVaccineArray(filteredLicenserSidebarList), "name").map((item, i) => (
-                                    <div
-                                        key={i}
-                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${showSinglePathogenVaccines && activeTab === 'Licensed Vaccines' && selectedVaccine === item
-                                            ? 'active' : 'inactive'
-                                            }`}
-                                        onClick={() => {
-                                            handleClickSidebar(item)
-                                        }}
-                                    >
-                                        {item?.name}
-                                    </div>
-                                ))}
-                            </div>
+                                )
+                            })}
                         </>
                     )
                 }
@@ -399,9 +382,9 @@ const Sidebar = ({
                     <div
                         key={i}
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${activeTab === 'Manufacturer' && selectedManufacturer === item
-                            ? 'active' : activeTab === 'Licensed Vaccines' && selectedVaccine === item
+                            ? 'active' : activeTab === 'Licensed Vaccines' && selectedPathogen === item
                                 // ? 'active' : activeTab === 'Vaccine' && selectedVaccine === item
-                                ? 'active' : activeTab === 'Vaccine Candidates' && selectedVaccine === item
+                                ? 'active' : activeTab === 'Vaccine Candidates' && selectedVaccineCandidate === item
                                     ? 'active' : activeTab === 'Pathogen' && selectedPathogen === item
                                         ? 'active' : activeTab === 'Licenser' && selectedLicenser === item
                                             ? 'active' : activeTab === 'Compare' && selectedCompare === item ? 'active' : 'inactive'

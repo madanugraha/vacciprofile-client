@@ -4,9 +4,8 @@ const NitagTable = (
     selectedNitag
 ) => {
 
-    console.log('selected nitag >> ', selectedNitag);
-
     const detailNitag = getNitagDetailByCountry(selectedNitag.selectedNitag);
+
     return (
         <div className='main-header table-responsive m-0'>
             <table className='table w-100 m-0'>

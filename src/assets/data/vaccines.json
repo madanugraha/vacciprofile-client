@@ -6828,6 +6828,13 @@
                 "approvalDate": "27/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-inj",
                 "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "N/A",
+                "approvalDate": "27/12/2019",
+                "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-multi-inj",
+                "lastUpdated": ""
             }
         ]
     },
@@ -8817,6 +8824,27 @@
                 "approvalDate": "29/03/2009",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/synflorix",
                 "lastUpdated": "24/05/2023"
+            },
+            {
+                "name": "WHO",
+                "type": "N/A",
+                "approvalDate": "16/10/2017",
+                "source": "https://extranet.who.int/prequal/vaccines/p/synflorix-0",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "N/A",
+                "approvalDate": "16/10/2017",
+                "source": "https://extranet.who.int/prequal/vaccines/p/synflorix-1",
+                "lastUpdated": ""
+            },
+            {
+                "name": "WHO",
+                "type": "N/A",
+                "approvalDate": "16/10/2017",
+                "source": "https://extranet.who.int/prequal/vaccines/p/synflorix-2",
+                "lastUpdated": ""
             }
         ]
     },
@@ -11594,7 +11622,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: RotaTeq® (MAH: MSD)",
-                "composition": "1 dose (2mL) contains human-bovine rotavirus reassortants types G1 and G3 ≥ 2.2 x106 IU , type G2 ≥ 2.8 x106 IU, type G4 ≥ 2 x106 IU, type P1A[8] ≥ 2.3 x106 IU; produced in Vero cells; storage: 2-8°C; shelf life: 2 years.",
+                "composition": "1 dose (2mL) contains human-bovine rotavirus reassortants types G1 and G3 ≥ 2.2 x10⁶ IU , type G2 ≥ 2.8 x10⁶ IU, type G4 ≥ 2 x10⁶ IU, type P1A[8] ≥ 2.3 x10⁶ IU; produced in Vero cells; storage: 2-8°C; shelf life: 2 years.",
                 "strainCoverage": "Rotavirus types G1, G2, G3, G4, and P1A[8]; no protection against gastroenteritis due to other pathogens than rotavirus.",
                 "indication": "Active immunization to prevent rotavirus gastroenteritis in infants 6-32 weeks of age; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception; intussusception predisposing situation*; known or suspected immunodeficiency; acute severe febrile illness; acute diarrhea or vomiting; caution in individuals with immunodeficient close contacts; fructose intolerance, glucose-galactose malabsorption, sucrase-isomaltase insufficiency; no data on pregnancy and breastfeeding.",
@@ -11611,7 +11639,7 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: RotaTeq® (MAH: MSD)",
-                "composition": "1 dose (2 mL) contains human-bovine rotavirus reassortants types G1 and G3 ≥2.2 ×106 IU, G2 ≥ 2.8 ×106 IU, G4 ≥ 2 ×106 IU, P1A ≥ 2.3 ×106 IU; produced in Vero cells; storage: 2-8°C; shelf life: 2 years.",
+                "composition": "1 dose (2 mL) contains human-bovine rotavirus reassortants types G1 and G3 ≥2.2 ×10⁶ IU, G2 ≥ 2.8 ×10⁶ IU, G4 ≥ 2 ×10⁶ IU, P1A ≥ 2.3 ×10⁶ IU; produced in Vero cells; storage: 2-8°C; shelf life: 2 years.",
                 "strainCoverage": "Rotavirus types G1, G2, G3, G4, and G9.",
                 "indication": "Active immunization to prevent rotavirus gastroenteritis in individuals 6-32 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception; SCID; febrile illness; caution in individuals with immunodeficient close contacts; no data on pregnancy and breastfeeding.",
@@ -11628,7 +11656,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: RotaTeq® (MAH: MSD)",
-                "composition": "1 dose (2 mL) contains human-bovine rotavirus reassortants types G1 and G3 ≥2.2 ×106 IU, G2 ≥ 2.8 ×106 IU, G4 ≥ 2 ×106 IU, P1A ≥ 2.3 ×106 IU; produced in Vero cells; storage: 2-8°C; shelf life: 2 years.",
+                "composition": "1 dose (2 mL) contains human-bovine rotavirus reassortants types G1 and G3 ≥2.2 ×10⁶ IU, G2 ≥ 2.8 ×10⁶ IU, G4 ≥ 2 ×10⁶ IU, P1A ≥ 2.3 ×10⁶ IU; produced in Vero cells; storage: 2-8°C; shelf life: 2 years.",
                 "strainCoverage": "Rotavirus types G1, G2, G3, G4, and G9.",
                 "indication": "Active immunization to prevent rotavirus gastroenteritis in individuals 6-32 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception; SCID; febrile illness; caution in individuals with immunodeficient close contacts; no data on pregnancy and breastfeeding.",
@@ -11717,7 +11745,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: ROTASIIL Liquid® (MAH: Serum Institute of India)",
-                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥105.6 FFU; grown on Vero cells; storage: 2-8°C; shelf life: 24 months.",
+                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵.⁶ FFU; grown on Vero cells; storage: 2-8°C; shelf life: 24 months.",
                 "strainCoverage": "Human rotavirus; G1, G2, G3, G4, and G9; no protection against gastroenteritis caused by other pathogens.",
                 "indication": "Active immunization to prevent any severe rotavirus infection in healthy infants from 6 weeks to 24 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; intussusception predisposing situation*; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; pregnancy; no data on breastfeeding.",
@@ -11806,7 +11834,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: ROTASIIL® (MAH: Serum Institute of India)",
-                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥105.6 FFU; grown on Vero cells; storage: 2-8°C; shelf life: 30 months.",
+                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵.⁶ FFU; grown on Vero cells; storage: 2-8°C; shelf life: 30 months.",
                 "strainCoverage": "Human rotavirus; G1, G2, G3, G4, and G9; no protection against gastroenteritis caused by other pathogens.",
                 "indication": "Active immunization to prevent any severe rotavirus infection in healthy infants from 6 weeks to 24 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; intussusception predisposing situation*; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; pregnancy; no data on breastfeeding.",
@@ -11835,20 +11863,6 @@
                 "type": "N/A",
                 "approvalDate": "21/09/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-0",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "N/A",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "N/A",
-                "approvalDate": "",
-                "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo-0",
                 "lastUpdated": ""
             }
         ]
@@ -11902,7 +11916,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Rotavac 5D® (MAH: Bharat)",
-                "composition": "1 dose (0.5 mL) contains human rotavirus (116E strain) ≥105 FFU; prepared in Vero cells; storage: 2-8°C; shelf life: 2 years. ",
+                "composition": "1 dose (0.5 mL) contains human rotavirus (116E strain) ≥10⁵ FFU; prepared in Vero cells; storage: 2-8°C; shelf life: 2 years. ",
                 "strainCoverage": "Human rotavirus G9P.",
                 "indication": "Active immunization to prevent rotavirus gastroenteritis in individuals from 6 weeks to 34 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception; SCID; ongoing gastroenteritis; intestinal malformations predisposing to intussusception; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; no data on pregnancy.",
@@ -11984,7 +11998,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Rotavac® (MAH: Bharat)",
-                "composition": "1 dose (0.5 mL) contains human rotavirus (116E bulk) ≥105 FFU; prepared in Vero cells; storage: 2-8°C; shelf life: 2 years. ",
+                "composition": "1 dose (0.5 mL) contains human rotavirus (116E bulk) ≥10⁵F FFU; prepared in Vero cells; storage: 2-8°C; shelf life: 2 years. ",
                 "strainCoverage": "Human rotavirus G9P.",
                 "indication": "Active immunization to prevent rotavirus gastroenteritis in individuals 6 weeks to 34 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; no data on pregnancy.",
@@ -13979,20 +13993,6 @@
                 "approvalDate": "20/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine",
                 "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "N/A",
-                "approvalDate": "20/03/2001",
-                "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine-1",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "N/A",
-                "approvalDate": "20/03/2001",
-                "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine-0",
-                "lastUpdated": ""
             }
         ]
     },
@@ -14763,7 +14763,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: ROTASIIL® (MAH: Serum Institute of India)",
-                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥105.6 FFU; grown on Vero cells; storage: 25°C; shelf life: 30 months.",
+                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵.⁶ FFU; grown on Vero cells; storage: 25°C; shelf life: 30 months.",
                 "strainCoverage": "Human rotavirus; G1, G2, G3, G4, and G9; no protection against gastroenteritis caused by other pathogens.",
                 "indication": "Active immunization to prevent any severe rotavirus infection in healthy infants from 6 weeks to 24 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; intussusception predisposing situation*; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; pregnancy; no data on breastfeeding.",
@@ -16597,13 +16597,6 @@
                 "type": "N/A",
                 "approvalDate": "15/05/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflur-inj",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "N/A",
-                "approvalDate": "15/05/2019",
-                "source": "https://extranet.who.int/prequal/vaccines/p/skycellflur-multi-inj",
                 "lastUpdated": ""
             }
         ]
@@ -18852,7 +18845,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
-                "composition": "1 dose (0.5mL) contains ≥1×103 CCID50 rubella virus (Wistar RA 27/3 strain) propagated in human diploid cells; storage: in dark place and 2-8°C (-20°C for long term storage); shelf life: 30 months.",
+                "composition": "1 dose (0.5mL) contains ≥1×10³ CCID50 rubella virus (Wistar RA 27/3 strain) propagated in human diploid cells; storage: in dark place and 2-8°C (-20°C for long term storage); shelf life: 30 months.",
                 "strainCoverage": "Rubella virus.",
                 "indication": "Active immunization against rubella in individuals 1 year to puberty; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; serious illness; active tuberculosis until treatment has been established; pregnancy (avoid pregnancy at least 1 mo. after vaccination); allergy to cow milk; acute infectious diseases; severely immunocompromised persons as a result of congenital disease, HIV infection, advanced leukemia/lymphoma, serious malignant disease, treatment with high-dose steroids, alkylating agents, antimetabolites, or receiving immunosuppressive therapeutic radiation; leukemia, severe anemia, or other severe diseases of the blood system; severe impairment of the renal function; decompensated heart diseases; following administration of gamma globulin or blood transfusions.",

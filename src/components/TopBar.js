@@ -27,25 +27,46 @@ const TopBar = ({
                 <li className={`nav-item nav-link`} onClick={() => window.location.href = "/"}>
                     Home
                 </li>
-                <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => handleTabChange('Pathogen')}>
+                {/* <li className={`nav-item nav-link ${activeTab === 'Pathogen' ? 'active' : ''}`} onClick={() => {
+                    // window.location.replace('/home?menu=pathogen');
+                    handleTabChange('Pathogen')
+                }}>
                     Pathogens
-                </li>
-                <li className={`nav-item nav-link ${activeTab === 'Licensed Vaccines' ? 'active' : ''}`} onClick={() => handleTabChange('Licensed Vaccines')}>
+                </li> */}
+                <li className={`nav-item nav-link ${activeTab === 'Licensed Vaccines' ? 'active' : ''}`} onClick={() => {
+                    // window.location.replace('/home?menu=licensed-vaccines');
+                    handleTabChange('Licensed Vaccines')
+                }}>
                     Licensed Vaccines
                 </li>
-                <li className={`nav-item nav-link ${activeTab === 'Vaccine Candidates' ? 'active' : ''}`} onClick={() => handleTabChange('Vaccine Candidates')}>
+                <li className={`nav-item nav-link ${activeTab === 'Vaccine Candidates' ? 'active' : ''}`} onClick={() => {
+                    // window.location.replace('/home?menu=vaccine-candidates');
+                    handleTabChange('Vaccine Candidates')
+                }}>
                     Vaccine Candidates
                 </li>
-                <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => handleTabChange('Manufacturer')}>
+                <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => {
+                    // window.location.replace('/home?menu=manufacturer');
+                    handleTabChange('Manufacturer')
+                }}>
                     Manufacturers
                 </li>
-                <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => handleTabChange('Licenser')}>
+                <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => {
+                    // window.location.replace('/home?menu=licenser');
+                    handleTabChange('Licenser')
+                }}>
                     Licensing Authorities
                 </li>
-                <li className={`nav-item nav-link ${activeTab === 'Nitag' ? 'active' : ''}`} onClick={() => handleTabChange('Nitag')}>
+                {/* <li className={`nav-item nav-link ${activeTab === 'Nitag' ? 'active' : ''}`} onClick={() => {
+                    // window.location.replace('/home?menu=nitag');
+                    handleTabChange('Nitag')
+                }}>
                     NITAGs
-                </li>
-                <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => handleTabChange('Compare')}>
+                </li> */}
+                <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => {
+                    // window.location.replace('/home?menu=compare');
+                    handleTabChange('Compare')
+                }}>
                     Compare
                 </li>
             </ul>

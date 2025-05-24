@@ -20,7 +20,7 @@ import licensers from './assets/data/licensers.json';
 import nitags from './assets/data/nitag.json';
 import scientificNames from './assets/scientificNames';
 import { compareMenu } from './assets/data/compare-vaccine.js';
-import { getCandidateVaccines } from './utils/array.js';
+import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from './utils/array.js';
 
 /**
  * Main application component for the vaccine profile page.
@@ -68,6 +68,7 @@ const App = () => {
      * @param {string} letter - The alphabet letter that is selected or deselected.
      * @returns {void}
      */
+    const sampleVaccineCandidatePathogen = sortArrayAscending(removeDuplicatesFromArray(getCandidatePathogens(), "name"), "name")
 
     const handleAlphabetChange = letter => {
         setActiveFilters({
@@ -78,6 +79,8 @@ const App = () => {
         setSelectedPathogen({});
         setSelectedVaccine({});
         setSelectedLicenser({});
+        setSelectedVaccineCandidate({});
+        setSelectedNitag({});
     }
 
     /**
@@ -85,7 +88,6 @@ const App = () => {
      *
      * @param {string} tab - The selected tab type can be "Manufacturer", "Pathogen", "Vaccine" or "Licenser".
      */
-
     const handleTabChange = tab => {
         setChangedFrom('Topbar');
 
@@ -117,7 +119,7 @@ const App = () => {
                     setSelectedCompare({});
                     break;
                 case 'Nitag':
-                    setSelectedCompare({});
+                    setSelectedNitag({});
                     break;
                 default:
                     break;
@@ -152,7 +154,7 @@ const App = () => {
         const vaccine = vaccines.find(vaccine => vaccine.vaccineId === pathogen.vaccines[0].vaccineId);
         setSelectedVaccine(vaccine);
         setSelectedPathogen(pathogen);
-        setActiveTab("Pathogen");
+        setActiveTab("Licensed Vaccines");
         setActiveFilters({ ...activeFilters });
     };
 
@@ -569,10 +571,10 @@ const App = () => {
                 setSidebarList(filterListByStartingAlphabet(manufacturersList).slice()
                     .sort((a, b) => a.name.localeCompare(b.name)));
             } else if (activeTab === 'Licensed Vaccines') {
-                setSidebarList(filterListByStartingAlphabet(vaccinesList).slice()
+                setSidebarList(filterListByStartingAlphabet(pathogensList).slice()
                     .sort((a, b) => a.name.localeCompare(b.name)));
             } else if (activeTab === 'Vaccine Candidates') {
-                setSidebarList(filterListByStartingAlphabet(sampleVaccineCandidatesVaccine).slice()
+                setSidebarList(filterListByStartingAlphabet(sampleVaccineCandidatePathogen).slice()
                     .sort((a, b) => a.name.localeCompare(b.name)));
             } else if (activeTab === 'Pathogen') {
                 setSidebarList(filterListByStartingAlphabet(pathogensList).slice()
@@ -580,7 +582,7 @@ const App = () => {
             } else if (activeTab === 'Licenser') {
                 setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
             } else if (activeTab === 'Compare') {
-                setSidebarList([])
+                setSidebarList([]);
             } else if (activeTab === 'Nitag') {
                 setSidebarList(nitags.map((x) => x.country));
             }
@@ -654,19 +656,19 @@ const App = () => {
 
     useEffect(() => {
         setManufacturersList(manufacturers);
-        setPathogensList(pathogens);
+        setPathogensList([...pathogens]);
         setVaccinesList(vaccines);
         setPipelineVaccinesList(pipelineVaccines);
         setLicensersList(licensers);
         setSelectedPathogen(pathogens[0])
         setSelectedLicenser(licensers[0]);
         const vaccineSorted = vaccines.sort((a, b) => a.name.localeCompare(b.name))[0];
-        const candidateVaccineSorted = sampleVaccineCandidatesVaccine.sort((a, b) => a.name.localeCompare(b.name))[0];
+        const candidateVaccineSorted = sampleVaccineCandidatePathogen.sort((a, b) => a.name.localeCompare(b.name))[0];
         setSelectedVaccine(vaccineSorted);
         setSelectedVaccineCandidate(candidateVaccineSorted);
         setSelectedCompare(pathogens[0]);
         setSelectedManufacturer(manufacturers[0]);
-        setSelectedNitag(nitags);
+        setSelectedNitag(nitags[0].country);
     }, []);
 
     useEffect(() => {

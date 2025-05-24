@@ -313,7 +313,7 @@ const Vaccine = ({
                         if (key === "name") return null;
                         return (
                             <tr key={index}>
-                                <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "Efficacy" ? "Efficacy (VEy)" : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
+                                <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "Efficacy" ? "Efficacy (VEy)/Effectiveness (VEs)" : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                 <td className={`align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{formatContent(value)}</td>
                             </tr>
                         );

@@ -33,7 +33,7 @@ const HomePage = () => {
                         </p>
                         <button class="btn">View more</button>
                     </div>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=vaccines"}>
+                    <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
                         <div class="image-container">
                             <img src="/images/VACCIE PROFILE OUTLINE-04.png" alt="Vaccines" />
                         </div>
@@ -57,7 +57,7 @@ const HomePage = () => {
                         <p>Essential information and licensed products</p>
                         <button class="btn">View more</button>
                     </div>
-                    <div class="card" onClick={() => window.location.href = "/home"}>
+                    <div class="card" onClick={() => window.location.href = "/home?menu=vaccine-candidates"}>
                         <div class="image-container">
                             <img src="/images/VACCIE PROFILE OUTLINE-07.png" alt="Pipeline Vaccine" />
                         </div>
@@ -65,7 +65,7 @@ const HomePage = () => {
                         <p>Vaccine candidates from phase 1 to 4 by pathogen and manufacturer</p>
                         <button class="btn">View more</button>
                     </div>
-                    <div class="card" onClick={() => window.location.href = "/home"}>
+                    <div class="card" onClick={() => window.location.href = "/home?menu=nitag"}>
                         <div class="image-container">
                             <img src="/images/VACCIE-PROFILE-OUTLINE-08.png" alt="Licensing Authorities" />
                         </div>
@@ -74,7 +74,7 @@ const HomePage = () => {
                         <button class="btn">View more</button>
                     </div>
                 </div>
-                <div class="card" onClick={() => window.location.href = "/home"}>
+                <div class="card" onClick={() => window.location.href = "/home?menu=compare"}>
                     <div class="image-container">
                         <img src="/images/vacciprofile-compare.png" alt="Comparison" />
                     </div>

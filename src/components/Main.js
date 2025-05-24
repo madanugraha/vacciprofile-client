@@ -16,6 +16,7 @@ import ReactModal from 'react-modal';
 import { toast } from 'react-toastify';
 import Comparison from './information/Comparison';
 import NitagTable from './information/nitag-table';
+import { getCandidatePathogens, removeDuplicatesFromArray, sortArrayAscending } from '../utils/array';
 
 const style = {
     position: 'absolute',
@@ -119,6 +120,7 @@ const Main = ({
     // vaccinee comparee
     const [vaccineCompare1, setVaccineCompare1] = useState(vaccines);
     const [vaccineComparee2, setVaccineCompare2] = useState(vaccines);
+
 
     // manufacture compare
     const [manufactureCompare1, setManufactureCompare1] = useState(manus);
@@ -229,6 +231,7 @@ const Main = ({
         });
         setVaccineCompare2(d);
     };
+
     const handleSetActiveManufactureCompare1 = (name) => {
         const d = manufactureCompare1.map((x) => {
             if (x.name === name) {
@@ -365,7 +368,7 @@ const Main = ({
                 (activeTab === 'Licenser' && isSelectedObjectNotEmpty(selectedLicenser)) ||
                 (activeTab === 'Compare' && isSelectedObjectNotEmpty(selectedCompare)) ||
                 (activeTab === 'Nitag' && isSelectedObjectNotEmpty(selectedNitag)) ||
-                (activeTab === 'Licensed Vaccines' && isSelectedObjectNotEmpty(selectedVaccine)) ||
+                (activeTab === 'Licensed Vaccines' && isSelectedObjectNotEmpty(selectedPathogen)) ||
                 (activeTab === 'Vaccine Candidates' && isSelectedObjectNotEmpty(selectedVaccineCandidate))
             ) {
                 setAnimationClass('');
@@ -374,7 +377,7 @@ const Main = ({
                 }, 5);
                 return () => clearTimeout(timeout);
             }
-        }
+        };
         resetAllActiveSelected();
         setTargetCompare1('');
         setTargetCompare2('');
@@ -444,8 +447,8 @@ const Main = ({
                 </div> :
                     (activeTab === 'Manufacturer' && Object.keys(selectedManufacturer).length === 0) ||
                         // (activeTab === 'Vaccine' && Object.keys(selectedVaccine).length === 0) ||
-                        (activeTab === 'Licensed Vaccines' && Object.keys(selectedVaccine).length === 0) ||
-                        (activeTab === 'Vaccine Candidates' && Object.keys(selectedVaccine).length === 0) ||
+                        (activeTab === 'Licensed Vaccines' && Object.keys(selectedPathogen).length === 0) ||
+                        (activeTab === 'Vaccine Candidates' && Object.keys(selectedVaccineCandidate).length === 0) ||
                         (activeTab === 'Pathogen' && Object.keys(selectedPathogen).length === 0) ||
                         (activeTab === 'Licenser' && Object.keys(selectedLicenser).length === 0) ||
                         (activeTab === 'Compare' && Object.keys(selectedCompare).length === 0)
@@ -454,6 +457,11 @@ const Main = ({
                             <span className='select-prompt position-absolute'>Select a {activeTab}</span>
                         </div> : <>
                             <div className='details-container'>
+                                {/* <Vaccine
+                                    selectedVaccine={selectedVaccineCandidate}
+                                    italizeScientificNames={italizeScientificNames}
+                                    convertCamelCaseToReadable={convertCamelCaseToReadable}
+                                /> */}
                                 {activeTab === "Pathogen"
                                     ? <Pathogen
                                         selectedPathogen={selectedPathogen}
@@ -462,15 +470,20 @@ const Main = ({
                                         activeTab={activeTab}
                                         handleSelectVaccine={handleSelectVaccine}
                                     /> : activeTab === "Licensed Vaccines"
-                                        ? <Vaccine
-                                            selectedVaccine={selectedVaccine}
+                                        ? <Pathogen
+                                            selectedPathogen={selectedPathogen}
+                                            isHide={true}
                                             italizeScientificNames={italizeScientificNames}
-                                            convertCamelCaseToReadable={convertCamelCaseToReadable}
+                                            activeTab={activeTab}
+                                            handleSelectVaccine={handleSelectVaccine}
                                         /> : activeTab === "Vaccine Candidates"
-                                            ? <Vaccine
-                                                selectedVaccine={selectedVaccineCandidate}
+                                            ? <Pathogen
+                                                selectedPathogen={selectedVaccineCandidate}
+                                                isHide={true}
+                                                isCandidatePathogen={true}
                                                 italizeScientificNames={italizeScientificNames}
-                                                convertCamelCaseToReadable={convertCamelCaseToReadable}
+                                                activeTab={activeTab}
+                                                handleSelectVaccine={handleSelectVaccine}
                                             /> : activeTab === "Manufacturer"
                                                 ? <ManufacturerProfile
                                                     selectedManufacturer={selectedManufacturer}
@@ -486,6 +499,7 @@ const Main = ({
                                                         selectedVaccine={selectedVaccine}
                                                         handleSelectPathogen={handleSelectPathogen}
                                                         italizeScientificNames={italizeScientificNames}
+                                                        convertCamelCaseToReadable={convertCamelCaseToReadable}
                                                     /> : activeTab === "Compare" ? (
                                                         <Comparison selectedPathogen={selectedCompare}
                                                             italizeScientificNames={italizeScientificNames} />
@@ -495,7 +509,7 @@ const Main = ({
                                                             selectedNitag={selectedNitag}
                                                         />
                                                         : null}
-                                {activeTab === "Manufacturer"
+                                {/* {activeTab === "Manufacturer"
                                     ?
                                     <VaccineListTable
                                         activeTab={activeTab}
@@ -511,7 +525,7 @@ const Main = ({
                                         italizeScientificNames={italizeScientificNames}
                                         selectedManufacturer={selectedManufacturer}
                                     />
-                                    : ``}
+                                    : ``} */}
 
                                 {/* {activeTab === "Manufacturer" && getPipelineVaccinesByManufacturer().length > 0
                                     ?

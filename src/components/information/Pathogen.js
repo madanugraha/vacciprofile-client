@@ -16,6 +16,7 @@ import DraggableIcon from '../../assets/icons/draggable';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import Vaccine from './Vaccine';
 
 const style = {
     position: 'absolute',
@@ -27,6 +28,7 @@ const style = {
     bgcolor: 'background.paper',
     boxShadow: 24,
     p: 6,
+    overflow: 'scroll',
     borderRadius: 4
 };
 
@@ -52,7 +54,7 @@ const style = {
  *    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} 
  * />
  */
-const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSelectVaccine, activeTab }) => {
+const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificNames, isHide, handleSelectVaccine, activeTab }) => {
     const [open, setOpen] = useState(false);
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const convertCamelCaseToReadable = string => {
@@ -558,7 +560,7 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
         },
     }));
 
-    return !checkIfPathogenCandidate(selectedPathogen) ? (
+    return !isCandidatePathogen ? (
         <>
             {
                 selectedPathogen === "Pathogen A" || selectedPathogen === "Pathogen B" ? null : (
@@ -592,7 +594,10 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
                                                                     }} className='' style={{ maxWidth: 400, minWidth: 400, alignItems: 'center', display: 'flex', marginBottom: 5 }}>
                                                                         <span
                                                                             className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
-                                                                            onClick={() => handleSelectVaccine(vaccine)}>
+                                                                            onClick={() => {
+                                                                                setSelectedVaccine(vaccine);
+                                                                                setOpen(true);
+                                                                            }}>
                                                                             {vaccine.name}
                                                                         </span>
                                                                     </li>
@@ -673,7 +678,23 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <Modal
+                                keepMounted
+                                open={open}
+                                onClose={() => setOpen(false)}
+                                aria-labelledby="keep-mounted-modal-title"
+                                aria-describedby="keep-mounted-modal-description"
+                            >
+                                <Box sx={style}>
+                                    <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+                                        <div style={{ position: 'absolute', right: -150, top: -20, width: 300 }}>
+                                            <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: '#c1121f', color: 'white', fontSize: 'bold' }}>Close</button>
+                                        </div>
+                                        <Vaccine selectedVaccine={selectedVaccine} italizeScientificNames={italizeScientificNames} convertCamelCaseToReadable={convertCamelCaseToReadable} />
+                                    </div>
+                                </Box>
+                            </Modal>
+                        </div >
                     ) : (
                         <div className="accordion" id="accordianVaccineInfo">
                             <div className="accordion-item mb-1">
@@ -1056,182 +1077,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames, isHide, handleSele
             <div className='cursor-pointer' style={{ width: 150, height: 30, borderRadius: 8, flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: -10 }}>
                 <p className='mb-0 mt-4 bg-primary' style={{ padding: 4, borderRadius: 8, alignSelf: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center', marginTop: 4 }}><a className='read-more' style={{ textAlign: 'center', color: 'white', alignSelf: 'center', fontWeight: 'bold' }} target="_blank" rel="noopener noreferrer" href={selectedPathogen.link}>Find out more</a></p>
             </div>
-            <Modal
-                keepMounted
-                open={open}
-                onClose={() => setOpen(false)}
-                aria-labelledby="keep-mounted-modal-title"
-                aria-describedby="keep-mounted-modal-description"
-            >
-                <Box sx={style}>
-                    <div style={{ height: '100%', width: '100%', position: 'relative' }}>
-                        <div style={{ position: 'absolute', right: -10, top: -20 }}>
-                            <button type='button' onClick={() => printTable()} className='btn btn-primary'>Print Document</button>
-                        </div>
-                        <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
-                            <div>
-                                <div style={{ marginTop: 10 }}>
-                                    <Stack spacing={3} sx={{ width: 500 }}>
-                                        <Autocomplete
-                                            multiple
-                                            id="tags-standard"
-                                            options={tableFields}
-                                            value={selectedFilterTableFields}
-                                            getOptionLabel={(option) => option.title}
-                                            defaultValue={[tableFields[0], tableFields[1]]}
-                                            autoComplete
-                                            freeSolo
-                                            onChange={(event, newValue) => {
-                                                if (event.target?.textContent &&
-                                                    selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
-                                                ) {
-                                                    setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                const checkForType = newValue.some((item) => item.title === "Type");
-                                                const checkForComposition = newValue.some((item) => item.title === "Composition/Platform");
-                                                const checkForApprovalDate = newValue.some((item) => item.title === "Approval Date");
-                                                const checkForLastUpdated = newValue.some((item) => item.title === "Last Updated");
-                                                const checkForSource = newValue.some((item) => item.title === "Source");
-                                                if (!checkForType) {
-                                                    setTableFieldsErrorMessage("Type cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                if (!checkForComposition) {
-                                                    setTableFieldsErrorMessage("Composition/Platform cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                if (!checkForApprovalDate) {
-                                                    setTableFieldsErrorMessage("Approval Date cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                if (!checkForLastUpdated) {
-                                                    setTableFieldsErrorMessage("Last Updated cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                if (!checkForSource) {
-                                                    setTableFieldsErrorMessage("Source cannot be removed")
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                }
-                                                setDuplicateTableFieldsError(false);
-                                                setSelectedFilterTableFields(newValue);
-                                            }}
-                                            onKeyUp={(event) => {
-                                                if (event.target?.textContent &&
-                                                    selectedFilterTableFields.some((item) => item.title === (event.target)?.textContent)
-                                                ) {
-                                                    setTableFieldsErrorMessage(`${(event.target)?.textContent} cannot be duplicated`)
-                                                    setDuplicateTableFieldsError(true);
-                                                    return;
-                                                } else {
-                                                    setDuplicateTableFieldsError(false);
-                                                }
-                                            }}
-                                            renderInput={(params) => (
-                                                <TextField
-                                                    {...params}
-                                                    variant="standard"
-                                                    label={<span style={{ color: 'black' }}>Filter items</span>}
-                                                    placeholder=""
-                                                    error={duplicateTableFieldsError}
-                                                    helperText={duplicateTableFieldsError ? tableFieldsErrorMessage : null}
-                                                />
-                                            )}
-                                        />
-                                    </Stack>
-                                </div>
-                            </div>
-                            {secondaryVaccineFields.length > 0 ? secondaryVaccineFields.map((data, secondaryIdx) => {
-                                return (
-                                    <div style={{ marginLeft: 10, marginRight: 40, alignItems: 'center' }}>
-                                        {
-                                            data.length >= 1 ? data.map((vaccine) => {
-                                                return (
-                                                    <div className='d-flex border border-secondary rounded' style={{ alignItems: 'center', marginBottom: 5 }}>
-                                                        <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                            <li key={Math.random() * 999} onClick={() => {
-                                                            }} className='' style={{ maxWidth: 200, minWidth: 200, alignItems: 'center', display: 'flex' }}>
-                                                                <div className='d-inline-flex' style={{ alignItems: 'center' }}>
-                                                                    <Checkbox checked={vaccine.checked} onChange={((e, checked) => {
-                                                                        handleSecondaryCheckBox(vaccine);
-                                                                    })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${cutStringMoreThan32(vaccine.name)}</span>` }}></div>
-                                                                </div>
-                                                            </li>
-                                                            {vaccine.licenser.length > 0 && vaccine.licenser.map((licenser) => {
-                                                                return (
-                                                                    <div className='d-inline-flex' style={{ alignItems: 'center', marginRight: 5 }}>
-                                                                        <Checkbox checked={licenser.checked} onChange={((e, checked) => {
-                                                                            handleSecondaryCheckboxLicenserByVaccine(vaccine.name, licenser.title, checked, vaccine.checked, secondaryIdx);
-                                                                        })} /><div className='' dangerouslySetInnerHTML={{ __html: `<span className='text-primary fw-semibold'>${licenser.title}</span>` }}></div>
-                                                                    </div>
-                                                                )
-                                                            })}
-                                                        </div>
-                                                    </div>
-                                                )
-                                            }) : null
-                                        }
-                                        {/* <div className='vertical-divider' style={{ width: 20, height: '100%', borderWidth: 1 }} /> */}
-                                    </div>
-                                )
-                            }) : null}
-                        </div>
-                        <div className='view' style={{ overflow: 'scroll' }}>
-                            <div style={{ overflowY: 'scroll' }} className="max-h-table-comparison d-inline-flex w-100 wrapper">
-                                {secondaryVaccineFields.length >= 1 ? (
-                                    <table className='' id="comparison-table" border={1}
-                                        data-toolbar=".toolbar"
-                                        data-show-columns="true"
-                                        data-search="true"
-                                        data-show-toggle="true"
-                                        data-pagination="true"
-                                        data-reorderable-columns="true">
-                                        <tbody>
-                                            {selectedFilterTableFields.map((field, idx) => {
-                                                const key = field.alt;
-                                                return key === "name" ? null : (
-                                                    <>
-                                                        <tr key={Math.random() * 999}>
-                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ color: 'white', fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                                            {/** TEST */}
-                                                            {
-                                                                secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
-                                                                    return data.filter((x) => x.checked).map((vaccine) => {
-                                                                        return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser, licenserIdx) => {
-                                                                            const conditionedFirstRow = idx === 0 ? {
-                                                                                background: "black",
-                                                                                color: "white"
-                                                                            } : {};
-                                                                            return (
-                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-white bg-black` : ``} comparison-table-handler`}>
-                                                                                    <div className='d-inline-flex justify-content-between w-100'>
-                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name)}</span>
-                                                                                        <span>  {idx === 0 && <DraggableIcon />}</span>
-                                                                                    </div>
-                                                                                </td>
-                                                                            )
-                                                                        }) : null
-                                                                    })
-                                                                })
-                                                            }
-                                                        </tr>
-                                                    </>
-                                                )
-                                            })}
-                                        </tbody>
-                                    </table>
-                                ) : null}
-                            </div>
-                        </div>
-                    </div>
-                </Box>
-            </Modal >
         </>
     ) : (
         <>
