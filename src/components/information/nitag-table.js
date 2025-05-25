@@ -1,11 +1,10 @@
+import { useEffect, useState } from "react";
 import { getNitagDetailByCountry } from "../../utils/array";
 
 const NitagTable = (
     selectedNitag
 ) => {
-
-    const detailNitag = getNitagDetailByCountry(selectedNitag.selectedNitag);
-
+    const detailNitag = selectedNitag.selectedNitag
     return (
         <div className='main-header table-responsive m-0'>
             <table className='table w-100 m-0'>

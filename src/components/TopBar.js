@@ -57,12 +57,12 @@ const TopBar = ({
                 }}>
                     Licensing Authorities
                 </li>
-                {/* <li className={`nav-item nav-link ${activeTab === 'Nitag' ? 'active' : ''}`} onClick={() => {
+                <li className={`nav-item nav-link ${activeTab === 'Nitag' ? 'active' : ''}`} onClick={() => {
                     // window.location.replace('/home?menu=nitag');
                     handleTabChange('Nitag')
                 }}>
                     NITAGs
-                </li> */}
+                </li>
                 <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => {
                     // window.location.replace('/home?menu=compare');
                     handleTabChange('Compare')

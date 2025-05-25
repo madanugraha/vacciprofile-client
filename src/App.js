@@ -584,7 +584,8 @@ const App = () => {
             } else if (activeTab === 'Compare') {
                 setSidebarList([]);
             } else if (activeTab === 'Nitag') {
-                setSidebarList(nitags.map((x) => x.country));
+                setSidebarList(filterListByStartingAlphabet(nitags).slice()
+                    .sort((a, b) => a.country.localeCompare(b.country)));
             }
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
@@ -668,7 +669,8 @@ const App = () => {
         setSelectedVaccineCandidate(candidateVaccineSorted);
         setSelectedCompare(pathogens[0]);
         setSelectedManufacturer(manufacturers[0]);
-        setSelectedNitag(nitags[0].country);
+        setSelectedNitag(nitags.slice()
+        .sort((a, b) => a.country.localeCompare(b.country))[0]);
     }, []);
 
     useEffect(() => {

@@ -195,19 +195,21 @@ const Sidebar = ({
     }, [activeMenu]);
 
 
+    // console.log(filteredLicenserSidebarList)
+
     const [currentIdxCandidatePathogen, setCurrentIdxCandidatePathogen] = useState(0);
 
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
             <div className='sidebar-items overflow-auto'>
                 {
-                    activeTab === "Nitag" && activeMenu !== "Vaccine" && activeTab !== "Vaccine" && filteredLicenserSidebarList.map((item) => {
-                        return typeof item === "object" ? null : (
+                    activeTab === "Nitag" && filteredLicenserSidebarList.map((item) => {
+                        return (
                             <>
                                 <div onClick={() => {
                                     handleClickSidebar(item);
-                                }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${activeTab === 'Nitag' && selectedNitag === item}`}>
-                                    {item}
+                                }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${(activeTab === 'Nitag' && selectedNitag === item) ? 'active' : 'inactive'}`}>
+                                    {item.country}
                                 </div>
                             </>
                         )
