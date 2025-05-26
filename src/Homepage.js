@@ -24,7 +24,7 @@ const HomePage = () => {
 
             <div className='container-home text-center' style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'row' }}>
                 <div class="container-home text-center" style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'column' }}>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=pathogen"}>
+                    <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
                         <div class="image-container">
                             <img src="/images/VACCIE PROFILE OUTLINE-03.png" alt="Pathogens" />
                         </div>
