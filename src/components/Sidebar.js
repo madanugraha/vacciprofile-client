@@ -194,6 +194,7 @@ const Sidebar = ({
         }
     }, [activeMenu]);
 
+    // console.log(filteredLicenserSidebarList);
 
     // console.log(filteredLicenserSidebarList)
 

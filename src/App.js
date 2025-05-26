@@ -17,7 +17,7 @@ import pathogens from './assets/data/pathogens.json';
 import vaccines from './assets/data/vaccines.json';
 import pipelineVaccines from './assets/data/pipeline-vaccines.json';
 import licensers from './assets/data/licensers.json';
-import nitags from './assets/data/nitag.json';
+import nitags from './assets/data/nitag-2.json';
 import scientificNames from './assets/scientificNames';
 import { compareMenu } from './assets/data/compare-vaccine.js';
 import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from './utils/array.js';
@@ -341,7 +341,7 @@ const App = () => {
      */
 
     const filterListByStartingAlphabet = useCallback((list) => {
-        const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : 'name';
+        const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
         const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
             ? list.filter(item => {
                 const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
@@ -670,7 +670,7 @@ const App = () => {
         setSelectedCompare(pathogens[0]);
         setSelectedManufacturer(manufacturers[0]);
         setSelectedNitag(nitags.slice()
-        .sort((a, b) => a.country.localeCompare(b.country))[0]);
+            .sort((a, b) => a.country.localeCompare(b.country))[0]);
     }, []);
 
     useEffect(() => {

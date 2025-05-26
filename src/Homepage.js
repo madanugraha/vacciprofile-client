@@ -84,7 +84,6 @@ const HomePage = () => {
                 </div>
             </div>
 
-
             <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;', display: 'flex', flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ marginBottom: '10px' }}>
                     <div>
