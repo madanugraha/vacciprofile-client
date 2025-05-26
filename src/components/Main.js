@@ -509,7 +509,7 @@ const Main = ({
                                                             selectedNitag={selectedNitag}
                                                         />
                                                         : null}
-                                {/* {activeTab === "Manufacturer"
+                                {activeTab === "Manufacturer"
                                     ?
                                     <VaccineListTable
                                         activeTab={activeTab}
@@ -522,10 +522,13 @@ const Main = ({
                                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                                         getPathogenByVaccine={getPathogenByVaccine}
                                         getLicenserById={getLicenserById}
+                                        convertCamelCaseToReadable={convertCamelCaseToReadable}
                                         italizeScientificNames={italizeScientificNames}
                                         selectedManufacturer={selectedManufacturer}
                                     />
-                                    : ``} */}
+                                    : ``}
+
+                                
 
                                 {/* {activeTab === "Manufacturer" && getPipelineVaccinesByManufacturer().length > 0
                                     ?

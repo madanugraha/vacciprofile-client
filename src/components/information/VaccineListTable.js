@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { getAllPathogenNameByVaccineCandidateName, getAllPhasesByVaccineCandidateName, getAllPlatformByCandidateName, getCandidateVaccineByManufactureName, removeDuplicatesFromArray } from '../../utils/array';
 import { getLicensedVaccineByManufacturerId, getLicensingDateByVaccineNameAndTypeV2, getPathogenDetailById } from '../../utils/pathogens';
 import * as _ from 'lodash';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import { Box, Modal } from '@mui/material';
+import Vaccine from './Vaccine';
 
 /**
  * VaccineListTable Component
@@ -42,6 +44,22 @@ import Typography from '@mui/material/Typography';
  * />
  */
 
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: '95%',
+    height: '95%',
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 6,
+    overflow: 'scroll',
+    borderRadius: 4
+};
+
+
 const VaccineListTable = ({
     activeTab,
     selectedPathogen,
@@ -54,7 +72,8 @@ const VaccineListTable = ({
     getVaccinesByManufacturer,
     getPathogenByVaccine,
     getLicenserById,
-    italizeScientificNames
+    italizeScientificNames,
+    convertCamelCaseToReadable
 }) => {
 
     const HtmlTooltip = styled(({ className, ...props }) => (
@@ -69,8 +88,10 @@ const VaccineListTable = ({
         },
     }));
 
-    return <>
+    const [open, setOpen] = useState(false);
+    const [modalVaccine, setModalVaccine] = useState({});
 
+    return <>
         <div className="accordion" id="accordianVaccineList">
             <div className="accordion-item">
                 <h2 className="accordion-header" id="accordianVaccines">
@@ -96,8 +117,11 @@ const VaccineListTable = ({
                                             <tr key={key}>
                                                 <td className='vaccine-cell'>
                                                     <span
-                                                        className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
-                                                        onClick={() => handleSelectVaccine(vaccine)}>
+                                                        className={`${activeTab === "Licensed Vaccines" && selectedVaccine.name === vaccine.name ? `selected` : `selectable`}`}
+                                                        onClick={() => {
+                                                            setModalVaccine(vaccine);
+                                                            setOpen(true);
+                                                        }}>
                                                         {vaccine.name}
                                                     </span>
                                                 </td>
@@ -255,6 +279,22 @@ const VaccineListTable = ({
                 </div>
             </div>
         </div>
+        <Modal
+            keepMounted
+            open={open}
+            onClose={() => setOpen(false)}
+            aria-labelledby="keep-mounted-modal-title"
+            aria-describedby="keep-mounted-modal-description"
+        >
+            <Box sx={style}>
+                <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+                    <div style={{ position: 'absolute', right: -150, top: -20, width: 300 }}>
+                        <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: '#c1121f', color: 'white', fontSize: 'bold' }}>Close</button>
+                    </div>
+                    <Vaccine selectedVaccine={modalVaccine} italizeScientificNames={italizeScientificNames} convertCamelCaseToReadable={convertCamelCaseToReadable} />
+                </div>
+            </Box>
+        </Modal>
     </>
 }
 
