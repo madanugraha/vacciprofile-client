@@ -17,6 +17,7 @@ import { toast } from 'react-toastify';
 import Comparison from './information/Comparison';
 import NitagTable from './information/nitag-table';
 import { getCandidatePathogens, removeDuplicatesFromArray, sortArrayAscending } from '../utils/array';
+import NITAGMap from './information/nitag';
 
 const style = {
     position: 'absolute',
@@ -503,11 +504,12 @@ const Main = ({
                                                     /> : activeTab === "Compare" ? (
                                                         <Comparison selectedPathogen={selectedCompare}
                                                             italizeScientificNames={italizeScientificNames} />
-                                                    ) : activeTab === "Nitag"
-                                                        ? <NitagTable
-                                                            activeTab={activeTab}
-                                                            selectedNitag={selectedNitag}
-                                                        />
+                                                    ) : activeTab === "Nitag" ?
+                                                        <NITAGMap activeTab={activeTab} selectedNitag={selectedNitag} />
+                                                        // ? <NitagTable
+                                                        //     activeTab={activeTab}
+                                                        //     selectedNitag={selectedNitag}
+                                                        // />
                                                         : null}
                                 {activeTab === "Manufacturer"
                                     ?
@@ -528,7 +530,7 @@ const Main = ({
                                     />
                                     : ``}
 
-                                
+
 
                                 {/* {activeTab === "Manufacturer" && getPipelineVaccinesByManufacturer().length > 0
                                     ?

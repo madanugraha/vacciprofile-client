@@ -34,37 +34,37 @@ const TopBar = ({
                     Pathogens
                 </li> */}
                 <li className={`nav-item nav-link ${activeTab === 'Licensed Vaccines' ? 'active' : ''}`} onClick={() => {
-                    // window.location.replace('/home?menu=licensed-vaccines');
+                    window.location.replace('/home?menu=licensed-vaccines');
                     handleTabChange('Licensed Vaccines')
                 }}>
                     Licensed Vaccines
                 </li>
                 <li className={`nav-item nav-link ${activeTab === 'Vaccine Candidates' ? 'active' : ''}`} onClick={() => {
-                    // window.location.replace('/home?menu=vaccine-candidates');
+                    window.location.replace('/home?menu=vaccine-candidates');
                     handleTabChange('Vaccine Candidates')
                 }}>
                     Vaccine Candidates
                 </li>
                 <li className={`nav-item nav-link ${activeTab === 'Manufacturer' ? 'active' : ''}`} onClick={() => {
-                    // window.location.replace('/home?menu=manufacturer');
+                    window.location.replace('/home?menu=manufacturer');
                     handleTabChange('Manufacturer')
                 }}>
                     Manufacturers
                 </li>
                 <li className={`nav-item nav-link ${activeTab === 'Licenser' ? 'active' : ''}`} onClick={() => {
-                    // window.location.replace('/home?menu=licenser');
+                    window.location.replace('/home?menu=licenser');
                     handleTabChange('Licenser')
                 }}>
                     Licensing Authorities
                 </li>
                 <li className={`nav-item nav-link ${activeTab === 'Nitag' ? 'active' : ''}`} onClick={() => {
-                    // window.location.replace('/home?menu=nitag');
+                    window.location.replace('/home?menu=nitag');
                     handleTabChange('Nitag')
                 }}>
                     NITAGs
                 </li>
                 <li className={`nav-item nav-link ${activeTab === 'Compare' ? 'active' : ''}`} onClick={() => {
-                    // window.location.replace('/home?menu=compare');
+                    window.location.replace('/home?menu=compare');
                     handleTabChange('Compare')
                 }}>
                     Compare
