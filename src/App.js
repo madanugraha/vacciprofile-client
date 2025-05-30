@@ -17,7 +17,7 @@ import pathogens from './assets/data/pathogens.json';
 import vaccines from './assets/data/vaccines.json';
 import pipelineVaccines from './assets/data/pipeline-vaccines.json';
 import licensers from './assets/data/licensers.json';
-import nitags from './assets/data/nitag-2.json';
+import { finalRemapNitagCountry } from './assets/data/nitag-countries.js';
 import scientificNames from './assets/scientificNames';
 import { compareMenu } from './assets/data/compare-vaccine.js';
 import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from './utils/array.js';
@@ -584,8 +584,8 @@ const App = () => {
             } else if (activeTab === 'Compare') {
                 setSidebarList([]);
             } else if (activeTab === 'Nitag') {
-                setSidebarList(filterListByStartingAlphabet(nitags).slice()
-                    .sort((a, b) => a.country.localeCompare(b.country)));
+                setSidebarList(filterListByStartingAlphabet(finalRemapNitagCountry).slice()
+                    .sort((a, b) => a[0].localeCompare(b[0])));
             }
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
@@ -669,8 +669,8 @@ const App = () => {
         setSelectedVaccineCandidate(candidateVaccineSorted);
         setSelectedCompare(pathogens[0]);
         setSelectedManufacturer(manufacturers[0]);
-        setSelectedNitag(nitags.slice()
-            .sort((a, b) => a.country.localeCompare(b.country))[0]);
+        setSelectedNitag(finalRemapNitagCountry.slice()
+            .sort((a, b) => a[0].localeCompare(b[0]))[0]);
     }, []);
 
     useEffect(() => {

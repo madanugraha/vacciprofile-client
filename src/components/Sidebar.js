@@ -173,7 +173,6 @@ const Sidebar = ({
         if (activeMenu === "pathogen") {
             setActiveTab("Pathogen")
         };
-
         if (activeMenu === "manufacturer") {
             setActiveTab("Manufacturer");
         };
@@ -191,7 +190,7 @@ const Sidebar = ({
         }
         if (activeMenu === "compare") {
             setActiveTab("Compare");
-        }
+        };
     }, [activeMenu]);
 
     // console.log(filteredLicenserSidebarList);
@@ -208,9 +207,28 @@ const Sidebar = ({
                         return (
                             <>
                                 <div onClick={() => {
+
                                     handleClickSidebar(item);
+                                    const ctx = item[0];
+                                    function handleClickCountryMatchURL(country, url) {
+                                        if (country) {
+                                            country = country.toLowerCase();
+                                            if (url === "Unavailable") {
+                                                window.alert(`Cannot find and open the ${country} NITAG url`)
+                                            }
+                                            if (url !== "Unavailable") {
+                                                return window.open(url, '_blank');
+                                            }
+                                        }
+                                    };
+
+                                    const website = item[1]
+                                    if (website && website.split('Website: ').length > 0) {
+                                        const websiteUrl = website.split('Website: ')[1];
+                                        handleClickCountryMatchURL(ctx, websiteUrl)
+                                    };
                                 }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${(activeTab === 'Nitag' && selectedNitag === item) ? 'active' : 'inactive'}`}>
-                                    {item.country}
+                                    {item[0]}
                                 </div>
                             </>
                         )
