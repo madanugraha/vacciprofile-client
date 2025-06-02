@@ -201,12 +201,12 @@ const Sidebar = ({
 
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
-            <div className='sidebar-items overflow-auto'>
+            <div id="sidebar" className='sidebar-items overflow-auto'>
                 {
                     activeTab === "Nitag" && filteredLicenserSidebarList.map((item) => {
                         return (
                             <>
-                                <div onClick={() => {
+                                <div id={`nitag-country-${item[0]}`} onClick={() => {
 
                                     handleClickSidebar(item);
                                     const ctx = item[0];
@@ -214,7 +214,7 @@ const Sidebar = ({
                                         if (country) {
                                             country = country.toLowerCase();
                                             if (url === "Unavailable") {
-                                                window.alert(`Cannot find and open the ${country} NITAG url`)
+                                                window.alert(`No available data for ${country}`)
                                             }
                                             if (url !== "Unavailable") {
                                                 return window.open(url, '_blank');

@@ -1096,7 +1096,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                             {removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").length > 0 ? removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").map(x => {
                                 return (
                                     <tr>
-                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name}</td>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name} {x.platform.toLowerCase().includes('no data') ? '' : `(${x.platform})`}</td>
                                         <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#F1F1F3' }}>{x.clinicalPhase.includes('Phase I') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
                                         <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#E0DFE5' }}>{x.clinicalPhase.includes('Phase IIA') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
                                         <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#CCCAD5' }}>{x.clinicalPhase.includes('Phase IIB') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
@@ -1110,7 +1110,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                         </tbody>
                     </table>
                 </div>
-                <div className='py-4'>
+                {/* <div className='py-4'>
                     <h5>Antigen Platform</h5>
                     <ul>
                         {getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).length > 0 ? getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).map((x) => {
@@ -1119,7 +1119,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                             )
                         }) : <li>no data to display</li>}
                     </ul>
-                </div>
+                </div> */}
             </div>
         </>
     )

@@ -1239,13 +1239,20 @@ Year established: 2011
         return ar
       })
 
+      const countryWebsiteList = [];
       const finalRemapNitagCountry = q1.map((x) => {
         const comitee = x.filter((z) => z.includes('Committee'))[0] || "Committee: -";
+        const parsedComittee = comitee === "Committee: -" ? "Committee: -" : `${comitee.includes('-') ? `${comitee.split('-')[0].replace('Committee: ', '')} (${comitee.split('-')[1].replace(' ', '')})` : comitee.replace('Committee: ', '')}`
         const established = x.filter((z) => z.includes('established'))[0] || "Year established: -";
         const evaluated = x.filter((z) => z.includes('evaluated'))[0] || "Year evaluated: -";
         const website = x.filter((z) => z.includes('Website'))[0] || "Website: Unavailable";
 
         let countryName = x[0];
+
+        countryWebsiteList.push({
+          country: countryName,
+          website: website
+        });
 
         if (countryName === "South Sudan") {
           countryName = { v: 'SS', f: 'South Sudan' };
@@ -1283,11 +1290,15 @@ Year established: 2011
           countryName = { v: 'LA', f: `Lao People's Democratic Republic` };
         }
 
-        return [countryName, `${comitee} <br/> ${established} <br/> ${website}`]
+
+
+        return [countryName, `<span style='color:blue'>${parsedComittee}</span> <br/> ${established}`]
       });
 
 
-      const dataOption = [['Country', { role: "tooltip", type: "string", p: { html: true } }], ...finalRemapNitagCountry]
+      const dataOption = [['Country', { role: "tooltip", type: "string", p: { html: true } }], ...finalRemapNitagCountry];
+
+
       function drawRegionsMap() {
         const data = google.visualization.arrayToDataTable(dataOption);
 
@@ -1302,7 +1313,11 @@ Year established: 2011
           defaultColor: '#d17728'
         };
 
-        const chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        var container = document.getElementById('regions_div');
+        const chart = new google.visualization.GeoChart(container);
+
+
         chart.draw(data, options);
 
         google.visualization.events.addListener(chart, 'select', function () {
@@ -1311,15 +1326,75 @@ Year established: 2011
             const country = data.getValue(selection[0].row, 0);
             const website = data.getValue(selection[0].row, 1);
             if (website.split('Website: ').length > 0) {
-              const websiteUrl = website.split('Website: ')[1];
+              let websiteUrl = countryWebsiteList.filter((x) => x.country === country)[0]?.website?.replace('Website: ', '') || "-";
+              websiteUrl = websiteUrl.includes('Unavailable') ? '-' : websiteUrl;
+              const oldNitagSelected = localStorage.getItem('nitag-country');
+              document.getElementById(`nitag-country-${oldNitagSelected}`)?.classList.remove("active");
+              document.getElementById(`nitag-country-${oldNitagSelected}`)?.classList.add("inactive");
+              localStorage.removeItem('nitag-country');
+              localStorage.setItem('nitag-country', country);
+              document.getElementById(`nitag-country-${country}`)?.classList.add("active");
+
+              // scroll logic
+              let sidebar = document.getElementById('sidebar');
+              let sidebarItem = document.getElementById(`nitag-country-${country}`);
+              let itemOffsetTop = sidebarItem?.offsetTop;
+              window?.scrollTo({
+                top: itemOffsetTop,
+                behavior: "smooth"
+              })
+              // sidebar?.scrollTop = itemOffsetTop;
+
               handleCountryClick(country, websiteUrl);
             };
-          }
+          };
+        });
+
+        // google.visualization.events.addListener(chart, 'hover', function () {
+        //   var countries = container.getElementsByTagName('path');
+        //   Array.prototype.forEach.call(countries, function (path) {
+        //     path.setAttribute('stroke', 'white');
+        //   });
+        // });
+
+        google.visualization.events.addListener(chart, 'ready', function () {
+          var countries = container.getElementsByTagName('path');
+          Array.prototype.forEach.call(countries, function (path) {
+            path.setAttribute('stroke', 'white');
+          });
+
+          // change active stroke color, build mutation observer
+          var observer = new MutationObserver(function (nodes) {
+            Array.prototype.forEach.call(nodes, function (node) {
+              // check for new nodes
+              if (node.addedNodes.length > 0) {
+                Array.prototype.forEach.call(node.addedNodes, function (addedNode) {
+                  // the tooltip element will also be here, we only want the group elements
+                  if (addedNode.tagName === 'g') {
+                    // find children of the group element
+                    Array.prototype.forEach.call(addedNode.childNodes, function (childNode) {
+                      // check for path element, change stroke
+                      if (childNode.tagName === 'path') {
+                        childNode.setAttribute('stroke', 'black');
+                      }
+                    });
+                  }
+                });
+              }
+            });
+          });
+
+          // activate mutation observer
+          observer.observe(container, {
+            childList: true,
+            subtree: true
+          });
         });
       }
 
       function handleClickCountryMatchURL(country, url) {
         if (country) {
+          let originalCountryName = country;
           country = country.toLowerCase();
 
           if (country === "united states") {
@@ -1344,15 +1419,19 @@ Year established: 2011
 
           if (country === "la") {
             country = "Lao Peoples Democratic Republic"
+          };
+
+
+          originalCountryName = (originalCountryName != "United States" && originalCountryName != "SS" && originalCountryName != "RU" && originalCountryName != "CD" && originalCountryName != "CG" && originalCountryName && "LA") ? originalCountryName : country
+
+          if (url === "-") {
+            window.alert(`No available data for ${originalCountryName}.`)
           }
 
-          if (url === "Unavailable") {
-            window.alert(`Cannot find and open the ${country} NITAG url`)
-          }
-
-          if (url !== "Unavailable") {
+          if (url !== "-") {
             return window.open(url, '_blank');
           }
+
         }
       }
 

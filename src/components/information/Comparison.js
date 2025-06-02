@@ -80,23 +80,23 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [compareSubmitted, setCompareSubmitted] = useState(false);
     const [compareActive, setCompareActive] = useState(false);
     const tableFields = [
-        { title: 'Type', alt: 'type' },
-        { title: 'Composition/Platform', alt: 'composition' },
-        { title: 'Strain Coverage', alt: 'strainCoverage' },
-        { title: 'Indication', alt: 'indication' },
-        { title: 'Dosing', alt: 'dosing' },
-        { title: 'Contraindication', alt: 'contraindication' },
-        { title: 'Immunogenicity', alt: 'immunogenicity' },
-        { title: 'Efficacy', alt: 'Efficacy' },
-        { title: 'Duration of Protection', alt: 'durationOfProtection' },
-        { title: 'Co-Administration', alt: 'coAdministration' },
-        { title: 'Reactogenicity', alt: 'reactogenicity' },
-        { title: 'Safety', alt: 'safety' },
-        { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
-        { title: 'Others', alt: 'others' },
-        { title: 'Approval Date', alt: 'approvalDate' },
-        { title: 'Last Updated', alt: 'lastUpdated' },
-        { title: 'Lincensing Auhtorities', alt: 'source' },
+        { title: 'Type', alt: 'type', no: 1 },
+        { title: 'Composition/Platform', alt: 'composition', no: 2 },
+        { title: 'Strain Coverage', alt: 'strainCoverage', no: 3 },
+        { title: 'Indication', alt: 'indication', no: 4 },
+        { title: 'Dosing', alt: 'dosing', no: 5 },
+        { title: 'Contraindication', alt: 'contraindication', no: 6 },
+        { title: 'Immunogenicity', alt: 'immunogenicity', no: 7 },
+        { title: 'Efficacy', alt: 'Efficacy', no: 8 },
+        { title: 'Duration of Protection', alt: 'durationOfProtection', no: 9 },
+        { title: 'Co-Administration', alt: 'coAdministration', no: 10 },
+        { title: 'Reactogenicity', alt: 'reactogenicity', no: 11 },
+        { title: 'Safety', alt: 'safety', no: 12 },
+        { title: 'Vaccination Goal', alt: 'vaccinationGoal', no: 13 },
+        { title: 'Others', alt: 'others', no: 14 },
+        { title: 'Approval Date', alt: 'approvalDate', no: 15 },
+        { title: 'Last Updated', alt: 'lastUpdated', no: 16 },
+        { title: 'Lincensing Auhtorities', alt: 'source', no: 17 },
     ];
 
 
@@ -132,6 +132,37 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [vaccineFieldsState, setVaccineFieldsState] = useState([]);
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
     const [selectedModalFilter, setSelectedModalFilter] = useState(tableFields.map((x) => x.title));
+    const [newSelectedModalFilter, setNewSelectedModalFilter] = useState([]);
+
+
+
+
+
+    useEffect(() => {
+
+        const getOrderNoByTitle = (title) => {
+
+            const f = tableFields.filter((x) => x.title === title);
+            if (f.length > 0) {
+                return f[0].no
+            } else {
+                return 0
+            }
+        }
+        const sortedSelectedModalFilter = () => {
+            let a = [];
+            selectedModalFilter.map((x) => {
+                const q = getOrderNoByTitle(x);
+                a.push({
+                    title: x,
+                    no: q
+                })
+            });
+            return a;
+        };
+        const p = sortedSelectedModalFilter();
+        setNewSelectedModalFilter(p);
+    }, [selectedModalFilter])
 
     const newA = selectedFilterTableFields && selectedModalFilter.length > 0 ? selectedModalFilter?.map((x) => {
         let altName = tableFields.filter((z) => z.title === x)[0].alt
@@ -451,14 +482,30 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         const {
             target: { value },
         } = event;
-        if (!value.includes("Type")) {
-            return
+
+        const c = selectedModalFilter.some((x) => x.includes(value));
+
+        if (c) {
+            const f = selectedModalFilter.filter((x) => x !== value);
+
+            console.log('value >> ', value, f);
+            setSelectedModalFilter(f);
         } else {
-            setSelectedModalFilter(
-                // On autofill we get a stringified value.
-                typeof value === 'string' ? value.split(',') : value,
-            );
+            setSelectedModalFilter([...selectedModalFilter, value]);
         }
+        // setSelectedModalFilter(
+        //     // On autofill we get a stringified value.
+        //     typeof value === 'string' ? value.split(',') : value,
+        // );
+        // console.log('xxasdasdasd  >> ', value);
+        // if (!value.includes("Type")) {
+        //     return
+        // } else {
+        //     setSelectedModalFilter(
+        //         // On autofill we get a stringified value.
+        //         typeof value === 'string' ? value.split(',') : value,
+        //     );
+        // }
     };
 
     const getAltNameByTitleName = (name) => {
@@ -1215,6 +1262,60 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                         <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
                                 <div style={{ marginTop: 0 }}>
+                                    <div className='d-flex border border-secondary rounded' style={{ alignItems: 'center', marginBottom: 5, marginTop: 10 }}>
+                                        <div style={{ marginLeft: 10, marginRight: 40, alignSelf: 'center', display: 'flex', flexDirection: 'column' }}>
+                                            {
+                                                tableFields.filter((x, i) => i > 0 && i <= 4).map((x) => {
+                                                    return (
+                                                        <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                            <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
+                                                            <ListItemText primary={x.title} />
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <div style={{ marginLeft: 10, marginRight: 40, alignSelf: 'center', display: 'flex', flexDirection: 'column' }}>
+                                            {
+                                                tableFields.filter((x, i) => i > 4 && i <= 8).map((x) => {
+                                                    return (
+                                                        <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                            <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
+                                                            <ListItemText primary={x.title} />
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <div style={{ marginLeft: 10, marginRight: 40, alignSelf: 'center', display: 'flex', flexDirection: 'column' }}>
+                                            {
+                                                tableFields.filter((x, i) => i > 8 && i <= 12).map((x) => {
+                                                    return (
+                                                        <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                            <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
+                                                            <ListItemText primary={x.title} />
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <div style={{ marginLeft: 10, marginRight: 40, alignSelf: 'center', display: 'flex', flexDirection: 'column' }}>
+                                            {
+                                                tableFields.filter((x, i) => i > 12 && i <= 16).map((x) => {
+                                                    return (
+                                                        <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                            <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
+                                                            <ListItemText primary={x.title} />
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div>
+                                <div style={{ marginTop: 0 }}>
                                     <FormControl sx={{ m: 1, width: 250 }}>
                                         <InputLabel id="demo-multiple-checkbox-label">Filter</InputLabel>
                                         <Select
@@ -1243,7 +1344,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                         </Select>
                                     </FormControl>
                                 </div>
-                            </div>
+                            </div> */}
                             {secondaryVaccineFields.length > 0 ? secondaryVaccineFields.map((data, secondaryIdx) => {
                                 return (
                                     <div style={{ marginLeft: 10, marginRight: 40, alignItems: 'center', marginTop: 10 }}>
@@ -1290,7 +1391,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                         data-pagination="true"
                                         data-reorderable-columns="true">
                                         <tbody>
-                                            {selectedModalFilter.map((field, idx) => {
+                                            {newSelectedModalFilter.sort((a, b) => a.no - b.no).map((x) => x.title).map((field, idx) => {
                                                 const key = getAltNameByTitleName(field);
                                                 return key === "name" ? null : (
                                                     <>
@@ -1326,7 +1427,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                 ) : null}
                             </div>
                         </div>
-                        <div style={{ width: 300, marginTop: 20, justifySelf: 'center', marginLeft: 150, paddingTop: 20 }}>
+                        <div style={{ width: 300, marginTop: -7, justifySelf: 'center', marginLeft: 150 }}>
                             <button type='button' onClick={() => handleDownloadComparison()} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
                         </div>
                     </div>

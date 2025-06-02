@@ -669,8 +669,8 @@ const App = () => {
         setSelectedVaccineCandidate(candidateVaccineSorted);
         setSelectedCompare(pathogens[0]);
         setSelectedManufacturer(manufacturers[0]);
-        setSelectedNitag(finalRemapNitagCountry.slice()
-            .sort((a, b) => a[0].localeCompare(b[0]))[0]);
+        // setSelectedNitag(finalRemapNitagCountry.slice()
+        //    .sort((a, b) => a[0].localeCompare(b[0]))[0]);
     }, []);
 
     useEffect(() => {
