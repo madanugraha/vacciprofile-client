@@ -14,7 +14,10 @@ import { cutStringMoreThan32 } from '../../utils/string';
 import * as _ from 'lodash';
 import DraggableIcon from '../../assets/icons/draggable';
 import ExcelJS from 'exceljs';
-import { FormControl, InputLabel, ListItemText, MenuItem, OutlinedInput, Select } from '@mui/material';
+import { ListItemText } from '@mui/material';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
 
 
 const workbook = new ExcelJS.Workbook();
@@ -99,6 +102,34 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Lincensing Auhtorities', alt: 'source', no: 17 },
     ];
 
+    const vaccineLabelDefinition = [
+        { title: 'Type', definition: 'The classification of the vaccine based on how it stimulates immunity.' },
+        { title: 'Composition/Platform', definition: 'The ingredients or biological components and the technology platform used to create the vaccine.' },
+        { title: 'Strain Coverage', definition: 'The specific strains or variants of a virus that the vaccine protects against.' },
+        { title: 'Indication', definition: 'The official, approved use of the vaccine (what it prevents, and in whom).' },
+        { title: 'Dosing', definition: 'The number and timing of doses required for optimal immunity.' },
+        { title: 'Contraindication', definition: 'Conditions or factors that serve as reasons to withhold the vaccine.' },
+        { title: 'Immunogenicity', definition: 'The ability of the vaccine to induce an immune response (e.g., antibody titers, T-cell response).' },
+        { title: 'Efficacy', definition: 'The percentage reduction in disease among vaccinated versus unvaccinated individuals under trial conditions.' },
+        { title: 'Duration of Protection', definition: 'How long the vaccine continues to offer protective immunity.' },
+        { title: 'Co-Administration', definition: 'The ability to give the vaccine with other vaccines at the same time.' },
+        { title: 'Reactogenicity', definition: 'The physical manifestation of the body’s inflammatory response to the vaccine.' },
+        { title: 'Safety', definition: 'The overall assessment of risk, including serious adverse events.' },
+        { title: 'Vaccination Goal', definition: 'The broader public health purpose of the vaccine.' },
+        { title: 'Others', definition: 'Miscellaneous or additional relevant info not captured by other categories.' },
+        { title: 'Approval Date', definition: 'The date the vaccine received formal approval from a licensing authority.' },
+        { title: 'Last Updated', definition: 'The most recent date of label, indication, or technical update.' },
+        { title: 'Licensing Authorities', definition: 'The national or international agencies responsible for evaluating and approving vaccines.' }
+    ]
+
+    const getDefinitionOfVaccineLabel = (title) => {
+        const f = vaccineLabelDefinition.filter((x) => x.title === title);
+        if (f.length > 0) {
+            return f[0].definition
+        } else {
+            return "-"
+        };
+    }
 
     const exceptionalFields = [
         { title: 'Composition/Platform', alt: 'composition' },
@@ -114,6 +145,9 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Safety', alt: 'safety' },
         { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
         { title: 'Others', alt: 'others' },
+        { title: 'Approval Date', alt: 'approvalDate', no: 15 },
+        { title: 'Last Updated', alt: 'lastUpdated', no: 16 },
+        { title: 'Lincensing Auhtorities', alt: 'source', no: 17 },
     ];
 
     const checkIfExceptionFields = (name) => {
@@ -135,11 +169,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [newSelectedModalFilter, setNewSelectedModalFilter] = useState([]);
 
 
-
-
-
     useEffect(() => {
-
         const getOrderNoByTitle = (title) => {
 
             const f = tableFields.filter((x) => x.title === title);
@@ -166,7 +196,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
     const newA = selectedFilterTableFields && selectedModalFilter.length > 0 ? selectedModalFilter?.map((x) => {
         let altName = tableFields.filter((z) => z.title === x)[0].alt
-        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${altName}`);
+        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.name}`);
         const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
         const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
         const result5 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.source))}`);
@@ -174,20 +204,21 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
         const result2 = secondaryVaccineFields[0]?.map((y) => {
             return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[altName]))}`
-        });
+        })
 
-        if (result3 && result3.length > 0) {
-            return [x, ...result3]
-        };
-        if (result4 && result4.length > 0) {
-            return [x, ...result4]
-        };
-        if (result5 && result5.length > 0) {
-            return [x, ...result5]
-        };
+        // if (result3 && result3.length > 0) {
+        //     return [x, ...result3]
+        // };
+        // if (result4 && result4.length > 0) {
+        //     return [x, ...result4]
+        // };
+        // if (result5 && result5.length > 0) {
+        //     return [x, ...result5]
+        // };
 
-        return [x, (checkIfExceptionFields(x) ? result2 : result1)];
+        return [x, (checkIfExceptionFields(x) ? result2[0] : result1[0])];
     }) : [];
+
 
     const arrayToGenerate = newA || [];
 
@@ -228,7 +259,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
     const handleDownloadComparison = () => {
 
-        sheet.columns = [arrayToGenerate[0][0], ...arrayToGenerate[0][1]].map((x) => {
+        sheet.columns = [arrayToGenerate[0][0], arrayToGenerate[0][1]].map((x) => {
             return {
                 header: x, key: x, width: 10
             }
@@ -859,6 +890,19 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
 
+
+    const HtmlTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} classes={{ popper: className }} />
+    ))(({ theme }) => ({
+        [`& .${tooltipClasses.tooltip}`]: {
+            backgroundColor: '#f5f5f9',
+            color: 'rgba(0, 0, 0, 0.87)',
+            maxWidth: 220,
+            fontSize: theme.typography.pxToRem(12),
+            border: '1px solid #dadde9',
+        },
+    }));
+
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>
             {
@@ -1269,7 +1313,20 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                     return (
                                                         <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                                             <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
-                                                            <ListItemText primary={x.title} />
+
+                                                            <HtmlTooltip
+                                                                title={
+                                                                    <>
+                                                                        <Typography color="inherit">{getDefinitionOfVaccineLabel(x.title)}</Typography>
+                                                                        {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                                                    </>
+                                                                }
+                                                            >
+                                                                <div>
+                                                                    <ListItemText primary={x.title} />
+                                                                    {/* <span className='selectable'>{"WHO"}</span> */}
+                                                                </div>
+                                                            </HtmlTooltip>
                                                         </div>
                                                     )
                                                 })
@@ -1281,7 +1338,19 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                     return (
                                                         <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                                             <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
-                                                            <ListItemText primary={x.title} />
+                                                            <HtmlTooltip
+                                                                title={
+                                                                    <>
+                                                                        <Typography color="inherit">{getDefinitionOfVaccineLabel(x.title)}</Typography>
+                                                                        {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                                                    </>
+                                                                }
+                                                            >
+                                                                <div>
+                                                                    <ListItemText primary={x.title} />
+                                                                    {/* <span className='selectable'>{"WHO"}</span> */}
+                                                                </div>
+                                                            </HtmlTooltip>
                                                         </div>
                                                     )
                                                 })
@@ -1293,7 +1362,19 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                     return (
                                                         <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                                             <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
-                                                            <ListItemText primary={x.title} />
+                                                            <HtmlTooltip
+                                                                title={
+                                                                    <>
+                                                                        <Typography color="inherit">{getDefinitionOfVaccineLabel(x.title)}</Typography>
+                                                                        {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                                                    </>
+                                                                }
+                                                            >
+                                                                <div>
+                                                                    <ListItemText primary={x.title} />
+                                                                    {/* <span className='selectable'>{"WHO"}</span> */}
+                                                                </div>
+                                                            </HtmlTooltip>
                                                         </div>
                                                     )
                                                 })
@@ -1305,7 +1386,19 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                     return (
                                                         <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                                             <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
-                                                            <ListItemText primary={x.title} />
+                                                            <HtmlTooltip
+                                                                title={
+                                                                    <>
+                                                                        <Typography color="inherit">{getDefinitionOfVaccineLabel(x.title)}</Typography>
+                                                                        {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                                                    </>
+                                                                }
+                                                            >
+                                                                <div>
+                                                                    <ListItemText primary={x.title} />
+                                                                    {/* <span className='selectable'>{"WHO"}</span> */}
+                                                                </div>
+                                                            </HtmlTooltip>
                                                         </div>
                                                     )
                                                 })
