@@ -216,7 +216,11 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         //     return [x, ...result5]
         // };
 
-        return [x, (checkIfExceptionFields(x) ? result2[0] : result1[0])];
+        if (result2 && result1) {
+            return [x, (checkIfExceptionFields(x) ? result2[0] : result1[0])];
+        } else {
+            return [x, ""];
+        }
     }) : [];
 
 
