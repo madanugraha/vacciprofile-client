@@ -99,7 +99,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Others', alt: 'others', no: 14 },
         { title: 'Approval Date', alt: 'approvalDate', no: 15 },
         { title: 'Last Updated', alt: 'lastUpdated', no: 16 },
-        { title: 'Lincensing Authorities', alt: 'source', no: 17 },
+        { title: 'Licensing Authorities', alt: 'source', no: 17 },
     ];
 
     const vaccineLabelDefinition = [
@@ -147,7 +147,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Others', alt: 'others' },
         { title: 'Approval Date', alt: 'approvalDate', no: 15 },
         { title: 'Last Updated', alt: 'lastUpdated', no: 16 },
-        { title: 'Lincensing Auhtorities', alt: 'source', no: 17 },
+        { title: 'Licensing Authorities', alt: 'source', no: 17 },
     ];
 
     const checkIfExceptionFields = (name) => {
@@ -522,8 +522,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
         if (c) {
             const f = selectedModalFilter.filter((x) => x !== value);
-
-            console.log('value >> ', value, f);
             setSelectedModalFilter(f);
         } else {
             setSelectedModalFilter([...selectedModalFilter, value]);
