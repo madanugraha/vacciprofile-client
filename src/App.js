@@ -617,7 +617,6 @@ const App = () => {
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
 
-    console.log(finalRemapNitagCountry);
     /**
      * Converts camel case strings to readable format.
      *

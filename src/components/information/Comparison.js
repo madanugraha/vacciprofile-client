@@ -99,7 +99,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Others', alt: 'others', no: 14 },
         { title: 'Approval Date', alt: 'approvalDate', no: 15 },
         { title: 'Last Updated', alt: 'lastUpdated', no: 16 },
-        { title: 'Lincensing Auhtorities', alt: 'source', no: 17 },
+        { title: 'Lincensing Authorities', alt: 'source', no: 17 },
     ];
 
     const vaccineLabelDefinition = [
@@ -848,7 +848,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         if (vaccineChecked && !checked && lenLicenserData === 1) {
             f = secondaryVaccineFields.map((data) => {
                 return data.map((x) => {
-                    console.log('xxxx')
                     if (x.name === vacineName) {
                         return {
                             ...x,
