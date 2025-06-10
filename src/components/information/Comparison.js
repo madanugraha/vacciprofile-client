@@ -171,14 +171,13 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
     useEffect(() => {
         const getOrderNoByTitle = (title) => {
-
             const f = tableFields.filter((x) => x.title === title);
             if (f.length > 0) {
                 return f[0].no
             } else {
                 return 0
             }
-        }
+        };
         const sortedSelectedModalFilter = () => {
             let a = [];
             selectedModalFilter.map((x) => {
@@ -200,7 +199,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
         const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
         const result5 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.source))}`);
-
 
         const result2 = secondaryVaccineFields[0]?.map((y) => {
             return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[altName]))}`
