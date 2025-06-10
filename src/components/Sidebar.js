@@ -326,7 +326,7 @@ const Sidebar = ({
                                     {italizeScientificNames(item.name)}
                                 </div>
                             ))}
-                            {showLicensedPathogens && getAllSinglePathogenArray().map((item, i) => (
+                            {showLicensedPathogens && filteredLicenserSidebarList.map((item, i) => (
                                 <div
                                     key={i}
                                     className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Compare' && selectedCompare === item
@@ -401,7 +401,7 @@ const Sidebar = ({
                     )
                 }
 
-                {activeTab !== "Pathogen" && activeTab !== "Licensed Vaccines" && activeTab !== "Vaccine Candidates" && activeTab !== "Nitag" && filteredLicenserSidebarList.map((item, i) => (
+                {activeTab !== "Compare" && activeTab !== "Pathogen" && activeTab !== "Licensed Vaccines" && activeTab !== "Vaccine Candidates" && activeTab !== "Nitag" && filteredLicenserSidebarList.map((item, i) => (
                     <div
                         key={i}
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${activeTab === 'Manufacturer' && selectedManufacturer === item

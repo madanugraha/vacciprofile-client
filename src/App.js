@@ -21,6 +21,7 @@ import { finalRemapNitagCountry } from './assets/data/nitag-countries.js';
 import scientificNames from './assets/scientificNames';
 import { compareMenu } from './assets/data/compare-vaccine.js';
 import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from './utils/array.js';
+import { getAllSinglePathogenArray } from './utils/pathogens.js';
 
 /**
  * Main application component for the vaccine profile page.
@@ -609,7 +610,7 @@ const App = () => {
             } else if (activeTab === 'Licenser') {
                 setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
             } else if (activeTab === 'Compare') {
-                setSidebarList([]);
+                setSidebarList(filterListByStartingAlphabet(getAllSinglePathogenArray()).slice());
             } else if (activeTab === 'Nitag') {
                 setSidebarList(filterListByStartingAlphabet(finalRemapNitagCountry).slice());
             }
