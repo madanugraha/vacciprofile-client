@@ -22,9 +22,9 @@ const HomePage = () => {
                 </table>
             </div>
 
-            <div className='container-home text-center' style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'row' }}>
+            {/* <div className='container-home text-center' style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'row' }}> */}
                 <div class="container-home text-center" style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'column' }}>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
+                    {/* <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
                         <div class="image-container">
                             <img src="/images/VACCIE PROFILE OUTLINE-03.png" alt="Pathogens" />
                         </div>
@@ -32,13 +32,21 @@ const HomePage = () => {
                         <p>Essential characteristics, vaccines, and vaccine candidates
                         </p>
                         <button class="btn">View more</button>
-                    </div>
+                    </div> */}
                     <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
                         <div class="image-container">
                             <img src="/images/VACCIE PROFILE OUTLINE-04.png" alt="Vaccines" />
                         </div>
-                        <div class="title">Vaccines</div>
+                        <div class="title">licensed Vaccines</div>
                         <p>Compare brandnames, licenses. single and combination vaccines</p>
+                        <button class="btn">View more</button>
+                    </div>
+                    <div class="card" onClick={() => window.location.href = "/home?menu=vaccine-candidates"}>
+                        <div class="image-container">
+                            <img src="/images/VACCIE PROFILE OUTLINE-07.png" alt="Pipeline Vaccine" />
+                        </div>
+                        <div class="title">Vaccine Candidates</div>
+                        <p>Vaccine candidates from phase 1 to 4 by pathogen and manufacturer</p>
                         <button class="btn">View more</button>
                     </div>
                     <div class="card" onClick={() => window.location.href = "/home?menu=manufacturer"}>
@@ -57,14 +65,6 @@ const HomePage = () => {
                         <p>Essential information and licensed products</p>
                         <button class="btn">View more</button>
                     </div>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=vaccine-candidates"}>
-                        <div class="image-container">
-                            <img src="/images/VACCIE PROFILE OUTLINE-07.png" alt="Pipeline Vaccine" />
-                        </div>
-                        <div class="title">Vaccine Candidates</div>
-                        <p>Vaccine candidates from phase 1 to 4 by pathogen and manufacturer</p>
-                        <button class="btn">View more</button>
-                    </div>
                     <div class="card" onClick={() => window.location.href = "/home?menu=nitag"}>
                         <div class="image-container">
                             <img src="/images/VACCIE-PROFILE-OUTLINE-08.png" alt="Licensing Authorities" />
@@ -73,16 +73,24 @@ const HomePage = () => {
                         <span style={{ marginBottom: 8 }}>(NITAGs) Current recommendations and procedures</span>
                         <button class="btn">View more</button>
                     </div>
+                    <div class="card" onClick={() => window.location.href = "/home?menu=compare"}>
+                        <div class="image-container">
+                            <img src="/images/vacciprofile-compare.png" alt="Comparison" />
+                        </div>
+                        <div class="title">Comparison</div>
+                        <p>Vaccines data comparisons based on the Pathogens</p>
+                        <button class="btn">View more</button>
+                    </div>
                 </div>
-                <div class="card" onClick={() => window.location.href = "/home?menu=compare"}>
+                {/* <div class="card" onClick={() => window.location.href = "/home?menu=compare"}>
                     <div class="image-container">
                         <img src="/images/vacciprofile-compare.png" alt="Comparison" />
                     </div>
                     <div class="title">Comparison</div>
                     <p>Vaccines data comparisons</p>
                     <button class="btn">View more</button>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
 
             <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;', display: 'flex', flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ marginBottom: '10px' }}>
