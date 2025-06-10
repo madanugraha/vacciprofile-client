@@ -1293,7 +1293,7 @@
         "description": "A Chinese biotechnology company specializing in the development, manufacturing, and marketing of vaccines. It is known for its innovative vaccines, including the Hepatitis E vaccine and HPV vaccines.",
         "history": "Xiamen Innovax Biotech was established in March 2005 in Xiamen, China. It is a subsidiary of Beijing Wantai Biological Pharmacy Enterprise Co., Ltd. and is part of the Yangshengtang Co., Ltd. group. The company has made significant contributions to vaccine development, particularly with its Hepatitis E vaccine, Hecolin, which was launched in 2012.",
         "details": {
-            "website": "https://dcvmn.org/xiamen-innovax-biotech-co-ltd/",
+            "website": "https://www.innovax.cn/",
             "founded": "2005",
             "headquarters": "Xiamen, Fujian, China",
             "ceo": "Not specified",
@@ -1566,7 +1566,7 @@
         "description": "A Chinese biotechnology company specializing in the research, development, production, and sales of human vaccines, including influenza, meningococcal, and hepatitis B vaccines.",
         "history": "Hualan Biological Bacterin Inc. was founded in 2005 and is headquartered in Xinxiang City, Henan Province. It is a subsidiary of Hualan Biological Engineering Inc. and has become a significant player in China's vaccine manufacturing industry, achieving WHO prequalification for its influenza vaccines.",
         "details": {
-            "website": "https://www.emis.com/php/company-profile/CN/Hualan_Biological_Vaccine_Inc__%E5%8D%8E%E5%85%B0%E7%94%9F%E7%89%A9%E7%96%AB%E8%8B%97%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8__en_13347783.html",
+            "website": "http://hualanbacterin.com/eng/",
             "founded": "2005",
             "headquarters": "Xinxiang City, Henan Province, China",
             "ceo": "Not publicly specified",
@@ -1674,7 +1674,7 @@
         "description": "A Korea-based company that specializes in the manufacture and distribution of pharmaceutical products, including prostatitis agents, anti-inflammatory drugs, diabetic agents, gastritis agents, nourishing tonics, and health supplements.",
         "history": "IL-YANG PHARMACEUTICAL was established in 1946 and has been a key player in the growth of the Korean pharmaceutical industry. It has expanded its operations globally, exporting products to over 30 countries, including the US and Europe. The company is known for its innovative products such as Ilaprazole, a next-generation anti-ulcer drug, and its involvement in vaccine development.",
         "details": {
-            "website": "https://www.marketscreener.com/quote/stock/ILYANG-PHARMACEUTICAL-CO--20699440/company/",
+            "website": "https://www.ilyang.co.kr/?language=en",
             "founded": "1946",
             "headquarters": "Seoul, South Korea",
             "ceo": "Kim Dong-yeon",
@@ -1720,7 +1720,7 @@
         "description": "MedImmune was the global biologics research and development arm of AstraZeneca, focusing on innovative biologic prescription medicines across various therapeutic areas including Oncology, Respiratory, Cardiovascular & Metabolic Diseases, and Infection and Vaccines.",
         "history": "MedImmune was founded in 1988 as Molecular Vaccines, Inc. It was acquired by AstraZeneca in 2007 for approximately $15.2 billion. The company was known for its contributions to vaccine development, including FluMist and Synagis. In February 2019, the MedImmune name and branding were discontinued in favor of AstraZeneca.",
         "details": {
-            "website": "https://www.americanpharmaceuticalreview.com/105310-MedImmune-LLC/",
+            "website": "http://www.medimmune.com/home",
             "founded": "1988",
             "headquarters": "Gaithersburg, Maryland, USA",
             "ceo": "Bahija Jallal (as President of MedImmune before its rebranding)",
@@ -1974,7 +1974,7 @@
         "description": "A joint venture between the Government Pharmaceutical Organization (GPO) and Sanofi Pasteur, specializing in vaccine production, particularly for children's vaccines in Thailand.",
         "history": "GPO-MBP was established as a collaboration between GPO and Sanofi Pasteur to meet local vaccine needs. The company has been involved in discussions with other vaccine manufacturers like Sinovac and has provided fill-finish capacity for COVID-19 vaccines.",
         "details": {
-            "website": "https://www.rmkcorp.com/projects/gpo-mbp/",
+            "website": "http://www.spbniivs.ru/",
             "founded": "1997",
             "headquarters": "Thailand",
             "ceo": "Boonrak Thawornrungroaj (Director of Industrial Affairs, not CEO)",
@@ -4045,5 +4045,135 @@
             "Influenza vaccines"
         ],
         "lastUpdated": "2025-Mar"
-    }
+    },
+    {
+        "manufacturerId": 127,
+        "name": "Dynavax",
+        "description": "Dynavax Technologies, headquartered in Emeryville, California, is a commercial-stage biopharmaceutical company focused on developing and commercializing novel vaccines and adjuvant technologies to combat infectious diseases.",
+        "history": "Founded as Double Helix Corporation in 1996 and renamed Dynavax in 1996, the company has pioneered the development of CpG 1018® adjuvant and launched HEPLISAV‑B®, a two‑dose hepatitis B vaccine approved in the US and EU. It scaled its adjuvant production during the COVID‑19 pandemic and expanded collaborations globally.",
+        "details": {
+            "website": "https://www.dynavax.com/",
+            "founded": "1996",
+            "headquarters": "Emeryville, California, USA",
+            "ceo": "Ryan Spencer",
+            "revenue": "$277.2 million (2024)",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A (significant improvement in 2024 per financial reports)",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "≈405 (2024)",
+            "ticker": "DVAX (NASDAQ)",
+            "sources": [
+                {
+                    "sourceName": "Dynavax Technologies official site",
+                    "url": "https://www.dynavax.com/"
+                },
+                {
+                    "sourceName": "GlobalData – Dynavax Technologies profile",
+                    "url": "https://www.globaldata.com"
+                },
+                {
+                    "sourceName": "Investing.com – Dynavax company profile",
+                    "url": "https://www.investing.com"
+                },
+                {
+                    "sourceName": "Yahoo Finance – Dynavax Technologies profile",
+                    "url": "https://finance.yahoo.com"
+                }
+            ]
+        },
+        "vaccines": [
+            "HEPLISAV‑B® (adjuvanted hepatitis B vaccine)",
+            "CpG 1018® adjuvant used in COVID‑19 and other vaccine candidates",
+            "Adjuvant programs: shingles, Tdap, influenza, plague",
+            "Collaborations on protein subunit COVID‑19 vaccines (e.g., SCB‑2019, MVC‑COV1901, Corbevax)"
+        ],
+        "lastUpdated": "2025‑06"
+    },
+    {
+        "manufacturerId": 128,
+        "name": "CIGB",
+        "description": "CIGB is a Cuban state-owned biotech institute in Havana, part of BioCubaFarma, specializing in the development and production of biopharmaceuticals, vaccines, and agricultural biotech solutions for public health and export markets.",
+        "history": "Founded in 1986 under Fidel Castro’s initiative, CIGB pioneered Cuba’s biotech industry, evolving from early genetic engineering projects to developing globally recognized vaccines and therapies. It has since grown into a major institution driving national and international health innovations.",
+        "details": {
+            "website": "https://www.cigb.edu.cu",
+            "founded": "1986-07-01",
+            "headquarters": "Havana, Cuba",
+            "ceo": "N/A (state‑run under BioCubaFarma)",
+            "revenue": "N/A",
+            "operatingIncome": "N/A",
+            "netIncome": "N/A",
+            "totalAssets": "N/A",
+            "totalEquity": "N/A",
+            "numberOfEmployees": "≈1,600 (circa 2017)",
+            "sources": [
+                {
+                    "sourceName": "Wikipedia – CIGB overview",
+                    "url": "https://en.wikipedia.org/wiki/Center_for_Genetic_Engineering_and_Biotechnology"
+                },
+                {
+                    "sourceName": "Nature Biotechnology – CIGB biotech update",
+                    "url": "https://www.nature.com/articles/s41587-024-02458-y"
+                },
+                {
+                    "sourceName": "Cuba Sí – CIGB agricultural & vaccine projects",
+                    "url": "https://cubasi.cu/en/news/central-cuba-develops-new-health-related-biotechnology-projects"
+                }
+            ]
+        },
+        "vaccines": [
+            "Abdala (CIGB‑66): COVID‑19 protein subunit vaccine (Phase III, ~92% efficacy)",
+            "Mambisa (CIGB‑669): intranasal COVID‑19 vaccine (Phase I/II)",
+            "HeberNasvac: therapeutic hepatitis B vaccine (nasal + subcutaneous)",
+            "Gavac: veterinary vaccine against cattle ticks (exported regionally)",
+            "Porvac: veterinary vaccine against classical swine fever",
+            "CIGB‑2020 Immunopotentiator: experimental innate immunity–boosting nasal/sublingual agent",
+            "E2CD154: classical swine fever subunit vaccine",
+            "Heberprot‑P: diabetic foot ulcer treatment",
+            "Various dengue vaccine candidates (multi‑serotype)",
+            "Plans for agricultural biotech: transgenic seeds, enzymes"
+        ],
+        "lastUpdated": "2025‑06"
+    },
+    {
+  "manufacturerId": 129,
+  "name": "Chumakov Federal Scientific Center",
+  "description": "Chumakov Federal Scientific Center is a leading Russian research and production institute under the Russian Academy of Sciences, specializing in the development and large‑scale manufacturing of vaccines and immunobiological products, including COVID‑19 vaccines.",
+  "history": "Originating in 1957 as the Institute of Poliomyelitis and Viral Encephalitides founded by M.P. Chumakov, the center evolved into a major vaccine producer. Renamed after Chumakov in 1993 and reorganized under the Russian Academy of Sciences in 2016, it has been pivotal in vaccine innovation—from polio to inactivated COVID‑19 vaccines.",
+  "details": {
+    "website": "N/A",
+    "founded": "1957",
+    "headquarters": "Moscow, Russian Federation",
+    "ceo": "Aydar Ishmukhametov",
+    "revenue": "N/A",
+    "operatingIncome": "N/A",
+    "netIncome": "N/A",
+    "totalAssets": "N/A",
+    "totalEquity": "N/A",
+    "numberOfEmployees": "N/A",
+    "sources": [
+      {
+        "sourceName": "Wikipedia – CoviVac vaccine",
+        "url": "https://en.wikipedia.org/wiki/CoviVac_(Russia_COVID-19_vaccine)"
+      },
+      {
+        "sourceName": "PMC – Chumakov technology and vaccines",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9447946/"
+      },
+      {
+        "sourceName": "TASS – Chumakov production capacity expansion",
+        "url": "https://tass.com/society/1341385"
+      }
+    ]
+  },
+  "vaccines": [
+    "CoviVac: inactivated whole‑virion COVID‑19 vaccine (approved February 2021)",
+    "CoviVac Delta/Combi: updated variant-inclusive COVID‑19 vaccines in development",
+    "HFRS‑Vac: inactivated vaccine for hemorrhagic fever with renal syndrome (preclinical)",
+    "Poliovirus vaccines: including virus-like particle candidates using plant expression systems",
+    "Yellow fever vaccine (historical production capabilities)",
+    "Other viral vaccines: inactivated polio, TBE, measles, influenza, and canine distemper"
+  ],
+  "lastUpdated": "2025‑06"
+}
 ]

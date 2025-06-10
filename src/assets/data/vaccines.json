@@ -2485,7 +2485,7 @@
                 "durationOfProtection": "No data available in the label.",
                 "coAdministration": "No data available in the label.",
                 "reactogenicity": "Injection site pain, swelling, tenderness, and redness, fever, irritability, screaming, myalgia.",
-                "safety": " HHE, febrile convulsion, and a small increased risk of acute encephalopathy (primarily seizures) with no scientific evidence of permanent consequences were reported.",
+                "safety": "HHE, febrile convulsion, and a small increased risk of acute encephalopathy (primarily seizures) with no scientific evidence of permanent consequences were reported.",
                 "vaccinationGoal": "Individual protection.",
                 "others": "The vaccine will not harm individuals currently or previously infected with the hepatitis B virus; history of convulsion in children or a family history of convulsion, SIDS, adverse event following DTwP-rHepB-Hib vaccination, or HIV infection are not contraindications."
             }
@@ -3905,7 +3905,7 @@
         ],
         "manufacturers": [
             {
-                "manufacturerId": 30
+                "manufacturerId": 128
             }
         ],
         "productProfiles": [
@@ -4206,7 +4206,7 @@
         ],
         "manufacturers": [
             {
-                "manufacturerId": 64
+                "manufacturerId": 127
             }
         ],
         "productProfiles": [
@@ -4542,7 +4542,7 @@
         ],
         "manufacturers": [
             {
-                "manufacturerId": 30
+                "manufacturerId": 128
             }
         ],
         "productProfiles": [
@@ -13779,7 +13779,7 @@
         ],
         "manufacturers": [
             {
-                "manufacturerId": 62
+                "manufacturerId": 129
             }
         ],
         "productProfiles": [
@@ -14868,95 +14868,6 @@
                 "type": "N/A",
                 "approvalDate": "15/10/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxigriptetra",
-                "lastUpdated": ""
-            }
-        ]
-    },
-    {
-        "vaccineId": 255,
-        "name": "Yellow Fever Vaccine N/A",
-        "pathogenId": [
-            15
-        ],
-        "manufacturers": [
-            {
-                "manufacturerId": 62
-            }
-        ],
-        "productProfiles": [
-            {
-                "type": "EMA",
-                "name": "EMA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
-            },
-            {
-                "type": "FDA",
-                "name": "FDA-Product Profile: Vaxigrip Tetra® (MAH: Sanofi)",
-                "composition": "- not licensed yet -",
-                "strainCoverage": "- not licensed yet -",
-                "indication": "- not licensed yet -",
-                "contraindication": "- not licensed yet -",
-                "dosing": "- not licensed yet -",
-                "immunogenicity": "- not licensed yet -",
-                "Efficacy": "- not licensed yet -",
-                "durationOfProtection": "- not licensed yet -",
-                "coAdministration": "- not licensed yet -",
-                "reactogenicity": "- not licensed yet -",
-                "safety": "- not licensed yet -",
-                "vaccinationGoal": "- not licensed yet -",
-                "others": "- not licensed yet -"
-            },
-            {
-                "type": "WHO",
-                "name": "WHO-Product Profile: Vaxigrip® (MAH: Sanofi)",
-                "composition": "1 dose (0.5 ml) contains ≥1600 PFU of yellow fever virus (17D strain); cultivated in chicken embryonated eggs free from pathogenic agents; storage: 2-8°C (protected from sunlight); shelf life: 2 years.",
-                "strainCoverage": "Yellow fever virus.",
-                "indication": "Active immunization to prevent yellow fever in individuals ≥9 mo. and adults visiting regions enzootic for yellow fever or persons dealing with the live causative agent of the disease; to be used based on official recommendations.",
-                "contraindication": "Hypersensitivity; history of hypersensitivity to egg or egg products; individuals <6 mo.; infants 6-9 mo. unless during YF epidemics; primary immune deficiency; symptomatic HIV-infected individuals; secondary immune deficiency (avoid vaccination for at least 12 mo. after the patient’s recovery or finishing the treatment); acute infectious and non-infectious diseases or flare-up of chronic diseases (avoid vaccination for at least 1 mo. after remission); pregnancy.",
-                "dosing": "Single dose (0.5 mL); I.M (preferred) or S.C.",
-                "immunogenicity": "No data in the label.",
-                "Efficacy": "No data in the label.",
-                "durationOfProtection": " Protection starts 10 days following the vaccination and will continue for the whole life of the vaccinee.",
-                "coAdministration": "Can be co-administered with measles, DT, Td, TT, BCG, OPV, IPV, HBV, and Hib vaccines and vitamin A supplementation; in individuals <15 yrs. It is recommended that the interval be no less than 2 mo. between the YF and other vaccines if possible but for individuals >15 yrs. co-administration is possible with the possibility of a reduction in immune response; avoid co-administration with cholera and/or paratyphoid type A and B vaccines (3 mo. apart).",
-                "reactogenicity": "Indisposition; giddiness; headache; chilly sensation; fever; injection site hyperemia, edema, induration of cellular tissue, and itchiness; enlargement of lymph nodes.",
-                "safety": "No safety signals to date.",
-                "vaccinationGoal": "Individual protection; outbreak control.",
-                "others": "Vaccination should be performed at least 10 days before departure to the endemic region; asymptomatic HIV-infected individuals can receive vaccine."
-            }
-        ],
-        "vaccineType": "single",
-        "licensingDates": [
-            {
-                "name": "WHO",
-                "type": "N/A",
-                "approvalDate": "26/03/2009",
-                "source": "https://extranet.who.int/prequal/vaccines/p/na",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "N/A",
-                "approvalDate": "26/03/2009",
-                "source": "https://extranet.who.int/prequal/vaccines/p/na-0",
-                "lastUpdated": ""
-            },
-            {
-                "name": "WHO",
-                "type": "N/A",
-                "approvalDate": "26/03/2009",
-                "source": "https://extranet.who.int/prequal/vaccines/p/na-1",
                 "lastUpdated": ""
             }
         ]

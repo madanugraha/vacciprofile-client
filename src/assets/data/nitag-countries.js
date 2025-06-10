@@ -267,13 +267,13 @@ Fiji
 Finland
 Committee: Kansallinen rokotusasiantuntijaryhmä (National Advisory Committee on Vaccination) - KRAR
 Year established: 2001
-Website: https://www.thl.fi/fi/web/rokottaminen/kansallinen-rokotusohjelma/kansallinen-rokotusasiantuntijaryhma
+Website: https://thl.fi/en/topics/infectious-diseases-and-vaccinations/information-about-vaccinations/finnish-national-vaccination-programme
 `,
     `
 France
 Committee: Commission Technique des Vaccinations (Technical Committee on Vaccination) - CTV
 Year established: 1985
-Website: https://www.has-sante.fr/portail/jcms/c_2755844/en/commission-technique-des-vaccinations
+Website: https://www.has-sante.fr/jcms/c_2755844/fr/commission-technique-des-vaccinations
 `,
     `
 Gambia
@@ -287,7 +287,7 @@ Year established: 2014
 Germany
 Committee: Ständige Impfkommission (German Standing Vaccination Committee) - STIKO
 Year established: 1972
-Website: http://www.rki.de/DE/Content/Kommissionen/STIKO/Empfehlungen/Begruendung/begruendung_node.html
+Website: https://www.rki.de/EN/Topics/Infectious-diseases/Immunisation/STIKO/standing-committee-on-vaccination-stiko-node.html
 `,
     `
 Ghana
@@ -343,7 +343,7 @@ India
 Committee: National Technical Advisory Group on Immunisation in India - NTAGI
 Year established: 2001
 Year evaluated: 2020
-Website: http://www.mohfw.nic.in/index1.php?lang=1&level=3&sublinkid=2654&lid=2064
+Website: https://nihfw.ac.in/cms/national-technical-advisory-group-on-immunization-ntagi.php
 `,
     `
 Indonesia
@@ -546,7 +546,7 @@ Year evaluated: 2020
 Netherlands
 Committee: Committe on Vaccinations
 Year established: 1902
-Website: https://www.healthcouncil.nl/about-us/the-council/permanent-committees/committee-on-vaccinations
+Website: https://www.healthcouncil.nl/about-us/organisation/permanent-committees/committee-on-vaccinations
 `,
     `
 New Zealand
@@ -571,7 +571,6 @@ Year established: 2015
 North Korea
 Committee: Korea Expert Committee on Immunization Practices - KECIP
 Year established: 1990
-Website: https://nip.cdc.go.kr/irgd/index.html
 `,
     `
 Norway
@@ -581,7 +580,6 @@ Oman
 Committee: National Committee for Vaccines Regulation and Surveillance of Vaccine-Preventable Diseases in the Sultanate of Oman
 Year established: 2000
 Year evaluated: 2023
-Website: https://www.moh.gov.om/ar
 `,
     `
 Pakistan
@@ -710,7 +708,7 @@ Year evaluated: 2024
 South Korea
 Committee: Korea Expert Committee on Immunization Practices
 Year established: 1992
-Website: https://nip.kdca.go.kr/irhp/infm/goVcntInfo.do?menuLv=1&menuCd=141
+Website: https://nip.cdc.go.kr/irgd/index.html
 `,
     `
 South Sudan
@@ -727,12 +725,8 @@ Website: https://www.mscbs.gob.es/profesionales/saludPublica/prevPromocion/vacun
 Sri Lanka
 Committee: Advisory Committee on Communicable Diseases - ACCD
 Year evaluated: 2020
-`,
-    `
-St. Vincent and the Grenadines
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018
-`,
+`
+,
     `
 State of Libya
 Year established: 2022
@@ -847,7 +841,7 @@ Website: https://www.gov.uk/government/groups/joint-committee-on-vaccination-and
 United States
 Committee: Advisory Committee on Immunization Practices - ACIP
 Year established: 1964
-Website: http://www.cdc.gov/vaccines/acip/index.html
+Website: https://www.cdc.gov/acip/?CDC_AAref_Val=https://www.cdc.gov/vaccines/acip/index.html
 `,
     `
 

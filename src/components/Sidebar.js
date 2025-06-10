@@ -199,6 +199,7 @@ const Sidebar = ({
 
     const [currentIdxCandidatePathogen, setCurrentIdxCandidatePathogen] = useState(0);
 
+    // console.log(filteredLicenserSidebarList);
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
             <div id="sidebar" className='sidebar-items overflow-auto'>
@@ -210,6 +211,7 @@ const Sidebar = ({
 
                                     handleClickSidebar(item);
                                     const ctx = item[0];
+
                                     function handleClickCountryMatchURL(country, url) {
                                         if (country) {
                                             country = country.toLowerCase();

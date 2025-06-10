@@ -341,14 +341,41 @@ const App = () => {
      */
 
     const filterListByStartingAlphabet = useCallback((list) => {
-        const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
-        const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
-            ? list.filter(item => {
-                const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
-                return startsWithAlphabet;
-            })
-            : list;
-        return filteredList;
+
+        if (activeTab !== "Nitag") {
+            const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
+            const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
+                ? list.filter(item => {
+                    const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    return startsWithAlphabet;
+                })
+                : list;
+            return filteredList;
+        }
+
+        if (activeTab === "Nitag") {
+            // const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
+            const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
+                ? list.filter(item => {
+                    const startsWithAlphabet = item[0].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    return startsWithAlphabet;
+                })
+                : list;
+
+            return filteredList;
+        }
+
+         if (activeTab === "Compare") {
+            // const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
+            const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
+                ? list.filter(item => {
+                    const startsWithAlphabet = item[0].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    return startsWithAlphabet;
+                })
+                : list;
+
+            return filteredList;
+        }
     }, [activeFilters.firstAlphabet, activeTab]);
 
     /**
@@ -584,12 +611,12 @@ const App = () => {
             } else if (activeTab === 'Compare') {
                 setSidebarList([]);
             } else if (activeTab === 'Nitag') {
-                setSidebarList(filterListByStartingAlphabet(finalRemapNitagCountry).slice()
-                    .sort((a, b) => a[0].localeCompare(b[0])));
+                setSidebarList(filterListByStartingAlphabet(finalRemapNitagCountry).slice());
             }
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
 
+    console.log(finalRemapNitagCountry);
     /**
      * Converts camel case strings to readable format.
      *
