@@ -181,14 +181,14 @@ code {
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .max-h-table-comparison {
-    max-height: 49vh;
+    max-height: 44vh;
   }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .max-h-table-comparison {
-    max-height: 55vh;
+    max-height: 49vh;
   }
 }
 

@@ -524,18 +524,30 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         } else {
             setSelectedModalFilter([...selectedModalFilter, value]);
         }
-        // setSelectedModalFilter(
-        //     // On autofill we get a stringified value.
-        //     typeof value === 'string' ? value.split(',') : value,
-        // );
-        // console.log('xxasdasdasd  >> ', value);
-        // if (!value.includes("Type")) {
-        //     return
+    };
+
+
+    const [checksAllFilterItems, setChecksAllFilterItems] = useState(true);
+
+    const handleCheckAllSelectedModalFilter = (event) => {
+        const {
+            target: { checked },
+        } = event;
+
+        if (checked) {
+            setSelectedModalFilter(tableFields.map((x) => x.title))
+        } else {
+            setSelectedModalFilter([tableFields.filter((x) => x.no === 1)[0].title]);
+        }
+
+        setChecksAllFilterItems(checked);
+        // const c = selectedModalFilter.some((x) => x.includes(value));
+
+        // if (c) {
+        //     const f = selectedModalFilter.filter((x) => x !== value);
+        //     setSelectedModalFilter(f);
         // } else {
-        //     setSelectedModalFilter(
-        //         // On autofill we get a stringified value.
-        //         typeof value === 'string' ? value.split(',') : value,
-        //     );
+        //     setSelectedModalFilter([...selectedModalFilter, value]);
         // }
     };
 
@@ -1302,7 +1314,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                         <div style={{ position: 'absolute', right: -35, top: -20, width: 75 }}>
                             <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: '#c1121f', color: 'white', fontSize: 'bold', textAlign: 'center' }}>X</button>
                         </div>
-                        <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
+                        <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 0, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
                                 <div style={{ marginTop: 0 }}>
                                     <div className='d-flex border border-secondary rounded' style={{ alignItems: 'center', marginBottom: 5, marginTop: 10 }}>
@@ -1310,7 +1322,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                             {
                                                 tableFields.filter((x, i) => i > 0 && i <= 4).map((x) => {
                                                     return (
-                                                        <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                        <div style={{ height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                                             <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
 
                                                             <HtmlTooltip
@@ -1335,7 +1347,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                             {
                                                 tableFields.filter((x, i) => i > 4 && i <= 8).map((x) => {
                                                     return (
-                                                        <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                        <div style={{ height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                                             <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
                                                             <HtmlTooltip
                                                                 title={
@@ -1359,7 +1371,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                             {
                                                 tableFields.filter((x, i) => i > 8 && i <= 12).map((x) => {
                                                     return (
-                                                        <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                        <div style={{ height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                                             <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
                                                             <HtmlTooltip
                                                                 title={
@@ -1383,7 +1395,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                             {
                                                 tableFields.filter((x, i) => i > 12 && i <= 16).map((x) => {
                                                     return (
-                                                        <div style={{ marginBottom: 5, height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                        <div style={{ height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                                             <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
                                                             <HtmlTooltip
                                                                 title={
@@ -1404,6 +1416,26 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                             }
                                         </div>
                                     </div>
+                                </div>
+                                <div style={{ marginBottom: 5, display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                    <Checkbox onChange={(e) => {
+                                        // console.log(e.target.checked)
+                                        // setChecksAllFilterItems(e.target.checked);
+                                        handleCheckAllSelectedModalFilter(e);
+                                    }} value={""} checked={checksAllFilterItems} />
+                                    <HtmlTooltip
+                                        title={
+                                            <>
+                                                <Typography color="inherit">Select/Deselect all items to filter above</Typography>
+                                                {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                            </>
+                                        }
+                                    >
+                                        <div>
+                                            <ListItemText primary={"Select / Deselect all items"} />
+                                            {/* <span className='selectable'>{"WHO"}</span> */}
+                                        </div>
+                                    </HtmlTooltip>
                                 </div>
                             </div>
                             {/* <div>
@@ -1524,7 +1556,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                         </div>
                     </div>
                 </Box>
-            </Modal>
+            </Modal >
         </>
     ) : (
         <>
