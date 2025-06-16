@@ -939,7 +939,7 @@
                 "type": "N/A",
                 "approvalDate": "29/09/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/shanchol",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -1014,14 +1014,14 @@
                 "type": "N/A",
                 "approvalDate": "06/06/2024",
                 "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/qdenga",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "09/05/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/qdengar",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -1338,7 +1338,7 @@
                 "type": "N/A",
                 "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/adsorbed-dt-vaccine",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -1414,14 +1414,14 @@
                 "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diftet",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diftet-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -1497,21 +1497,21 @@
                 "type": "N/A",
                 "approvalDate": "17/09/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-be",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "17/09/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-8",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "17/09/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-11",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -1586,21 +1586,21 @@
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-paediatric",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-pediatric",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-pediatric-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -1675,21 +1675,21 @@
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-adults-and-adolescents",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-adults-and-adolescents-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/diphtheria-and-tetanus-vaccine-adsorbed-adults-and-adolescents-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -1841,14 +1841,14 @@
                 "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetadif",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetadif-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -2008,7 +2008,7 @@
                 "type": "N/A",
                 "approvalDate": "08/05/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/adacel",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -2169,7 +2169,7 @@
                 "type": "N/A",
                 "approvalDate": "09/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/boostrix",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -2246,7 +2246,7 @@
                 "type": "N/A",
                 "approvalDate": "06/04/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/dtp-vaccine",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -2325,14 +2325,14 @@
                 "type": "N/A",
                 "approvalDate": "02/10/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/easyfive-tt-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "02/10/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/easyfive-tt",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -2411,14 +2411,14 @@
                 "type": "N/A",
                 "approvalDate": "10/02/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/eupenta",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "10/02/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/eupenta-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -2497,14 +2497,14 @@
                 "type": "N/A",
                 "approvalDate": "01/09/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "01/09/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-10",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -2583,14 +2583,14 @@
                 "type": "N/A",
                 "approvalDate": "19/12/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pentabio",
-                "lastUpdated": ""
+                "lastUpdated": "N?A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "19/12/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pentabio-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -2992,14 +2992,14 @@
                 "type": "N/A",
                 "approvalDate": "21/03/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/hexasiil",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "21/03/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/hexasiil-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -3743,7 +3743,7 @@
                 "type": "N/A",
                 "approvalDate": "02/08/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/walrinvaxr",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -3968,7 +3968,7 @@
                 "type": "N/A",
                 "approvalDate": "26/04/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/quimi-hib",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -4448,14 +4448,14 @@
                 "type": "N/A",
                 "approvalDate": "22/11/1996, 21/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvax-b-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "22/11/1996, 21/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/euvax-b-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -6675,7 +6675,7 @@
                 "type": "N/A",
                 "approvalDate": "22/01/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/panenza",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -6751,7 +6751,7 @@
                 "type": "N/A",
                 "approvalDate": "01/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/panvax",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -6827,14 +6827,14 @@
                 "type": "N/A",
                 "approvalDate": "27/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-inj",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "27/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflu-quadrivalent-multi-inj",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -6910,7 +6910,7 @@
                 "type": "N/A",
                 "approvalDate": "30/06/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxigrip",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7084,7 +7084,7 @@
                 "type": "N/A",
                 "approvalDate": "25/05/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/serinflu",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ],
         "productProfiles": [
@@ -7452,7 +7452,7 @@
                 "type": "N/A",
                 "approvalDate": "15/07/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/mosquirix",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7714,14 +7714,14 @@
                 "type": "N/A",
                 "approvalDate": "09/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/priorix",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "09/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/priorix-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -7978,23 +7978,23 @@
             {
                 "name": "WHO",
                 "type": "N/A",
-                "approvalDate": "",
+                "approvalDate": "24/09/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-freeze-dried",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
-                "approvalDate": "",
+                "approvalDate": "24/09/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-freeze-dried-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
-                "approvalDate": "",
+                "approvalDate": "24/09/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-freeze-dried-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -8068,30 +8068,30 @@
             {
                 "name": "WHO",
                 "type": "N/A",
-                "approvalDate": "",
+                "approvalDate": "18/07/2000",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
-                "approvalDate": "",
+                "approvalDate": "18/07/2000",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
-                "approvalDate": "",
+                "approvalDate": "18/07/2000",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
-                "approvalDate": "",
+                "approvalDate": "18/07/2000",
                 "source": "https://extranet.who.int/prequal/vaccines/p/measles-and-rubella-vaccine-live-attenuated-2",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -8173,7 +8173,7 @@
                 "type": "N/A",
                 "approvalDate": "21/03/2014",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menactra",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -8262,7 +8262,7 @@
                 "type": "N/A",
                 "approvalDate": "31/07/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/menveo",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -8433,7 +8433,7 @@
                 "type": "N/A",
                 "approvalDate": "31/08/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/nimenrix",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -8830,21 +8830,21 @@
                 "type": "N/A",
                 "approvalDate": "16/10/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/synflorix-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "16/10/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/synflorix-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "16/10/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/synflorix-2",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9138,21 +9138,21 @@
                 "type": "N/A",
                 "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "18/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/pneumosilr-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9452,7 +9452,7 @@
                 "type": "N/A",
                 "approvalDate": "21/04/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/picovax",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9527,21 +9527,21 @@
                 "type": "N/A",
                 "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "28/10/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-inactivated-2",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -9937,14 +9937,14 @@
                 "type": "N/A",
                 "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-t1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-t1-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10019,14 +10019,14 @@
                 "type": "N/A",
                 "approvalDate": "05/10/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-three-oral",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "05/10/2010",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-three-oral-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10176,14 +10176,14 @@
                 "type": "N/A",
                 "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-one-and-three",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "29/10/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-one-and-three-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10258,14 +10258,14 @@
                 "type": "N/A",
                 "approvalDate": "04/02/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-oral-bivalent-types-1-and-3",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "04/02/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-oral-bivalent-types-1-and-3-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10340,7 +10340,7 @@
                 "type": "N/A",
                 "approvalDate": "03/11/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-oral-poliomyelitis-vaccine-type-1-mopv1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10415,7 +10415,7 @@
                 "type": "N/A",
                 "approvalDate": "21/06/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-oral-poliomyelitis-vaccine-type-2",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10490,7 +10490,7 @@
                 "type": "N/A",
                 "approvalDate": "03/11/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/monovalent-type-1-oral-poliomyelitis-vaccine-ip-mopv1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10565,7 +10565,7 @@
                 "type": "N/A",
                 "approvalDate": "14/01/2016",
                 "source": "https://extranet.who.int/prequal/vaccines/p/oral-monovalent-type-2-poliomyelitis-vaccine-mopv2",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10640,14 +10640,14 @@
                 "type": "N/A",
                 "approvalDate": "11/05/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-two-oral-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "11/05/2011",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polio-sabin-mono-two-oral",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10722,7 +10722,7 @@
                 "type": "N/A",
                 "approvalDate": "21/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-live-oral-attenuated-human-diploid-cell-type-1-and-3",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10879,7 +10879,7 @@
                 "type": "N/A",
                 "approvalDate": "31/08/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/oral-poliomyelitis-vaccines-oral-drops",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -10954,7 +10954,7 @@
                 "type": "N/A",
                 "approvalDate": "02/02/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/polioviral-vaccine",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -11425,7 +11425,7 @@
                 "type": "N/A",
                 "approvalDate": "22/06/2005",
                 "source": "https://extranet.who.int/prequal/vaccines/p/verorab",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -11500,7 +11500,7 @@
                 "type": "N/A",
                 "approvalDate": "06/02/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxirab-n",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -11589,21 +11589,21 @@
                 "type": "N/A",
                 "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "12/03/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotarix-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -11692,7 +11692,7 @@
                 "type": "N/A",
                 "approvalDate": "07/10/2008",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotateq",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -11767,21 +11767,21 @@
                 "type": "N/A",
                 "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "13/09/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-liquid",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -11856,14 +11856,14 @@
                 "type": "N/A",
                 "approvalDate": "21/09/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "21/09/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiil-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -11938,14 +11938,14 @@
                 "type": "N/A",
                 "approvalDate": "18/06/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-5dr",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "18/06/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-5dr-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12020,14 +12020,14 @@
                 "type": "N/A",
                 "approvalDate": "05/01/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "05/01/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotavac-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12102,14 +12102,14 @@
                 "type": "N/A",
                 "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetavax",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "22/07/1997",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetavax-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12184,21 +12184,21 @@
                 "type": "N/A",
                 "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "11/03/1999",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tt-vaccine-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12273,21 +12273,21 @@
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "04/04/1995",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetanus-toxoid-vaccine-adsorbed-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12362,14 +12362,14 @@
                 "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetatox",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "09/05/2006",
                 "source": "https://extranet.who.int/prequal/vaccines/p/tetatox-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -12862,7 +12862,7 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: Vivotif® (MAH: Berna Biotech)",
-                "composition": "One enteric-coated capsule contains 2-10x109 CFU viable S. Typhi (Ty21a strain) and 5-50x109 bacterial cells of non-viable S. Typhi (Ty21a strain); grown in yeast extract; storage: 2-8°C, shelf life: unknown.",
+                "composition": "One enteric-coated capsule contains 2-10x10⁹ CFU viable S. Typhi (Ty21a strain) and 5-50x10⁹ bacterial cells of non-viable S. Typhi (Ty21a strain); grown in yeast extract; storage: 2-8°C, shelf life: unknown.",
                 "strainCoverage": "Salmonella Typhi; no protection against non-S. Typhi species of Salmonella or other bacteria that cause enteric disease; should not be used to treat patients with typhoid fever.",
                 "indication": "Active immunization to prevent typhoid fever caused by S. Typhi in individuals >6 yrs. under special circumstances*; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; acute febrile illness; acute gastrointestinal illness; individuals receiving sulfonamides and antibiotics; persistent diarrhea or vomiting; pregnancy (should be given to a pregnant woman only if clearly needed; category C); no data in breastfeeding.",
@@ -12976,14 +12976,14 @@
                 "type": "N/A",
                 "approvalDate": "04/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typhibevr",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "04/12/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typhibevr-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13133,7 +13133,7 @@
                 "type": "N/A",
                 "approvalDate": "21/02/2024",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skytyphoid-multi-inj",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13208,14 +13208,14 @@
                 "type": "N/A",
                 "approvalDate": "22/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typbar-tcv",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "22/12/2017",
                 "source": "https://extranet.who.int/prequal/vaccines/p/typbar-tcv-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13450,7 +13450,7 @@
                 "type": "N/A",
                 "approvalDate": "09/12/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skyvaricella-inj",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13526,7 +13526,7 @@
                 "type": "N/A",
                 "approvalDate": "03/11/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/varicella-vaccine-live",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13609,7 +13609,7 @@
                 "type": "N/A",
                 "approvalDate": "09/02/2018",
                 "source": "https://extranet.who.int/prequal/vaccines/p/varivax",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13767,7 +13767,7 @@
                 "type": "N/A",
                 "approvalDate": "01/01/1987",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stamaril",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13842,7 +13842,7 @@
                 "type": "N/A",
                 "approvalDate": "14/10/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/sinsavactm",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -13992,7 +13992,7 @@
                 "type": "N/A",
                 "approvalDate": "20/03/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/stabilized-yellow-fever-vaccine",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -14070,21 +14070,21 @@
                 "type": "N/A",
                 "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "17/10/2001",
                 "source": "https://extranet.who.int/prequal/vaccines/p/yellow-fever-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -14785,14 +14785,14 @@
                 "type": "N/A",
                 "approvalDate": "28/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "28/01/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rotasiilrthermo-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -14868,7 +14868,7 @@
                 "type": "N/A",
                 "approvalDate": "15/10/2020",
                 "source": "https://extranet.who.int/prequal/vaccines/p/vaxigriptetra",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -14943,21 +14943,21 @@
                 "type": "N/A",
                 "approvalDate": "21/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "21/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-2",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "21/12/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-3",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -15847,28 +15847,28 @@
                 "type": "N/A",
                 "approvalDate": "18/05/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-4",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "18/05/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-10",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "18/05/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-9",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "18/05/2012",
                 "source": "https://extranet.who.int/prequal/vaccines/p/none-used-labelling-supply-through-un-agencies-also-marketed-labelled-commercial-name-5",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -15944,7 +15944,7 @@
                 "type": "N/A",
                 "approvalDate": "20/10/2023",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -16019,7 +16019,7 @@
                 "type": "N/A",
                 "approvalDate": "08/10/2013",
                 "source": "https://extranet.who.int/prequal/vaccines/p/japanese-encephalitis-vaccine-live-sa14-14-2",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -16425,14 +16425,14 @@
                 "type": "N/A",
                 "approvalDate": "06/06/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-vero-cell-inactivated-sabin-strains-0",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             },
             {
                 "name": "WHO",
                 "type": "N/A",
                 "approvalDate": "06/06/2022",
                 "source": "https://extranet.who.int/prequal/vaccines/p/poliomyelitis-vaccine-vero-cell-inactivated-sabin-strains-1",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -16508,7 +16508,7 @@
                 "type": "N/A",
                 "approvalDate": "15/05/2019",
                 "source": "https://extranet.who.int/prequal/vaccines/p/skycellflur-inj",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -16680,7 +16680,7 @@
                 "type": "N/A",
                 "approvalDate": "26/04/2021",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-trivalent-vaccine-split-virion-inactivated",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -17196,7 +17196,7 @@
                 "type": "N/A",
                 "approvalDate": "06/01/2009",
                 "source": "https://extranet.who.int/prequal/vaccines/p/rha-m-m-r-ii",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     },
@@ -19348,7 +19348,7 @@
                 "type": "N/A",
                 "approvalDate": "09/06/2015",
                 "source": "https://extranet.who.int/prequal/vaccines/p/influenza-vaccine-split-virion-inactivated",
-                "lastUpdated": ""
+                "lastUpdated": "N/A"
             }
         ]
     }

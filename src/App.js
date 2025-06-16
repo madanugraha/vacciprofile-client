@@ -366,7 +366,7 @@ const App = () => {
             return filteredList;
         }
 
-         if (activeTab === "Compare") {
+        if (activeTab === "Compare") {
             // const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
             const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
                 ? list.filter(item => {
@@ -397,21 +397,21 @@ const App = () => {
                 manufacturer.description.toLowerCase().includes(keyword);
             if (matchesKeyword) return true;
 
-            const vaccines = getVaccinesByManufacturer(manufacturer) || [];
-            return vaccines.some(vaccine => {
-                const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
-                    vaccine.description.toLowerCase().includes(keyword);
+            // const vaccines = getVaccinesByManufacturer(manufacturer) || [];
+            // return vaccines.some(vaccine => {
+            //     const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
+            //         vaccine.description.toLowerCase().includes(keyword);
 
-                if (vaccineMatch) return true;
+            //     if (vaccineMatch) return true;
 
-                const pathogens = getPathogenByVaccine(vaccine) || [];
-                return Array.isArray(pathogens) && pathogens.some(pathogen =>
-                    pathogen.name.toLowerCase().includes(keyword) ||
-                    pathogen.description.toLowerCase().includes(keyword)
-                );
-            });
+            //     const pathogens = getPathogenByVaccine(vaccine) || [];
+            //     return Array.isArray(pathogens) && pathogens.some(pathogen =>
+            //         pathogen.name.toLowerCase().includes(keyword) ||
+            //         pathogen.description.toLowerCase().includes(keyword)
+            //     );
+            // });
         });
-    }, [manufacturersList, filterListByStartingAlphabet, getVaccinesByManufacturer, getPathogenByVaccine]);
+    }, [manufacturersList, filterListByStartingAlphabet]);
 
     /**
      * Filters the list of vaccines based on the search keyword.
@@ -443,6 +443,14 @@ const App = () => {
         });
     }, [vaccinesList, filterListByStartingAlphabet, getPathogenByVaccine, getManufacturersByVaccine]);
 
+
+    const filterVaccineCandidateByAlphabetAndSearch = useCallback((keyword) => {
+        return filterListByStartingAlphabet(sampleVaccineCandidatePathogen).filter(vaccine => {
+            const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
+                vaccine.description.toLowerCase().includes(keyword);
+            if (vaccineMatch) return true;
+        });
+    }, [sampleVaccineCandidatePathogen, filterListByStartingAlphabet]);
     /**
      * Filters the list of pathogens based on the search keyword.
      * 
@@ -491,30 +499,15 @@ const App = () => {
                 licenser.description.toLowerCase().includes(keyword);
 
             if (licenserMatch) return true;
-
-            const vaccines = getVaccinesByLicenser(licenser) || [];
-            return vaccines.some(vaccine => {
-                const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
-                    vaccine.description.toLowerCase().includes(keyword);
-
-                if (vaccineMatch) return true;
-
-                const pathogens = getPathogenByVaccine(vaccine) || [];
-                const pathogenMatch = Array.isArray(pathogens) && pathogens.some(pathogen =>
-                    pathogen.name.toLowerCase().includes(keyword) ||
-                    pathogen.description.toLowerCase().includes(keyword)
-                );
-
-                if (pathogenMatch) return true;
-
-                const manufacturers = getManufacturersByVaccine(vaccine) || [];
-                return Array.isArray(manufacturers) && manufacturers.some(manufacturer =>
-                    manufacturer.name.toLowerCase().includes(keyword) ||
-                    manufacturer.description.toLowerCase().includes(keyword)
-                );
-            });
         });
-    }, [licensersList, filterListByStartingAlphabet, getVaccinesByLicenser, getPathogenByVaccine, getManufacturersByVaccine]);
+    }, [licensersList, filterListByStartingAlphabet]);
+
+     const filterNitagByAlphabetAndSearch = useCallback((keyword) => {
+        return filterListByStartingAlphabet(finalRemapNitagCountry).filter(licenser => {
+            const licenserMatch = licenser[0].toLowerCase().includes(keyword)
+            if (licenserMatch) return true;
+        });
+    }, [filterListByStartingAlphabet]);
 
     /**
      * Sorts a list of licensers with a custom priority for 'AMA', 'EMA', and 'WHO',
@@ -584,14 +577,22 @@ const App = () => {
             if (activeTab === 'Manufacturer') {
                 filteredSidebarList = filterManufacturersByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
-            } else if (activeTab === 'Vaccine') {
-                filteredSidebarList = filterVaccinesByAlphabetAndSearch(keywordLower).slice()
+            } else if (activeTab === 'Licensed Vaccines') {
+                filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
-            } else if (activeTab === 'Pathogen') {
+            } else if (activeTab === 'Vaccine Candidates') {
                 filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
             } else if (activeTab === 'Licenser') {
-                filteredSidebarList = sortLicensers(filterLicensersByAlphabetAndSearch(keywordLower));
+                filteredSidebarList = filterVaccinesByAlphabetAndSearch(keywordLower).slice()
+                    .sort((a, b) => a.name.localeCompare(b.name));
+            }
+            else if (activeTab === 'Compare') {
+                filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
+                    .sort((a, b) => a.name.localeCompare(b.name));
+            }
+            else if (activeTab === 'Nitag') {
+                filteredSidebarList = filterNitagByAlphabetAndSearch(keywordLower).slice()
             }
             setSidebarList(filteredSidebarList);
         } else {

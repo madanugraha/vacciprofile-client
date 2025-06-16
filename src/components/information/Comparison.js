@@ -18,6 +18,8 @@ import { ListItemText } from '@mui/material';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import moment from 'moment/moment';
+
 
 
 const workbook = new ExcelJS.Workbook();
@@ -193,37 +195,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         setNewSelectedModalFilter(p);
     }, [selectedModalFilter])
 
-    const newA = selectedFilterTableFields && selectedModalFilter.length > 0 ? selectedModalFilter?.map((x) => {
-        let altName = tableFields.filter((z) => z.title === x)[0].alt
-        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.name}`);
-        const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
-        const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
-        const result5 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.source))}`);
-
-        const result2 = secondaryVaccineFields[0]?.map((y) => {
-            return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[altName]))}`
-        })
-
-        // if (result3 && result3.length > 0) {
-        //     return [x, ...result3]
-        // };
-        // if (result4 && result4.length > 0) {
-        //     return [x, ...result4]
-        // };
-        // if (result5 && result5.length > 0) {
-        //     return [x, ...result5]
-        // };
-
-        if (result2 && result1) {
-            return [x, (checkIfExceptionFields(x) ? result2[0] : result1[0])];
-        } else {
-            return [x, ""];
-        }
-    }) : [];
-
-
-    const arrayToGenerate = newA || [];
-
     const handleProceedComparison = () => {
         setCompareSubmitted(true);
     };
@@ -261,7 +232,62 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
     const handleDownloadComparison = () => {
 
-        sheet.columns = [arrayToGenerate[0][0], arrayToGenerate[0][1]].map((x) => {
+        const newA = selectedFilterTableFields && selectedModalFilter.length > 0 ? selectedModalFilter?.map((x) => {
+            let altName = tableFields.filter((z) => z.title === x)[0].alt
+            const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.name}`);
+            const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
+            const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
+            const result5 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.source))}`);
+
+            const result2 = secondaryVaccineFields[0]?.map((y) => {
+                return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[altName]))}`
+            });
+
+            // console.log(result1);
+            let final = [];
+
+            // if (result4 && result4.length > 0) {
+            //     return [x, ...result4]
+            // };
+
+            // if (result5 && result5.length > 0) {
+            //     return [x, ...result5]
+            // };
+
+            // console.log(...result1);
+
+            if (result2) {
+                final = [x, ...result2];
+            };
+
+            if (x === "Approval Date" && result3) {
+                final = [x, ...result3]
+            };
+
+            if (x === "Last Updated" && result4) {
+                final = [x, ...result4]
+            }
+
+            if (x === "Licensing Authorities" && result5) {
+                final = [x, ...result5]
+            }
+
+            // if (result1) {
+            //     final = [x, ...result1];
+            //     // console.log('xxx >>> ', final)
+            // }
+
+            return final
+        }) : [];
+
+        const arrayToGenerate = newA || [];
+
+
+        // return;
+        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.name}`);
+
+
+        sheet.columns = ["Type", ...result1].map((x) => {
             return {
                 header: x, key: x, width: 10
             }
@@ -280,17 +306,18 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         });
 
         autoWidth(sheet);
-
         workbook.xlsx.writeBuffer().then(function (data) {
             const blob = new Blob([data],
                 { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
             const url = window.URL.createObjectURL(blob);
             const anchor = document.createElement('a');
             anchor.href = url;
-            anchor.download = 'vacciprofile-comparison-result.xlsx';
+            anchor.target = "_blank"
+            anchor.download = `VacciProfile-Comparison-Result-${moment().format('DD-MM-YYYY-HH-mm-ss-A')}.xlsx`;
             anchor.click();
             window.URL.revokeObjectURL(url);
         });
+
     };
 
     const handleSelectLicenserFieldsVaccine = (name, value) => {
