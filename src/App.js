@@ -495,8 +495,7 @@ const App = () => {
 
     const filterLicensersByAlphabetAndSearch = useCallback((keyword) => {
         return filterListByStartingAlphabet(licensersList).filter(licenser => {
-            const licenserMatch = licenser.acronym.toLowerCase().includes(keyword) ||
-                licenser.description.toLowerCase().includes(keyword);
+            const licenserMatch = licenser?.country?.toLowerCase().includes(keyword);
 
             if (licenserMatch) return true;
         });
@@ -584,8 +583,7 @@ const App = () => {
                 filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
             } else if (activeTab === 'Licenser') {
-                filteredSidebarList = filterVaccinesByAlphabetAndSearch(keywordLower).slice()
-                    .sort((a, b) => a.name.localeCompare(b.name));
+                filteredSidebarList = filterLicensersByAlphabetAndSearch(keywordLower).slice()  
             }
             else if (activeTab === 'Compare') {
                 filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()

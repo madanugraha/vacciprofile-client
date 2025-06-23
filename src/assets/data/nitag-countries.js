@@ -225,7 +225,7 @@ Website: https://ppo.mzcr.cz/workGroup/11
 Denmark
 Committee: Sundhedsstyrelsens vaccinationsudvalg (Vaccination Committee for Health)
 Year established: 1980
-Website: https://www.sst.dk/da/viden/Forebyggelse/Vaccination/Fakta-om-vaccination/Vaccinationsraadet
+Website: https://www.sst.dk/en/english/General-public
 `,
     `
 Djibouti
@@ -258,7 +258,7 @@ Year established: 2006
     `
 Ethiopia
 Year established: 2016
-Website: https://www.moh.gov.et/site/E_NITAG
+Website: https://www.ajol.info/index.php/ejhs/article/view/266675
 `,
     `
 Fiji
@@ -273,7 +273,7 @@ Website: https://thl.fi/en/topics/infectious-diseases-and-vaccinations/informati
 France
 Committee: Commission Technique des Vaccinations (Technical Committee on Vaccination) - CTV
 Year established: 1985
-Website: https://www.has-sante.fr/jcms/c_2755844/fr/commission-technique-des-vaccinations
+Website: https://www.has-sante.fr/jcms/c_2758065/en/technical-committee-for-vaccinations
 `,
     `
 Gambia
@@ -317,7 +317,7 @@ Year established: 2018
     `
 Guinea-Bissau
 Committee: Groupe Technique Consultatif National pour la Vaccination (GTCNV) Guinee Bissau
-Website: https://sivegub.info/index.php/category/nitag/
+Website: https://sivegub.info/index.php/2025/01/23/decreto-ministerial-que-cria-o-nitag-na-guine-bissau/
 `,
     `
 Guyana
@@ -488,7 +488,7 @@ Year established: 2014
 Malta
 Committee: Advisory Committee on Immunisation Policy
 Year established: 2007
-Website: https://gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Officially%20Appointed%20Bodies/Pages/Committees/Advisory-Committe-on-Immunisation.aspx
+Website: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Officially%20Appointed%20Bodies/Pages/Committees/Advisory-Committee-on-Immunisation.aspx
 `,
     `
 Mauritius
@@ -607,7 +607,7 @@ Year established: 2003
 Portugal
 Committee: Comissão Técnica de Vacinação (Technical Committee on Immunization) - CTV
 Year established: 1997
-Website: http://vacinas-temp.inesting.com/programa-nacional-de-vacinacao/comissao-tecnica-vacinacao/#.YfA41GDMKUk
+Website: https://www.actamedicaportuguesa.com/revista/index.php/amp/article/view/12155/5856
 `,
     `
 Qatar
@@ -747,7 +747,7 @@ Year established: 2018
 Sweden
 Committee: Reference group for national vaccination programmes
 Year established: 2016
-Website: https://www.folkhalsomyndigheten.se/smittskydd-beredskap/vaccinationer/vaccinationsprogram/referensgrupp-for-nationella-vaccinationsprogram/
+Website: https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/communicable-disease-control/vaccinations/vaccination-programmes
 `,
     `
 

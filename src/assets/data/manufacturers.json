@@ -3263,75 +3263,6 @@
     },
     {
         "manufacturerId": "#",
-        "name": "University of Oxford",
-        "description": "The University of Oxford, through its Jenner Institute and Oxford Vaccine Group, has been a global leader in vaccine research and development for over 30 years. It is renowned for its groundbreaking contributions, including the development of the ChAdOx1 platform and the Oxford-AstraZeneca COVID-19 vaccine, which has been distributed to over 170 countries and saved millions of lives.",
-        "history": "The Oxford Vaccine Group was established in 1994 by Professor Richard Moxon to advance vaccine research and evaluation. The Jenner Institute, founded in 2005, focuses on translational research for vaccines targeting diseases such as malaria, tuberculosis, and emerging pathogens. During the COVID-19 pandemic, Oxford researchers rapidly developed the ChAdOx1 nCoV-19 vaccine (Oxford-AstraZeneca), leveraging decades of prior work on adenovirus-based vaccine platforms.",
-        "details": {
-            "website": "https://www.ovg.ox.ac.uk",
-            "founded": "1994 (Oxford Vaccine Group), 2005 (Jenner Institute)",
-            "headquarters": "Oxford, England, United Kingdom",
-            "ceo": "Professor Sarah Gilbert (Lead Scientist for COVID-19 Vaccine)",
-            "revenue": "$1.2 billion (2024, estimated from vaccine royalties)",
-            "operatingIncome": "N/A",
-            "netIncome": "$300 million (2024, estimated from vaccine royalties)",
-            "totalAssets": "N/A",
-            "totalEquity": "N/A",
-            "numberOfEmployees": "~2,000 researchers and staff",
-            "sources": [
-                {
-                    "sourceName": "UKRI - The Story Behind the Oxford-AstraZeneca Vaccine",
-                    "url": "https://www.ukri.org/who-we-are/how-we-are-doing/research-outcomes-and-impact/mrc/the-story-behind-the-oxford-astrazeneca-covid-19-vaccine-success/"
-                },
-                {
-                    "sourceName": "Oxford Vaccine Group History",
-                    "url": "https://www.ovg.ox.ac.uk/about/history"
-                },
-                {
-                    "sourceName": "BBC - How Did They Make the Oxford Vaccine So Quickly?",
-                    "url": "https://www.bbc.com/news/health-55041371"
-                }
-            ]
-        }
-    },
-    {
-        "manufacturerId": "#",
-        "name": "University of Zaragoza",
-        "description": "The University of Zaragoza is a leading Spanish research institution with a strong focus on vaccine development, particularly for tuberculosis. It is renowned for its work on the MTBVAC vaccine, a live attenuated tuberculosis vaccine, and its collaboration on innovative projects like the development of an inhaled mRNA vaccine for tuberculosis.",
-        "history": "Founded in 1542, the University of Zaragoza has a long tradition of academic excellence. In recent decades, it has become a hub for tuberculosis research through its Mycobacterial Genetics Research Group, led by Dr. Carlos Martin. The university has collaborated with Biofabri, Certest Biotec, and international organizations like TBVI and IAVI to advance TB vaccine development.",
-        "details": {
-            "website": "https://www.tbvi.eu/university-of-zaragoza/",
-            "founded": "1542",
-            "headquarters": "Zaragoza, Spain",
-            "ceo": "Dr. Carlos Martin (Lead Researcher, TB Vaccines)",
-            "revenue": "N/A",
-            "operatingIncome": "N/A",
-            "netIncome": "N/A",
-            "totalAssets": "N/A",
-            "totalEquity": "N/A",
-            "numberOfEmployees": "~3,800 academic and research staff",
-            "sources": [
-                {
-                    "sourceName": "TBVI - University of Zaragoza",
-                    "url": "https://www.tbvi.eu/university-of-zaragoza/"
-                },
-                {
-                    "sourceName": "Certest Biotec News",
-                    "url": "https://www.certest.es/news/development-of-an-mrna-vaccine-against-tuberculosis/"
-                },
-                {
-                    "sourceName": "BusinessWire - MTBVAC Trials",
-                    "url": "https://www.businesswire.com/news/home/20210714005269/en/"
-                }
-            ]
-        },
-        "vaccines": [
-            "MTBVAC (Tuberculosis vaccine)",
-            "Inhaled mRNA Tuberculosis vaccine (under development)"
-        ],
-        "lastUpdated": "2025-Mar"
-    },
-    {
-        "manufacturerId": "#",
         "name": "Biofabri",
         "description": "Biofabri is a Spanish biopharmaceutical company specializing in the research, development, and manufacturing of human vaccines. It is part of the Zendal Group and focuses on innovative vaccine technologies, including genetically engineered live attenuated vaccines, subunit vaccines, and RNA/DNA vaccines. Biofabri is best known for its work on the MTBVAC tuberculosis vaccine, developed in collaboration with the University of Zaragoza, Pasteur Institute, and TBVI.",
         "history": "Founded in 2008, Biofabri builds on over 70 years of pharmaceutical expertise. It actively collaborates with universities and international research organizations to develop vaccines for infectious diseases. The company has contributed to COVID-19 vaccine development and offers contract development and manufacturing services (CDMO) for biologics.",
@@ -3555,38 +3486,6 @@
         "lastUpdated": "2025-Mar"
     },
     {
-        "manufacturerId": 95,
-        "name": "University of Bamako",
-        "description": "The University of Bamako was the flagship public university in Bamako, Mali between 1996 and 2011. It was created by merging existing institutions of higher learning and became operational in 1996. The university focused on various fields including science, technology, medicine, humanities, law, and economics.",
-        "history": "Legally established in 1993 and opened in 1996, the University of Bamako brought together nine campuses across the city. It grew rapidly, with student enrollment reaching 80,000 in 2010-2011. Due to its large size, it was replaced in 2011 by four independent universities and a new technical school.",
-        "details": {
-            "website": "http://www.usttb.edu.ml/",
-            "founded": "1996",
-            "headquarters": "Bamako, Mali",
-            "ceo": "N/A (last known: Professor Ginette B. Siby as Recteur)",
-            "revenue": "N/A",
-            "operatingIncome": "N/A",
-            "netIncome": "N/A",
-            "totalAssets": "N/A",
-            "totalEquity": "N/A",
-            "numberOfEmployees": "600 instructors (as of 2007)",
-            "sources": [
-                {
-                    "sourceName": "Wikipedia - University of Bamako",
-                    "url": "https://en.wikipedia.org/wiki/University_of_Bamako"
-                },
-                {
-                    "sourceName": "Britannica - University of Bamako",
-                    "url": "https://www.britannica.com/topic/University-of-Bamako"
-                }
-            ]
-        },
-        "vaccines": [
-            "N/A"
-        ],
-        "lastUpdated": "2025-Mar"
-    },
-    {
         "manufacturerId": 96,
         "name": "Alfred Research and Medical Education Precinct (AMREP)",
         "description": "The Alfred Research Alliance, formerly known as AMREP, is a multidisciplinary partnership of leading health and research organizations co-located at The Alfred hospital campus in Melbourne. It integrates biomedical, translational, clinical and public health research with education and healthcare, focusing on areas such as cardiovascular disease, diabetes, infectious diseases, and cancer.",
@@ -3693,45 +3592,6 @@
             "COVID-19 vaccine development",
             "Therapeutic vaccines for chronic infections",
             "BTZ-043 (antibiotic with potential for tuberculosis treatment)"
-        ],
-        "lastUpdated": "2025-Mar"
-    },
-    {
-        "manufacturerId": 103,
-        "name": "University of Lausanne",
-        "description": "The University of Lausanne (UNIL) is a prominent research university located in Lausanne, Switzerland. It is known for its extensive research in life sciences, including immunology and vaccine development. The university collaborates with various institutes, such as the Ludwig Institute for Cancer Research and the Swiss Vaccine Research Institute, to advance vaccine research and public health initiatives.",
-        "history": "Founded in 1537, the University of Lausanne has evolved into a leading institution for higher education and research in Switzerland. It has made significant contributions to various fields, particularly in biomedical research. The university's involvement in vaccine research includes studies on vaccine immunology, development of novel vaccine platforms, and collaborations on COVID-19 and other infectious disease vaccines.",
-        "details": {
-            "website": "https://www.unil.ch/unil/en/home.html",
-            "founded": "1537",
-            "headquarters": "Lausanne, Switzerland",
-            "ceo": "N/A (Managed by the rectorate)",
-            "revenue": "N/A",
-            "operatingIncome": "N/A",
-            "netIncome": "N/A",
-            "totalAssets": "N/A",
-            "totalEquity": "N/A",
-            "numberOfEmployees": "~4,000 staff members",
-            "sources": [
-                {
-                    "sourceName": "Wikipedia - University of Lausanne",
-                    "url": "https://en.wikipedia.org/wiki/University_of_Lausanne"
-                },
-                {
-                    "sourceName": "Ludwig Cancer Research - Lausanne Branch",
-                    "url": "https://www.ludwigcancerresearch.org/location/lausanne/"
-                },
-                {
-                    "sourceName": "Swiss Vaccine Research Institute - Overview",
-                    "url": "https://swissvaccineresearchinstitute.ch"
-                }
-            ]
-        },
-        "vaccines": [
-            "COVID-19 vaccine research (collaborations with various partners)",
-            "Yellow fever vaccination studies (ongoing research)",
-            "Dendritic cell vaccines (immunotherapy development)",
-            "Research on mRNA vaccines and nanoparticle-based vaccines"
         ],
         "lastUpdated": "2025-Mar"
     },

@@ -37,8 +37,8 @@ const HomePage = () => {
                         <div class="image-container">
                             <img src="/images/VACCIE PROFILE OUTLINE-04.png" alt="Vaccines" />
                         </div>
-                        <div class="title">licensed Vaccines</div>
-                        <p>Compare brandnames, licenses. single and combination vaccines</p>
+                        <div class="title">Licensed Vaccines</div>
+                        <p>By brandnames, licenses. single and combination vaccines</p>
                         <button class="btn">View more</button>
                     </div>
                     <div class="card" onClick={() => window.location.href = "/home?menu=vaccine-candidates"}>
@@ -46,7 +46,7 @@ const HomePage = () => {
                             <img src="/images/VACCIE PROFILE OUTLINE-07.png" alt="Pipeline Vaccine" />
                         </div>
                         <div class="title">Vaccine Candidates</div>
-                        <p>Vaccine candidates from phase 1 to 4 by pathogen and manufacturer</p>
+                        <p>By pathogen and manufacturer</p>
                         <button class="btn">View more</button>
                     </div>
                     <div class="card" onClick={() => window.location.href = "/home?menu=manufacturer"}>
@@ -69,8 +69,8 @@ const HomePage = () => {
                         <div class="image-container">
                             <img src="/images/VACCIE-PROFILE-OUTLINE-08.png" alt="Licensing Authorities" />
                         </div>
-                        <div class="title" style={{ fontSize: 15 }}>National Immunization Technical Advisory Groups</div>
-                        <span style={{ marginBottom: 8 }}>(NITAGs) Current recommendations and procedures</span>
+                        <div class="title">NITAG</div>
+                        <span style={{ marginBottom: 8 }}>National Immunization Technical Advisory Groups <br/> Recommendations and procedures</span>
                         <button class="btn">View more</button>
                     </div>
                     <div class="card" onClick={() => window.location.href = "/home?menu=compare"}>
@@ -78,7 +78,7 @@ const HomePage = () => {
                             <img src="/images/vacciprofile-compare.png" alt="Comparison" />
                         </div>
                         <div class="title">Comparison</div>
-                        <p>Vaccines data comparisons based on the Pathogens</p>
+                        <p>Vaccines data comparisons based on the pathogens</p>
                         <button class="btn">View more</button>
                     </div>
                 </div>

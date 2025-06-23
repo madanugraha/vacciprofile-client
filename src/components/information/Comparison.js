@@ -23,11 +23,11 @@ import moment from 'moment/moment';
 
 
 const workbook = new ExcelJS.Workbook();
-workbook.creator = 'Me';
-workbook.lastModifiedBy = 'Her';
-workbook.created = new Date(1985, 8, 30);
+workbook.creator = 'Global Health Press';
+workbook.lastModifiedBy = 'Global Health Press';
+workbook.created = new Date();
 workbook.modified = new Date();
-workbook.lastPrinted = new Date(2016, 9, 27);
+workbook.lastPrinted = new Date();
 // Set workbook dates to 1904 date system
 workbook.properties.date1904 = true;
 
@@ -301,6 +301,8 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             }
         });
 
+        // console.log(p);
+
         p.map((x) => {
             return sheet.addRow(x);
         });
@@ -318,6 +320,10 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             window.URL.revokeObjectURL(url);
         });
 
+        setOpen(false);
+        setTimeout(() => {
+            window.location.reload();
+        }, 1500);
     };
 
     const handleSelectLicenserFieldsVaccine = (name, value) => {
@@ -1547,8 +1553,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
-                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-black bg-sidebar-unselected` : ``}`}>{key === "source" ? `Licensing Authorities` : key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                                            {/** TEST */}
+                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col`}>{key === "source" ? `Licensing Authorities` : key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                             {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
                                                                     return data.filter((x) => x.checked).map((vaccine) => {
