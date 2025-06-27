@@ -150,6 +150,13 @@ code {
   max-width: 250px;
 }
 
+.second-col {
+  height: '100%';
+  align-content: baseline;
+  min-width: 230px;
+  max-width: 230px;
+}
+
 
 .horizontal-scroll-except-first-column>table>*>tr>.main-col {
   /* Without this, if a cell wraps onto two lines, the first column

@@ -298,12 +298,12 @@ export const getLicensingDateByVaccineNameAndType = (type, prop, vaccineName) =>
             const propValue = result[0]?.licensingDates.filter((x) => x.name === type)
             if (propValue?.length > 0) {
                 return prop === "source" ? propValue.map((x) => {
-                    return prop === "source" ? <a href={x.source} className='selectable' target="_blank" rel="noopener noreferrer">
+                    return prop === "source" ? <a href={x.source} className='selectable' style={{ alignContent:'baseline' }} target="_blank" rel="noopener noreferrer">
                         {x.source}
                         ,{" "}
                     </a> : (x[prop]) || "N/A"
                 }) : propValue.map((x) => {
-                    return prop === "source" ? <a href={x.source} className='selectable' target="_blank" rel="noopener noreferrer">
+                    return prop === "source" ? <a href={x.source} className='selectable' style={{ alignContent:'baseline' }} target="_blank" rel="noopener noreferrer">
                         {x.source}
                     </a> : (x[prop]) || "N/A"
                 }).join(', ')
