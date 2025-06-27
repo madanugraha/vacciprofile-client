@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { getAllVaccineByPathogenId, getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getLicensingDateByVaccineNameAndType, getPathogenVaccineByDieasesName, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
@@ -19,6 +19,7 @@ import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import moment from 'moment/moment';
+import generatePDF from 'react-to-pdf';
 
 
 
@@ -74,6 +75,7 @@ const style = {
  * />
  */
 const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
+    const targetRef = useRef();
     const [open, setOpen] = useState(false);
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const convertCamelCaseToReadable = string => {
@@ -947,6 +949,20 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         },
     }));
 
+    const getCountActiveLabels = () => {
+        let ctx = 0;
+        const m = secondaryVaccineFields.map((x) => {
+            return x.map((z) => {
+                return z.licenser?.map((y) => {
+                    if(y.checked) {
+                        ctx += 1
+                    }
+                })
+            })
+        });
+        return ctx;
+    }
+
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>
             {
@@ -1538,9 +1554,9 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                             }) : null}
                         </div>
                         <div className='view' style={{ overflow: 'scroll' }}>
-                            <div style={{ overflowY: 'scroll' }} className="max-h-table-comparison d-inline-flex w-100 wrapper">
+                            <div style={{ overflowY: 'scroll' }} id="table-scroll" className="max-h-table-comparison d-inline-flex w-100 wrapper">
                                 {secondaryVaccineFields.length >= 1 ? (
-                                    <table className='' id="comparison-table" border={1}
+                                    <table className='' ref={targetRef} id="comparison-table" border={1}
                                         data-toolbar=".toolbar"
                                         data-show-columns="true"
                                         data-search="true"
@@ -1558,12 +1574,12 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
                                                                     return data.filter((x) => x.checked).map((vaccine) => {
                                                                         return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser, licenserIdx) => {
-                                                                            const conditionedFirstRow = idx === 0 ? {
-                                                                                background: "#C7EAE4",
-                                                                                color: "black"
+                                                                            const conditionedFirstRow = key === "type" ? {
+                                                                                background: "#D17728",
+                                                                                color: "white"
                                                                             } : {};
                                                                             return (
-                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-black bg-sidebar-unselected` : `text-black bg-sidebar-unselected`} comparison-table-handler`}>
+                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key !== "type" ? `text-black bg-sidebar-unselected` : ``} comparison-table-handler`}>
                                                                                     <div className='d-inline-flex justify-content-between w-100'>
                                                                                         <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) || "-") : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name) || "-")}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
@@ -1584,7 +1600,25 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                             </div>
                         </div>
                         <div style={{ width: 300, marginTop: -7, justifySelf: 'center', marginLeft: 150 }}>
-                            <button type='button' onClick={() => handleDownloadComparison()} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
+                            <button type='button' onClick={() => {
+                                const tableElement = document.getElementById('table-scroll');
+                                tableElement.scrollTop = 0;
+                                // validation
+                                // min 2
+                                if(getCountActiveLabels() < 2) {
+                                    toast.info('Please select atleast 2 labels to download')
+                                    return;
+                                };
+
+                                if(getCountActiveLabels() > 4) {
+                                    toast.info('Maximum active labels to download is 4')
+                                    return
+                                }
+                                // max 4
+                                setTimeout(() => {
+                                    generatePDF(targetRef, { filename: `vacciprofile-comparison-result.pdf`, canvas: { mimeType: 'image/jpeg' }, page: { orientation: 'landscape' } })
+                                }, 1500);
+                            }} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
                         </div>
                     </div>
                 </Box>

@@ -133,8 +133,8 @@ code {
 }
 
 .first-col {
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 180px;
+  max-width: 180px;
   height: '100%';
   left: 0px;
   top: 0;
@@ -145,6 +145,8 @@ code {
   height: '100%';
   align-content: baseline;
   min-width: 250px;
+  background: #d17728;
+  color: white;
   max-width: 250px;
 }
 
