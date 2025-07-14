@@ -20,6 +20,7 @@ import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import moment from 'moment/moment';
 import generatePDF from 'react-to-pdf';
+import { DNA } from 'react-loader-spinner'
 
 
 
@@ -954,14 +955,16 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         const m = secondaryVaccineFields.map((x) => {
             return x.map((z) => {
                 return z.licenser?.map((y) => {
-                    if(y.checked) {
+                    if (y.checked) {
                         ctx += 1
                     }
                 })
             })
         });
         return ctx;
-    }
+    };
+
+    const [isLoading, setIsLoading] = useState(false);
 
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>
@@ -1556,7 +1559,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                         <div className='view' style={{ overflow: 'scroll' }}>
                             <div style={{ overflowY: 'scroll' }} id="table-scroll" className="max-h-table-comparison d-inline-flex w-100 wrapper">
                                 {secondaryVaccineFields.length >= 1 ? (
-                                    <table className='' ref={targetRef} id="comparison-table" border={1}
+                                    <table className='' ref={targetRef} border={1} style={{ margin: 10 }} id="comparison-table"
                                         data-toolbar=".toolbar"
                                         data-show-columns="true"
                                         data-search="true"
@@ -1601,22 +1604,34 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                         </div>
                         <div style={{ width: 300, marginTop: -7, justifySelf: 'center', marginLeft: 150 }}>
                             <button type='button' onClick={() => {
+                                toast.info('Downloading PDF...');
                                 const tableElement = document.getElementById('table-scroll');
                                 tableElement.scrollTop = 0;
+                                tableElement.scrollLeft = 0;
                                 // validation
                                 // min 2
-                                if(getCountActiveLabels() < 2) {
+                                if (getCountActiveLabels() < 2) {
                                     toast.info('Please select atleast 2 labels to download')
                                     return;
                                 };
 
-                                if(getCountActiveLabels() > 4) {
-                                    toast.info('Maximum active labels to download is 4')
+                                if (getCountActiveLabels() > 6) {
+                                    toast.info('Maximum active labels to download is 6')
                                     return
-                                }
+                                };
+
+                                const tableHeight = document.getElementById('comparison-table').offsetHeight;
+                                const tableWidth = document.getElementById('comparison-table').offsetWidth;
                                 // max 4
                                 setTimeout(() => {
-                                    generatePDF(targetRef, { filename: `vacciprofile-comparison-result.pdf`, canvas: { mimeType: 'image/jpeg' }, page: { orientation: 'landscape' } })
+                                    generatePDF(targetRef, {
+                                        method: 'open',
+                                        filename: `vacciprofile-comparison-result.pdf`, canvas: { mimeType: 'image/jpeg' }, page: { orientation: 'portrait' }, overrides: {
+                                            pdf: {
+                                                format: [tableWidth * 0.2645833333, tableHeight * 0.2645833333],
+                                            },
+                                        },
+                                    })
                                 }, 1500);
                             }} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
                         </div>
