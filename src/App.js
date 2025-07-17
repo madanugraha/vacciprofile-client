@@ -484,6 +484,8 @@ const App = () => {
                     manufacturer.name.toLowerCase().includes(keyword) ||
                     manufacturer.description.toLowerCase().includes(keyword)
                 );
+
+
             });
         });
     }, [licensersList, filterListByStartingAlphabet, getVaccinesByLicenser, getPathogenByVaccine, getManufacturersByVaccine]);
