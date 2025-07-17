@@ -1,6 +1,7 @@
 import vaccines from '../assets/data/candidate-vaccine-v2.json';
 import nitags from '../assets/data/nitag.json';
 import _ from 'lodash';
+import manufacturerData from '../assets/data/manufacturers.json';
 
 export const removeDuplicatesFromArray = (arr, prop) => {
     if (arr && arr.length > 0) {
@@ -121,7 +122,18 @@ export const getCandidateVaccinesByPathogenName = (pathogen) => {
 }
 
 export const getCandidateVaccineByManufactureName = (manufacture) => {
-    return vaccines.filter((x) => x.name !== "" && x.manufacturer.includes(manufacture))
+    const candidateManufacture = _.uniq(vaccines.map((x) => x.manufacturer));
+    const originalManufacture = _.uniq(manufacturerData.map((x) => x.name));
+
+    // console.log(_.difference(candidateManufacture, originalManufacture))
+
+    return vaccines.filter((x) => {
+        const searchTerm = x.manufacturer.toLocaleLowerCase()
+        const dynamicPattern = new RegExp(searchTerm, "i");
+        // console.log(dynamicPattern.test(manufacture.toLocaleLowerCase()), x.manufacturer, manufacture);
+
+        return x.manufacturer !== "" && dynamicPattern.test(manufacture.toLocaleLowerCase())
+    })
 }
 
 export const getVaccineCandidatePlatformsUniqueByPathogenName = (pathogen) => {

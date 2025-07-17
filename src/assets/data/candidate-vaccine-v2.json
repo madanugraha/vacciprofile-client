@@ -20,7 +20,7 @@
     {
       "pathogenName": "Borrelia burgdorferi",
       "name": "mRNA-1975",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -29,7 +29,7 @@
     {
       "pathogenName": "Borrelia burgdorferi",
       "name": "mRNA-1982",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -47,7 +47,7 @@
     {
       "pathogenName": "Borrelia burgdorferi",
       "name": "VLA15",
-      "manufacturer": "Valneva",
+      "manufacturer": "Valneva SE",
       "platform": "Subunit",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://valneva.com/research-development/",
@@ -56,16 +56,16 @@
     {
       "pathogenName": "Chikungunya Virus",
       "name": "CHIKUNGUNYA",
-      "manufacturer": "Bharat",
+      "manufacturer": "Bharat Biotech",
       "platform": "No data",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
-      "other": "https://clinicaltrials.gov/search?limit=50&cond=Chikungunya&lead=Bharat%20Biotech%20International%20Limited"
+      "other": "https://clinicaltrials.gov/search?limit=50&cond=Chikungunya&lead=Bharat Biotech%20Biotech%20International%20Limited"
     },
     {
       "pathogenName": "Chikungunya Virus",
       "name": "CHIKV VLP",
-      "manufacturer": "Bavarian Nordic",
+      "manufacturer": "Bavarian Nordic A/S",
       "platform": "Subunit",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.bavarian-nordic.com/what-we-do/pipeline.aspx",
@@ -110,7 +110,7 @@
     {
       "pathogenName": "Cytomegalovirus (CMV)",
       "name": "mRNA-1647",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -128,7 +128,7 @@
     {
       "pathogenName": "Cytomegalovirus (CMV)",
       "name": "VBI-1501",
-      "manufacturer": "VBI Vaccines",
+      "manufacturer": "VBI Vaccines Inc.",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
@@ -137,7 +137,7 @@
     {
       "pathogenName": "Dengue Virus",
       "name": "V181",
-      "manufacturer": "MSD",
+      "manufacturer": "MSD (Merck Sharp & Dohme)",
       "platform": "No data",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.msd.com/research/product-pipeline/",
@@ -146,7 +146,7 @@
     {
       "pathogenName": "Epstein Barr Virus (EBV)",
       "name": "mRNA-1189",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -155,7 +155,7 @@
     {
       "pathogenName": "Epstein Barr Virus (EBV)",
       "name": "mRNA-1195",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -173,7 +173,7 @@
     {
       "pathogenName": "Hepatitis A Virus",
       "name": "Inactivated Hepatitis A Vaccine (Adsorbed)",
-      "manufacturer": "Zydus Lifesciences",
+      "manufacturer": "Zydus Lifesciences Ltd",
       "platform": "Inactivated",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
@@ -182,7 +182,7 @@
     {
       "pathogenName": "Hepatitis E Virus",
       "name": "Recombinant Hepatitis E Vaccine (Adsorbed)",
-      "manufacturer": "Zydus Lifesciences",
+      "manufacturer": "Zydus Lifesciences Ltd",
       "platform": "Subunit",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
@@ -200,7 +200,7 @@
     {
       "pathogenName": "Herpes Simplex Virus (HSV)",
       "name": "mRNA-1608",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -218,7 +218,7 @@
     {
       "pathogenName": "HIV",
       "name": "mRNA-1644",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -227,7 +227,7 @@
     {
       "pathogenName": "HIV",
       "name": "mRNA-1574",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -263,7 +263,7 @@
     {
       "pathogenName": "Human metapneumovirus (hMPV)\n",
       "name": "mRNA-1365",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -371,7 +371,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "mRNA-1010",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -380,7 +380,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "mRNA-1020",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -389,7 +389,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "mRNA-1030",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -398,7 +398,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "mRNA-1011",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -407,7 +407,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "mRNA-1012",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -416,7 +416,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "mRNA-1018",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -425,7 +425,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "mRNA-1082",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -434,7 +434,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "mRNA-1230",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -506,7 +506,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "COVID-influenza combination (CIC) vaccine",
-      "manufacturer": "Novavax",
+      "manufacturer": "Novavax Inc.",
       "platform": "No data",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
@@ -515,7 +515,7 @@
     {
       "pathogenName": "Influenza Virus",
       "name": "Influenza vaccine (Older Adults)",
-      "manufacturer": "Novavax",
+      "manufacturer": "Novavax Inc.",
       "platform": "No data",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
@@ -524,7 +524,7 @@
     {
       "pathogenName": "Influenza Virus\n",
       "name": "mRNA-1045",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -542,7 +542,7 @@
     {
       "pathogenName": "Measles Virus",
       "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-      "manufacturer": "Zydus Lifesciences",
+      "manufacturer": "Zydus Lifesciences Ltd",
       "platform": "Live-attenuated",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
@@ -560,7 +560,7 @@
     {
       "pathogenName": "Monkeypox Virus (MPV, MPXV, or hMPXV)",
       "name": "mRNA-1769",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -578,7 +578,7 @@
     {
       "pathogenName": "Mumps Virus",
       "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-      "manufacturer": "Zydus Lifesciences",
+      "manufacturer": "Zydus Lifesciences Ltd",
       "platform": "Live-attenuated",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
@@ -596,7 +596,7 @@
     {
       "pathogenName": "Mycobacterium tuberculosis",
       "name": "MTBVAC",
-      "manufacturer": "Bharat",
+      "manufacturer": "Bharat Biotech",
       "platform": "No data",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
@@ -632,7 +632,7 @@
     {
       "pathogenName": "Neisseria meningitidis",
       "name": "EunNmCV-5 (MenACWXY)",
-      "manufacturer": "EuBiologics",
+      "manufacturer": "EuBiologics Co., Ltd.",
       "platform": "Subunit",
       "clinicalPhase": "Phase II",
       "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
@@ -641,7 +641,7 @@
     {
       "pathogenName": "Neisseria meningitidis",
       "name": "EuMCV-4 (MenACWY)",
-      "manufacturer": "EuBiologics",
+      "manufacturer": "EuBiologics Co., Ltd.",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
@@ -668,7 +668,7 @@
     {
       "pathogenName": "Nipah Virus",
       "name": "mRNA-1215",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -677,7 +677,7 @@
     {
       "pathogenName": "Nontyphoidal Salmonella",
       "name": "NTS CONJUGATES",
-      "manufacturer": "Bharat",
+      "manufacturer": "Bharat Biotech",
       "platform": "No data",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
@@ -695,7 +695,7 @@
     {
       "pathogenName": "Norovirus",
       "name": "mRNA-1403",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -704,7 +704,7 @@
     {
       "pathogenName": "Norovirus",
       "name": "mRNA-1405",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -722,7 +722,7 @@
     {
       "pathogenName": "Norovirus",
       "name": " HIL-214 (Bivalent GI.1 and GII.4)\n",
-      "manufacturer": "Hillevax",
+      "manufacturer": "HilleVax",
       "platform": "Subunit",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.hillevax.com/pipeline/",
@@ -794,7 +794,7 @@
     {
       "pathogenName": "Respiratory Syncytial Virus (RSV)",
       "name": "mRNA-1365",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -803,7 +803,7 @@
     {
       "pathogenName": "Respiratory Syncytial Virus (RSV)",
       "name": "mRNA-1230",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -812,7 +812,7 @@
     {
       "pathogenName": "Respiratory Syncytial Virus (RSV)",
       "name": "mRNA-1345",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -821,7 +821,7 @@
     {
       "pathogenName": "Respiratory Syncytial Virus (RSV)",
       "name": "mRNA-1045",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -875,7 +875,7 @@
     {
       "pathogenName": "Respiratory Syncytial Virus (RSV)",
       "name": "EuRSV",
-      "manufacturer": "EuBiologics",
+      "manufacturer": "EuBiologics Co., Ltd.",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
@@ -902,7 +902,7 @@
     {
       "pathogenName": "Rubella Virus",
       "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-      "manufacturer": "Zydus Lifesciences",
+      "manufacturer": "Zydus Lifesciences Ltd",
       "platform": "Live-attenuated",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
@@ -911,7 +911,7 @@
     {
       "pathogenName": "Salmonella Paratyphi",
       "name": "S. PARATYPHI",
-      "manufacturer": "Bharat",
+      "manufacturer": "Bharat Biotech",
       "platform": "No data",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
@@ -929,7 +929,7 @@
     {
       "pathogenName": "Salmonella Paratyphi",
       "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
-      "manufacturer": "Zydus Lifesciences",
+      "manufacturer": "Zydus Lifesciences Ltd",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
@@ -938,7 +938,7 @@
     {
       "pathogenName": "Salmonella Typhi",
       "name": "EuTYPH-C",
-      "manufacturer": "EuBiologics",
+      "manufacturer": "EuBiologics Co., Ltd.",
       "platform": "Subunit",
       "clinicalPhase": "Phase IV",
       "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
@@ -965,7 +965,7 @@
     {
       "pathogenName": "salmonella Typhi",
       "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
-      "manufacturer": "Zydus Lifesciences",
+      "manufacturer": "Zydus Lifesciences Ltd",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
@@ -1046,7 +1046,7 @@
     {
       "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
       "name": "mRNA-1082",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -1055,7 +1055,7 @@
     {
       "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
       "name": "mRNA-1230",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -1064,7 +1064,7 @@
     {
       "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
       "name": "mRNA-1283",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -1082,7 +1082,7 @@
     {
       "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
       "name": "SARS-CoV2-RABIES VECTOR",
-      "manufacturer": "Bharat",
+      "manufacturer": "Bharat Biotech",
       "platform": "No data",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
@@ -1100,7 +1100,7 @@
     {
       "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
       "name": "COVID-influenza combination (CIC) vaccine",
-      "manufacturer": "Novavax",
+      "manufacturer": "Novavax Inc.",
       "platform": "No data",
       "clinicalPhase": "Phase III",
       "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
@@ -1109,7 +1109,7 @@
     {
       "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
       "name": "EuCorVac-19",
-      "manufacturer": "EuBiologics",
+      "manufacturer": "EuBiologics Co., Ltd.",
       "platform": "Subunit",
       "clinicalPhase": "Phase IV",
       "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
@@ -1118,7 +1118,7 @@
     {
       "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
       "name": "VBI-2902",
-      "manufacturer": "VBI Vaccines",
+      "manufacturer": "VBI Vaccines Inc.",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
@@ -1127,7 +1127,7 @@
     {
       "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
       "name": "VBI-2905",
-      "manufacturer": "VBI Vaccines",
+      "manufacturer": "VBI Vaccines Inc.",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
@@ -1136,7 +1136,7 @@
     {
       "pathogenName": "Shigella",
       "name": "S4V",
-      "manufacturer": "Valneva",
+      "manufacturer": "Valneva SE",
       "platform": "Subunit",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://valneva.com/research-development/",
@@ -1181,11 +1181,11 @@
     {
       "pathogenName": "Streptococcus pneumoniae",
       "name": "EuPCV ",
-      "manufacturer": "EuBiologics",
+      "manufacturer": "EuBiologics Co., Ltd.",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
-      "other": "https://clinicaltrials.gov/search?cond=Streptococcus%20Pneumoniae&spons=EuBiologics"
+      "other": "https://clinicaltrials.gov/search?cond=Streptococcus%20Pneumoniae&spons=EuBiologics Co., Ltd."
     },
     {
       "pathogenName": "Varicella-Zoster Virus (VZV)",
@@ -1208,7 +1208,7 @@
     {
       "pathogenName": "Varicella-Zoster Virus (VZV)",
       "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-      "manufacturer": "Zydus Lifesciences",
+      "manufacturer": "Zydus Lifesciences Ltd",
       "platform": "Live-attenuated",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
@@ -1217,7 +1217,7 @@
     {
       "pathogenName": "Varicella-Zoster Virus (VZV)",
       "name": "mRNA-1468",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -1262,7 +1262,7 @@
     {
       "pathogenName": "Varicella-Zoster Virus (VZV)",
       "name": "EuHZV",
-      "manufacturer": "EuBiologics",
+      "manufacturer": "EuBiologics Co., Ltd.",
       "platform": "Subunit",
       "clinicalPhase": "Phase I",
       "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
@@ -1271,7 +1271,7 @@
     {
       "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
       "name": "MVA-BN® WEV",
-      "manufacturer": "Bavarian Nordic",
+      "manufacturer": "Bavarian Nordic A/S",
       "platform": "Live-attenuated",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.bavarian-nordic.com/what-we-do/pipeline.aspx",
@@ -1298,7 +1298,7 @@
     {
       "pathogenName": "Zika Virus",
       "name": "VLA1601",
-      "manufacturer": "Valneva",
+      "manufacturer": "Valneva SE",
       "platform": "Inactivated",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://valneva.com/research-development/",
@@ -1307,7 +1307,7 @@
     {
       "pathogenName": "Zika Virus",
       "name": "mRNA-1893",
-      "manufacturer": "Moderna",
+      "manufacturer": "Moderna, Inc.",
       "platform": "mRNA",
       "clinicalPhase": "Phase II",
       "companyUrl": "https://www.modernatx.com/research/product-pipeline",
@@ -1316,10 +1316,10 @@
     {
       "pathogenName": "Zika Virus",
       "name": "ZIKA",
-      "manufacturer": "Bharat",
+      "manufacturer": "Bharat Biotech",
       "platform": "No data",
       "clinicalPhase": "Phase I",
       "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
-      "other": "https://clinicaltrials.gov/search?cond=Zika&lead=Bharat%20Biotech"
+      "other": "https://clinicaltrials.gov/search?cond=Zika&lead=Bharat Biotech%20Biotech"
     }
   ]

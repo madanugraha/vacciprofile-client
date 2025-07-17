@@ -278,7 +278,9 @@ const VaccineListTable = ({
                                                         {
                                                             getAllClinicTrialsByVaccineCandidateName(vaccine.name).split('\n').length > 0 ? getAllClinicTrialsByVaccineCandidateName(vaccine.name).split('\n').map((oth, i) => {
                                                                 return (
-                                                                    <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a>
+                                                                    <>
+                                                                        <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a><br />
+                                                                    </>
                                                                 )
                                                             }) : <a href={getAllClinicTrialsByVaccineCandidateName(vaccine.name)}>link</a>
                                                         }
