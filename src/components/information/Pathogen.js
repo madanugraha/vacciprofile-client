@@ -1096,12 +1096,29 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                             {removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").length > 0 ? removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").map(x => {
                                 return (
                                     <tr>
-                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name}</td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#F1F1F3' }}>{x.clinicalPhase.includes('Phase I') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#E0DFE5' }}>{x.clinicalPhase.includes('Phase IIA') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#CCCAD5' }}>{x.clinicalPhase.includes('Phase IIB') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#B5B2C3' }}>{x.clinicalPhase.includes('Phase III') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#A3A1B6' }}>{x.clinicalPhase.includes('Phase IV') ? x.manufacturer.replace(';', '\n\n') : ""}</td>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name} {x.platform.toLowerCase().includes('no data') ? '' : `(${x.platform})`} <br /><HtmlTooltip
+                                            title={
+                                                <>
+                                                    <Typography color="inherit">clinictrials.gov sources</Typography>
+                                                    {
+                                                        x.other.split('\n').length > 0 ? x.other.split('\n').map((oth, i) => {
+                                                            return (
+                                                                <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a>
+                                                            )
+                                                        }) : <a href={x.other}>link</a>
+                                                    }
+                                                </>
+                                            }
+                                        >
+                                            <div>
+                                                <span className='selectable'>clinictrials.gov</span>
+                                            </div>
+                                        </HtmlTooltip></td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#F1F1F3' }}><a className='selectable' href={x.clinicalPhase.includes('Phase I') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase I') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#E0DFE5' }}><a className='selectable' href={x.clinicalPhase.includes('Phase IIA') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase IIA') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#CCCAD5' }}><a className='selectable' href={x.clinicalPhase.includes('Phase IIB') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase IIB') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#B5B2C3' }}><a className='selectable' href={x.clinicalPhase.includes('Phase III') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase III') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#A3A1B6' }}><a className='selectable' href={x.clinicalPhase.includes('Phase IV') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase IV') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
                                     </tr>
                                 )
                             }
@@ -1110,7 +1127,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                         </tbody>
                     </table>
                 </div>
-                <div className='py-4'>
+                {/* <div className='py-4'>
                     <h5>Antigen Platform</h5>
                     <ul>
                         {getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).length > 0 ? getVaccineCandidatePlatformsUniqueByPathogenName(selectedPathogen?.name).map((x) => {
@@ -1119,7 +1136,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                             )
                         }) : <li>no data to display</li>}
                     </ul>
-                </div>
+                </div> */}
             </div>
         </>
     )

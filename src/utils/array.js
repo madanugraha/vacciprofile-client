@@ -68,6 +68,16 @@ export const getAllPhasesByVaccineCandidateName = (name) => {
     }
 };
 
+export const getAllClinicTrialsByVaccineCandidateName = (name) => {
+    const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
+    if (f.length > 0) {
+        const ff = f.map((x) => x.other);
+        if (ff.length > 0) {
+            return _.uniq(ff).join(', ')
+        }
+    }
+};
+
 export const getAllPlatformByCandidateName = (name) => {
     const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
     if (f.length > 0) {

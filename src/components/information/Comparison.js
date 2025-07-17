@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { getAllVaccineByPathogenId, getAvailableLicensingByVaccineName, getCombinationVaccineByPathogenId, getLicensingDateByVaccineNameAndType, getPathogenVaccineByDieasesName, getProductProfileValueByVaccineNameAndType, getVaccinesByPathogenId } from '../../utils/pathogens';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
@@ -14,15 +14,22 @@ import { cutStringMoreThan32 } from '../../utils/string';
 import * as _ from 'lodash';
 import DraggableIcon from '../../assets/icons/draggable';
 import ExcelJS from 'exceljs';
-import { FormControl, InputLabel, ListItemText, MenuItem, OutlinedInput, Select } from '@mui/material';
+import { ListItemText } from '@mui/material';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import moment from 'moment/moment';
+import generatePDF from 'react-to-pdf';
+import { DNA } from 'react-loader-spinner'
+
 
 
 const workbook = new ExcelJS.Workbook();
-workbook.creator = 'Me';
-workbook.lastModifiedBy = 'Her';
-workbook.created = new Date(1985, 8, 30);
+workbook.creator = 'Global Health Press';
+workbook.lastModifiedBy = 'Global Health Press';
+workbook.created = new Date();
 workbook.modified = new Date();
-workbook.lastPrinted = new Date(2016, 9, 27);
+workbook.lastPrinted = new Date();
 // Set workbook dates to 1904 date system
 workbook.properties.date1904 = true;
 
@@ -69,6 +76,7 @@ const style = {
  * />
  */
 const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
+    const targetRef = useRef();
     const [open, setOpen] = useState(false);
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const convertCamelCaseToReadable = string => {
@@ -80,25 +88,53 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [compareSubmitted, setCompareSubmitted] = useState(false);
     const [compareActive, setCompareActive] = useState(false);
     const tableFields = [
-        { title: 'Type', alt: 'type' },
-        { title: 'Composition/Platform', alt: 'composition' },
-        { title: 'Strain Coverage', alt: 'strainCoverage' },
-        { title: 'Indication', alt: 'indication' },
-        { title: 'Dosing', alt: 'dosing' },
-        { title: 'Contraindication', alt: 'contraindication' },
-        { title: 'Immunogenicity', alt: 'immunogenicity' },
-        { title: 'Efficacy', alt: 'Efficacy' },
-        { title: 'Duration of Protection', alt: 'durationOfProtection' },
-        { title: 'Co-Administration', alt: 'coAdministration' },
-        { title: 'Reactogenicity', alt: 'reactogenicity' },
-        { title: 'Safety', alt: 'safety' },
-        { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
-        { title: 'Others', alt: 'others' },
-        { title: 'Approval Date', alt: 'approvalDate' },
-        { title: 'Last Updated', alt: 'lastUpdated' },
-        { title: 'Lincensing Auhtorities', alt: 'source' },
+        { title: 'Type', alt: 'type', no: 1 },
+        { title: 'Composition/Platform', alt: 'composition', no: 2 },
+        { title: 'Strain Coverage', alt: 'strainCoverage', no: 3 },
+        { title: 'Indication', alt: 'indication', no: 4 },
+        { title: 'Dosing', alt: 'dosing', no: 5 },
+        { title: 'Contraindication', alt: 'contraindication', no: 6 },
+        { title: 'Immunogenicity', alt: 'immunogenicity', no: 7 },
+        { title: 'Efficacy', alt: 'Efficacy', no: 8 },
+        { title: 'Duration of Protection', alt: 'durationOfProtection', no: 9 },
+        { title: 'Co-Administration', alt: 'coAdministration', no: 10 },
+        { title: 'Reactogenicity', alt: 'reactogenicity', no: 11 },
+        { title: 'Safety', alt: 'safety', no: 12 },
+        { title: 'Vaccination Goal', alt: 'vaccinationGoal', no: 13 },
+        { title: 'Others', alt: 'others', no: 14 },
+        { title: 'Approval Date', alt: 'approvalDate', no: 15 },
+        { title: 'Last Updated', alt: 'lastUpdated', no: 16 },
+        { title: 'Licensing Authorities', alt: 'source', no: 17 },
     ];
 
+    const vaccineLabelDefinition = [
+        { title: 'Type', definition: 'The classification of the vaccine based on how it stimulates immunity.' },
+        { title: 'Composition/Platform', definition: 'The ingredients or biological components and the technology platform used to create the vaccine.' },
+        { title: 'Strain Coverage', definition: 'The specific strains or variants of a virus that the vaccine protects against.' },
+        { title: 'Indication', definition: 'The official, approved use of the vaccine (what it prevents, and in whom).' },
+        { title: 'Dosing', definition: 'The number and timing of doses required for optimal immunity.' },
+        { title: 'Contraindication', definition: 'Conditions or factors that serve as reasons to withhold the vaccine.' },
+        { title: 'Immunogenicity', definition: 'The ability of the vaccine to induce an immune response (e.g., antibody titers, T-cell response).' },
+        { title: 'Efficacy', definition: 'The percentage reduction in disease among vaccinated versus unvaccinated individuals under trial conditions.' },
+        { title: 'Duration of Protection', definition: 'How long the vaccine continues to offer protective immunity.' },
+        { title: 'Co-Administration', definition: 'The ability to give the vaccine with other vaccines at the same time.' },
+        { title: 'Reactogenicity', definition: 'The physical manifestation of the body’s inflammatory response to the vaccine.' },
+        { title: 'Safety', definition: 'The overall assessment of risk, including serious adverse events.' },
+        { title: 'Vaccination Goal', definition: 'The broader public health purpose of the vaccine.' },
+        { title: 'Others', definition: 'Miscellaneous or additional relevant info not captured by other categories.' },
+        { title: 'Approval Date', definition: 'The date the vaccine received formal approval from a licensing authority.' },
+        { title: 'Last Updated', definition: 'The most recent date of label, indication, or technical update.' },
+        { title: 'Licensing Authorities', definition: 'The national or international agencies responsible for evaluating and approving vaccines.' }
+    ]
+
+    const getDefinitionOfVaccineLabel = (title) => {
+        const f = vaccineLabelDefinition.filter((x) => x.title === title);
+        if (f.length > 0) {
+            return f[0].definition
+        } else {
+            return "-"
+        };
+    }
 
     const exceptionalFields = [
         { title: 'Composition/Platform', alt: 'composition' },
@@ -114,6 +150,9 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         { title: 'Safety', alt: 'safety' },
         { title: 'Vaccination Goal', alt: 'vaccinationGoal' },
         { title: 'Others', alt: 'others' },
+        { title: 'Approval Date', alt: 'approvalDate', no: 15 },
+        { title: 'Last Updated', alt: 'lastUpdated', no: 16 },
+        { title: 'Licensing Authorities', alt: 'source', no: 17 },
     ];
 
     const checkIfExceptionFields = (name) => {
@@ -132,33 +171,32 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
     const [vaccineFieldsState, setVaccineFieldsState] = useState([]);
     const [secondaryVaccineFields, setSecondaryVaccineFields] = useState([]);
     const [selectedModalFilter, setSelectedModalFilter] = useState(tableFields.map((x) => x.title));
-
-    const newA = selectedFilterTableFields && selectedModalFilter.length > 0 ? selectedModalFilter?.map((x) => {
-        let altName = tableFields.filter((z) => z.title === x)[0].alt
-        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${altName}`);
-        const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
-        const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
-        const result5 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.source))}`);
+    const [newSelectedModalFilter, setNewSelectedModalFilter] = useState([]);
 
 
-        const result2 = secondaryVaccineFields[0]?.map((y) => {
-            return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[altName]))}`
-        });
-
-        if (result3 && result3.length > 0) {
-            return [x, ...result3]
+    useEffect(() => {
+        const getOrderNoByTitle = (title) => {
+            const f = tableFields.filter((x) => x.title === title);
+            if (f.length > 0) {
+                return f[0].no
+            } else {
+                return 0
+            }
         };
-        if (result4 && result4.length > 0) {
-            return [x, ...result4]
+        const sortedSelectedModalFilter = () => {
+            let a = [];
+            selectedModalFilter.map((x) => {
+                const q = getOrderNoByTitle(x);
+                a.push({
+                    title: x,
+                    no: q
+                })
+            });
+            return a;
         };
-        if (result5 && result5.length > 0) {
-            return [x, ...result5]
-        };
-
-        return [x, (checkIfExceptionFields(x) ? result2 : result1)];
-    }) : [];
-
-    const arrayToGenerate = newA || [];
+        const p = sortedSelectedModalFilter();
+        setNewSelectedModalFilter(p);
+    }, [selectedModalFilter])
 
     const handleProceedComparison = () => {
         setCompareSubmitted(true);
@@ -197,7 +235,62 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
 
     const handleDownloadComparison = () => {
 
-        sheet.columns = [arrayToGenerate[0][0], ...arrayToGenerate[0][1]].map((x) => {
+        const newA = selectedFilterTableFields && selectedModalFilter.length > 0 ? selectedModalFilter?.map((x) => {
+            let altName = tableFields.filter((z) => z.title === x)[0].alt
+            const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.name}`);
+            const result3 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.approvalDate))}`);
+            const result4 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.lastUpdated))}`);
+            const result5 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)?.map((licenser) => y?.licensingDates?.filter((ld) => ld?.name === licenser?.title)?.map((ld) => ld?.source))}`);
+
+            const result2 = secondaryVaccineFields[0]?.map((y) => {
+                return `${y?.licenser?.filter((yl) => yl.checked)?.map((titleLicenser) => y?.productProfiles?.filter((yp) => yp?.type === titleLicenser?.title)?.map((productProfile) => productProfile[altName]))}`
+            });
+
+            // console.log(result1);
+            let final = [];
+
+            // if (result4 && result4.length > 0) {
+            //     return [x, ...result4]
+            // };
+
+            // if (result5 && result5.length > 0) {
+            //     return [x, ...result5]
+            // };
+
+            // console.log(...result1);
+
+            if (result2) {
+                final = [x, ...result2];
+            };
+
+            if (x === "Approval Date" && result3) {
+                final = [x, ...result3]
+            };
+
+            if (x === "Last Updated" && result4) {
+                final = [x, ...result4]
+            }
+
+            if (x === "Licensing Authorities" && result5) {
+                final = [x, ...result5]
+            }
+
+            // if (result1) {
+            //     final = [x, ...result1];
+            //     // console.log('xxx >>> ', final)
+            // }
+
+            return final
+        }) : [];
+
+        const arrayToGenerate = newA || [];
+
+
+        // return;
+        const result1 = secondaryVaccineFields[0]?.map((y) => `${y?.licenser?.filter((yl) => yl.checked)[0]?.title} - ${y.name}`);
+
+
+        sheet.columns = ["Type", ...result1].map((x) => {
             return {
                 header: x, key: x, width: 10
             }
@@ -211,22 +304,29 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             }
         });
 
+        // console.log(p);
+
         p.map((x) => {
             return sheet.addRow(x);
         });
 
         autoWidth(sheet);
-
         workbook.xlsx.writeBuffer().then(function (data) {
             const blob = new Blob([data],
                 { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
             const url = window.URL.createObjectURL(blob);
             const anchor = document.createElement('a');
             anchor.href = url;
-            anchor.download = 'vacciprofile-comparison-result.xlsx';
+            anchor.target = "_blank"
+            anchor.download = `VacciProfile-Comparison-Result-${moment().format('DD-MM-YYYY-HH-mm-ss-A')}.xlsx`;
             anchor.click();
             window.URL.revokeObjectURL(url);
         });
+
+        setOpen(false);
+        setTimeout(() => {
+            window.location.reload();
+        }, 1500);
     };
 
     const handleSelectLicenserFieldsVaccine = (name, value) => {
@@ -451,14 +551,40 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         const {
             target: { value },
         } = event;
-        if (!value.includes("Type")) {
-            return
+
+        const c = selectedModalFilter.some((x) => x.includes(value));
+
+        if (c) {
+            const f = selectedModalFilter.filter((x) => x !== value);
+            setSelectedModalFilter(f);
         } else {
-            setSelectedModalFilter(
-                // On autofill we get a stringified value.
-                typeof value === 'string' ? value.split(',') : value,
-            );
+            setSelectedModalFilter([...selectedModalFilter, value]);
         }
+    };
+
+
+    const [checksAllFilterItems, setChecksAllFilterItems] = useState(true);
+
+    const handleCheckAllSelectedModalFilter = (event) => {
+        const {
+            target: { checked },
+        } = event;
+
+        if (checked) {
+            setSelectedModalFilter(tableFields.map((x) => x.title))
+        } else {
+            setSelectedModalFilter([tableFields.filter((x) => x.no === 1)[0].title]);
+        }
+
+        setChecksAllFilterItems(checked);
+        // const c = selectedModalFilter.some((x) => x.includes(value));
+
+        // if (c) {
+        //     const f = selectedModalFilter.filter((x) => x !== value);
+        //     setSelectedModalFilter(f);
+        // } else {
+        //     setSelectedModalFilter([...selectedModalFilter, value]);
+        // }
     };
 
     const getAltNameByTitleName = (name) => {
@@ -766,7 +892,6 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
         if (vaccineChecked && !checked && lenLicenserData === 1) {
             f = secondaryVaccineFields.map((data) => {
                 return data.map((x) => {
-                    console.log('xxxx')
                     if (x.name === vacineName) {
                         return {
                             ...x,
@@ -811,6 +936,35 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             // setSelectedFilterTableFields([tableFields[0], tableFields[1], tableFields[14], tableFields[15], tableFields[16]])
         }
     }, [showEma, showFda, showWho, allFactorShows, licensedOnly]);
+
+
+    const HtmlTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} classes={{ popper: className }} />
+    ))(({ theme }) => ({
+        [`& .${tooltipClasses.tooltip}`]: {
+            backgroundColor: '#f5f5f9',
+            color: 'rgba(0, 0, 0, 0.87)',
+            maxWidth: 220,
+            fontSize: theme.typography.pxToRem(12),
+            border: '1px solid #dadde9',
+        },
+    }));
+
+    const getCountActiveLabels = () => {
+        let ctx = 0;
+        const m = secondaryVaccineFields.map((x) => {
+            return x.map((z) => {
+                return z.licenser?.map((y) => {
+                    if (y.checked) {
+                        ctx += 1
+                    }
+                })
+            })
+        });
+        return ctx;
+    };
+
+    const [isLoading, setIsLoading] = useState(false);
 
     return !checkIfPathogenCandidate(selectedPathogen) ? (
         <>
@@ -1212,8 +1366,131 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                         <div style={{ position: 'absolute', right: -35, top: -20, width: 75 }}>
                             <button type='button' onClick={() => setOpen(false)} className='btn' style={{ background: '#c1121f', color: 'white', fontSize: 'bold', textAlign: 'center' }}>X</button>
                         </div>
-                        <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 20, overflow: 'scroll', maxWidth: '165vh' }}>
+                        <div className='d-inline-flex' style={{ marginTop: 30, marginBottom: 0, overflow: 'scroll', maxWidth: '165vh' }}>
                             <div>
+                                <div style={{ marginTop: 0 }}>
+                                    <div className='d-flex border border-secondary rounded' style={{ alignItems: 'center', marginBottom: 5, marginTop: 10 }}>
+                                        <div style={{ marginLeft: 10, marginRight: 40, alignSelf: 'center', display: 'flex', flexDirection: 'column' }}>
+                                            {
+                                                tableFields.filter((x, i) => i > 0 && i <= 4).map((x) => {
+                                                    return (
+                                                        <div style={{ height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                            <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
+
+                                                            <HtmlTooltip
+                                                                title={
+                                                                    <>
+                                                                        <Typography color="inherit">{getDefinitionOfVaccineLabel(x.title)}</Typography>
+                                                                        {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                                                    </>
+                                                                }
+                                                            >
+                                                                <div>
+                                                                    <ListItemText primary={x.title} />
+                                                                    {/* <span className='selectable'>{"WHO"}</span> */}
+                                                                </div>
+                                                            </HtmlTooltip>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <div style={{ marginLeft: 10, marginRight: 40, alignSelf: 'center', display: 'flex', flexDirection: 'column' }}>
+                                            {
+                                                tableFields.filter((x, i) => i > 4 && i <= 8).map((x) => {
+                                                    return (
+                                                        <div style={{ height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                            <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
+                                                            <HtmlTooltip
+                                                                title={
+                                                                    <>
+                                                                        <Typography color="inherit">{getDefinitionOfVaccineLabel(x.title)}</Typography>
+                                                                        {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                                                    </>
+                                                                }
+                                                            >
+                                                                <div>
+                                                                    <ListItemText primary={x.title} />
+                                                                    {/* <span className='selectable'>{"WHO"}</span> */}
+                                                                </div>
+                                                            </HtmlTooltip>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <div style={{ marginLeft: 10, marginRight: 40, alignSelf: 'center', display: 'flex', flexDirection: 'column' }}>
+                                            {
+                                                tableFields.filter((x, i) => i > 8 && i <= 12).map((x) => {
+                                                    return (
+                                                        <div style={{ height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                            <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
+                                                            <HtmlTooltip
+                                                                title={
+                                                                    <>
+                                                                        <Typography color="inherit">{getDefinitionOfVaccineLabel(x.title)}</Typography>
+                                                                        {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                                                    </>
+                                                                }
+                                                            >
+                                                                <div>
+                                                                    <ListItemText primary={x.title} />
+                                                                    {/* <span className='selectable'>{"WHO"}</span> */}
+                                                                </div>
+                                                            </HtmlTooltip>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <div style={{ marginLeft: 10, marginRight: 40, alignSelf: 'center', display: 'flex', flexDirection: 'column' }}>
+                                            {
+                                                tableFields.filter((x, i) => i > 12 && i <= 16).map((x) => {
+                                                    return (
+                                                        <div style={{ height: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                                            <Checkbox onChange={handleChangeSelectedModalFilter} value={x.title} checked={selectedModalFilter.includes(x.title)} />
+                                                            <HtmlTooltip
+                                                                title={
+                                                                    <>
+                                                                        <Typography color="inherit">{getDefinitionOfVaccineLabel(x.title)}</Typography>
+                                                                        {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                                                    </>
+                                                                }
+                                                            >
+                                                                <div>
+                                                                    <ListItemText primary={x.title} />
+                                                                    {/* <span className='selectable'>{"WHO"}</span> */}
+                                                                </div>
+                                                            </HtmlTooltip>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{ marginBottom: 5, display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                    <Checkbox onChange={(e) => {
+                                        // console.log(e.target.checked)
+                                        // setChecksAllFilterItems(e.target.checked);
+                                        handleCheckAllSelectedModalFilter(e);
+                                    }} value={""} checked={checksAllFilterItems} />
+                                    <HtmlTooltip
+                                        title={
+                                            <>
+                                                <Typography color="inherit">Select/Deselect all items to filter above</Typography>
+                                                {/* {getLicensingDateByVaccineNameAndTypeV2("WHO", "source", vaccine.name)} */}
+                                            </>
+                                        }
+                                    >
+                                        <div>
+                                            <ListItemText primary={"Select / Deselect all items"} />
+                                            {/* <span className='selectable'>{"WHO"}</span> */}
+                                        </div>
+                                    </HtmlTooltip>
+                                </div>
+                            </div>
+                            {/* <div>
                                 <div style={{ marginTop: 0 }}>
                                     <FormControl sx={{ m: 1, width: 250 }}>
                                         <InputLabel id="demo-multiple-checkbox-label">Filter</InputLabel>
@@ -1243,7 +1520,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                         </Select>
                                     </FormControl>
                                 </div>
-                            </div>
+                            </div> */}
                             {secondaryVaccineFields.length > 0 ? secondaryVaccineFields.map((data, secondaryIdx) => {
                                 return (
                                     <div style={{ marginLeft: 10, marginRight: 40, alignItems: 'center', marginTop: 10 }}>
@@ -1280,9 +1557,9 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                             }) : null}
                         </div>
                         <div className='view' style={{ overflow: 'scroll' }}>
-                            <div style={{ overflowY: 'scroll' }} className="max-h-table-comparison d-inline-flex w-100 wrapper">
+                            <div style={{ overflowY: 'scroll' }} id="table-scroll" className="max-h-table-comparison d-inline-flex w-100 wrapper">
                                 {secondaryVaccineFields.length >= 1 ? (
-                                    <table className='' id="comparison-table" border={1}
+                                    <table className='' ref={targetRef} border={1} style={{ margin: 10 }} id="comparison-table"
                                         data-toolbar=".toolbar"
                                         data-show-columns="true"
                                         data-search="true"
@@ -1290,25 +1567,24 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                         data-pagination="true"
                                         data-reorderable-columns="true">
                                         <tbody>
-                                            {selectedModalFilter.map((field, idx) => {
+                                            {newSelectedModalFilter.sort((a, b) => a.no - b.no).map((x) => x.title).map((field, idx) => {
                                                 const key = getAltNameByTitleName(field);
                                                 return key === "name" ? null : (
                                                     <>
                                                         <tr key={Math.random() * 999}>
-                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col ${key === "composition" ? `text-black bg-sidebar-unselected` : ``}`}>{key === "source" ? `Licensing Authorities` : key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
-                                                            {/** TEST */}
+                                                            <td key={convertCamelCaseToReadable(key)} width={700} style={{ fontWeight: 'bold', height: '100%', alignContent: 'baseline', pointerEvents: idx === 0 ? 'none' : 'all' }} className={`sticky-col ${idx === 0 ? "fix-first justify-content-between" : ""} first-col`}>{key === "source" ? `Licensing Authorities` : key === "composition" ? `Composition/Platform` : key === "coAdministration" ? `Co-Administration` : convertCamelCaseToReadable(key)}</td>
                                                             {
                                                                 secondaryVaccineFields.length > 0 && secondaryVaccineFields.map((data) => {
                                                                     return data.filter((x) => x.checked).map((vaccine) => {
                                                                         return vaccine?.licenser && vaccine?.licenser.filter((x) => x.checked).length > 0 ? vaccine.licenser.filter((x) => x.checked).map((licenser, licenserIdx) => {
-                                                                            const conditionedFirstRow = idx === 0 ? {
-                                                                                background: "#C7EAE4",
-                                                                                color: "black"
+                                                                            const conditionedFirstRow = key === "type" ? {
+                                                                                background: "#D17728",
+                                                                                color: "white"
                                                                             } : {};
                                                                             return (
-                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key === "composition" ? `text-black bg-sidebar-unselected` : `text-black bg-sidebar-unselected`} comparison-table-handler`}>
-                                                                                    <div className='d-inline-flex justify-content-between w-100'>
-                                                                                        <span> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) || "-") : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name) || "-")}</span>
+                                                                                <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key !== "type" ? `text-black bg-sidebar-unselected` : ``} comparison-table-handler`}>
+                                                                                    <div className='d-flex w-100'>
+                                                                                        <span className={`${key === "approvalDate" || key === "lastUpdated" || key === "source" ? 'second-col' : ''}`}> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) || "-") : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name) || "-")}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
                                                                                     </div>
                                                                                 </td>
@@ -1326,12 +1602,42 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                 ) : null}
                             </div>
                         </div>
-                        <div style={{ width: 300, marginTop: 20, justifySelf: 'center', marginLeft: 150, paddingTop: 20 }}>
-                            <button type='button' onClick={() => handleDownloadComparison()} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
+                        <div style={{ width: 300, marginTop: -7, justifySelf: 'center', marginLeft: 150 }}>
+                            <button type='button' onClick={() => {
+                                toast.info('Downloading PDF...');
+                                const tableElement = document.getElementById('table-scroll');
+                                tableElement.scrollTop = 0;
+                                tableElement.scrollLeft = 0;
+                                // validation
+                                // min 2
+                                if (getCountActiveLabels() < 2) {
+                                    toast.info('Please select atleast 2 labels to download')
+                                    return;
+                                };
+
+                                if (getCountActiveLabels() > 6) {
+                                    toast.info('Maximum active labels to download is 6')
+                                    return
+                                };
+
+                                const tableHeight = document.getElementById('comparison-table').offsetHeight;
+                                const tableWidth = document.getElementById('comparison-table').offsetWidth;
+                                // max 4
+                                setTimeout(() => {
+                                    generatePDF(targetRef, {
+                                        method: 'open',
+                                        filename: `vacciprofile-comparison-result.pdf`, canvas: { mimeType: 'image/jpeg' }, page: { orientation: 'portrait' }, overrides: {
+                                            pdf: {
+                                                format: [tableWidth * 0.2645833333, tableHeight * 0.2645833333],
+                                            },
+                                        },
+                                    })
+                                }, 1500);
+                            }} className='btn' style={{ background: 'red', color: 'white', fontSize: 'bold' }}>Download</button>
                         </div>
                     </div>
                 </Box>
-            </Modal>
+            </Modal >
         </>
     ) : (
         <>
@@ -1715,6 +2021,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
             <div className='cursor-pointer' style={{ width: 150, height: 30, borderRadius: 8, flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: -10 }}>
                 <p className='mb-0 mt-4 bg-primary' style={{ padding: 4, borderRadius: 8, alignSelf: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center', marginTop: 4 }}><a className='read-more' style={{ textAlign: 'center', color: 'white', alignSelf: 'center', fontWeight: 'bold' }} target="_blank" rel="noopener noreferrer" href={selectedPathogen.link}>Find out more</a></p>
             </div>
+
             <Modal
                 keepMounted
                 open={open}

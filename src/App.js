@@ -17,10 +17,11 @@ import pathogens from './assets/data/pathogens.json';
 import vaccines from './assets/data/vaccines.json';
 import pipelineVaccines from './assets/data/pipeline-vaccines.json';
 import licensers from './assets/data/licensers.json';
-import nitags from './assets/data/nitag-2.json';
+import { finalRemapNitagCountry } from './assets/data/nitag-countries.js';
 import scientificNames from './assets/scientificNames';
 import { compareMenu } from './assets/data/compare-vaccine.js';
 import { getCandidatePathogens, getCandidateVaccines, removeDuplicatesFromArray, sortArrayAscending } from './utils/array.js';
+import { getAllSinglePathogenArray } from './utils/pathogens.js';
 
 /**
  * Main application component for the vaccine profile page.
@@ -341,14 +342,41 @@ const App = () => {
      */
 
     const filterListByStartingAlphabet = useCallback((list) => {
-        const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
-        const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
-            ? list.filter(item => {
-                const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
-                return startsWithAlphabet;
-            })
-            : list;
-        return filteredList;
+
+        if (activeTab !== "Nitag") {
+            const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
+            const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
+                ? list.filter(item => {
+                    const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    return startsWithAlphabet;
+                })
+                : list;
+            return filteredList;
+        }
+
+        if (activeTab === "Nitag") {
+            // const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
+            const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
+                ? list.filter(item => {
+                    const startsWithAlphabet = item[0].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    return startsWithAlphabet;
+                })
+                : list;
+
+            return filteredList;
+        }
+
+        if (activeTab === "Compare") {
+            // const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
+            const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
+                ? list.filter(item => {
+                    const startsWithAlphabet = item[0].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                    return startsWithAlphabet;
+                })
+                : list;
+
+            return filteredList;
+        }
     }, [activeFilters.firstAlphabet, activeTab]);
 
     /**
@@ -369,21 +397,21 @@ const App = () => {
                 manufacturer.description.toLowerCase().includes(keyword);
             if (matchesKeyword) return true;
 
-            const vaccines = getVaccinesByManufacturer(manufacturer) || [];
-            return vaccines.some(vaccine => {
-                const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
-                    vaccine.description.toLowerCase().includes(keyword);
+            // const vaccines = getVaccinesByManufacturer(manufacturer) || [];
+            // return vaccines.some(vaccine => {
+            //     const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
+            //         vaccine.description.toLowerCase().includes(keyword);
 
-                if (vaccineMatch) return true;
+            //     if (vaccineMatch) return true;
 
-                const pathogens = getPathogenByVaccine(vaccine) || [];
-                return Array.isArray(pathogens) && pathogens.some(pathogen =>
-                    pathogen.name.toLowerCase().includes(keyword) ||
-                    pathogen.description.toLowerCase().includes(keyword)
-                );
-            });
+            //     const pathogens = getPathogenByVaccine(vaccine) || [];
+            //     return Array.isArray(pathogens) && pathogens.some(pathogen =>
+            //         pathogen.name.toLowerCase().includes(keyword) ||
+            //         pathogen.description.toLowerCase().includes(keyword)
+            //     );
+            // });
         });
-    }, [manufacturersList, filterListByStartingAlphabet, getVaccinesByManufacturer, getPathogenByVaccine]);
+    }, [manufacturersList, filterListByStartingAlphabet]);
 
     /**
      * Filters the list of vaccines based on the search keyword.
@@ -415,6 +443,14 @@ const App = () => {
         });
     }, [vaccinesList, filterListByStartingAlphabet, getPathogenByVaccine, getManufacturersByVaccine]);
 
+
+    const filterVaccineCandidateByAlphabetAndSearch = useCallback((keyword) => {
+        return filterListByStartingAlphabet(sampleVaccineCandidatePathogen).filter(vaccine => {
+            const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
+                vaccine.description.toLowerCase().includes(keyword);
+            if (vaccineMatch) return true;
+        });
+    }, [sampleVaccineCandidatePathogen, filterListByStartingAlphabet]);
     /**
      * Filters the list of pathogens based on the search keyword.
      * 
@@ -459,36 +495,18 @@ const App = () => {
 
     const filterLicensersByAlphabetAndSearch = useCallback((keyword) => {
         return filterListByStartingAlphabet(licensersList).filter(licenser => {
-            const licenserMatch = licenser.acronym.toLowerCase().includes(keyword) ||
-                licenser.description.toLowerCase().includes(keyword);
+            const licenserMatch = licenser?.country?.toLowerCase().includes(keyword);
 
             if (licenserMatch) return true;
-
-            const vaccines = getVaccinesByLicenser(licenser) || [];
-            return vaccines.some(vaccine => {
-                const vaccineMatch = vaccine.name.toLowerCase().includes(keyword) ||
-                    vaccine.description.toLowerCase().includes(keyword);
-
-                if (vaccineMatch) return true;
-
-                const pathogens = getPathogenByVaccine(vaccine) || [];
-                const pathogenMatch = Array.isArray(pathogens) && pathogens.some(pathogen =>
-                    pathogen.name.toLowerCase().includes(keyword) ||
-                    pathogen.description.toLowerCase().includes(keyword)
-                );
-
-                if (pathogenMatch) return true;
-
-                const manufacturers = getManufacturersByVaccine(vaccine) || [];
-                return Array.isArray(manufacturers) && manufacturers.some(manufacturer =>
-                    manufacturer.name.toLowerCase().includes(keyword) ||
-                    manufacturer.description.toLowerCase().includes(keyword)
-                );
-
-
-            });
         });
-    }, [licensersList, filterListByStartingAlphabet, getVaccinesByLicenser, getPathogenByVaccine, getManufacturersByVaccine]);
+    }, [licensersList, filterListByStartingAlphabet]);
+
+     const filterNitagByAlphabetAndSearch = useCallback((keyword) => {
+        return filterListByStartingAlphabet(finalRemapNitagCountry).filter(licenser => {
+            const licenserMatch = licenser[0].toLowerCase().includes(keyword)
+            if (licenserMatch) return true;
+        });
+    }, [filterListByStartingAlphabet]);
 
     /**
      * Sorts a list of licensers with a custom priority for 'AMA', 'EMA', and 'WHO',
@@ -558,14 +576,21 @@ const App = () => {
             if (activeTab === 'Manufacturer') {
                 filteredSidebarList = filterManufacturersByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
-            } else if (activeTab === 'Vaccine') {
-                filteredSidebarList = filterVaccinesByAlphabetAndSearch(keywordLower).slice()
+            } else if (activeTab === 'Licensed Vaccines') {
+                filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
-            } else if (activeTab === 'Pathogen') {
+            } else if (activeTab === 'Vaccine Candidates') {
                 filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
             } else if (activeTab === 'Licenser') {
-                filteredSidebarList = sortLicensers(filterLicensersByAlphabetAndSearch(keywordLower));
+                filteredSidebarList = filterLicensersByAlphabetAndSearch(keywordLower).slice()  
+            }
+            else if (activeTab === 'Compare') {
+                filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
+                    .sort((a, b) => a.name.localeCompare(b.name));
+            }
+            else if (activeTab === 'Nitag') {
+                filteredSidebarList = filterNitagByAlphabetAndSearch(keywordLower).slice()
             }
             setSidebarList(filteredSidebarList);
         } else {
@@ -584,10 +609,9 @@ const App = () => {
             } else if (activeTab === 'Licenser') {
                 setSidebarList(sortLicensers(filterListByStartingAlphabet(licensersList)));
             } else if (activeTab === 'Compare') {
-                setSidebarList([]);
+                setSidebarList(filterListByStartingAlphabet(getAllSinglePathogenArray()).slice());
             } else if (activeTab === 'Nitag') {
-                setSidebarList(filterListByStartingAlphabet(nitags).slice()
-                    .sort((a, b) => a.country.localeCompare(b.country)));
+                setSidebarList(filterListByStartingAlphabet(finalRemapNitagCountry).slice());
             }
         }
     }, [activeFilters, activeTab, filterListByStartingAlphabet, manufacturersList, pathogensList, vaccinesList, licensersList, filterManufacturersByAlphabetAndSearch, filterPathogensByAlphabetAndSearch, filterVaccinesByAlphabetAndSearch, filterLicensersByAlphabetAndSearch, sortLicensers]);
@@ -671,8 +695,8 @@ const App = () => {
         setSelectedVaccineCandidate(candidateVaccineSorted);
         setSelectedCompare(pathogens[0]);
         setSelectedManufacturer(manufacturers[0]);
-        setSelectedNitag(nitags.slice()
-            .sort((a, b) => a.country.localeCompare(b.country))[0]);
+        // setSelectedNitag(finalRemapNitagCountry.slice()
+        //    .sort((a, b) => a[0].localeCompare(b[0]))[0]);
     }, []);
 
     useEffect(() => {
@@ -772,7 +796,7 @@ const App = () => {
                     </div>
                 </div>
             </footer>
-            <ToastContainer />
+            <ToastContainer position='top-right' theme='dark' closeOnClick autoClose={3000} />
         </div>
     );
 };

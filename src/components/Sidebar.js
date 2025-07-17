@@ -173,7 +173,6 @@ const Sidebar = ({
         if (activeMenu === "pathogen") {
             setActiveTab("Pathogen")
         };
-
         if (activeMenu === "manufacturer") {
             setActiveTab("Manufacturer");
         };
@@ -191,7 +190,7 @@ const Sidebar = ({
         }
         if (activeMenu === "compare") {
             setActiveTab("Compare");
-        }
+        };
     }, [activeMenu]);
 
     // console.log(filteredLicenserSidebarList);
@@ -200,17 +199,38 @@ const Sidebar = ({
 
     const [currentIdxCandidatePathogen, setCurrentIdxCandidatePathogen] = useState(0);
 
+    // console.log(filteredLicenserSidebarList);
     return (
         <div className={`sidebar col-6 col-sm-4 col-lg-3 ps-1 pe-0 ${animationClass}`}>
-            <div className='sidebar-items overflow-auto'>
+            <div id="sidebar" className='sidebar-items overflow-auto'>
                 {
                     activeTab === "Nitag" && filteredLicenserSidebarList.map((item) => {
                         return (
                             <>
-                                <div onClick={() => {
+                                <div id={`nitag-country-${item[0]}`} onClick={() => {
+
                                     handleClickSidebar(item);
+                                    const ctx = item[0];
+
+                                    function handleClickCountryMatchURL(country, url) {
+                                        if (country) {
+                                            country = country.toLowerCase();
+                                            if (url === "Unavailable") {
+                                                window.alert(`No available data for ${country}`)
+                                            }
+                                            if (url !== "Unavailable") {
+                                                return window.open(url, '_blank');
+                                            }
+                                        }
+                                    };
+
+                                    const website = item[1]
+                                    if (website && website.split('Website: ').length > 0) {
+                                        const websiteUrl = website.split('Website: ')[1];
+                                        handleClickCountryMatchURL(ctx, websiteUrl)
+                                    };
                                 }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${(activeTab === 'Nitag' && selectedNitag === item) ? 'active' : 'inactive'}`}>
-                                    {item.country}
+                                    {item[0]}
                                 </div>
                             </>
                         )
@@ -306,7 +326,7 @@ const Sidebar = ({
                                     {italizeScientificNames(item.name)}
                                 </div>
                             ))}
-                            {showLicensedPathogens && getAllSinglePathogenArray().map((item, i) => (
+                            {showLicensedPathogens && filteredLicenserSidebarList.map((item, i) => (
                                 <div
                                     key={i}
                                     className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${activeTab === 'Compare' && selectedCompare === item
@@ -381,7 +401,7 @@ const Sidebar = ({
                     )
                 }
 
-                {activeTab !== "Pathogen" && activeTab !== "Licensed Vaccines" && activeTab !== "Vaccine Candidates" && activeTab !== "Nitag" && filteredLicenserSidebarList.map((item, i) => (
+                {activeTab !== "Compare" && activeTab !== "Pathogen" && activeTab !== "Licensed Vaccines" && activeTab !== "Vaccine Candidates" && activeTab !== "Nitag" && filteredLicenserSidebarList.map((item, i) => (
                     <div
                         key={i}
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${activeTab === 'Manufacturer' && selectedManufacturer === item

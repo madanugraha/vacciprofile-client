@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getAllPathogenNameByVaccineCandidateName, getAllPhasesByVaccineCandidateName, getAllPlatformByCandidateName, getCandidateVaccineByManufactureName, removeDuplicatesFromArray } from '../../utils/array';
+import { getAllClinicTrialsByVaccineCandidateName, getAllPathogenNameByVaccineCandidateName, getAllPhasesByVaccineCandidateName, getAllPlatformByCandidateName, getCandidateVaccineByManufactureName, removeDuplicatesFromArray } from '../../utils/array';
 import { getLicensedVaccineByManufacturerId, getLicensingDateByVaccineNameAndTypeV2, getPathogenDetailById } from '../../utils/pathogens';
 import * as _ from 'lodash';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
@@ -245,6 +245,7 @@ const VaccineListTable = ({
                                     <th className='text-center'>Pathogen</th>
                                     <th className='text-center'>Platform</th>
                                     <th className='text-center'>Clinical Phase</th>
+                                    <th className='text-center'>Clinictrials.gov</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -253,7 +254,7 @@ const VaccineListTable = ({
                                         <tr key={key}>
                                             <td className='vaccine-cell'>
                                                 <span
-                                                    className={`${activeTab === "Vaccine" && selectedVaccine.name === vaccine.name ? `selected` : `disabled`}`}
+                                                    className={`selectable`}
                                                     onClick={() => {
                                                         // TODO Pipeline Vaccine
                                                         // handleSelectVaccine(vaccine)
@@ -262,17 +263,35 @@ const VaccineListTable = ({
                                                 </span>
                                             </td>
                                             <td className='pathogen-cell d-flex flex-row'>
-                                                <span>{getAllPathogenNameByVaccineCandidateName(vaccine.name)}</span>
+                                                <span className='selected'>{getAllPathogenNameByVaccineCandidateName(vaccine.name)}</span>
                                             </td>
                                             <td className='status-cell'>
                                                 <span>{getAllPlatformByCandidateName(vaccine.name)}</span>
                                             </td>
                                             <td className='licenser-cell'>
-                                                {getAllPhasesByVaccineCandidateName(vaccine.name)}
+                                                <span className=''>{getAllPhasesByVaccineCandidateName(vaccine.name)}</span>
                                             </td>
+                                            <td><HtmlTooltip
+                                                title={
+                                                    <>
+                                                        <Typography color="inherit">clinictrials.gov sources</Typography>
+                                                        {
+                                                            getAllClinicTrialsByVaccineCandidateName(vaccine.name).split('\n').length > 0 ? getAllClinicTrialsByVaccineCandidateName(vaccine.name).split('\n').map((oth, i) => {
+                                                                return (
+                                                                    <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a>
+                                                                )
+                                                            }) : <a href={getAllClinicTrialsByVaccineCandidateName(vaccine.name)}>link</a>
+                                                        }
+                                                    </>
+                                                }
+                                            >
+                                                <div>
+                                                    <span className='selectable'>clinictrials.gov</span>
+                                                </div>
+                                            </HtmlTooltip></td>
                                         </tr>
                                     )
-                                }) : <tr><td colSpan={4} align='center'>- no data available -</td></tr>}
+                                }) : <tr><td colSpan={5} align='center'>- no data available -</td></tr>}
                             </tbody>
                         </table>
                     </div>

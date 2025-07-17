@@ -22,9 +22,9 @@ const HomePage = () => {
                 </table>
             </div>
 
-            <div className='container-home text-center' style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'row' }}>
-                <div class="container-home text-center" style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'column' }}>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
+            {/* <div className='container-home text-center' style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'row' }}> */}
+            <div class="container-home text-center" style={{ margin: '0 auto', alignItems: 'center', justifyContent: 'center', flex: 1, flexDirection: 'column' }}>
+                {/* <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
                         <div class="image-container">
                             <img src="/images/VACCIE PROFILE OUTLINE-03.png" alt="Pathogens" />
                         </div>
@@ -32,57 +32,65 @@ const HomePage = () => {
                         <p>Essential characteristics, vaccines, and vaccine candidates
                         </p>
                         <button class="btn">View more</button>
+                    </div> */}
+                <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
+                    <div class="image-container">
+                        <img src="/images/VACCIE PROFILE OUTLINE-04.png" alt="Vaccines" />
                     </div>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=licensed-vaccines"}>
-                        <div class="image-container">
-                            <img src="/images/VACCIE PROFILE OUTLINE-04.png" alt="Vaccines" />
-                        </div>
-                        <div class="title">Vaccines</div>
-                        <p>Compare brandnames, licenses. single and combination vaccines</p>
-                        <button class="btn">View more</button>
-                    </div>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=manufacturer"}>
-                        <div class="image-container">
-                            <img src="/images/VACCIE PROFILE OUTLINE-05.png" alt="Manufacturers" />
-                        </div>
-                        <div class="title">Manufacturers</div>
-                        <p>Basic company information, vaccines. licenses and labels</p>
-                        <button class="btn">View more</button>
-                    </div>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=licenser"}>
-                        <div class="image-container">
-                            <img src="/images/VACCIE PROFILE OUTLINE-06.png" alt="Licensing Authorities" />
-                        </div>
-                        <div class="title">Licensing Authorities</div>
-                        <p>Essential information and licensed products</p>
-                        <button class="btn">View more</button>
-                    </div>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=vaccine-candidates"}>
-                        <div class="image-container">
-                            <img src="/images/VACCIE PROFILE OUTLINE-07.png" alt="Pipeline Vaccine" />
-                        </div>
-                        <div class="title">Vaccine Candidates</div>
-                        <p>Vaccine candidates from phase 1 to 4 by pathogen and manufacturer</p>
-                        <button class="btn">View more</button>
-                    </div>
-                    <div class="card" onClick={() => window.location.href = "/home?menu=nitag"}>
-                        <div class="image-container">
-                            <img src="/images/VACCIE-PROFILE-OUTLINE-08.png" alt="Licensing Authorities" />
-                        </div>
-                        <div class="title" style={{ fontSize: 15 }}>National Immunization Technical Advisory Groups</div>
-                        <span style={{ marginBottom: 8 }}>(NITAGs) Current recommendations and procedures</span>
-                        <button class="btn">View more</button>
-                    </div>
+                    <div class="title">Licensed Vaccines</div>
+                    <p>By brandnames, licenses. single and combination vaccines</p>
+                    <button class="btn">View more</button>
                 </div>
-                <div class="card" onClick={() => window.location.href = "/home?menu=compare"}>
+                <div class="card" onClick={() => window.location.href = "/home?menu=vaccine-candidates"}>
+                    <div class="image-container">
+                        <img src="/images/VACCIE PROFILE OUTLINE-07.png" alt="Pipeline Vaccine" />
+                    </div>
+                    <div class="title">Vaccine Candidates</div>
+                    <p>By pathogen and manufacturer</p>
+                    <button class="btn">View more</button>
+                </div>
+                <div class="card" onClick={() => window.location.href = "/home?menu=manufacturer"}>
+                    <div class="image-container">
+                        <img src="/images/VACCIE PROFILE OUTLINE-05.png" alt="Manufacturers" />
+                    </div>
+                    <div class="title">Manufacturers</div>
+                    <p>Basic company information, vaccines. licenses and labels</p>
+                    <button class="btn">View more</button>
+                </div>
+                <div class="card" onClick={() => window.location.href = "/home?menu=licenser"}>
+                    <div class="image-container">
+                        <img src="/images/VACCIE PROFILE OUTLINE-06.png" alt="Licensing Authorities" />
+                    </div>
+                    <div class="title">Licensing Authorities</div>
+                    <p>Essential information and licensed products</p>
+                    <button class="btn">View more</button>
+                </div>
+                <div class="card" onClick={() => window.location.href = "/home?menu=nitag"}>
+                    <div class="image-container">
+                        <img src="/images/VACCIE-PROFILE-OUTLINE-08.png" alt="Licensing Authorities" />
+                    </div>
+                    <div class="title">NITAG</div>
+                    <span style={{ marginBottom: 8 }}>National Immunization Technical Advisory Groups <br /> Recommendations and procedures</span>
+                    <button class="btn">View more</button>
+                </div>
+                <div class="card" style={{ background: '#DF7626' }} onClick={() => window.location.href = "/home?menu=compare"}>
+                    <div class="image-container">
+                        <img src="/images/vacciprofile-compare.png" alt="Comparison" />
+                    </div>
+                    <div class="title" style={{ color: 'white' }}>Comparison</div>
+                    <p style={{ color: 'white' }}>Vaccines data comparisons based on the pathogens</p>
+                    <button class="btn" style={{ color: 'white' }}>View more</button>
+                </div>
+            </div>
+            {/* <div class="card" onClick={() => window.location.href = "/home?menu=compare"}>
                     <div class="image-container">
                         <img src="/images/vacciprofile-compare.png" alt="Comparison" />
                     </div>
                     <div class="title">Comparison</div>
                     <p>Vaccines data comparisons</p>
                     <button class="btn">View more</button>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
 
             <footer style={{ backgroundColor: '#111', color: '#ddd', padding: '20px', textAlign: 'center', fontFamily: 'Arial, sans-serif;', display: 'flex', flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ marginBottom: '10px' }}>
