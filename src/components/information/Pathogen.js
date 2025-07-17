@@ -1103,7 +1103,9 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                                                     {
                                                         x.other.split('\n').length > 0 ? x.other.split('\n').map((oth, i) => {
                                                             return (
-                                                                <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a>
+                                                                <>
+                                                                    <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a><br />
+                                                                </>
                                                             )
                                                         }) : <a href={x.other}>link</a>
                                                     }
