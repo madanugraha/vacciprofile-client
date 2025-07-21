@@ -481,7 +481,7 @@ const App = () => {
         });
     }, [pathogensList, filterListByStartingAlphabet, getVaccineByPathogen, getManufacturersByVaccine]);
 
-    /**
+    /** 
      * Filters the list of licensers based on the search keyword.
      * 
      * This function filters licensers and also checks related vaccines and pathogens for matches with the search keyword.
