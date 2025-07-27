@@ -1,1325 +1,1325 @@
 [
-    {
-      "pathogenName": "Bacillus anthracis",
-      "name": "GC1109",
-      "manufacturer": "GC Biopharma",
-      "platform": "No data",
-      "clinicalPhase": "Phase IV",
-      "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-      "other": "https://clinicaltrials.gov/search?intr=GC1109"
-    },
-    {
-      "pathogenName": "Bordetella pertussis",
-      "name": "GC3111A",
-      "manufacturer": "GC Biopharma",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-      "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
-    },
-    {
-      "pathogenName": "Borrelia burgdorferi",
-      "name": "mRNA-1975",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1975"
-    },
-    {
-      "pathogenName": "Borrelia burgdorferi",
-      "name": "mRNA-1982",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1982"
-    },
-    {
-      "pathogenName": "Borrelia burgdorferi",
-      "name": "PF-07307405",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=PF-07307405"
-    },
-    {
-      "pathogenName": "Borrelia burgdorferi",
-      "name": "VLA15",
-      "manufacturer": "Valneva SE",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://valneva.com/research-development/",
-      "other": "https://clinicaltrials.gov/search?intr=VLA15"
-    },
-    {
-      "pathogenName": "Chikungunya Virus",
-      "name": "CHIKUNGUNYA",
-      "manufacturer": "Bharat Biotech",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
-      "other": "https://clinicaltrials.gov/search?limit=50&cond=Chikungunya&lead=Bharat Biotech%20Biotech%20International%20Limited"
-    },
-    {
-      "pathogenName": "Chikungunya Virus",
-      "name": "CHIKV VLP",
-      "manufacturer": "Bavarian Nordic A/S",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.bavarian-nordic.com/what-we-do/pipeline.aspx",
-      "other": "https://clinicaltrials.gov/search?limit=50&cond=Chikungunya&lead=Bavarian%20Nordic"
-    },
-    {
-      "pathogenName": "Clostridium difficile",
-      "name": "PF-07831694",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": "https://clinicaltrials.gov/search?limit=50&cond=Clostridium%20difficile&spons=Pfizer"
-    },
-    {
-      "pathogenName": "Clostridium difficile",
-      "name": "PF-06425090",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": "https://clinicaltrials.gov/search?limit=50&cond=Clostridium%20difficile&spons=Pfizer"
-    },
-    {
-      "pathogenName": "Clostridium tetani",
-      "name": "GC3111A",
-      "manufacturer": "GC Biopharma",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-      "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
-    },
-    {
-      "pathogenName": "Corynebacterium diphtheriae",
-      "name": "GC3111A",
-      "manufacturer": "GC Biopharma",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-      "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
-    },
-    {
-      "pathogenName": "Cytomegalovirus (CMV)",
-      "name": "mRNA-1647",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1647"
-    },
-    {
-      "pathogenName": "Cytomegalovirus (CMV)",
-      "name": "GSK3993129",
-      "manufacturer": "GSK",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": "https://clinicaltrials.gov/search?limit=50&cond=Cytomegalovirus&spons=GlaxoSmithKline"
-    },
-    {
-      "pathogenName": "Cytomegalovirus (CMV)",
-      "name": "VBI-1501",
-      "manufacturer": "VBI Vaccines Inc.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
-      "other": "https://clinicaltrials.gov/search?intr=VBI-1501"
-    },
-    {
-      "pathogenName": "Dengue Virus",
-      "name": "V181",
-      "manufacturer": "MSD (Merck Sharp & Dohme)",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.msd.com/research/product-pipeline/",
-      "other": "https://clinicaltrials.gov/search?intr=V181"
-    },
-    {
-      "pathogenName": "Epstein Barr Virus (EBV)",
-      "name": "mRNA-1189",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1189"
-    },
-    {
-      "pathogenName": "Epstein Barr Virus (EBV)",
-      "name": "mRNA-1195",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1195"
-    },
-    {
-      "pathogenName": "Escherichia coli (E. coli)",
-      "name": "SP0282",
-      "manufacturer": "Sanofi",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Hepatitis A Virus",
-      "name": "Inactivated Hepatitis A Vaccine (Adsorbed)",
-      "manufacturer": "Zydus Lifesciences Ltd",
-      "platform": "Inactivated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
-      "other": ""
-    },
-    {
-      "pathogenName": "Hepatitis E Virus",
-      "name": "Recombinant Hepatitis E Vaccine (Adsorbed)",
-      "manufacturer": "Zydus Lifesciences Ltd",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
-      "other": ""
-    },
-    {
-      "pathogenName": "Herpes Simplex Virus (HSV)",
-      "name": "BNT163",
-      "manufacturer": "BioNTech",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
-      "other": "https://clinicaltrials.gov/search?intr=BNT163"
-    },
-    {
-      "pathogenName": "Herpes Simplex Virus (HSV)",
-      "name": "mRNA-1608",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1608"
-    },
-    {
-      "pathogenName": "Herpes Zoster Virus",
-      "name": "BNT167",
-      "manufacturer": "BioNTech",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
-      "other": "https://clinicaltrials.gov/search?cond=Herpes%20Zoster&spons=BioNTech"
-    },
-    {
-      "pathogenName": "HIV",
-      "name": "mRNA-1644",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1644"
-    },
-    {
-      "pathogenName": "HIV",
-      "name": "mRNA-1574",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Human metapneumovirus (hMPV)",
-      "name": "SP0256",
-      "manufacturer": "Sanofi",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
-    },
-    {
-      "pathogenName": "Human metapneumovirus (hMPV)",
-      "name": "SP0291",
-      "manufacturer": "Sanofi",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
-    },
-    {
-      "pathogenName": "Human metapneumovirus (hMPV)",
-      "name": "IVX-A12",
-      "manufacturer": "AstraZeneca",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.astrazeneca.com/our-therapy-areas/vaccines-and-immune-therapies.html",
-      "other": "https://clinicaltrials.gov/search?intr=IVX-A12"
-    },
-    {
-      "pathogenName": "Human metapneumovirus (hMPV)\n",
-      "name": "mRNA-1365",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1365"
-    },
-    {
-      "pathogenName": "Human Papillomavirus (HPV)",
-      "name": "4-valent HPV vaccine",
-      "manufacturer": "SK Bioscience",
-      "platform": "No data",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.skbioscience.com/en/tech/rnd_01",
-      "other": ""
-    },
-    {
-      "pathogenName": "Human Parainfluenza Virus",
-      "name": "SP0291",
-      "manufacturer": "Sanofi",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "CSL405 Cell-based Influenza (H2N3) vaccine",
-      "manufacturer": "CSL Limited",
-      "platform": "Inactivated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "CSL403 (aTIVc) Adjuvanted Cell-based Trivalent Influenza Vaccine",
-      "manufacturer": "CSL Limited",
-      "platform": "Inactivated",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "SP0335",
-      "manufacturer": "Sanofi",
-      "platform": "Inactivated",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "CodaVax-H1N1",
-      "manufacturer": "Codagenix",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://codagenix.com/pipeline/",
-      "other": "https://clinicaltrials.gov/search?intr=CodaVax-H1N1"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "BNT161",
-      "manufacturer": "BioNTech",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
-      "other": "https://clinicaltrials.gov/search?cond=Influenza%20Virus&spons=BioNTech"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "CSL406 sa-mRNA Influenza (H5N1) vaccine",
-      "manufacturer": "CSL Limited",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "CSL400 (TIV) sa-mRNA Trivalent Influenza vaccine",
-      "manufacturer": "CSL Limited",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "GSK4382276",
-      "manufacturer": "GSK",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "GSK5536522",
-      "manufacturer": "GSK",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "mRNA-1010",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1010"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "mRNA-1020",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1020"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "mRNA-1030",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1030"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "mRNA-1011",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "mRNA-1012",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "mRNA-1018",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1018"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "mRNA-1082",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "mRNA-1230",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1230"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "PF-07845104",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "PF-07252220\n",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "PF-07985819\n",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "PF-07926307",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "SP0237",
-      "manufacturer": "Sanofi",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "SP0289",
-      "manufacturer": "Sanofi",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "Adsorbed Influenza Vaccine H5N1",
-      "manufacturer": "Daiichi Sankyo Co.",
-      "platform": "No data",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.daiichisankyo.com/rd/clinical_trials/list/",
-      "other": "https://clinicaltrials.gov/search?cond=Influenza%20Virus&spons=Daiichi%20Sankyo"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "COVID-influenza combination (CIC) vaccine",
-      "manufacturer": "Novavax Inc.",
-      "platform": "No data",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=influenza%20AND%20COVID%2019&spons=Novavax"
-    },
-    {
-      "pathogenName": "Influenza Virus",
-      "name": "Influenza vaccine (Older Adults)",
-      "manufacturer": "Novavax Inc.",
-      "platform": "No data",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=influenza%20NOT%20COVID%2019&spons=Novavax"
-    },
-    {
-      "pathogenName": "Influenza Virus\n",
-      "name": "mRNA-1045",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1045"
-    },
-    {
-      "pathogenName": "Measles Virus",
-      "name": "GSK4406371",
-      "manufacturer": "GSK",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Measles Virus",
-      "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-      "manufacturer": "Zydus Lifesciences Ltd",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
-      "other": ""
-    },
-    {
-      "pathogenName": "Monkeypox Virus (MPV, MPXV, or hMPXV)",
-      "name": "BNT166",
-      "manufacturer": "BioNTech",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
-      "other": "https://clinicaltrials.gov/search?cond=Monkeypox&spons=BioNTech"
-    },
-    {
-      "pathogenName": "Monkeypox Virus (MPV, MPXV, or hMPXV)",
-      "name": "mRNA-1769",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1769"
-    },
-    {
-      "pathogenName": "Mumps Virus",
-      "name": "GSK4406372",
-      "manufacturer": "GSK",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Mumps Virus",
-      "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-      "manufacturer": "Zydus Lifesciences Ltd",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
-      "other": ""
-    },
-    {
-      "pathogenName": "Mycobacterium tuberculosis",
-      "name": "BNT164",
-      "manufacturer": "BioNTech",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
-      "other": "https://clinicaltrials.gov/search?cond=Mycobacterium%20Tuberculosis&spons=BioNTech"
-    },
-    {
-      "pathogenName": "Mycobacterium tuberculosis",
-      "name": "MTBVAC",
-      "manufacturer": "Bharat Biotech",
-      "platform": "No data",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
-      "other": "https://clinicaltrials.gov/search?intr=MTBVAC&checkSpell="
-    },
-    {
-      "pathogenName": "Mycobacterium tuberculosis",
-      "name": "GC3107A",
-      "manufacturer": "GC Biopharma",
-      "platform": "No data",
-      "clinicalPhase": "Phase IV",
-      "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-      "other": "https://clinicaltrials.gov/search?intr=GC3107"
-    },
-    {
-      "pathogenName": "Mycobacterium tuberculosis",
-      "name": "AEC/BC02",
-      "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical\n",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase IIa",
-      "companyUrl": "https://en.zhifeishengwu.com/produce/zycp/",
-      "other": "https://clinicaltrials.gov/search?intr=AEC%2FBC02&checkSpell="
-    },
-    {
-      "pathogenName": "Neisseria meningitidis",
-      "name": "SP0230 (MenABCWY)",
-      "manufacturer": "Sanofi",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Neisseria meningitidis",
-      "name": "EunNmCV-5 (MenACWXY)",
-      "manufacturer": "EuBiologics Co., Ltd.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
-      "other": ""
-    },
-    {
-      "pathogenName": "Neisseria meningitidis",
-      "name": "EuMCV-4 (MenACWY)",
-      "manufacturer": "EuBiologics Co., Ltd.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
-      "other": "https://clinicaltrials.gov/study/NCT04714229?intr=EuMCV-4&checkSpell=&rank=1"
-    },
-    {
-      "pathogenName": "Neisseria meningitidis",
-      "name": "GSK3536819 (Men ABCWY, 1st Gen)",
-      "manufacturer": "GSK",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase IV",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Neisseria meningitidis",
-      "name": "GSK4023393 (Men ABCWY, 2nd Gen)",
-      "manufacturer": "GSK",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Nipah Virus",
-      "name": "mRNA-1215",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1215&checkSpell="
-    },
-    {
-      "pathogenName": "Nontyphoidal Salmonella",
-      "name": "NTS CONJUGATES",
-      "manufacturer": "Bharat Biotech",
-      "platform": "No data",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
-      "other": ""
-    },
-    {
-      "pathogenName": "Nontyphoidal Salmonella",
-      "name": "GSK4077164",
-      "manufacturer": "GSK",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Norovirus",
-      "name": "mRNA-1403",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1403&checkSpell="
-    },
-    {
-      "pathogenName": "Norovirus",
-      "name": "mRNA-1405",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1405&checkSpell="
-    },
-    {
-      "pathogenName": "Norovirus",
-      "name": "Tetravalent recombinant norovirus vaccine",
-      "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://en.zhifeishengwu.com/produce/zycp/",
-      "other": "https://clinicaltrials.gov/search?cond=Norovirus&spons=Anhui%20Zhifei%20Longcom%20Biologic%20Pharmacy%20Co.,%20Ltd."
-    },
-    {
-      "pathogenName": "Norovirus",
-      "name": " HIL-214 (Bivalent GI.1 and GII.4)\n",
-      "manufacturer": "HilleVax",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.hillevax.com/pipeline/",
-      "other": "https://clinicaltrials.gov/search?intr=HIL-214&checkSpell="
-    },
-    {
-      "pathogenName": "Plasmodium falciparum",
-      "name": "BNT165",
-      "manufacturer": "BioNTech",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
-      "other": "https://clinicaltrials.gov/search?cond=Plasmodium%20Falciparum&spons=BioNTech"
-    },
-    {
-      "pathogenName": "Plasmodium falciparum",
-      "name": "GSK3437949 ",
-      "manufacturer": "GSK",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Rabies Virus",
-      "name": "SP0087",
-      "manufacturer": "Sanofi",
-      "platform": "Vero cell",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Rabies&spons=sanofi"
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "BLB201",
-      "manufacturer": "Blue Lake Biotechnology",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I/II",
-      "companyUrl": "https://www.bluelakebiotechnology.com/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=BLB201&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "CodaVax-RSV",
-      "manufacturer": "Codagenix",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://codagenix.com/pipeline/",
-      "other": "https://clinicaltrials.gov/search?intr=CodaVax-RSV&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "MV-012-968",
-      "manufacturer": "Meissa Vaccines",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.meissavaccines.com/vaccine-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=MV-012-968&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "SP0125",
-      "manufacturer": "Sanofi",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "mRNA-1365",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1365&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "mRNA-1230",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1230&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "mRNA-1345",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1345&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "mRNA-1045",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1045&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "SP0256",
-      "manufacturer": "Sanofi",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "SP0291",
-      "manufacturer": "Sanofi",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "SP0256",
-      "manufacturer": "Sanofi",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "SCB-1019",
-      "manufacturer": "Clover Biopharmaceuticals",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.cloverbiopharma.com/science&technology/ourpipeline.html",
-      "other": "https://clinicaltrials.gov/search?intr=SCB-1019&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "IVX-A12",
-      "manufacturer": "AstraZeneca",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.astrazeneca.com/our-therapy-areas/vaccines-and-immune-therapies.html",
-      "other": "https://clinicaltrials.gov/search?intr=IVX-A12&checkSpell="
-    },
-    {
-      "pathogenName": "Respiratory Syncytial Virus (RSV)",
-      "name": "EuRSV",
-      "manufacturer": "EuBiologics Co., Ltd.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
-      "other": "https://clinicaltrials.gov/search?intr=EuRSV"
-    },
-    {
-      "pathogenName": "Rotavirus",
-      "name": "Rotavirus Vaccine",
-      "manufacturer": "SK Bioscience",
-      "platform": "No data",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.skbioscience.com/en/tech/rnd_02",
-      "other": "https://clinicaltrials.gov/search?cond=Rotavirus&spons=SK%20Bioscience"
-    },
-    {
-      "pathogenName": "Rubella Virus",
-      "name": "GSK4406373",
-      "manufacturer": "GSK",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Rubella Virus",
-      "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-      "manufacturer": "Zydus Lifesciences Ltd",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
-      "other": ""
-    },
-    {
-      "pathogenName": "Salmonella Paratyphi",
-      "name": "S. PARATYPHI",
-      "manufacturer": "Bharat Biotech",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
-      "other": ""
-    },
-    {
-      "pathogenName": "Salmonella Paratyphi",
-      "name": "GSK3536867",
-      "manufacturer": "GSK",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Salmonella Paratyphi",
-      "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
-      "manufacturer": "Zydus Lifesciences Ltd",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
-      "other": ""
-    },
-    {
-      "pathogenName": "Salmonella Typhi",
-      "name": "EuTYPH-C",
-      "manufacturer": "EuBiologics Co., Ltd.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase IV",
-      "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
-      "other": ""
-    },
-    {
-      "pathogenName": "Salmonella Typhi",
-      "name": "GSK4077164",
-      "manufacturer": "GSK",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Salmonella Typhi",
-      "name": "GSK3536867",
-      "manufacturer": "GSK",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "salmonella Typhi",
-      "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
-      "manufacturer": "Zydus Lifesciences Ltd",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
-      "other": ""
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "CoviLiv",
-      "manufacturer": "Codagenix",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://codagenix.com/pipeline/",
-      "other": "https://clinicaltrials.gov/search?cond=SARS-CoV2&spons=Codagenix"
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "MV-014-212",
-      "manufacturer": "Meissa Vaccines",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.meissavaccines.com/vaccine-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=MV-014-212&checkSpell="
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "mRNA VLP vaccine",
-      "manufacturer": "AstraZeneca",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.astrazeneca.com/our-therapy-areas/vaccines-and-immune-therapies.html",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA%20VLP%20vaccine&checkSpell="
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "BNT162b5/6/7",
-      "manufacturer": "BioNTech",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
-      "other": ""
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "KOSTAIVE® sa-mRNA Vaccine (COVID)",
-      "manufacturer": "CSL Limited",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase IV",
-      "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "COVID-19 mRNA Vaccine\n(DS-5670)",
-      "manufacturer": "Daiichi Sankyo Co.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.daiichisankyo.com/rd/clinical_trials/list/",
-      "other": "https://clinicaltrials.gov/search?cond=SARS-CoV2%20vaccine&spons=Daiichi%20Sankyo"
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "GSK4396687",
-      "manufacturer": "GSK",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=SARS-CoV2%20vaccine&spons=GlaxoSmithKline"
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "JCXH-221",
-      "manufacturer": "Immorna Biotherapeutics",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.immorna.com/pipeline.html",
-      "other": "https://clinicaltrials.gov/search?intr=JCXH-221&checkSpell="
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "mRNA-1082",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "mRNA-1230",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1230&checkSpell="
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "mRNA-1283",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1283&checkSpell="
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "PF-07926307",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "SARS-CoV2-RABIES VECTOR",
-      "manufacturer": "Bharat Biotech",
-      "platform": "No data",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
-      "other": ""
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "BLB101",
-      "manufacturer": "Blue Lake Biotechnology",
-      "platform": "No data",
-      "clinicalPhase": "Phase IIb",
-      "companyUrl": "https://www.bluelakebiotechnology.com/our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "COVID-influenza combination (CIC) vaccine",
-      "manufacturer": "Novavax Inc.",
-      "platform": "No data",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=COVID-influenza%20combination%20(CIC)%20vaccine&checkSpell="
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "EuCorVac-19",
-      "manufacturer": "EuBiologics Co., Ltd.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase IV",
-      "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
-      "other": "https://clinicaltrials.gov/search?intr=EuCorVac-19&checkSpell="
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "VBI-2902",
-      "manufacturer": "VBI Vaccines Inc.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
-      "other": "https://clinicaltrials.gov/search?intr=VBI-2902a"
-    },
-    {
-      "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-      "name": "VBI-2905",
-      "manufacturer": "VBI Vaccines Inc.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
-      "other": "https://clinicaltrials.gov/search?intr=VBI-2905a"
-    },
-    {
-      "pathogenName": "Shigella",
-      "name": "S4V",
-      "manufacturer": "Valneva SE",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://valneva.com/research-development/",
-      "other": ""
-    },
-    {
-      "pathogenName": "Streptococcus agalactiae (Group B Streptococcus; GBS)",
-      "name": "PF-06760805",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Streptococcus%20agalactiae&spons=Pfizer"
-    },
-    {
-      "pathogenName": "Streptococcus agalactiae (Group B Streptococcus; GBS)",
-      "name": "AlpN GBS Vaccine",
-      "manufacturer": "Minervax",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://minervax.com/innovation/our-pipeline/",
-      "other": "https://clinicaltrials.gov/search?intr=AlpN%20GBS%20Vaccine&checkSpell="
-    },
-    {
-      "pathogenName": "Streptococcus pneumoniae",
-      "name": "SP0202",
-      "manufacturer": "Sanofi",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase III",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=SP0202&checkSpell="
-    },
-    {
-      "pathogenName": "Streptococcus pneumoniae",
-      "name": "PF-07872412\n",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Streptococcus pneumoniae",
-      "name": "EuPCV ",
-      "manufacturer": "EuBiologics Co., Ltd.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
-      "other": "https://clinicaltrials.gov/search?cond=Streptococcus%20Pneumoniae&spons=EuBiologics Co., Ltd."
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "GSK4406374",
-      "manufacturer": "GSK",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "GSK4178116",
-      "manufacturer": "GSK",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
-      "manufacturer": "Zydus Lifesciences Ltd",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
-      "other": ""
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "mRNA-1468",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1468&checkSpell="
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "PF-07911145",
-      "manufacturer": "Pfizer",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
-      "other": "https://clinicaltrials.gov/search?cond=Varicella%20Zoster&spons=pfizer"
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "Z-1018 (DV2-ZOS-02)",
-      "manufacturer": "Dynavax",
-      "platform": "No data",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.dynavax.com/pipeline/#trials",
-      "other": "https://clinicaltrials.gov/search?intr=Z-1018&checkSpell="
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "MG1120A",
-      "manufacturer": "GC Biopharma",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-      "other": ""
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "MG1111C",
-      "manufacturer": "GC Biopharma",
-      "platform": "No data",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-      "other": ""
-    },
-    {
-      "pathogenName": "Varicella-Zoster Virus (VZV)",
-      "name": "EuHZV",
-      "manufacturer": "EuBiologics Co., Ltd.",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
-      "other": "https://clinicaltrials.gov/search?intr=EuHZV&checkSpell="
-    },
-    {
-      "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
-      "name": "MVA-BN® WEV",
-      "manufacturer": "Bavarian Nordic A/S",
-      "platform": "Live-attenuated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.bavarian-nordic.com/what-we-do/pipeline.aspx",
-      "other": ""
-    },
-    {
-      "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
-      "name": "WEVEE VLP",
-      "manufacturer": "Emergent BioDefense Operations Lansing",
-      "platform": "Subunit",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.emergentbiosolutions.com/products-services/pipeline/",
-      "other": ""
-    },
-    {
-      "pathogenName": "Yellow fever Virus\n",
-      "name": "SP0218",
-      "manufacturer": "Sanofi",
-      "platform": "Vero cell",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
-      "other": ""
-    },
-    {
-      "pathogenName": "Zika Virus",
-      "name": "VLA1601",
-      "manufacturer": "Valneva SE",
-      "platform": "Inactivated",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://valneva.com/research-development/",
-      "other": "https://clinicaltrials.gov/search?intr=VLA1601&checkSpell="
-    },
-    {
-      "pathogenName": "Zika Virus",
-      "name": "mRNA-1893",
-      "manufacturer": "Moderna, Inc.",
-      "platform": "mRNA",
-      "clinicalPhase": "Phase II",
-      "companyUrl": "https://www.modernatx.com/research/product-pipeline",
-      "other": "https://clinicaltrials.gov/search?intr=mRNA-1893&checkSpell="
-    },
-    {
-      "pathogenName": "Zika Virus",
-      "name": "ZIKA",
-      "manufacturer": "Bharat Biotech",
-      "platform": "No data",
-      "clinicalPhase": "Phase I",
-      "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
-      "other": "https://clinicaltrials.gov/search?cond=Zika&lead=Bharat Biotech%20Biotech"
-    }
-  ]
+  {
+    "pathogenName": "Bacillus anthracis",
+    "name": "GC1109",
+    "manufacturer": "GC Biopharma",
+    "platform": "No data",
+    "clinicalPhase": "Phase IV",
+    "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
+    "other": "https://clinicaltrials.gov/search?intr=GC1109"
+  },
+  {
+    "pathogenName": "Bordetella pertussis",
+    "name": "GC3111A",
+    "manufacturer": "GC Biopharma",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
+    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
+  },
+  {
+    "pathogenName": "Borrelia burgdorferi",
+    "name": "mRNA-1975",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1975"
+  },
+  {
+    "pathogenName": "Borrelia burgdorferi",
+    "name": "mRNA-1982",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1982"
+  },
+  {
+    "pathogenName": "Borrelia burgdorferi",
+    "name": "PF-07307405",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=PF-07307405"
+  },
+  {
+    "pathogenName": "Borrelia burgdorferi",
+    "name": "VLA15",
+    "manufacturer": "Valneva SE",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://valneva.com/research-development/",
+    "other": "https://clinicaltrials.gov/search?intr=VLA15"
+  },
+  {
+    "pathogenName": "Chikungunya Virus",
+    "name": "CHIKUNGUNYA",
+    "manufacturer": "Bharat Biotech",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
+    "other": "https://clinicaltrials.gov/search?limit=50&cond=Chikungunya&lead=Bharat%20Biotech%20Biotech%20International%20Limited"
+  },
+  {
+    "pathogenName": "Chikungunya Virus",
+    "name": "CHIKV VLP",
+    "manufacturer": "Bavarian Nordic A/S",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.bavarian-nordic.com/what-we-do/pipeline.aspx",
+    "other": "https://clinicaltrials.gov/search?limit=50&cond=Chikungunya&lead=Bavarian%20Nordic"
+  },
+  {
+    "pathogenName": "Clostridium difficile",
+    "name": "PF-07831694",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": "https://clinicaltrials.gov/search?limit=50&cond=Clostridium%20difficile&spons=Pfizer"
+  },
+  {
+    "pathogenName": "Clostridium difficile",
+    "name": "PF-06425090",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": "https://clinicaltrials.gov/search?limit=50&cond=Clostridium%20difficile&spons=Pfizer"
+  },
+  {
+    "pathogenName": "Clostridium tetani",
+    "name": "GC3111A",
+    "manufacturer": "GC Biopharma",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
+    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
+  },
+  {
+    "pathogenName": "Corynebacterium diphtheriae",
+    "name": "GC3111A",
+    "manufacturer": "GC Biopharma",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
+    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
+  },
+  {
+    "pathogenName": "Cytomegalovirus (CMV)",
+    "name": "mRNA-1647",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1647"
+  },
+  {
+    "pathogenName": "Cytomegalovirus (CMV)",
+    "name": "GSK3993129",
+    "manufacturer": "GSK",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": "https://clinicaltrials.gov/search?limit=50&cond=Cytomegalovirus&spons=GlaxoSmithKline"
+  },
+  {
+    "pathogenName": "Cytomegalovirus (CMV)",
+    "name": "VBI-1501",
+    "manufacturer": "VBI Vaccines Inc.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
+    "other": "https://clinicaltrials.gov/search?intr=VBI-1501"
+  },
+  {
+    "pathogenName": "Dengue Virus",
+    "name": "V181",
+    "manufacturer": "MSD",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.msd.com/research/product-pipeline/",
+    "other": "https://clinicaltrials.gov/search?intr=V181"
+  },
+  {
+    "pathogenName": "Epstein Barr Virus (EBV)",
+    "name": "mRNA-1189",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1189"
+  },
+  {
+    "pathogenName": "Epstein Barr Virus (EBV)",
+    "name": "mRNA-1195",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1195"
+  },
+  {
+    "pathogenName": "Escherichia coli (E. coli)",
+    "name": "SP0282",
+    "manufacturer": "Sanofi",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Hepatitis A Virus",
+    "name": "Inactivated Hepatitis A Vaccine (Adsorbed)",
+    "manufacturer": "Zydus Lifesciences Ltd",
+    "platform": "Inactivated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
+    "other": ""
+  },
+  {
+    "pathogenName": "Hepatitis E Virus",
+    "name": "Recombinant Hepatitis E Vaccine (Adsorbed)",
+    "manufacturer": "Zydus Lifesciences Ltd",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
+    "other": ""
+  },
+  {
+    "pathogenName": "Herpes Simplex Virus (HSV)",
+    "name": "BNT163",
+    "manufacturer": "BioNTech",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
+    "other": "https://clinicaltrials.gov/search?intr=BNT163"
+  },
+  {
+    "pathogenName": "Herpes Simplex Virus (HSV)",
+    "name": "mRNA-1608",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1608"
+  },
+  {
+    "pathogenName": "Herpes Zoster Virus",
+    "name": "BNT167",
+    "manufacturer": "BioNTech",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
+    "other": "https://clinicaltrials.gov/search?cond=Herpes%20Zoster&spons=BioNTech"
+  },
+  {
+    "pathogenName": "HIV",
+    "name": "mRNA-1644",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1644"
+  },
+  {
+    "pathogenName": "HIV",
+    "name": "mRNA-1574",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Human metapneumovirus (hMPV)",
+    "name": "SP0256",
+    "manufacturer": "Sanofi",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
+  },
+  {
+    "pathogenName": "Human metapneumovirus (hMPV)",
+    "name": "SP0291",
+    "manufacturer": "Sanofi",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
+  },
+  {
+    "pathogenName": "Human metapneumovirus (hMPV)",
+    "name": "IVX-A12",
+    "manufacturer": "AstraZeneca",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.astrazeneca.com/our-therapy-areas/vaccines-and-immune-therapies.html",
+    "other": "https://clinicaltrials.gov/search?intr=IVX-A12"
+  },
+  {
+    "pathogenName": "Human metapneumovirus (hMPV)\n",
+    "name": "mRNA-1365",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1365"
+  },
+  {
+    "pathogenName": "Human Papillomavirus (HPV)",
+    "name": "4-valent HPV vaccine",
+    "manufacturer": "SK Bioscience",
+    "platform": "No data",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.skbioscience.com/en/tech/rnd_01",
+    "other": ""
+  },
+  {
+    "pathogenName": "Human Parainfluenza Virus",
+    "name": "SP0291",
+    "manufacturer": "Sanofi",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "CSL405 Cell-based Influenza (H2N3) vaccine",
+    "manufacturer": "CSL Limited",
+    "platform": "Inactivated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "CSL403 (aTIVc) Adjuvanted Cell-based Trivalent Influenza Vaccine",
+    "manufacturer": "CSL Limited",
+    "platform": "Inactivated",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "SP0335",
+    "manufacturer": "Sanofi",
+    "platform": "Inactivated",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "CodaVax-H1N1",
+    "manufacturer": "Codagenix",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://codagenix.com/pipeline/",
+    "other": "https://clinicaltrials.gov/search?intr=CodaVax-H1N1"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "BNT161",
+    "manufacturer": "BioNTech",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
+    "other": "https://clinicaltrials.gov/search?cond=Influenza%20Virus&spons=BioNTech"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "CSL406 sa-mRNA Influenza (H5N1) vaccine",
+    "manufacturer": "CSL Limited",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "CSL400 (TIV) sa-mRNA Trivalent Influenza vaccine",
+    "manufacturer": "CSL Limited",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "GSK4382276",
+    "manufacturer": "GSK",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "GSK5536522",
+    "manufacturer": "GSK",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "mRNA-1010",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1010"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "mRNA-1020",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1020"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "mRNA-1030",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1030"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "mRNA-1011",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "mRNA-1012",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "mRNA-1018",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1018"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "mRNA-1082",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "mRNA-1230",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1230"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "PF-07845104",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "PF-07252220\n",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "PF-07985819\n",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "PF-07926307",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "SP0237",
+    "manufacturer": "Sanofi",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "SP0289",
+    "manufacturer": "Sanofi",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "Adsorbed Influenza Vaccine H5N1",
+    "manufacturer": "Daiichi Sankyo Co.",
+    "platform": "No data",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.daiichisankyo.com/rd/clinical_trials/list/",
+    "other": "https://clinicaltrials.gov/search?cond=Influenza%20Virus&spons=Daiichi%20Sankyo"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "COVID-influenza combination (CIC) vaccine",
+    "manufacturer": "Novavax Inc.",
+    "platform": "No data",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=influenza%20AND%20COVID%2019&spons=Novavax"
+  },
+  {
+    "pathogenName": "Influenza Virus",
+    "name": "Influenza vaccine (Older Adults)",
+    "manufacturer": "Novavax Inc.",
+    "platform": "No data",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=influenza%20NOT%20COVID%2019&spons=Novavax"
+  },
+  {
+    "pathogenName": "Influenza Virus\n",
+    "name": "mRNA-1045",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1045"
+  },
+  {
+    "pathogenName": "Measles Virus",
+    "name": "GSK4406371",
+    "manufacturer": "GSK",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Measles Virus",
+    "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
+    "manufacturer": "Zydus Lifesciences Ltd",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
+    "other": ""
+  },
+  {
+    "pathogenName": "Monkeypox Virus (MPV, MPXV, or hMPXV)",
+    "name": "BNT166",
+    "manufacturer": "BioNTech",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
+    "other": "https://clinicaltrials.gov/search?cond=Monkeypox&spons=BioNTech"
+  },
+  {
+    "pathogenName": "Monkeypox Virus (MPV, MPXV, or hMPXV)",
+    "name": "mRNA-1769",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1769"
+  },
+  {
+    "pathogenName": "Mumps Virus",
+    "name": "GSK4406372",
+    "manufacturer": "GSK",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Mumps Virus",
+    "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
+    "manufacturer": "Zydus Lifesciences Ltd",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
+    "other": ""
+  },
+  {
+    "pathogenName": "Mycobacterium tuberculosis",
+    "name": "BNT164",
+    "manufacturer": "BioNTech",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
+    "other": "https://clinicaltrials.gov/search?cond=Mycobacterium%20Tuberculosis&spons=BioNTech"
+  },
+  {
+    "pathogenName": "Mycobacterium tuberculosis",
+    "name": "MTBVAC",
+    "manufacturer": "Bharat Biotech",
+    "platform": "No data",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
+    "other": "https://clinicaltrials.gov/search?intr=MTBVAC&checkSpell="
+  },
+  {
+    "pathogenName": "Mycobacterium tuberculosis",
+    "name": "GC3107A",
+    "manufacturer": "GC Biopharma",
+    "platform": "No data",
+    "clinicalPhase": "Phase IV",
+    "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
+    "other": "https://clinicaltrials.gov/search?intr=GC3107"
+  },
+  {
+    "pathogenName": "Mycobacterium tuberculosis",
+    "name": "AEC/BC02",
+    "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase IIa",
+    "companyUrl": "https://en.zhifeishengwu.com/produce/zycp/",
+    "other": "https://clinicaltrials.gov/search?intr=AEC%2FBC02&checkSpell="
+  },
+  {
+    "pathogenName": "Neisseria meningitidis",
+    "name": "SP0230 (MenABCWY)",
+    "manufacturer": "Sanofi",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Neisseria meningitidis",
+    "name": "EunNmCV-5 (MenACWXY)",
+    "manufacturer": "EuBiologics Co., Ltd.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
+    "other": ""
+  },
+  {
+    "pathogenName": "Neisseria meningitidis",
+    "name": "EuMCV-4 (MenACWY)",
+    "manufacturer": "EuBiologics Co., Ltd.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
+    "other": "https://clinicaltrials.gov/study/NCT04714229?intr=EuMCV-4&checkSpell=&rank=1"
+  },
+  {
+    "pathogenName": "Neisseria meningitidis",
+    "name": "GSK3536819 (Men ABCWY, 1st Gen)",
+    "manufacturer": "GSK",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase IV",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Neisseria meningitidis",
+    "name": "GSK4023393 (Men ABCWY, 2nd Gen)",
+    "manufacturer": "GSK",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Nipah Virus",
+    "name": "mRNA-1215",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1215&checkSpell="
+  },
+  {
+    "pathogenName": "Nontyphoidal Salmonella",
+    "name": "NTS CONJUGATES",
+    "manufacturer": "Bharat Biotech",
+    "platform": "No data",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
+    "other": ""
+  },
+  {
+    "pathogenName": "Nontyphoidal Salmonella",
+    "name": "GSK4077164",
+    "manufacturer": "GSK",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Norovirus",
+    "name": "mRNA-1403",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1403&checkSpell="
+  },
+  {
+    "pathogenName": "Norovirus",
+    "name": "mRNA-1405",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1405&checkSpell="
+  },
+  {
+    "pathogenName": "Norovirus",
+    "name": "Tetravalent recombinant norovirus vaccine",
+    "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://en.zhifeishengwu.com/produce/zycp/",
+    "other": "https://clinicaltrials.gov/search?cond=Norovirus&spons=Anhui%20Zhifei%20Longcom%20Biologic%20Pharmacy%20Co.,%20Ltd."
+  },
+  {
+    "pathogenName": "Norovirus",
+    "name": " HIL-214 (Bivalent GI.1 and GII.4)\n",
+    "manufacturer": "HilleVax",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.hillevax.com/pipeline/",
+    "other": "https://clinicaltrials.gov/search?intr=HIL-214&checkSpell="
+  },
+  {
+    "pathogenName": "Plasmodium falciparum",
+    "name": "BNT165",
+    "manufacturer": "BioNTech",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
+    "other": "https://clinicaltrials.gov/search?cond=Plasmodium%20Falciparum&spons=BioNTech"
+  },
+  {
+    "pathogenName": "Plasmodium falciparum",
+    "name": "GSK3437949 ",
+    "manufacturer": "GSK",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Rabies Virus",
+    "name": "SP0087",
+    "manufacturer": "Sanofi",
+    "platform": "Vero cell",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Rabies&spons=sanofi"
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "BLB201",
+    "manufacturer": "Blue Lake Biotechnology",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I/II",
+    "companyUrl": "https://www.bluelakebiotechnology.com/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=BLB201&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "CodaVax-RSV",
+    "manufacturer": "Codagenix",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://codagenix.com/pipeline/",
+    "other": "https://clinicaltrials.gov/search?intr=CodaVax-RSV&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "MV-012-968",
+    "manufacturer": "Meissa Vaccines",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.meissavaccines.com/vaccine-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=MV-012-968&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "SP0125",
+    "manufacturer": "Sanofi",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "mRNA-1365",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1365&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "mRNA-1230",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1230&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "mRNA-1345",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1345&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "mRNA-1045",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1045&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "SP0256",
+    "manufacturer": "Sanofi",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "SP0291",
+    "manufacturer": "Sanofi",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "SP0256",
+    "manufacturer": "Sanofi",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Human%20Metapneumovirus&spons=sanofi"
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "SCB-1019",
+    "manufacturer": "Clover Biopharmaceuticals",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.cloverbiopharma.com/science&technology/ourpipeline.html",
+    "other": "https://clinicaltrials.gov/search?intr=SCB-1019&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "IVX-A12",
+    "manufacturer": "AstraZeneca",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.astrazeneca.com/our-therapy-areas/vaccines-and-immune-therapies.html",
+    "other": "https://clinicaltrials.gov/search?intr=IVX-A12&checkSpell="
+  },
+  {
+    "pathogenName": "Respiratory Syncytial Virus (RSV)",
+    "name": "EuRSV",
+    "manufacturer": "EuBiologics Co., Ltd.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
+    "other": "https://clinicaltrials.gov/search?intr=EuRSV"
+  },
+  {
+    "pathogenName": "Rotavirus",
+    "name": "Rotavirus Vaccine",
+    "manufacturer": "SK Bioscience",
+    "platform": "No data",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.skbioscience.com/en/tech/rnd_02",
+    "other": "https://clinicaltrials.gov/search?cond=Rotavirus&spons=SK%20Bioscience"
+  },
+  {
+    "pathogenName": "Rubella Virus",
+    "name": "GSK4406373",
+    "manufacturer": "GSK",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Rubella Virus",
+    "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
+    "manufacturer": "Zydus Lifesciences Ltd",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
+    "other": ""
+  },
+  {
+    "pathogenName": "Salmonella Paratyphi",
+    "name": "S. PARATYPHI",
+    "manufacturer": "Bharat Biotech",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
+    "other": ""
+  },
+  {
+    "pathogenName": "Salmonella Paratyphi",
+    "name": "GSK3536867",
+    "manufacturer": "GSK",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Salmonella Paratyphi",
+    "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
+    "manufacturer": "Zydus Lifesciences Ltd",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
+    "other": ""
+  },
+  {
+    "pathogenName": "Salmonella Typhi",
+    "name": "EuTYPH-C",
+    "manufacturer": "EuBiologics Co., Ltd.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase IV",
+    "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
+    "other": ""
+  },
+  {
+    "pathogenName": "Salmonella Typhi",
+    "name": "GSK4077164",
+    "manufacturer": "GSK",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Salmonella Typhi",
+    "name": "GSK3536867",
+    "manufacturer": "GSK",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "salmonella Typhi",
+    "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
+    "manufacturer": "Zydus Lifesciences Ltd",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
+    "other": ""
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "CoviLiv",
+    "manufacturer": "Codagenix",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://codagenix.com/pipeline/",
+    "other": "https://clinicaltrials.gov/search?cond=SARS-CoV2&spons=Codagenix"
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "MV-014-212",
+    "manufacturer": "Meissa Vaccines",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.meissavaccines.com/vaccine-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=MV-014-212&checkSpell="
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "mRNA VLP vaccine",
+    "manufacturer": "AstraZeneca",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.astrazeneca.com/our-therapy-areas/vaccines-and-immune-therapies.html",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA%20VLP%20vaccine&checkSpell="
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "BNT162b5/6/7",
+    "manufacturer": "BioNTech",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html#bnt161-seasonal-influenza",
+    "other": ""
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "KOSTAIVE® sa-mRNA Vaccine (COVID)",
+    "manufacturer": "CSL Limited",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase IV",
+    "companyUrl": "https://www.csl.com/research-and-development/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "COVID-19 mRNA Vaccine\n(DS-5670)",
+    "manufacturer": "Daiichi Sankyo Co.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.daiichisankyo.com/rd/clinical_trials/list/",
+    "other": "https://clinicaltrials.gov/search?cond=SARS-CoV2%20vaccine&spons=Daiichi%20Sankyo"
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "GSK4396687",
+    "manufacturer": "GSK",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=SARS-CoV2%20vaccine&spons=GlaxoSmithKline"
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "JCXH-221",
+    "manufacturer": "Immorna Biotherapeutics",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.immorna.com/pipeline.html",
+    "other": "https://clinicaltrials.gov/search?intr=JCXH-221&checkSpell="
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "mRNA-1082",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "mRNA-1230",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1230&checkSpell="
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "mRNA-1283",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1283&checkSpell="
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "PF-07926307",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "SARS-CoV2-RABIES VECTOR",
+    "manufacturer": "Bharat Biotech",
+    "platform": "No data",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
+    "other": ""
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "BLB101",
+    "manufacturer": "Blue Lake Biotechnology",
+    "platform": "No data",
+    "clinicalPhase": "Phase IIb",
+    "companyUrl": "https://www.bluelakebiotechnology.com/our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "COVID-influenza combination (CIC) vaccine",
+    "manufacturer": "Novavax Inc.",
+    "platform": "No data",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.novavax.com/what-we-do/vaccine-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=COVID-influenza%20combination%20(CIC)%20vaccine&checkSpell="
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "EuCorVac-19",
+    "manufacturer": "EuBiologics Co., Ltd.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase IV",
+    "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
+    "other": "https://clinicaltrials.gov/search?intr=EuCorVac-19&checkSpell="
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "VBI-2902",
+    "manufacturer": "VBI Vaccines Inc.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
+    "other": "https://clinicaltrials.gov/search?intr=VBI-2902a"
+  },
+  {
+    "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
+    "name": "VBI-2905",
+    "manufacturer": "VBI Vaccines Inc.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.vbivaccines.com/our-pipeline/#prophylactic",
+    "other": "https://clinicaltrials.gov/search?intr=VBI-2905a"
+  },
+  {
+    "pathogenName": "Shigella",
+    "name": "S4V",
+    "manufacturer": "Valneva SE",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://valneva.com/research-development/",
+    "other": ""
+  },
+  {
+    "pathogenName": "Streptococcus agalactiae (Group B Streptococcus; GBS)",
+    "name": "PF-06760805",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Streptococcus%20agalactiae&spons=Pfizer"
+  },
+  {
+    "pathogenName": "Streptococcus agalactiae (Group B Streptococcus; GBS)",
+    "name": "AlpN GBS Vaccine",
+    "manufacturer": "Minervax",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://minervax.com/innovation/our-pipeline/",
+    "other": "https://clinicaltrials.gov/search?intr=AlpN%20GBS%20Vaccine&checkSpell="
+  },
+  {
+    "pathogenName": "Streptococcus pneumoniae",
+    "name": "SP0202",
+    "manufacturer": "Sanofi",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase III",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=SP0202&checkSpell="
+  },
+  {
+    "pathogenName": "Streptococcus pneumoniae",
+    "name": "PF-07872412\n",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Streptococcus pneumoniae",
+    "name": "EuPCV ",
+    "manufacturer": "EuBiologics Co., Ltd.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
+    "other": "https://clinicaltrials.gov/search?cond=Streptococcus%20Pneumoniae&spons=EuBiologicsCo.,Ltd."
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "GSK4406374",
+    "manufacturer": "GSK",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "GSK4178116",
+    "manufacturer": "GSK",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gsk.com/en-gb/innovation/pipeline/#our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "Measles, Mumps, Rubella and Varicella Vaccine (Live Attenuated ), (Freeze Dried)",
+    "manufacturer": "Zydus Lifesciences Ltd",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.zyduslife.com/research.html#vaccines",
+    "other": ""
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "mRNA-1468",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1468&checkSpell="
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "PF-07911145",
+    "manufacturer": "Pfizer",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.pfizer.com/science/drug-product-pipeline",
+    "other": "https://clinicaltrials.gov/search?cond=Varicella%20Zoster&spons=pfizer"
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "Z-1018 (DV2-ZOS-02)",
+    "manufacturer": "Dynavax",
+    "platform": "No data",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.dynavax.com/pipeline/#trials",
+    "other": "https://clinicaltrials.gov/search?intr=Z-1018&checkSpell="
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "MG1120A",
+    "manufacturer": "GC Biopharma",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
+    "other": ""
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "MG1111C",
+    "manufacturer": "GC Biopharma",
+    "platform": "No data",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
+    "other": ""
+  },
+  {
+    "pathogenName": "Varicella-Zoster Virus (VZV)",
+    "name": "EuHZV",
+    "manufacturer": "EuBiologics Co., Ltd.",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "http://eubiologics.com/eng/sub2_2.php",
+    "other": "https://clinicaltrials.gov/search?intr=EuHZV&checkSpell="
+  },
+  {
+    "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
+    "name": "MVA-BN® WEV",
+    "manufacturer": "Bavarian Nordic A/S",
+    "platform": "Live-attenuated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.bavarian-nordic.com/what-we-do/pipeline.aspx",
+    "other": ""
+  },
+  {
+    "pathogenName": "Western, Eastern and Venezuelan equine encephalitis viruses",
+    "name": "WEVEE VLP",
+    "manufacturer": "Emergent BioDefense Operations Lansing",
+    "platform": "Subunit",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.emergentbiosolutions.com/products-services/pipeline/",
+    "other": ""
+  },
+  {
+    "pathogenName": "Yellow fever Virus\n",
+    "name": "SP0218",
+    "manufacturer": "Sanofi",
+    "platform": "Vero cell",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.sanofi.com/en/our-science/our-pipeline",
+    "other": ""
+  },
+  {
+    "pathogenName": "Zika Virus",
+    "name": "VLA1601",
+    "manufacturer": "Valneva SE",
+    "platform": "Inactivated",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://valneva.com/research-development/",
+    "other": "https://clinicaltrials.gov/search?intr=VLA1601&checkSpell="
+  },
+  {
+    "pathogenName": "Zika Virus",
+    "name": "mRNA-1893",
+    "manufacturer": "Moderna, Inc.",
+    "platform": "mRNA",
+    "clinicalPhase": "Phase II",
+    "companyUrl": "https://www.modernatx.com/research/product-pipeline",
+    "other": "https://clinicaltrials.gov/search?intr=mRNA-1893&checkSpell="
+  },
+  {
+    "pathogenName": "Zika Virus",
+    "name": "ZIKA",
+    "manufacturer": "Bharat Biotech",
+    "platform": "No data",
+    "clinicalPhase": "Phase I",
+    "companyUrl": "https://www.bharatbiotech.com/r&d_pipeline.html",
+    "other": "https://clinicaltrials.gov/search?cond=Zika&lead=Bharat Biotech%20Biotech"
+  }
+]
