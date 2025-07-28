@@ -69,7 +69,7 @@ const HomePage = () => {
                     <div class="image-container">
                         <img src="/images/VACCIE-PROFILE-OUTLINE-08.png" alt="Licensing Authorities" />
                     </div>
-                    <div class="title">NITAG</div>
+                    <div class="title">NITAGs</div>
                     <span style={{ marginBottom: 8 }}>National Immunization Technical Advisory Groups <br /> Recommendations and procedures</span>
                     <button class="btn">View more</button>
                 </div>

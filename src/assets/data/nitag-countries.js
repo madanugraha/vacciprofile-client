@@ -568,18 +568,7 @@ Committee: NGI-TAG
 Year established: 2015
 `,
     `
-North Korea
-Committee: Korea Expert Committee on Immunization Practices - KECIP
-Year established: 1990
-`,
-    `
 Norway
-`,
-    `
-Oman
-Committee: National Committee for Vaccines Regulation and Surveillance of Vaccine-Preventable Diseases in the Sultanate of Oman
-Year established: 2000
-Year evaluated: 2023
 `,
     `
 Pakistan
@@ -726,7 +715,7 @@ Sri Lanka
 Committee: Advisory Committee on Communicable Diseases - ACCD
 Year evaluated: 2020
 `
-,
+    ,
     `
 State of Libya
 Year established: 2022

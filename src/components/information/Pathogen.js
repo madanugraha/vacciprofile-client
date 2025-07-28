@@ -657,7 +657,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                                                                                             }
                                                                                         >
                                                                                             <div>
-                                                                                                <span className='selectable'>{"WHO"}</span>
+                                                                                                <span className='selectable'>{"WHO (Prequalification)"}</span>
                                                                                             </div>
                                                                                         </HtmlTooltip>
                                                                                     </>

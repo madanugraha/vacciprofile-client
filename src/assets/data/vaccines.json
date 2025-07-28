@@ -5952,7 +5952,7 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: FluMist® (MAH: MedImmune)",
-                "composition": "1 dose (0.2 mL) contains 10⁶.⁵-⁷.⁵ FFU of each three influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Thailand/8/2022 (H3N2) (an A/Thailand/8/2022 (H3N2) - like virus), and B/Austria/1359417/2021 (B/Victoria lineage) (a B/Austria/1359417/2021 (B/Victoria lineage)- like virus) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "composition": "1 dose (0.2 mL) contains 10⁶\u00B7⁵-⁷\u00B7⁵ FFU of each three influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Thailand/8/2022 (H3N2) (an A/Thailand/8/2022 (H3N2) - like virus), and B/Austria/1359417/2021 (B/Victoria lineage) (a B/Austria/1359417/2021 (B/Victoria lineage)- like virus) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
                 "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
                 "indication": "Active immunization against influenza disease caused by influenza A subtypes and type B contained in the vaccine in individuals 2-49 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg protein allergy; concomitant aspirin therapy in children and adolescents; caution in individuals with asthma or children <5 yrs. with recurrent wheezing; use risk/benefits strategy if Guillain-Barré Syndrome has occurred within 6 weeks after any prior influenza vaccination; FluMist® is not absorbed systemically, so maternal use is not expected to result in fetal exposure to the drug also breastfeeding is not expected to result in the exposure of the child to FluMist®.",
@@ -11834,7 +11834,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: ROTASIIL® (MAH: Serum Institute of India)",
-                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵.⁶ FFU; grown on Vero cells; storage: 2-8°C; shelf life: 30 months.",
+                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵\u00B7⁶ FFU; grown on Vero cells; storage: 2-8°C; shelf life: 30 months.",
                 "strainCoverage": "Human rotavirus; G1, G2, G3, G4, and G9; no protection against gastroenteritis caused by other pathogens.",
                 "indication": "Active immunization to prevent any severe rotavirus infection in healthy infants from 6 weeks to 24 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; intussusception predisposing situation*; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; pregnancy; no data on breastfeeding.",
@@ -14671,7 +14671,7 @@
             {
                 "type": "FDA",
                 "name": "FDA-Product Profile: FluMist Quadrivalent® (MAH: MedImmune)",
-                "composition": "1 dose (0.2 mL) contains 10⁶.⁵-⁷.⁵ FFU of each four influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Norway/16606/2021 (H3N2) (an A/Darwin/9/2021 (H3N2) - like virus), B/Phuket/3073/2013 (B/Yamagata lineage), and B/Austria/1359417/2021 (B/Victoria lineage) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
+                "composition": "1 dose (0.2 mL) contains 10⁶\u00B7⁵-⁷\u00B7⁵ FFU of each four influenza virus strains (A/Norway/31694/2022 (H1N1) (an A/Victoria/4897/2022 (H1N1)pdm09 - like virus), A/Norway/16606/2021 (H3N2) (an A/Darwin/9/2021 (H3N2) - like virus), B/Phuket/3073/2013 (B/Yamagata lineage), and B/Austria/1359417/2021 (B/Victoria lineage) strains); propagated in the allantoic fluid of Specific pathogen-free eggs; storage: 2-8°C (protect from light); shelf life: unknown.",
                 "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
                 "indication": "Active immunization against influenza disease caused by influenza A subtypes and type B contained in the vaccine in individuals 2-49 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg protein allergy; concomitant aspirin therapy in children and adolescents unless clearly needed; caution in individuals with asthma or children <5 yrs. with recurrent wheezing; use risk/benefits strategy if Guillain-Barré Syndrome has occurred within 6 weeks after any prior influenza vaccination; FluMist Quadrivalent® is not absorbed systemically, so maternal use is not expected to result in fetal exposure to the drug also breastfeeding is not expected to result in the exposure of the child to FluMist Quadrivalent®.",

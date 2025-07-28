@@ -1584,7 +1584,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                                                             return (
                                                                                 <td width={700} data-sortable="true" key={Math.random() * 111} style={{ fontWeight: key === "type" ? "bold" : "normal", ...conditionedFirstRow }} className={`main-col ${idx === 0 ? "fix-first justify-content-between" : ""} ${key !== "type" ? `text-black bg-sidebar-unselected` : ``} comparison-table-handler`}>
                                                                                     <div className='d-flex w-100'>
-                                                                                        <span className={`${key === "approvalDate" || key === "lastUpdated" || key === "source" ? 'second-col' : ''}`}> {key === "type" ? `${licenser.title} - ${vaccine?.isDoubleName ? italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) || "-") : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name) || "-")}</span>
+                                                                                        <span className={`${key === "approvalDate" || key === "lastUpdated" || key === "source" ? 'second-col' : ''}`}> {key === "type" ? `${licenser.title === "WHO" ? "WHO (Prequalification)" : licenser.title} - ${vaccine?.isDoubleName ? italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, "name", vaccine.name) || "-") : vaccine.name}` : key === "approvalDate" || key === "lastUpdated" || key === "source" ? getLicensingDateByVaccineNameAndType(licenser.title, key, vaccine.name) : italizeScientificNames(getProductProfileValueByVaccineNameAndType(licenser.title, key, vaccine.name) || "-")}</span>
                                                                                         <span>  {idx === 0 && <DraggableIcon />}</span>
                                                                                     </div>
                                                                                 </td>
@@ -1602,7 +1602,7 @@ const Comparison = ({ selectedPathogen, italizeScientificNames }) => {
                                 ) : null}
                             </div>
                         </div>
-                        <div style={{ width: 300, marginTop: -7, justifySelf: 'center', marginLeft: 150 }}>
+                        <div style={{ width: 300, marginTop: 25, justifySelf: 'center', marginLeft: 150 }}>
                             <button type='button' onClick={() => {
                                 toast.info('Downloading PDF...');
                                 const tableElement = document.getElementById('table-scroll');

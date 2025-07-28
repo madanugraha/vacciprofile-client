@@ -196,7 +196,7 @@ const VaccineListTable = ({
                                                                             }
                                                                         >
                                                                             <div>
-                                                                                <span className='selectable'>{"WHO"}</span>
+                                                                                <span className='selectable'>{"WHO (Prequalification)"}</span>
                                                                             </div>
                                                                         </HtmlTooltip>
                                                                     </>

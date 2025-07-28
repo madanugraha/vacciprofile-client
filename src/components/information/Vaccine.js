@@ -290,10 +290,10 @@ const Vaccine = ({
                                                         </>
                                                     }
                                                 >
-                                                    <span className='selectable'>WHO</span>
+                                                    <span className='selectable'>WHO (Prequalification)</span>
                                                 </HtmlTooltip>
                                             )}
-                                        </> : key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", "strainCoverage", selectedVaccine.name)) : key === "type" ? `WHO - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("WHO", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", key, selectedVaccine.name))}</td>
+                                        </> : key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", "strainCoverage", selectedVaccine.name)) : key === "type" ? `WHO (Prequalification) - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("WHO", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", key, selectedVaccine.name))}</td>
                                     </tr>
                                 </>
                             )
@@ -302,8 +302,8 @@ const Vaccine = ({
                 </table>
             </div>
         )}
-        <p className='mb-0 ms-1'><a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
-        <span className='last-updated text-muted position-absolute end-0 bottom-0 me-1'>Last updated: {selectedVaccine.lastUpdated}</span>
+        {/* <p className='mb-0 ms-1'><a className='read-more hover-cursor hover-underline' target="_blank" rel="noopener noreferrer" href={`${selectedVaccine.link}`}>Learn more...</a></p>
+        <span className='last-updated text-muted position-absolute end-0 bottom-0 me-1'>Last updated: {selectedVaccine.lastUpdated}</span> */}
         {selectedVacciProfile && <ReactModal isOpen={modalIsOpen} closeTimeoutMS={200} shouldCloseOnOverlayClick={true} onRequestClose={closeModal}>
             <i class="fa-solid fa-xmark fa-lg modal-close-btn position-absolute end-0 hover-cursor" onClick={closeModal}></i>
             <h1 className="heading text-black pt-2 text-center">{formatHeading(selectedVacciProfile.name)}</h1>
