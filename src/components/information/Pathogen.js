@@ -779,16 +779,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                                                                             </td>
                                                                         </tr>
                                                                     )
-                                                                }) : (
-                                                                    <tr>
-                                                                        <td colSpan={4}>
-                                                                            <div className='flex flex-row mb-2'>
-                                                                                &#8226;{" "}
-                                                                                <span className='mt-2'>No Data Found</span>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                )}
+                                                                }) : null}
                                                             </table>
                                                         ) : null
                                                     }
@@ -833,16 +824,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                                                                             </td>
                                                                         </tr>
                                                                     )
-                                                                }) : (
-                                                                    <tr>
-                                                                        <td colSpan={4}>
-                                                                            <div className='flex flex-row mb-2'>
-                                                                                &#8226;{" "}
-                                                                                <span className='mt-2'>No Data Found</span>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                )}
+                                                                }) : null}
                                                             </table>
                                                         ) : null
                                                     }
@@ -886,16 +868,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                                                                             </td>
                                                                         </tr>
                                                                     )
-                                                                }) : (
-                                                                    <tr>
-                                                                        <td colSpan={4}>
-                                                                            <div className='flex flex-row mb-2'>
-                                                                                &#8226;{" "}
-                                                                                <span className='mt-2'>No Data Found</span>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                )}
+                                                                }) : null}
                                                             </table>
                                                         ) : null
                                                     }
@@ -1062,11 +1035,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                                                     <div className='mt-2' dangerouslySetInnerHTML={{ __html: bullet.replaceAll('|', '').replaceAll(selectedPathogen.name, `<span classname="text-primary" style={{ color: "blue" }}>${selectedPathogen.name}</span>`) }}></div>
                                                 </li>
                                             )
-                                        }) : (
-                                            <li className='flex flex-row mb-2'>
-                                                <span className='mt-2'>No Data Found</span>
-                                            </li>
-                                        )}
+                                        }) : null}
                                     </ul>
                                 </div>
                             </div>
@@ -1088,39 +1057,41 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                             <tr>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder' }}>Vaccine Name</td>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#F1F1F3', position: 'relative' }}>Phase I <div className='triangle-1' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
-                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#E0DFE5', position: 'relative' }}>Phase IIA <div className='triangle-2' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
-                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#CCCAD5', position: 'relative' }}>Phase IIB <div className='triangle-3' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
+                                <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#E0DFE5', position: 'relative' }}>Phase II <div className='triangle-2' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#B5B2C3', position: 'relative' }}>Phase III <div className='triangle-4' style={{ position: 'absolute', right: -40, top: 0 }} /></td>
                                 <td align='center' className='border-right-0 border-left-0 border-bottom-0' style={{ width: 200, fontWeight: 'bolder', backgroundColor: '#A3A1B6' }}>Phase IV</td>
                             </tr>
                             {removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").length > 0 ? removeDuplicatesFromArray(getCandidateVaccinesByPathogenName(selectedPathogen?.name), "name").map(x => {
                                 return (
                                     <tr>
-                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name} {x.platform.toLowerCase().includes('no data') ? '' : `(${x.platform})`} <br /><HtmlTooltip
-                                            title={
-                                                <>
-                                                    <Typography color="inherit">clinictrials.gov sources</Typography>
-                                                    {
-                                                        x.other.split('\n').length > 0 ? x.other.split('\n').map((oth, i) => {
-                                                            return (
-                                                                <>
-                                                                    <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a><br />
-                                                                </>
-                                                            )
-                                                        }) : <a href={x.other}>link</a>
+                                        <td className='border-right-0 border-left-0 border-top-0' style={{ width: 200, height: 150, fontWeight: 'bolder' }}>{x.name} {x.platform.toLowerCase().includes('no data') ? '' : `(${x.platform})`} <br />
+                                            {x.other ? (
+                                                <HtmlTooltip
+                                                    title={
+                                                        <>
+                                                            <Typography color="inherit">clinictrials.gov sources</Typography>
+                                                            {
+                                                                x.other.split('\n').length > 0 ? x.other.split('\n').map((oth, i) => {
+                                                                    return (
+                                                                        <>
+                                                                            <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a><br />
+                                                                        </>
+                                                                    )
+                                                                }) : <a href={x.other}>link</a>
+                                                            }
+                                                        </>
                                                     }
-                                                </>
-                                            }
-                                        >
-                                            <div>
-                                                <span className='selectable'>clinictrials.gov</span>
-                                            </div>
-                                        </HtmlTooltip></td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#F1F1F3' }}><a className='selectable' href={x.clinicalPhase.includes('Phase I') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase I') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#E0DFE5' }}><a className='selectable' href={x.clinicalPhase.includes('Phase IIA') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase IIA') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#CCCAD5' }}><a className='selectable' href={x.clinicalPhase.includes('Phase IIB') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase IIB') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#B5B2C3' }}><a className='selectable' href={x.clinicalPhase.includes('Phase III') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase III') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
-                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#A3A1B6' }}><a className='selectable' href={x.clinicalPhase.includes('Phase IV') ? x.companyUrl : 'x'}>{x.clinicalPhase.includes('Phase IV') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
+                                                >
+                                                    <div>
+                                                        <span className='selectable'>clinictrials.gov</span>
+                                                    </div>
+                                                </HtmlTooltip>
+                                            ) : null}
+                                        </td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#F1F1F3' }}><a className='selectable' href={x.clinicalPhase === ('Phase I') || x.clinicalPhase.includes('Phase I/') ? x.companyUrl : 'x'}>{x.clinicalPhase === ('Phase I') || x.clinicalPhase.includes('Phase I/') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#E0DFE5' }}><a className='selectable' href={x.clinicalPhase === ('Phase II') || x.clinicalPhase.includes('/II') ? x.companyUrl : 'x'}>{x.clinicalPhase === ('Phase II') || x.clinicalPhase.includes('/II') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#B5B2C3' }}><a className='selectable' href={x.clinicalPhase === ('Phase III') || x.clinicalPhase.includes('/III') ? x.companyUrl : 'x'}>{x.clinicalPhase === ('Phase III') || x.clinicalPhase.includes('/III') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
+                                        <td className='border-0 shadow-sm' style={{ width: 200, height: 150, fontWeight: 'bolder', backgroundColor: '#A3A1B6' }}><a className='selectable' href={x.clinicalPhase === ('Phase IV') || x.clinicalPhase.includes('/IV') ? x.companyUrl : 'x'}>{x.clinicalPhase === ('Phase IV') || x.clinicalPhase.includes('/IV') ? x.manufacturer.replace(';', '\n\n') : ""}</a></td>
                                     </tr>
                                 )
                             }

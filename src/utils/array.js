@@ -42,7 +42,7 @@ export const getCandidateVaccines = () => {
 
 export const getAllRelatedVaccineCandidateByName = (name) => {
     if (name) {
-        return vaccines.filter((x) => x.name !== "" && x.name.toLowerCase().includes(name.toLowerCase()))
+        return vaccines.filter((x) => x.name !== "" && x.name.toLowerCase() === (name.toLowerCase()))
     } else {
         return null
     }
@@ -50,7 +50,7 @@ export const getAllRelatedVaccineCandidateByName = (name) => {
 }
 
 export const getAllPathogenNameByVaccineCandidateName = (name) => {
-    const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
+    const f = vaccines.filter((x) => x.name.toLowerCase() === (name.toLowerCase()));
     if (f.length > 0) {
         const ff = f.map((x) => x.pathogenName);
         if (ff.length > 0) {
@@ -60,7 +60,7 @@ export const getAllPathogenNameByVaccineCandidateName = (name) => {
 };
 
 export const getAllPhasesByVaccineCandidateName = (name) => {
-    const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
+    const f = vaccines.filter((x) => x.name.toLowerCase() === (name.toLowerCase()));
     if (f.length > 0) {
         const ff = f.map((x) => x.clinicalPhase);
         if (ff.length > 0) {
@@ -70,7 +70,7 @@ export const getAllPhasesByVaccineCandidateName = (name) => {
 };
 
 export const getAllClinicTrialsByVaccineCandidateName = (name) => {
-    const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
+    const f = vaccines.filter((x) => x.name.toLowerCase() === (name.toLowerCase()));
     if (f.length > 0) {
         const ff = f.map((x) => x.other);
         if (ff.length > 0) {
@@ -80,7 +80,7 @@ export const getAllClinicTrialsByVaccineCandidateName = (name) => {
 };
 
 export const getAllPlatformByCandidateName = (name) => {
-    const f = vaccines.filter((x) => x.name.toLowerCase().includes(name.toLowerCase()));
+    const f = vaccines.filter((x) => x.name.toLowerCase() === (name.toLowerCase()));
     if (f.length > 0) {
         const ff = f.map((x) => x.platform);
         if (ff.length > 0) {
@@ -118,7 +118,7 @@ export const getAllPlatformByCandidateName = (name) => {
 };
 
 export const getCandidateVaccinesByPathogenName = (pathogen) => {
-    return vaccines.filter((x) => x.pathogenName.toLowerCase().includes(pathogen.toLowerCase()))
+    return vaccines.filter((x) => x.pathogenName.toLowerCase() === (pathogen.toLowerCase()));
 }
 
 export const getCandidateVaccineByManufactureName = (manufacture) => {
@@ -137,7 +137,7 @@ export const getCandidateVaccineByManufactureName = (manufacture) => {
 }
 
 export const getVaccineCandidatePlatformsUniqueByPathogenName = (pathogen) => {
-    const d = vaccines.filter((x) => x.pathogenName.toLowerCase().includes(pathogen.toLowerCase()) && !x.platform.includes('No data'));
+    const d = vaccines.filter((x) => x.pathogenName.toLowerCase() === (pathogen.toLowerCase()) && !x.platform.includes('No data'));
     let platforms = [];
     const f = d.map((x) => {
         platforms.push(x.platform);

@@ -69,7 +69,7 @@ const App = () => {
      * @param {string} letter - The alphabet letter that is selected or deselected.
      * @returns {void}
      */
-    const sampleVaccineCandidatePathogen = sortArrayAscending(removeDuplicatesFromArray(getCandidatePathogens(), "name"), "name")
+    const sampleVaccineCandidatePathogen = sortArrayAscending(removeDuplicatesFromArray(getCandidatePathogens(), "name"), "name");
 
     const handleAlphabetChange = letter => {
         setActiveFilters({
@@ -501,7 +501,7 @@ const App = () => {
         });
     }, [licensersList, filterListByStartingAlphabet]);
 
-     const filterNitagByAlphabetAndSearch = useCallback((keyword) => {
+    const filterNitagByAlphabetAndSearch = useCallback((keyword) => {
         return filterListByStartingAlphabet(finalRemapNitagCountry).filter(licenser => {
             const licenserMatch = licenser[0].toLowerCase().includes(keyword)
             if (licenserMatch) return true;
@@ -583,7 +583,7 @@ const App = () => {
                 filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
                     .sort((a, b) => a.name.localeCompare(b.name));
             } else if (activeTab === 'Licenser') {
-                filteredSidebarList = filterLicensersByAlphabetAndSearch(keywordLower).slice()  
+                filteredSidebarList = filterLicensersByAlphabetAndSearch(keywordLower).slice()
             }
             else if (activeTab === 'Compare') {
                 filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()

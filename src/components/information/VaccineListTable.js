@@ -271,26 +271,32 @@ const VaccineListTable = ({
                                             <td className='licenser-cell'>
                                                 <span className=''>{getAllPhasesByVaccineCandidateName(vaccine.name)}</span>
                                             </td>
-                                            <td><HtmlTooltip
-                                                title={
-                                                    <>
-                                                        <Typography color="inherit">clinictrials.gov sources</Typography>
-                                                        {
-                                                            getAllClinicTrialsByVaccineCandidateName(vaccine.name).split('\n').length > 0 ? getAllClinicTrialsByVaccineCandidateName(vaccine.name).split('\n').map((oth, i) => {
-                                                                return (
-                                                                    <>
-                                                                        <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a><br />
-                                                                    </>
-                                                                )
-                                                            }) : <a href={getAllClinicTrialsByVaccineCandidateName(vaccine.name)}>link</a>
-                                                        }
-                                                    </>
+                                            <td>
+                                                {
+                                                    getAllClinicTrialsByVaccineCandidateName(vaccine.name) ? (
+                                                        <HtmlTooltip
+                                                            title={
+                                                                <>
+                                                                    <Typography color="inherit">clinictrials.gov sources</Typography>
+                                                                    {
+                                                                        getAllClinicTrialsByVaccineCandidateName(vaccine.name).split('\n').length > 0 ? getAllClinicTrialsByVaccineCandidateName(vaccine.name).split('\n').map((oth, i) => {
+                                                                            return (
+                                                                                <>
+                                                                                    <a className='selectable' href={oth} target='_blank'>Link ({i + 1})</a><br />
+                                                                                </>
+                                                                            )
+                                                                        }) : <a href={getAllClinicTrialsByVaccineCandidateName(vaccine.name)}>link</a>
+                                                                    }
+                                                                </>
+                                                            }
+                                                        >
+                                                            <div>
+                                                                <span className='selectable'>clinictrials.gov</span>
+                                                            </div>
+                                                        </HtmlTooltip>
+                                                    ) : "-"
                                                 }
-                                            >
-                                                <div>
-                                                    <span className='selectable'>clinictrials.gov</span>
-                                                </div>
-                                            </HtmlTooltip></td>
+                                            </td>
                                         </tr>
                                     )
                                 }) : <tr><td colSpan={5} align='center'>- no data available -</td></tr>}

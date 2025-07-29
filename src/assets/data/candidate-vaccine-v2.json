@@ -15,7 +15,7 @@
     "platform": "No data",
     "clinicalPhase": "Phase II",
     "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
+    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=https://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
   },
   {
     "pathogenName": "Borrelia burgdorferi",
@@ -96,7 +96,7 @@
     "platform": "No data",
     "clinicalPhase": "Phase II",
     "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
+    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=https://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
   },
   {
     "pathogenName": "Corynebacterium diphtheriae",
@@ -105,7 +105,7 @@
     "platform": "No data",
     "clinicalPhase": "Phase II",
     "companyUrl": "https://www.gcbiopharma.com/eng/pipeline.do",
-    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=\nhttps://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
+    "other": "https://clinicaltrials.gov/search?intr=GC3111&checkSpell=https://clinicaltrials.gov/search?intr=GC3111B&checkSpell="
   },
   {
     "pathogenName": "Cytomegalovirus (CMV)",
@@ -261,7 +261,7 @@
     "other": "https://clinicaltrials.gov/search?intr=IVX-A12"
   },
   {
-    "pathogenName": "Human metapneumovirus (hMPV)\n",
+    "pathogenName": "Human metapneumovirus (hMPV)",
     "name": "mRNA-1365",
     "manufacturer": "Moderna, Inc.",
     "platform": "mRNA",
@@ -451,7 +451,7 @@
   },
   {
     "pathogenName": "Influenza Virus",
-    "name": "PF-07252220\n",
+    "name": "PF-07252220",
     "manufacturer": "Pfizer",
     "platform": "mRNA",
     "clinicalPhase": "Phase II",
@@ -460,7 +460,7 @@
   },
   {
     "pathogenName": "Influenza Virus",
-    "name": "PF-07985819\n",
+    "name": "PF-07985819",
     "manufacturer": "Pfizer",
     "platform": "mRNA",
     "clinicalPhase": "Phase I",
@@ -522,7 +522,7 @@
     "other": "https://clinicaltrials.gov/search?cond=influenza%20NOT%20COVID%2019&spons=Novavax"
   },
   {
-    "pathogenName": "Influenza Virus\n",
+    "pathogenName": "Influenza Virus",
     "name": "mRNA-1045",
     "manufacturer": "Moderna, Inc.",
     "platform": "mRNA",
@@ -616,7 +616,7 @@
     "name": "AEC/BC02",
     "manufacturer": "Anhui Zhifei Longcom Biopharmaceutical",
     "platform": "Subunit",
-    "clinicalPhase": "Phase IIa",
+    "clinicalPhase": "Phase II",
     "companyUrl": "https://en.zhifeishengwu.com/produce/zycp/",
     "other": "https://clinicaltrials.gov/search?intr=AEC%2FBC02&checkSpell="
   },
@@ -721,7 +721,7 @@
   },
   {
     "pathogenName": "Norovirus",
-    "name": " HIL-214 (Bivalent GI.1 and GII.4)\n",
+    "name": "HIL-214 (Bivalent GI.1 and GII.4)",
     "manufacturer": "HilleVax",
     "platform": "Subunit",
     "clinicalPhase": "Phase II",
@@ -963,7 +963,7 @@
     "other": ""
   },
   {
-    "pathogenName": "salmonella Typhi",
+    "pathogenName": "Salmonella Typhi",
     "name": "Bivalent Typhoid and Paratyphoid A Conjugate vaccine",
     "manufacturer": "Zydus Lifesciences Ltd",
     "platform": "Subunit",
@@ -1018,7 +1018,7 @@
   },
   {
     "pathogenName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2)",
-    "name": "COVID-19 mRNA Vaccine\n(DS-5670)",
+    "name": "COVID-19 mRNA Vaccine(DS-5670)",
     "manufacturer": "Daiichi Sankyo Co.",
     "platform": "mRNA",
     "clinicalPhase": "Phase III",
@@ -1093,7 +1093,7 @@
     "name": "BLB101",
     "manufacturer": "Blue Lake Biotechnology",
     "platform": "No data",
-    "clinicalPhase": "Phase IIb",
+    "clinicalPhase": "Phase II",
     "companyUrl": "https://www.bluelakebiotechnology.com/our-pipeline",
     "other": ""
   },
@@ -1171,7 +1171,7 @@
   },
   {
     "pathogenName": "Streptococcus pneumoniae",
-    "name": "PF-07872412\n",
+    "name": "PF-07872412",
     "manufacturer": "Pfizer",
     "platform": "mRNA",
     "clinicalPhase": "Phase II",
@@ -1287,7 +1287,7 @@
     "other": ""
   },
   {
-    "pathogenName": "Yellow fever Virus\n",
+    "pathogenName": "Yellow fever Virus",
     "name": "SP0218",
     "manufacturer": "Sanofi",
     "platform": "Vero cell",
