@@ -5,7 +5,7 @@
     "region": "(USA)",
     "fullName": "U.S. Food and Drug Administration",
     "description": "The Food and Drug Administration (FDA) is a U.S. federal agency responsible for protecting public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, medical devices, food, cosmetics, and tobacco products. It regulates the development and marketing of these products, monitors adverse events, and enforces laws to ensure compliance with standards that promote consumer safety and innovation.",
-    "website": "https://www.fda.gov"
+    "website": "https://www.fda.gov/"
   },
   {
     "licenserId": 2,
@@ -52,7 +52,7 @@
     "fullName": "Paul-Ehrlich-Institut",
     "country": "Germany",
     "description": "The Paul-Ehrlich-Institut is Germany's federal institute for vaccines and biomedicines, responsible for approving and monitoring vaccines, blood products, and other biomedicines.",
-    "website": "https://www.pei.de"
+    "website": "https://www.pei.de/EN/home/home-node.html"
   },
   {
     "licenserId": 8,
@@ -60,7 +60,7 @@
     "fullName": "National Medical Products Administration",
     "country": "China",
     "description": "The NMPA is the Chinese government agency responsible for the regulation of drugs, medical devices, and cosmetics, ensuring their safety, quality, and efficacy.",
-    "website": "https://www.nmpa.gov.cn"
+    "website": "https://english.nmpa.gov.cn/"
   },
   {
     "licenserId": 9,
@@ -76,7 +76,7 @@
     "fullName": "Pharmaceuticals and Medical Devices Agency",
     "country": "Japan",
     "description": "The PMDA is Japan's regulatory body that evaluates and approves drugs, medical devices, and regenerative medical products, ensuring their safety and efficacy.",
-    "website": "https://www.pmda.go.jp"
+    "website": "https://www.pmda.go.jp/english/index.html"
   },
   {
     "licenserId": 11,
@@ -108,7 +108,7 @@
     "fullName": "Brazilian Health Regulatory Agency",
     "country": "Brazil",
     "description": "ANVISA is Brazil's regulatory authority responsible for the approval, regulation, and monitoring of drugs, medical devices, and other health products.",
-    "website": "https://www.gov.br/anvisa"
+    "website": "https://www.gov.br/anvisa/en"
   },
   {
     "licenserId": 15,
@@ -116,7 +116,7 @@
     "fullName": "Federal Service for Surveillance in Healthcare (Roszdravnadzor)",
     "country": "Russia",
     "description": "Roszdravnadzor is Russia’s federal executive body under the Ministry of Health responsible for regulation, supervision, and enforcement in medical care, pharmaceuticals, medical devices, and clinical practices, ensuring safety, quality, and compliance across healthcare.",
-    "website": "https://roszdravnadzor.gov.ru"
+    "website": "https://roszdravnadzor.gov.ru/en”"
   },
   {
     "licenserId": 16,
@@ -132,7 +132,7 @@
     "fullName": "National Institute of Pharmacy and Nutrition",
     "country": "Hungary",
     "description": "This Hungarian institution is responsible for the regulation and safety of pharmaceuticals, medical devices, and nutritional products in Hungary.",
-    "website": "https://www.ogyei.gov.hu"
+    "website": "https://ogyei.gov.hu/main_page"
   },
   {
     "licenserId": 18,
@@ -148,7 +148,7 @@
     "fullName": "Italian Medicines Agency",
     "country": "Italy",
     "description": "AIFA is the national authority in Italy responsible for the regulation, approval, and monitoring of medicines, ensuring their safety and effectiveness.",
-    "website": "https://www.aifa.gov.it"
+    "website": "https://www.aifa.gov.it/en/home"
   },
   {
     "licenserId": 20,
@@ -172,7 +172,7 @@
     "fullName": "State Institute for Drug Control",
     "country": "Czech Republic",
     "description": "SUKL is the Czech Republic's national regulatory authority for medicines and medical devices, ensuring their safety, efficacy, and quality.",
-    "website": "https://mzd.gov.cz/"
+    "website": "https://sukl.gov.cz/en/"
   },
   {
     "licenserId": 28,
@@ -180,7 +180,7 @@
     "fullName": "Danish Medicines Agency",
     "country": "Denmark",
     "description": "DKMA is Denmark's regulatory authority responsible for the approval, regulation, and safety of medicines and medical devices.",
-    "website": "https://www.dkma.dk"
+    "website": "https://laegemiddelstyrelsen.dk/en/"
   },
   {
     "licenserId": 29,
@@ -188,7 +188,7 @@
     "fullName": "Finnish Medicines Agency",
     "country": "Finland",
     "description": "FIMEA is Finland's regulatory authority responsible for the evaluation, authorization, and supervision of medicines and medical devices.",
-    "website": "https://www.fimea.fi"
+    "website": "https://fimea.fi/en/frontpage"
   },
   {
     "licenserId": 30,
@@ -196,7 +196,7 @@
     "fullName": "National Organization for Medicines",
     "country": "Greece",
     "description": "EOF is Greece's national regulatory authority responsible for the safety, efficacy, and quality of medicines and medical devices.",
-    "website": "https://www.eof.gr"
+    "website": "https://www.eof.gr/en/"
   },
   {
     "licenserId": 31,
@@ -244,7 +244,7 @@
     "fullName": "Medicines Evaluation Board",
     "country": "Netherlands",
     "description": "MEB is the Dutch regulatory body responsible for the assessment and monitoring of medicines to ensure their safety and efficacy in the Netherlands.",
-    "website": "https://www.cbg-meb.nl"
+    "website": "https://english.cbg-meb.nl/"
   },
   {
     "licenserId": 37,
@@ -252,7 +252,7 @@
     "fullName": "Norwegian Medicines Agency",
     "country": "Norway",
     "description": "NoMA is Norway's national authority responsible for the regulation and safety of medicines and medical devices.",
-    "website": "https://www.legemiddelverket.no"
+    "website": "https://www.dmp.no/en"
   },
   {
     "licenserId": 38,
@@ -276,14 +276,14 @@
     "fullName": "Agency for Medicinal Products and Medical Devices",
     "country": "Croatia",
     "description": "HALMED is Croatia's national regulatory authority responsible for the safety and quality of medicines and medical devices.",
-    "website": "https://www.halmed.hr"
+    "website": "https://www.halmed.hr/en/"
   },
   {
     "licenserId": 41,
     "acronym": "CPS",
     "fullName": "Cyprus Pharmaceutical Services",
     "description": "The Cyprus Pharmaceutical Services is the national authority responsible for the regulation and control of medicines and medical devices in Cyprus.",
-    "website": "https://www.moh.gov.cy/phs",
+    "website": "https://www.moh.gov.cy/moh/phs/phs.nsf/home_en/home_en?openform",
     "country": "Cyprus"
   },
   {
@@ -291,7 +291,7 @@
     "acronym": "SAM",
     "fullName": "Estonian State Agency of Medicines-SAM",
     "description": "SAM is Estonia's national regulatory authority for the safety, efficacy, and quality of medicines and medical devices.",
-    "website": "https://www.ravimiamet.ee",
+    "website": "https://www.ravimiamet.ee/en",
     "country": "Estonia"
   },
   {
@@ -304,10 +304,10 @@
   },
   {
     "licenserId": 46,
-    "acronym": "NIH",
-    "fullName": "National Institute of Health-NIH",
-    "description": "The NIH in Colombia is responsible for conducting public health research, disease surveillance, and control, as well as overseeing the regulation of health products to ensure public safety.",
-    "website": "https://www.ins.gov.co",
+    "acronym": "INVIMA",
+    "fullName": "National Institute for Food and Drug Surveillance (INVIMA)",
+    "description": "he Instituto Nacional de Vigilancia de Medicamentos y Alimentos (INVIMA) is Colombia’s national regulatory authority under the Ministry of Health, responsible for overseeing the quality, safety, and efficacy of medicines, medical devices, food, cosmetics, vaccines, and biological products.",
+    "website": "https://www.invima.gov.co/",
     "country": "Colombia"
   },
   {
@@ -347,7 +347,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Israel is responsible for public health policy, regulation of health products, and ensuring the safety and efficacy of medicines and medical devices.",
-    "website": "https://www.health.gov.il",
+    "website": "https://www.gov.il/en/departments/ministry_of_health/govil-landing-page",
     "country": "Israel"
   },
   {
@@ -392,10 +392,10 @@
   },
   {
     "licenserId": 58,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Bahrain oversees the country's healthcare system, regulates health products, and ensures public health and safety.",
-    "website": "https://www.moh.gov.bh",
+    "acronym": "NHRA",
+    "fullName": "National Health Regulatory Authority (NHRA)",
+    "description": "The NHRA is an independent regulatory authority under Bahrain’s Ministry of Health, mandated to regulate the full spectrum of health services—healthcare facilities, professionals, medical devices, medicines, and clinical trials—across both public and private sectors",
+    "website": "https://www.nhra.bh/",
     "country": "Bahrain"
   },
   {
@@ -403,7 +403,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Omani Ministry of Health is responsible for public health services, regulation of pharmaceuticals, and ensuring the safety of health products in Oman.",
-    "website": "https://www.moh.gov.om",
+    "website": "https://moh.gov.om/en/",
     "country": "Oman"
   },
   {
@@ -411,7 +411,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Jordan oversees healthcare services, regulates medicines and medical devices, and promotes public health in the country.",
-    "website": "https://www.moh.gov.jo",
+    "website": "https://www.moh.gov.jo/Default/En",
     "country": "Jordan"
   },
   {
@@ -419,7 +419,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Lebanese Ministry of Health is responsible for public health policies, healthcare services, and the regulation of pharmaceuticals and medical devices in Lebanon.",
-    "website": "https://www.moph.gov.lb",
+    "website": "https://www.moph.gov.lb/en/",
     "country": "Lebanon"
   },
   {
@@ -448,18 +448,18 @@
   },
   {
     "licenserId": 66,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Pakistan is responsible for public health policy, regulation of medicines, and ensuring the safety and quality of health products.",
-    "website": "https://www.nhsrc.gov.pk",
+    "acronym": "DRA",
+    "fullName": "Drug Regulatory Authority (DRA)",
+    "description": "The Drug Regulatory Authority of Pakistan (DRAP), established under the DRAP Act 2012 and operating under the Ministry of National Health Services, Regulations & Coordination, is the national regulatory body responsible for ensuring the quality, safety, and efficacy of therapeutic goods in Pakistan.",
+    "website": "https://www.dra.gov.pk/",
     "country": "Pakistan"
   },
   {
     "licenserId": 67,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Bangladeshi Ministry of Health oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in Bangladesh.",
-    "website": "https://www.mohfw.gov.bd",
+    "acronym": "DGDA",
+    "fullName": "Directorate General of Drug Administration (DGDA)",
+    "description": "The DGDA is Bangladesh’s principal regulatory authority under the Ministry of Health and Family Welfare, tasked with ensuring the quality, safety, efficacy, and affordability of all pharmaceutical products — including allopathic, Ayurvedic, Unani, herbal, and homeopathic medicines.",
+    "website": "https://info.dgda.gov.bd/",
     "country": "Bangladesh"
   },
   {
@@ -472,26 +472,26 @@
   },
   {
     "licenserId": 69,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Nepal oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in Nepal.",
-    "website": "https://www.mohp.gov.np",
+    "acronym": "DDA",
+    "fullName": "Department of Drug Administration (DDA)",
+    "description": "The Department of Drug Administration (DDA) is Nepal’s national drug regulatory authority under the Ministry of Health and Population. Established in 1979, DDA operates under the Drug Act of 1978 and oversees registration and licensing of medicines, pharmacovigilance, clinical trial approval, quality-control testing, facility inspections, and market surveillance. ",
+    "website": "https://www.dda.gov.np/",
     "country": "Nepal"
   },
   {
     "licenserId": 70,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Bhutan is responsible for public health services, regulation of medicines, and the promotion of health and well-being in the country.",
-    "website": "https://www.health.gov.bt",
+    "acronym": "BFDA",
+    "fullName": "Bhutan Food and Drug Authority (BFDA)",
+    "description": "BFDA is Bhutan’s national authority responsible for regulating food, medicinal products (including traditional medicines and medical devices), controlled substances, biosecurity, agricultural products, and chemicals to protect public health.",
+    "website": "https://www.bfda.gov.bt/",
     "country": "Bhutan"
   },
   {
     "licenserId": 71,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in the Maldives oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.health.gov.mv",
+    "acronym": "MFDA",
+    "fullName": "Maldives Food and Drug Authority (MFDA)",
+    "description": "The Maldives Food and Drug Authority (MFDA) is the national regulatory agency under the Ministry of Health of the Republic of Maldives. MFDA oversees the safety, quality, and efficacy of food, medicines, medical devices, therapeutic goods, and related products.",
+    "website": "https://www.mfda.gov.mv",
     "country": "Maldives"
   },
   {
@@ -499,15 +499,15 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Indonesia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
-    "website": "https://www.kemkes.go.id",
+    "website": "https://kemkes.go.id/eng/",
     "country": "Indonesia"
   },
   {
     "licenserId": 73,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Malaysia oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.moh.gov.my",
+    "acronym": "NPRA",
+    "fullName": "National Pharmaceutical Regulatory Agency (NPRA)",
+    "description": "The National Pharmaceutical Regulatory Agency (NPRA) is Malaysia’s national regulatory authority under the Ministry of Health, responsible for ensuring the safety, quality, and efficacy of medicines and cosmetics. It oversees product registration, licensing of manufacturers and importers, laboratory testing, pharmacovigilance, market surveillance, and clinical trial approval.",
+    "website": "https://www.npra.gov.my/",
     "country": "Malaysia"
   },
   {
@@ -536,10 +536,10 @@
   },
   {
     "licenserId": 77,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Laos oversees public health services, regulates medicines, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.moh.gov.la",
+    "acronym": "FDD",
+    "fullName": "Food and Drug Department of the Ministry of Health",
+    "description": "The Food and Drug Department (FDD) of the Ministry of Health in Lao PDR is the national regulatory authority responsible for ensuring the safety, quality, and efficacy of food, medicines (including traditional and modern products), supplements, and medical devices.",
+    "website": "http://www.fdd.gov.la/index_en.php",
     "country": "Laos"
   },
   {
@@ -552,10 +552,10 @@
   },
   {
     "licenserId": 79,
-    "acronym": "DOH",
-    "fullName": "Department of Health",
-    "description": "The Ministry of Health in the Philippines, also known as the Department of Health (DOH), is responsible for public health services, regulation of health products, and ensuring the safety and efficacy of medicines and medical devices.",
-    "website": "https://www.doh.gov.ph",
+    "acronym": "Philippines FDA",
+    "fullName": "Food and Drug Administration (FDA)",
+    "description": "The Food and Drug Administration (FDA) of the Philippines, established in 1963 and strengthened under Republic Act No. 9711 (2009), is the national regulatory agency under the Department of Health. FDA ensures the safety, quality, and efficacy of food, medicines, medical devices, cosmetics, biologicals, vaccines, radiation‑emitting equipment, household hazardous products, and tobacco. It manages product registration and licensing, field inspections, laboratory testing, pharmacovigilance, clinical trial oversight, promotional and advertising compliance, and enforcement actions. As of 2025, the agency is headed by Director General Atty. Paolo S. Teston and operates through specialized centers and regional field clusters",
+    "website": "https://www.fda.gov.ph/",
     "country": "Philippines"
   },
   {
@@ -571,7 +571,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Mongolian Ministry of Health oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in Mongolia.",
-    "website": "https://www.moh.gov.mn",
+    "website": "https://www.gov.mn/en/organization/moh",
     "country": "Mongolia"
   },
   {
@@ -603,7 +603,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Kyrgyzstan oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.med.kg",
+    "website": "https://www.med.kg/?locale=en",
     "country": "Kyrgyzstan"
   },
   {
@@ -616,10 +616,10 @@
   },
   {
     "licenserId": 88,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Armenia oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.moh.am",
+    "acronym": "SCDMTE",
+    "fullName": "Scientific Centre of Drug and Medical Technology Expertise (SCDMTE)",
+    "description": "A public expertise body under Armenia’s Ministry of Health responsible for scientific evaluation and state registration of medicinal products—including veterinary and herbal drugs—and medical devices (including cosmetics and medical equipment).",
+    "website": "http://pharm.am/index.php/en/",
     "country": "Armenia"
   },
   {
@@ -640,10 +640,10 @@
   },
   {
     "licenserId": 91,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Belarus is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
-    "website": "https://www.minzdrav.gov.by",
+    "acronym": "RCETH",
+    "fullName": "Center for Expert Evaluation and Testing in Healthcare (RCETH)",
+    "description": "RCETH is a Republican Unitary Enterprise under the Ministry of Health of the Republic of Belarus, responsible for expert examination and quality control of medicinal products and medical devices in line with national and Eurasian Economic Union regulations.",
+    "website": "https://www.rceth.by/en",
     "country": "Belarus"
   },
   {
@@ -656,10 +656,10 @@
   },
   {
     "licenserId": 93,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Moldova is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
-    "website": "https://www.ms.gov.md",
+    "acronym": "AMDM",
+    "fullName": "National Agency for Medicines and Medical Devices (AMDM)",
+    "description": "The National Agency for Medicines and Medical Devices (AMDM) is Moldova’s regulatory authority under the Ministry of Health. Established as a public legal entity, AMDM oversees the registration, evaluation, and surveillance of medicines and medical devices.",
+    "website": "https://amdm.gov.md/en",
     "country": "Moldova"
   },
   {
@@ -675,15 +675,15 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Montenegro is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
-    "website": "https://www.mzdravlja.gov.me",
+    "website": "https://www.gov.me/en/mzd",
     "country": "Montenegro"
   },
   {
     "licenserId": 96,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Bosnia and Herzegovina oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.fmoh.gov.ba/",
+    "acronym": "ALMBiH",
+    "fullName": "Agency for Medicinal Products and Medical Devices of Bosnia and Herzegovina (ALMBiH)",
+    "description": "Here's a copy-paste ready description for the **Agency for Medicinal Products and Medical Devices of Bosnia and Herzegovina (ALMBiH) \n\n The Agency for Medicinal Products and Medical Devices of Bosnia and Herzegovina (ALMBiH) is the national regulatory authority responsible for the registration, evaluation, and monitoring of medicines and medical devices. Established in 2009, ALMBiH ensures the safety, efficacy, and quality of medicinal products throughout the country. The agency regulates clinical trials, oversees pharmacovigilance activities, and performs market surveillance and inspections. ALMBiH also works to harmonize its regulatory framework with European Union standards and cooperates with international regulatory bodies to strengthen public health protections.",
+    "website": "https://almbih.gov.ba/en/agencija-za-lijekove-i-medicinska-sredstva-bosne-i-hercegovine-eng/",
     "country": "Bosnia and Herzegovina"
   },
   {
@@ -691,15 +691,15 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in North Macedonia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
-    "website": "https://www.zdravstvo.gov.mk",
+    "website": "https://zdravstvo.gov.mk/en-GB",
     "country": "North Macedonia"
   },
   {
     "licenserId": 98,
     "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Albania oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.shendetesia.gov.al",
+    "fullName": "National Agency for Medicines and Medical Devices (AKBPM)",
+    "description": "AKBPM is Albania’s national regulatory authority responsible for the regulation, evaluation, supervision, and control of human medicines and medical devices in the country, ensuring their quality, safety, and efficacy.",
+    "website": "https://akbpm.gov.al/”",
     "country": "Albania"
   },
   {
@@ -707,15 +707,15 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Kosovo is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
-    "website": "https://www.msh-ks.org",
+    "website": "https://msh.rks-gov.net/",
     "country": "Kosovo"
   },
   {
     "licenserId": 100,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Bulgaria oversees public health services, regulates medicines and medical devices, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.mh.government.bg",
+    "acronym": "BDA",
+    "fullName": "Bulgarian Drug Agency (BDA)",
+    "description": "The Bulgarian Drug Agency (BDA) is the national authority responsible for regulating and supervising the quality, safety, and efficacy of medicines and medical devices in Bulgaria.",
+    "website": "https://www.bda.bg/en/",
     "country": "Bulgaria"
   },
   {
@@ -739,7 +739,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in the Bahamas is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.bahamas.gov.bs/health",
+    "website": "https://www.mohw.gov.bs/",
     "country": "Bahamas"
   },
   {
@@ -776,10 +776,10 @@
   },
   {
     "licenserId": 109,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "BoMRA",
+    "fullName": "Botswana Medicines Regulatory Authority (BoMRA)",
     "country": "Botswana",
-    "description": "The Ministry of Health in Botswana is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
+    "description": "The Botswana Medicines Regulatory Authority (BoMRA) is the national body responsible for regulating medicines, medical devices, and related substances in Botswana. It ensures their safety, quality, and efficacy through registration, inspections, and pharmacovigilance.",
     "website": "https://www.moh.gov.bw"
   },
   {
@@ -792,27 +792,27 @@
   },
   {
     "licenserId": 111,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "ABREMA",
+    "fullName": "Agence Burundaise de Régulation des Médicaments à usage humain et des Aliments (ABREMA)",
     "country": "Burundi",
-    "description": "The Ministry of Health in Burundi is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.minisante.bi"
+    "description": "he Autorité Burundaise de Régulation des Médicaments à usage humain et des Aliments (ABREMA) is Burundi’s national regulatory authority, established in 2021. It operates under the Ministry of Public Health and is responsible for regulating and overseeing human medicines, food products, medical devices, cosmetics, and traditional health-related products.",
+    "website": "https://abrema.gov.bi/"
   },
   {
     "licenserId": 112,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "IHRA",
+    "fullName": "Independent Health Regulatory Authority (IHRA)",
     "country": "Cabo Verde",
-    "description": "The Ministry of Health in Cabo Verde oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.minsaude.gov.cv"
+    "description": "The Entidade Reguladora Independente da Saúde (ERIS) — also known as the Independent Health Regulatory Entity in Cabo Verde — is the national authority responsible for regulating, authorising, and overseeing medicines, medical devices, food, and cosmetics.",
+    "website": "https://www.eris.cv/"
   },
   {
     "licenserId": 113,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "DPML",
+    "fullName": "Department of Pharmacy, Medicines, and Laboratories (DPML)",
     "country": "Cameroon",
-    "description": "The Ministry of Health in Cameroon is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.minsante.cm"
+    "description": "The Department of Pharmacy, Drugs and Laboratories (DPML) is a core technical department within Cameroon’s Ministry of Public Health. Established under Decree No. 2013/093 (April 2013), it serves as the central coordinating body of the national pharmaceutical regulatory authority",
+    "website": "https://dpml.agisoin.com/index.php/en/"
   },
   {
     "licenserId": 114,
@@ -832,11 +832,11 @@
   },
   {
     "licenserId": 116,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "ANAMEV",
+    "fullName": "Agence Nationale des Médicaments et des Évacuations Sanitaires (ANAMEV)",
     "country": "Comoros",
-    "description": "The Ministry of Health in Comoros oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.sante.gov.km"
+    "description": "The Agence Nationale des Médicaments et des Évacuations Sanitaires (ANAMEV) is the national authority of the Union of the Comoros, established by decree in January 2017 under the Ministry of Health. ANAMEV is responsible for regulating medicines, medical products, and medical devices, ensuring their quality, safety, and efficacy.",
+    "website": "https://www.anamev.org/"
   },
   {
     "licenserId": 117,
@@ -935,20 +935,20 @@
   },
   {
     "licenserId": 128,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "EFDA",
+    "fullName": "Ethiopian Food and Drug Authority (EFDA)",
     "country": "Ethiopia",
-    "description": "The Ministry of Health in Ethiopia oversees public health services, regulates medicines, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.moh.gov.et",
+    "description": "The Ethiopian Food and Drug Authority (EFDA) is the national regulatory body under Ethiopia’s Ministry of Health, established by Proclamation No. 1263/2021 and Regulation No. 531/2023. EFDA ensures the safety, quality, and effectiveness of food, medicines, medical devices, cosmetics, alcohol, and tobacco products.",
+    "website": "https://www.efda.gov.et/",
     "region": "East Africa"
   },
   {
     "licenserId": 129,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "Fiji MRA",
+    "fullName": "Fiji Medicines Regulatory Authority (Fiji MRA)",
     "country": "Fiji",
-    "description": "The Ministry of Health in Fiji is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.health.gov.fj",
+    "description": "The Fiji Medicines Regulatory Authority (Fiji MRA), operating within the Fiji Pharmaceutical & Biomedical Services Centre of the Ministry of Health, is the national regulatory authority responsible for ensuring that medicines and medical devices in Fiji are safe, effective, and of high quality. ",
+    "website": "https://www.health.gov.fj/fiji-mra/",
     "region": "Oceania"
   },
   {
@@ -962,20 +962,20 @@
   },
   {
     "licenserId": 131,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "MCA",
+    "fullName": "Medicines Control Agency (MCA)",
     "country": "Gambia",
-    "description": "The Ministry of Health in Gambia is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.moh.gov.gm",
+    "description": "The Medicines Control Agency (MCA) is The Gambia’s national regulatory authority under the Ministry of Health, established by the Medicines and Related Products Act 2014. MCA ensures the quality, safety, and efficacy of medicines and related products—including herbal medicines, cosmetics, household chemicals, and medical devices—through product registration, licensing, inspection, pharmacovigilance, quality-control testing, clinical trial oversight, and market surveillance. MCA is committed to becoming a center of excellence in pharmaceutical regulation.",
+    "website": "https://www.mca.gm/",
     "region": "West Africa"
   },
   {
     "licenserId": 132,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
+    "acronym": "Ghana FDA",
+    "fullName": "Food and Drugs Authority",
     "country": "Ghana",
-    "description": "The Ministry of Health in Ghana oversees public health services, regulates medicines and medical devices, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.moh.gov.gh",
+    "description": "The Food and Drugs Authority (FDA) is Ghana’s national regulatory authority under the Ministry of Health, established under the Food and Drugs Act, 1992 (PNDCL 305B) and reconstituted by the Public Health Act, 2012 (Act 851).",
+    "website": "https://fdaghana.gov.gh/",
     "region": "West Africa"
   },
   {
@@ -984,7 +984,7 @@
     "fullName": "Ministry of Health",
     "country": "Grenada",
     "description": "The Ministry of Health in Grenada is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.health.gov.gd",
+    "website": "https://www.gov.gd/index.php/health",
     "region": "Caribbean"
   },
   {
@@ -1008,7 +1008,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Guinea-Bissau oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
-    "website": "#",
+    "website": "",
     "country": "Guinea-Bissau"
   },
   {
@@ -1037,18 +1037,18 @@
   },
   {
     "licenserId": 140,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health and Medical Education",
-    "description": "The Ministry of Health and Medical Education (MOHME) of Iran is responsible for regulating, planning, and providing healthcare services, as well as overseeing medical education and the production and regulation of pharmaceuticals in the country.",
-    "website": "https://irangov.ir/ministry-of-health-and-medical-education",
+    "acronym": "FDO",
+    "fullName": "Food and Drug Organization",
+    "description": "The Food and Drug Administration (FDA) — also referred to as the Food and Drug Organization within Iran’s Ministry of Health and Medical Education — is the national regulatory authority responsible for overseeing the safety, quality, and efficacy of medicines, vaccines, medical devices, food, supplements, and cosmetics in Iran",
+    "website": "https://www.fda.gov.ir/en”",
     "country": "Iran"
   },
   {
     "licenserId": 141,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Ivory Coast is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.sante.gouv.ci",
+    "acronym": "AIRP",
+    "fullName": "Autorité Ivoirienne de Régulation Pharmaceutique (AIRP)",
+    "description": "The Autorité Ivoirienne de Régulation Pharmaceutique (AIRP) is Côte d’Ivoire’s independent public authority, established by Law No. 2017‑541 in August 2017. AIRP regulates and oversees the registration, quality control, import licensing, and market surveillance of pharmaceuticals, medical devices, pharmacies, and clinical laboratories.",
+    "website": "https://airp.ci/",
     "country": "Ivory Coast"
   },
   {
@@ -1061,10 +1061,10 @@
   },
   {
     "licenserId": 143,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Kenya is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.health.go.ke",
+    "acronym": "PPB",
+    "fullName": "Pharmacy and Poisons Board (PPB)",
+    "description": "The Pharmacy and Poisons Board (PPB) is Kenya’s national regulatory authority established under the Pharmacy and Poisons Act (Cap 244). Operating under the Ministry of Health, PPB licenses and oversees the pharmacy profession and the manufacture, distribution, and trade in medicines and poisons. Its core responsibilities include product evaluation and registration, facility and professional licensure, inspection of pharmaceutical premises, pharmacovigilance, clinical trial oversight, quality control, and enforcement of Good Manufacturing and Distribution Practices",
+    "website": "https://web.pharmacyboardkenya.org/",
     "country": "Kenya"
   },
   {
@@ -1072,7 +1072,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Kiribati oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.health.gov.ki",
+    "website": "https://www.mhms.gov.ki/",
     "country": "Kiribati"
   },
   {
@@ -1085,10 +1085,10 @@
   },
   {
     "licenserId": 146,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Liberia oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.moh.gov.lr",
+    "acronym": "LMHRA",
+    "fullName": "Liberia Medicines & Health Products Regulatory Authority (LMHRA)",
+    "description": "The Liberia Medicines & Health Products Regulatory Authority (LMHRA) is Liberia’s national regulatory authority, established in September 2010. Operating under the Ministry of Health, LMHRA is responsible for ensuring the quality, safety, and efficacy of medicines and health products through product registration and licensing, facility inspections, laboratory testing, clinical trial oversight, pharmacovigilance, and market surveillance.",
+    "website": "https://www.lmhra.gov.lr/new/index.php",
     "country": "Liberia"
   },
   {
@@ -1112,23 +1112,23 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Luxembourg is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.ms.public.lu",
+    "website": "https://www.sante.lu/",
     "country": "Luxembourg"
   },
   {
     "licenserId": 150,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Madagascar oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.sante.gov.mg",
+    "acronym": "AGMED",
+    "fullName": "Madagascar Drug Agency (AGMED)",
+    "description": "The Agence du Médicament de Madagascar (AGMED) is Madagascar’s national drug regulatory authority under the Ministry of Health. Established via decree in 1998 and updated in 2010, AGMED is responsible for registering medicines and health products, conducting pharmaceutical quality control, inspecting pharmacies and pharmaceutical establishments, and overseeing pharmacovigilance.",
+    "website": "https://amm.mg/accueil.html",
     "country": "Madagascar"
   },
   {
     "licenserId": 151,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Malawi is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.malawi.gov.mw",
+    "acronym": "PMRA",
+    "fullName": "Pharmacy and Medicines Regulatory Authority (PMRA)",
+    "description": "he Pharmacy and Medicines Regulatory Authority (PMRA) is Malawi’s statutory national regulatory body established under the PMRA Act No. 9 of 2019. It oversees regulation of medicines and allied substances—including cosmetics, traditional medicines, medical devices, disinfectants, reagents, and veterinary products—by managing product registration, licensing, inspections, clinical trials, pharmacovigilance, quality control testing, and import/export permits.",
+    "website": "https://www.pmra.mw/",
     "country": "Malawi"
   },
   {
@@ -1176,7 +1176,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Monaco oversees public health services, regulates medicines, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.gouv.mc/Action-Gouvernementale/Le-Social-et-la-Sante",
+    "website": "https://en.gouv.mc/Government-Institutions/The-Government/Ministry-of-Health-and-Social-Affairs/The-Department-of-Health-Affairs",
     "country": "Monaco"
   },
   {
@@ -1189,10 +1189,10 @@
   },
   {
     "licenserId": 160,
-    "acronym": "MOH",
-    "fullName": "Ministry of Health",
-    "description": "The Ministry of Health in Namibia oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.mhss.gov.na",
+    "acronym": "NMRC",
+    "fullName": "Namibia Medicines Regulatory Council (NMRC)",
+    "description": "The Namibia Medicines Regulatory Council (NMRC), under the Ministry of Health and Social Services, is Namibia’s national authority responsible for regulating the registration, licensing, quality, safety, and efficacy of medicines and medical products. ",
+    "website": "https://nmrc.gov.na/",
     "country": "Namibia"
   },
   {
@@ -1468,8 +1468,8 @@
     "country": "Zimbabwe"
   },
   {
-    "licenserId": 196,
-    "acronym": "FDA",
+    "licenserId": 197,
+    "acronym": "FDA (USA)",
     "fullName": "Food and Drug Administration (FDA)",
     "description": "The Food and Drug Administration (FDA) is a U.S. federal agency responsible for protecting public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, medical devices, food, cosmetics, and tobacco products. It regulates the development and marketing of these products, monitors adverse events, and enforces laws to ensure compliance with standards that promote consumer safety and innovation.",
     "website": "https://www.fda.gov/",

@@ -7685,7 +7685,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Priorix® (MAH: GSK)",
-                "composition": "1 dose (0.5mL) contains ≥1×10³ CCID₅₀ measles virus (Schwarz strain) produced in chick embryo cells, ≥10³.⁷ CCID₅₀  mumps virus (RIT 4385 strain, derived from the Jeryl Lynn strain) produced in chick embryo cells, ≥10³ CCID₅₀ rubella virus (Wistar RA 27/3 strain) produced in MRC-5 human diploid cells; storage: 2-8°C; shelf life: 2 years.",
+                "composition": "1 dose (0.5mL) contains ≥1×10³ CCID₅₀ measles virus (Schwarz strain) produced in chick embryo cells, ≥10³\u00B7⁷ CCID₅₀  mumps virus (RIT 4385 strain, derived from the Jeryl Lynn strain) produced in chick embryo cells, ≥10³ CCID₅₀ rubella virus (Wistar RA 27/3 strain) produced in MRC-5 human diploid cells; storage: 2-8°C; shelf life: 2 years.",
                 "strainCoverage": "Measles, mumps, and rubella viruses.",
                 "indication": "Active immunization against measles, mumps, and rubella; in countries with high measles incidence/mortality rates in <1 yrs. recommended age for immunization is 9 mo. or soon after and revaccination is needed in ≥1 yrs.; in countries where measles occurs later in life recommended age for immunization is 12-15 mo.; to be used based on official recommendations; the 2nd dose can be given through routine or supplemental activities.",
                 "contraindication": "Hypersensitivity; acute severe febrile illness; severe humoral or cellular immunodeficiency*; pregnancy (avoid pregnancy at least 1 mo. following vaccination); use risk/benefits strategy in breastfeeding; caution in individuals with history or family history of convulsion or CNS disorder; extreme caution in individuals who demonstrate allergic reactions after egg ingestion also who experienced thrombocytopenia after the previous dose.",
@@ -11745,7 +11745,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: ROTASIIL Liquid® (MAH: Serum Institute of India)",
-                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵.⁶ FFU; grown on Vero cells; storage: 2-8°C; shelf life: 24 months.",
+                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵\u00B7⁶ FFU; grown on Vero cells; storage: 2-8°C; shelf life: 24 months.",
                 "strainCoverage": "Human rotavirus; G1, G2, G3, G4, and G9; no protection against gastroenteritis caused by other pathogens.",
                 "indication": "Active immunization to prevent any severe rotavirus infection in healthy infants from 6 weeks to 24 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; intussusception predisposing situation*; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; pregnancy; no data on breastfeeding.",
@@ -14756,7 +14756,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: ROTASIIL® (MAH: Serum Institute of India)",
-                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵.⁶ FFU; grown on Vero cells; storage: 25°C; shelf life: 30 months.",
+                "composition": "1 dose (2.5 mL) contains human and bovine rotavirus reassortant strains of serotypes G1, G2, G3, G4, and G9; each ≥10⁵\u00B7⁶ FFU; grown on Vero cells; storage: 25°C; shelf life: 30 months.",
                 "strainCoverage": "Human rotavirus; G1, G2, G3, G4, and G9; no protection against gastroenteritis caused by other pathogens.",
                 "indication": "Active immunization to prevent any severe rotavirus infection in healthy infants from 6 weeks to 24 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; intussusception predisposing situation*; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; pregnancy; no data on breastfeeding.",
@@ -15309,7 +15309,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "No data available",
+                "composition": "1 dose (0.5mL) contains modified vaccinia Ankara-Bavarian Nordic live virus (no less than 5x10⁷ Inf.U); produced in chick embryo cells; storage: freezer (-20±5°C or -50±10°C or -80±10°C)/refrigerator; shelf life: 3 yrs. at -20±5°C, 5 yrs. at -50 ±10°C, 9 years at -80±10°C, 2mo. at 2–8°C.",
                 "strainCoverage": "Smallpox, monkeypox, and vaccinia viruses.",
                 "indication": "Active immunization against smallpox, mpox, and disease caused by vaccinia virus in adults. To be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; acute severe febrile disease; acute infection; limited data in pregnancy and breast-feeding (use risk/benefits strategy).",
@@ -18449,7 +18449,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Flublok® (MAH: Protein Sciences Corporation)",
-                "composition": "1 vial (0.5 mL) contains (Southern Hemisphere: ≥10<sup>7</sup> EID<sub>50</sub> of influenza virus HA (A/17/Victoria/2019/276 (H1N1)(A/Victoria/2570/2019 (H1N1) pdm09 - like virus), ≥ 10⁷ EID₅₀  A/17/Hong Kong/2019/2573 (H3N2)(A/Hong Kong/2671/2019 (H3N2) - like virus)) and ≥ 10⁶⋅⁵ EID₅₀ of influenza virus HA (B/60/Washington/2019/3676 (B/Washington/02/2019 - like virus (B/Victoria lineage) strains)); (Northern Hemisphere:  ≥10⁷ EID₅₀ of influenza virus HA (A/17/Guangdong-Maonan/2019/211 (H1N1), A/17/Hong Kong/2019/2573 (H3N2)) and ≥ 10⁶.⁵ EID₅₀ of influenza virus HA (B/ 60 / Washington / 2019 / 3676))); cultivated on embryonated hen eggs; storage: 2-8°C; shelf life: unknown.",
+                "composition": "1 vial (0.5 mL) contains (Southern Hemisphere: ≥10<sup>7</sup> EID<sub>50</sub> of influenza virus HA (A/17/Victoria/2019/276 (H1N1)(A/Victoria/2570/2019 (H1N1) pdm09 - like virus), ≥ 10⁷ EID₅₀  A/17/Hong Kong/2019/2573 (H3N2)(A/Hong Kong/2671/2019 (H3N2) - like virus)) and ≥ 10⁶⋅⁵ EID₅₀ of influenza virus HA (B/60/Washington/2019/3676 (B/Washington/02/2019 - like virus (B/Victoria lineage) strains)); (Northern Hemisphere:  ≥10⁷ EID₅₀ of influenza virus HA (A/17/Guangdong-Maonan/2019/211 (H1N1), A/17/Hong Kong/2019/2573 (H3N2)) and ≥ 10⁶\u00B7⁵ EID₅₀ of influenza virus HA (B/ 60 / Washington / 2019 / 3676))); cultivated on embryonated hen eggs; storage: 2-8°C; shelf life: unknown.",
                 "strainCoverage": "Influenza virus A (H1N1, H3N2) and B.",
                 "indication": "Active immunization to prevent two influenza A virus subtypes and one influenza virus type B which are expected to circulate in the 2021 season in individuals >2 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg or chicken protein allergy; children and adolescents receiving aspirin therapy or aspirin-containing therapy; individuals with active wheezing; use risk/benefits strategy if Guillain-Barré Syndrome has occurred within 6 weeks of any prior influenza vaccination; severe febrile illness or acute infection; nasal congestion (delaying of vaccination until the nasal congestion is reduced); people already suffering from cold, cough, fever, body ache or other flu-like symptoms (postponed at least till recovery); use risk/benefits strategy in immunocompromised persons and individuals with underlying medical conditions that may predispose them to complications following wild-type influenza infection; should be administered during pregnancy only if clearly needed; caution in lactation.",

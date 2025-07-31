@@ -71,7 +71,11 @@ const Licenser = ({
                 <div id="accordianLicense" className="accordion-collapse collapse mb-1" aria-labelledby="accordianLicenser" data-bs-parent="#accordianLicenserInfo">
                     <div className="accordion-body pb-1 px-0 pt-0">
                         <div style={{ paddingLeft: 10 }}>
-                            <a className='heading text-primary pt-2' href={selectedLicenser.website} target='_blank' rel='noreferrer'>{selectedLicenser.fullName}{selectedLicenser.country && ` (${selectedLicenser.country})`}</a>
+                            <a className='heading text-primary pt-2' href={selectedLicenser.website || "#"} onClick={() => {
+                                if (!selectedLicenser.website) {
+                                    window.alert(`No available website link for ${selectedLicenser.country}, ${selectedLicenser.fullName}`)
+                                }
+                            }} target='_blank' rel='noreferrer'>{selectedLicenser.fullName}{selectedLicenser.country && ` (${selectedLicenser.country})`}</a>
                             <p>{selectedLicenser.description}</p>
                         </div>
                     </div>
@@ -82,7 +86,7 @@ const Licenser = ({
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianVaccine">
                     <button className="accordion-button collapsed show bg-sidebar-unselected text-muted py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordianVac" aria-expanded="false" aria-controls="collapseTwo">
-                        Licensed Vaccines
+                        {selectedLicenser.acronym === "WHO" ? "Prequalified Vaccines" : "Licensed Vaccines"}
                     </button>
                 </h2>
                 <div id="accordianVac" className="accordion-collapse collapse show mb-1" aria-labelledby="accordianVaccine" data-bs-parent="#accordianVaccineInfo">
@@ -98,7 +102,7 @@ const Licenser = ({
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {sortArrayAscending(removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym), "name"), "name").length > 0 ? sortArrayAscending(removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym), "name"), "name").map((vaccine, key) => {
+                                    {sortArrayAscending(removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym === "FDA (USA)" ? "FDA" : selectedLicenser.acronym), "name"), "name").length > 0 ? sortArrayAscending(removeDuplicatesFromArray(getVaccineByLicenserName(selectedLicenser.acronym === "FDA (USA)" ? "FDA" : selectedLicenser.acronym), "name"), "name").map((vaccine, key) => {
                                         return (
                                             <tr key={key}>
                                                 <td className='vaccine-cell'>

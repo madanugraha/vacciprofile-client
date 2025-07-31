@@ -570,6 +570,14 @@ Year established: 2015
     `
 Norway
 `,
+    `North Korea
+Committee: Korea Expert Committee on Immunization Practices - KECIP
+Year established: 1990`,
+    `
+Oman
+Committee: National Committee for Vaccines Regulation and Surveillance of Vaccine-Preventable Diseases in the Sultanate of Oman
+Year established: 2000
+Year evaluated: 2023`,
     `
 Pakistan
 Committee: National Immunization Technical Advisory Group

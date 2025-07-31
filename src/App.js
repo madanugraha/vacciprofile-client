@@ -172,8 +172,12 @@ const App = () => {
     };
 
     const handleSelectVaccineCandidate = v => {
-        const vaccine = sampleVaccineCandidatesVaccine.find(vaccine => vaccine.vaccineId === v.vaccineId);
-        setSelectedVaccineCandidate(vaccine);
+        // let vaccine = sampleVaccineCandidatesVaccine.find(vaccine => vaccine.pathogenName === v);
+        const pthg = {
+            pathogenId: '',
+            name: v
+        };
+        setSelectedVaccineCandidate(pthg);
         setActiveTab("Vaccine Candidates");
     };
 
@@ -496,8 +500,9 @@ const App = () => {
     const filterLicensersByAlphabetAndSearch = useCallback((keyword) => {
         return filterListByStartingAlphabet(licensersList).filter(licenser => {
             const licenserMatch = licenser?.country?.toLowerCase().includes(keyword);
-
+            const licenserMatch2 = licenser?.acronym?.toLowerCase().includes(keyword);
             if (licenserMatch) return true;
+            if (licenserMatch2) return true;
         });
     }, [licensersList, filterListByStartingAlphabet]);
 
@@ -584,6 +589,7 @@ const App = () => {
                     .sort((a, b) => a.name.localeCompare(b.name));
             } else if (activeTab === 'Licenser') {
                 filteredSidebarList = filterLicensersByAlphabetAndSearch(keywordLower).slice()
+                    .sort((a, b) => a?.country.localeCompare(b?.country));
             }
             else if (activeTab === 'Compare') {
                 filteredSidebarList = filterPathogensByAlphabetAndSearch(keywordLower).slice()
@@ -739,6 +745,7 @@ const App = () => {
                         changedFrom={changedFrom}
                         setChangedFrom={setChangedFrom}
                         setActiveTab={setActiveTab}
+                        activeFilters={activeFilters}
                         italizeScientificNames={italizeScientificNames}
                     />
                     <Main

@@ -73,7 +73,8 @@ const VaccineListTable = ({
     getPathogenByVaccine,
     getLicenserById,
     italizeScientificNames,
-    convertCamelCaseToReadable
+    convertCamelCaseToReadable,
+    handleSelectVaccineCandidate
 }) => {
 
     const HtmlTooltip = styled(({ className, ...props }) => (
@@ -254,7 +255,7 @@ const VaccineListTable = ({
                                         <tr key={key}>
                                             <td className='vaccine-cell'>
                                                 <span
-                                                    className={`selectable`}
+                                                    className={``}
                                                     onClick={() => {
                                                         // TODO Pipeline Vaccine
                                                         // handleSelectVaccine(vaccine)
@@ -262,8 +263,22 @@ const VaccineListTable = ({
                                                     {vaccine.name}
                                                 </span>
                                             </td>
-                                            <td className='pathogen-cell d-flex flex-row'>
-                                                <span className='selected'>{getAllPathogenNameByVaccineCandidateName(vaccine.name)}</span>
+                                            <td className='pathogen-cell'>
+                                                <div className='d-inline-flex align-items-center'>
+                                                    {getAllPathogenNameByVaccineCandidateName(vaccine.name) && getAllPathogenNameByVaccineCandidateName(vaccine.name).split(', ').length > 0 && getAllPathogenNameByVaccineCandidateName(vaccine.name).split(', ').map((pathogen, index) => {
+                                                        return (
+                                                            <span
+                                                                className={`selectable`}
+                                                                onClick={() => {
+                                                                    handleSelectVaccineCandidate(pathogen)
+                                                                }}>
+                                                                {italizeScientificNames(pathogen) ? italizeScientificNames(pathogen) : pathogen}
+                                                                {index < getAllPathogenNameByVaccineCandidateName(vaccine.name).split(', ').length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
+                                                            </span>
+                                                        )
+                                                    })}
+                                                </div>
+                                                {/* <span className='selectable'>{getAllPathogenNameByVaccineCandidateName(vaccine.name)}</span> */}
                                             </td>
                                             <td className='status-cell'>
                                                 <span>{getAllPlatformByCandidateName(vaccine.name)}</span>

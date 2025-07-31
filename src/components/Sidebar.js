@@ -69,7 +69,8 @@ const Sidebar = ({
     setSelectedNitag,
     setChangedFrom,
     changedFrom,
-    italizeScientificNames
+    italizeScientificNames,
+    activeFilters
 }) => {
 
     const [animationClass, setAnimationClass] = useState('slide-right');
@@ -87,9 +88,12 @@ const Sidebar = ({
     const [showCombinationVaccines, setShowCombinationVaccines] = useState(false);
 
     const licenserFilter = ["FDA", "EMA", "WHO"];
-    const filteredLicenserSidebarList = activeTab === 'Licenser'
+    const filteredLicenserSidebarList = activeTab === "Licenser" && activeFilters?.searchKeyword ? sidebarList : activeTab === 'Licenser'
         ? sidebarList.filter(item => licenserFilter.includes(item.acronym))
         : sidebarList;
+
+
+
 
     const handleClickSidebar = item => {
         setChangedFrom('Sidebar');
@@ -169,6 +173,30 @@ const Sidebar = ({
     const [searchParams, setSearchParams] = useSearchParams();
     const activeMenu = searchParams.get("menu");
 
+
+    // useEffect(() => {
+    //     if (activeTab === "Pathogen") {
+    //         // setActiveTab("Pathogen")
+    //     };
+    //     if (activeTab === "Manufacturer") {
+    //         // setActiveTab("Manufacturer");
+    //     };
+    //     if (activeTab === "Licenser") {
+    //         // setActiveTab("Licenser");
+    //     };
+    //     if (activeTab === "Licensed Vaccines") {
+    //         // setActiveTab("Licensed Vaccines");
+    //     }
+    //     if (activeTab === "Vaccine Candidates") {
+    //         handleClickSidebar(selectedVaccineCandidate.name)
+    //         // setActiveTab("Vaccine Candidates");
+    //     }
+    //     if (activeTab === "Nitag") {
+    //     }
+    //     if (activeTab === "Compare") {
+    //     };
+    // }, [activeTab]);
+
     useEffect(() => {
         if (activeMenu === "pathogen") {
             setActiveTab("Pathogen")
@@ -183,6 +211,7 @@ const Sidebar = ({
             setActiveTab("Licensed Vaccines");
         }
         if (activeMenu === "vaccine-candidates") {
+            // handleClickSidebar(selectedVaccineCandidate.name)
             setActiveTab("Vaccine Candidates");
         }
         if (activeMenu === "nitag") {
@@ -193,11 +222,18 @@ const Sidebar = ({
         };
     }, [activeMenu]);
 
+    // useEffect(() => {
+    //     if (activeTab === "Vaccine Candidates") {
+    //         handleClickSidebar(selectedVaccineCandidate);
+    //     }
+    // }, [selectedVaccineCandidate])
+
     // console.log(filteredLicenserSidebarList);
 
     // console.log(filteredLicenserSidebarList)
 
-    const [currentIdxCandidatePathogen, setCurrentIdxCandidatePathogen] = useState(0);
+    const idxVaccineCandidate = filteredLicenserSidebarList.findIndex((x) => x.name === selectedVaccineCandidate?.name);
+    const [currentIdxCandidatePathogen, setCurrentIdxCandidatePathogen] = useState(idxVaccineCandidate ? idxVaccineCandidate : 0);
 
     // console.log(filteredLicenserSidebarList);
     return (
@@ -357,7 +393,7 @@ const Sidebar = ({
                                 return (
                                     <div
                                         key={i + Math.round() * 999}
-                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${((showVaccineCandidatePathogens && activeTab === 'Vaccine Candidates' && selectedVaccineCandidate === item))
+                                        className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-4 mb-1 ${((showVaccineCandidatePathogens && activeTab === 'Vaccine Candidates' && ((selectedVaccineCandidate === item) || (selectedVaccineCandidate.name === item.name))))
                                             ? 'active' : (currentIdxCandidatePathogen - i) === 0 ? 'active' : 'inactive'
                                             }`}
                                         onClick={() => {
@@ -416,10 +452,12 @@ const Sidebar = ({
                             handleClickSidebar(item)
                         }}
                     >
-                        {activeTab === "Pathogen" ? italizeScientificNames(item.name) : activeTab === "Compare" ? item.name : activeTab !== "Licenser" ? item.name : `${item.acronym} ${item?.region || ""}`}
+                        {activeTab === "Pathogen" ? italizeScientificNames(item.name) : activeTab === "Compare" ? item.name :
+                            activeTab !== "Licenser" ? item.name :
+                                `${item.country ? `${item.country}, ${item.fullName}` : `${item.acronym} ${item?.region || ""}`}`}
                     </div>
                 ))}
-                {activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (
+                {!activeFilters?.searchKeyword && activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (
                     <div
                         key='Countries'
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${showCountries ? 'active-country' : 'inactive'
@@ -428,7 +466,7 @@ const Sidebar = ({
                     >Licensing authorities in other countries
                     </div>
                 )}
-                {showCountries && sortArrayAscending(sidebarList.filter(item => !licenserFilter.includes(item.acronym)), "country").map((item, i) => (
+                {!activeFilters?.searchKeyword && showCountries && sortArrayAscending(sidebarList.filter(item => !licenserFilter.includes(item.acronym)), "country").map((item, i) => (
                     <div
                         key={`country-${i}`}
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${selectedLicenser === item ? 'active' : 'inactive'}`}

@@ -449,7 +449,6 @@ const Pathogen = ({ selectedPathogen, italizeScientificNames }) => {
         if (vaccineChecked && !checked && lenLicenserData === 1) {
             f = secondaryVaccineFields.map((data) => {
                 return data.map((x) => {
-                    console.log('xxxx')
                     if (x.name === vacineName) {
                         return {
                             ...x,

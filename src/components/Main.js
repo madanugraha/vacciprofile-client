@@ -107,7 +107,8 @@ const Main = ({
     selectedCompare,
     getComparisonByName,
     selectedNitag,
-    selectedVaccineCandidate
+    selectedVaccineCandidate,
+    handleSelectVaccineCandidate
 }) => {
 
     const [animationClass, setAnimationClass] = useState('slide-left');
@@ -484,6 +485,7 @@ const Main = ({
                                                 isCandidatePathogen={true}
                                                 italizeScientificNames={italizeScientificNames}
                                                 activeTab={activeTab}
+                                                handleSelectVaccineCandidate={handleSelectVaccineCandidate}
                                                 handleSelectVaccine={handleSelectVaccine}
                                             /> : activeTab === "Manufacturer"
                                                 ? <ManufacturerProfile
@@ -492,6 +494,7 @@ const Main = ({
                                                     convertCamelCaseToReadable={convertCamelCaseToReadable}
                                                 /> : activeTab === "Licenser"
                                                     ? <Licenser
+                                                        activeFilters={activeFilters}
                                                         activeTab={activeTab}
                                                         getVaccinesByLicenser={getVaccinesByLicenser}
                                                         handleSelectVaccine={handleSelectVaccine}
@@ -523,6 +526,7 @@ const Main = ({
                                         handleSelectLicenser={handleSelectLicenser}
                                         getVaccinesByManufacturer={getVaccinesByManufacturer}
                                         getPathogenByVaccine={getPathogenByVaccine}
+                                        handleSelectVaccineCandidate={handleSelectVaccineCandidate}
                                         getLicenserById={getLicenserById}
                                         convertCamelCaseToReadable={convertCamelCaseToReadable}
                                         italizeScientificNames={italizeScientificNames}

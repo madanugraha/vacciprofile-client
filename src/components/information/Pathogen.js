@@ -54,7 +54,7 @@ const style = {
  *    italizeScientificNames={text => text.replace(/(SARS-CoV-2)/g, '<i>$1</i>')} 
  * />
  */
-const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificNames, isHide, handleSelectVaccine, activeTab }) => {
+const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificNames, isHide, handleSelectVaccine, handleSelectVaccineCandidate, activeTab }) => {
     const [open, setOpen] = useState(false);
     const [selectedVaccine, setSelectedVaccine] = useState({});
     const convertCamelCaseToReadable = string => {
@@ -502,7 +502,6 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
         if (vaccineChecked && !checked && lenLicenserData === 1) {
             f = secondaryVaccineFields.map((data) => {
                 return data.map((x) => {
-                    console.log('xxxx')
                     if (x.name === vacineName) {
                         return {
                             ...x,
@@ -559,7 +558,6 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
             border: '1px solid #dadde9',
         },
     }));
-
     return !isCandidatePathogen ? (
         <>
             {
