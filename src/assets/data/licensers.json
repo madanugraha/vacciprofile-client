@@ -116,7 +116,7 @@
     "fullName": "Federal Service for Surveillance in Healthcare (Roszdravnadzor)",
     "country": "Russia",
     "description": "Roszdravnadzor is Russia’s federal executive body under the Ministry of Health responsible for regulation, supervision, and enforcement in medical care, pharmaceuticals, medical devices, and clinical practices, ensuring safety, quality, and compliance across healthcare.",
-    "website": "https://roszdravnadzor.gov.ru/en”"
+    "website": "https://roszdravnadzor.gov.ru/en"
   },
   {
     "licenserId": 16,
@@ -682,7 +682,7 @@
     "licenserId": 96,
     "acronym": "ALMBiH",
     "fullName": "Agency for Medicinal Products and Medical Devices of Bosnia and Herzegovina (ALMBiH)",
-    "description": "Here's a copy-paste ready description for the **Agency for Medicinal Products and Medical Devices of Bosnia and Herzegovina (ALMBiH) \n\n The Agency for Medicinal Products and Medical Devices of Bosnia and Herzegovina (ALMBiH) is the national regulatory authority responsible for the registration, evaluation, and monitoring of medicines and medical devices. Established in 2009, ALMBiH ensures the safety, efficacy, and quality of medicinal products throughout the country. The agency regulates clinical trials, oversees pharmacovigilance activities, and performs market surveillance and inspections. ALMBiH also works to harmonize its regulatory framework with European Union standards and cooperates with international regulatory bodies to strengthen public health protections.",
+    "description": "The Agency for Medicinal Products and Medical Devices of Bosnia and Herzegovina (ALMBiH) is the national regulatory authority responsible for the registration, evaluation, and monitoring of medicines and medical devices. Established in 2009, ALMBiH ensures the safety, efficacy, and quality of medicinal products throughout the country. The agency regulates clinical trials, oversees pharmacovigilance activities, and performs market surveillance and inspections. ALMBiH also works to harmonize its regulatory framework with European Union standards and cooperates with international regulatory bodies to strengthen public health protections.",
     "website": "https://almbih.gov.ba/en/agencija-za-lijekove-i-medicinska-sredstva-bosne-i-hercegovine-eng/",
     "country": "Bosnia and Herzegovina"
   },
@@ -699,7 +699,7 @@
     "acronym": "MOH",
     "fullName": "National Agency for Medicines and Medical Devices (AKBPM)",
     "description": "AKBPM is Albania’s national regulatory authority responsible for the regulation, evaluation, supervision, and control of human medicines and medical devices in the country, ensuring their quality, safety, and efficacy.",
-    "website": "https://akbpm.gov.al/”",
+    "website": "https://akbpm.gov.al/",
     "country": "Albania"
   },
   {
@@ -780,7 +780,7 @@
     "fullName": "Botswana Medicines Regulatory Authority (BoMRA)",
     "country": "Botswana",
     "description": "The Botswana Medicines Regulatory Authority (BoMRA) is the national body responsible for regulating medicines, medical devices, and related substances in Botswana. It ensures their safety, quality, and efficacy through registration, inspections, and pharmacovigilance.",
-    "website": "https://www.moh.gov.bw"
+    "website": "https://www.bomra.co.bw/"
   },
   {
     "licenserId": 110,
@@ -1040,7 +1040,7 @@
     "acronym": "FDO",
     "fullName": "Food and Drug Organization",
     "description": "The Food and Drug Administration (FDA) — also referred to as the Food and Drug Organization within Iran’s Ministry of Health and Medical Education — is the national regulatory authority responsible for overseeing the safety, quality, and efficacy of medicines, vaccines, medical devices, food, supplements, and cosmetics in Iran",
-    "website": "https://www.fda.gov.ir/en”",
+    "website": "https://www.fda.gov.ir/en",
     "country": "Iran"
   },
   {

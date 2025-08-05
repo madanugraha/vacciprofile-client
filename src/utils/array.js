@@ -54,7 +54,7 @@ export const getAllPathogenNameByVaccineCandidateName = (name) => {
     if (f.length > 0) {
         const ff = f.map((x) => x.pathogenName);
         if (ff.length > 0) {
-            return _.uniq(ff).join(', ')
+            return _.uniq(ff).join('; ')
         }
     }
 };

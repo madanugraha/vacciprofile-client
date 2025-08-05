@@ -265,7 +265,7 @@ const VaccineListTable = ({
                                             </td>
                                             <td className='pathogen-cell'>
                                                 <div className='d-inline-flex align-items-center'>
-                                                    {getAllPathogenNameByVaccineCandidateName(vaccine.name) && getAllPathogenNameByVaccineCandidateName(vaccine.name).split(', ').length > 0 && getAllPathogenNameByVaccineCandidateName(vaccine.name).split(', ').map((pathogen, index) => {
+                                                    {getAllPathogenNameByVaccineCandidateName(vaccine.name) && getAllPathogenNameByVaccineCandidateName(vaccine.name).split('; ').length > 0 && getAllPathogenNameByVaccineCandidateName(vaccine.name).split('; ').map((pathogen, index) => {
                                                         return (
                                                             <span
                                                                 className={`selectable`}
@@ -273,7 +273,7 @@ const VaccineListTable = ({
                                                                     handleSelectVaccineCandidate(pathogen)
                                                                 }}>
                                                                 {italizeScientificNames(pathogen) ? italizeScientificNames(pathogen) : pathogen}
-                                                                {index < getAllPathogenNameByVaccineCandidateName(vaccine.name).split(', ').length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
+                                                                {index < getAllPathogenNameByVaccineCandidateName(vaccine.name).split('; ').length - 1 ? <span className='text-decoration-none'>,&nbsp;</span> : ``}
                                                             </span>
                                                         )
                                                     })}

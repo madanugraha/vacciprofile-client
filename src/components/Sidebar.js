@@ -88,12 +88,9 @@ const Sidebar = ({
     const [showCombinationVaccines, setShowCombinationVaccines] = useState(false);
 
     const licenserFilter = ["FDA", "EMA", "WHO"];
-    const filteredLicenserSidebarList = activeTab === "Licenser" && activeFilters?.searchKeyword ? sidebarList : activeTab === 'Licenser'
+    const filteredLicenserSidebarList = activeTab === "Licenser" && (activeFilters?.searchKeyword || activeFilters?.firstAlphabet) ? sidebarList : activeTab === 'Licenser'
         ? sidebarList.filter(item => licenserFilter.includes(item.acronym))
         : sidebarList;
-
-
-
 
     const handleClickSidebar = item => {
         setChangedFrom('Sidebar');
@@ -457,7 +454,7 @@ const Sidebar = ({
                                 `${item.country ? `${item.country}, ${item.fullName}` : `${item.acronym} ${item?.region || ""}`}`}
                     </div>
                 ))}
-                {!activeFilters?.searchKeyword && activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (
+                {!(activeFilters?.searchKeyword || activeFilters?.firstAlphabet) && activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (
                     <div
                         key='Countries'
                         className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 py-1 ms-2 mb-1 ${showCountries ? 'active-country' : 'inactive'
