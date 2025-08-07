@@ -186,7 +186,56 @@ const Vaccine = ({
     ];
 
     const manufactureName = getManufactureDetailById((selectedVaccine?.manufacturers && selectedVaccine?.manufacturers[0]?.manufacturerId)) || "-";
-    const manufactureName2 = getAllRelatedVaccineCandidateByName(selectedVaccine?.name)
+    const manufactureName2 = getAllRelatedVaccineCandidateByName(selectedVaccine?.name);
+
+    const labelValue = (licenser, key, vaccine) => {
+        const value = getProductProfileValueByVaccineNameAndType(licenser, key, vaccine);
+        if (value !== "- not licensed yet -") {
+            if (value.includes('plus-minus')) {
+                const splitted = value.split('plus-minus');
+                if (splitted.length === 2) {
+                    return (
+                        <div>
+                            {italizeScientificNames(splitted[0])} <span style={{ verticalAlign: 'super', fontSize: 'smaller' }}>±</span> {italizeScientificNames(splitted[1])}
+                        </div>
+                    )
+                } else {
+                    return italizeScientificNames(value);
+                }
+            };
+            if (value.includes('sup-')) {
+                const splitted = value.split('sup');
+                if (splitted.length >= 2) {
+                    const lenWord1 = "sup-first";
+                    const lenWord2 = "sup-second";
+                    const lenWord3 = "sup-third";
+                    const wordLogic = '';
+                    return (
+                        <div>
+                            {italizeScientificNames(value.slice(0, value.indexOf(lenWord1)))}<span style={{ verticalAlign: 'super', fontSize: 'smaller' }}>st</span>{italizeScientificNames((value.slice(value.indexOf(lenWord1) + lenWord1.length)).slice(0, (value.slice(value.indexOf(lenWord1) + lenWord1.length)).indexOf(lenWord3)))}<span style={{ verticalAlign: 'super', fontSize: 'smaller' }}>rd</span>{italizeScientificNames((value.slice(value.indexOf(lenWord3) + lenWord3.length)))}
+                        </div>
+                    )
+                } else {
+                    return italizeScientificNames(value);
+                }
+            };
+            // if (value.includes('sup-third')) {
+            //     const splitted = value.split('sup-third');
+            //     if (splitted.length === 2) {
+            //         return (
+            //             <div>
+            //                 {italizeScientificNames(splitted[0])}<span style={{ verticalAlign: 'super', fontSize: 'smaller' }}>rd</span>{italizeScientificNames(splitted[1])}
+            //             </div>
+            //         )
+            //     } else {
+            //         return italizeScientificNames(value);
+            //     }
+            // };
+            return italizeScientificNames(value)
+        } else {
+            return italizeScientificNames(value)
+        }
+    }
     return <div className='position-relative slide-left'>
         <h1 className='heading text-primary text-center'>{selectedVaccine.name} (MAH: {manufactureName?.name || (manufactureName2 && manufactureName2.length > 0 && manufactureName2[0]?.manufacturer) || "-"}{selectedVaccine?.name === "Comirnaty®" ? "/BioNTech" : null})
             {selectedVaccine.productProfile && <i className="fa-solid fa-file-medical text-hover hover-cursor ms-2" onClick={openModal}></i>}
@@ -265,7 +314,7 @@ const Vaccine = ({
                                                     <span className='selectable'>EMA</span>
                                                 </HtmlTooltip>
                                             )}
-                                        </> : key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("EMA", "strainCoverage", selectedVaccine.name)) : key === "type" ? `EMA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("EMA", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("EMA", key, selectedVaccine.name))}</td>
+                                        </> : key === "strainCoverage" ? labelValue("EMA", "strainCoverage", selectedVaccine.name) : key === "type" ? `EMA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("EMA", "name", selectedVaccine.name) : selectedVaccine.name}` : labelValue("EMA", key, selectedVaccine.name)}</td>
                                         <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "approvalDate" ? getLicensingDateByVaccineNameAndType("FDA", key, selectedVaccine.name) : key === "lastUpdated" ? getLicensingDateByVaccineNameAndType("FDA", key, selectedVaccine.name) : key === "source" ? <>
                                             {getLicensingDateByVaccineNameAndType("FDA", key, selectedVaccine.name) === "-" ? "-" : (
                                                 <HtmlTooltip
@@ -279,7 +328,7 @@ const Vaccine = ({
                                                     <span className='selectable'>FDA</span>
                                                 </HtmlTooltip>
                                             )}
-                                        </> : key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("FDA", "strainCoverage", selectedVaccine.name)) : key === "type" ? `FDA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("FDA", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("FDA", key, selectedVaccine.name))}</td>
+                                        </> : key === "strainCoverage" ? labelValue("FDA", "strainCoverage", selectedVaccine.name) : key === "type" ? `FDA - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("FDA", "name", selectedVaccine.name) : selectedVaccine.name}` : labelValue("FDA", key, selectedVaccine.name)}</td>
                                         <td colSpan={2} width={400 * 1} style={{ fontWeight: key === "type" ? "bold" : "normal" }} className={`baseline align-middle ${key === "composition" ? `text-white bg-black` : ``}`}>{key === "approvalDate" ? getLicensingDateByVaccineNameAndType("WHO", key, selectedVaccine.name) : key === "lastUpdated" ? getLicensingDateByVaccineNameAndType("WHO", key, selectedVaccine.name) : key === "source" ? <>
                                             {getLicensingDateByVaccineNameAndType("WHO", key, selectedVaccine.name) === "-" ? "-" : (
                                                 <HtmlTooltip
@@ -293,7 +342,7 @@ const Vaccine = ({
                                                     <span className='selectable'>WHO (Prequalification)</span>
                                                 </HtmlTooltip>
                                             )}
-                                        </> : key === "strainCoverage" ? italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", "strainCoverage", selectedVaccine.name)) : key === "type" ? `WHO (Prequalification) - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("WHO", "name", selectedVaccine.name) : selectedVaccine.name}` : italizeScientificNames(getProductProfileValueByVaccineNameAndType("WHO", key, selectedVaccine.name))}</td>
+                                        </> : key === "strainCoverage" ? (labelValue("WHO", "strainCoverage", selectedVaccine.name)) : key === "type" ? `WHO (Prequalification) - ${selectedVaccine?.isDoubleName ? getProductProfileValueByVaccineNameAndType("WHO", "name", selectedVaccine.name) : selectedVaccine.name}` : labelValue("WHO", key, selectedVaccine.name)}</td>
                                     </tr>
                                 </>
                             )

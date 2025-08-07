@@ -10,4 +10,15 @@ export const cutVaccineNameFromURL = (str) => {
     }
 
     return null
-}
+};
+
+// export const replaceSpecialCharsSuperScript = (str) => {
+//     if (str) {
+//         if (str.includes('plus-minus')) {
+//             const str1 = str.split("plus-minus")
+//             return document.getElementById('sample-inserting').innerHTML = `${str1[0] + "<span class='align-super text-xs'>±</span>" + str1[1]}`
+//         } else {
+//             return str;
+//         }
+//     }
+// }

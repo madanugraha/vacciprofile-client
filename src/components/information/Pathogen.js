@@ -692,7 +692,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
                                     </div>
                                 </Box>
                             </Modal>
-                        </div >
+                        </div>
                     ) : (
                         <div className="accordion" id="accordianVaccineInfo">
                             <div className="accordion-item mb-1">

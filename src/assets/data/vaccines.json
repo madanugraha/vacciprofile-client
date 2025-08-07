@@ -4942,7 +4942,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.2 mL) contains 10⁷\u00B7⁰±⁰\u00B7⁵ FFU of each four influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Darwin/9/2021 (H3N2)-like, B/Phuket/3073/2013-like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 18 weeks.",
+                "composition": "1 dose (0.2 mL) contains 10⁷\u00B7⁰plus-minus⁰\u00B7⁵ FFU of each four influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Darwin/9/2021 (H3N2)-like, B/Phuket/3073/2013-like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 18 weeks.",
                 "strainCoverage": "Influenza virus.",
                 "indication": "Active immunization for prophylaxis of influenza in individuals 2-17 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg protein allergy; immunodeficiency (acute/ chronic leukemias, lymphoma, symptomatic HIV infection, cellular immune deficiencies, high-dose corticosteroids); individuals on salicylate therapy (risk of Reye’s syndrome; avoid using salicylates for 4 weeks after vaccination unless medically indicated); severe asthma or active wheezing (inadequate data); pregnancy; breastfeeding.",
@@ -5018,7 +5018,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Fluenz® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.2 mL) contains 10⁷\u00B7⁰±⁰\u00B7⁵ FFU of each three influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Thailand/8/2022 (H3N2) –like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 15 weeks.",
+                "composition": "1 dose (0.2 mL) contains 10⁷\u00B7⁰plus-minus⁰\u00B7⁵ FFU of each three influenza virus strains (A/Victoria/4897/2022 (H1N1)pdm09-like, A/Thailand/8/2022 (H3N2) –like, and B/Austria/1359417/2021-like); propagated in fertilized hens’ eggs from healthy chicken flocks and produced in Vero cells by reverse genetic technology; storage: 2-8°C; shelf life: 15 weeks.",
                 "strainCoverage": "Influenza virus.",
                 "indication": "Active immunization for prophylaxis of influenza in individuals 2-17 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; egg protein allergy; immunodeficiency (acute/ chronic leukemias, lymphoma, symptomatic HIV infection, cellular immune deficiencies, high-dose corticosteroids); individuals on salicylate therapy (risk of Reye’s syndrome; avoid using salicylates for 4 weeks after vaccination unless medically indicated); severe asthma or active wheezing (inadequate data); pregnancy; breastfeeding.",
@@ -12002,7 +12002,7 @@
                 "strainCoverage": "Human rotavirus G9P.",
                 "indication": "Active immunization to prevent rotavirus gastroenteritis in individuals 6 weeks to 34 weeks; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; history of intussusception; SCID; immunodeficient individuals; caution in individuals with immunodeficient close contacts; acute infection or febrile illness; no data on pregnancy.",
-                "dosing": "Oral; 3 doses (0.5 mL each); 1st dose from the age of 6 weeks, 4 weeks interval; 3rd dose maximum before 34 weeks.",
+                "dosing": "Oral; 3 doses (0.5 mL each); 1sup-first dose from the age of 6 weeks, 4 weeks interval; 3sup-third dose maximum before 34 weeks.",
                 "immunogenicity": "Percentage of seroresponders (ELISA): 40.3-89.7%",
                 "Efficacy": "VEy against severe non-vaccine rotavirus GE: 56.4% (95% CI; 36.6; 70.1) during the 1st year of life, 49% (95% CI: 17.5; 68.4) during the 2nd year of life; VEy against any severity non-vaccine rotavirus GE: 34.6% (95% CI: 19.7; 46.6) during the 1st year of life, 35.0% (95% CI: 19.1; 47.7) during the 2nd year of life; VEy against hospitalization ≥24 hrs. due to severe non-vaccine rotavirus GE: 47.7% (95% CI: 24.5; 63.8); VEy against severe GE of any cause: 18.6% (95% CI: 1.9; 32.3).",
                 "durationOfProtection": "At least 2 years.",
@@ -15226,7 +15226,7 @@
             {
                 "type": "EMA",
                 "name": "EMA-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.2 mL) contains 10⁷\u00B7⁰±⁰\u00B7⁵ FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
+                "composition": "1 dose (0.2 mL) contains 10⁷\u00B7⁰plus-minus⁰\u00B7⁵ FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
                 "strainCoverage": "Influenza virus H5N1.",
                 "indication": "Active immunization for prophylaxis of influenza in an officially declared pandemic situation in individuals 1-17 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; eggs or egg proteins allergy; breastfeeding; <1 yrs. (safety concerns regarding increased rates of hospitalization and wheezing); use risk/benefit strategy in individuals on salicylate therapy, individuals with significant clinical immunodeficiency or children with severe asthma and active wheezing; use risk/benefit strategy in pregnancy.",
@@ -15260,7 +15260,7 @@
             {
                 "type": "WHO",
                 "name": "WHO-Product Profile: Fluenz Tetra® (MAH: AstraZeneca)",
-                "composition": "1 dose (0.2 mL) contains 10⁷\u00B7⁰±⁰\u00B7⁵ FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
+                "composition": "1 dose (0.2 mL) contains 10⁷\u00B7⁰plus-minus⁰\u00B7⁵ FFU influenza virus HA (A/Vietnam/1203/2004 (H5N1) (A/Vietnam/1203/2004, MEDI 0141000136) strain); produced in Vero cells by reverse genetic technology and propagated in fertilized hens’ eggs from healthy chicken flocks; storage: 2-8°C (protect from light); shelf life: 18 weeks.",
                 "strainCoverage": "Influenza virus H5N1.",
                 "indication": "Active immunization for prophylaxis of influenza in an officially declared pandemic situation in individuals 1-17 yrs.; to be used based on official recommendations.",
                 "contraindication": "Hypersensitivity; eggs or egg proteins allergy (in a pandemic situation based on doctor’s recommendation); breastfeeding; individuals on salicylate therapy; immunodeficient individuals; severe asthma and active wheezing; use risk/benefit strategy in pregnancy; close contact with severe immunodeficient individuals.",

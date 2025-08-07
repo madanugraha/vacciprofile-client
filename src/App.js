@@ -348,11 +348,18 @@ const App = () => {
     const filterListByStartingAlphabet = useCallback((list) => {
 
         if (activeTab !== "Nitag") {
-            const fieldToFilter = activeTab === 'Licenser' ? 'acronym' : activeTab === 'Nitag' ? 'country' : 'name';
+            const fieldToFilter = activeTab === 'Licenser' ? 'country' : activeTab === 'Nitag' ? 'country' : 'name';
             const filteredList = activeFilters.firstAlphabet.toLowerCase() !== ''
                 ? list.filter(item => {
-                    const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
-                    return startsWithAlphabet;
+                    if (activeTab === "Licenser") {
+                        if (item?.country) {
+                            const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                            return startsWithAlphabet;
+                        }
+                    } else {
+                        const startsWithAlphabet = item[fieldToFilter].toLowerCase().startsWith(activeFilters.firstAlphabet.toLowerCase());
+                        return startsWithAlphabet;
+                    }
                 })
                 : list;
             return filteredList;
