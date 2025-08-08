@@ -2,6 +2,7 @@ import vaccines from '../assets/data/candidate-vaccine-v2.json';
 import nitags from '../assets/data/nitag.json';
 import _ from 'lodash';
 import manufacturerData from '../assets/data/manufacturers.json';
+import licenserVaccines from '../assets/data/licenser-vaccines.json';
 
 export const removeDuplicatesFromArray = (arr, prop) => {
     if (arr && arr.length > 0) {
@@ -13,6 +14,10 @@ export const removeDuplicatesFromArray = (arr, prop) => {
         }, [])
     };
     return [];
+};
+
+export const getLicenserVaccinesByCountryName = (country) => {
+    return licenserVaccines.filter((x) => x.licenser === country) || []
 };
 
 export const sortArrayAscending = (arr, prop) => {
