@@ -1732,14 +1732,6 @@
     "country": "Kingdom of Serbia/Yugoslavia"
   },
   {
-    "licenserId": 240,
-    "acronym": "MFDS",
-    "fullName": "Ministry of Food and Drug Safety",
-    "description": "South Korea’s national regulatory authority responsible for ensuring the safety and effectiveness of vaccines, medicines, foods, and medical devices; recognized by WHO at the highest maturity level (ML4).",
-    "website": "https://www.mfds.go.kr/eng/index.do",
-    "country": "Korea"
-  },
-  {
     "licenserId": 241,
     "acronym": "ZVA",
     "fullName": "State Agency of Medicines",
