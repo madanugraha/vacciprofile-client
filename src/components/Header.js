@@ -1,5 +1,9 @@
 import React from 'react';
 import moment from 'moment';
+import licenserNew from '../assets/data/licensers-new.json';
+import licenserOld from '../assets/data/licensers.json';
+import _ from 'lodash';
+
 /**
  * Header Component
  *
@@ -13,6 +17,12 @@ import moment from 'moment';
  */
 
 const Header = () => {
+
+    // const licenser1 = licenserNew;
+    // const licenser2 = licenserOld;
+
+    // console.log(_.differenceBy(licenser1, licenser2, 'country').map((x) => x.country));
+
     return <div className='row bg-primary text-white pt-3 pb-2 slide-down'>
         <div className='col-12 w-100' style={{ cursor: 'pointer' }} onClick={() => window.location.href = "/"}>
             <h3 className='subheading mb-0' style={{ color: '#D17728' }}></h3>

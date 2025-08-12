@@ -1474,5 +1474,493 @@
     "description": "The Food and Drug Administration (FDA) is a U.S. federal agency responsible for protecting public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, medical devices, food, cosmetics, and tobacco products. It regulates the development and marketing of these products, monitors adverse events, and enforces laws to ensure compliance with standards that promote consumer safety and innovation.",
     "website": "https://www.fda.gov/",
     "country": "United States"
+  },
+  {
+    "licenserId": 198,
+    "acronym": "MSPRH",
+    "fullName": "Ministry of Health, Population and Hospital Reform",
+    "description": "Responsible for public health policy, licensing, and oversight of vaccines in Algeria.",
+    "website": "https://www.sante.gov.dz",
+    "country": "Algeria"
+  },
+  {
+    "licenserId": 199,
+    "acronym": "MOH",
+    "fullName": "Ministry of Health / Servei Andorrà d’Atenció Sanitària",
+    "description": "Oversees healthcare and immunization in Andorra; no separate dedicated vaccine regulatory authority.",
+    "website": "",
+    "country": "Andorra"
+  },
+  {
+    "licenserId": 200,
+    "acronym": "AGES",
+    "fullName": "Austrian Agency for Health and Food Safety",
+    "description": "Handles vaccine development, authorization, and market surveillance in Austria.",
+    "website": "https://www.ages.at/en",
+    "country": "Austria"
+  },
+  {
+    "licenserId": 201,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; modern vaccine regulation is handled by Austria's AGES.",
+    "website": "#",
+    "country": "Austrian Empire"
+  },
+  {
+    "licenserId": 202,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; now part of Germany, vaccine regulation handled by BfArM and Paul-Ehrlich-Institut.",
+    "website": "#",
+    "country": "Baden"
+  },
+  {
+    "licenserId": 203,
+    "acronym": "CARPHA",
+    "fullName": "Ministry of Health and Wellness (Bahamas) with reliance on Caribbean Regulatory System (CRS) and CARPHA",
+    "description": "Coordinates vaccine licensing in The Bahamas with regulatory support from CRS and CARPHA.",
+    "website": "https://www.carpha.org",
+    "country": "Bahamas"
+  },
+  {
+    "licenserId": 204,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; now part of modern Germany—vaccine regulation covered by German federal authorities (e.g., BfArM, Paul-Ehrlich-Institut).",
+    "website": "#",
+    "country": "Bavaria"
+  },
+  {
+    "licenserId": 205,
+    "acronym": "FAMHP",
+    "fullName": "Federal Agency for Medicines and Health Products",
+    "description": "Responsible for approval, registration, and pharmacovigilance of vaccines and medicines in Belgium.",
+    "website": "https://www.famhp.be/",
+    "country": "Belgium"
+  },
+  {
+    "licenserId": 206,
+    "acronym": "#",
+    "fullName": "Agence Nationale de Régulation Pharmaceutique (ANRP)",
+    "description": "Burkina Faso’s national pharmaceutical regulatory authority, responsible for licensing vaccines and other medicines.",
+    "website": "#",
+    "country": "Benin (Dahomey)"
+  },
+  {
+    "licenserId": 207,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; now part of modern Germany—vaccine regulation covered by German federal authorities.",
+    "website": "#",
+    "country": "Brunswick and Lüneburg"
+  },
+  {
+    "licenserId": 208,
+    "acronym": "#",
+    "fullName": "Agence Nationale de Régulation Pharmaceutique (ANRP)",
+    "description": "Burkina Faso’s national pharmaceutical regulatory authority, responsible for licensing vaccines and other medicines.",
+    "website": "http://www.sante.gov.bf",
+    "country": "Burkina Faso (Upper Volta)"
+  },
+  {
+    "licenserId": 209,
+    "acronym": "FDA / FDBA",
+    "fullName": "Food and Drug Administration (FDA) / Food and Drug Board of Authority (FDBA)",
+    "description": "Myanmar’s national authority overseeing regulation and licensing of vaccines, drugs, and medical products.",
+    "website": "http://www.fda.gov.mm",
+    "country": "Burma"
+  },
+  {
+    "licenserId": 210,
+    "acronym": "DHRS",
+    "fullName": "Department of Health Regulatory Services",
+    "description": "Monitors and regulates healthcare services in the Cayman Islands; vaccine administration provided via Health Services Authority.",
+    "website": "https://www.gov.ky/dhrs",
+    "country": "Cayman Islands"
+  },
+  {
+    "licenserId": 211,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; no modern licensing authority—Central American Federation dissolved in the 19th century.",
+    "website": "#",
+    "country": "Central American Federation"
+  },
+  {
+    "licenserId": 212,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (1885–1908); modern vaccine regulation falls under the Democratic Republic of the Congo’s current authorities.",
+    "website": "#",
+    "country": "Congo Free State"
+  },
+  {
+    "licenserId": 213,
+    "acronym": "CIBS",
+    "fullName": "Cook Islands Biosecurity Service",
+    "description": "Established under the Biosecurity Act 2008, oversees ecological and quarantine control; no dedicated vaccine licensing agency identified.",
+    "website": "https://www.agriculture.gov.ck/biosecurity/",
+    "country": "Cook Islands"
+  },
+  {
+    "licenserId": 214,
+    "acronym": "CNVE",
+    "fullName": "Ministry of Health – National Commission of Vaccination and Epidemiology (CNVE)",
+    "description": "Costa Rica’s Ministry of Health oversees vaccination policy via the CNVE, which determines immunization schedules and mandates.",
+    "website": "https://www.ministeriodesalud.go.cr",
+    "country": "Costa Rica"
+  },
+  {
+    "licenserId": 215,
+    "acronym": "AIRP",
+    "fullName": "Autorité Ivoirienne de Régulation Pharmaceutique",
+    "description": "Ivory Coast’s national pharmaceutical regulatory authority responsible for vaccine and medicine approvals, including COVID-19 vaccines.",
+    "website": "#",
+    "country": "Cote d’Ivoire (Ivory Coast)"
+  },
+  {
+    "licenserId": 216,
+    "acronym": "CECMED",
+    "fullName": "Centro para el Control Estatal de Medicamentos, Equipos y Dispositivos Médicos",
+    "description": "Cuba’s national regulatory authority for pharmaceuticals and vaccines, responsible for licensing and ensuring safety and efficacy.",
+    "website": "#",
+    "country": "Cuba"
+  },
+  {
+    "licenserId": 217,
+    "acronym": "SÚKL",
+    "fullName": "State Institute for Drug Control",
+    "description": "Czechia’s national competent authority for medicines and vaccine licensing and surveillance.",
+    "website": "https://www.sukl.cz",
+    "country": "Czechia"
+  },
+  {
+    "licenserId": 218,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; no modern successor—vaccine regulation now handled by Czechia’s SÚKL.",
+    "website": "#",
+    "country": "Czechoslovakia"
+  },
+  {
+    "licenserId": 220,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; no modern successor—vaccine regulation handled by modern Italian or European authorities.",
+    "website": "#",
+    "country": "Duchy of Parma"
+  },
+  {
+    "licenserId": 230,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (East Germany, GDR); current vaccine regulation in the region now under Germany’s BfArM or Paul-Ehrlich-Institut.",
+    "website": "#",
+    "country": "East Germany (German Democratic Republic)"
+  },
+  {
+    "licenserId": 231,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (Federal Government of Germany 1848-49); no modern authority—covered by current German regulatory bodies.",
+    "website": "#",
+    "country": "Federal Government of Germany (1848-49)"
+  },
+  {
+    "licenserId": 232,
+    "acronym": "MCA",
+    "fullName": "Medicines Control Agency",
+    "description": "The Gambia’s national regulatory authority responsible for the approval, registration, and oversight of vaccines and medicines under the Medicines and Related Products Act 2014.",
+    "website": "https://www.mca.gm",
+    "country": "Gambia"
+  },
+  {
+    "licenserId": 233,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (Grand Duchy of Tuscany); modern Italy’s regulatory bodies oversee vaccine regulation.",
+    "website": "#",
+    "country": "Grand Duchy of Tuscany"
+  },
+  {
+    "licenserId": 234,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; no modern successor—vaccine regulation now handled by Italian (or EU) authorities.",
+    "website": "#",
+    "country": "Hanover"
+  },
+  {
+    "licenserId": 235,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; no modern successor—regulation handled by modern Germany’s regulatory bodies.",
+    "website": "#",
+    "country": "Hanseatic Republics"
+  },
+  {
+    "licenserId": 236,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (Kingdom of Hawaii,* etc.); modern vaccine regulation falls under United States federal authorities (e.g., FDA).",
+    "website": "#",
+    "country": "Hawaii"
+  },
+  {
+    "licenserId": 237,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; part of modern Germany—vaccine regulation under national authorities (e.g., BfArM, Paul-Ehrlich-Institut).",
+    "website": "#",
+    "country": "Hesse"
+  },
+  {
+    "licenserId": 238,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "The Holy See (Vatican City) does not operate a distinct national vaccine regulatory authority—health services (e.g., seasonal flu, COVID-19 vaccination) are provided via Apostolic institutions; no formal licensor body.",
+    "website": "#",
+    "country": "Holy See"
+  },
+  {
+    "licenserId": 239,
+    "acronym": "ALIMS",
+    "fullName": "Medicines and Medical Devices Agency of Serbia",
+    "description": "Serbia’s national regulatory authority responsible for regulation and surveillance of vaccines, medicines, and medical devices, operating under the Ministry of Health.",
+    "website": "http://www.alims.gov.rs/en",
+    "country": "Kingdom of Serbia/Yugoslavia"
+  },
+  {
+    "licenserId": 240,
+    "acronym": "MFDS",
+    "fullName": "Ministry of Food and Drug Safety",
+    "description": "South Korea’s national regulatory authority responsible for ensuring the safety and effectiveness of vaccines, medicines, foods, and medical devices; recognized by WHO at the highest maturity level (ML4).",
+    "website": "https://www.mfds.go.kr/eng/index.do",
+    "country": "Korea"
+  },
+  {
+    "licenserId": 241,
+    "acronym": "ZVA",
+    "fullName": "State Agency of Medicines",
+    "description": "Latvia’s national authority for the certification, approval, and regulation of vaccines and medicines.",
+    "website": "http://www.zva.gov.lv",
+    "country": "Latvia"
+  },
+  {
+    "licenserId": 242,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (Ryukyu Kingdom); no modern licensing authority—vaccine regulation falls under Japan’s national agencies.",
+    "website": "#",
+    "country": "Lew Chew (Loochoo)"
+  },
+  {
+    "licenserId": 243,
+    "acronym": "SMCA",
+    "fullName": "State Medicines Control Agency",
+    "description": "Lithuania’s national regulatory authority overseeing the evaluation, supervision, and licensing of medicines and vaccines for human use.",
+    "website": "https://vvkt.lrv.lt/en/",
+    "country": "Lithuania"
+  },
+  {
+    "licenserId": 234,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; vaccine regulation is now managed by modern German federal agencies (e.g., BfArM, Paul-Ehrlich-Institut).",
+    "website": "#",
+    "country": "Mecklenburg-Schwerin"
+  },
+  {
+    "licenserId": 235,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; vaccine regulation now under modern Germany’s federal authorities.",
+    "website": "#",
+    "country": "Mecklenburg-Strelitz"
+  },
+  {
+    "licenserId": 236,
+    "acronym": "ANPM / DMP",
+    "fullName": "Agence Nationale de la Pharmacie (ANPM) / Directorate of Medicines & Pharmacy (DMP) of the Ministry of Health",
+    "description": "Morocco’s national authority responsible for licensing and overseeing vaccines and medicines through its Directorate of Medicines and Pharmacy.",
+    "website": "https://www.sante.gov.ma",
+    "country": "Morocco"
+  },
+  {
+    "licenserId": 237,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; modern vaccine regulation is under Italian (EU) authorities.",
+    "website": "#",
+    "country": "Nassau"
+  },
+  {
+    "licenserId": 239,
+    "acronym": "Medsafe",
+    "fullName": "New Zealand Medicines and Medical Devices Safety Authority",
+    "description": "The national regulator responsible for approving and monitoring vaccines and therapeutic products in New Zealand.",
+    "website": "https://www.medsafe.govt.nz",
+    "country": "New Zealand"
+  },
+  {
+    "licenserId": 240,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Self-governing state in free association with New Zealand; vaccine regulation and oversight are handled by New Zealand’s authorities (e.g., Medsafe).",
+    "website": "#",
+    "country": "Niue"
+  },
+  {
+    "licenserId": 241,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; vaccine regulation now falls under modern Germany’s federal agencies (e.g., BfArM, Paul-Ehrlich-Institut).",
+    "website": "#",
+    "country": "North German Confederation"
+  },
+  {
+    "licenserId": 242,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; present-day regulation handled by Germany’s federal authorities.",
+    "website": "#",
+    "country": "North German Union"
+  },
+  {
+    "licenserId": 243,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; modern Germany’s federal agencies now oversee vaccine regulation.",
+    "website": "#",
+    "country": "Oldenburg"
+  },
+  {
+    "licenserId": 244,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (Orange Free State); vaccine regulation now managed by modern South African federal authorities.",
+    "website": "#",
+    "country": "Orange Free State"
+  },
+  {
+    "licenserId": 245,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (Papal States); no modern successor—health and vaccine regulation under Italian and EU authorities.",
+    "website": "#",
+    "country": "Papal States*"
+  },
+  {
+    "licenserId": 246,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (Piedmont-Sardinia); modern vaccine regulation under Italian and EU regulatory bodies.",
+    "website": "#",
+    "country": "Piedmont-Sardinia"
+  },
+  {
+    "licenserId": 247,
+    "acronym": "URPLWMiPB",
+    "fullName": "Office for Registration of Medicinal Products, Medical Devices and Biocidal Products",
+    "description": "Poland’s national authority responsible for registration, approval, and oversight of vaccines and medicinal products, working alongside the Chief Pharmaceutical Inspectorate.",
+    "website": "https://www.urpl.gov.pl",
+    "country": "Poland"
+  },
+  {
+    "licenserId": 248,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity (Republic of Genoa); modern vaccine regulation handled by Italy’s national and EU regulators.",
+    "website": "#",
+    "country": "Republic of Genoa"
+  },
+  {
+    "licenserId": 249,
+    "acronym": "MFDS",
+    "fullName": "Ministry of Food and Drug Safety",
+    "description": "South Korea’s national authority responsible for ensuring safety and effectiveness of vaccines and medicines.",
+    "website": "https://www.mfds.go.kr/eng/index.do",
+    "country": "Republic of Korea (South Korea)"
+  },
+  {
+    "licenserId": 250,
+    "acronym": "#",
+    "fullName": "Direction de la Pharmacie et du Médicament (DPM)",
+    "description": "The Republic of the Congo’s national regulatory authority overseeing vaccine and medicine approval and pharmacovigilance.",
+    "website": "#",
+    "country": "Republic of the Congo"
+  },
+  {
+    "licenserId": 251,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; modern vaccine regulation in this region falls under Germany’s federal authorities.",
+    "website": "#",
+    "country": "Schaumburg-Lippe"
+  },
+  {
+    "licenserId": 253,
+    "acronym": "NMPB",
+    "fullName": "National Medicines and Poisons Board",
+    "description": "Sudan’s semi-autonomous medicines regulatory authority responsible for licensing vaccines and medicines and overseeing pharmacovigilance.",
+    "website": "https://www.nmpb.gov.sd",
+    "country": "Sudan"
+  },
+  {
+    "licenserId": 254,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Sub-national U.S. state: vaccine licensing and regulation fall under federal agencies (e.g., FDA), with immunization programs administered by the Texas Department of State Health Services.",
+    "website": "#",
+    "country": "Texas"
+  },
+  {
+    "licenserId": 255,
+    "acronym": "#",
+    "fullName": "Ministry of Health",
+    "description": "Timor-Leste’s national authority responsible for health policy, pharmaceutical regulation, and oversight of immunization programs.",
+    "website": "https://www.moh.gov.tl",
+    "country": "Timor-Leste"
+  },
+  {
+    "licenserId": 256,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; modern vaccine regulation now managed by Italian and EU authorities.",
+    "website": "#",
+    "country": "Two Sicilies"
+  },
+  {
+    "licenserId": 257,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical entity; successor countries now have individual regulatory authorities (e.g., Russia’s Ministry of Health).",
+    "website": "#",
+    "country": "Union of Soviet Socialist Republics"
+  },
+  {
+    "licenserId": 260,
+    "acronym": "MSP",
+    "fullName": "Ministry of Public Health",
+    "description": "Uruguay’s national authority responsible for public health policy, regulation of medicines and vaccines, and health system oversight.",
+    "website": "https://www.msp.gub.uy",
+    "country": "Uruguay"
+  },
+  {
+    "licenserId": 261,
+    "acronym": "MPPS / INHRR",
+    "fullName": "Ministry of Popular Power for Health (MPPS) / Rafael Rangel National Hygiene Institute (INHRR)",
+    "description": "Venezuela’s primary health authorities overseeing vaccine regulation, licensing, and epidemiologic surveillance.",
+    "website": "#",
+    "country": "Venezuela"
+  },
+  {
+    "licenserId": 262,
+    "acronym": "#",
+    "fullName": "#",
+    "description": "Historical state in present-day Germany; no current licensing authority. Today, vaccine regulation in the region is handled by Germany’s Paul-Ehrlich-Institut (PEI) under the Federal Ministry of Health.",
+    "website": "https://www.pei.de",
+    "country": "Württemberg"
   }
 ]
