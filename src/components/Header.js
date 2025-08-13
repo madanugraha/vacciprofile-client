@@ -3,6 +3,7 @@ import moment from 'moment';
 import licenserNew from '../assets/data/licensers-new.json';
 import licenserOld from '../assets/data/licensers.json';
 import _ from 'lodash';
+import { finalRemapNitagCountry } from '../assets/data/nitag-countries';
 
 /**
  * Header Component
@@ -28,7 +29,7 @@ const Header = () => {
             <h3 className='subheading mb-0' style={{ color: '#D17728' }}></h3>
             <div className='d-inline-flex justify-content-between align-items-center w-100'>
                 <img className='heading' src="/images/vacci-profile-logo.png" alt="vacciprofile logo" width={210} height={100} />
-                <span style={{ color: '#D17728' }}>Last updated: 12, August 2025 14:43 (GMT+8)</span>
+                <span style={{ color: '#D17728' }}>Last updated: 13, August 2025 15:07 (GMT+8)</span>
             </div>
         </div>
     </div>

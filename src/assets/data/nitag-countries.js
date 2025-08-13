@@ -22,7 +22,8 @@ Year evaluated: 2019`,
 Anguilla
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018`,
-    `Antigua And Barbuda
+    `
+Antigua and Barbuda
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018`,
     `
@@ -40,7 +41,8 @@ Year established: 2011`,
 Aruba
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018`,
-    `Australia
+    `
+Australia
 Committee: Australian Technical Advisory Group on Immunisation - ATAGI
 Year established: 1997
 Website: https://beta.health.gov.au/committees-and-groups/australian-technical-advisory-group-on-immunisation`,
@@ -108,7 +110,7 @@ Year established: 2000
 Website: https://pai.minsalud.gob.bo/pagina/54
 `,
     `
-Bosnia And Herzegovina
+Bosnia and Herzegovina
 Committee: Stručno savjetodavno tijelo za imunizaciju
 Year established: 2005
 Year evaluated: 2022
@@ -200,7 +202,7 @@ Committee: Comisión Nacional de Vacunación y Epidemiología (CNVE)
 Year established: 2001
 `,
     `
-Côte d’Ivoire
+Côte d'Ivoire
 Committee: Comité National d'Experts Indépendants pour la Vaccination et les vaccins de la Côte d'Ivoire (National Committee of Independent Experts for Vaccination and Vaccines in the Ivory Coast) - CNEIV-CI
 Year established: 2009
 `,
@@ -211,7 +213,7 @@ Croatia
 Cuba
 `,
     `
-Curacao
+Curaçao
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018
 `,
@@ -226,6 +228,11 @@ Denmark
 Committee: Sundhedsstyrelsens vaccinationsudvalg (Vaccination Committee for Health)
 Year established: 1980
 Website: https://www.sst.dk/en/english/General-public
+`,
+    `
+Dominica
+Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
+Year established: 2018
 `,
     `
 Djibouti
@@ -497,12 +504,17 @@ Year established: 2019
 Year evaluated: 2025
 `,
     `
+Mauritania
+Committee: Groupe Consultatif des experts de l'immunisation (GCEI)
+Year established: 2023
+`,
+    `
 Mexico
 Committee: Consejo Nacional de Vacunacion (Conava)
 Year established: 1991
 `,
     `
-Moldova (Republic Of)
+Moldova (Republic of)
 Year established: 2013
 `,
     `
@@ -626,7 +638,7 @@ Rwanda
 Year established: 2017`
     ,
     `
-Saint Kitts And Nevis
+Saint Kitts and Nevis
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018
 `,
@@ -637,7 +649,7 @@ Year established: 2018
 `,
     `
 
-Saint Vincent And The Grenadines
+Saint Vincent and The Grenadines
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018
 `,
@@ -835,7 +847,7 @@ Year established: 1963
 Website: https://www.gov.uk/government/groups/joint-committee-on-vaccination-and-immunisation
 `,
     `
-United States
+United States of America
 Committee: Advisory Committee on Immunization Practices - ACIP
 Year established: 1964
 Website: https://www.cdc.gov/acip/?CDC_AAref_Val=https://www.cdc.gov/vaccines/acip/index.html
