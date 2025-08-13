@@ -810,7 +810,7 @@ const App = () => {
                     </div>
                 </div>
             </footer>
-            <ToastContainer position='top-right' theme='dark' closeOnClick autoClose={3000} />
+            <ToastContainer position='top-right' theme='dark' closeOnClick autoClose={6000} />
         </div>
     );
 };

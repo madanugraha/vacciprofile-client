@@ -847,7 +847,7 @@ Year established: 1963
 Website: https://www.gov.uk/government/groups/joint-committee-on-vaccination-and-immunisation
 `,
     `
-United States of America
+United States
 Committee: Advisory Committee on Immunization Practices - ACIP
 Year established: 1964
 Website: https://www.cdc.gov/acip/?CDC_AAref_Val=https://www.cdc.gov/vaccines/acip/index.html

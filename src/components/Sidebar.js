@@ -4,6 +4,7 @@ import { getAllSinglePathogenArray, getCombinationVaccineneArray, getPathogenDet
 import { vaccineDeases } from '../assets/data/dieases';
 import nitag from '../assets/data/nitag.json';
 import { useSearchParams } from 'react-router';
+import { toast } from 'react-toastify';
 
 /**
  * Sidebar Component
@@ -246,12 +247,17 @@ const Sidebar = ({
                                     const ctx = item[0];
 
                                     function handleClickCountryMatchURL(country, url) {
+                                        const noNitagElm = document.getElementById('no-nitag');
                                         if (country) {
                                             country = country.toLowerCase();
                                             if (url === "Unavailable") {
-                                                window.alert(`No available data for ${country}`)
+                                                noNitagElm.textContent = `The NITAG of ${country} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
+                                                noNitagElm.style.display = "block";
+                                                // toast.error(`The NITAG of ${country} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`)
                                             }
                                             if (url !== "Unavailable") {
+                                                noNitagElm.textContent = ``
+                                                noNitagElm.style.display = "none";
                                                 return window.open(url, '_blank');
                                             }
                                         }

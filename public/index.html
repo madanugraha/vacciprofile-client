@@ -1171,7 +1171,7 @@ Year established: 1963
 Website: https://www.gov.uk/government/groups/joint-committee-on-vaccination-and-immunisation
 `,
                                 `
-United States of America
+United States
 Committee: Advisory Committee on Immunization Practices - ACIP
 Year established: 1964
 Website: https://www.cdc.gov/acip/?CDC_AAref_Val=https://www.cdc.gov/vaccines/acip/index.html
@@ -1396,6 +1396,7 @@ Year established: 2011
                         }
 
                         function handleClickCountryMatchURL(country, url) {
+                                const noNitagElm = document.getElementById('no-nitag');
                                 if (country) {
                                         let originalCountryName = country;
                                         country = country.toLowerCase();
@@ -1428,10 +1429,14 @@ Year established: 2011
                                         originalCountryName = (originalCountryName != "United States" && originalCountryName != "SS" && originalCountryName != "RU" && originalCountryName != "CD" && originalCountryName != "CG" && originalCountryName && "LA") ? originalCountryName : country
 
                                         if (url === "-") {
-                                                window.alert(`No available data for ${originalCountryName}.`)
+                                                noNitagElm.textContent = `The NITAG of ${country} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
+                                                noNitagElm.style.display = "block";
+                                                // window.alert(`No available data for XXXX ${originalCountryName}.`)
                                         }
 
                                         if (url !== "-") {
+                                                noNitagElm.textContent = ``
+                                                noNitagElm.style.display = "none";
                                                 return window.open(url, '_blank');
                                         }
 
@@ -1449,7 +1454,6 @@ Year established: 2011
                         }
                 }, 1500);
         </script>
-
 </body>
 
 </html>
