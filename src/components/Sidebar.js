@@ -457,7 +457,7 @@ const Sidebar = ({
                     >
                         {activeTab === "Pathogen" ? italizeScientificNames(item.name) : activeTab === "Compare" ? item.name :
                             activeTab !== "Licenser" ? item.name :
-                                `${item.country ? `${item.country}, ${item.fullName}` : `${item.acronym} ${item?.region || ""}`}`}
+                                `${item.country ? `${item.country} ${item.fullName !== "#" ? `, ${item.fullName}` : ""}` : `${item.acronym} ${item?.region || ""}`}`}
                     </div>
                 ))}
                 {!(activeFilters?.searchKeyword || activeFilters?.firstAlphabet) && activeTab === 'Licenser' && filteredLicenserSidebarList.length > 0 && (

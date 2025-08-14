@@ -1,9 +1,6 @@
 import React from 'react';
-import moment from 'moment';
-import licenserNew from '../assets/data/licensers-new.json';
 import licenserOld from '../assets/data/licensers.json';
 import _ from 'lodash';
-import { finalRemapNitagCountry } from '../assets/data/nitag-countries';
 
 /**
  * Header Component
@@ -18,21 +15,15 @@ import { finalRemapNitagCountry } from '../assets/data/nitag-countries';
  */
 
 const Header = () => {
-
-    // const licenser1 = licenserNew;
-    // const licenser2 = licenserOld;
-
-    // console.log(_.differenceBy(licenser1, licenser2, 'country').map((x) => x.country));
-
     return <div className='row bg-primary text-white pt-3 pb-2 slide-down'>
         <div className='col-12 w-100' style={{ cursor: 'pointer' }} onClick={() => window.location.href = "/"}>
             <h3 className='subheading mb-0' style={{ color: '#D17728' }}></h3>
             <div className='d-inline-flex justify-content-between align-items-center w-100'>
                 <img className='heading' src="/images/vacci-profile-logo.png" alt="vacciprofile logo" width={210} height={100} />
-                <span style={{ color: '#D17728' }}>Last updated: 13, August 2025 22:51 (GMT+8)</span>
+                <span style={{ color: '#D17728' }}>Last updated: 14, August 2025 13:04 (GMT+8)</span>
             </div>
         </div>
     </div>
-}
+};
 
 export default Header;

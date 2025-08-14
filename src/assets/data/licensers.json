@@ -1868,14 +1868,6 @@
     "country": "Republic of Genoa"
   },
   {
-    "licenserId": 249,
-    "acronym": "MFDS",
-    "fullName": "Ministry of Food and Drug Safety",
-    "description": "South Korea’s national authority responsible for ensuring safety and effectiveness of vaccines and medicines.",
-    "website": "https://www.mfds.go.kr/eng/index.do",
-    "country": "Republic of Korea (South Korea)"
-  },
-  {
     "licenserId": 250,
     "acronym": "#",
     "fullName": "Direction de la Pharmacie et du Médicament (DPM)",
@@ -1954,5 +1946,197 @@
     "description": "Historical state in present-day Germany; no current licensing authority. Today, vaccine regulation in the region is handled by Germany’s Paul-Ehrlich-Institut (PEI) under the Federal Ministry of Health.",
     "website": "https://www.pei.de",
     "country": "Württemberg"
+  },
+  {
+    "licenserId": 263,
+    "acronym": "CDC-AS",
+    "fullName": "American Samoa Department of Health",
+    "description": "American Samoa’s public-health authority coordinates vaccine programs—including routine childhood immunizations, Hepatitis A/B, MMR, COVID-19, etc.—under territorial legislation (Health Ordinance & Immunization Program).",
+    "website": "https://www.cdc.gov",
+    "country": "American Samoa"
+  },
+  {
+    "licenserId": 264,
+    "acronym": "CRS/CARPHA",
+    "fullName": "Caribbean Regulatory System via CARPHA",
+    "description": "For Anguilla, Anguilla relies on the regional Caribbean Regulatory System under CARPHA for public-health oversight including vaccine importation, review, and recommendations.",
+    "website": "https://carpha.org",
+    "country": "Anguilla"
+  },
+  {
+    "licenserId": 265,
+    "acronym": "MinHealth-AW",
+    "fullName": "Aruba Ministry of Health",
+    "description": "Aruba Ministry of Public Health handles immunization policy—requiring Yellow-Fever certification if arriving from endemic zones, managing COVID-19 booster/entry requirements.",
+    "website": "https://www.aruba.com",
+    "country": "Aruba"
+  },
+  {
+    "licenserId": 266,
+    "acronym": "MoHW-BS",
+    "fullName": "Ministry of Health and Wellness, The Bahamas",
+    "description": "National authority that licenses vaccines and oversees national immunization programs (childhood & adult vaccines) and COVID-19 vaccine approval, in coordination with the Caribbean Regulatory System (CRS).",
+    "website": "https://www.mohw.gov.bs",
+    "country": "The Bahamas"
+  },
+  {
+    "licenserId": 268,
+    "acronym": "DoH-BMU",
+    "fullName": "Department of Health, Bermuda",
+    "description": "The Bermuda DoH sets routine childhood & adult immunization schedules and issued public-health directives for COVID-19 during the pandemic; also managed vaccine certificates until April 2023.",
+    "website": "https://www.gov.bm",
+    "country": "Bermuda"
+  },
+  {
+    "licenserId": 270,
+    "acronym": "CRS/CARPHA",
+    "fullName": "Caribbean Regulatory System via CARPHA",
+    "description": "British Virgin Islands relies on the regional CRS (part of CARPHA) for vaccine importation approvals and pharmacovigilance; no local licensing agency.",
+    "website": "https://www.carpha.org",
+    "country": "British Virgin Islands"
+  },
+  {
+    "licenserId": 271,
+    "acronym": "DoH-CCK",
+    "fullName": "Department of Infrastructure, Transport, Regional Development, Communications and the Arts – External Territories",
+    "description": "For the Cocos (Keeling) Islands, vaccine supply and approval are managed under Australia’s Therapeutic Goods Administration (TGA), with distribution coordinated by Western Australia’s Department of Health.",
+    "website": "https://www.tga.gov.au",
+    "country": "Cocos (Keeling) Islands"
+  },
+  {
+    "licenserId": 272,
+    "acronym": "MSHP-CI",
+    "fullName": "Ministère de la Santé et de l’Hygiène Publique, Côte d’Ivoire",
+    "description": "Côte d’Ivoire’s national health ministry oversees vaccine licensing, import approval, and immunization schedules; collaborates with WHO and Gavi on mass vaccination campaigns.",
+    "website": "http://www.sante.gouv.ci",
+    "country": "Côte d’Ivoire"
+  },
+  {
+    "licenserId": 273,
+    "acronym": "MoH-CW",
+    "fullName": "Ministry of Health, Environment and Nature of Curaçao",
+    "description": "Responsible for regulating vaccine procurement and approving immunization programs in Curaçao, a constituent country of the Kingdom of the Netherlands.",
+    "website": "https://gobiernu.cw",
+    "country": "Curaçao"
+  },
+  {
+    "licenserId": 274,
+    "acronym": "MoH-SZ",
+    "fullName": "Ministry of Health, Eswatini",
+    "description": "Eswatini’s health ministry oversees national vaccine policy, cold chain management, and disease surveillance, in partnership with WHO and UNICEF.",
+    "website": "http://www.gov.sz",
+    "country": "Eswatini (Swaziland)"
+  },
+  {
+    "licenserId": 275,
+    "acronym": "DoHC-FK",
+    "fullName": "Falkland Islands Government – Directorate of Health and Social Services",
+    "description": "Provides primary healthcare and coordinates vaccine procurement through the UK supply chain; no separate regulatory authority beyond UK standards.",
+    "website": "https://www.falklands.gov.fk",
+    "country": "Falkland Islands"
+  },
+  {
+    "licenserId": 276,
+    "acronym": "MoH-FO",
+    "fullName": "Ministry of Health, Faroe Islands",
+    "description": "Health authority responsible for public health and immunization policy in the Faroe Islands, operating under the jurisdiction of the Government of the Faroe Islands in cooperation with Denmark’s Danish Medicines Agency for vaccine approval.",
+    "website": "https://www.hfs.fo",
+    "country": "Faroe Islands"
+  },
+  {
+    "licenserId": 277,
+    "acronym": "ARS-GF",
+    "fullName": "Agence Régionale de Santé de Guyane",
+    "description": "Regional Health Agency of French Guiana implements France’s immunization policy and vaccine licensing under the oversight of France’s Agence nationale de sécurité du médicament et des produits de santé (ANSM).",
+    "website": "https://www.guyane.ars.sante.fr",
+    "country": "French Guiana"
+  },
+  {
+    "licenserId": 278,
+    "acronym": "DSP-987",
+    "fullName": "Direction de la Santé de la Polynésie française",
+    "description": "Public health authority for French Polynesia responsible for managing immunization programs and applying France’s vaccine licensing standards via ANSM.",
+    "website": "https://www.service-public.pf/dsp",
+    "country": "French Polynesia"
+  },
+  {
+    "licenserId": 279,
+    "acronym": "MoH-PSE",
+    "fullName": "Palestinian Ministry of Health – Gaza Governorates",
+    "description": "The Gaza Strip’s health services are coordinated by the Palestinian Ministry of Health, with vaccine supply supported by WHO, UNICEF, and COVAX; no independent licensing body.",
+    "website": "http://www.moh.gov.ps",
+    "country": "Gaza Strip"
+  },
+  {
+    "licenserId": 280,
+    "acronym": "GHA-GI",
+    "fullName": "Gibraltar Health Authority",
+    "description": "Oversees public health and immunization in Gibraltar; vaccines are licensed under UK regulatory framework and supplied via the UK’s National Health Service.",
+    "website": "https://www.gha.gi",
+    "country": "Gibraltar"
+  },
+  {
+    "licenserId": 281,
+    "acronym": "MoH-GL",
+    "fullName": "Government of Greenland – Ministry of Health",
+    "description": "Greenland’s Ministry of Health manages local immunization programs and public health initiatives; vaccine approvals are governed by Denmark’s Danish Medicines Agency.",
+    "website": "https://naalakkersuisut.gl",
+    "country": "Greenland"
+  },
+  {
+    "licenserId": 282,
+    "acronym": "ARS-GP",
+    "fullName": "Agence Régionale de Santé de Guadeloupe",
+    "description": "Regional Health Agency of Guadeloupe implements France’s immunization schedule and uses France’s ANSM for vaccine licensing and pharmacovigilance.",
+    "website": "https://www.guadeloupe.ars.sante.fr",
+    "country": "Guadeloupe"
+  },
+  {
+    "licenserId": 283,
+    "acronym": "DoH-GU",
+    "fullName": "Guam Department of Public Health and Social Services",
+    "description": "Territorial health authority managing vaccine programs, cold chain, and disease control; vaccine approval follows U.S. Food and Drug Administration (FDA) standards.",
+    "website": "https://dphss.guam.gov",
+    "country": "Guam"
+  },
+  {
+    "licenserId": 284,
+    "acronym": "HSC-GG",
+    "fullName": "Health and Social Care – States of Guernsey",
+    "description": "Responsible for public health and immunization in Guernsey; vaccine regulation follows UK’s Medicines and Healthcare products Regulatory Agency (MHRA) standards.",
+    "website": "https://gov.gg",
+    "country": "Guernsey"
+  },
+  {
+    "licenserId": 285,
+    "acronym": "MoPH-KP",
+    "fullName": "Ministry of Public Health – Democratic People’s Republic of Korea",
+    "description": "North Korea’s Ministry of Public Health oversees vaccine distribution and disease prevention; works with WHO for certain vaccination campaigns. Information on licensing processes is limited.",
+    "website": "http://www.naenara.com.kp",
+    "country": "North Korea"
+  },
+  {
+    "licenserId": 286,
+    "acronym": "FSM-DoH",
+    "fullName": "Federated States of Micronesia Department of Health and Social Affairs",
+    "description": "Oversees national immunization programs and public health policy; vaccines are procured through U.S.-affiliated agreements and WHO-supported initiatives.",
+    "website": "https://doh.gov.fm",
+    "country": "Federated States of Micronesia"
+  },
+  {
+    "licenserId": 287,
+    "acronym": "ARS-RE",
+    "fullName": "Agence Régionale de Santé de La Réunion",
+    "description": "Implements France’s vaccine schedule and licensing in La Réunion under the authority of France’s ANSM; coordinates disease prevention and immunization programs.",
+    "website": "https://www.reunion.ars.sante.fr",
+    "country": "Réunion"
+  },
+  {
+    "licenserId": 288,
+    "acronym": "TFDA-TW",
+    "fullName": "Taiwan Food and Drug Administration",
+    "description": "Regulates the licensing, safety, and quality of vaccines in Taiwan; sets immunization schedules through the Centers for Disease Control under the Ministry of Health and Welfare.",
+    "website": "https://www.fda.gov.tw",
+    "country": "Taiwan"
   }
 ]
