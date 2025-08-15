@@ -45,7 +45,7 @@ const App = () => {
     const [activeFilters, setActiveFilters] = useState({
         firstAlphabet: '',
         searchKeyword: ''
-    })
+    });
     const [pathogensList, setPathogensList] = useState(pathogens);
     const [vaccinesList, setVaccinesList] = useState();
     const [pipelineVaccineList, setPipelineVaccinesList] = useState();

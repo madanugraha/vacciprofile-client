@@ -42,6 +42,7 @@ const ManufacturerProfile = ({
 }) => {
     return <>
         <h1 className='heading text-primary'>{selectedManufacturer.name}</h1>
+        <p style={{ marginTop: -5, color: 'gray', fontSize: 12 }}>Last Updated: {selectedManufacturer?.lastUpdated}</p>
         <div className="accordion" id="accordianManufacturerInfo">
             <div className="accordion-item mb-1">
                 <h2 className="accordion-header" id="accordianManufacturer">

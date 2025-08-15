@@ -1049,6 +1049,7 @@ const Pathogen = ({ isCandidatePathogen, selectedPathogen, italizeScientificName
         <>
             <div className='py-1 px-2'>
                 <h2>{selectedPathogen?.name} Vaccine Candidates</h2>
+                <p style={{ marginTop: -5, color: 'gray', fontSize: 12 }}>Last Updated: {selectedPathogen?.lastUpdated}</p>
                 <div className='py-4'>
                     <table border={0}>
                         <tbody>

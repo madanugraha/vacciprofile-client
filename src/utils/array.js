@@ -31,7 +31,8 @@ export const getCandidatePathogens = () => {
     const p = vaccines.map((x) => {
         return {
             pathogenId: x.pathogenId,
-            name: x.pathogenName
+            name: x.pathogenName,
+            lastUpdated: x.lastUpdated
         }
     });
     return p
