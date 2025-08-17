@@ -50,7 +50,7 @@ const ManufacturerProfile = ({
                         Manufacturer Profile
                     </button>
                 </h2>
-                <div id="accordianManu" className="accordion-collapse collapse show mb-1" aria-labelledby="accordianManufacturer" data-bs-parent="#accordianManufacturerInfo">
+                <div id="accordianManu" className="accordion-collapse collapse mb-1" aria-labelledby="accordianManufacturer" data-bs-parent="#accordianManufacturerInfo">
                     <div className="accordion-body pb-1 px-0 pt-0">
                         <div className=''>
                             {selectedManufacturer.details ? <><div className='table-responsive'>
