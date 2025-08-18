@@ -5,6 +5,7 @@ import { vaccineDeases } from '../assets/data/dieases';
 import nitag from '../assets/data/nitag.json';
 import { useSearchParams } from 'react-router';
 import { toast } from 'react-toastify';
+import { turnFirstLetterOfWordUpperCase } from '../utils/string';
 
 /**
  * Sidebar Component
@@ -242,16 +243,14 @@ const Sidebar = ({
                         return (
                             <>
                                 <div id={`nitag-country-${item[0]}`} onClick={() => {
-
                                     handleClickSidebar(item);
                                     const ctx = item[0];
-
                                     function handleClickCountryMatchURL(country, url) {
                                         const noNitagElm = document.getElementById('no-nitag');
                                         if (country) {
                                             country = country.toLowerCase();
                                             if (url === "Unavailable") {
-                                                noNitagElm.textContent = `The NITAG of ${country} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
+                                                noNitagElm.textContent = `The NITAG of ${turnFirstLetterOfWordUpperCase(country)} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
                                                 noNitagElm.style.display = "block";
                                                 // toast.error(`The NITAG of ${country} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`)
                                             }
@@ -269,7 +268,7 @@ const Sidebar = ({
                                         handleClickCountryMatchURL(ctx, websiteUrl)
                                     };
                                 }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${(activeTab === 'Nitag' && selectedNitag === item) ? 'active' : 'inactive'}`}>
-                                    {item[0]}
+                                    {item[0]}{item.length > 0 ? `${(!item[1]?.includes('Committee: -') ? ", " + item[1].split('<br/>')[0]?.replace('Committee: ', '') : "")}` : ""}
                                 </div>
                             </>
                         )

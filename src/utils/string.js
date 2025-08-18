@@ -22,3 +22,12 @@ export const cutVaccineNameFromURL = (str) => {
 //         }
 //     }
 // }
+
+
+export const turnFirstLetterOfWordUpperCase = (str) => {
+    if (str) {
+        return str.toLowerCase()
+            .replace((/(?<=\b)\p{L}/gu), match => match.toUpperCase())
+    };
+    return str;
+};

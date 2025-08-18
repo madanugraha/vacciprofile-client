@@ -168,6 +168,12 @@ Year established: 2018
 Chad
 Year established: 2023`,
     `
+Cape Verde`,
+    `
+Central African Republic`,
+    `
+Cyprus`,
+    `
 Chile
 Committee: Comité asesor en vacunas y estrategias de inmunización - CAVEI
 Year established: 2011
@@ -202,7 +208,7 @@ Committee: Comisión Nacional de Vacunación y Epidemiología (CNVE)
 Year established: 2001
 `,
     `
-Côte d'Ivoire
+Ivory Coast
 Committee: Comité National d'Experts Indépendants pour la Vaccination et les vaccins de la Côte d'Ivoire (National Committee of Independent Experts for Vaccination and Vaccines in the Ivory Coast) - CNEIV-CI
 Year established: 2009
 `,
@@ -211,6 +217,12 @@ Croatia
 `,
     `
 Cuba
+`,
+    `
+Dominican Republic
+`,
+    `
+Equatorial Guinea
 `,
     `
 Curaçao
@@ -258,6 +270,9 @@ Year evaluated: 2023
 Eritrea
 `,
     `
+Eswatini
+`,
+    `
 Estonia
 Committee: Expert Committee for Immunoprophylaxis
 Year established: 2006
@@ -285,6 +300,9 @@ Website: https://www.has-sante.fr/jcms/c_2758065/en/technical-committee-for-vacc
     `
 Gambia
 Year established: 2020
+`,
+    `
+Gabon
 `,
     `
 Georgia
@@ -361,6 +379,9 @@ Year evaluated: 2020
     `
 Iraq
 Year established: 2002
+`,
+    `
+Hungary
 `,
     `
 
@@ -521,6 +542,18 @@ Year established: 2013
 Monaco
 `,
     `
+Palau
+`,
+    `
+Palestine
+`,
+    `
+Papua New Guinea
+`,
+    `
+Micronesia
+`,
+    `
 Mongolia
 Committee: Mongolian National Immunization Technical Advisory Group
 Year established: 2010
@@ -547,6 +580,12 @@ Year evaluated: 2020
     `
 Namibia
 Committee: Namibia NITAG
+`,
+    `
+Nauru
+`,
+    `
+Philippines
 `,
     `
 Nepal
@@ -657,7 +696,16 @@ Year established: 2018
 Samoa
 `,
     `
+Sao Tome and Principe
+`,
+    `
 San Marino
+`,
+    `
+Marshall Islands
+`,
+    `
+Solomon Islands
 `,
     `
 Saudi Arabia
@@ -741,6 +789,9 @@ State of Libya
 Year established: 2022
 `,
     `
+Liechtenstein
+`,
+    `
 Sudan
 Committee: Sudan NITAG
 Year established: 2009
@@ -774,6 +825,15 @@ Year established: 2007
 Tajikistan
 `,
     `
+Laos
+`,
+    `
+Taiwan
+`,
+    `
+Tonga
+`,
+    `
 
 Tanzania (United Republic Of)
 Committee: TITAG
@@ -805,7 +865,7 @@ Year established: 2015
 Year evaluated: 2023
 `,
     `
-Trinidad And Tobago
+Trinidad and Tobago
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018
 `,
@@ -817,6 +877,9 @@ Year established: 2010
 `,
     `
 Turkey
+`,
+    `
+Tuvalu
 `,
     `
 Turkmenistan
@@ -860,12 +923,19 @@ Year established: 1985
 Website: https://www.gub.uy/ministerio-salud-publica/comunicacion/publicaciones/actas-reuniones-comision-nacional-asesora-vacunaciones
 `,
     `
-
 Uzbekistan
 Year evaluated: 2022
 `,
     `
-
+Vanuatu
+`,
+    `
+Vatican City
+`,
+    `
+Venezuela
+`,
+    `
 Viet Nam
 Committee: National Immunization Technical Advisory Group for the use of Vaccine and Biologicals
 Year established: 1998

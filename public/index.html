@@ -1395,6 +1395,15 @@ Year established: 2011
                                 });
                         }
 
+
+                        function turnFirstLetterOfWordUpperCase(str) {
+                                if (str) {
+                                        return str.toLowerCase()
+                                                .replace((/(?<=\b)\p{L}/gu), match => match.toUpperCase())
+                                };
+                                return str;
+                        }
+
                         function handleClickCountryMatchURL(country, url) {
                                 const noNitagElm = document.getElementById('no-nitag');
                                 if (country) {
@@ -1429,7 +1438,7 @@ Year established: 2011
                                         originalCountryName = (originalCountryName != "United States" && originalCountryName != "SS" && originalCountryName != "RU" && originalCountryName != "CD" && originalCountryName != "CG" && originalCountryName && "LA") ? originalCountryName : country
 
                                         if (url === "-") {
-                                                noNitagElm.textContent = `The NITAG of ${country} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
+                                                noNitagElm.textContent = `The NITAG of ${turnFirstLetterOfWordUpperCase(country)} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
                                                 noNitagElm.style.display = "block";
                                                 // window.alert(`No available data for XXXX ${originalCountryName}.`)
                                         }
@@ -1439,7 +1448,6 @@ Year established: 2011
                                                 noNitagElm.style.display = "none";
                                                 return window.open(url, '_blank');
                                         }
-
                                 }
                         }
 
