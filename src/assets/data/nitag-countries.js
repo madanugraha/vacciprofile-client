@@ -19,10 +19,6 @@ Year evaluated: 2023`,
 Year established: 2017
 Year evaluated: 2019`,
     `
-Anguilla
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018`,
-    `
 Antigua and Barbuda
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018`,
@@ -37,10 +33,6 @@ Website: https://www.argentina.gob.ar/salud/inmunoprevenibles/comisiones/conain
 Armenia
 Committee: Armenian National Advisory Committee on Immunization - NACI
 Year established: 2011`,
-    `
-Aruba
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018`,
     `
 Australia
 Committee: Australian Technical Advisory Group on Immunisation - ATAGI
@@ -84,19 +76,10 @@ Committee: Comité National Consultatif pour la Vaccination et les Vaccins (Advi
 Year established: 2013
 `,
     `
-Bermuda
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018
-`,
-    `
 Belize
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018
 `,
-    `
-Bermuda
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018`,
     `
 Bhutan
 Committee: National Committee of Immunization Practices of Bhutan - NCIP
@@ -123,11 +106,6 @@ Year established: 2022
 `,
     `
 Brazil
-`,
-    `
-British Virgin Islands
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018
 `,
     `
 Brunei Darussalam
@@ -158,11 +136,6 @@ Canada
 Committee: National Advisory Committee on Immunization - NACI
 Year established: 1964
 Website: https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci/naci-membership-representation.html
-`,
-    `
-Cayman Islands
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018
 `,
     `
 Chad
@@ -223,11 +196,6 @@ Dominican Republic
 `,
     `
 Equatorial Guinea
-`,
-    `
-Curaçao
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018
 `,
     `
 Czech Republic
@@ -693,21 +661,6 @@ Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018
 `,
     `
-Samoa
-`,
-    `
-Sao Tome and Principe
-`,
-    `
-San Marino
-`,
-    `
-Marshall Islands
-`,
-    `
-Solomon Islands
-`,
-    `
 Saudi Arabia
 Year established: 2008
 `,
@@ -825,9 +778,6 @@ Year established: 2007
 Tajikistan
 `,
     `
-Laos
-`,
-    `
 Taiwan
 `,
     `
@@ -850,15 +800,10 @@ Website: http://www.nvco.go.th/
 
 `,
     `
-the Kingdom of eSwatini
-Year established: 2017
-`,
-    `
 Timor-Leste
 Year evaluated: 2020
 `,
     `
-
 Togo
 Committee: GTCV-Togo
 Year established: 2015
@@ -879,16 +824,8 @@ Year established: 2010
 Turkey
 `,
     `
-Tuvalu
-`,
-    `
 Turkmenistan
 Year evaluated: 2023
-`,
-    `
-Turks and Caicos
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018
 `,
     `
 

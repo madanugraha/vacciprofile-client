@@ -42,7 +42,7 @@ const Header = () => {
         "Bosnia and Herzegovina",
         "Botswana",
         "Brazil",
-        "Brunei",
+        "Brunei Darussalam",
         "Bulgaria",
         "Burkina Faso",
         "Burundi",
@@ -216,7 +216,7 @@ const Header = () => {
         "Zimbabwe"
     ];
 
-    const nitagOld = licenserOld.map((x) => x.country)
+    const nitagOld = finalRemapNitagCountry.map((x) => x[0]);
 
     // console.log(_.difference(nitagOld, nitagNew));
     return <div className='row bg-primary text-white pt-3 pb-2 slide-down'>
@@ -224,7 +224,7 @@ const Header = () => {
             <h3 className='subheading mb-0' style={{ color: '#D17728' }}></h3>
             <div className='d-inline-flex justify-content-between align-items-center w-100'>
                 <img className='heading' src="/images/vacci-profile-logo.png" alt="vacciprofile logo" width={210} height={100} />
-                <span style={{ color: '#D17728' }}>VacciProfile Last updated: 18, August 2025 14:04 (GMT+8)</span>
+                <span style={{ color: '#D17728' }}>VacciProfile Last updated: 19, August 2025 16:37 (GMT+8)</span>
             </div>
         </div>
     </div>

@@ -783,14 +783,6 @@
     "website": "https://abrema.gov.bi/"
   },
   {
-    "licenserId": 112,
-    "acronym": "IHRA",
-    "fullName": "Independent Health Regulatory Authority (IHRA)",
-    "country": "Cabo Verde",
-    "description": "The Entidade Reguladora Independente da Saúde (ERIS) — also known as the Independent Health Regulatory Entity in Cabo Verde — is the national authority responsible for regulating, authorising, and overseeing medicines, medical devices, food, and cosmetics.",
-    "website": "https://www.eris.cv/"
-  },
-  {
     "licenserId": 113,
     "acronym": "DPML",
     "fullName": "Department of Pharmacy, Medicines, and Laboratories (DPML)",
@@ -1500,14 +1492,6 @@
     "country": "Belgium"
   },
   {
-    "licenserId": 209,
-    "acronym": "FDA / FDBA",
-    "fullName": "Food and Drug Administration (FDA) / Food and Drug Board of Authority (FDBA)",
-    "description": "Myanmar’s national authority overseeing regulation and licensing of vaccines, drugs, and medical products.",
-    "website": "http://www.fda.gov.mm",
-    "country": "Burma"
-  },
-  {
     "licenserId": 214,
     "acronym": "CNVE",
     "fullName": "Ministry of Health – National Commission of Vaccination and Epidemiology (CNVE)",
@@ -1516,28 +1500,12 @@
     "country": "Costa Rica"
   },
   {
-    "licenserId": 215,
-    "acronym": "AIRP",
-    "fullName": "Autorité Ivoirienne de Régulation Pharmaceutique",
-    "description": "Ivory Coast’s national pharmaceutical regulatory authority responsible for vaccine and medicine approvals, including COVID-19 vaccines.",
-    "website": "#",
-    "country": "Cote d’Ivoire (Ivory Coast)"
-  },
-  {
     "licenserId": 216,
     "acronym": "CECMED",
     "fullName": "Centro para el Control Estatal de Medicamentos, Equipos y Dispositivos Médicos",
     "description": "Cuba’s national regulatory authority for pharmaceuticals and vaccines, responsible for licensing and ensuring safety and efficacy.",
-    "website": "#",
+    "website": "https://www.cecmed.cu/",
     "country": "Cuba"
-  },
-  {
-    "licenserId": 217,
-    "acronym": "SÚKL",
-    "fullName": "State Institute for Drug Control",
-    "description": "Czechia’s national competent authority for medicines and vaccine licensing and surveillance.",
-    "website": "https://www.sukl.cz",
-    "country": "Czechia"
   },
   {
     "licenserId": 232,
@@ -1610,86 +1578,6 @@
     "description": "Venezuela’s primary health authorities overseeing vaccine regulation, licensing, and epidemiologic surveillance.",
     "website": "#",
     "country": "Venezuela"
-  },
-  {
-    "licenserId": 264,
-    "acronym": "CRS/CARPHA",
-    "fullName": "Caribbean Regulatory System via CARPHA",
-    "description": "For Anguilla, Anguilla relies on the regional Caribbean Regulatory System under CARPHA for public-health oversight including vaccine importation, review, and recommendations.",
-    "website": "https://carpha.org",
-    "country": "Anguilla"
-  },
-  {
-    "licenserId": 265,
-    "acronym": "MinHealth-AW",
-    "fullName": "Aruba Ministry of Health",
-    "description": "Aruba Ministry of Public Health handles immunization policy—requiring Yellow-Fever certification if arriving from endemic zones, managing COVID-19 booster/entry requirements.",
-    "website": "https://www.aruba.com",
-    "country": "Aruba"
-  },
-  {
-    "licenserId": 266,
-    "acronym": "MoHW-BS",
-    "fullName": "Ministry of Health and Wellness, The Bahamas",
-    "description": "National authority that licenses vaccines and oversees national immunization programs (childhood & adult vaccines) and COVID-19 vaccine approval, in coordination with the Caribbean Regulatory System (CRS).",
-    "website": "https://www.mohw.gov.bs",
-    "country": "The Bahamas"
-  },
-  {
-    "licenserId": 268,
-    "acronym": "DoH-BMU",
-    "fullName": "Department of Health, Bermuda",
-    "description": "The Bermuda DoH sets routine childhood & adult immunization schedules and issued public-health directives for COVID-19 during the pandemic; also managed vaccine certificates until April 2023.",
-    "website": "https://www.gov.bm",
-    "country": "Bermuda"
-  },
-  {
-    "licenserId": 272,
-    "acronym": "MSHP-CI",
-    "fullName": "Ministère de la Santé et de l’Hygiène Publique, Côte d’Ivoire",
-    "description": "Côte d’Ivoire’s national health ministry oversees vaccine licensing, import approval, and immunization schedules; collaborates with WHO and Gavi on mass vaccination campaigns.",
-    "website": "http://www.sante.gouv.ci",
-    "country": "Côte d’Ivoire"
-  },
-  {
-    "licenserId": 273,
-    "acronym": "MoH-CW",
-    "fullName": "Ministry of Health, Environment and Nature of Curaçao",
-    "description": "Responsible for regulating vaccine procurement and approving immunization programs in Curaçao, a constituent country of the Kingdom of the Netherlands.",
-    "website": "https://gobiernu.cw",
-    "country": "Curaçao"
-  },
-  {
-    "licenserId": 274,
-    "acronym": "MoH-SZ",
-    "fullName": "Ministry of Health, Eswatini",
-    "description": "Eswatini’s health ministry oversees national vaccine policy, cold chain management, and disease surveillance, in partnership with WHO and UNICEF.",
-    "website": "http://www.gov.sz",
-    "country": "Eswatini (Swaziland)"
-  },
-  {
-    "licenserId": 281,
-    "acronym": "MoH-GL",
-    "fullName": "Government of Greenland – Ministry of Health",
-    "description": "Greenland’s Ministry of Health manages local immunization programs and public health initiatives; vaccine approvals are governed by Denmark’s Danish Medicines Agency.",
-    "website": "https://naalakkersuisut.gl",
-    "country": "Greenland"
-  },
-  {
-    "licenserId": 283,
-    "acronym": "DoH-GU",
-    "fullName": "Guam Department of Public Health and Social Services",
-    "description": "Territorial health authority managing vaccine programs, cold chain, and disease control; vaccine approval follows U.S. Food and Drug Administration (FDA) standards.",
-    "website": "https://dphss.guam.gov",
-    "country": "Guam"
-  },
-  {
-    "licenserId": 284,
-    "acronym": "HSC-GG",
-    "fullName": "Health and Social Care – States of Guernsey",
-    "description": "Responsible for public health and immunization in Guernsey; vaccine regulation follows UK’s Medicines and Healthcare products Regulatory Agency (MHRA) standards.",
-    "website": "https://gov.gg",
-    "country": "Guernsey"
   },
   {
     "licenserId": 285,
