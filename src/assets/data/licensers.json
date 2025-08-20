@@ -1464,7 +1464,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health / Servei Andorrà d’Atenció Sanitària",
     "description": "Oversees healthcare and immunization in Andorra; no separate dedicated vaccine regulatory authority.",
-    "website": "",
+    "website": "http://www.salut.ad/",
     "country": "Andorra"
   },
   {
@@ -1488,7 +1488,7 @@
     "acronym": "FAMHP",
     "fullName": "Federal Agency for Medicines and Health Products",
     "description": "Responsible for approval, registration, and pharmacovigilance of vaccines and medicines in Belgium.",
-    "website": "https://www.famhp.be/",
+    "website": "https://www.famhp.be/en",
     "country": "Belgium"
   },
   {
@@ -1520,7 +1520,7 @@
     "acronym": "ZVA",
     "fullName": "State Agency of Medicines",
     "description": "Latvia’s national authority for the certification, approval, and regulation of vaccines and medicines.",
-    "website": "http://www.zva.gov.lv",
+    "website": "https://www.zva.gov.lv/en",
     "country": "Latvia"
   },
   {
@@ -1560,7 +1560,7 @@
     "acronym": "NMPB",
     "fullName": "National Medicines and Poisons Board",
     "description": "Sudan’s semi-autonomous medicines regulatory authority responsible for licensing vaccines and medicines and overseeing pharmacovigilance.",
-    "website": "https://www.nmpb.gov.sd",
+    "website": "https://www.nmpb.gov.sd/en/index.php",
     "country": "Sudan"
   },
   {
@@ -1576,7 +1576,7 @@
     "acronym": "MPPS / INHRR",
     "fullName": "Ministry of Popular Power for Health (MPPS) / Rafael Rangel National Hygiene Institute (INHRR)",
     "description": "Venezuela’s primary health authorities overseeing vaccine regulation, licensing, and epidemiologic surveillance.",
-    "website": "#",
+    "website": "https://mpps.gob.ve",
     "country": "Venezuela"
   },
   {
@@ -1584,7 +1584,7 @@
     "acronym": "MoPH-KP",
     "fullName": "Ministry of Public Health – Democratic People’s Republic of Korea",
     "description": "North Korea’s Ministry of Public Health oversees vaccine distribution and disease prevention; works with WHO for certain vaccination campaigns. Information on licensing processes is limited.",
-    "website": "http://www.naenara.com.kp",
+    "website": "http://www.naenara.com.kp/main/index/en/first",
     "country": "North Korea"
   },
   {
@@ -1592,7 +1592,7 @@
     "acronym": "FSM-DoH",
     "fullName": "Federated States of Micronesia Department of Health and Social Affairs",
     "description": "Oversees national immunization programs and public health policy; vaccines are procured through U.S.-affiliated agreements and WHO-supported initiatives.",
-    "website": "https://doh.gov.fm",
+    "website": "https://hsa.gov.fm/",
     "country": "Micronesia"
   },
   {
@@ -1600,7 +1600,7 @@
     "acronym": "TFDA-TW",
     "fullName": "Taiwan Food and Drug Administration",
     "description": "Regulates the licensing, safety, and quality of vaccines in Taiwan; sets immunization schedules through the Centers for Disease Control under the Ministry of Health and Welfare.",
-    "website": "https://www.fda.gov.tw",
+    "website": "https://www.fda.gov.tw/ENG/index.aspx",
     "country": "Taiwan"
   },
   {
