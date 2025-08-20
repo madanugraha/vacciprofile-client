@@ -84,7 +84,7 @@
     "fullName": "Federal Commission for the Protection against Sanitary Risk",
     "country": "Mexico",
     "description": "COFEPRIS is the Mexican regulatory authority responsible for health control, including the regulation of drugs, medical devices, and other health-related products.",
-    "website": "https://www.gob.mx/cofepris"
+    "website": "https://www.gob.mx/cofepris/en"
   },
   {
     "licenserId": 12,
@@ -124,7 +124,7 @@
     "fullName": "Swiss Agency for Therapeutic Products",
     "country": "Switzerland",
     "description": "Swissmedic is the Swiss agency for therapeutic products, responsible for the authorization and supervision of drugs and medical devices in Switzerland.",
-    "website": "https://www.swissmedic.ch"
+    "website": "https://www.swissmedic.ch/swissmedic/en/home.html"
   },
   {
     "licenserId": 17,
@@ -156,7 +156,7 @@
     "fullName": "Spanish Agency of Medicines and Medical Devices",
     "country": "Spain",
     "description": "AEMPS is the Spanish agency responsible for the regulation, monitoring, and control of medicines and medical devices in Spain.",
-    "website": "https://www.aemps.gob.es"
+    "website": "https://www.aemps.gob.es/?lang=en#"
   },
   {
     "licenserId": 24,
@@ -220,7 +220,7 @@
     "fullName": "State Institute for Drug Control",
     "country": "Slovakia",
     "description": "SIDC is Slovakia's national regulatory authority for the control of medicines and medical devices, ensuring their safety and effectiveness.",
-    "website": "https://www.sukl.sk"
+    "website": "https://www.sukl.sk/hlavna-stranka/english-version?page_id=256"
   },
   {
     "licenserId": 34,
@@ -236,7 +236,7 @@
     "fullName": "Swedish Medical Products Agency",
     "country": "Sweden",
     "description": "The MPA is Sweden's regulatory authority responsible for ensuring the safety, efficacy, and quality of medicines and medical devices.",
-    "website": "https://www.lakemedelsverket.se"
+    "website": "https://www.lakemedelsverket.se/en"
   },
   {
     "licenserId": 36,
@@ -331,7 +331,7 @@
     "acronym": "ANMAT",
     "fullName": "National Administration of Drugs, Foods and Medical Devices-ANMAT",
     "description": "ANMAT is the regulatory body in Argentina that ensures the safety, efficacy, and quality of medicines, foods, and medical devices.",
-    "website": "https://www.argentina.gob.ar/anmat",
+    "website": "https://www.argentina.gob.ar/anmat-en",
     "country": "Argentina"
   },
   {
@@ -371,7 +371,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The UAE Ministry of Health oversees healthcare services, regulates pharmaceuticals and medical devices, and ensures public health and safety across the Emirates.",
-    "website": "https://www.mohap.gov.ae",
+    "website": "https://mohap.gov.ae/en/home",
     "country": "United Arab Emirates"
   },
   {
@@ -387,7 +387,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Qatari Ministry of Health manages public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in Qatar.",
-    "website": "https://www.moph.gov.qa",
+    "website": "https://www.moph.gov.qa/english/Pages/default.aspx",
     "country": "Qatar"
   },
   {
@@ -443,7 +443,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Afghan Ministry of Health is responsible for overseeing healthcare services, regulating health products, and ensuring public health in Afghanistan.",
-    "website": "https://www.moph.gov.af",
+    "website": "https://www.moph.gov.af/en",
     "country": "Afghanistan"
   },
   {
@@ -523,7 +523,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Vietnam oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
-    "website": "https://www.moh.gov.vn",
+    "website": "https://moh.gov.vn/en_US/web/ministry-of-health",
     "country": "Vietnam"
   },
   {
@@ -579,7 +579,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Kazakhstan is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices.",
-    "website": "https://www.gov.kz/memleket/entities/dsm",
+    "website": "https://www.gov.kz/memleket/entities/dsm?lang=en",
     "country": "Kazakhstan"
   },
   {
@@ -651,7 +651,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Ukraine oversees public health services, regulates pharmaceuticals, and ensures the safety and quality of health products in the country.",
-    "website": "https://www.moz.gov.ua",
+    "website": "https://www.moz.gov.ua/en?dev-home",
     "country": "Ukraine"
   },
   {
@@ -984,7 +984,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Guinea-Bissau oversees public health services, regulates pharmaceuticals, and ensures the safety and efficacy of health products in the country.",
-    "website": "",
+    "website": "http://www.guinebissaurepublic.com/health-2/",
     "country": "Guinea-Bissau"
   },
   {
@@ -1088,7 +1088,7 @@
     "acronym": "MOH",
     "fullName": "Ministry of Health",
     "description": "The Ministry of Health in Luxembourg is responsible for public health policy, healthcare services, and the regulation of medicines and medical devices in the country.",
-    "website": "https://www.sante.lu/",
+    "website": "https://santesecu.public.lu/de.html",
     "country": "Luxembourg"
   },
   {
@@ -1476,14 +1476,6 @@
     "country": "Austria"
   },
   {
-    "licenserId": 203,
-    "acronym": "CARPHA",
-    "fullName": "Ministry of Health and Wellness (Bahamas) with reliance on Caribbean Regulatory System (CRS) and CARPHA",
-    "description": "Coordinates vaccine licensing in The Bahamas with regulatory support from CRS and CARPHA.",
-    "website": "https://www.carpha.org",
-    "country": "Bahamas"
-  },
-  {
     "licenserId": 205,
     "acronym": "FAMHP",
     "fullName": "Federal Agency for Medicines and Health Products",
@@ -1506,14 +1498,6 @@
     "description": "Cuba’s national regulatory authority for pharmaceuticals and vaccines, responsible for licensing and ensuring safety and efficacy.",
     "website": "https://www.cecmed.cu/",
     "country": "Cuba"
-  },
-  {
-    "licenserId": 232,
-    "acronym": "MCA",
-    "fullName": "Medicines Control Agency",
-    "description": "The Gambia’s national regulatory authority responsible for the approval, registration, and oversight of vaccines and medicines under the Medicines and Related Products Act 2014.",
-    "website": "https://www.mca.gm",
-    "country": "Gambia"
   },
   {
     "licenserId": 241,
@@ -1586,14 +1570,6 @@
     "description": "North Korea’s Ministry of Public Health oversees vaccine distribution and disease prevention; works with WHO for certain vaccination campaigns. Information on licensing processes is limited.",
     "website": "http://www.naenara.com.kp/main/index/en/first",
     "country": "North Korea"
-  },
-  {
-    "licenserId": 286,
-    "acronym": "FSM-DoH",
-    "fullName": "Federated States of Micronesia Department of Health and Social Affairs",
-    "description": "Oversees national immunization programs and public health policy; vaccines are procured through U.S.-affiliated agreements and WHO-supported initiatives.",
-    "website": "https://hsa.gov.fm/",
-    "country": "Micronesia"
   },
   {
     "licenserId": 288,
