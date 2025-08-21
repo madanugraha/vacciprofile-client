@@ -66,7 +66,7 @@ Year evaluated: 2022`,
 Belgium
 Committee: National Immunisation Technical Advisory Group (within the Superior Health Council) - NITAG
 Year established: 1991
-Website: https://www.health.belgium.be/fr/vaccination`,
+Website: https://www.health.belgium.be/en/node/30023`,
     `Belize
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018`,
@@ -74,11 +74,6 @@ Year established: 2018`,
 Benin
 Committee: Comité National Consultatif pour la Vaccination et les Vaccins (Advisory National Committee for Vaccination and Vaccines) - CNCV
 Year established: 2013
-`,
-    `
-Belize
-Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
-Year established: 2018
 `,
     `
 Bhutan
@@ -718,7 +713,7 @@ Year evaluated: 2024
 South Korea
 Committee: Korea Expert Committee on Immunization Practices
 Year established: 1992
-Website: https://nip.cdc.go.kr/irgd/index.html
+Website: https://www.kdca.go.kr/index.es?sid=a3
 `,
     `
 South Sudan
@@ -767,7 +762,7 @@ Website: https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/
 Switzerland
 Committee: Commission Fédérale pour les Vaccinations (Federal Vaccination Commission) - CFV
 Year established: 2004
-Website: https://www.bag.admin.ch/bag/fr/home/das-bag/organisation/ausserparlamentarische-kommissionen/eidgenoessische-kommission-fuer-impffragen-ekif.html
+Website: https://www.bag.admin.ch/en/
 `,
     `
 Syria
