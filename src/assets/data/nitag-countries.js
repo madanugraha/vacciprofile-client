@@ -1,17 +1,17 @@
 const q = [
     `
 Afghanistan
-Committee: Afghanistan NITAG
+Committee: Science, Epidemiology and Research (SER)
 Year established: 2010`,
     `
 Albania
-Committee: NITAG Albania
+Committee: National Technical-Advisory Committee on Immunization (NTACI)
 Year established: 2015
 Year evaluated: 2022
 Evaluation information: self-assessment`,
     `
 Algeria
-Committee: Comité Technique de consultation sur la vaccination
+Committee: Comité Technique de Consultation sur la Vaccination (CTCV)
 Year established: 2010
 Year evaluated: 2023`,
     `Andorra`,
@@ -24,18 +24,18 @@ Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018`,
     `
 Argentina
-Committee: Comisión Nacional de Inmunizaciones (National Immunization Commission) - CoNaIn
+Committee: Comisión Nacional de Inmunizaciones (CoNaIn)
 Year established: 2000
 Year evaluated: 2018
 Website: https://www.argentina.gob.ar/salud/inmunoprevenibles/comisiones/conain
 `,
     `
 Armenia
-Committee: Armenian National Advisory Committee on Immunization - NACI
+Committee: Armenian National Advisory Committee on Immunization (NACI)
 Year established: 2011`,
     `
 Australia
-Committee: Australian Technical Advisory Group on Immunisation - ATAGI
+Committee: Australian Technical Advisory Group on Immunisation (ATAGI)
 Year established: 1997
 Website: https://beta.health.gov.au/committees-and-groups/australian-technical-advisory-group-on-immunisation`,
     `
@@ -49,11 +49,11 @@ Bahamas
 Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018`,
     `Bahrain
-Committee: Bahrain Immunization Committee
+Committee: Bahrain Immunization Committee (BIC)
 Year established: 2009`,
     `
 Bangladesh
-Committee: National Committee of Immunization Practices of Bangladesh - NCIP
+Committee: National Committee of Immunization Practices of Bangladesh (NCIP)
 Year established: 2008
 Year evaluated: 2020`,
     `Barbados
@@ -64,7 +64,7 @@ Year established: 2018
 Year evaluated: 2022`,
     `
 Belgium
-Committee: National Immunisation Technical Advisory Group (within the Superior Health Council) - NITAG
+Committee: Conseil Supérieur de la Santé (CSS)
 Year established: 1991
 Website: https://www.health.belgium.be/en/node/30023`,
     `Belize
@@ -72,31 +72,31 @@ Committee: The Caribbean Immunization Technical Advisory Group (CITAG)
 Year established: 2018`,
     `
 Benin
-Committee: Comité National Consultatif pour la Vaccination et les Vaccins (Advisory National Committee for Vaccination and Vaccines) - CNCV
+Committee: Comité National Consultatif pour la Vaccination et les Vaccins (CNCV)
 Year established: 2013
 `,
     `
 Bhutan
-Committee: National Committee of Immunization Practices of Bhutan - NCIP
+Committee: National Committee of Immunization Practices of Bhutan (NCIP)
 Year established: 2008
 Year evaluated: 2020
 `,
     `
 Bolivia
-Committee: Comité Nacional de Inmunizaciones
+Committee: Comité Nacional de Inmunizaciones (CNI)
 Year established: 2000
 Website: https://pai.minsalud.gob.bo/pagina/54
 `,
     `
 Bosnia and Herzegovina
-Committee: Stručno savjetodavno tijelo za imunizaciju
+Committee: Stručno savjetodavno tijelo za imunizaciju (SSTI)
 Year established: 2005
 Year evaluated: 2022
 Website: https://www.zzjzfbih.ba/informacije-o-cjepivu/
 `,
     `
 Botswana
-Committee: BOTS-NITAG
+Committee: Botswana National Immunization Technical Advisory Group (BOTSNITAG)
 Year established: 2022
 `,
     `
@@ -104,7 +104,7 @@ Brazil
 `,
     `
 Brunei Darussalam
-Committee: Brunei NITAG
+Committee: Brunei National Immunization Technical Advisory Group
 Year established: 2021
 `,
     `
@@ -112,7 +112,7 @@ Bulgaria
 `,
     `
 Burkina Faso
-Committee: NITAG Burkina
+Committee: Groupe Technique Consultatif sur la Vaccination (GTCV)
 Year established: 2014
 Year evaluated: 2023
 `,
@@ -128,7 +128,7 @@ Year established: 2015
 `,
     `
 Canada
-Committee: National Advisory Committee on Immunization - NACI
+Committee: National Advisory Committee on Immunization (NACI)
 Year established: 1964
 Website: https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci/naci-membership-representation.html
 `,
@@ -143,7 +143,7 @@ Central African Republic`,
 Cyprus`,
     `
 Chile
-Committee: Comité asesor en vacunas y estrategias de inmunización - CAVEI
+Committee: Comité asesor en vacunas y estrategias de inmunización (CAVEI)
 Year established: 2011
 Website: https://vacunas.minsal.cl/cavei/
 `,
@@ -167,7 +167,7 @@ Year established: 2023
 `,
     `
 Congo (Democratic Republic of)
-Committee: DRC NITAG
+Committee: DRC National Immunization Technical Advisory Group (DRCNITAG)
 Year established: 2016
 `,
     `
@@ -177,7 +177,7 @@ Year established: 2001
 `,
     `
 Ivory Coast
-Committee: Comité National d'Experts Indépendants pour la Vaccination et les vaccins de la Côte d'Ivoire (National Committee of Independent Experts for Vaccination and Vaccines in the Ivory Coast) - CNEIV-CI
+Committee: Comité National d'Experts Indépendants pour la Vaccination et les vaccins de la Côte d'Ivoire (CNEIVCI)
 Year established: 2009
 `,
     `
@@ -194,13 +194,13 @@ Equatorial Guinea
 `,
     `
 Czech Republic
-Committee: NIKO
+Committee: Národní imunizační komise (NIKO)
 Year established: 2023
 Website: https://ppo.mzcr.cz/workGroup/11
 `,
     `
 Denmark
-Committee: Sundhedsstyrelsens vaccinationsudvalg (Vaccination Committee for Health)
+Committee: Sundhedsstyrelsens vaccinationsudvalg (VVU)
 Year established: 1980
 Website: https://www.sst.dk/en/english/General-public
 `,
@@ -215,7 +215,7 @@ Year established: 2023
 `,
     `
 Ecuador
-Committee: Comité Nacional de Inmunización (National Committee on Immunization)
+Committee: Comité Nacional de Inmunización (CNI)
 Year established: 2018
 Website: http://www.salud.gob.ec/programa-ampliado-de-inmunizaciones-pai/
 `,
@@ -237,7 +237,7 @@ Eswatini
 `,
     `
 Estonia
-Committee: Expert Committee for Immunoprophylaxis
+Committee: Expert Committee for Immunoprophylaxis (ECI)
 Year established: 2006
 `,
     `
@@ -250,13 +250,13 @@ Fiji
 `,
     `
 Finland
-Committee: Kansallinen rokotusasiantuntijaryhmä (National Advisory Committee on Vaccination) - KRAR
+Committee: Kansallinen rokotusasiantuntijaryhmä (KRAR)
 Year established: 2001
 Website: https://thl.fi/en/topics/infectious-diseases-and-vaccinations/information-about-vaccinations/finnish-national-vaccination-programme
 `,
     `
 France
-Committee: Commission Technique des Vaccinations (Technical Committee on Vaccination) - CTV
+Committee: Commission Technique des Vaccinations (CTV)
 Year established: 1985
 Website: https://www.has-sante.fr/jcms/c_2758065/en/technical-committee-for-vaccinations
 `,
@@ -273,19 +273,19 @@ Year established: 2014
 `,
     `
 Germany
-Committee: Ständige Impfkommission (German Standing Vaccination Committee) - STIKO
+Committee: Ständige Impfkommission (STIKO)
 Year established: 1972
 Website: https://www.rki.de/EN/Topics/Infectious-diseases/Immunisation/STIKO/standing-committee-on-vaccination-stiko-node.html
 `,
     `
 Ghana
-Committee: NITAG GH
+Committee: Ghana National Immunization Technical Advisory Group (GHNITAG)
 Year established: 2018
 Year evaluated: 2024
 `,
     `
 Greece
-Committee: National Immunization Committee
+Committee: National Immunization Committee (NIC)
 Year established: 1991
 `,
     `
@@ -295,7 +295,7 @@ Year established: 2018
 `,
     `
 Guatemala
-Committee: Consejo Nacional de Prácticas de Inmunizaciones (National Council on Immunization Practices) - CONAPI
+Committee: Consejo Nacional de Prácticas de Inmunizaciones (CONAPI)
 Year established: 2013
 `,
     `
@@ -304,7 +304,7 @@ Year established: 2018
 `,
     `
 Guinea-Bissau
-Committee: Groupe Technique Consultatif National pour la Vaccination (GTCNV) Guinee Bissau
+Committee: Groupe Technique Consultatif National pour la Vaccination (GTCNV)
 Website: https://sivegub.info/index.php/2025/01/23/decreto-ministerial-que-cria-o-nitag-na-guine-bissau/
 `,
     `
@@ -328,14 +328,14 @@ Year established: 1998
 `,
     `
 India
-Committee: National Technical Advisory Group on Immunisation in India - NTAGI
+Committee: National Technical Advisory Group on Immunisation in India (NTAGI)
 Year established: 2001
 Year evaluated: 2020
 Website: https://nihfw.ac.in/cms/national-technical-advisory-group-on-immunization-ntagi.php
 `,
     `
 Indonesia
-Committee: Indonesian Technical Advisory Group on Immunization - ITAGI
+Committee: Indonesian Technical Advisory Group on Immunization (ITAGI)
 Year established: 2007
 Year evaluated: 2020
 `,
@@ -349,19 +349,19 @@ Hungary
     `
 
 Ireland
-Committee: National Immunisation Advisory Committee - NIAC
+Committee: National Immunisation Advisory Committee (NIAC)
 Year established: 1998
 Website: https://www.hiqa.ie/areas-we-work/national-immunisation-advisory-committee
 `,
 
     `
 Islamic Republic of Iran
-Committee: National Immunization Technical Advisory Group in the Islamic Republic of Iran
+Committee: Iran National Immunization Technical Advisory Group (IRNITAG)
 Year established: 1982
 `,
     `
 Israel
-Committee: Advisory Committee on Infectious Diseases and Immunizations
+Committee: Advisory Committee on Infectious Diseases and Immunizations (ACIDI)
 `,
 
     `
@@ -375,7 +375,7 @@ Year established: 2018
 `,
     `
 Japan
-Committee: NITAG Japan
+Committee: Yobō Sesshu Wakuchin Bunkakai (MHLW)
 `,
     `
 Jordan
@@ -388,7 +388,7 @@ Website: http://nitag.kz/
 `,
     `
 Kenya
-Committee: National Immunization Technical Advisory Group of Kenya - KENITAG
+Committee: National Immunization Technical Advisory Group of Kenya (KENITAG)
 Year established: 2014
 `,
     `
@@ -401,7 +401,7 @@ Year established: 1972
 `,
     `
 Kyrgyzstan
-Committee: Technical Advisory Group of Immunization Experts - TAGIE
+Committee: Technical Advisory Group of Immunization Experts (TAGIE)
 Year established: 2012
 Year evaluated: 2023
 `,
@@ -412,20 +412,20 @@ Year established: 2013
 `,
     `
 Latvia
-Committee: Imunizācijas valsts padome (State Immunization Council)
+Committee: Imunizācijas valsts padome (IVP)
 Year established: 2000
 Website: http://www.vm.gov.lv/lv/ministrija/konsultativas_padomes/imunizacijas_valsts_padome/
 `,
     `
 Lebanon
-Committee: Groupe Technique National de Consultation d'Immunisation (Lebanon National Immunization Technical Advisory Group)
+Committee: Groupe Technique National de Consultation d'Immunisation (GTNCI) 
 Year established: 2022
 Year evaluated: 2023
 `,
     `
 
 Lesotho
-Committee: Les-NITAG
+Committee: Lesotho National Immunization Technical Advisory Group (LESNITAG)
 Year established: 2018
 Year evaluated: 2025
 Evaluation information: The
@@ -436,54 +436,54 @@ Year established: 2021
 `,
     `
 Lithuania
-Committee: Board for coordination of National Immunization Programme
+Committee: Board for coordination of National Immunization Programme (BCNIP)
 Year established: 1999
 `,
     `
 Luxembourg
-Committee: Conseil Supérieur des Maladies Infectieuses (Council of Infectious Diseases) - CSMI
+Committee: Conseil Supérieur des Maladies Infectieuses (CSMI)
 Year established: 1963
 Website: https://sante.public.lu/fr/espace-professionnel/recommandations/conseil-maladies-infectieuses.html
 `,
     `
 Macedonia
-Committee: National Immunization Committee
+Committee: National Immunization Committee (NIC)
 `,
     `
 Madagascar
-Committee: NITAG Madagascar
+Committee: Groupe Technique Consultatif sur la Vaccination (GTCV)
 Year established: 2022
 `,
     `
 Malawi
-Committee: MAITAG (Malawi NITAG)
+Committee: Malawi National Immunization Technical Advisory Group (MAITAG)
 Year established: 2015
 `,
     `
 Malaysia
-Committee: National Committee on Immunization Practices - NCIP
+Committee: National Committee on Immunization Practices (NCIP)
 Year established: 2008
 `,
     `
 Maldives
-Committee: Maldives National Committees for Immunization Practices
+Committee: Maldives National Committees for Immunization Practices (MNCIP)
 Year established: 2008
 Year evaluated: 2020
 `,
     `
 Mali
-Committee: Groupe Technique Consultatif pour les Vaccins et la Vaccination au Mali (GTCV-MALI)
+Committee: Groupe Technique Consultatif pour les Vaccins et la Vaccination (GTCV)
 Year established: 2014
 `,
     `
 Malta
-Committee: Advisory Committee on Immunisation Policy
+Committee: Advisory Committee on Immunisation Policy (ACIP)
 Year established: 2007
 Website: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Officially%20Appointed%20Bodies/Pages/Committees/Advisory-Committee-on-Immunisation.aspx
 `,
     `
 Mauritius
-Committee: MAUNITAG
+Committee: Mauritius National Immunization Technical Advisory Group (MAUNITAG)
 Year established: 2019
 Year evaluated: 2025
 `,
@@ -518,7 +518,7 @@ Micronesia
 `,
     `
 Mongolia
-Committee: Mongolian National Immunization Technical Advisory Group
+Committee: Mongolian National Immunization Technical Advisory Group (MONITAG)
 Year established: 2010
 `,
     `
@@ -530,19 +530,19 @@ Year established: 1982
 `,
     `
 Mozambique
-Committee: Comité de Peritos para a Imunização (Committee of experts on Immunization) - CoPI
+Committee: Comité de Peritos para a Imunização (CoPI)
 Year established: 2011
 Year evaluated: 2017
 `,
     `
 Myanmar
-Committee: National Committee of Immunization Practices of Myanmar - NCIP
+Committee: National Committee of Immunization Practices of Myanmar (NCIP)
 Year established: 2009
 Year evaluated: 2020
 `,
     `
 Namibia
-Committee: Namibia NITAG
+Committee: Namibia National Immunization Technical Advisory Group (N-NITAG)
 `,
     `
 Nauru
@@ -552,19 +552,19 @@ Philippines
 `,
     `
 Nepal
-Committee: Nepal National Committee on Immunization Practices - NCIP
+Committee: Nepal National Committee on Immunization Practices (NCIP)
 Year established: 2010
 Year evaluated: 2020
 `,
     `
 Netherlands
-Committee: Committe on Vaccinations
+Committee: Committe on Vaccinations (CoV)
 Year established: 1902
 Website: https://www.healthcouncil.nl/about-us/organisation/permanent-committees/committee-on-vaccinations
 `,
     `
 New Zealand
-Committee: Immunization Sub-committee of The Pharmacology and Therapeutics Advisory Committee - PTAC
+Committee: Immunization Sub-committee of The Pharmacology and Therapeutics Advisory Committee (PTAC)
 Year established: 1984
 Website: https://pharmac.govt.nz/about/expert-advice/pharmacology-and-therapeutics-advisory-committee-ptac
 `,
@@ -573,41 +573,41 @@ Nicaragua
 `,
     `
 Niger
-Committee: Groupe Technique Consultatif pour la Vaccination au Niger (Technical Advisory Group for Vaccination in Niger)
+Committee: Groupe Technique Consultatif pour la Vaccination (GTCV)
 Year established: 2013
 `,
     `
 Nigeria
-Committee: NGI-TAG
+Committee: Nigeria National Immunization Technical Advisory Group (NGITAG)
 Year established: 2015
 `,
     `
 Norway
 `,
     `North Korea
-Committee: Korea Expert Committee on Immunization Practices - KECIP
+Committee: Korea Expert Committee on Immunization Practices (KECIP)
 Year established: 1990`,
     `
 Oman
-Committee: National Committee for Vaccines Regulation and Surveillance of Vaccine-Preventable Diseases in the Sultanate of Oman
+Committee: National Committee for Vaccines Regulation and Surveillance of Vaccine-Preventable Diseases (NCVR)
 Year established: 2000
 Year evaluated: 2023`,
     `
 Pakistan
-Committee: National Immunization Technical Advisory Group
+Committee: Pakistan National Immunization Technical Advisory Group (PAKNITAG)
 `,
     `
 Panama
 `,
     `
 Paraguay
-Committee: COTENAI
+Committee: Comité Técnico Nacional de Inmunizaciones (COTENAI)
 Year established: 2012
 Year evaluated: 2023
 `,
     `
 Peru
-Committee: COMITE DE EXPERTOS DE LA ESTRATEGIA SANITARIA DE INMUNIZACIONES MINSA PERU
+Committee: COMITE DE EXPERTOS DE LA ESTRATEGIA SANITARIA DE INMUNIZACIONES MINSA PERU (CEESI)
 Year established: 2012
 `,
     `
@@ -616,7 +616,7 @@ Year established: 2003
 `,
     `
 Portugal
-Committee: Comissão Técnica de Vacinação (Technical Committee on Immunization) - CTV
+Committee: Comissão Técnica de Vacinação (CTV)
 Year established: 1997
 Website: https://www.actamedicaportuguesa.com/revista/index.php/amp/article/view/12155/5856
 `,
@@ -631,7 +631,7 @@ Year established: 2022
 `,
     `
 Russian Federation
-Committee: Working Group of Experts on Immunoprophylaxis of Infectious Diseases
+Committee: Рабочая группа экспертов по иммунопрофилактике инфекционных болезней (РГЭИИБ)
 Year established: 2018
 `,
     `
@@ -661,57 +661,57 @@ Year established: 2008
 `,
     `
 Senegal
-Committee: Comité Consultatif pour la Vaccination au Sénégal (Advisory Committee for Vaccination in Senegal) - CCVS
+Committee: Comité Consultatif pour la Vaccination au Sénégal (CCVS)
 Year established: 2013
 `,
     `
 Serbia
-Committee: Serbian Expert Committee on Immunization
+Committee: Stručni Ekspertski Komitet za Imunizaciju (SECI)
 Year established: 2018
 Year evaluated: 2023
 `,
     `
 Seychelles
-Committee: Seychelles NITAG
+Committee: Seychelles National Immunization Technical Advisory Group (SYCNITAG)
 Year established: 2019
 Year evaluated: 2022
 `,
     `
 Sierra Leone
-Committee: NITAG-SL
+Committee: Sierra Leone National Immunization Technical Advisory Group (SLNITAG)
 Year established: 2020
 `,
     `
 Singapore
-Committee: Expert Committee on Immunisation - ECI
+Committee: Expert Committee on Immunisation (ECI)
 Year established: 1975
 `,
     `
 Slovakia
-Committee: Working Group for Immunization Issues
+Committee: Working Group for Immunization Issues (WGII)
 Year established: 2006
 `,
     `
 Slovenia
-Committee: Advisory Committee on Immunization - Posvetovalna skupina za cepljenje (PSC)
+Committee: Posvetovalna skupina za cepljenje (PSC)
 Year established: 2011
 Website: http://www.nijz.si/sl/posvetovalna-skupina-za-cepljenje
 `,
     `
 Somalia
-Committee: Somali NITAG
+Committee: Somalia National Advisory Group on Immunization (SOMNITAG)
 Year established: 2023
 `,
     `
 
 South Africa
-Committee: National Advisory Group on Immunization of South Africa - NAGI
+Committee: National Advisory Group on Immunization of South Africa (NAGI)
 Year established: 1993
 Year evaluated: 2024
 `,
     `
 South Korea
-Committee: Korea Expert Committee on Immunization Practices
+Committee: Korea Expert Committee on Immunization Practices (KECIP)
 Year established: 1992
 Website: https://www.kdca.go.kr/index.es?sid=a3
 `,
@@ -722,13 +722,13 @@ Year established: 2016
 `,
     `
 Spain
-Committee: Ponencia de Registro y Programa de Vacunaciones (National Vaccines Committee)
+Committee: Ponencia de Registro y Programa de Vacunaciones (PRPV)
 Year established: 1991
 Website: https://www.mscbs.gob.es/profesionales/saludPublica/prevPromocion/vacunaciones/comoTrabajamos/ponencia.htm
 `,
     `
 Sri Lanka
-Committee: Advisory Committee on Communicable Diseases - ACCD
+Committee: Advisory Committee on Communicable Diseases (ACCD)
 Year evaluated: 2020
 `
     ,
@@ -741,7 +741,7 @@ Liechtenstein
 `,
     `
 Sudan
-Committee: Sudan NITAG
+Committee: Sudan National Immunization Technical Advisory Group (SDNNITAG)
 Year established: 2009
 Year evaluated: 2024
 `,
@@ -753,20 +753,20 @@ Year established: 2018
     `
 
 Sweden
-Committee: Reference group for national vaccination programmes
+Committee: Reference group for national vaccination programmes (REFVAC)
 Year established: 2016
 Website: https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/communicable-disease-control/vaccinations/vaccination-programmes
 `,
     `
 
 Switzerland
-Committee: Commission Fédérale pour les Vaccinations (Federal Vaccination Commission) - CFV
+Committee: Commission Fédérale pour les Vaccinations (CFV)
 Year established: 2004
 Website: https://www.bag.admin.ch/en/
 `,
     `
 Syria
-Committee: National Immunization Technical Advisory Group - NITAG
+Committee: Syria National Immunization Technical Advisory Group (SYRNITAG)
 Year established: 2007
 `,
     `
@@ -781,14 +781,14 @@ Tonga
     `
 
 Tanzania (United Republic Of)
-Committee: TITAG
+Committee: Tanzania National Immunization Technical Advisory Group (TZNITAG)
 Year established: 2017
 Year evaluated: 2023
 `,
     `
 
 Thailand
-Committee: Advisory Committee on Immunization Practices of Thailand - ACIP
+Committee: Advisory Committee on Immunization Practices of Thailand (ACIP)
 Year established: 1970
 Year evaluated: 2020
 Website: http://www.nvco.go.th/
@@ -800,7 +800,7 @@ Year evaluated: 2020
 `,
     `
 Togo
-Committee: GTCV-Togo
+Committee: Groupe Technique Consultatif sur la Vaccination (GTCV)
 Year established: 2015
 Year evaluated: 2023
 `,
@@ -812,7 +812,7 @@ Year established: 2018
     `
 
 Tunisia
-Committee: Comité Technique de Vaccination (Technical Immunization Committee) - CTV
+Committee: Comité Technique de Vaccination (CTV)
 Year established: 2010
 `,
     `
@@ -825,7 +825,7 @@ Year evaluated: 2023
     `
 
 Uganda
-Committee: UNITAG
+Committee: Uganda National Immunization Technical Advisory Group (UNITAG)
 Year established: 2014
 Year evaluated: 2022
 `,
@@ -837,13 +837,13 @@ United Arab Emirates
 `,
     `
 United Kingdom
-Committee: Joint Committee on Vaccination and Immunisation - JCVI
+Committee: Joint Committee on Vaccination and Immunisation (JCVI)
 Year established: 1963
 Website: https://www.gov.uk/government/groups/joint-committee-on-vaccination-and-immunisation
 `,
     `
 United States
-Committee: Advisory Committee on Immunization Practices - ACIP
+Committee: Advisory Committee on Immunization Practices (ACIP)
 Year established: 1964
 Website: https://www.cdc.gov/acip/?CDC_AAref_Val=https://www.cdc.gov/vaccines/acip/index.html
 `,
@@ -869,23 +869,23 @@ Venezuela
 `,
     `
 Viet Nam
-Committee: National Immunization Technical Advisory Group for the use of Vaccine and Biologicals
+Committee: National Immunization Technical Advisory Group for the use of Vaccine and Biologicals (NITAG-UVB)
 Year established: 1998
 `,
     `
 Yemen
-Committee: National Immunization Technical Advisory Group - NITAG
+Committee: Yemen National Immunization Technical Advisory Group (YEMNITAG)
 Year established: 2009
 `,
     `
 Zambia
-Committee: ZITAG
+Committee: Zambia Immunization Technical Advisory Group (ZITAG)
 Year established: 2016
 Year evaluated: 2023
 `,
     `
 Zimbabwe
-Committee: Child Survival Technical Working Group
+Committee: Child Survival Technical Working Group (CSTWG)
 Year established: 2011
 `
 ]
