@@ -870,7 +870,7 @@ Year evaluated: 2020
 `,
                                 `
 Namibia
-Committee: Namibia National Immunization Technical Advisory Group (N-NITAG)
+Committee: Namibia National Immunization Technical Advisory Group (NAMNITAG)
 `,
                                 `
 Nauru
@@ -1258,7 +1258,6 @@ Year established: 2011
                                 const website = x.filter((z) => z.includes('Website'))[0] || "";
 
                                 let countryName = x[0]
-                                console.log('country name >> ', countryName)
 
                                 countryWebsiteList.push({
                                         country: countryName + "",
@@ -1310,6 +1309,38 @@ Year established: 2011
                         const dataOption = [['Country', { role: "tooltip", type: "string", p: { html: true } }], ...finalRemapNitagCountry];
 
 
+                        const countryLogic = (ct) => {
+                                ct = ct.toUpperCase();
+                                if (ct === "SS") {
+                                        return "South Sudan"
+                                }
+                                if (ct === "RU") {
+                                        return "Russian Federation"
+                                }
+                                if (ct === "United States") {
+                                        return "United States"
+                                }
+                                if (ct === "CD") {
+                                        return "Congo (Democratic Republic of)"
+                                }
+                                if (ct === "CG") {
+                                        return "Congo"
+                                }
+                                if (ct === "VN") {
+                                        return "Viet Nam"
+                                }
+                                if (ct === "LY") {
+                                        return "State of Libya"
+                                }
+                                if (ct === "IR") {
+                                        return "Islamic Republic of Iran"
+                                }
+                                if (ct === "LA") {
+                                        return "Lao People's Democratic Republic"
+                                }
+
+                                return ct;
+                        }
                         function drawRegionsMap() {
                                 const data = google.visualization.arrayToDataTable(dataOption);
 
@@ -1352,10 +1383,14 @@ Year established: 2011
                                                         window?.scrollTo({
                                                                 top: itemOffsetTop,
                                                                 behavior: "smooth"
-                                                        })
+                                                        });
                                                         // sidebar?.scrollTop = itemOffsetTop;
+                                                        let committee = data.getValue(selection[0].row, 1);
+                                                        if (!committee.includes('<span') && !committee.includes('Year')) {
+                                                                committee = ""
+                                                        };
 
-                                                        handleCountryClick(country, websiteUrl);
+                                                        handleCountryClick(country, websiteUrl, committee);
                                                 };
                                         };
                                 });
@@ -1411,7 +1446,7 @@ Year established: 2011
                                 return str;
                         }
 
-                        function handleClickCountryMatchURL(country, url) {
+                        function handleClickCountryMatchURL(country, url, comitee) {
                                 const noNitagElm = document.getElementById('no-nitag');
                                 if (country) {
                                         let originalCountryName = country;
@@ -1444,9 +1479,17 @@ Year established: 2011
 
                                         originalCountryName = (originalCountryName != "United States" && originalCountryName != "SS" && originalCountryName != "RU" && originalCountryName != "CD" && originalCountryName != "CG" && originalCountryName && "LA") ? originalCountryName : country
 
-                                        if (url === "-") {
-                                                noNitagElm.textContent = `The NITAG of ${turnFirstLetterOfWordUpperCase(country)} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
+                                        if (comitee === "") {
+                                                noNitagElm.textContent = `${turnFirstLetterOfWordUpperCase(countryLogic(country))} does not belong to NITAG or GNN Member. To find out more please click here to open GNN network website`
                                                 noNitagElm.style.display = "block";
+                                                return;
+                                        }
+
+                                        if (url === "-") {
+                                                const parseCommitteeName = comitee.split('</span>')[0].split('>')[1]
+                                                noNitagElm.textContent = `The NITAG of ${turnFirstLetterOfWordUpperCase(countryLogic(country))}, ${parseCommitteeName || ""} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
+                                                noNitagElm.style.display = "block";
+                                                return;
                                                 // window.alert(`No available data for XXXX ${originalCountryName}.`)
                                         }
 
@@ -1458,14 +1501,14 @@ Year established: 2011
                                 }
                         }
 
-                        function handleCountryClick(country, url) {
+                        function handleCountryClick(country, url, comitee) {
                                 const sidebarButtons = document.querySelectorAll('.sidebar button');
                                 sidebarButtons.forEach(btn => btn.classList.remove('active'));
 
                                 const clickedButton = Array.from(sidebarButtons).find(btn => btn.textContent === country);
                                 if (clickedButton) clickedButton.classList.add('active');
 
-                                handleClickCountryMatchURL(country, url);
+                                handleClickCountryMatchURL(country, url, comitee);
                         }
                 }, 1500);
         </script>

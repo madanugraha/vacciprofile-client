@@ -245,15 +245,23 @@ const Sidebar = ({
                                 <div id={`nitag-country-${item[0]}`} onClick={() => {
                                     handleClickSidebar(item);
                                     const ctx = item[0];
-                                    function handleClickCountryMatchURL(country, url) {
+                                    function handleClickCountryMatchURL(country, url, isGnn, committee) {
                                         const noNitagElm = document.getElementById('no-nitag');
                                         if (country) {
                                             country = country.toLowerCase();
+
+                                            if (!isGnn) {
+                                                noNitagElm.textContent = `${turnFirstLetterOfWordUpperCase(country)} does not belong to NITAG or GNN Member. To find out more please click here to open GNN network website`
+                                                noNitagElm.style.display = "block";
+                                                return;
+                                            }
+
                                             if (url === "Unavailable") {
-                                                noNitagElm.textContent = `The NITAG of ${turnFirstLetterOfWordUpperCase(country)} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
+                                                noNitagElm.textContent = `The NITAG of ${turnFirstLetterOfWordUpperCase(country)}, ${committee === "-" ? '' : committee} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`
                                                 noNitagElm.style.display = "block";
                                                 // toast.error(`The NITAG of ${country} does not have its own dedicated website. You will, however, find some information on the website of the WHO Global NITAG Network (GNN). Click here to open GNN network website`)
-                                            }
+                                            };
+
                                             if (url !== "Unavailable") {
                                                 noNitagElm.textContent = ``
                                                 noNitagElm.style.display = "none";
@@ -264,11 +272,12 @@ const Sidebar = ({
 
                                     const website = item[1]
                                     if (website && website.split('Website: ').length > 0) {
+                                        let isPartGnn = website.includes('Committee') && website.includes('Year');
                                         const websiteUrl = website.split('Website: ')[1];
-                                        handleClickCountryMatchURL(ctx, websiteUrl)
+                                        handleClickCountryMatchURL(ctx, websiteUrl, isPartGnn, website.split('<br/>')[0].replace('Committee: ', ''))
                                     };
                                 }} className={`sidebar-item bg-sidebar-unselected text-dark rounded-3 ms-2 mb-1 ${(activeTab === 'Nitag' && selectedNitag === item) ? 'active' : 'inactive'}`}>
-                                    {item[0]}{item.length > 0 ? `${(!item[1]?.includes('Committee: -') ? ", " + item[1].split('<br/>')[0]?.replace('Committee: ', '') : "")}` : ""}
+                                    {item[0]}{item.length > 0 ? `${(item[1]?.includes('Committee:') ? ", " + item[1].split('<br/>')[0]?.replace('Committee: ', '') : "")}` : ""}
                                 </div>
                             </>
                         )

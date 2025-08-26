@@ -542,7 +542,7 @@ Year evaluated: 2020
 `,
     `
 Namibia
-Committee: Namibia National Immunization Technical Advisory Group (N-NITAG)
+Committee: Namibia National Immunization Technical Advisory Group (NAMNITAG)
 `,
     `
 Nauru
@@ -921,9 +921,9 @@ const q1 = q.map((x) => x.split('\n').filter((z) => z !== "")).map((x, i) => {
 });
 
 export const finalRemapNitagCountry = q1.map((x) => {
-    const comitee = x.filter((z) => z.includes('Committee'))[0] || "Committee: -";
-    const established = x.filter((z) => z.includes('established'))[0] || "Year established: -";
-    const evaluated = x.filter((z) => z.includes('evaluated'))[0] || "Year evaluated: -";
+    const comitee = x.filter((z) => z.includes('Committee'))[0] || "";
+    const established = x.filter((z) => z.includes('established'))[0] || "";
+    const evaluated = x.filter((z) => z.includes('evaluated'))[0] || "";
     const website = x.filter((z) => z.includes('Website'))[0] || "Website: Unavailable";
 
     let countryName = x[0];
