@@ -22,6 +22,10 @@
                         font-weight: bold;
                 }
 
+                .google-visualization-tooltip-item {
+                        white-space: nowrap;
+                }
+
                 .container-home {
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
@@ -1247,16 +1251,17 @@ Year established: 2011
 
                         const countryWebsiteList = [];
                         const finalRemapNitagCountry = q1.map((x) => {
-                                const comitee = x.filter((z) => z.includes('Committee'))[0] || "Committee: -";
-                                const parsedComittee = comitee === "Committee: -" ? "Committee: -" : `${comitee.includes('-') ? `${comitee.split('-')[0].replace('Committee: ', '')} (${comitee.split('-')[1].replace(' ', '')})` : comitee.replace('Committee: ', '')}`
-                                const established = x.filter((z) => z.includes('established'))[0] || "Year established: -";
-                                const evaluated = x.filter((z) => z.includes('evaluated'))[0] || "Year evaluated: -";
-                                const website = x.filter((z) => z.includes('Website'))[0] || "Website: Unavailable";
+                                const comitee = x.filter((z) => z.includes('Committee'))[0] || ""
+                                const parsedComittee = comitee === "" ? "" : `${comitee.includes('-') ? `${comitee.split('-')[0].replace('Committee: ', '')} (${comitee.split('-')[1].replace(' ', '')})` : comitee.replace('Committee: ', '')}`
+                                const established = x.filter((z) => z.includes('established'))[0] || "";
+                                const evaluated = x.filter((z) => z.includes('evaluated'))[0] || "";
+                                const website = x.filter((z) => z.includes('Website'))[0] || "";
 
-                                let countryName = x[0];
+                                let countryName = x[0]
+                                console.log('country name >> ', countryName)
 
                                 countryWebsiteList.push({
-                                        country: countryName,
+                                        country: countryName + "",
                                         website: website
                                 });
 
@@ -1298,7 +1303,7 @@ Year established: 2011
 
 
 
-                                return [countryName, `<span style='color:blue'>${parsedComittee}</span> <br/> ${established}`]
+                                return [countryName, `${parsedComittee ? `<span style='color:blue'>${parsedComittee}</span><br/>` : ""}${established}`]
                         });
 
 
