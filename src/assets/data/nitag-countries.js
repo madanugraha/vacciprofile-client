@@ -16,6 +16,7 @@ Year established: 2010
 Year evaluated: 2023`,
     `Andorra`,
     `Angola
+Committee: Comité Nacional de Peritos para o Programa Alargado de Vacinação (PAV)
 Year established: 2017
 Year evaluated: 2019`,
     `
@@ -40,6 +41,7 @@ Year established: 1997
 Website: https://beta.health.gov.au/committees-and-groups/australian-technical-advisory-group-on-immunisation`,
     `
 Austria
+Committee: Nationales Impfgremium (NIG)
 Website: https://www.sozialministerium.at/Themen/Gesundheit/Impfen/Nationales-Impfgremium.html`,
     `
 Azerbaijan
@@ -124,7 +126,9 @@ Cambodia
 `,
     `
 Cameroon
+Committee: Groupe National Consultatif Technique en Vaccination (GNCV)
 Year established: 2015
+Website: https://pevcameroon.cm/apropos/histories?lang=en
 `,
     `
 Canada
@@ -134,13 +138,18 @@ Website: https://www.canada.ca/en/public-health/services/immunization/national-a
 `,
     `
 Chad
+Committee: Comité National Technique de Vaccination (CNTV)
 Year established: 2023`,
     `
-Cape Verde`,
+Cape Verde
+Committee: Grupo Técnico Consultivo da Vacinação (GTCV)
+Website: https://www.governo.cv/ministro-da-saude-confere-posse-ao-grupo-tecnico-consultivo-da-vacinacao-gtcv-de-cabo-verde/`,
     `
 Central African Republic`,
     `
-Cyprus`,
+Cyprus
+Committee: National Vaccination Advisory Committee (NVAC)
+Website: https://www.gov.cy/moh/en/committees`,
     `
 Chile
 Committee: Comité asesor en vacunas y estrategias de inmunización (CAVEI)
@@ -182,12 +191,16 @@ Year established: 2009
 `,
     `
 Croatia
+Committee: Croatian National Immunization Technical Advisory Group (CNITAG)
 `,
     `
 Cuba
+Committee: Grupo Asesor Técnico sobre Enfermedades Prevenibles por Vacunación (GTA)
 `,
     `
 Dominican Republic
+Committee: Comité Técnico Asesor de Inmunoprevenibles por Vacunas (CNATI)
+Website: https://www.diariosalud.do/noticias/cnati-rd-respalda-actualizacion-calendario-de-inmunizacion-nacional/
 `,
     `
 Equatorial Guinea
@@ -211,6 +224,7 @@ Year established: 2018
 `,
     `
 Djibouti
+Committee: Djibouti National Immunization Technical Advisory Group (DJINITAG)
 Year established: 2023
 `,
     `
@@ -221,6 +235,7 @@ Website: http://www.salud.gob.ec/programa-ampliado-de-inmunizaciones-pai/
 `,
     `
 Egypt
+Committee: Egypt National Immunization Technical Advisory Group (EGYNITAG)
 Year established: 1992
 `,
     `
@@ -234,6 +249,8 @@ Eritrea
 `,
     `
 Eswatini
+Committee: Swaziland National Immunization Technical Advisory Group (SWANITAG)
+
 `,
     `
 Estonia
@@ -242,11 +259,13 @@ Year established: 2006
 `,
     `
 Ethiopia
+Committee: Ethiopian National Immunization Technical Advisory Group (ENITAG)
 Year established: 2016
 Website: https://www.ajol.info/index.php/ejhs/article/view/266675
 `,
     `
 Fiji
+Committee: National Vaccine-Preventable Diseases Committee (NVPDC)
 `,
     `
 Finland
@@ -262,13 +281,16 @@ Website: https://www.has-sante.fr/jcms/c_2758065/en/technical-committee-for-vacc
 `,
     `
 Gambia
+Committee: Gambia National Immunization Technical Advisory Group (GMNITAG)
 Year established: 2020
 `,
     `
 Gabon
+Committee: Comité National Technique de Vaccination (CNTV)
 `,
     `
 Georgia
+Committee: ეროვნული იმუნიზაციის ტექნიკური საკონსულტაციო ჯგუფი (GEONITAG)
 Year established: 2014
 `,
     `
@@ -300,6 +322,7 @@ Year established: 2013
 `,
     `
 Guinea
+Committee: Groupe Consultatif National sur la Vaccination (GINITAG)
 Year established: 2018
 `,
     `
@@ -341,10 +364,12 @@ Year evaluated: 2020
 `,
     `
 Iraq
+Committee: اللجنة الفنية الوطنية للتطعيمات (IRNITAG)
 Year established: 2002
 `,
     `
 Hungary
+Committee: Országos Immunizációs Szakértői Tanács (OIST)
 `,
     `
 
@@ -366,6 +391,7 @@ Committee: Advisory Committee on Infectious Diseases and Immunizations (ACIDI)
 
     `
 Italy
+Committee: Gruppo Tecnico Consultivo Nazionale Vaccinazioni (GTCNV)
 Year established: 2017
 `,
     `
@@ -379,6 +405,7 @@ Committee: Yobō Sesshu Wakuchin Bunkakai (MHLW)
 `,
     `
 Jordan
+Committee: اللجنة الفنية الوطنية للتطعيمات (JORNITAG)
 `,
     `
 Kazakhstan
@@ -397,6 +424,7 @@ Year established: 2014
 `,
     `
 Kuwait
+Committee: اللجنة الفنية الوطنية للتطعيمات (KWTNITAG)
 Year established: 1972
 `,
     `
@@ -526,6 +554,7 @@ Montenegro
 `,
     `
 Morocco
+Committee: اللجنة التقنية والعلمية الاستشارية في مجال التلقيح (TSACV)
 Year established: 1982
 `,
     `
@@ -549,6 +578,7 @@ Nauru
 `,
     `
 Philippines
+Committee: National Immunization Committee (NIC)
 `,
     `
 Nepal
@@ -583,6 +613,8 @@ Year established: 2015
 `,
     `
 Norway
+Committee: Vitenskapelig referansegruppe for nasjonale vaksinasjonsprogram (SRGNIP)
+Website: https://www.fhi.no/en/va/innforing-av-nye-vaksiner/scientific-reference-group-for-national-immunisation-programs/
 `,
     `North Korea
 Committee: Korea Expert Committee on Immunization Practices (KECIP)
@@ -598,6 +630,8 @@ Committee: Pakistan National Immunization Technical Advisory Group (PAKNITAG)
 `,
     `
 Panama
+Committee: Comité Nacional de Inmunización (NIC)
+Website: https://rna.campusvirtualsp.org/en/country/panama
 `,
     `
 Paraguay
@@ -612,6 +646,7 @@ Year established: 2012
 `,
     `
 Poland
+Committee: Komitet ds. Szczepień (NIC)
 Year established: 2003
 `,
     `
@@ -627,6 +662,7 @@ Year evaluated: 2023
 `,
     `
 Romania
+Committee: Comitetul Național de Imunizare (NIC)
 Year established: 2022
 `,
     `
@@ -637,7 +673,9 @@ Year established: 2018
     `
 
 Rwanda
-Year established: 2017`
+Committee: National Immunization Advisory Mechanism (NIAM)
+Year established: 2017
+Website: https://immunizationdata.who.int/global/wiise-detail-page/national-immunization-advisory-mechanism?ISO_3_CODE=RWA`
     ,
     `
 Saint Kitts and Nevis
@@ -657,6 +695,7 @@ Year established: 2018
 `,
     `
 Saudi Arabia
+Committee: اللجنة الوطنية للتطعيم (NIC)
 Year established: 2008
 `,
     `
@@ -771,6 +810,7 @@ Year established: 2007
 `,
     `
 Tajikistan
+Committee: Национальная группа технических консультаций по иммунизации (TJKNITAG)
 `,
     `
 Taiwan
@@ -796,6 +836,7 @@ Website: http://www.nvco.go.th/
 `,
     `
 Timor-Leste
+Committee: Comité Nacional de Consultoria Técnica em Imunização (NTAC)
 Year evaluated: 2020
 `,
     `
@@ -817,6 +858,8 @@ Year established: 2010
 `,
     `
 Turkey
+Committee: Ulusal Aşılama Teknik Danışma Grubu (TURNITAG)
+Website: disab.saglik.gov.tr/EN-77506/national-immunization-technical-advisory-group-nitag-turkey-meeting.html
 `,
     `
 Turkmenistan
@@ -831,9 +874,12 @@ Year evaluated: 2022
 `,
     `
 Ukraine
+Committee: Національна технічна група з питань імунізації (UKR)
 `,
     `
 United Arab Emirates
+Committee: اللجنة الوطنية الفنية للتطعي (UAENITAG)
+Website: https://mohap.gov.ae/en/w/ministry-of-health-and-prevention-adopted-4-updates-on-the-national-immunization-program
 `,
     `
 United Kingdom

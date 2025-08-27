@@ -83,12 +83,6 @@ const Sidebar = ({
 
     const [showVaccineDeases, setShowVaccineDeases] = useState(false);
 
-    const [showLicensedVaccines, setShowLicensedVaccines] = useState(true);
-    const [showVaccineCandidates, setShowVaccineCandidates] = useState(true);
-
-    const [showSinglePathogenVaccines, setShowSinglePathogenVaccines] = useState(true);
-    const [showCombinationVaccines, setShowCombinationVaccines] = useState(false);
-
     const licenserFilter = ["FDA", "EMA", "WHO"];
     const filteredLicenserSidebarList = activeTab === "Licenser" && (activeFilters?.searchKeyword || activeFilters?.firstAlphabet) ? sidebarList : activeTab === 'Licenser'
         ? sidebarList.filter(item => licenserFilter.includes(item.acronym))
@@ -249,9 +243,8 @@ const Sidebar = ({
                                         const noNitagElm = document.getElementById('no-nitag');
                                         if (country) {
                                             country = country.toLowerCase();
-
                                             if (!isGnn) {
-                                                noNitagElm.textContent = `${turnFirstLetterOfWordUpperCase(country)} does not belong to NITAG or GNN Member. To find out more please click here to open GNN network website`
+                                                noNitagElm.textContent = `${turnFirstLetterOfWordUpperCase(country)} does not have any available NITAG. To find out more please click here to open NITAG Resources website`
                                                 noNitagElm.style.display = "block";
                                                 return;
                                             }
@@ -269,10 +262,14 @@ const Sidebar = ({
                                             }
                                         }
                                     };
-
                                     const website = item[1]
                                     if (website && website.split('Website: ').length > 0) {
-                                        let isPartGnn = website.includes('Committee') && website.includes('Year');
+                                        let isPartGnn = false;
+                                        if (website.includes('Committee')) {
+                                            isPartGnn = true;
+                                        } else {
+                                            isPartGnn = false;
+                                        };
                                         const websiteUrl = website.split('Website: ')[1];
                                         handleClickCountryMatchURL(ctx, websiteUrl, isPartGnn, website.split('<br/>')[0].replace('Committee: ', ''))
                                     };
@@ -283,7 +280,6 @@ const Sidebar = ({
                         )
                     })
                 }
-
                 {/* {
                     activeTab === "Pathogen" && activeTab !== "Nitag" && (
                         <>

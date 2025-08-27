@@ -69,7 +69,7 @@ const Header = () => {
             <h3 className='subheading mb-0' style={{ color: '#D17728' }}></h3>
             <div className='d-inline-flex justify-content-between align-items-center w-100'>
                 <img className='heading' src="/images/vacci-profile-logo.png" alt="vacciprofile logo" width={210} height={100} />
-                <span style={{ color: '#D17728' }}>VacciProfile Last updated: 27, August 2025 00:36 (GMT+8)</span>
+                <span style={{ color: '#D17728' }}>VacciProfile Last updated: 28, August 2025 04:56 (GMT+8)</span>
             </div>
         </div>
     </div>
